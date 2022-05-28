@@ -28,20 +28,22 @@ def evaluate(agent, n_episodes=100):
 
 
 if __name__ == '__main__':
-    assert os.path.exists('./output/best_model.zip')
 
     env_args = {
         'run_dssat_location': '/opt/dssat_pdi/run_dssat',
-        'mode': 'fertilization',
+        # 'mode': 'fertilization',
+        'mode': 'irrigation',
         'seed': 123,
         'random_weather': True,
     }
+
+    assert os.path.exists(f'./output/{env_args["mode"]}/best_model.zip')
 
     source_env = gym.make('gym_dssat_pdi:GymDssatPdi-v0', **env_args)
     env = Monitor(GymDssatWrapper(source_env))
     n_episodes = 100
     try:
-        ppo_best = PPO.load(f'./output/best_model')
+        ppo_best = PPO.load(f'./output/{env_args["mode"]}/best_model')
         agents = {
             'null': NullAgent(env),
             'ppo': ppo_best,
@@ -55,7 +57,7 @@ if __name__ == '__main__':
             results[agent_name] = histories
             print('Done')
 
-        saving_path = f'./output/evaluation_rewards.pkl'
+        saving_path = f'./output/{env_args["mode"]}/evaluation_rewards.pkl'
         with open(saving_path, 'wb') as handle:
             pickle.dump(results, handle, protocol=pickle.HIGHEST_PROTOCOL)
     finally:

@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import Patch
 from matplotlib.lines import Line2D
 from pylab import rcParams
+from gym_dssat_pdi.envs.utils import utils as dssat_utils
 
 figsize = (8, 6)
 rcParams['figure.figsize'] = figsize
@@ -24,12 +25,15 @@ def load_data(path):
     return histories
 
 
-def get_actions(history_dict):
+def get_actions(history_dict, mode):
+    action_name_dic = {'fertilization': 'anfer', 'irrigation': 'amir'}
+    assert mode in action_name_dic
+    action_name = action_name_dic[mode]
     action_dic = {}
     for key in [*history_dict]:
         action_dic[key] = []
         for episode_history in history_dict[key]['action']:
-            action_dic[key].append([action['anfer'] for action in episode_history])
+            action_dic[key].append([action[action_name] for action in episode_history])
     return action_dic
 
 
@@ -42,11 +46,11 @@ def get_rewards(history_dict):
     return reward_dic
 
 
-def plot_actions(history_dict, saving_path, keys=None):
+def plot_actions(history_dict, mode, saving_path, keys=None):
     if keys is None:
         keys = [*history_dict]
     episode_lengths = []
-    all_actions = get_actions(history_dict)
+    all_actions = get_actions(history_dict, mode)
     replications = 0
     for index, key in enumerate(keys):
         for actions_ in all_actions[key]:
@@ -79,7 +83,13 @@ def plot_actions(history_dict, saving_path, keys=None):
     sns.histplot(df, x='step', y='action', hue='policy', bins=15, palette=colors, ax=ax)
     ax.set_xlabel('day of simulation')
     # ax.set_xlim(1, max_episode_length)
-    ax.set_ylabel('fertilizer quantity (kg/ha)')
+    if mode == 'fertilization':
+        ylabel = 'fertilizer quantity (kg/ha)'
+        title = f'Nitrogen fertilizer applications ({replications} replications)'
+    else:
+        ylabel = 'irrigated water (L/m2)'
+        title = f'Irrigations ({replications} replications)'
+    ax.set_ylabel(ylabel)
     move_legend(ax, "upper left")
     ax.legend_.set_title(None)
     fig.set_size_inches(8, 6)
@@ -87,11 +97,12 @@ def plot_actions(history_dict, saving_path, keys=None):
     ax.yaxis.set_label_coords(-.07, .5)
     ax.xaxis.set_label_coords(.5, -.08)
     plt.subplots_adjust(top=0.95)
-    plt.title(f'Nitrogen fertilizer applications ({replications} replications)')
+
+    plt.title(title)
     plt.savefig(saving_path)
 
 
-def plot_rewards(history_dict, dos_cut=155, y_logscale=False, y_label=None, x_logscale=False, x_label=None, q_high=.95,
+def plot_rewards(history_dict, mode, dos_cut=155, y_logscale=False, y_label=None, x_logscale=False, x_label=None, q_high=.95,
                  q_low=.05,
                  saving_path=None, title=None):
     reward_dict = get_rewards(history_dict)
@@ -159,7 +170,7 @@ def plot_rewards(history_dict, dos_cut=155, y_logscale=False, y_label=None, x_lo
             x_label = f'{x_label[:-1]} log(t)'
     ax.set_xlabel(x_label)
     if y_label is None:
-        y_label = 'cumulated return (kg N/ha)'
+        y_label = 'cumulated return'
     if y_logscale:
         y_label = f'log {y_label}'
     ax.set_ylabel(y_label)
@@ -179,22 +190,34 @@ def plot_rewards(history_dict, dos_cut=155, y_logscale=False, y_label=None, x_lo
     plt.close(fig)
 
 
-def get_statistics(history_dict):
-    features = ['grnwt', 'pcngrn', 'cumsumfert', 'cleach', 'efficiency', 'duration', 'napp']
+def get_statistics(history_dict, mode):
+    if mode == 'fertilization':
+        features = ['grnwt', 'pcngrn', 'topwt', 'cumsumfert', 'cleach', 'efficiency', 'duration', 'napp']
+        features_subset = ['grnwt', 'pcngrn', 'cumsumfert', 'cleach', 'topwt']
+        action_name = 'anfer'
+    else:
+        features = ['grnwt', 'pcngrn', 'totir', 'napp', 'topwt', 'efficiency', 'duration', 'napp']
+        features_subset = ['grnwt', 'pcngrn', 'totir', 'topwt']
+        action_name = 'amir'
+
     state_features_dic = {key: {feature: [] for feature in features} for key in [*history_dict]}
 
     for key in [*history_dict]:
         for repetition_index, repetition in enumerate(history_dict[key]['state']):
             last_state = repetition[-1]
-            for feature in ['grnwt', 'pcngrn', 'cumsumfert', 'cleach']:
+            for feature in features_subset:
                 values = last_state[feature]
                 state_features_dic[key][feature].append(values)
 
     for key in [*history_dict]:
         grnwt_rep = state_features_dic[key]['grnwt']
         grnwt_0_rep = state_features_dic['null']['grnwt']
-        cumsumfert_rep = state_features_dic[key]['cumsumfert']
-        for grnwt, grnwt_0, cumsumfert in zip(grnwt_rep, grnwt_0_rep, cumsumfert_rep):
+        if mode == 'fertilization':
+            rate_rep = state_features_dic[key]['cumsumfert']
+        else:
+            grnwt_rep, grnwt_0_rep = 10 * grnwt_rep, 10 * grnwt_0_rep
+            rate_rep = state_features_dic[key]['totir']
+        for grnwt, grnwt_0, cumsumfert in zip(grnwt_rep, grnwt_0_rep, rate_rep):
             if cumsumfert == 0:
                 value = np.nan
             else:
@@ -203,7 +226,7 @@ def get_statistics(history_dict):
 
     for key in [*history_dict]:
         for applications in history_dict[key]['action']:
-            applications = [application['anfer'] for application in applications]
+            applications = [application[action_name] for application in applications]
             state_features_dic[key]['napp'].append((np.asarray(applications) > 0).sum())
             state_features_dic[key]['duration'].append(len(applications))
 
@@ -241,8 +264,14 @@ def move_legend(ax, new_loc, **kws):
 
 
 if __name__ == '__main__':
-    history_dict = load_data(path='./output/evaluation_histories.pkl')
-    plot_actions(history_dict=history_dict, saving_path='./figures/applications.pdf', keys=['ppo', 'expert'])
-    plot_rewards(history_dict=history_dict, saving_path='./figures/rewards.pdf')
-    df = get_statistics(history_dict=history_dict)
-    df.describe().round(1).to_csv('./output/advanced_evaluation.csv', index_label=True)
+    mode = 'fertilization'
+    # mode = 'irrigation'
+    print(f'###########################\n## MODE: {mode} ##\n###########################')
+    for dir in [f'./figures/{mode}']:
+        dssat_utils.make_folder(dir)
+    history_dict = load_data(path=f'./output/{mode}/evaluation_histories.pkl')
+    action_keys = ['ppo', 'expert']
+    plot_actions(history_dict=history_dict, mode=mode, saving_path=f'./figures/{mode}/applications.pdf', keys=action_keys)
+    plot_rewards(history_dict=history_dict, mode=mode, saving_path=f'./figures/{mode}/rewards.pdf')
+    df = get_statistics(history_dict=history_dict, mode=mode)
+    df.describe().round(1).to_csv(f'./output/{mode}/advanced_evaluation.csv', index_label=True)

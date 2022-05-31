@@ -33,8 +33,8 @@ if __name__ == '__main__':
 
     env_args = {
         'run_dssat_location': '/opt/dssat_pdi/run_dssat',
-        'mode': 'fertilization',
-        # 'mode': 'irrigation',
+        # 'mode': 'fertilization',
+        'mode': 'irrigation',
         'seed': 123,
         'random_weather': True,
         'evaluation': True,
@@ -50,7 +50,7 @@ if __name__ == '__main__':
 
     source_env = gym.make('gym_dssat_pdi:GymDssatPdi-v0', **env_args)
     env = Monitor(GymDssatWrapper(source_env))
-    n_episodes = 100
+    n_episodes = 1000
     try:
         ppo_best = PPO.load(f'./output/{env_args["mode"]}/best_model')
         agents = {

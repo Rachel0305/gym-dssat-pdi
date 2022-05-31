@@ -183,22 +183,23 @@ def plot_rewards(history_dict, mode, dos_cut=155, y_logscale=False, y_label=None
         title = f'Policy returns ({replications} replications)'
     plt.title(title)
     ax.tick_params(axis='both', which='major', pad=3)
-    plt.tight_layout()
     ax.yaxis.set_label_coords(-.07, .5)
     ax.xaxis.set_label_coords(.5, -.08)
+    if mode == 'irrigation':
+        ax.ticklabel_format(axis='y', style='sci', scilimits=(0,0))
+    plt.tight_layout()
     plt.savefig(saving_path)
     plt.close(fig)
 
 
 def get_statistics(history_dict, mode):
     if mode == 'fertilization':
-        features = ['grnwt', 'pcngrn', 'topwt', 'cumsumfert', 'cleach', 'efficiency', 'duration', 'napp']
-        features_subset = ['grnwt', 'pcngrn', 'cumsumfert', 'cleach', 'topwt']
+        features_subset = ['topwt', 'grnwt', 'pcngrn', 'cumsumfert', 'cleach']
         action_name = 'anfer'
     else:
-        features = ['grnwt', 'pcngrn', 'totir', 'napp', 'topwt', 'efficiency', 'duration', 'napp']
-        features_subset = ['grnwt', 'pcngrn', 'totir', 'topwt']
+        features_subset = ['topwt', 'grnwt', 'totir', 'runoff']
         action_name = 'amir'
+    features = [*features_subset, 'efficiency', 'duration', 'napp']
 
     state_features_dic = {key: {feature: [] for feature in features} for key in [*history_dict]}
 
@@ -231,6 +232,26 @@ def get_statistics(history_dict, mode):
             state_features_dic[key]['duration'].append(len(applications))
 
     df = make_df_from_dict(state_features_dic)
+    return df
+
+def get_growing_stage_occurences(history_dict):
+    growing_stage_dict = {key: {} for key in [*history_dict]}
+    for key in [*history_dict]:
+        istage_dic = {}
+        for repetition_index, repetition in enumerate(history_dict[key]['state']):
+            istages = [state['istage'] for state in repetition]
+            istage_atoms = np.unique(istages)
+            for istage_atom in istage_atoms:
+                first_occurence_index = istages.index(istage_atom)
+                first_occurence_das = first_occurence_index + 1
+                if istage_atom not in istage_dic:
+                    istage_dic[istage_atom] = []
+                istage_dic[istage_atom].append(first_occurence_das)
+        for istage_atom in [*istage_dic]:
+            growing_stage_dict[key][istage_atom] = np.mean(istage_dic[istage_atom])
+    df = pd.DataFrame.from_dict(growing_stage_dict, orient='index')
+    column_order = [7, 8, 9, 1, 2, 3, 4, 5, 6]
+    df = df[column_order]
     return df
 
 
@@ -270,8 +291,10 @@ if __name__ == '__main__':
     for dir in [f'./figures/{mode}']:
         dssat_utils.make_folder(dir)
     history_dict = load_data(path=f'./output/{mode}/evaluation_histories.pkl')
+    df_stages = get_growing_stage_occurences(history_dict)
+    df_stages.to_csv(f'./output/{mode}/growing_stages.csv', index_label=True)
     action_keys = ['ppo', 'expert']
     plot_actions(history_dict=history_dict, mode=mode, saving_path=f'./figures/{mode}/applications.pdf', keys=action_keys)
     plot_rewards(history_dict=history_dict, mode=mode, saving_path=f'./figures/{mode}/rewards.pdf')
-    df = get_statistics(history_dict=history_dict, mode=mode)
-    df.describe().round(1).to_csv(f'./output/{mode}/advanced_evaluation.csv', index_label=True)
+    df_stats = get_statistics(history_dict=history_dict, mode=mode)
+    df_stats.describe().round(1).to_csv(f'./output/{mode}/advanced_evaluation.csv', index_label=True)

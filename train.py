@@ -27,7 +27,7 @@ if __name__ == '__main__':
         # Training arguments for PPO agent
         ppo_args = {
             'seed': 123,  # seed training for reproducibility
-            # 'gamma': 1,
+            'gamma': 1,
         }
 
         # Create the agent
@@ -44,7 +44,7 @@ if __name__ == '__main__':
                                      eval_freq=eval_freq,
                                      best_model_save_path=f'{path}',
                                      deterministic=True,
-                                     n_eval_episodes=5)
+                                     n_eval_episodes=10)
 
         # Train
         # total_timesteps = 500_000

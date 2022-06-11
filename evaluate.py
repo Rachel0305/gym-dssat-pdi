@@ -37,7 +37,7 @@ if __name__ == '__main__':
         'mode': 'irrigation',
         'seed': 123,
         'random_weather': True,
-        'evaluation': True,
+        'evaluation': True,  # isolated seeds for weather generation
     }
 
     print(f'###########################\n## MODE: {env_args["mode"]} ##\n###########################')
@@ -45,14 +45,11 @@ if __name__ == '__main__':
     assert os.path.exists(f'./output/{env_args["mode"]}/best_model.zip')
 
 
-    eval_args = deepcopy(env_args)
-    eval_args['seed'] = 456
-
     source_env = gym.make('gym_dssat_pdi:GymDssatPdi-v0', **env_args)
     env = Monitor(GymDssatWrapper(source_env))
     n_episodes = 1000
     try:
-        ppo_best = PPO.load(f'./output/{env_args["mode"]}/best_model')
+        ppo_best = PPO.load(f'./output/{env_args["mode"]}/best_model_bckp')
         agents = {
             'null': NullAgent(env),
             'ppo': ppo_best,
@@ -63,7 +60,7 @@ if __name__ == '__main__':
         for agent_name in [*agents]:
             agent = agents[agent_name]
             print(f'Evaluating {agent_name} agent...')
-            histories = evaluate(agent=agent, eval_args=eval_args, n_episodes=n_episodes)
+            histories = evaluate(agent=agent, eval_args=env_args, n_episodes=n_episodes)
             histories = utils.transpose_dicts(histories)
             all_histories[agent_name] = histories
             print('Done')

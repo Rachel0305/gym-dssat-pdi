@@ -89,10 +89,10 @@ def plot_actions(history_dict, mode, saving_path, keys=None):
     # ax.set_xlim(1, max_episode_length)
     if mode == 'fertilization':
         ylabel = 'fertilizer quantity (kg/ha)'
-        title = f'Nitrogen fertilizer applications ({replications} replications)'
+        title = f'Nitrogen fertilizer applications ({replications} episodes)'
     else:
         ylabel = 'irrigated water (L/m2)'
-        title = f'Irrigations ({replications} replications)'
+        title = f'Irrigations ({replications} episodes)'
     ax.set_ylabel(ylabel)
     move_legend(ax, "upper left")
     ax.legend_.set_title(None)
@@ -114,8 +114,7 @@ def plot_actions(history_dict, mode, saving_path, keys=None):
 
 
 def plot_rewards(history_dict, mode, dos_cut=155, y_logscale=False, y_label=None, x_logscale=False, x_label=None, q_high=.95,
-                 q_low=.05,
-                 saving_path=None, title=None):
+                 q_low=.05, saving_path=None, title=None, quantile_range_legend=True):
     reward_dict = get_rewards(history_dict)
     policy_names = [*reward_dict]
     if saving_path is None:
@@ -185,13 +184,14 @@ def plot_rewards(history_dict, mode, dos_cut=155, y_logscale=False, y_label=None
     if y_logscale:
         y_label = f'log {y_label}'
     ax.set_ylabel(y_label)
-    patch = Patch(facecolor='black', edgecolor=None, label=f'[{q_low:.02f},{q_high:.02f}] quantile range',
-                  alpha=.2)
-    legend_elements.append(patch)
+    if quantile_range_legend:
+        patch = Patch(facecolor='black', edgecolor=None, label=f'[{q_low:.02f},{q_high:.02f}] quantile range',
+                      alpha=.2)
+        legend_elements.append(patch)
     # ax.grid(axis='both')
     ax.legend(handles=legend_elements, loc='best')
     if title is None:
-        title = f'Policy returns ({replications} replications)'
+        title = f'Policy returns ({replications} episodes)'
     plt.title(title)
     ax.tick_params(axis='both', which='major', pad=3)
     ax.yaxis.set_label_coords(-.07, .5)
@@ -324,6 +324,7 @@ if __name__ == '__main__':
     action_keys = ['ppo', 'expert']
     plot_actions(history_dict=history_dict, mode=mode, saving_path=f'./figures/{mode}/{mode}Applications.pdf',
                  keys=action_keys)
-    plot_rewards(history_dict=history_dict, mode=mode, saving_path=f'./figures/{mode}/{mode}Rewards.pdf')
+    plot_rewards(history_dict=history_dict, mode=mode, quantile_range_legend=False,
+                 saving_path=f'./figures/{mode}/{mode}Rewards.pdf')
     df_stats = get_statistics(history_dict=history_dict, mode=mode)
     df_stats.describe().round(1).to_csv(f'./output/{mode}/advanced_evaluation.csv')

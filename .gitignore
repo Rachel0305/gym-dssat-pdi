@@ -1,4 +1,66 @@
-.pdf
-.zip
-**/output
-**/__pycache__
+# ===============================
+# Python
+# ===============================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+
+# ===============================
+# Conda / venv
+# ===============================
+env/
+venv/
+.sb3_env/
+*.egg-info/
+
+# ===============================
+# Logs & outputs
+# ===============================
+*.log
+logs/
+output/
+outputs/
+tmp/
+temp/
+
+# ===============================
+# Stable-Baselines3
+# ===============================
+tensorboard/
+tb_logs/
+*.zip
+
+# ===============================
+# DSSAT outputs (VERY IMPORTANT)
+# ===============================
+*.OUT
+*.out
+*.OSU
+*.SUM
+*.WTH
+*.SOL
+*.X??
+*.csv
+
+PlantGro.OUT
+SoilWat.OUT
+Summary.OUT
+Evaluate.OUT
+
+# DSSAT run folders
+DSSAT/
+DSSAT48/
+Weather/
+Soil/
+Genotype/
+Data/
+Run/
+
+# ===============================
+# OS / editor
+# ===============================
+.DS_Store
+.vscode/
+.idea/

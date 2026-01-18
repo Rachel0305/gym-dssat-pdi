@@ -1,7 +1,7 @@
-import gym
+# import gym
 import numpy as np
 import pdb
-
+import gymnasium as gym
 
 class Formator():
     def __init__(self, env):
@@ -47,48 +47,59 @@ class Formator():
 
 
 class GymDssatWrapper(gym.Wrapper):
-    """
-    Wrapper for easy and uniform interfacing with SB3
-    """
-
     def __init__(self, env):
         self.formator = Formator(env)
         super().__init__(env)
-        # using a normalized action space
-        self.action_space = gym.spaces.Box(low=-1, high=1, shape=(len(self.formator.action_names),),
-                                           dtype="float32")
+        self.env = env
 
-        # using a vector representation of observations to allow
-        # easily using SB3 MlpPolicy
-        self.observation_space = gym.spaces.Box(low=0.0,
-                                                high=np.inf,
-                                                shape=env.observation_dict_to_array(
-                                                    env.observation).shape,
-                                                dtype="float32"
-                                                )
+        self.action_space = gym.spaces.Box(
+            low=-1, high=1,
+            shape=(len(self.formator.action_names),),
+            dtype="float32"
+        )
 
-        # to avoid annoying problem with Monitor when episodes end and things are None
+        obs_shape = self.formator.format_observation(
+            env.observation
+        ).shape
+
+        self.observation_space = gym.spaces.Box(
+            low=0.0, high=np.inf,
+            shape=obs_shape,
+            dtype="float32"
+        )
+
         self.last_info = {}
         self.last_obs = None
 
-    def reset(self):
-        return self.formator.format_observation(self.env.reset())
+    def reset(self, *, seed=None, options=None):
+        raw_obs = self.env.reset()
+        formatted_obs = self.formator.format_observation(raw_obs)
+        info = {}
+        self.last_obs = formatted_obs
+        self.last_info = info
+        return formatted_obs, info
 
     def step(self, action):
-        # Rescale action from [-1, 1] to original action space interval
         denormalized_action = self.formator.denormalize_actions(action)
         formatted_action = self.formator.format_actions(denormalized_action)
+
         obs, reward, done, info = self.env.step(formatted_action)
 
-        # handle `None` in obs, reward, and info on done step
+        # 這裡是關鍵：你的原始 env 很可能用舊的 "done" 邏輯
+        # 我們假設沒有明確的 truncated 情境（大多數自訂 env 都是這樣）
+        terminated = done
+        truncated = False   # 如果你有 TimeLimit 或 max steps 邏輯，可以設為 True
+
         if done:
-            obs, reward, info = self.last_obs, 0, self.last_info
+            # 你的原有邏輯：episode 結束時用 last 的值避免 None
+            obs, reward, info = self.last_obs, 0.0, self.last_info
         else:
             self.last_obs = obs
             self.last_info = info
 
         formatted_observation = self.formator.format_observation(obs)
-        return formatted_observation, reward, done, info
+
+        return formatted_observation, reward, terminated, truncated, info
 
     def close(self):
         return self.env.close()

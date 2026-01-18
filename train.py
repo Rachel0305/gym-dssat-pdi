@@ -13,8 +13,8 @@ if __name__ == '__main__':
         # Create environment
         env_args = {
             'log_saving_path': './logs/dssat_pdi.log',
-            'mode': 'fertilization',
-            # 'mode': 'irrigation',
+            # 'mode': 'fertilization',
+            'mode': 'irrigation',
             'seed': 123,
             'random_weather': True,
         }
@@ -30,7 +30,7 @@ if __name__ == '__main__':
         }
 
         # Create the agent
-        ppo_agent = PPO('MlpPolicy', env, **ppo_args)
+        ppo_agent = PPO('MlpPolicy', env, verbose=1, **ppo_args)
 
         # path to save best model found
         path = f'./output/{env_args["mode"]}'
@@ -46,7 +46,7 @@ if __name__ == '__main__':
                                      n_eval_episodes=10)
 
         # Train
-        # total_timesteps = 500_000
+        # total_timesteps = 5_000
         total_timesteps = 1_000_000
         print('Training PPO agent...')
         ppo_agent.learn(total_timesteps=total_timesteps, callback=eval_callback)

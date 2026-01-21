@@ -15,6 +15,15 @@ def evaluate(agent, eval_args, n_episodes=100):
     # Create eval env
     source_env = gym.make('GymDssatPdi-v0', **eval_args)
     env = GymDssatWrapper(source_env)
+    
+    unwrapped_env = env.unwrapped  # 剥掉 Monitor 和 GymDssatWrapper
+    reset_result = unwrapped_env.reset()
+    if isinstance(reset_result, tuple):
+        raw_obs, info = reset_result
+    else:
+        raw_obs = reset_result
+    print("底层原始 observation 是 dict，keys：", sorted(raw_obs.keys()))
+
     all_histories = []
     try:
         for ep in range(n_episodes):
@@ -60,7 +69,7 @@ if __name__ == '__main__':
     env = Monitor(GymDssatWrapper(source_env))
     n_episodes = 1000
     try:
-        ppo_best = PPO.load(f'./output/{env_args["mode"]}/best_model')
+        ppo_best = PPO.load(f'./output/{env_args["mode"]}/best_model.zip')
         agents = {
             'null': NullAgent(env),
             'ppo': ppo_best,

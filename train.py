@@ -23,6 +23,14 @@ if __name__ == '__main__':
 
         env = Monitor(GymDssatWrapper(gym.make('gym_dssat_pdi:GymDssatPdi-v0', **env_args)))
 
+        unwrapped_env = env.unwrapped  # 剥掉 Monitor 和 GymDssatWrapper
+        reset_result = unwrapped_env.reset()
+        if isinstance(reset_result, tuple):
+            raw_obs, info = reset_result
+        else:
+            raw_obs = reset_result
+        print("底层原始 observation 是 dict，keys：", sorted(raw_obs.keys()))
+
         # Training arguments for PPO agent
         ppo_args = {
             'seed': 123,  # seed training for reproducibility

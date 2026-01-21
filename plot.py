@@ -194,82 +194,83 @@ def plot_rewards(history_dict, mode, dos_cut=155, y_logscale=False, y_label=None
     plt.savefig(saving_path)
     plt.close(fig)
 
-# ------------------- 注释掉依赖 state 的代码 -------------------
-# def get_statistics(history_dict, mode):
-#     if mode == 'fertilization':
-#         features_subset = ['topwt', 'grnwt', 'pcngrn', 'cumsumfert', 'cleach']
-#         action_name = 'anfer'
-#     else:
-#         features_subset = ['topwt', 'grnwt', 'totir', 'runoff', 'cleach']
-#         action_name = 'amir'
-#     features = [*features_subset, 'efficiency', 'duration', 'napp']
-#
-#     state_features_dic = {key: {feature: [] for feature in features} for key in [*history_dict]}
-#
-#     for key in [*history_dict]:
-#         for repetition_index, repetition in enumerate(history_dict[key]['state']):
-#             last_state = repetition[-1]
-#             for feature in features_subset:
-#                 values = last_state[feature]
-#                 state_features_dic[key][feature].append(values)
-#
-#     for key in [*history_dict]:
-#         grnwt_rep = state_features_dic[key]['grnwt']
-#         grnwt_0_rep = state_features_dic['null']['grnwt']
-#         if mode == 'fertilization':
-#             rate_rep = state_features_dic[key]['cumsumfert']
-#         else:
-#             grnwt_rep, grnwt_0_rep = 10 * grnwt_rep, 10 * grnwt_0_rep
-#             rate_rep = state_features_dic[key]['totir']
-#         for grnwt, grnwt_0, cumsumfert in zip(grnwt_rep, grnwt_0_rep, rate_rep):
-#             if cumsumfert == 0:
-#                 value = np.nan
-#             else:
-#                 value = (grnwt - grnwt_0) / cumsumfert
-#             state_features_dic[key]['efficiency'].append(value)
-#
-#     for key in [*history_dict]:
-#         for applications in history_dict[key]['action']:
-#             applications = [application[action_name] for application in applications]
-#             state_features_dic[key]['napp'].append((np.asarray(applications) > 0).sum())
-#             state_features_dic[key]['duration'].append(len(applications))
-#
-#     df = make_df_from_dict(state_features_dic)
-#     return df
-#
-# def get_growing_stage_occurences(history_dict):
-#     growing_stage_dict = {key: {} for key in [*history_dict]}
-#     for key in [*history_dict]:
-#         istage_dic = {}
-#         for repetition_index, repetition in enumerate(history_dict[key]['state']):
-#             istages = [state['istage'] for state in repetition]
-#             istage_atoms = np.unique(istages)
-#             for istage_atom in istage_atoms:
-#                 first_occurence_index = istages.index(istage_atom)
-#                 first_occurence_das = first_occurence_index + 1
-#                 if istage_atom not in istage_dic:
-#                     istage_dic[istage_atom] = []
-#                 istage_dic[istage_atom].append(first_occurence_das)
-#         for istage_atom in [*istage_dic]:
-#             growing_stage_dict[key][f'{istage_atom}_mean'] = np.mean(istage_dic[istage_atom])
-#             growing_stage_dict[key][f'{istage_atom}_std'] = np.std(istage_dic[istage_atom], ddof=1)
-#     df = pd.DataFrame.from_dict(growing_stage_dict, orient='index')
-#     istage_order = [7, 8, 9, 1, 2, 3, 4, 5, 6]
-#     column_order = []
-#     for istage in istage_order:
-#         column_order.append(f'{istage}_mean')
-#         column_order.append(f'{istage}_std')
-#     df = df[column_order]
-#     return df
-#
-# def check_dap(history_dict):
-#     for key in [*history_dict]:
-#         sowing_das = []
-#         for repetition_index, repetition in enumerate(history_dict[key]['state']):
-#             daps = [state['dap'] for state in repetition]
-#             sowing_das.append(daps.index(1))
-#         print(f'min sowing das : {max(sowing_das)} for {key}')
-#         print(f'max sowing das : {min(sowing_das)} for {key}')
+# ------------------- 依赖 state 的代码 -------------------
+def get_statistics(history_dict, mode):
+    if mode == 'fertilization':
+        features_subset = ['topwt', 'grnwt', 'pcngrn', 'cumsumfert', 'cleach']
+
+        action_name = 'anfer'
+    else:
+        features_subset = ['topwt', 'grnwt', 'totir', 'runoff', 'cleach']
+        action_name = 'amir'
+    features = [*features_subset, 'efficiency', 'duration', 'napp']
+
+    state_features_dic = {key: {feature: [] for feature in features} for key in [*history_dict]}
+
+    for key in [*history_dict]:
+        for repetition_index, repetition in enumerate(history_dict[key]['observation']):
+            last_state = repetition[-1]
+            for feature in features_subset:
+                values = last_state[feature]
+                state_features_dic[key][feature].append(values)
+
+    for key in [*history_dict]:
+        grnwt_rep = state_features_dic[key]['grnwt']
+        grnwt_0_rep = state_features_dic['null']['grnwt']
+        if mode == 'fertilization':
+            rate_rep = state_features_dic[key]['cumsumfert']
+        else:
+            grnwt_rep, grnwt_0_rep = 10 * grnwt_rep, 10 * grnwt_0_rep
+            rate_rep = state_features_dic[key]['totir']
+        for grnwt, grnwt_0, cumsumfert in zip(grnwt_rep, grnwt_0_rep, rate_rep):
+            if cumsumfert == 0:
+                value = np.nan
+            else:
+                value = (grnwt - grnwt_0) / cumsumfert
+            state_features_dic[key]['efficiency'].append(value)
+
+    for key in [*history_dict]:
+        for applications in history_dict[key]['action']:
+            applications = [application[action_name] for application in applications]
+            state_features_dic[key]['napp'].append((np.asarray(applications) > 0).sum())
+            state_features_dic[key]['duration'].append(len(applications))
+
+    df = make_df_from_dict(state_features_dic)
+    return df
+
+def get_growing_stage_occurences(history_dict):
+    growing_stage_dict = {key: {} for key in [*history_dict]}
+    for key in [*history_dict]:
+        istage_dic = {}
+        for repetition_index, repetition in enumerate(history_dict[key]['observation']):
+            istages = [state['istage'] for state in repetition]
+            istage_atoms = np.unique(istages)
+            for istage_atom in istage_atoms:
+                first_occurence_index = istages.index(istage_atom)
+                first_occurence_das = first_occurence_index + 1
+                if istage_atom not in istage_dic:
+                    istage_dic[istage_atom] = []
+                istage_dic[istage_atom].append(first_occurence_das)
+        for istage_atom in [*istage_dic]:
+            growing_stage_dict[key][f'{istage_atom}_mean'] = np.mean(istage_dic[istage_atom])
+            growing_stage_dict[key][f'{istage_atom}_std'] = np.std(istage_dic[istage_atom], ddof=1)
+    df = pd.DataFrame.from_dict(growing_stage_dict, orient='index')
+    istage_order = [7, 8, 9, 1, 2, 3, 4, 5, 6]
+    column_order = []
+    for istage in istage_order:
+        column_order.append(f'{istage}_mean')
+        column_order.append(f'{istage}_std')
+    df = df[column_order]
+    return df
+
+def check_dap(history_dict):
+    for key in [*history_dict]:
+        sowing_das = []
+        for repetition_index, repetition in enumerate(history_dict[key]['observation']):
+            daps = [state['dap'] for state in repetition]
+            sowing_das.append(daps.index(1))
+        print(f'min sowing das : {max(sowing_das)} for {key}')
+        print(f'max sowing das : {min(sowing_das)} for {key}')
 
 def make_df_from_dict(state_features_dic):
     df_dic = {}
@@ -299,24 +300,30 @@ if __name__ == '__main__':
     #mode = 'fertilization'
     mode = 'irrigation'
     history_dict = load_data(path=f'./output/{mode}/evaluation_histories.pkl')
+    # 加在 load_data 后
+    print("Sample PPO observation shape:", len(history_dict['ppo']['observation']), len(history_dict['ppo']['observation'][0]))
+    print("Sample first step observation keys:", history_dict['ppo']['observation'][0][0].keys() if history_dict['ppo']['observation'] else "empty")
 
     print("Top-level keys:", history_dict.keys())
 
     for key in history_dict.keys():
         print(f"Keys inside '{key}':", history_dict[key].keys())
 
+    print("Type of observation list:", type(history_dict['ppo']['observation'][0]))  # 应该输出 <class 'list'>
+    print("Type of first observation dict:", type(history_dict['ppo']['observation'][0][0]))  # 应该输出 <class 'dict'>
+
     print(f'###########################\n## MODE: {mode} ##\n###########################')
     for dir in [f'./figures/{mode}']:
         dssat_utils.make_folder(dir)
 
-    # check_dap(history_dict)
-    # df_stages = get_growing_stage_occurences(history_dict)
-    # df_stages.transpose().round(0).to_csv(f'./output/{mode}/growing_stages.csv', index_label='istage')
+    check_dap(history_dict)
+    df_stages = get_growing_stage_occurences(history_dict)
+    df_stages.transpose().round(0).to_csv(f'./output/{mode}/growing_stages.csv', index_label='istage')
 
     action_keys = ['ppo', 'expert']
     plot_actions(history_dict=history_dict, mode=mode, saving_path=f'./figures/{mode}/{mode}Applications.pdf',
                  keys=action_keys)
     plot_rewards(history_dict=history_dict, mode=mode, quantile_range_legend=False,
                  saving_path=f'./figures/{mode}/{mode}Rewards.pdf')
-    # df_stats = get_statistics(history_dict=history_dict, mode=mode)
-    # df_stats.describe().round(1).to_csv(f'./output/{mode}/advanced_evaluation.csv')
+    df_stats = get_statistics(history_dict=history_dict, mode=mode)
+    df_stats.describe().round(1).to_csv(f'./output/{mode}/advanced_evaluation.csv')

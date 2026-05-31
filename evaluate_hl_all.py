@@ -63,6 +63,12 @@ def parse_args():
     parser.add_argument('--penality', type=float, default=0.5)
     parser.add_argument('--all-fert-weight', type=float, default=1.0)
     parser.add_argument('--all-irrig-weight', type=float, default=1.0)
+    parser.add_argument('--all-anfer-cost', type=float, default=0.0)
+    parser.add_argument('--all-amir-cost', type=float, default=0.0)
+    parser.add_argument('--all-anfer-excess-limit', type=float, default=1e12)
+    parser.add_argument('--all-amir-excess-limit', type=float, default=1e12)
+    parser.add_argument('--all-anfer-excess-cost', type=float, default=0.0)
+    parser.add_argument('--all-amir-excess-cost', type=float, default=0.0)
     parser.add_argument('--n-episodes', type=int, default=1)
     parser.add_argument('--output-dir', default='./output_hl/all')
     parser.add_argument('--model-path', default=None)
@@ -74,11 +80,17 @@ def parse_args():
     return parser.parse_args()
 
 
-def set_reward_env(coef, penality, all_fert_weight, all_irrig_weight):
-    os.environ['GYM_DSSAT_REWARD_COEF'] = str(coef)
-    os.environ['GYM_DSSAT_REWARD_PENALITY'] = str(penality)
-    os.environ['GYM_DSSAT_ALL_FERT_WEIGHT'] = str(all_fert_weight)
-    os.environ['GYM_DSSAT_ALL_IRRIG_WEIGHT'] = str(all_irrig_weight)
+def set_reward_env(args):
+    os.environ['GYM_DSSAT_REWARD_COEF'] = str(args.coef)
+    os.environ['GYM_DSSAT_REWARD_PENALITY'] = str(args.penality)
+    os.environ['GYM_DSSAT_ALL_FERT_WEIGHT'] = str(args.all_fert_weight)
+    os.environ['GYM_DSSAT_ALL_IRRIG_WEIGHT'] = str(args.all_irrig_weight)
+    os.environ['GYM_DSSAT_ALL_ANFER_COST'] = str(args.all_anfer_cost)
+    os.environ['GYM_DSSAT_ALL_AMIR_COST'] = str(args.all_amir_cost)
+    os.environ['GYM_DSSAT_ALL_ANFER_EXCESS_LIMIT'] = str(args.all_anfer_excess_limit)
+    os.environ['GYM_DSSAT_ALL_AMIR_EXCESS_LIMIT'] = str(args.all_amir_excess_limit)
+    os.environ['GYM_DSSAT_ALL_ANFER_EXCESS_COST'] = str(args.all_anfer_excess_cost)
+    os.environ['GYM_DSSAT_ALL_AMIR_EXCESS_COST'] = str(args.all_amir_excess_cost)
 
 
 def assert_all_reward_is_scalar_ready():
@@ -386,7 +398,7 @@ def evaluate(
 
 if __name__ == '__main__':
     args = parse_args()
-    set_reward_env(args.coef, args.penality, args.all_fert_weight, args.all_irrig_weight)
+    set_reward_env(args)
     assert_all_reward_is_scalar_ready()
     os.makedirs(args.output_dir, exist_ok=True)
 
@@ -408,6 +420,9 @@ if __name__ == '__main__':
     print(f'###########################\n## MODE: {env_args["mode"]} ##\n###########################')
     print(f'## reward coef={args.coef}, penality={args.penality}')
     print(f'## all reward weights: fertilization={args.all_fert_weight}, irrigation={args.all_irrig_weight}')
+    print(f'## all costs: anfer={args.all_anfer_cost}, amir={args.all_amir_cost}')
+    print(f'## all excess: anfer_limit={args.all_anfer_excess_limit}, anfer_cost={args.all_anfer_excess_cost}, '
+          f'amir_limit={args.all_amir_excess_limit}, amir_cost={args.all_amir_excess_cost}')
     print(f'## output_dir={args.output_dir}')
 
     agent_names = [name.strip() for name in args.agents.split(',') if name.strip()]

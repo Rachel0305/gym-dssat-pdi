@@ -57,7 +57,26 @@ ALL_REWARD = '''def all_reward(_previous_state, _next_state, _history, _cultivar
         return None
     fert_weight = _reward_float('GYM_DSSAT_ALL_FERT_WEIGHT', 1.0)
     irrig_weight = _reward_float('GYM_DSSAT_ALL_IRRIG_WEIGHT', 1.0)
-    return fert_weight * ferti_reward_value + irrig_weight * irrig_reward_value
+    action_history = _history.get('action', [])
+    last_action = action_history[-1] if action_history else {}
+    last_anfer = float(last_action.get('anfer', 0.0))
+    last_amir = float(last_action.get('amir', 0.0))
+    total_anfer = sum(float(action.get('anfer', 0.0)) for action in action_history)
+    total_amir = sum(float(action.get('amir', 0.0)) for action in action_history)
+
+    extra_anfer_cost = _reward_float('GYM_DSSAT_ALL_ANFER_COST', 0.0)
+    extra_amir_cost = _reward_float('GYM_DSSAT_ALL_AMIR_COST', 0.0)
+    excess_anfer_limit = _reward_float('GYM_DSSAT_ALL_ANFER_EXCESS_LIMIT', 1e12)
+    excess_amir_limit = _reward_float('GYM_DSSAT_ALL_AMIR_EXCESS_LIMIT', 1e12)
+    excess_anfer_cost = _reward_float('GYM_DSSAT_ALL_ANFER_EXCESS_COST', 0.0)
+    excess_amir_cost = _reward_float('GYM_DSSAT_ALL_AMIR_EXCESS_COST', 0.0)
+
+    action_cost = extra_anfer_cost * last_anfer + extra_amir_cost * last_amir
+    excess_cost = (
+        excess_anfer_cost * max(0.0, total_anfer - excess_anfer_limit)
+        + excess_amir_cost * max(0.0, total_amir - excess_amir_limit)
+    )
+    return fert_weight * ferti_reward_value + irrig_weight * irrig_reward_value - action_cost - excess_cost
 '''
 
 
@@ -102,7 +121,7 @@ def main() -> None:
     rewards_path = args.rewards_path
     text = rewards_path.read_text(encoding="utf-8")
     if "GYM_DSSAT_REWARD_COEF" in text and (
-        not args.patch_all_reward or "GYM_DSSAT_ALL_FERT_WEIGHT" in text
+        not args.patch_all_reward or "GYM_DSSAT_ALL_ANFER_EXCESS_COST" in text
     ):
         print(f"Already patched: {rewards_path}")
         return

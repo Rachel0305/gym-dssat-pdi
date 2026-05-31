@@ -1,0 +1,130 @@
+from stable_baselines3 import PPO
+from stable_baselines3.common.monitor import Monitor
+from stable_baselines3.common.callbacks import CheckpointCallback, EvalCallback
+from sb3_wrapper import GymDssatWrapper
+from gym_dssat_pdi.envs.utils import utils as dssat_utils
+import argparse
+import gym
+import os
+
+
+def parse_args():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--coef', type=float, default=1.0)
+    parser.add_argument('--penality', type=float, default=0.5)
+    parser.add_argument('--total-timesteps', type=int, default=10_000)
+    parser.add_argument('--eval-freq', type=int, default=1000)
+    parser.add_argument('--n-eval-episodes', type=int, default=10)
+    parser.add_argument('--output-dir', default='./output_hl/fertilization')
+    parser.add_argument('--log-dir', default='./logs_hl')
+    parser.add_argument('--tensorboard-log', default='./tensorboard/')
+    parser.add_argument('--seed', type=int, default=1234)
+    parser.add_argument('--train-seed', type=int, default=123)
+    parser.add_argument('--eval-seed', type=int, default=345)
+    parser.add_argument('--sb3-verbose', type=int, default=0)
+    parser.add_argument('--resume-model', default=None)
+    parser.add_argument('--checkpoint-freq', type=int, default=50000)
+    return parser.parse_args()
+
+
+def set_reward_env(coef, penality):
+    os.environ['GYM_DSSAT_REWARD_COEF'] = str(coef)
+    os.environ['GYM_DSSAT_REWARD_PENALITY'] = str(penality)
+
+
+if __name__ == '__main__':
+    args = parse_args()
+    set_reward_env(args.coef, args.penality)
+    env = None
+    eval_env = None
+    try:
+        for dir in ['./output_hl', args.output_dir, args.log_dir]:
+            dssat_utils.make_folder(dir)
+
+        # Create environment
+        env_args = {
+            'log_saving_path': f'{args.log_dir}/dssat_pdi_HL_fer_coef{args.coef}_pen{args.penality}.log',
+            'mode': 'fertilization',
+            'seed': args.seed,
+            'random_weather': False,           # 用固定天气，保持 False
+            # 'evaluation': True,
+            'fileX_template_path': './my_data/UFGA8201-HL.jinja2',  # sy专用模板
+            # 'fileX_template_path': None,
+
+            'experiment_number': 1,
+
+            'auxiliary_file_paths': [
+                './my_data/MZCER048.CUL',         # 禹城站的玉米品种参数（必须）
+                './my_data/CNHL0701.WTH',      # 禹城站2008年的天气文件
+                './my_data/HL.SOL',       # 禹城站的土壤文件（必须）
+            ],
+            'run_dssat_location': '/opt/dssat_pdi/run_dssat',
+        }
+
+
+        print(f'###########################\n## MODE: {env_args["mode"]} ##\n###########################')
+        print(f'## reward coef={args.coef}, penality={args.penality}')
+        print(f'## output_dir={args.output_dir}')
+
+        env = Monitor(GymDssatWrapper(gym.make('gym_dssat_pdi:GymDssatPdi-v0', **env_args).unwrapped))
+
+        unwrapped_env = env.unwrapped  # 剥掉 Monitor 和 GymDssatWrapper
+        reset_result = unwrapped_env.reset()
+        if isinstance(reset_result, tuple):
+            raw_obs, info = reset_result
+        else:
+            raw_obs = reset_result
+        print("底层原始 observation 是 dict，keys：", sorted(raw_obs.keys()))
+
+        # Training arguments for PPO agent
+        ppo_args = {
+            'seed': args.train_seed,  # seed training for reproducibility
+            'gamma': 0.99,
+        }
+
+        # Create or resume the agent
+        if args.resume_model:
+            print(f'Resuming PPO agent from: {args.resume_model}')
+            ppo_agent = PPO.load(
+                args.resume_model,
+                env=env,
+                verbose=args.sb3_verbose,
+                tensorboard_log=args.tensorboard_log,
+            )
+        else:
+            ppo_agent = PPO('MlpPolicy', env, verbose=args.sb3_verbose, tensorboard_log=args.tensorboard_log, **ppo_args)
+
+        # path to save best model found
+        path = args.output_dir
+
+        # eval callback
+        eval_env_args = {**env_args, 'seed': args.eval_seed}
+        eval_env = Monitor(GymDssatWrapper(gym.make('gym_dssat_pdi:GymDssatPdi-v0', **eval_env_args).unwrapped))
+        eval_callback = EvalCallback(eval_env,
+                                     eval_freq=args.eval_freq,
+                                     best_model_save_path=f'{path}',
+                                     deterministic=True,
+                                     n_eval_episodes=args.n_eval_episodes)
+        checkpoint_callback = CheckpointCallback(
+            save_freq=args.checkpoint_freq,
+            save_path=f'{path}/checkpoints',
+            name_prefix='ppo_checkpoint',
+            save_replay_buffer=False,
+            save_vecnormalize=False,
+        )
+
+        # Train
+        print('Training PPO agent...')
+        ppo_agent.learn(
+            total_timesteps=args.total_timesteps,
+            callback=[eval_callback, checkpoint_callback],
+            tb_log_name=f"PPO_dssat_coef{args.coef}_pen{args.penality}",
+            reset_num_timesteps=not bool(args.resume_model),
+        )
+        ppo_agent.save(f'{path}/final_model')
+        print('Training done')
+    finally:
+        if eval_env is not None:
+            eval_env.close()
+        if env is not None:
+            env.close()

@@ -27,6 +27,9 @@ def parse_args():
     parser.add_argument('--sb3-verbose', type=int, default=0)
     parser.add_argument('--resume-model', default=None)
     parser.add_argument('--checkpoint-freq', type=int, default=50000)
+    parser.add_argument('--ppo-n-steps', type=int, default=2048)
+    parser.add_argument('--ppo-batch-size', type=int, default=64)
+    parser.add_argument('--ppo-n-epochs', type=int, default=10)
     return parser.parse_args()
 
 
@@ -65,15 +68,15 @@ if __name__ == '__main__':
             'seed': args.seed,
             'random_weather': False,           # 用固定天气，保持 False
             # 'evaluation': True,
-            'fileX_template_path': './my_data/UFGA8201-HL.jinja2',  # sy专用模板
+            'fileX_template_path': './my_data/UFGA8201-HL.jinja2',  # 海伦专用模板
             # 'fileX_template_path': None,
 
             'experiment_number': 1,
 
             'auxiliary_file_paths': [
-                './my_data/MZCER048.CUL',         # 禹城站的玉米品种参数（必须）
-                './my_data/CNHL0701.WTH',      # 禹城站2008年的天气文件
-                './my_data/HL.SOL',       # 禹城站的土壤文件（必须）
+                './my_data/MZCER048.CUL',         # 海伦站的玉米品种参数（必须）
+                './my_data/CNHL0701.WTH',      # 海伦站2008年的天气文件
+                './my_data/HL.SOL',       # 海伦站的土壤文件（必须）
             ],
             'run_dssat_location': '/opt/dssat_pdi/run_dssat',
         }
@@ -98,6 +101,9 @@ if __name__ == '__main__':
         ppo_args = {
             'seed': args.train_seed,  # seed training for reproducibility
             'gamma': 0.99,
+            'n_steps': args.ppo_n_steps,
+            'batch_size': args.ppo_batch_size,
+            'n_epochs': args.ppo_n_epochs,
         }
 
         # Create or resume the agent

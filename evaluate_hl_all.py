@@ -204,6 +204,10 @@ def evaluate(
             while not done:
                 action = agent.predict(observation)[0]
                 raw_action = np.asarray(action, dtype=float).flatten()
+                raw_action_dict = {
+                    name: float(value)
+                    for name, value in zip(env.formator.action_names, raw_action)
+                }
                 real_action_dict = {}
                 try:
                     real_action_values = env.formator.denormalize_actions(raw_action)
@@ -261,8 +265,8 @@ def evaluate(
 
                 elif eval_args['mode'] == 'all':
 
-                    record['raw_action_anfer'] = float(raw_action[0]) if len(raw_action) > 0 else np.nan
-                    record['raw_action_amir'] = float(raw_action[1]) if len(raw_action) > 1 else np.nan
+                    record['raw_action_anfer'] = safe_float(raw_action_dict.get('anfer', np.nan))
+                    record['raw_action_amir'] = safe_float(raw_action_dict.get('amir', np.nan))
                     record['real_action_anfer'] = safe_float(real_action_dict.get('anfer', np.nan))
                     record['real_action_amir'] = safe_float(real_action_dict.get('amir', np.nan))
 

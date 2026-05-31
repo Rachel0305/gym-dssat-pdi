@@ -1,4 +1,5 @@
 import argparse
+import os
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -95,7 +96,7 @@ if __name__ == '__main__':
     print('###########################')
     print('Top-level keys:', history_dict.keys())
 
-    dssat_utils.make_folder(args.figure_dir)
+    os.makedirs(args.figure_dir, exist_ok=True)
     check_dap(history_dict)
 
     df_stages = get_growing_stage_occurences(history_dict)

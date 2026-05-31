@@ -62,7 +62,7 @@ ALL_REWARD = '''def all_reward(_previous_state, _next_state, _history, _cultivar
 
 
 def replace_function(text: str, name: str, replacement: str, next_name: str) -> str:
-    pattern = rf"def {name}\\([^\\n]*\\):.*?\\n\\ndef {next_name}\\("
+    pattern = rf"def {name}\([^\n]*\):.*?\n\ndef {next_name}\("
     match = re.search(pattern, text, flags=re.S)
     if not match:
         raise RuntimeError(f"Could not locate function block for {name} before {next_name}.")

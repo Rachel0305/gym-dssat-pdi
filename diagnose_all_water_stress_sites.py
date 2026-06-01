@@ -41,8 +41,8 @@ class ExpertAllAgent:
         self.irrigation_policy = {49: 10.0, 70: 10.0, 95: 10.0}
 
     def predict(self, obs, state=None, episode_start=None, deterministic=None):
-        flat_obs = np.concatenate(obs, axis=None)
-        dap = int(flat_obs[self.dap_index])
+        flat_obs = np.asarray(obs, dtype=float).flatten()
+        dap = int(flat_obs[self.dap_index]) if flat_obs.size > self.dap_index else 0
         action_by_name = {name: 0.0 for name in self.action_formator.action_names}
         if "anfer" in action_by_name:
             action_by_name["anfer"] = self.fertilization_policy.get(dap, 0.0)
@@ -97,9 +97,12 @@ def evaluate_site_agent(site: str, agent_name: str, env_args: dict, output_dir: 
             done = terminated or truncated
 
             obs = latest_observation(env)
+            if not obs:
+                obs_vars = getattr(env.unwrapped, "observation_variables", [])
+                obs = dict(zip(obs_vars, np.asarray(observation).flatten()))
             action = latest_action(env)
             dap = safe_float(obs.get("dap"))
-            if dap == 0:
+            if np.isnan(dap) or dap == 0:
                 continue
             rows.append(
                 {
@@ -107,6 +110,7 @@ def evaluate_site_agent(site: str, agent_name: str, env_args: dict, output_dir: 
                     "agent": agent_name,
                     "dap": dap,
                     "swfac": safe_float(obs.get("swfac")),
+                    "turfac": safe_float(obs.get("turfac")),
                     "nstres": safe_float(obs.get("nstres")),
                     "trnu": safe_float(obs.get("trnu")),
                     "topwt": safe_float(obs.get("topwt")),
@@ -146,6 +150,7 @@ def summarize_trace(site: str, agent_name: str, df: pd.DataFrame, env_args: dict
     prcp = crop_season_prcp(env_args["auxiliary_file_paths"][1], pdate, len(df) or 1)
     etcp = ETCP_FROM_DSSAT_485.get(site, np.nan)
     swfac = pd.to_numeric(df.get("swfac"), errors="coerce")
+    turfac = pd.to_numeric(df.get("turfac"), errors="coerce")
     nstres = pd.to_numeric(df.get("nstres"), errors="coerce")
     trnu = pd.to_numeric(df.get("trnu"), errors="coerce")
     grnwt = pd.to_numeric(df.get("grnwt"), errors="coerce")
@@ -169,6 +174,10 @@ def summarize_trace(site: str, agent_name: str, df: pd.DataFrame, env_args: dict
         "swfac_stress_days_gt_0.10": count_gt(swfac, 0.10),
         "max_swfac": swfac.max(skipna=True),
         "mean_swfac": swfac.mean(skipna=True),
+        "turfac_stress_days_gt_0.05": count_gt(turfac, 0.05),
+        "turfac_stress_days_gt_0.10": count_gt(turfac, 0.10),
+        "max_turfac": turfac.max(skipna=True),
+        "mean_turfac": turfac.mean(skipna=True),
         "nstres_days_gt_0.05": count_gt(nstres, 0.05),
         "max_nstres": nstres.max(skipna=True),
         "mean_nstres": nstres.mean(skipna=True),
@@ -180,7 +189,7 @@ def summarize_trace(site: str, agent_name: str, df: pd.DataFrame, env_args: dict
         "final_totir": final_totir.iloc[-1] if not final_totir.empty else np.nan,
         "template_irrigation_mm": parse_template_irrigation(env_args["fileX_template_path"]),
         "total_reward": pd.to_numeric(df.get("reward"), errors="coerce").sum(skipna=True),
-        "note": "maize post-processing uses 1-original_value, so larger swfac/nstres means stronger stress in this table",
+        "note": "maize post-processing uses 1-original_value, so larger swfac/nstres means stronger stress; turfac is saved only when safely exposed by the environment",
     }
 
 
@@ -226,7 +235,7 @@ def main() -> None:
     md = [
         "# All-mode Water/Nitrogen Stress Diagnostic Summary",
         "",
-        "`swfac` and `nstres` are available in maize `all` mode. Because the installed maize post-processing applies `1 - value`, larger values mean stronger stress in this table.",
+        "`swfac` and `nstres` are available in maize `all` mode. `turfac` is kept as a column and will be saved if a safe environment exposes it. Because the installed maize post-processing applies `1 - value` to maize stress variables, larger values mean stronger stress in this table.",
         "",
         "```text",
         summary_df.round(3).to_string(index=False),

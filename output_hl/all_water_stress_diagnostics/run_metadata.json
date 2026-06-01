@@ -1,0 +1,16 @@
+{
+  "YC": {
+    "mode": "all",
+    "seed": 123,
+    "random_weather": false,
+    "evaluation": false,
+    "fileX_template_path": "my_data/UFGA8201-YC.jinja2",
+    "experiment_number": 1,
+    "auxiliary_file_paths": [
+      "my_data/MZCER048.CUL",
+      "my_data/CNYC0801.WTH",
+      "my_data/YC.SOL"
+    ],
+    "run_dssat_location": "/opt/dssat_pdi/run_dssat"
+  }
+}

@@ -8,6 +8,7 @@ from pathlib import Path
 import gym
 import numpy as np
 import pandas as pd
+from stable_baselines3 import PPO
 
 from diagnose_water_stress_sites import (
     ETCP_FROM_DSSAT_485,
@@ -78,13 +79,28 @@ def make_agent(agent_name: str, env: GymDssatWrapper):
     raise ValueError(f"Unsupported agent for this diagnostic: {agent_name}")
 
 
-def evaluate_site_agent(site: str, agent_name: str, env_args: dict, output_dir: Path, max_steps: int) -> dict:
+def make_agent_with_model(agent_name: str, env: GymDssatWrapper, model_path: str | None):
+    if agent_name == "ppo":
+        if not model_path:
+            raise ValueError("--model-path is required when agents include ppo")
+        return PPO.load(model_path)
+    return make_agent(agent_name, env)
+
+
+def evaluate_site_agent(
+    site: str,
+    agent_name: str,
+    env_args: dict,
+    output_dir: Path,
+    max_steps: int,
+    model_path: str | None = None,
+) -> dict:
     source_env = gym.make("gym_dssat_pdi:GymDssatPdi-v0", **env_args)
     env = GymDssatWrapper(source_env.unwrapped)
     try:
         observation, _ = env.reset()
         print(f"    obs_vars={env.unwrapped.observation_variables}", flush=True)
-        agent = make_agent(agent_name, env)
+        agent = make_agent_with_model(agent_name, env, model_path)
         rows = []
         done = False
         step_count = 0
@@ -201,6 +217,7 @@ def main() -> None:
     parser.add_argument("--data-dir", default="./my_data")
     parser.add_argument("--run-dssat-location", default="/opt/dssat_pdi/run_dssat")
     parser.add_argument("--max-steps", type=int, default=260)
+    parser.add_argument("--model-path", default=None)
     args = parser.parse_args()
 
     sites = [value.strip().upper() for value in args.sites.split(",") if value.strip()]
@@ -224,7 +241,7 @@ def main() -> None:
         print(f"Running {site}: {env_args['fileX_template_path']}", flush=True)
         for agent_name in agents:
             print(f"  agent={agent_name}", flush=True)
-            summaries.append(evaluate_site_agent(site, agent_name, env_args, output_dir, args.max_steps))
+            summaries.append(evaluate_site_agent(site, agent_name, env_args, output_dir, args.max_steps, args.model_path))
 
     summary_df = pd.DataFrame(summaries)
     output_dir.mkdir(parents=True, exist_ok=True)

@@ -1,0 +1,12 @@
+{
+  "name": "safe60_20_pen15_icost15_ns20_nlim300_nex5_ilim120_iex10",
+  "penality": 15,
+  "amir_cost": 15,
+  "amir_no_stress_cost": 20,
+  "anfer_excess_limit": 300,
+  "anfer_excess_cost": 5,
+  "amir_excess_limit": 120,
+  "amir_excess_cost": 10,
+  "safe_anfer_cap": 60,
+  "safe_amir_cap": 20
+}

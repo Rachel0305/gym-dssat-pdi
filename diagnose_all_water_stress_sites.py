@@ -10,6 +10,7 @@ import numpy as np
 import pandas as pd
 from stable_baselines3 import PPO
 
+from sb3_safe_action_wrapper import SafeActionCaps, SafeActionGymDssatWrapper
 from diagnose_water_stress_sites import (
     ETCP_FROM_DSSAT_485,
     SITE_NAMES,
@@ -94,9 +95,17 @@ def evaluate_site_agent(
     output_dir: Path,
     max_steps: int,
     model_path: str | None = None,
+    safe_anfer_cap: float | None = None,
+    safe_amir_cap: float | None = None,
 ) -> dict:
     source_env = gym.make("gym_dssat_pdi:GymDssatPdi-v0", **env_args)
-    env = GymDssatWrapper(source_env.unwrapped)
+    if agent_name == "ppo" and (safe_anfer_cap is not None or safe_amir_cap is not None):
+        env = SafeActionGymDssatWrapper(
+            source_env.unwrapped,
+            SafeActionCaps(anfer=safe_anfer_cap, amir=safe_amir_cap),
+        )
+    else:
+        env = GymDssatWrapper(source_env.unwrapped)
     try:
         observation, _ = env.reset()
         print(f"    obs_vars={env.unwrapped.observation_variables}", flush=True)
@@ -218,6 +227,8 @@ def main() -> None:
     parser.add_argument("--run-dssat-location", default="/opt/dssat_pdi/run_dssat")
     parser.add_argument("--max-steps", type=int, default=260)
     parser.add_argument("--model-path", default=None)
+    parser.add_argument("--safe-anfer-cap", type=float, default=None)
+    parser.add_argument("--safe-amir-cap", type=float, default=None)
     args = parser.parse_args()
 
     sites = [value.strip().upper() for value in args.sites.split(",") if value.strip()]
@@ -241,7 +252,18 @@ def main() -> None:
         print(f"Running {site}: {env_args['fileX_template_path']}", flush=True)
         for agent_name in agents:
             print(f"  agent={agent_name}", flush=True)
-            summaries.append(evaluate_site_agent(site, agent_name, env_args, output_dir, args.max_steps, args.model_path))
+            summaries.append(
+                evaluate_site_agent(
+                    site,
+                    agent_name,
+                    env_args,
+                    output_dir,
+                    args.max_steps,
+                    args.model_path,
+                    args.safe_anfer_cap,
+                    args.safe_amir_cap,
+                )
+            )
 
     summary_df = pd.DataFrame(summaries)
     output_dir.mkdir(parents=True, exist_ok=True)

@@ -1,0 +1,16 @@
+{
+  "HL": {
+    "mode": "all",
+    "seed": 123,
+    "random_weather": false,
+    "evaluation": false,
+    "fileX_template_path": "my_data_rain_scaling/HL/scale0p6/UFGA8201-HL.jinja2",
+    "experiment_number": 1,
+    "auxiliary_file_paths": [
+      "my_data_rain_scaling/HL/scale0p6/MZCER048.CUL",
+      "my_data_rain_scaling/HL/scale0p6/CNHL0701.WTH",
+      "my_data_rain_scaling/HL/scale0p6/HL.SOL"
+    ],
+    "run_dssat_location": "/opt/dssat_pdi/run_dssat"
+  }
+}

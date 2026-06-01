@@ -1,0 +1,50 @@
+[
+  {
+    "name": "safe60_20_pen15_icost15_ns20_nlim300_nex5_ilim120_iex10",
+    "penality": 15,
+    "amir_cost": 15,
+    "amir_no_stress_cost": 20,
+    "anfer_excess_limit": 300,
+    "anfer_excess_cost": 5,
+    "amir_excess_limit": 120,
+    "amir_excess_cost": 10,
+    "safe_anfer_cap": 60,
+    "safe_amir_cap": 20
+  },
+  {
+    "name": "safe40_15_pen15_icost15_ns50_nlim250_nex10_ilim80_iex20",
+    "penality": 15,
+    "amir_cost": 15,
+    "amir_no_stress_cost": 50,
+    "anfer_excess_limit": 250,
+    "anfer_excess_cost": 10,
+    "amir_excess_limit": 80,
+    "amir_excess_cost": 20,
+    "safe_anfer_cap": 40,
+    "safe_amir_cap": 15
+  },
+  {
+    "name": "safe30_10_pen20_icost20_ns50_nlim220_nex15_ilim80_iex30",
+    "penality": 20,
+    "amir_cost": 20,
+    "amir_no_stress_cost": 50,
+    "anfer_excess_limit": 220,
+    "anfer_excess_cost": 15,
+    "amir_excess_limit": 80,
+    "amir_excess_cost": 30,
+    "safe_anfer_cap": 30,
+    "safe_amir_cap": 10
+  },
+  {
+    "name": "safe20_5_pen20_icost20_ns80_nlim180_nex20_ilim60_iex40",
+    "penality": 20,
+    "amir_cost": 20,
+    "amir_no_stress_cost": 80,
+    "anfer_excess_limit": 180,
+    "anfer_excess_cost": 20,
+    "amir_excess_limit": 60,
+    "amir_excess_cost": 40,
+    "safe_anfer_cap": 20,
+    "safe_amir_cap": 5
+  }
+]

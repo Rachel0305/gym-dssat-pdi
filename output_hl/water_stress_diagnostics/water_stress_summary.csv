@@ -1,0 +1,5 @@
+site,site_name,agent,template,weather,soil,pdate,n_days,PRCP_crop_period,ETCP_from_DSSAT485,PRCP_minus_ETCP,swfac_stress_days_gt_0.05,turfac_stress_days_gt_0.05,min_swfac,max_swfac,mean_swfac,mean_nstres,max_grnwt,total_irrigation_action,final_totir,template_irrigation_mm,total_reward,terminated_normally,max_steps
+FQ,Fengqiu,null,my_data/UFGA8201-FQ.jinja2,my_data/CNFQ0701.WTH,my_data/FQ.SOL,07162,102,413.6,344.0,69.60000000000002,0,0,,,,,7050.4742431640625,0.0,0.0,75.0,12883.515625,True,260
+FQ,Fengqiu,expert,my_data/UFGA8201-FQ.jinja2,my_data/CNFQ0701.WTH,my_data/FQ.SOL,07162,102,413.6,344.0,69.60000000000002,0,0,,,,,7028.9288330078125,29.999998211860657,29.999996185302734,75.0,12338.51809322834,True,260
+YC,YC,null,my_data/UFGA8201-YC.jinja2,my_data/CNYC0801.WTH,my_data/YC.SOL,08170,106,357.1,350.0,7.100000000000023,0,0,,,,,7409.7015380859375,0.0,0.0,120.0,17321.87744140625,True,260
+YC,YC,expert,my_data/UFGA8201-YC.jinja2,my_data/CNYC0801.WTH,my_data/YC.SOL,08170,106,357.1,350.0,7.100000000000023,0,0,,,,,7409.9395751953125,29.999998211860657,29.999996185302734,120.0,16877.147243618965,True,260

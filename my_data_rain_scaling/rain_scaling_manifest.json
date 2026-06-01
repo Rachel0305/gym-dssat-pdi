@@ -1,0 +1,62 @@
+[
+  {
+    "site": "HL",
+    "scale": 1.0,
+    "data_dir": "my_data_rain_scaling/HL/scale1",
+    "weather_file": "CNHL0701.WTH",
+    "copied_inputs": [
+      "my_data_rain_scaling/HL/scale1/UFGA8201-HL.jinja2",
+      "my_data_rain_scaling/HL/scale1/HL.SOL",
+      "my_data_rain_scaling/HL/scale1/MZCER048.CUL"
+    ],
+    "weather_source": "my_data/CNHL0701.WTH",
+    "weather_scaled": "my_data_rain_scaling/HL/scale1/CNHL0701.WTH",
+    "annual_rain_before": 428.0,
+    "annual_rain_after": 428.0
+  },
+  {
+    "site": "HL",
+    "scale": 0.8,
+    "data_dir": "my_data_rain_scaling/HL/scale0p8",
+    "weather_file": "CNHL0701.WTH",
+    "copied_inputs": [
+      "my_data_rain_scaling/HL/scale0p8/UFGA8201-HL.jinja2",
+      "my_data_rain_scaling/HL/scale0p8/HL.SOL",
+      "my_data_rain_scaling/HL/scale0p8/MZCER048.CUL"
+    ],
+    "weather_source": "my_data/CNHL0701.WTH",
+    "weather_scaled": "my_data_rain_scaling/HL/scale0p8/CNHL0701.WTH",
+    "annual_rain_before": 428.0,
+    "annual_rain_after": 342.4
+  },
+  {
+    "site": "HL",
+    "scale": 0.6,
+    "data_dir": "my_data_rain_scaling/HL/scale0p6",
+    "weather_file": "CNHL0701.WTH",
+    "copied_inputs": [
+      "my_data_rain_scaling/HL/scale0p6/UFGA8201-HL.jinja2",
+      "my_data_rain_scaling/HL/scale0p6/HL.SOL",
+      "my_data_rain_scaling/HL/scale0p6/MZCER048.CUL"
+    ],
+    "weather_source": "my_data/CNHL0701.WTH",
+    "weather_scaled": "my_data_rain_scaling/HL/scale0p6/CNHL0701.WTH",
+    "annual_rain_before": 428.0,
+    "annual_rain_after": 256.8
+  },
+  {
+    "site": "HL",
+    "scale": 0.4,
+    "data_dir": "my_data_rain_scaling/HL/scale0p4",
+    "weather_file": "CNHL0701.WTH",
+    "copied_inputs": [
+      "my_data_rain_scaling/HL/scale0p4/UFGA8201-HL.jinja2",
+      "my_data_rain_scaling/HL/scale0p4/HL.SOL",
+      "my_data_rain_scaling/HL/scale0p4/MZCER048.CUL"
+    ],
+    "weather_source": "my_data/CNHL0701.WTH",
+    "weather_scaled": "my_data_rain_scaling/HL/scale0p4/CNHL0701.WTH",
+    "annual_rain_before": 428.0,
+    "annual_rain_after": 171.2
+  }
+]

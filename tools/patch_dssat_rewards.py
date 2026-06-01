@@ -66,12 +66,16 @@ ALL_REWARD = '''def all_reward(_previous_state, _next_state, _history, _cultivar
 
     extra_anfer_cost = _reward_float('GYM_DSSAT_ALL_ANFER_COST', 0.0)
     extra_amir_cost = _reward_float('GYM_DSSAT_ALL_AMIR_COST', 0.0)
+    no_stress_amir_cost = _reward_float('GYM_DSSAT_ALL_AMIR_NO_STRESS_COST', 0.0)
+    water_stress_threshold = _reward_float('GYM_DSSAT_ALL_WATER_STRESS_THRESHOLD', 0.05)
     excess_anfer_limit = _reward_float('GYM_DSSAT_ALL_ANFER_EXCESS_LIMIT', 1e12)
     excess_amir_limit = _reward_float('GYM_DSSAT_ALL_AMIR_EXCESS_LIMIT', 1e12)
     excess_anfer_cost = _reward_float('GYM_DSSAT_ALL_ANFER_EXCESS_COST', 0.0)
     excess_amir_cost = _reward_float('GYM_DSSAT_ALL_AMIR_EXCESS_COST', 0.0)
 
-    action_cost = extra_anfer_cost * last_anfer + extra_amir_cost * last_amir
+    swfac = float(_next_state.get('swfac', 0.0))
+    no_stress_irrig_cost = no_stress_amir_cost * last_amir if swfac <= water_stress_threshold else 0.0
+    action_cost = extra_anfer_cost * last_anfer + extra_amir_cost * last_amir + no_stress_irrig_cost
     excess_cost = (
         excess_anfer_cost * max(0.0, total_anfer - excess_anfer_limit)
         + excess_amir_cost * max(0.0, total_amir - excess_amir_limit)
@@ -92,6 +96,18 @@ def replace_function(text: str, name: str, replacement: str, next_name: str) -> 
 def patch_text(text: str, patch_all_reward: bool) -> str:
     if "import os" not in text:
         text = text.replace("import numpy as np\n", "import numpy as np\nimport os\n", 1)
+
+    helper_pattern = (
+        r"\ndef _reward_float\(env_name, fallback\):\n"
+        r"    value = os\.environ\.get\(env_name\)\n"
+        r"    if value is None or value == \"\":\n"
+        r"        return fallback\n"
+        r"    try:\n"
+        r"        return float\(value\)\n"
+        r"    except ValueError:\n"
+        r"        return fallback\n"
+    )
+    text = re.sub(helper_pattern, "\n", text)
 
     text = replace_function(
         text=text,
@@ -116,12 +132,13 @@ def main() -> None:
     parser.add_argument("--rewards-path", type=Path, default=DEFAULT_REWARDS_PATH)
     parser.add_argument("--backup-suffix", default=".codex_backup")
     parser.add_argument("--patch-all-reward", action="store_true")
+    parser.add_argument("--force", action="store_true", help="Rewrite even when the requested patch markers already exist.")
     args = parser.parse_args()
 
     rewards_path = args.rewards_path
     text = rewards_path.read_text(encoding="utf-8")
-    if "GYM_DSSAT_REWARD_COEF" in text and (
-        not args.patch_all_reward or "GYM_DSSAT_ALL_ANFER_EXCESS_COST" in text
+    if not args.force and "GYM_DSSAT_REWARD_COEF" in text and (
+        not args.patch_all_reward or "GYM_DSSAT_ALL_AMIR_NO_STRESS_COST" in text
     ):
         print(f"Already patched: {rewards_path}")
         return

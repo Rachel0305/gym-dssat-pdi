@@ -1,0 +1,14 @@
+{
+  "name": "budget180_60_daily20_5_pen20",
+  "penality": 20,
+  "amir_cost": 20,
+  "amir_no_stress_cost": 80,
+  "anfer_excess_limit": 180,
+  "anfer_excess_cost": 20,
+  "amir_excess_limit": 60,
+  "amir_excess_cost": 40,
+  "safe_anfer_cap": 20,
+  "safe_amir_cap": 5,
+  "season_anfer_budget": 180,
+  "season_amir_budget": 60
+}

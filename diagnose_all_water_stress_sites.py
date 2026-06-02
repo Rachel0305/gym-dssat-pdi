@@ -10,7 +10,12 @@ import numpy as np
 import pandas as pd
 from stable_baselines3 import PPO
 
-from sb3_safe_action_wrapper import SafeActionCaps, SafeActionGymDssatWrapper
+from sb3_safe_action_wrapper import (
+    BudgetedSafeActionGymDssatWrapper,
+    SafeActionCaps,
+    SafeActionGymDssatWrapper,
+    SeasonalBudgetCaps,
+)
 from diagnose_water_stress_sites import (
     ETCP_FROM_DSSAT_485,
     SITE_NAMES,
@@ -97,9 +102,17 @@ def evaluate_site_agent(
     model_path: str | None = None,
     safe_anfer_cap: float | None = None,
     safe_amir_cap: float | None = None,
+    season_anfer_budget: float | None = None,
+    season_amir_budget: float | None = None,
 ) -> dict:
     source_env = gym.make("gym_dssat_pdi:GymDssatPdi-v0", **env_args)
-    if agent_name == "ppo" and (safe_anfer_cap is not None or safe_amir_cap is not None):
+    if agent_name == "ppo" and (season_anfer_budget is not None or season_amir_budget is not None):
+        env = BudgetedSafeActionGymDssatWrapper(
+            source_env.unwrapped,
+            SafeActionCaps(anfer=safe_anfer_cap, amir=safe_amir_cap),
+            SeasonalBudgetCaps(anfer=season_anfer_budget, amir=season_amir_budget),
+        )
+    elif agent_name == "ppo" and (safe_anfer_cap is not None or safe_amir_cap is not None):
         env = SafeActionGymDssatWrapper(
             source_env.unwrapped,
             SafeActionCaps(anfer=safe_anfer_cap, amir=safe_amir_cap),
@@ -229,6 +242,8 @@ def main() -> None:
     parser.add_argument("--model-path", default=None)
     parser.add_argument("--safe-anfer-cap", type=float, default=None)
     parser.add_argument("--safe-amir-cap", type=float, default=None)
+    parser.add_argument("--season-anfer-budget", type=float, default=None)
+    parser.add_argument("--season-amir-budget", type=float, default=None)
     args = parser.parse_args()
 
     sites = [value.strip().upper() for value in args.sites.split(",") if value.strip()]
@@ -262,6 +277,8 @@ def main() -> None:
                     args.model_path,
                     args.safe_anfer_cap,
                     args.safe_amir_cap,
+                    args.season_anfer_budget,
+                    args.season_amir_budget,
                 )
             )
 

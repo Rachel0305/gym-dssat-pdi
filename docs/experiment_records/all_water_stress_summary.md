@@ -1,0 +1,8 @@
+# All-mode Water/Nitrogen Stress Diagnostic Summary
+
+`swfac`, `turfac`, and `nstres` are available in maize `all` mode after applying the turfac patch. Because the installed maize post-processing applies `1 - value`, larger values mean stronger stress in this table.
+
+```text
+site site_name agent mode                   template              weather           soil PDATE  n_days  PRCP  ETCP  PRCP_minus_ETCP  swfac_stress_days_gt_0.05  swfac_stress_days_gt_0.10  max_swfac  mean_swfac  turfac_stress_days_gt_0.05  turfac_stress_days_gt_0.10  max_turfac  mean_turfac  nstres_days_gt_0.05  max_nstres  mean_nstres  mean_trnu  final_trnu  max_grnwt  total_anfer  total_amir  final_totir  template_irrigation_mm  total_reward                                                                                                           note  terminated_normally  max_steps
+  SY  Shenyang  null  all my_data/UFGA8201-SY.jinja2 my_data/CNSY1201.WTH my_data/SY.SOL 12133     135 659.3 428.0            231.3                          0                          0        0.0         0.0                           0                           0         NaN          NaN                   89       0.381        0.185        NaN         NaN   3394.855          0.0         0.0          0.0                     0.0      6129.224 maize post-processing uses 1-original_value, so larger swfac/turfac/nstres means stronger stress in this table                 True        260
+```

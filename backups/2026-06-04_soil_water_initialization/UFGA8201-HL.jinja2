@@ -1,4 +1,4 @@
-*EXP.DETAILS: CNSY1201MZ CNSY
+*EXP.DETAILS: CNHL0701MZ CNHL
 
 *GENERAL
 @PEOPLE
@@ -10,43 +10,47 @@
 
 *TREATMENTS                        -------------FACTOR LEVELS------------
 @N R O C TNAME.................... CU FL SA IC MP MI MF MR MC MT ME MH SM
- 1 1 1 0 Sim2012                    1  1  0  0  1  0  0  0  0  0  0  0  1
+ 1 1 1 0 Sim2007                    1  1  0  0  1  1  1  0  0  0  0  0  1
 
 *CULTIVARS
 @C CR INGENO CNAME
- 1 MZ FY0985 Fuyou    No009
+ 1 MZ HY0006 Haiyu    No006
 
 *FIELDS
 @L ID_FIELD WSTA....  FLSA  FLOB  FLDT  FLDD  FLDS  FLST SLTX  SLDP  ID_SOIL    FLNAME
- 1 CNSY2012 CNSY1201   -99   -99   -99   -99   -99   -99 -99    -99  SY99001200 2012
+ 1 CNHL2007 CNHL0701   -99   -99   -99   -99   -99   -99 -99    -99  HL99001200 2007
 @L ...........XCRD ...........YCRD .....ELEV .............AREA .SLEN .FLWR .SLAS FLHST FHDUR
  1             -99             -99       -99               -99   -99   -99   -99   -99   -99
 
 *INITIAL CONDITIONS
 @C   PCR ICDAT  ICRT  ICND  ICRN  ICRE  ICWD ICRES ICREN ICREP ICRIP ICRID ICNAME
- 1    MZ 07121   100     0     1     1   -99  1000    .8     0   100    15 -99
+ 1    MZ 07121   100     0     1     1   -99     0     0     0   100    15 -99
 @C  ICBL  SH2O  SNH4  SNO3
- 1    10  0.27  4.57  2.60
- 1    20  0.24  4.55  2.62
- 1    30  0.24  4.07  2.54
- 1    40  0.24  4.05  2.52
- 1    60  0.23  3.82  2.00
- 1   100  0.25  -99    -99 
+ 1    20  0.30  22.7  10.1
+ 1    40  0.30  10.8  11.3
+ 1    60  0.30  15.1  12.5
+ 1    90  0.30  8.20  8.10
 
 *PLANTING DETAILS
 @P PDATE EDATE  PPOP  PPOE  PLME  PLDS  PLRS  PLRD  PLDP  PLWT  PAGE  PENV  PLPH  SPRL                        PLNAME
- 1 12133 12144   4.4   -99     S     R    50     0     5   -99   -99   -99   -99   -99                        2012
+ 1 07125 07142     5   -99     S     R    50     0     5   -99   -99   -99   -99   -99                        2007
+
+*IRRIGATION AND WATER MANAGEMENT
+@I  EFIR  IDEP  ITHR  IEPT  IOFF  IAME  IAMT IRNAME
+ 1     1    30    50   100 GS000 IR001    10 2007
+ 
+@I IDATE  IROP IRVAL
+ 1 07174 IR003    10
+ 1 07195 IR003    10
+ 1 07220 IR003    10
 
 *FERTILIZERS (INORGANIC)
 @F FDATE  FMCD  FACD  FDEP  FAMN  FAMP  FAMK  FAMC  FAMO  FOCD FERNAME
- 1 12111 FE005 AP002     5    46     0     0   -99   -99   -99 2012
- 1 12111 FE016 AP002     5     0     0    62   -99   -99   -99 2012
- 1 12111 FE006 AP002     5    29    33   -99   -99   -99   -99 2012
- 1 12173 FE005 AP001     5   172     0     0   -99   -99   -99 2012
+ 1 07125 FE005 AP002     0     0   -99   -99   -99   -99   -99 2007
 
 *SIMULATION CONTROLS
 @N GENERAL     NYERS NREPS START SDATE RSEED SNAME.................... SMODEL
- 1 GE              1     1     S 12092  2150 2012
+ 1 GE              1     1     S 07121  2150 2007
 @N OPTIONS     WATER NITRO SYMBI PHOSP POTAS DISES  CHEM  TILL   CO2
  1 OP              Y     Y     Y     N     N     N     N     Y     M
 @N METHODS     WTHER INCON LIGHT EVAPO INFIL PHOTO HYDRO NSWIT MESOM MESEV MESOL

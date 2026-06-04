@@ -1,0 +1,9 @@
+﻿variable,source_file,source_column,rows_after_filter,invalid_dates,numeric_missing_before_fill,rain_blank_to_zero,stations_found,year_min,year_max
+SRAD,D32.xls,总辐射总量(MJ/m^2),35064,0,2768,0,"FQA,HLA,LCA,YCA",2000,2023
+TMAX,T2.xls,日最大值(℃),35064,0,1191,0,"FQA,HLA,LCA,YCA",2000,2023
+TMIN,T2.xls,日最小值(℃),35064,0,1192,0,"FQA,HLA,LCA,YCA",2000,2023
+RAIN,HLLCYCFQ降雨数据.xls,20-20合计(mm),35064,0,0,52415,"FQA,HLA,LCA,YCA",2000,2023
+SRAD,SYCS自动气象站观测逐日太阳辐射总量及其累计值.xls.xls,总辐射总量(MJ/m^2),8400,0,584,0,SYA,2001,2023
+TMAX,SYCS自动气象站观测逐日气温.xls,日最大值(℃),8400,0,450,0,SYA,2001,2023
+TMIN,SYCS自动气象站观测逐日气温.xls,日最小值(℃),8400,0,450,0,SYA,2001,2023
+RAIN,SYCS人工大气观测降雨蒸发能见度日值.xls,20-20合计(mm),8400,0,0,15266,SYA,2001,2023

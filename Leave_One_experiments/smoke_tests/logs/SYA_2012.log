@@ -1,0 +1,274 @@
+Client started
+Client closed
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RUN    TRT FLO MAT TOPWT HARWT  RAIN  TIRR   CET  PESW  TNUP  TNLF   TSON TSOC
+           dap dap kg/ha kg/ha    mm    mm    mm    mm kg/ha kg/ha  kg/ha t/ha
+  1 MZ   1  81 130  4875  2693   688     0   369   244    55    10  12758  201
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RUN    TRT FLO MAT TOPWT HARWT  RAIN  TIRR   CET  PESW  TNUP  TNLF   TSON TSOC
+           dap dap kg/ha kg/ha    mm    mm    mm    mm kg/ha kg/ha  kg/ha t/ha
+  1 MZ   1  81 130  4875  2693   688     0   369   244    55    10  12758  201
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RUN    TRT FLO MAT TOPWT HARWT  RAIN  TIRR   CET  PESW  TNUP  TNLF   TSON TSOC
+           dap dap kg/ha kg/ha    mm    mm    mm    mm kg/ha kg/ha  kg/ha t/ha
+  1 MZ   1  81 130  4875  2693   688     0   369   244    55    10  12758  201
+ EFFECTIVE EARLY STOPPING
+
+********************************
+2026/06/05 15:38:42.275061
+********************************
+At line 230 of file /home/gymdev/gym_dssat_pdi/dssat-pdi-4.8.0.24+2~a4ae650/Management/FertType_mod.for
+Fortran runtime error: Index '0' of dimension 1 of array 'fertfile' below lower bound of 1
+
+Error termination. Backtrace:
+#0  0x700415497960 in ???
+#1  0x7004154984d9 in ???
+#2  0x700415498ad6 in ???
+#3  0x62afd67c602a in ???
+#4  0x62afd67cad4d in ???
+#5  0x62afd6417ed8 in ???
+#6  0x62afd63852c3 in ???
+#7  0x62afd63775d8 in ???
+#8  0x70041506ed8f in ???
+#9  0x70041506ee3f in ???
+#10  0x62afd6377604 in ???
+#11  0xffffffffffffffff in ???
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RUN    TRT FLO MAT TOPWT HARWT  RAIN  TIRR   CET  PESW  TNUP  TNLF   TSON TSOC
+           dap dap kg/ha kg/ha    mm    mm    mm    mm kg/ha kg/ha  kg/ha t/ha
+  1 MZ   1  81 130  4875  2693   688     0   369   244    55    10  12758  201
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RUN    TRT FLO MAT TOPWT HARWT  RAIN  TIRR   CET  PESW  TNUP  TNLF   TSON TSOC
+           dap dap kg/ha kg/ha    mm    mm    mm    mm kg/ha kg/ha  kg/ha t/ha
+  1 MZ   1  81 130  4875  2693   688     0   369   244    55    10  12758  201
+Client started
+At line 230 of file /home/gymdev/gym_dssat_pdi/dssat-pdi-4.8.0.24+2~a4ae650/Management/FertType_mod.for
+Fortran runtime error: Index '0' of dimension 1 of array 'fertfile' below lower bound of 1
+
+Error termination. Backtrace:
+#0  0x7343bccda960 in ???
+#1  0x7343bccdb4d9 in ???
+#2  0x7343bccdbad6 in ???
+#3  0x5b43ac66c02a in ???
+#4  0x5b43ac670d4d in ???
+#5  0x5b43ac2bded8 in ???
+#6  0x5b43ac22b2c3 in ???
+#7  0x5b43ac21d5d8 in ???
+#8  0x7343bc8b1d8f in ???
+#9  0x7343bc8b1e3f in ???
+#10  0x5b43ac21d604 in ???
+#11  0xffffffffffffffff in ???
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RUN    TRT FLO MAT TOPWT HARWT  RAIN  TIRR   CET  PESW  TNUP  TNLF   TSON TSOC
+           dap dap kg/ha kg/ha    mm    mm    mm    mm kg/ha kg/ha  kg/ha t/ha
+  1 MZ   1  81 130  4875  2693   688     0   369   244    55    10  12758  201
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RUN    TRT FLO MAT TOPWT HARWT  RAIN  TIRR   CET  PESW  TNUP  TNLF   TSON TSOC
+           dap dap kg/ha kg/ha    mm    mm    mm    mm kg/ha kg/ha  kg/ha t/ha
+  1 MZ   1  81 130  4875  2693   688     0   369   244    55    10  12758  201
+Client started
+At line 230 of file /home/gymdev/gym_dssat_pdi/dssat-pdi-4.8.0.24+2~a4ae650/Management/FertType_mod.for
+Fortran runtime error: Index '0' of dimension 1 of array 'fertfile' below lower bound of 1
+
+Error termination. Backtrace:
+#0  0x7fc1dce48960 in ???
+#1  0x7fc1dce494d9 in ???
+#2  0x7fc1dce49ad6 in ???
+#3  0x61f563b9602a in ???
+#4  0x61f563b9ad4d in ???
+#5  0x61f5637e7ed8 in ???
+#6  0x61f5637552c3 in ???
+#7  0x61f5637475d8 in ???
+#8  0x7fc1dca1fd8f in ???
+#9  0x7fc1dca1fe3f in ???
+#10  0x61f563747604 in ???
+#11  0xffffffffffffffff in ???
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RUN    TRT FLO MAT TOPWT HARWT  RAIN  TIRR   CET  PESW  TNUP  TNLF   TSON TSOC
+           dap dap kg/ha kg/ha    mm    mm    mm    mm kg/ha kg/ha  kg/ha t/ha
+  1 MZ   1  81 130  4875  2693   688     0   369   244    55    10  12758  201
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RUN    TRT FLO MAT TOPWT HARWT  RAIN  TIRR   CET  PESW  TNUP  TNLF   TSON TSOC
+           dap dap kg/ha kg/ha    mm    mm    mm    mm kg/ha kg/ha  kg/ha t/ha
+  1 MZ   1  81 130  4875  2693   688     0   369   244    55    10  12758  201
+Client started

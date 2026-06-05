@@ -1,0 +1,15 @@
+﻿station_code,station_name,year,planting_date,silking_date,mature_date,harvest_date,planting_yyddd,silking_yyddd,mature_yyddd,harvest_yyddd,planting_to_silking_days,silking_to_mature_days,mature_to_harvest_days,planting_to_mature_days,planting_to_harvest_days,phenology_qc_flag,source,note
+FQA,Fengqiu,2008,2008-06-10,2008-08-07,2008-09-20,2008-09-20,08162,08220,08264,08264,58,44,0,102,102,pass,experiment_record,measured
+FQA,Fengqiu,2010,2010-06-10,2010-08-10,2010-09-12,2010-09-26,10161,10222,10255,10269,61,33,14,94,108,pass,experiment_record,measured
+HLA,Hailun,2007,2007-05-05,2007-07-26,2007-09-24,2007-10-03,07125,07207,07267,07276,82,60,9,142,151,pass,experiment_record,measured
+HLA,Hailun,2009,2009-05-02,2009-07-26,2009-09-28,2009-10-02,09122,09207,09271,09275,85,64,4,149,153,pass,experiment_record,measured
+HLA,Hailun,2011,2011-05-05,2011-07-24,2011-09-20,2011-09-23,11125,11205,11263,11266,80,58,3,138,141,pass,experiment_record,measured
+LCA,Luancheng,2008,2008-06-19,2008-08-04,2008-09-29,2008-10-02,08171,08217,08273,08276,46,56,3,102,105,pass,experiment_record,measured
+LCA,Luancheng,2009,2009-06-14,2009-08-05,2009-09-23,2009-09-23,09165,09217,09266,09266,52,49,0,101,101,pass,experiment_record,measured
+LCA,Luancheng,2010,2010-06-06,2010-08-06,2010-09-25,2010-09-27,10157,10218,10268,10270,61,50,2,111,113,pass,experiment_record,measured
+LCA,Luancheng,2011,2011-06-15,2011-08-22,2011-09-26,2011-09-27,11166,11234,11269,11270,68,35,1,103,104,pass,experiment_record,measured
+SYA,Shenyang,2012,2012-04-28,2012-07-20,2012-09-06,2012-09-06,12119,12202,12250,12250,83,48,0,131,131,pass,experiment_record,measured;duplicate_conflict_selected_latest_harvest
+SYA,Shenyang,2014,2014-04-21,2014-07-16,2014-09-09,2014-09-15,14111,14197,14252,14258,86,55,6,141,147,pass,experiment_record,measured;duplicate_exact_rows_removed
+SYA,Shenyang,2015,2015-04-18,2015-07-18,2015-09-16,2015-09-22,15108,15199,15259,15265,91,60,6,151,157,pass,experiment_record,measured;duplicate_exact_rows_removed
+YCA,Yucheng,2008,2008-06-18,2008-08-16,2008-09-24,2008-09-26,08170,08229,08268,08270,59,39,2,98,100,pass,experiment_record,measured
+YCA,Yucheng,2014,2014-06-17,2014-08-10,2014-09-28,2014-10-02,14168,14222,14271,14275,54,49,4,103,107,pass,experiment_record,measured

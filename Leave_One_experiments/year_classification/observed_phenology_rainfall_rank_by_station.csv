@@ -1,0 +1,15 @@
+﻿station_code,station_name,year,harvest_window_rain_mm,mature_window_rain_mm,observed_rain_rank,observed_rain_label,station_observed_year_count,station_observed_rain_range_mm,can_use_relative_low_mid_high,dry_normal_wet_candidate_advice,recommended_next_step
+FQA,Fengqiu,2008,221.8,221.8,rank_1_lower,observed_lower_rain_year,2,140.5,limited,do_not_call_dry_normal_wet,historical_weather_substitution_scenario;rainfall_scaling_sensitivity_scenario
+FQA,Fengqiu,2010,362.3,353.4,rank_2_higher,observed_higher_rain_year,2,140.5,limited,do_not_call_dry_normal_wet,historical_weather_substitution_scenario;rainfall_scaling_sensitivity_scenario
+HLA,Hailun,2007,345.6,339.4,rank_1,observed_low_rain_year,3,143.9,yes,relative_candidates_only,observed_year_smoke_test
+HLA,Hailun,2011,479.2,479.2,rank_2,observed_mid_rain_year,3,143.9,yes,relative_candidates_only,observed_year_smoke_test
+HLA,Hailun,2009,489.5,486.9,rank_3,observed_high_rain_year,3,143.9,yes,relative_candidates_only,observed_year_smoke_test
+LCA,Luancheng,2010,288.5,288.5,rank_1,observed_low_rain_year,4,128.6,yes,relative_candidates_only,observed_year_smoke_test
+LCA,Luancheng,2011,300.9,300.9,rank_2,observed_mid_rain_year,4,128.6,yes,relative_candidates_only,observed_year_smoke_test
+LCA,Luancheng,2008,357.1,357.1,rank_3,observed_intermediate_rain_year_3,4,128.6,yes,relative_candidates_only,observed_year_smoke_test
+LCA,Luancheng,2009,417.1,417.1,rank_4,observed_high_rain_year,4,128.6,yes,relative_candidates_only,observed_year_smoke_test
+SYA,Shenyang,2014,331.8,329.8,rank_1,observed_low_rain_year,3,317.6,yes,relative_candidates_only,observed_year_smoke_test
+SYA,Shenyang,2015,424.1,420.1,rank_2,observed_mid_rain_year,3,317.6,yes,relative_candidates_only,observed_year_smoke_test
+SYA,Shenyang,2012,649.4,649.4,rank_3,observed_high_rain_year,3,317.6,yes,relative_candidates_only,observed_year_smoke_test
+YCA,Yucheng,2014,211.7,210.7,rank_1_lower,observed_lower_rain_year,2,135.2,limited,do_not_call_dry_normal_wet,historical_weather_substitution_scenario;rainfall_scaling_sensitivity_scenario
+YCA,Yucheng,2008,346.9,345.0,rank_2_higher,observed_higher_rain_year,2,135.2,limited,do_not_call_dry_normal_wet,historical_weather_substitution_scenario;rainfall_scaling_sensitivity_scenario

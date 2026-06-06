@@ -1,0 +1,2 @@
+﻿station,train_year,train_year_label,validation_years,seed,total_timesteps,model_path,evaluation_summary_path,debug
+HLA,2007,observed_low_rain_year,"2011,2009",0,1000,Leave_One_experiments/ppo_action_debug/models/HLA/HLA_train2007_seed0_action_safe_debug.zip,Leave_One_experiments/ppo_action_debug/evaluation/ppo_evaluation_summary.csv,True

@@ -9,14 +9,6 @@ import pandas as pd
 from ppo_experiment_plan import find_year
 from ppo_plot_results import plot_episode
 from ppo_safe_rendering import PROJECT_ROOT, build_env_args, ensure_project_on_path
-from ppo_action_safety import (
-    ActionSafetyState,
-    SafeActionWrapper,
-    apply_action_safety,
-    denormalize_action,
-    normalize_action,
-    update_action_safety_state,
-)
 
 
 def scalar(value, default=np.nan):
@@ -52,7 +44,7 @@ def normalized_action_dict(env, normalized_action) -> dict[str, float]:
     return {name: float(value) for name, value in zip(env.formator.action_names, arr)}
 
 
-def make_env(config: dict, station: str, year: int, seed: int, run_tag: str, evaluation: bool = True, action_safety_enabled: bool | None = None):
+def make_env(config: dict, station: str, year: int, seed: int, run_tag: str, evaluation: bool = True):
     ensure_project_on_path()
     import gym
     from sb3_wrapper import GymDssatWrapper
@@ -68,12 +60,7 @@ def make_env(config: dict, station: str, year: int, seed: int, run_tag: str, eva
         evaluation=evaluation,
         mode=config.get("runtime", {}).get("mode", "all"),
     )
-    env = GymDssatWrapper(gym.make("gym_dssat_pdi:GymDssatPdi-v0", **env_args).unwrapped)
-    safety = config.get("action_safety", {})
-    enabled = bool(safety.get("enabled", False)) if action_safety_enabled is None else bool(action_safety_enabled)
-    if enabled:
-        env = SafeActionWrapper(env, {**safety, "enabled": True})
-    return env
+    return GymDssatWrapper(gym.make("gym_dssat_pdi:GymDssatPdi-v0", **env_args).unwrapped)
 
 
 def evaluate_model(
@@ -87,15 +74,12 @@ def evaluate_model(
     seed: int,
     model_path: Path,
     policy_name: str,
-    action_safety_enabled: bool | None = None,
 ) -> dict:
     output_root = PROJECT_ROOT / config["paths"]["output_root"]
-    env = make_env(config, station, eval_year, seed, run_tag=f"{policy_name}_eval{eval_year}", evaluation=True, action_safety_enabled=False)
+    env = make_env(config, station, eval_year, seed, run_tag=f"{policy_name}_eval{eval_year}", evaluation=True)
     records: list[dict] = []
     cumulative_irrig = 0.0
     cumulative_n = 0.0
-    safety_state = ActionSafetyState()
-    safety_config = {**config.get("action_safety", {}), "enabled": bool(config.get("action_safety", {}).get("enabled", False) if action_safety_enabled is None else action_safety_enabled)}
     try:
         obs, info = env.reset()
         done = False
@@ -107,18 +91,13 @@ def evaluate_model(
             action, _ = model.predict(obs, deterministic=True)
             action = np.asarray(action, dtype=np.float32).flatten()
             action = np.clip(action, -1.0, 1.0)
-            action_names = env.formator.action_names
-            action_space_dict = env.formator.action_space_dict
-            raw_real_action = denormalize_action(action_names, action_space_dict, action)
-            safety_result = apply_action_safety(raw_real_action, dap, safety_state, safety_config)
-            safe_action = normalize_action(action_names, action_space_dict, safety_result.safe_real_action)
-            norm_action = normalized_action_dict(env, safe_action)
-            obs, reward, terminated, truncated, info = env.step(safe_action)
+            real_action = denormalized_action_dict(env, action)
+            norm_action = normalized_action_dict(env, action)
+            obs, reward, terminated, truncated, info = env.step(action)
             done = bool(terminated or truncated)
             latest = latest_observation_dict(env, obs, info)
-            update_action_safety_state(safety_state, safety_result.safe_real_action, dap)
-            real_amir = float(safety_result.safe_real_action.get("amir", 0.0))
-            real_anfer = float(safety_result.safe_real_action.get("anfer", 0.0))
+            real_amir = float(real_action.get("amir", 0.0))
+            real_anfer = float(real_action.get("anfer", 0.0))
             cumulative_irrig += real_amir
             cumulative_n += real_anfer
             date = pd.Timestamp(year_info["planting_date"]) + pd.Timedelta(days=max(dap - 1, 0))
@@ -150,15 +129,6 @@ def evaluate_model(
                     "real_action_anfer": real_anfer,
                     "normalized_action_amir": norm_action.get("amir", np.nan),
                     "normalized_action_anfer": norm_action.get("anfer", np.nan),
-                    "raw_real_action_amir": float(safety_result.raw_real_action.get("amir", 0.0)),
-                    "raw_real_action_anfer": float(safety_result.raw_real_action.get("anfer", 0.0)),
-                    "safe_real_action_amir": real_amir,
-                    "safe_real_action_anfer": real_anfer,
-                    "action_clipped_amir": safety_result.action_clipped_amir,
-                    "action_clipped_anfer": safety_result.action_clipped_anfer,
-                    "season_irrigation_so_far": safety_result.season_irrigation_so_far,
-                    "season_n_so_far": safety_result.season_n_so_far,
-                    "safety_rule_triggered": safety_result.safety_rule_triggered,
                     "done": done,
                     "info": json.dumps(info, ensure_ascii=False, default=str),
                 }

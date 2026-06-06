@@ -1,0 +1,13 @@
+{
+  "started_at": "2026-06-06 05:09:59",
+  "config_path": "experiments/ppo_observed_years/config_ppo_action_safe_site_training.yaml",
+  "plan_path": "Leave_One_experiments/ppo_action_safe_site_training/configs/action_safe_site_training_plan.csv",
+  "total_timesteps_per_model": 5000,
+  "jobs_total": 10,
+  "jobs_completed": 10,
+  "stopped": false,
+  "stop_reason": "",
+  "last_policy": "LCA_train2009_seed0_action_safe",
+  "finished_at": "2026-06-06 05:22:35",
+  "best_policy_by_site_path": "Leave_One_experiments/ppo_action_safe_site_training/strategy_selection/best_policy_by_site.csv"
+}

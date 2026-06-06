@@ -92,14 +92,7 @@ def run_pretrain_smoke_check(config: dict, station: str, train_year: int, seed: 
                 }
             )
     out = smoke_root / "pretrain_smoke_check_summary.csv"
-    new = pd.DataFrame(rows)
-    if out.exists():
-        old = pd.read_csv(out)
-        df = pd.concat([old, new], ignore_index=True)
-        df = df.drop_duplicates(["station", "train_year", "policy_name"], keep="last")
-    else:
-        df = new
-    df.to_csv(out, index=False, encoding="utf-8-sig")
+    pd.DataFrame(rows).to_csv(out, index=False, encoding="utf-8-sig")
     ok = all(row["run_status"] == "ok" and bool(row["episode_completed"]) for row in rows)
     return ok, out
 
@@ -118,15 +111,8 @@ def train_one_policy(
     output_root = PROJECT_ROOT / config["paths"]["output_root"]
     train_info = find_year(config, station, train_year)
     safety_enabled = bool(config.get("action_safety", {}).get("enabled", False))
-    if debug and safety_enabled:
-        suffix = "_action_safe_debug"
-    elif debug:
-        suffix = "_debug"
-    elif safety_enabled:
-        suffix = "_action_safe"
-    else:
-        suffix = ""
-    policy_name = f"{station}_train{train_year}_seed{seed}{suffix}"
+    debug_suffix = "_action_safe_debug" if debug and safety_enabled else ("_debug" if debug else "")
+    policy_name = f"{station}_train{train_year}_seed{seed}{debug_suffix}"
     if config.get("safety", {}).get("run_pretrain_smoke_check", True):
         smoke_ok, smoke_summary = run_pretrain_smoke_check(config, station, train_year, seed)
         if not smoke_ok:

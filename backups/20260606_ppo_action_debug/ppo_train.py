@@ -110,19 +110,18 @@ def train_one_policy(
     config = load_yaml(config_path)
     output_root = PROJECT_ROOT / config["paths"]["output_root"]
     train_info = find_year(config, station, train_year)
-    safety_enabled = bool(config.get("action_safety", {}).get("enabled", False))
-    debug_suffix = "_action_safe_debug" if debug and safety_enabled else ("_debug" if debug else "")
-    policy_name = f"{station}_train{train_year}_seed{seed}{debug_suffix}"
+    policy_name = f"{station}_train{train_year}_seed{seed}" + ("_debug" if debug else "")
     if config.get("safety", {}).get("run_pretrain_smoke_check", True):
         smoke_ok, smoke_summary = run_pretrain_smoke_check(config, station, train_year, seed)
         if not smoke_ok:
             raise RuntimeError(f"pretrain smoke check failed: {smoke_summary}")
-    env = make_env(config, station, train_year, seed, run_tag=f"{policy_name}_train", evaluation=False, action_safety_enabled=safety_enabled)
+    env = make_env(config, station, train_year, seed, run_tag=f"{policy_name}_train", evaluation=False)
     model_dir = output_root / "models" / station
     model_dir.mkdir(parents=True, exist_ok=True)
     tensorboard_dir = output_root / "tensorboard" / station
     tensorboard_dir.mkdir(parents=True, exist_ok=True)
-    model_path = model_dir / policy_name
+    model_stem = f"{station}_train{train_year}_seed{seed}" + ("_debug" if debug else "")
+    model_path = model_dir / model_stem
     try:
         model = PPO(
             "MlpPolicy",
@@ -155,7 +154,6 @@ def train_one_policy(
                 seed=seed,
                 model_path=saved_model_path,
                 policy_name=policy_name,
-                action_safety_enabled=safety_enabled,
             )
         )
     evaluation_summary = append_evaluation_rows(eval_rows, config)
@@ -192,11 +190,10 @@ def main() -> None:
     parser.add_argument("--train-year", type=int, required=True)
     parser.add_argument("--seed", type=int, default=0)
     parser.add_argument("--timesteps", type=int, default=1000)
-    parser.add_argument("--config", default=str(DEFAULT_CONFIG))
     parser.add_argument("--debug", action="store_true")
     args = parser.parse_args()
     try:
-        result = train_one_policy(args.station, args.train_year, args.seed, args.timesteps, config_path=Path(args.config), debug=args.debug)
+        result = train_one_policy(args.station, args.train_year, args.seed, args.timesteps, debug=args.debug)
         print(result["model_path"].relative_to(PROJECT_ROOT))
         print(result["evaluation_summary"].relative_to(PROJECT_ROOT))
     except Exception as exc:

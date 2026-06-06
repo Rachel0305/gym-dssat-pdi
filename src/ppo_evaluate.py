@@ -88,6 +88,7 @@ def evaluate_model(
     model_path: Path,
     policy_name: str,
     action_safety_enabled: bool | None = None,
+    row_metadata: dict | None = None,
 ) -> dict:
     output_root = PROJECT_ROOT / config["paths"]["output_root"]
     env = make_env(config, station, eval_year, seed, run_tag=f"{policy_name}_eval{eval_year}", evaluation=True, action_safety_enabled=False)
@@ -163,6 +164,8 @@ def evaluate_model(
                     "info": json.dumps(info, ensure_ascii=False, default=str),
                 }
             )
+            if row_metadata:
+                records[-1].update(row_metadata)
             step_count += 1
     finally:
         try:
@@ -172,13 +175,16 @@ def evaluate_model(
     daily = pd.DataFrame(records)
     daily_dir = output_root / "daily_outputs" / station
     daily_dir.mkdir(parents=True, exist_ok=True)
-    policy_suffix = "_action_safe" if "action_safe" in policy_name else ("_debug" if "debug" in policy_name else "")
-    daily_csv = daily_dir / f"{station}_train{train_year}_eval{eval_year}_seed{seed}{policy_suffix}_daily.csv"
+    if row_metadata and row_metadata.get("cap_name"):
+        daily_csv = daily_dir / f"{station}_train{train_year}_{row_metadata['cap_name']}_eval{eval_year}_seed{seed}_daily.csv"
+    else:
+        policy_suffix = "_action_safe" if "action_safe" in policy_name else ("_debug" if "debug" in policy_name else "")
+        daily_csv = daily_dir / f"{station}_train{train_year}_eval{eval_year}_seed{seed}{policy_suffix}_daily.csv"
     daily.to_csv(daily_csv, index=False, encoding="utf-8-sig")
     fig_dir = output_root / "figures" / station / policy_name / f"eval_{eval_year}"
     plot_episode(daily, fig_dir)
     episode_completed = bool(records and records[-1]["done"])
-    return {
+    result = {
         "station": station,
         "policy_name": policy_name,
         "train_year": train_year,
@@ -204,6 +210,9 @@ def evaluate_model(
         "figure_dir": str(fig_dir.relative_to(PROJECT_ROOT)),
         "notes": "action_safe_eval" if "action_safe" in policy_name else "eval",
     }
+    if row_metadata:
+        result.update(row_metadata)
+    return result
 
 
 def append_evaluation_rows(rows: list[dict], config: dict) -> Path:

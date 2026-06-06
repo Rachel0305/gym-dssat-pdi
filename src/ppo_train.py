@@ -22,7 +22,7 @@ def ppo_kwargs(config: dict, debug: bool) -> dict:
     return {key: value for key, value in source.items() if key in allowed and value is not None}
 
 
-def run_pretrain_smoke_check(config: dict, station: str, train_year: int, seed: int) -> tuple[bool, Path]:
+def run_pretrain_smoke_check(config: dict, station: str, train_year: int, seed: int, row_metadata: dict | None = None) -> tuple[bool, Path]:
     output_root = PROJECT_ROOT / config["paths"]["output_root"]
     smoke_root = output_root / "smoke_checks"
     smoke_root.mkdir(parents=True, exist_ok=True)
@@ -53,8 +53,7 @@ def run_pretrain_smoke_check(config: dict, station: str, train_year: int, seed: 
             single_path = smoke_root / "evaluation" / "single" / f"{station}_{train_year}_{policy}.json"
             if completed.returncode == 0 and single_path.exists():
                 data = pd.read_json(single_path, typ="series").to_dict()
-                rows.append(
-                    {
+                row = {
                         "station": station,
                         "train_year": train_year,
                         "policy_name": policy,
@@ -64,10 +63,11 @@ def run_pretrain_smoke_check(config: dict, station: str, train_year: int, seed: 
                         "daily_csv_path": data.get("daily_csv_path", ""),
                         "notes": "pretrain_smoke_check",
                     }
-                )
+                if row_metadata:
+                    row.update(row_metadata)
+                rows.append(row)
             else:
-                rows.append(
-                    {
+                row = {
                         "station": station,
                         "train_year": train_year,
                         "policy_name": policy,
@@ -77,10 +77,11 @@ def run_pretrain_smoke_check(config: dict, station: str, train_year: int, seed: 
                         "daily_csv_path": "",
                         "notes": "subprocess_failed",
                     }
-                )
+                if row_metadata:
+                    row.update(row_metadata)
+                rows.append(row)
         except subprocess.TimeoutExpired:
-            rows.append(
-                {
+            row = {
                     "station": station,
                     "train_year": train_year,
                     "policy_name": policy,
@@ -90,13 +91,18 @@ def run_pretrain_smoke_check(config: dict, station: str, train_year: int, seed: 
                     "daily_csv_path": "",
                     "notes": "subprocess_timeout",
                 }
-            )
+            if row_metadata:
+                row.update(row_metadata)
+            rows.append(row)
     out = smoke_root / "pretrain_smoke_check_summary.csv"
     new = pd.DataFrame(rows)
     if out.exists():
         old = pd.read_csv(out)
         df = pd.concat([old, new], ignore_index=True)
-        df = df.drop_duplicates(["station", "train_year", "policy_name"], keep="last")
+        duplicate_keys = ["station", "train_year", "policy_name"]
+        if "cap_name" in df.columns:
+            duplicate_keys.append("cap_name")
+        df = df.drop_duplicates(duplicate_keys, keep="last")
     else:
         df = new
     df.to_csv(out, index=False, encoding="utf-8-sig")
@@ -111,6 +117,8 @@ def train_one_policy(
     total_timesteps: int,
     config_path: Path = DEFAULT_CONFIG,
     debug: bool = False,
+    policy_tag: str = "",
+    row_metadata: dict | None = None,
 ) -> dict:
     from stable_baselines3 import PPO
 
@@ -126,9 +134,10 @@ def train_one_policy(
         suffix = "_action_safe"
     else:
         suffix = ""
-    policy_name = f"{station}_train{train_year}_seed{seed}{suffix}"
+    safe_policy_tag = policy_tag if policy_tag.startswith("_") or not policy_tag else f"_{policy_tag}"
+    policy_name = f"{station}_train{train_year}{safe_policy_tag}_seed{seed}{suffix}"
     if config.get("safety", {}).get("run_pretrain_smoke_check", True):
-        smoke_ok, smoke_summary = run_pretrain_smoke_check(config, station, train_year, seed)
+        smoke_ok, smoke_summary = run_pretrain_smoke_check(config, station, train_year, seed, row_metadata=row_metadata)
         if not smoke_ok:
             raise RuntimeError(f"pretrain smoke check failed: {smoke_summary}")
     env = make_env(config, station, train_year, seed, run_tag=f"{policy_name}_train", evaluation=False, action_safety_enabled=safety_enabled)
@@ -170,6 +179,7 @@ def train_one_policy(
                 model_path=saved_model_path,
                 policy_name=policy_name,
                 action_safety_enabled=safety_enabled,
+                row_metadata=row_metadata,
             )
         )
     evaluation_summary = append_evaluation_rows(eval_rows, config)

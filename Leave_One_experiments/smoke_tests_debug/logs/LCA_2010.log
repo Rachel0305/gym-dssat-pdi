@@ -1,0 +1,432 @@
+At line 230 of file /home/gymdev/gym_dssat_pdi/dssat-pdi-4.8.0.24+2~a4ae650/Management/FertType_mod.for
+Fortran runtime error: Index '0' of dimension 1 of array 'fertfile' below lower bound of 1
+
+Error termination. Backtrace:
+#0  0x7a38eca5e960 in ???
+#1  0x7a38eca5f4d9 in ???
+#2  0x7a38eca5fad6 in ???
+#3  0x5ac56575b02a in ???
+#4  0x5ac56575fd4d in ???
+#5  0x5ac5653aced8 in ???
+#6  0x5ac56531a2c3 in ???
+#7  0x5ac56530c5d8 in ???
+#8  0x7a38ec635d8f in ???
+#9  0x7a38ec635e3f in ???
+#10  0x5ac56530c604 in ???
+#11  0xffffffffffffffff in ???
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RUN    TRT FLO MAT TOPWT HARWT  RAIN  TIRR   CET  PESW  TNUP  TNLF   TSON TSOC
+           dap dap kg/ha kg/ha    mm    mm    mm    mm kg/ha kg/ha  kg/ha t/ha
+  1 MZ   1  47  87  4828  2774   223     0   220   362    46     9  10334  103
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RUN    TRT FLO MAT TOPWT HARWT  RAIN  TIRR   CET  PESW  TNUP  TNLF   TSON TSOC
+           dap dap kg/ha kg/ha    mm    mm    mm    mm kg/ha kg/ha  kg/ha t/ha
+  1 MZ   1  47  87  4828  2774   223     0   220   362    46     9  10334  103
+Client started
+Note: The following floating-point exceptions are signalling: IEEE_DENORMAL
+STOP 99
+
+ Simulation Controls level not found. Please correct input file.                 
+File: fileX.MZ   Line:     0   Error key: MAKEFW
+
+Additional information may be available in WARNING.OUT file.
+ 
+
+ Please press < ENTER > key to continue Client started
+Note: The following floating-point exceptions are signalling: IEEE_DENORMAL
+STOP 99
+
+ Simulation Controls level not found. Please correct input file.                 
+File: fileX.MZ   Line:     0   Error key: MAKEFW
+
+Additional information may be available in WARNING.OUT file.
+ 
+
+ Please press < ENTER > key to continue Client started
+Client started
+Client closed
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RUN    TRT FLO MAT TOPWT HARWT  RAIN  TIRR   CET  PESW  TNUP  TNLF   TSON TSOC
+           dap dap kg/ha kg/ha    mm    mm    mm    mm kg/ha kg/ha  kg/ha t/ha
+  1 MZ   1  47  87  4828  2774   223     0   220   362    46     9  10334  103
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RUN    TRT FLO MAT TOPWT HARWT  RAIN  TIRR   CET  PESW  TNUP  TNLF   TSON TSOC
+           dap dap kg/ha kg/ha    mm    mm    mm    mm kg/ha kg/ha  kg/ha t/ha
+  1 MZ   1  47  87  4828  2774   223     0   220   362    46     9  10334  103
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RUN    TRT FLO MAT TOPWT HARWT  RAIN  TIRR   CET  PESW  TNUP  TNLF   TSON TSOC
+           dap dap kg/ha kg/ha    mm    mm    mm    mm kg/ha kg/ha  kg/ha t/ha
+  1 MZ   1  47  87 11336  5727   223     0   291   294    93     9  10337  103
+ EFFECTIVE EARLY STOPPING
+
+********************************
+2026/06/06 01:34:42.863305
+********************************
+Client started
+Client closed
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RUN    TRT FLO MAT TOPWT HARWT  RAIN  TIRR   CET  PESW  TNUP  TNLF   TSON TSOC
+           dap dap kg/ha kg/ha    mm    mm    mm    mm kg/ha kg/ha  kg/ha t/ha
+  1 MZ   1  47  87  4828  2774   223     0   220   362    46     9  10334  103
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RUN    TRT FLO MAT TOPWT HARWT  RAIN  TIRR   CET  PESW  TNUP  TNLF   TSON TSOC
+           dap dap kg/ha kg/ha    mm    mm    mm    mm kg/ha kg/ha  kg/ha t/ha
+  1 MZ   1  47  87  4828  2774   223     0   220   362    46     9  10334  103
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RUN    TRT FLO MAT TOPWT HARWT  RAIN  TIRR   CET  PESW  TNUP  TNLF   TSON TSOC
+           dap dap kg/ha kg/ha    mm    mm    mm    mm kg/ha kg/ha  kg/ha t/ha
+  1 MZ   1  47  87 11336  5727   223     0   291   294    93     9  10337  103
+ EFFECTIVE EARLY STOPPING
+
+********************************
+2026/06/06 01:42:57.180262
+********************************
+Client started
+Client closed
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RUN    TRT FLO MAT TOPWT HARWT  RAIN  TIRR   CET  PESW  TNUP  TNLF   TSON TSOC
+           dap dap kg/ha kg/ha    mm    mm    mm    mm kg/ha kg/ha  kg/ha t/ha
+  1 MZ   1  47  87  4828  2774   223     0   220   362    46     9  10334  103
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RUN    TRT FLO MAT TOPWT HARWT  RAIN  TIRR   CET  PESW  TNUP  TNLF   TSON TSOC
+           dap dap kg/ha kg/ha    mm    mm    mm    mm kg/ha kg/ha  kg/ha t/ha
+  1 MZ   1  47  87  4828  2774   223     0   220   362    46     9  10334  103
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RUN    TRT FLO MAT TOPWT HARWT  RAIN  TIRR   CET  PESW  TNUP  TNLF   TSON TSOC
+           dap dap kg/ha kg/ha    mm    mm    mm    mm kg/ha kg/ha  kg/ha t/ha
+  1 MZ   1  47  87 15566  8015   223    60   293   344   189    14  10335  103
+ EFFECTIVE EARLY STOPPING
+
+********************************
+2026/06/06 01:43:01.015466
+********************************
+Client started
+Client closed
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RUN    TRT FLO MAT TOPWT HARWT  RAIN  TIRR   CET  PESW  TNUP  TNLF   TSON TSOC
+           dap dap kg/ha kg/ha    mm    mm    mm    mm kg/ha kg/ha  kg/ha t/ha
+  1 MZ   1  47  87  4828  2774   223     0   220   362    46     9  10334  103
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RUN    TRT FLO MAT TOPWT HARWT  RAIN  TIRR   CET  PESW  TNUP  TNLF   TSON TSOC
+           dap dap kg/ha kg/ha    mm    mm    mm    mm kg/ha kg/ha  kg/ha t/ha
+  1 MZ   1  47  87  4828  2774   223     0   220   362    46     9  10334  103
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RUN    TRT FLO MAT TOPWT HARWT  RAIN  TIRR   CET  PESW  TNUP  TNLF   TSON TSOC
+           dap dap kg/ha kg/ha    mm    mm    mm    mm kg/ha kg/ha  kg/ha t/ha
+  1 MZ   1  47  87 15667  8041   223    80   294   365   195   105  10334  103
+ EFFECTIVE EARLY STOPPING
+
+********************************
+2026/06/06 01:43:04.840800
+********************************
+Client started
+Client closed
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RUN    TRT FLO MAT TOPWT HARWT  RAIN  TIRR   CET  PESW  TNUP  TNLF   TSON TSOC
+           dap dap kg/ha kg/ha    mm    mm    mm    mm kg/ha kg/ha  kg/ha t/ha
+  1 MZ   1  47  87  4828  2774   223     0   220   362    46     9  10334  103
+ EFFECTIVE EARLY STOPPING
+
+********************************
+2026/06/06 01:47:36.514804
+********************************

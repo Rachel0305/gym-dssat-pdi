@@ -2,12 +2,10 @@ from __future__ import annotations
 
 import argparse
 import json
-import os
 import re
 import shutil
 import subprocess
 import sys
-import time
 import traceback
 from datetime import datetime, timedelta
 from pathlib import Path
@@ -26,12 +24,7 @@ from smoke_test_agents import POLICIES, clip_real_action, normalize_real_action
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
-SMOKE_ROOT = Path(
-    os.environ.get(
-        "SMOKE_TEST_OUTPUT_ROOT",
-        str(PROJECT_ROOT / "Leave_One_experiments" / "smoke_tests"),
-    )
-)
+SMOKE_ROOT = PROJECT_ROOT / "Leave_One_experiments" / "smoke_tests"
 CONFIG_PATH = PROJECT_ROOT / "experiments" / "smoke_tests" / "config_observed_year_smoke_tests.yaml"
 
 SITE_INFO = {
@@ -78,78 +71,8 @@ def render_template(station: str, year: int, planting_date: str) -> Path:
     text = re.sub(r"(@P PDATE EDATE[^\n]*\n\s*1\s+)(\d{5})(\s+)(\d{5})", rf"\g<1>{yyddd(planting_date)}\g<3>{yyddd(emergence.strftime('%Y-%m-%d'))}", text)
     text = re.sub(r"(\sS\s+)(\d{5})(\s+2150)", rf"\g<1>{yyddd(start.strftime('%Y-%m-%d'))}\g<3>", text)
     text = re.sub(r"(\sMZ\s+)(\d{5})(\s+100)", rf"\g<1>{yyddd(start.strftime('%Y-%m-%d'))}\g<3>", text)
-    text = force_management_levels_on(text)
-    text = ensure_irrigation_section(text, yyddd(planting_date), year)
-    text = reset_static_application_rows(text, yyddd(planting_date), year)
     out.write_text(text, encoding="utf-8")
     return out
-
-
-def force_management_levels_on(text: str) -> str:
-    """Ensure irrigation and fertilizer management levels exist for PDI actions."""
-    # Columns after TNAME are CU FL SA IC MP MI MF MR MC MT ME MH SM.
-    # Preserve fixed-width spacing; only flip MI/MF from 0/0 to 1/1.
-    return re.sub(
-        r"(Sim\d{4}\s+1\s+1\s+0\s+0\s+1\s+)0(\s+)0",
-        r"\g<1>1\g<2>1",
-        text,
-    )
-
-
-def reset_static_application_rows(text: str, safe_yyddd: str, year: int) -> str:
-    """Replace original site-year event rows with safe zero baseline rows.
-
-    The original station templates include site/year-specific irrigation and
-    fertilizer rows. After changing years, those rows can land before SDATE
-    (YCA) or conflict with PDI dynamic fertilizer insertion (LCA/SYA).
-    A zero row keeps DSSAT/PDI management levels valid while smoke policies
-    own non-zero actions through env.step.
-    """
-    output: list[str] = []
-    skip_application_rows = False
-    pending_zero_row: str | None = None
-    for line in text.splitlines():
-        stripped = line.strip()
-        if line.startswith("*"):
-            if pending_zero_row is not None:
-                output.append(pending_zero_row)
-                pending_zero_row = None
-            skip_application_rows = False
-        if line.startswith("@I IDATE") or line.startswith("@F FDATE"):
-            skip_application_rows = True
-            output.append(line)
-            if line.startswith("@I IDATE"):
-                pending_zero_row = f" 1 {safe_yyddd} IR001     0"
-            else:
-                pending_zero_row = f" 1 {safe_yyddd} FE005 AP002     5     0   -99   -99   -99   -99   -99 {year}"
-            continue
-        if skip_application_rows:
-            if stripped.startswith("@") or stripped.startswith("*"):
-                if pending_zero_row is not None:
-                    output.append(pending_zero_row)
-                    pending_zero_row = None
-                skip_application_rows = False
-            elif stripped == "":
-                continue
-            elif re.match(r"^\s*\d+\s+\d{5}\b", line):
-                continue
-        output.append(line)
-    if pending_zero_row is not None:
-        output.append(pending_zero_row)
-    return "\n".join(output) + "\n"
-
-
-def ensure_irrigation_section(text: str, safe_yyddd: str, year: int) -> str:
-    if "*IRRIGATION AND WATER MANAGEMENT" in text:
-        return text
-    section = (
-        "*IRRIGATION AND WATER MANAGEMENT\n"
-        "@I  EFIR  IDEP  ITHR  IEPT  IOFF  IAME  IAMT IRNAME\n"
-        f" 1     1    30    50   100 GS000 IR001    10 {year}\n"
-        "@I IDATE  IROP IRVAL\n"
-        f" 1 {safe_yyddd} IR001     0\n\n"
-    )
-    return text.replace("*FERTILIZERS (INORGANIC)", section + "*FERTILIZERS (INORGANIC)")
 
 
 def build_env_args(station: str, year: int, planting_date: str, seed: int, mode: str = "all") -> dict:
@@ -234,7 +157,6 @@ def run_single_episode(config: dict, station: str, year: int, policy_name: str) 
     env_args = build_env_args(station, year, row["planting_date"], int(config.get("seed", 123)))
     env = GymDssatWrapper(gym.make("gym_dssat_pdi:GymDssatPdi-v0", **env_args).unwrapped)
     records = []
-    trace_records = []
     notes: list[str] = []
     try:
         obs, info = env.reset()
@@ -243,16 +165,13 @@ def run_single_episode(config: dict, station: str, year: int, policy_name: str) 
         cumulative_irrig = 0.0
         cumulative_n = 0.0
         while not done and step_count < int(config.get("max_steps", 260)):
-            total_elapsed_start = time.perf_counter()
             latest = latest_observation_dict(env, obs, info)
             dap = int(round(scalar(latest.get("dap", step_count))))
             real_action = policy.action_for_dap(dap, env.formator.action_names)
             clipped_action, clip_notes = clip_real_action(real_action, env.formator.action_space_dict)
             notes.extend(clip_notes)
             normalized = normalize_real_action(clipped_action, env.formator.action_names, env.formator.action_space_dict)
-            step_start = time.perf_counter()
             obs, reward, terminated, truncated, info = env.step(normalized)
-            step_elapsed = time.perf_counter() - step_start
             done = bool(terminated or truncated)
             latest = latest_observation_dict(env, obs, info)
             real_amir = float(clipped_action.get("amir", 0.0))
@@ -261,35 +180,6 @@ def run_single_episode(config: dict, station: str, year: int, policy_name: str) 
             cumulative_n += real_anfer
             date = pd.Timestamp(row["planting_date"]) + pd.Timedelta(days=max(dap - 1, 0))
             normalized_by_name = {n: scalar(v) for n, v in zip(env.formator.action_names, normalized)}
-            trace_records.append(
-                {
-                    "station": station,
-                    "year": year,
-                    "policy_name": policy_name,
-                    "step_index": step_count,
-                    "date": date.strftime("%Y-%m-%d"),
-                    "doy": int(date.dayofyear),
-                    "dap": dap,
-                    "action_dict_before_normalization": json.dumps(real_action, ensure_ascii=False),
-                    "normalized_action": json.dumps(normalized_by_name, ensure_ascii=False),
-                    "real_action": json.dumps(clipped_action, ensure_ascii=False),
-                    "obs_keys": json.dumps(list(getattr(env.unwrapped, "observation_variables", [])), ensure_ascii=False),
-                    "dap_from_obs": scalar(latest.get("dap", dap)),
-                    "topwt": scalar(latest.get("topwt")),
-                    "grnwt": scalar(latest.get("grnwt")),
-                    "xlai": scalar(latest.get("xlai")),
-                    "swfac": scalar(latest.get("swfac")),
-                    "nstres": scalar(latest.get("nstres")),
-                    "totir": scalar(latest.get("totir"), cumulative_irrig) if not np.isnan(scalar(latest.get("totir"))) else cumulative_irrig,
-                    "tofer": scalar(latest.get("tofer"), cumulative_n) if not np.isnan(scalar(latest.get("tofer"))) else cumulative_n,
-                    "reward": float(reward),
-                    "done": done,
-                    "elapsed_time_this_step_seconds": round(step_elapsed, 6),
-                    "elapsed_time_total_seconds": round(time.perf_counter() - total_elapsed_start, 6),
-                    "last_successful_stage": "env.step_completed",
-                    "slow_step_detected": bool(step_elapsed > 20.0),
-                }
-            )
             records.append(
                 {
                     "station": station,
@@ -318,15 +208,10 @@ def run_single_episode(config: dict, station: str, year: int, policy_name: str) 
             )
             step_count += 1
         daily = pd.DataFrame(records)
-        trace = pd.DataFrame(trace_records)
         daily_dir = SMOKE_ROOT / "daily_outputs" / station
         daily_dir.mkdir(parents=True, exist_ok=True)
         daily_csv = daily_dir / f"{station}_{year}_{policy_name}_daily.csv"
         daily.to_csv(daily_csv, index=False, encoding="utf-8-sig")
-        trace_dir = SMOKE_ROOT / "step_traces"
-        trace_dir.mkdir(parents=True, exist_ok=True)
-        trace_csv = trace_dir / f"{station}_{year}_{policy_name}_step_trace.csv"
-        trace.to_csv(trace_csv, index=False, encoding="utf-8-sig")
         fig_dir = SMOKE_ROOT / "figures" / station / str(year) / policy_name
         plot_episode(daily, fig_dir)
         episode_completed = bool(records and records[-1]["done"])
@@ -351,7 +236,6 @@ def run_single_episode(config: dict, station: str, year: int, policy_name: str) 
             "mean_reward": float(daily["reward"].mean()) if len(daily) else np.nan,
             "sum_reward": float(daily["reward"].sum()) if len(daily) else 0.0,
             "daily_csv_path": str(daily_csv.relative_to(PROJECT_ROOT)),
-            "step_trace_csv_path": str(trace_csv.relative_to(PROJECT_ROOT)),
             "figure_dir": str(fig_dir.relative_to(PROJECT_ROOT)),
             "notes": ";".join(dict.fromkeys(notes)),
         }

@@ -1,0 +1,3 @@
+﻿station,train_year,policy_name,run_status,episode_completed,error_message,daily_csv_path,notes
+HLA,2007,null_zero,ok,True,,Leave_One_experiments/ppo_observed_years/smoke_checks/daily_outputs/HLA/HLA_2007_null_zero_daily.csv,pretrain_smoke_check
+HLA,2007,fixed_low_input,ok,True,,Leave_One_experiments/ppo_observed_years/smoke_checks/daily_outputs/HLA/HLA_2007_fixed_low_input_daily.csv,pretrain_smoke_check

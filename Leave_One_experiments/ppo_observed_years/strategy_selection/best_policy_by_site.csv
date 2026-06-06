@@ -1,0 +1,2 @@
+﻿station,best_policy_name,best_train_year,best_train_year_type,validation_years,mean_yield,std_yield,mean_reward,std_reward,mean_irrigation,mean_n_fertilizer,stability_score,reason,model_path
+HLA,HLA_train2007_seed0_debug,2007,observed_low_rain_year,"2009,2011",4528.909149169922,120.75345884299067,-312.324599112863,4.590998475708912,3382.505573099479,15971.387817943469,-0.5,single_seed_cross_year_score,Leave_One_experiments/ppo_observed_years/models/HLA/HLA_train2007_seed0_debug.zip

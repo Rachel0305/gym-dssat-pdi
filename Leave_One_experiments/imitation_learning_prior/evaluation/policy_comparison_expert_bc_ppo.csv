@@ -1,0 +1,61 @@
+﻿station,year,policy_type,policy_name,final_grnwt,total_irrigation,total_n_fertilizer,profit_score,mean_swfac,mean_nstres,yield_loss_vs_ppo,input_reduction_vs_ppo,notes
+HLA,2011,expert_schedule,HLA2011_S0157,6364.142456054688,0.0,150.0,26.14142456054688,0.0,0.1126488655276552,0.07442389228354204,0.8333333333333334,best_offline_schedule
+HLA,2007,expert_schedule,HLA2011_S0157,6799.5751953125,0.0,150.0,30.495751953124994,0.0,0.0851035688147448,0.011096249516662838,0.8333333333333334,best_offline_schedule
+HLA,2009,expert_schedule,HLA2011_S0157,7094.6240234375,0.0,150.0,33.446240234375,0.0,0.1886217450758196,-0.03181450363004406,0.8333333333333334,best_offline_schedule
+SYA,2012,expert_schedule,SYA2012_S0443,9010.3125,0.0,150.0,52.603125000000006,0.0,0.0524276985062493,-0.31042477924496076,0.8333333333333334,best_offline_schedule
+SYA,2014,expert_schedule,SYA2012_S0443,8881.16943359375,0.0,150.0,51.3116943359375,0.0508358956625064,0.075463554304507,-0.2916427143291848,0.8333333333333334,best_offline_schedule
+SYA,2015,expert_schedule,SYA2012_S0443,9074.083862304688,0.0,150.0,53.24083862304688,0.0,0.0702621296985999,-0.3196994379618777,0.8333333333333334,best_offline_schedule
+LCA,2010,expert_schedule,LCA2010_S0313,8008.47412109375,0.0,150.0,42.58474121093751,0.0,0.0037813193124273,-0.16472130486298434,0.8333333333333334,best_offline_schedule
+LCA,2011,expert_schedule,LCA2010_S0313,8909.713134765625,0.0,150.0,51.59713134765626,0.0,0.0298672522984299,-0.2957939991272413,0.8333333333333334,best_offline_schedule
+LCA,2008,expert_schedule,LCA2010_S0313,9245.798950195312,0.0,150.0,54.95798950195312,0.0,0.0253194610277811,-0.34467301197966027,0.8333333333333334,best_offline_schedule
+LCA,2009,expert_schedule,LCA2010_S0313,8864.37744140625,0.0,150.0,51.143774414062506,0.0,0.015838941522673,-0.2892005523447489,0.8333333333333334,best_offline_schedule
+HLA,2011,imitation_policy,BC_constant_schedule_baseline,6364.142456054688,0.0,150.0,26.141424560546877,0.0,0.1126488655276552,0.0744238922835421,0.8333333333333334,behavior_cloning_policy
+HLA,2007,imitation_policy,BC_constant_schedule_baseline,6799.5751953125,0.0,150.0,30.495751953124994,0.0,0.0851035688147448,0.0110962495166628,0.8333333333333334,behavior_cloning_policy
+HLA,2009,imitation_policy,BC_constant_schedule_baseline,7094.6240234375,0.0,150.0,33.446240234375,0.0,0.1886217450758196,-0.031814503630044,0.8333333333333334,behavior_cloning_policy
+SYA,2012,imitation_policy,BC_constant_schedule_baseline,9010.3125,0.0,150.0,52.603125000000006,0.0,0.0524276985062493,-0.3104247792449607,0.8333333333333334,behavior_cloning_policy
+SYA,2014,imitation_policy,BC_constant_schedule_baseline,8881.16943359375,0.0,150.0,51.3116943359375,0.0508358956625064,0.075463554304507,-0.2916427143291848,0.8333333333333334,behavior_cloning_policy
+SYA,2015,imitation_policy,BC_constant_schedule_baseline,9074.083862304688,0.0,150.0,53.24083862304688,0.0,0.0702621296985999,-0.3196994379618777,0.8333333333333334,behavior_cloning_policy
+LCA,2010,imitation_policy,BC_constant_schedule_baseline,8008.47412109375,0.0,150.0,42.58474121093751,0.0,0.0037813193124273,-0.1647213048629843,0.8333333333333334,behavior_cloning_policy
+LCA,2011,imitation_policy,BC_constant_schedule_baseline,8909.713134765625,0.0,150.0,51.59713134765626,0.0,0.0298672522984299,-0.2957939991272413,0.8333333333333334,behavior_cloning_policy
+LCA,2008,imitation_policy,BC_constant_schedule_baseline,9245.798950195312,0.0,150.0,54.95798950195312,0.0,0.0253194610277811,-0.3446730119796602,0.8333333333333334,behavior_cloning_policy
+LCA,2009,imitation_policy,BC_constant_schedule_baseline,8864.37744140625,0.0,150.0,51.143774414062506,0.0,0.015838941522673,-0.2892005523447489,0.8333333333333334,behavior_cloning_policy
+HLA,2011,imitation_policy,BC_mlp_regressor,197.71472930908203,0.0,0.0,1.9771472930908205,0.0,0.3797047178192836,0.971245139332478,1.0,behavior_cloning_policy
+HLA,2007,imitation_policy,BC_mlp_regressor,436.7319107055664,0.0,0.0,4.367319107055664,0.0,0.3849886047760112,0.9364834107945122,1.0,behavior_cloning_policy
+HLA,2009,imitation_policy,BC_mlp_regressor,239.12643432617188,0.0,0.0,2.3912643432617187,0.0,0.3622416049804328,0.9652223821411844,1.0,behavior_cloning_policy
+SYA,2012,imitation_policy,BC_mlp_regressor,2693.109436035156,0.0,0.0,26.93109436035156,0.0,0.1889430884961728,0.6083246459877069,1.0,behavior_cloning_policy
+SYA,2014,imitation_policy,BC_mlp_regressor,2729.501342773437,0.0,0.0,27.29501342773437,0.0,0.2065000062187512,0.6030319487195693,1.0,behavior_cloning_policy
+SYA,2015,imitation_policy,BC_mlp_regressor,2669.547119140625,0.0,0.0,26.69547119140625,0.0,0.1967982366368487,0.6117514576454619,1.0,behavior_cloning_policy
+LCA,2010,imitation_policy,BC_mlp_regressor,2774.4976806640625,0.0,0.0,27.744976806640626,0.0,0.2209146625321844,0.5964878564755818,1.0,behavior_cloning_policy
+LCA,2011,imitation_policy,BC_mlp_regressor,2861.177673339844,0.0,0.0,28.61177673339844,0.0,0.218661499374053,0.5838814557245406,1.0,behavior_cloning_policy
+LCA,2008,imitation_policy,BC_mlp_regressor,3095.6228637695312,0.0,0.0,30.956228637695315,0.0,0.2280271019254412,0.549784659757268,1.0,behavior_cloning_policy
+LCA,2009,imitation_policy,BC_mlp_regressor,2897.158203125,0.0,0.0,28.97158203125,0.0,0.2181446061414831,0.578648587519267,1.0,behavior_cloning_policy
+HLA,2011,imitation_policy,BC_random_forest_regressor,4469.0631103515625,0.0,110.75605158730158,17.00161820669023,0.0,0.150367371429353,0.3500368561229986,0.8769377204585538,behavior_cloning_policy
+HLA,2007,imitation_policy,BC_random_forest_regressor,4011.4019775390634,0.0,110.75605158730158,12.425006878565227,0.0,0.1401349110091292,0.4165973099291034,0.8769377204585538,behavior_cloning_policy
+HLA,2009,imitation_policy,BC_random_forest_regressor,5367.515869140625,0.0,110.75605158730158,25.986145794580857,0.0,0.1951876061517487,0.219369383923984,0.8769377204585538,behavior_cloning_policy
+SYA,2012,imitation_policy,BC_random_forest_regressor,6075.2435302734375,0.0,59.78878968253967,45.80523788209946,0.0,0.1291411302707813,0.1164402275705814,0.9335680114638448,behavior_cloning_policy
+SYA,2014,imitation_policy,BC_random_forest_regressor,5991.3616943359375,0.0,59.78878968253967,44.96641952272447,0.0,0.1519659215377437,0.1286396752968462,0.9335680114638448,behavior_cloning_policy
+SYA,2015,imitation_policy,BC_random_forest_regressor,5783.908081054688,0.0,59.78878968253967,42.89188338991195,0.0,0.1408746999043684,0.1588109213427133,0.9335680114638448,behavior_cloning_policy
+LCA,2010,imitation_policy,BC_random_forest_regressor,6890.1751708984375,0.0,86.82827380952381,47.19468325660343,0.0004079555687697,0.0826307217711987,-0.0020802582911186,0.9035241402116402,behavior_cloning_policy
+LCA,2011,imitation_policy,BC_random_forest_regressor,7292.776489257812,0.0,86.82827380952381,51.22069644019717,0.0,0.116333769232619,-0.0606330269919616,0.9035241402116402,behavior_cloning_policy
+LCA,2008,imitation_policy,BC_random_forest_regressor,7809.2510986328125,0.0,86.82827380952381,56.38544253394717,0.0,0.111623279821305,-0.1357470839101719,0.9035241402116402,behavior_cloning_policy
+LCA,2009,imitation_policy,BC_random_forest_regressor,7461.8292236328125,0.0,86.82827380952381,52.91122378394718,0.0,0.1051891399364845,-0.0852193986770853,0.9035241402116402,behavior_cloning_policy
+HLA,2011,imitation_policy,BC_two_stage_classifier_regressor,5971.6778564453125,0.0,132.75,26.52927856445313,0.0,0.1403898970615228,0.1315024160644406,0.8525,behavior_cloning_policy
+HLA,2007,imitation_policy,BC_two_stage_classifier_regressor,6252.432861328125,0.0,132.75,29.33682861328125,0.0,0.1061815013421461,0.090670500934363,0.8525,behavior_cloning_policy
+HLA,2009,imitation_policy,BC_two_stage_classifier_regressor,7116.7626953125,0.0,132.75,37.98012695312501,0.0,0.2013745309796723,-0.0350342658973986,0.8525,behavior_cloning_policy
+SYA,2012,imitation_policy,BC_two_stage_classifier_regressor,8687.786254882812,0.0,138.5,52.25286254882813,0.0,0.0595245273024947,-0.2635178175210032,0.8461111111111111,behavior_cloning_policy
+SYA,2014,imitation_policy,BC_two_stage_classifier_regressor,8756.624145507812,0.0,138.5,52.94124145507813,0.045532124944859,0.0926568928278154,-0.2735293323964256,0.8461111111111111,behavior_cloning_policy
+SYA,2015,imitation_policy,BC_two_stage_classifier_regressor,8692.003784179688,0.0,138.5,52.29503784179688,0.0,0.0818763025157101,-0.2641311985660908,0.8461111111111111,behavior_cloning_policy
+LCA,2010,imitation_policy,BC_two_stage_classifier_regressor,8023.380737304687,0.0,180.5,35.10880737304687,0.0,0.0024334976206655,-0.1668892651038203,0.7994444444444444,behavior_cloning_policy
+LCA,2011,imitation_policy,BC_two_stage_classifier_regressor,9126.643676757812,0.0,180.5,46.14143676757813,0.0,0.0012096026364494,-0.3273435327978661,0.7994444444444444,behavior_cloning_policy
+LCA,2008,imitation_policy,BC_two_stage_classifier_regressor,9245.808715820312,0.0,180.5,47.33308715820313,0.0,0.0012083314713977,-0.3446744322541496,0.7994444444444444,behavior_cloning_policy
+LCA,2009,imitation_policy,BC_two_stage_classifier_regressor,9045.416259765623,0.0,180.5,45.32916259765625,0.0,0.0002406812181659,-0.3155301334312376,0.7994444444444444,behavior_cloning_policy
+HLA,2011,ppo_cap_saturated_baseline,reference_300mm_450kgN,6875.87158203125,300.0,450.0,-193.7412841796875,,,0.0,0.0,reference from Leave_One_experiments/budget_action_design_debug/evaluation/budget_action_design_candidate_comparison.csv; same yield reference used for cross-policy normalization
+HLA,2007,ppo_cap_saturated_baseline,reference_300mm_450kgN,6875.87158203125,300.0,450.0,-193.7412841796875,,,0.0,0.0,reference from Leave_One_experiments/budget_action_design_debug/evaluation/budget_action_design_candidate_comparison.csv; same yield reference used for cross-policy normalization
+HLA,2009,ppo_cap_saturated_baseline,reference_300mm_450kgN,6875.87158203125,300.0,450.0,-193.7412841796875,,,0.0,0.0,reference from Leave_One_experiments/budget_action_design_debug/evaluation/budget_action_design_candidate_comparison.csv; same yield reference used for cross-policy normalization
+SYA,2012,ppo_cap_saturated_baseline,reference_300mm_450kgN,6875.87158203125,300.0,450.0,-193.7412841796875,,,0.0,0.0,reference from Leave_One_experiments/budget_action_design_debug/evaluation/budget_action_design_candidate_comparison.csv; same yield reference used for cross-policy normalization
+SYA,2014,ppo_cap_saturated_baseline,reference_300mm_450kgN,6875.87158203125,300.0,450.0,-193.7412841796875,,,0.0,0.0,reference from Leave_One_experiments/budget_action_design_debug/evaluation/budget_action_design_candidate_comparison.csv; same yield reference used for cross-policy normalization
+SYA,2015,ppo_cap_saturated_baseline,reference_300mm_450kgN,6875.87158203125,300.0,450.0,-193.7412841796875,,,0.0,0.0,reference from Leave_One_experiments/budget_action_design_debug/evaluation/budget_action_design_candidate_comparison.csv; same yield reference used for cross-policy normalization
+LCA,2010,ppo_cap_saturated_baseline,reference_300mm_450kgN,6875.87158203125,300.0,450.0,-193.7412841796875,,,0.0,0.0,reference from Leave_One_experiments/budget_action_design_debug/evaluation/budget_action_design_candidate_comparison.csv; same yield reference used for cross-policy normalization
+LCA,2011,ppo_cap_saturated_baseline,reference_300mm_450kgN,6875.87158203125,300.0,450.0,-193.7412841796875,,,0.0,0.0,reference from Leave_One_experiments/budget_action_design_debug/evaluation/budget_action_design_candidate_comparison.csv; same yield reference used for cross-policy normalization
+LCA,2008,ppo_cap_saturated_baseline,reference_300mm_450kgN,6875.87158203125,300.0,450.0,-193.7412841796875,,,0.0,0.0,reference from Leave_One_experiments/budget_action_design_debug/evaluation/budget_action_design_candidate_comparison.csv; same yield reference used for cross-policy normalization
+LCA,2009,ppo_cap_saturated_baseline,reference_300mm_450kgN,6875.87158203125,300.0,450.0,-193.7412841796875,,,0.0,0.0,reference from Leave_One_experiments/budget_action_design_debug/evaluation/budget_action_design_candidate_comparison.csv; same yield reference used for cross-policy normalization

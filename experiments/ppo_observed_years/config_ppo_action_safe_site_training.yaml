@@ -1,0 +1,113 @@
+seed: 0
+
+training:
+  total_timesteps: 5000
+  stations_in_order: [HLA, SYA, LCA]
+  stop_on_quality_gate_failure: true
+
+debug:
+  enabled: false
+  ppo_overrides:
+    learning_rate: 0.0003
+    gamma: 0.99
+    n_steps: 128
+    batch_size: 64
+    ent_coef: 0.0
+    clip_range: 0.2
+
+ppo:
+  total_timesteps_full: 5000
+  learning_rate: null
+  gamma: null
+  n_steps: null
+  batch_size: null
+  ent_coef: null
+  clip_range: null
+
+paths:
+  output_root: Leave_One_experiments/ppo_action_safe_site_training
+  weather_dir: weather_clean_qc
+  wth_dir: Leave_One_experiments/wth_generated_qc
+  my_data_dir: my_data
+  cultivar_file: my_data/MZCER048.CUL
+
+safety:
+  run_pretrain_smoke_check: true
+  do_not_overwrite_raw_inputs: true
+  batch_training_disabled_by_default: false
+
+action_safety:
+  enabled: true
+  daily_irrigation_max: 40.0
+  daily_n_max: 80.0
+  season_irrigation_soft_limit: 200.0
+  season_n_soft_limit: 300.0
+  min_days_between_irrigation: 7
+  min_days_between_fertilization: 10
+  fertilization_allowed_dap_range: [1, 90]
+  irrigation_allowed_dap_range: [1, 120]
+
+quality_gates:
+  max_total_irrigation: 300.0
+  max_total_n_fertilizer: 400.0
+  require_run_status_ok: true
+  require_episode_completed: true
+  require_daily_csv: true
+  required_figures:
+    - dap_swfac_irrigation_reward.png
+    - dap_nstres_fertilization_reward.png
+    - crop_growth_timeseries.png
+    - cumulative_water_nitrogen.png
+    - daily_actions.png
+    - daily_actions_raw_vs_safe.png
+    - action_safety_triggers.png
+
+runtime:
+  max_steps: 260
+  episode_timeout_seconds: 300
+  mode: all
+
+observed_years:
+  HLA:
+    - year: 2007
+      label: observed_low_rain_year
+      planting_date: "2007-05-05"
+      harvest_window_rain_mm: 345.6
+    - year: 2011
+      label: observed_mid_rain_year
+      planting_date: "2011-05-05"
+      harvest_window_rain_mm: 479.2
+    - year: 2009
+      label: observed_high_rain_year
+      planting_date: "2009-05-02"
+      harvest_window_rain_mm: 489.5
+  SYA:
+    - year: 2014
+      label: observed_low_rain_year
+      planting_date: "2014-04-21"
+      harvest_window_rain_mm: 331.8
+    - year: 2015
+      label: observed_mid_rain_year
+      planting_date: "2015-04-18"
+      harvest_window_rain_mm: 424.1
+    - year: 2012
+      label: observed_high_rain_year
+      planting_date: "2012-04-28"
+      harvest_window_rain_mm: 649.4
+  LCA:
+    - year: 2010
+      label: observed_low_rain_year
+      planting_date: "2010-06-06"
+      harvest_window_rain_mm: 288.5
+    - year: 2011
+      label: observed_mid_rain_year
+      planting_date: "2011-06-15"
+      harvest_window_rain_mm: 300.9
+    - year: 2008
+      label: observed_intermediate_rain_year_3
+      planting_date: "2008-06-19"
+      harvest_window_rain_mm: 357.1
+    - year: 2009
+      label: observed_high_rain_year
+      planting_date: "2009-06-14"
+      harvest_window_rain_mm: 417.1

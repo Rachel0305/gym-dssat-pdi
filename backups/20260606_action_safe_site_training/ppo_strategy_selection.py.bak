@@ -24,16 +24,13 @@ def select_best_policies(config_path: Path = DEFAULT_CONFIG) -> Path:
     output_root = PROJECT_ROOT / config["paths"]["output_root"]
     summary_path = output_root / "evaluation" / "ppo_evaluation_summary.csv"
     out = output_root / "strategy_selection" / "best_policy_by_site.csv"
-    ranking_out = output_root / "strategy_selection" / "policy_ranking_by_site.csv"
     out.parent.mkdir(parents=True, exist_ok=True)
     if not summary_path.exists():
         pd.DataFrame().to_csv(out, index=False, encoding="utf-8-sig")
-        pd.DataFrame().to_csv(ranking_out, index=False, encoding="utf-8-sig")
         return out
     df = pd.read_csv(summary_path)
     ok = df[(df["run_status"] == "ok") & (df["eval_year"] != df["train_year"])].copy()
     rows = []
-    ranking_rows = []
     for station, group in ok.groupby("station"):
         agg = group.groupby(["policy_name", "train_year", "train_year_label", "model_path"], as_index=False).agg(
             mean_yield=("final_grnwt", "mean"),
@@ -55,26 +52,6 @@ def select_best_policies(config_path: Path = DEFAULT_CONFIG) -> Path:
             - normalize(agg["mean_n_fertilizer"], True)
         )
         agg["stability_score"] = score
-        agg = agg.sort_values("stability_score", ascending=False).reset_index(drop=True)
-        for rank, item in enumerate(agg.to_dict("records"), start=1):
-            ranking_rows.append(
-                {
-                    "station": station,
-                    "rank": rank,
-                    "policy_name": item["policy_name"],
-                    "train_year": int(item["train_year"]),
-                    "train_year_type": item["train_year_label"],
-                    "validation_years": item["validation_years"],
-                    "mean_yield": item["mean_yield"],
-                    "std_yield": item["std_yield"],
-                    "mean_reward": item["mean_reward"],
-                    "std_reward": item["std_reward"],
-                    "mean_irrigation": item["mean_irrigation"],
-                    "mean_n_fertilizer": item["mean_n_fertilizer"],
-                    "stability_score": item["stability_score"],
-                    "model_path": item["model_path"],
-                }
-            )
         best = agg.sort_values("stability_score", ascending=False).iloc[0]
         n_years = len(config["observed_years"][station])
         rows.append(
@@ -96,7 +73,6 @@ def select_best_policies(config_path: Path = DEFAULT_CONFIG) -> Path:
             }
         )
     pd.DataFrame(rows).to_csv(out, index=False, encoding="utf-8-sig")
-    pd.DataFrame(ranking_rows).to_csv(ranking_out, index=False, encoding="utf-8-sig")
     return out
 
 

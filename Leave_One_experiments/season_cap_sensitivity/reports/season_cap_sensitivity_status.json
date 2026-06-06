@@ -1,0 +1,13 @@
+{
+  "started_at": "2026-06-06 08:45:05",
+  "config_path": "experiments/ppo_observed_years/config_season_cap_sensitivity.yaml",
+  "plan_path": "Leave_One_experiments/season_cap_sensitivity/configs/season_cap_sensitivity_plan.csv",
+  "jobs_total": 25,
+  "jobs_completed": 25,
+  "stopped": false,
+  "stop_reason": "",
+  "last_policy": "YCA_train2008_cap_high_seed0_action_safe",
+  "finished_at": "2026-06-06 09:08:56",
+  "cap_saturation_summary_path": "Leave_One_experiments/season_cap_sensitivity/evaluation/cap_saturation_summary.csv",
+  "marginal_response_by_cap_path": "Leave_One_experiments/season_cap_sensitivity/evaluation/marginal_response_by_cap.csv"
+}

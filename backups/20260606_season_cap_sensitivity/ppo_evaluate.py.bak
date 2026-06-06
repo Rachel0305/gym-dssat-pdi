@@ -1,0 +1,221 @@
+from __future__ import annotations
+
+import json
+from pathlib import Path
+
+import numpy as np
+import pandas as pd
+
+from ppo_experiment_plan import find_year
+from ppo_plot_results import plot_episode
+from ppo_safe_rendering import PROJECT_ROOT, build_env_args, ensure_project_on_path
+from ppo_action_safety import (
+    ActionSafetyState,
+    SafeActionWrapper,
+    apply_action_safety,
+    denormalize_action,
+    normalize_action,
+    update_action_safety_state,
+)
+
+
+def scalar(value, default=np.nan):
+    try:
+        arr = np.asarray(value).flatten()
+        if len(arr) == 0:
+            return default
+        return float(arr[0])
+    except Exception:
+        return default
+
+
+def latest_observation_dict(env, obs_array, info) -> dict:
+    obs_vars = list(getattr(env.unwrapped, "observation_variables", []))
+    obs_dict = {name: scalar(value) for name, value in zip(obs_vars, np.asarray(obs_array).flatten())}
+    history = getattr(env.unwrapped, "history", {})
+    if isinstance(history, dict):
+        observations = history.get("observation", [])
+        if observations and isinstance(observations[-1], dict):
+            obs_dict.update(observations[-1])
+    if isinstance(info, dict):
+        obs_dict.update(info)
+    return obs_dict
+
+
+def denormalized_action_dict(env, normalized_action) -> dict[str, float]:
+    denormalized = env.formator.denormalize_actions(normalized_action)
+    return {name: float(value) for name, value in zip(env.formator.action_names, denormalized)}
+
+
+def normalized_action_dict(env, normalized_action) -> dict[str, float]:
+    arr = np.asarray(normalized_action).flatten()
+    return {name: float(value) for name, value in zip(env.formator.action_names, arr)}
+
+
+def make_env(config: dict, station: str, year: int, seed: int, run_tag: str, evaluation: bool = True, action_safety_enabled: bool | None = None):
+    ensure_project_on_path()
+    import gym
+    from sb3_wrapper import GymDssatWrapper
+
+    year_info = find_year(config, station, year)
+    env_args = build_env_args(
+        station=station,
+        year=year,
+        planting_date=year_info["planting_date"],
+        seed=seed,
+        config=config,
+        run_tag=run_tag,
+        evaluation=evaluation,
+        mode=config.get("runtime", {}).get("mode", "all"),
+    )
+    env = GymDssatWrapper(gym.make("gym_dssat_pdi:GymDssatPdi-v0", **env_args).unwrapped)
+    safety = config.get("action_safety", {})
+    enabled = bool(safety.get("enabled", False)) if action_safety_enabled is None else bool(action_safety_enabled)
+    if enabled:
+        env = SafeActionWrapper(env, {**safety, "enabled": True})
+    return env
+
+
+def evaluate_model(
+    model,
+    config: dict,
+    station: str,
+    train_year: int,
+    train_year_label: str,
+    eval_year: int,
+    eval_year_label: str,
+    seed: int,
+    model_path: Path,
+    policy_name: str,
+    action_safety_enabled: bool | None = None,
+) -> dict:
+    output_root = PROJECT_ROOT / config["paths"]["output_root"]
+    env = make_env(config, station, eval_year, seed, run_tag=f"{policy_name}_eval{eval_year}", evaluation=True, action_safety_enabled=False)
+    records: list[dict] = []
+    cumulative_irrig = 0.0
+    cumulative_n = 0.0
+    safety_state = ActionSafetyState()
+    safety_config = {**config.get("action_safety", {}), "enabled": bool(config.get("action_safety", {}).get("enabled", False) if action_safety_enabled is None else action_safety_enabled)}
+    try:
+        obs, info = env.reset()
+        done = False
+        step_count = 0
+        year_info = find_year(config, station, eval_year)
+        while not done and step_count < int(config.get("runtime", {}).get("max_steps", 260)):
+            latest = latest_observation_dict(env, obs, info)
+            dap = int(round(scalar(latest.get("dap", step_count))))
+            action, _ = model.predict(obs, deterministic=True)
+            action = np.asarray(action, dtype=np.float32).flatten()
+            action = np.clip(action, -1.0, 1.0)
+            action_names = env.formator.action_names
+            action_space_dict = env.formator.action_space_dict
+            raw_real_action = denormalize_action(action_names, action_space_dict, action)
+            safety_result = apply_action_safety(raw_real_action, dap, safety_state, safety_config)
+            safe_action = normalize_action(action_names, action_space_dict, safety_result.safe_real_action)
+            norm_action = normalized_action_dict(env, safe_action)
+            obs, reward, terminated, truncated, info = env.step(safe_action)
+            done = bool(terminated or truncated)
+            latest = latest_observation_dict(env, obs, info)
+            update_action_safety_state(safety_state, safety_result.safe_real_action, dap)
+            real_amir = float(safety_result.safe_real_action.get("amir", 0.0))
+            real_anfer = float(safety_result.safe_real_action.get("anfer", 0.0))
+            cumulative_irrig += real_amir
+            cumulative_n += real_anfer
+            date = pd.Timestamp(year_info["planting_date"]) + pd.Timedelta(days=max(dap - 1, 0))
+            totir_raw = scalar(latest.get("totir"))
+            tofer_raw = scalar(latest.get("tofer"))
+            records.append(
+                {
+                    "station": station,
+                    "policy_name": policy_name,
+                    "train_year": train_year,
+                    "train_year_label": train_year_label,
+                    "eval_year": eval_year,
+                    "eval_year_label": eval_year_label,
+                    "seed": seed,
+                    "date": date.strftime("%Y-%m-%d"),
+                    "doy": int(date.dayofyear),
+                    "dap": scalar(latest.get("dap", dap)),
+                    "topwt": scalar(latest.get("topwt")),
+                    "grnwt": scalar(latest.get("grnwt")),
+                    "xlai": scalar(latest.get("xlai")),
+                    "totir_raw": totir_raw,
+                    "totir": totir_raw if not np.isnan(totir_raw) else cumulative_irrig,
+                    "tofer_raw": tofer_raw,
+                    "tofer": tofer_raw if not np.isnan(tofer_raw) else cumulative_n,
+                    "swfac": scalar(latest.get("swfac")),
+                    "nstres": scalar(latest.get("nstres")),
+                    "reward": float(reward),
+                    "real_action_amir": real_amir,
+                    "real_action_anfer": real_anfer,
+                    "normalized_action_amir": norm_action.get("amir", np.nan),
+                    "normalized_action_anfer": norm_action.get("anfer", np.nan),
+                    "raw_real_action_amir": float(safety_result.raw_real_action.get("amir", 0.0)),
+                    "raw_real_action_anfer": float(safety_result.raw_real_action.get("anfer", 0.0)),
+                    "safe_real_action_amir": real_amir,
+                    "safe_real_action_anfer": real_anfer,
+                    "action_clipped_amir": safety_result.action_clipped_amir,
+                    "action_clipped_anfer": safety_result.action_clipped_anfer,
+                    "season_irrigation_so_far": safety_result.season_irrigation_so_far,
+                    "season_n_so_far": safety_result.season_n_so_far,
+                    "safety_rule_triggered": safety_result.safety_rule_triggered,
+                    "done": done,
+                    "info": json.dumps(info, ensure_ascii=False, default=str),
+                }
+            )
+            step_count += 1
+    finally:
+        try:
+            env.close()
+        except Exception:
+            pass
+    daily = pd.DataFrame(records)
+    daily_dir = output_root / "daily_outputs" / station
+    daily_dir.mkdir(parents=True, exist_ok=True)
+    policy_suffix = "_action_safe" if "action_safe" in policy_name else ("_debug" if "debug" in policy_name else "")
+    daily_csv = daily_dir / f"{station}_train{train_year}_eval{eval_year}_seed{seed}{policy_suffix}_daily.csv"
+    daily.to_csv(daily_csv, index=False, encoding="utf-8-sig")
+    fig_dir = output_root / "figures" / station / policy_name / f"eval_{eval_year}"
+    plot_episode(daily, fig_dir)
+    episode_completed = bool(records and records[-1]["done"])
+    return {
+        "station": station,
+        "policy_name": policy_name,
+        "train_year": train_year,
+        "train_year_label": train_year_label,
+        "eval_year": eval_year,
+        "eval_year_label": eval_year_label,
+        "seed": seed,
+        "model_path": str(model_path.relative_to(PROJECT_ROOT)),
+        "run_status": "ok" if episode_completed else "failed",
+        "error_message": "" if episode_completed else "episode_not_completed_before_max_steps",
+        "episode_completed": episode_completed,
+        "episode_length": len(daily),
+        "final_grnwt": daily["grnwt"].iloc[-1] if len(daily) else np.nan,
+        "final_topwt": daily["topwt"].iloc[-1] if len(daily) else np.nan,
+        "final_xlai": daily["xlai"].iloc[-1] if len(daily) else np.nan,
+        "total_irrigation": float(daily["real_action_amir"].sum()) if len(daily) else 0.0,
+        "total_n_fertilizer": float(daily["real_action_anfer"].sum()) if len(daily) else 0.0,
+        "mean_swfac": float(pd.to_numeric(daily["swfac"], errors="coerce").mean()) if len(daily) else np.nan,
+        "mean_nstres": float(pd.to_numeric(daily["nstres"], errors="coerce").mean()) if len(daily) else np.nan,
+        "mean_reward": float(daily["reward"].mean()) if len(daily) else np.nan,
+        "sum_reward": float(daily["reward"].sum()) if len(daily) else 0.0,
+        "daily_csv_path": str(daily_csv.relative_to(PROJECT_ROOT)),
+        "figure_dir": str(fig_dir.relative_to(PROJECT_ROOT)),
+        "notes": "action_safe_eval" if "action_safe" in policy_name else "eval",
+    }
+
+
+def append_evaluation_rows(rows: list[dict], config: dict) -> Path:
+    output_root = PROJECT_ROOT / config["paths"]["output_root"]
+    out = output_root / "evaluation" / "ppo_evaluation_summary.csv"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    new = pd.DataFrame(rows)
+    if out.exists():
+        old = pd.read_csv(out)
+        df = pd.concat([old, new], ignore_index=True)
+        df = df.drop_duplicates(["station", "policy_name", "train_year", "eval_year", "seed"], keep="last")
+    else:
+        df = new
+    df.to_csv(out, index=False, encoding="utf-8-sig")
+    return out

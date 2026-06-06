@@ -1,0 +1,9 @@
+﻿station,policy_name,train_year,eval_year,total_irrigation,total_n_fertilizer,irrigation_at_season_limit,n_at_season_limit,num_irrigation_clipped_days,num_n_clipped_days,num_safety_trigger_days,dominant_safety_rule,notes
+FQA,FQA_train2008_seed0_action_safe,2008,2008,200.0,300.0,True,True,97,105,105,amir_min_interval,at_200_300_cap
+FQA,FQA_train2008_seed0_action_safe,2008,2010,200.0,300.0,True,True,92,100,100,amir_min_interval,at_200_300_cap
+FQA,FQA_train2010_seed0_action_safe,2010,2010,200.0,300.0,True,True,92,100,100,amir_min_interval,at_200_300_cap
+FQA,FQA_train2010_seed0_action_safe,2010,2008,200.0,300.0,True,True,97,105,105,amir_min_interval,at_200_300_cap
+YCA,YCA_train2014_seed0_action_safe,2014,2014,200.0,300.0,True,True,101,109,109,amir_min_interval,at_200_300_cap
+YCA,YCA_train2014_seed0_action_safe,2014,2008,200.0,300.0,True,True,103,111,111,amir_min_interval,at_200_300_cap
+YCA,YCA_train2008_seed0_action_safe,2008,2008,200.0,300.0,True,True,104,111,111,anfer_season_limit,at_200_300_cap
+YCA,YCA_train2008_seed0_action_safe,2008,2014,200.0,300.0,True,True,102,109,109,anfer_season_limit,at_200_300_cap

@@ -1,0 +1,6 @@
+﻿station,best_policy,train_year,validation_years,cross_validation_type,mean_yield,mean_reward,mean_irrigation,mean_n,stability_score,quality_gate_pass,limited_data_flag,notes
+FQA,FQA_train2010_seed0_action_safe,2010,2008,limited_two_year_cross_validation,7063.59130859375,90.60125361056998,200.0,300.0,0.5,True,True,limited_two_year_cross_validation; not full dry_normal_wet stability validation
+HLA,HLA_train2011_seed0_action_safe,2011,"2007,2009",observed_year_leave_one,7321.971435546875,90.81285539956228,200.0,300.0,1.0,True,False,single_seed_cross_year_score
+LCA,LCA_train2010_seed0_action_safe,2010,"2008,2009,2011",observed_year_leave_one,9040.475260416666,135.2611991416684,200.0,300.0,0.0,True,False,single_seed_cross_year_score
+SYA,SYA_train2012_seed0_action_safe,2012,"2014,2015",observed_year_leave_one,10781.322631835938,109.40731370988304,200.0,300.0,1.0,True,False,single_seed_cross_year_score
+YCA,YCA_train2008_seed0_action_safe,2008,2014,limited_two_year_cross_validation,9364.827270507812,159.0450342624536,200.0,300.0,0.5,True,True,limited_two_year_cross_validation; not full dry_normal_wet stability validation

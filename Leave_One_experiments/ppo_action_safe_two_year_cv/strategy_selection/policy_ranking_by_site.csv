@@ -1,0 +1,5 @@
+﻿station,rank,policy_name,train_year,train_year_type,validation_years,mean_yield,std_yield,mean_reward,std_reward,mean_irrigation,mean_n_fertilizer,stability_score,model_path
+FQA,1,FQA_train2010_seed0_action_safe,2010,observed_higher_rain_year,2008,7063.59130859375,0.0,90.60125361056998,,200.0,300.0,0.5,Leave_One_experiments/ppo_action_safe_two_year_cv/models/FQA/FQA_train2010_seed0_action_safe.zip
+FQA,2,FQA_train2008_seed0_action_safe,2008,observed_lower_rain_year,2010,5834.447021484375,0.0,89.58316328665242,,200.0,300.0,-1.5,Leave_One_experiments/ppo_action_safe_two_year_cv/models/FQA/FQA_train2008_seed0_action_safe.zip
+YCA,1,YCA_train2008_seed0_action_safe,2008,observed_higher_rain_year,2014,9364.827270507812,0.0,159.0450342624536,,200.0,300.0,0.5,Leave_One_experiments/ppo_action_safe_two_year_cv/models/YCA/YCA_train2008_seed0_action_safe.zip
+YCA,2,YCA_train2014_seed0_action_safe,2014,observed_lower_rain_year,2008,8133.52783203125,0.0,138.65313061068994,,200.0,300.0,-1.5,Leave_One_experiments/ppo_action_safe_two_year_cv/models/YCA/YCA_train2014_seed0_action_safe.zip

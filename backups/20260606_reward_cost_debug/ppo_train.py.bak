@@ -102,8 +102,6 @@ def run_pretrain_smoke_check(config: dict, station: str, train_year: int, seed: 
         duplicate_keys = ["station", "train_year", "policy_name"]
         if "cap_name" in df.columns:
             duplicate_keys.append("cap_name")
-        if "reward_version" in df.columns:
-            duplicate_keys.append("reward_version")
         df = df.drop_duplicates(duplicate_keys, keep="last")
     else:
         df = new

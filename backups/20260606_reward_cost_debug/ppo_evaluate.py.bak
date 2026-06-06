@@ -175,9 +175,7 @@ def evaluate_model(
     daily = pd.DataFrame(records)
     daily_dir = output_root / "daily_outputs" / station
     daily_dir.mkdir(parents=True, exist_ok=True)
-    if row_metadata and row_metadata.get("reward_version") and row_metadata.get("cap_name"):
-        daily_csv = daily_dir / f"{station}_train{train_year}_{row_metadata['reward_version']}_{row_metadata['cap_name']}_eval{eval_year}_seed{seed}_daily.csv"
-    elif row_metadata and row_metadata.get("cap_name"):
+    if row_metadata and row_metadata.get("cap_name"):
         daily_csv = daily_dir / f"{station}_train{train_year}_{row_metadata['cap_name']}_eval{eval_year}_seed{seed}_daily.csv"
     else:
         policy_suffix = "_action_safe" if "action_safe" in policy_name else ("_debug" if "debug" in policy_name else "")

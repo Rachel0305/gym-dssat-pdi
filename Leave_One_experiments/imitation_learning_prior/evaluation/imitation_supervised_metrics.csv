@@ -1,0 +1,9 @@
+﻿model_name,split,n_rows,irrigation_mae,irrigation_rmse,irrigation_event_precision,irrigation_event_recall,irrigation_event_f1,nitrogen_mae,nitrogen_rmse,nitrogen_event_precision,nitrogen_event_recall,nitrogen_event_f1,nonzero_action_accuracy,zero_action_accuracy
+BC_constant_schedule_baseline,train,396,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,1.0,1.0,1.0
+BC_random_forest_regressor,train,396,0.0,0.0,0.0,0.0,0.0,0.7265053811928812,7.1013177101015375,0.8,1.0,0.8888888888888888,0.9974747474747475,0.9974489795918368
+BC_mlp_regressor,train,396,0.0,0.0,0.0,0.0,0.0,1.1363636363636365,11.918282365569903,0.0,0.0,0.0,0.98989898989899,1.0
+BC_two_stage_classifier_regressor,train,396,0.0,0.0,0.0,0.0,0.0,0.14962121212121213,1.5237492801267762,1.0,1.0,1.0,1.0,1.0
+BC_constant_schedule_baseline,validation,904,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,1.0,1.0,1.0
+BC_random_forest_regressor,validation,904,0.0,0.0,0.0,0.0,0.0,1.1291893831647704,9.26585190891554,0.42857142857142855,0.6,0.5,0.9867256637168141,0.9910514541387024
+BC_mlp_regressor,validation,904,0.0,0.0,0.0,0.0,0.0,1.1615044247787611,11.700068073321368,0.0,0.0,0.0,0.9889380530973452,1.0
+BC_two_stage_classifier_regressor,validation,904,0.0,0.0,0.0,0.0,0.0,0.6639933628318584,8.352056308457577,1.0,0.5,0.6666666666666666,0.9944690265486725,1.0

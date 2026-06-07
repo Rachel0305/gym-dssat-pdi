@@ -1,0 +1,3 @@
+﻿dataset,rows,stations,station_years,schedules,nonzero_irrigation_rows,nonzero_n_rows,unique_irrigation_amounts,unique_n_amounts,mean_positive_irrigation,mean_positive_n
+00609_original,1300,3,10,3,0,14,1,3,0.0,107.14285714285714
+00612_augmented,19500,3,10,45,87,252,2,3,50.0,98.80952380952381

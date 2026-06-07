@@ -1,0 +1,2 @@
+﻿policy_name,eval_count,mean_yield,mean_irrigation,mean_n,mean_profit,mean_yield_loss_vs_ppo,max_irrigation,max_n,mean_input_reduction_vs_ppo,passes_gate,recommendation,next_step
+BC_random_forest_regressor_augmented,10,6503.2767333984375,0.0,81.8291136988012,44.575488909284076,0.054188744537713086,0.0,108.51833687146188,0.8908945150682651,True,augmented_learned_policy,can_consider_00613_constrained_ppo_multiseed

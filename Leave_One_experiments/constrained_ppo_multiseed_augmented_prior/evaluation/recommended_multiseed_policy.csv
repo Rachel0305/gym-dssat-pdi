@@ -1,0 +1,2 @@
+﻿method,sites,site_pass_count,mean_yield,mean_profit,mean_irrigation,mean_n,mean_yield_loss_vs_ppo,failure_rate,cap_regression_rate,cv_yield,passes_gate,recommendation,next_step
+MS0_augmented_RF_prior_replay,3,2,6500.5829026963975,44.25903542902736,0.0,82.98717439174652,0.054580524789845736,0.0,0.0,0.03554005336170581,False,retain_augmented_rf_prior_as_current_best_profit_policy,do_not_enter_rainfall_scaling; run_irrigation_responsive_expert_search_and_fix_HLA_yield_gap

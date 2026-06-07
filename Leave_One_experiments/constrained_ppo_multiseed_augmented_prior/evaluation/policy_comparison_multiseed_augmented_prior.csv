@@ -1,0 +1,8 @@
+﻿policy_type,policy_name,eval_count,mean_yield,mean_irrigation,mean_n,mean_profit
+baseline_or_prior,best_expert_schedule_replay,10,8225.227111816406,0.0,150.0,44.752271118164074
+baseline_or_prior,BC_random_forest_regressor_augmented,10,6503.2767333984375,0.0,81.82911369880121,44.575488909284076
+baseline_or_prior,BC_two_stage_classifier_regressor_original,10,8091.853698730469,0.0,153.575,42.524786987304694
+multiseed_constrained_ppo,MS0_augmented_RF_prior_replay,30,6503.2767333984375,0.0,81.82911247015,44.57548921644688
+multiseed_constrained_ppo,MS1_residual_augmented_RF_prior_strict,30,6435.691762288411,16.23744989434878,84.6442507704099,35.077129983107255
+multiseed_constrained_ppo,MS2_guardrail_augmented_RF_100_200,30,8529.143330891928,100.0,200.0,-14.708566691080728
+ppo_cap_saturated_baseline,old_ppo_cap_saturated_baseline,90,6875.87158203125,300.0,450.0,-193.7412841796875

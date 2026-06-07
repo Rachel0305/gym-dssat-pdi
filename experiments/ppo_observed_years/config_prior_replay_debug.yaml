@@ -1,0 +1,128 @@
+seed: 0
+
+paths:
+  output_root: Leave_One_experiments/prior_replay_debug
+  imitation_root: Leave_One_experiments/imitation_learning_prior
+  constrained_root: Leave_One_experiments/constrained_ppo_finetuning
+  weather_dir: weather_clean_qc
+  wth_dir: Leave_One_experiments/wth_generated_qc
+  my_data_dir: my_data
+  cultivar_file: my_data/MZCER048.CUL
+
+runtime:
+  mode: all
+  max_steps: 260
+  total_timesteps: 5000
+  episode_timeout_seconds: 300
+
+ppo:
+  learning_rate: 0.0003
+  gamma: 0.99
+  n_steps: 128
+  batch_size: 64
+  ent_coef: 0.0
+  clip_range: 0.2
+
+economics:
+  grain_value_coef: 0.01
+  water_cost: 0.5
+  n_cost: 0.25
+
+ppo_reference:
+  mean_yield: 6875.87158203125
+  total_irrigation: 300.0
+  total_n: 450.0
+
+primary_prior:
+  policy_name: BC_two_stage_classifier_regressor
+  action_table: Leave_One_experiments/imitation_learning_prior/evaluation/policy_action_tables/BC_two_stage_classifier_regressor_action_table.csv
+
+action_safety:
+  enabled: true
+  daily_irrigation_max: 100.0
+  daily_n_max: 150.0
+  season_irrigation_soft_limit: 300.0
+  season_n_soft_limit: 450.0
+  min_days_between_irrigation: 7
+  min_days_between_fertilization: 10
+  fertilization_allowed_dap_range: [1, 120]
+  irrigation_allowed_dap_range: [1, 120]
+
+fixed_methods:
+  - name: FT0_BC_two_stage_replay_fixed
+    kind: prior_replay
+    train: false
+    guardrail_irrigation: 300.0
+    guardrail_n: 450.0
+    daily_n_max: 150.0
+  - name: FT2_residual_bc_prior_fixed
+    kind: residual
+    train: true
+    irrigation_residual_range: 20.0
+    n_residual_range: 30.0
+    guardrail_irrigation: 300.0
+    guardrail_n: 450.0
+    daily_n_max: 150.0
+  - name: FT3_budget_guardrail_100_200_fixed
+    kind: imitation_penalty
+    train: true
+    lambda_bc: 0.5
+    guardrail_irrigation: 100.0
+    guardrail_n: 200.0
+    daily_n_max: 150.0
+
+sites:
+  HLA:
+    train_year: 2011
+    eval_years: [2011, 2007, 2009]
+  SYA:
+    train_year: 2012
+    eval_years: [2012, 2014, 2015]
+  LCA:
+    train_year: 2010
+    eval_years: [2010, 2011, 2008, 2009]
+
+observed_years:
+  HLA:
+    - year: 2007
+      label: observed_low_rain_year
+      planting_date: "2007-05-05"
+      harvest_window_rain_mm: 345.6
+    - year: 2011
+      label: observed_mid_rain_year
+      planting_date: "2011-05-05"
+      harvest_window_rain_mm: 479.2
+    - year: 2009
+      label: observed_high_rain_year
+      planting_date: "2009-05-02"
+      harvest_window_rain_mm: 489.5
+  SYA:
+    - year: 2014
+      label: observed_low_rain_year
+      planting_date: "2014-04-21"
+      harvest_window_rain_mm: 331.8
+    - year: 2015
+      label: observed_mid_rain_year
+      planting_date: "2015-04-18"
+      harvest_window_rain_mm: 424.1
+    - year: 2012
+      label: observed_high_rain_year
+      planting_date: "2012-04-28"
+      harvest_window_rain_mm: 649.4
+  LCA:
+    - year: 2010
+      label: observed_low_rain_year
+      planting_date: "2010-06-06"
+      harvest_window_rain_mm: 288.5
+    - year: 2011
+      label: observed_mid_rain_year
+      planting_date: "2011-06-15"
+      harvest_window_rain_mm: 300.9
+    - year: 2008
+      label: observed_intermediate_rain_year_3
+      planting_date: "2008-06-19"
+      harvest_window_rain_mm: 357.1
+    - year: 2009
+      label: observed_high_rain_year
+      planting_date: "2009-06-14"
+      harvest_window_rain_mm: 417.1

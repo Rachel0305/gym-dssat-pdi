@@ -1,0 +1,4 @@
+﻿policy_name,recommended,mean_irrigation,mean_n,mean_yield_loss_vs_best_expert,water_stress_nonzero_irrigation_rate,supervised_irrigation_event_recall,reason
+BC_random_forest_regressor_all_year,False,0.0,128.70979864418192,-0.41895025264217284,0.0,0.9508196721311475,does_not_pass_basic_all_year_prior_gate
+BC_mlp_regressor_all_year,False,0.0,118.41628104863969,-0.39697340935268915,0.0,0.21311475409836064,does_not_pass_basic_all_year_prior_gate
+BC_two_stage_classifier_regressor_all_year,False,0.0,64.61501691191839,0.1221781038838469,0.0,1.0,does_not_pass_basic_all_year_prior_gate

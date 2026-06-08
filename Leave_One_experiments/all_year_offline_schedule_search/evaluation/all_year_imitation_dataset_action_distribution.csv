@@ -1,0 +1,5 @@
+﻿dataset,path,rows,station_years,nonzero_irrigation_rows,nonzero_n_rows
+00609_original,Leave_One_experiments/imitation_learning_prior/datasets/imitation_dataset_clean.csv,1300,10,0,14
+00609_original_alt,Leave_One_experiments/offline_schedule_search/expert_policy/imitation_dataset.csv,477,3,0,3
+00612_augmented,Leave_One_experiments/expert_dataset_augmentation/imitation_dataset/imitation_dataset_augmented.csv,19500,10,87,252
+00616_all_year,Leave_One_experiments/all_year_offline_schedule_search/imitation_dataset/all_year_imitation_dataset.csv,25298,55,148,405

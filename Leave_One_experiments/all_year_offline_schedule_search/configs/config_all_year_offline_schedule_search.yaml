@@ -1,0 +1,63 @@
+seed: 0
+paths:
+  output_root: Leave_One_experiments/all_year_offline_schedule_search
+  source_00615_output_root: Leave_One_experiments/all_year_weather_calibration_validation
+  scenario_pool_csv: Leave_One_experiments/all_year_weather_calibration_validation/scenario_pool/all_year_weather_scenario_pool.csv
+  weather_inventory_csv: Leave_One_experiments/all_year_weather_calibration_validation/weather_inventory/weather_year_inventory.csv
+  calibration_plan_csv: Leave_One_experiments/all_year_weather_calibration_validation/cultivar_calibration_plan/weather_2020_2023_availability.csv
+  base_env_config: experiments/ppo_observed_years/config_all_year_weather_calibration_validation.yaml
+
+runtime:
+  max_steps: 260
+  max_station_years: 55
+  max_eval_station_years: 24
+  evaluate_imitation_policy: true
+  plot_daily_episodes: false
+
+selection:
+  dry_years_per_station: 3
+  normal_years_per_station: 4
+  wet_years_per_station: 2
+  always_include_2020_2023: true
+
+economics:
+  grain_value_coef: 0.01
+  water_cost: 0.5
+  low_water_cost: 0.1
+  n_cost: 0.25
+
+action_safety:
+  enabled: true
+  daily_irrigation_cap: 80.0
+  daily_n_cap: 150.0
+  season_irrigation_cap: 160.0
+  season_n_cap: 250.0
+  min_irrigation_interval_days: 1
+  min_n_interval_days: 1
+  irrigation_start_dap: 1
+  irrigation_end_dap: 120
+  n_start_dap: 1
+  n_end_dap: 120
+
+offline_search:
+  nitrogen_events: [1, 30, 60]
+  irrigation_events_full: [20, 35, 50, 65, 80, 95]
+  irrigation_events_simple: [35, 65]
+  nitrogen_amounts: [0, 50, 75, 100, 150]
+  irrigation_amounts_full: [0, 20, 40, 60]
+  irrigation_amounts_simple: [0, 30, 60]
+  total_n_cap: 250.0
+  total_irrigation_cap: 160.0
+  max_schedules_stress_year: 52
+  max_schedules_normal_year: 32
+  top_schedules_per_station_year: 5
+  event_threshold: 10.0
+
+imitation:
+  models:
+    - BC_random_forest_regressor_all_year
+    - BC_two_stage_classifier_regressor_all_year
+    - BC_mlp_regressor_all_year
+  event_threshold: 10.0
+  random_forest_estimators: 300
+  mlp_max_iter: 1000

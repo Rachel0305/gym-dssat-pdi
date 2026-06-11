@@ -1,0 +1,6 @@
+﻿station_code,train_years,seed,total_timesteps,run_status,model_path,mean_train_reward,final_train_reward,notes
+FQA,"2007,2008,2016,2020,2023",0,5000,ok,Leave_One_experiments/all_year_direct_action_safe_ppo/models/FQA/ppo_direct_action_safe_seed0.zip,,,
+HLA,"2004,2020,2021,2022,2023",0,5000,ok,Leave_One_experiments/all_year_direct_action_safe_ppo/models/HLA/ppo_direct_action_safe_seed0.zip,,,
+LCA,"2017,2020,2021,2022,2023",0,5000,ok,Leave_One_experiments/all_year_direct_action_safe_ppo/models/LCA/ppo_direct_action_safe_seed0.zip,,,
+SYA,"2009,2014,2017,2020,2022",0,5000,ok,Leave_One_experiments/all_year_direct_action_safe_ppo/models/SYA/ppo_direct_action_safe_seed0.zip,,,
+YCA,"2004,2014,2015,2019,2022",0,5000,ok,Leave_One_experiments/all_year_direct_action_safe_ppo/models/YCA/ppo_direct_action_safe_seed0.zip,,,

@@ -1,0 +1,55 @@
+seed: 0
+mode: water_nitrogen
+algorithm: PPO
+total_timesteps: 5000
+paths:
+  base_env_config: experiments/ppo_observed_years/config_all_year_weather_calibration_validation.yaml
+  output_root: Leave_One_experiments/all_year_direct_ppo_cost_cap_sensitivity/scenarios/D_cost_high_cap_low
+  scenario_pool_csv: Leave_One_experiments/all_year_weather_calibration_validation/scenario_pool/all_year_weather_scenario_pool.csv
+  weather_inventory_csv: Leave_One_experiments/all_year_weather_calibration_validation/weather_inventory/weather_year_inventory.csv
+  weather_clean_csv: weather_clean_qc/all_sites_weather_cleaned_qc.csv
+  cultivar_file: my_data/MZCER048.CUL
+  my_data_dir: my_data
+  wth_dir: Leave_One_experiments/wth_generated_qc
+runtime:
+  mode: all
+  max_steps: 260
+  episode_timeout_seconds: 300
+  train_years_per_station: 5
+  eval_years_per_station: 4
+  debug_timesteps: 512
+  smoke_station: HLA
+ppo:
+  learning_rate: 0.0003
+  gamma: 0.99
+  n_steps: 256
+  batch_size: 64
+  ent_coef: 0.01
+  clip_range: 0.2
+action_scale:
+  daily_irrigation_max: 40.0
+  daily_n_max: 80.0
+action_safety:
+  enabled: true
+  daily_irrigation_max: 40.0
+  daily_n_max: 80.0
+  season_irrigation_soft_limit: 100.0
+  season_n_soft_limit: 180.0
+  min_days_between_irrigation: 1
+  min_days_between_fertilization: 1
+  irrigation_allowed_dap_range:
+  - 1
+  - 120
+  fertilization_allowed_dap_range:
+  - 1
+  - 120
+economics:
+  grain_value_coef: 0.01
+  water_cost: 0.3
+  nitrogen_cost: 0.5
+reward:
+  reward_type: simple_growth_minus_fixed_economic_cost
+  topwt_delta_coef: 0.1
+  grnwt_delta_coef: 1.0
+  water_cost: 0.3
+  nitrogen_cost: 0.5

@@ -1,0 +1,38 @@
+seed: 0
+base_config: experiments/ppo_observed_years/config_all_year_direct_action_safe_ppo.yaml
+base_selection_csv: Leave_One_experiments/all_year_direct_action_safe_ppo/configs/ppo_train_eval_year_selection.csv
+base_eval_summary_csv: Leave_One_experiments/all_year_direct_action_safe_ppo/evaluation/ppo_direct_eval_summary.csv
+base_diagnosis_csv: Leave_One_experiments/all_year_direct_action_safe_ppo/evaluation/ppo_decision_reasonableness_diagnosis.csv
+output_root: Leave_One_experiments/all_year_direct_ppo_cost_cap_sensitivity
+
+scenarios:
+  - scenario: A_baseline
+    water_cost: 0.1
+    nitrogen_cost: 0.25
+    season_irrigation_cap: 160.0
+    season_n_cap: 250.0
+    reuse_00617: true
+  - scenario: B_cost_high
+    water_cost: 0.3
+    nitrogen_cost: 0.5
+    season_irrigation_cap: 160.0
+    season_n_cap: 250.0
+    reuse_00617: false
+  - scenario: C_cap_low
+    water_cost: 0.1
+    nitrogen_cost: 0.25
+    season_irrigation_cap: 100.0
+    season_n_cap: 180.0
+    reuse_00617: false
+  - scenario: D_cost_high_cap_low
+    water_cost: 0.3
+    nitrogen_cost: 0.5
+    season_irrigation_cap: 100.0
+    season_n_cap: 180.0
+    reuse_00617: false
+
+recommendation:
+  max_cap_fraction: 0.8
+  min_yield_fraction_vs_baseline: 0.9
+  min_positive_grnwt: 1.0
+  min_positive_topwt: 1.0

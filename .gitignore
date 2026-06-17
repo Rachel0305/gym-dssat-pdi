@@ -24,6 +24,7 @@ output/
 outputs/
 tmp/
 temp/
+archive_non_mainline_*/
 
 # ===============================
 # Stable-Baselines3

@@ -1,0 +1,125 @@
+seed: 1
+seeds: [1, 2]
+total_timesteps: 5000
+report_title: 008_16 HLA 2004 Irrigation-Only Soft-Stress PPO Seed Stability
+
+paths:
+  base_env_config: experiments/ppo_observed_years/config_all_year_weather_calibration_validation.yaml
+  output_root: Leave_One_experiments/hla2004_irrigation_only_soft_stress_ppo_008_16_seed_stability
+  scenario_pool_csv: Leave_One_experiments/all_year_weather_calibration_validation/scenario_pool/all_year_weather_scenario_pool.csv
+  reference_summary_csv: Leave_One_experiments/representative_management_comparison_008_06/evaluation/HLA_2004_representative_scenario_summary.csv
+  weather_clean_csv: weather_clean_qc/all_sites_weather_cleaned_qc.csv
+  cultivar_file: my_data/MZCER048.CUL
+  my_data_dir: my_data
+  wth_dir: Leave_One_experiments/wth_generated_qc
+  doc_md: docs/2026-06-14_008_16_hla2004_irrigation_only_soft_stress_ppo_seed_stability_report.md
+  doc_ppt: docs/018_008_16_hla2004_irrigation_only_soft_stress_ppo_seed_stability.pptx
+
+runtime:
+  mode: all
+  max_steps: 260
+  max_stage_steps: 12
+  episode_timeout_seconds: 300
+
+station_years:
+  - station: HLA
+    year: 2004
+
+ppo:
+  learning_rate: 0.0003
+  gamma: 0.99
+  n_steps: 5
+  batch_size: 5
+  n_epochs: 10
+  ent_coef: 0.02
+  clip_range: 0.2
+
+reward:
+  reward_type: hla2004_irrigation_only_soft_stress_seed_stability
+  topwt_delta_coef: 0.001
+  grnwt_delta_coef: 0.020
+  trnu_delta_coef: 0.0
+  water_cost: 0.050
+  nitrogen_cost: 0.0
+  terminal_grnwt_coef: 0.010
+
+soft_stress_reward:
+  enabled: true
+  swfac_threshold: 0.05
+  swfac_excess_cost: 1.0
+  swfac_day_cost: 0.25
+
+economics:
+  grain_value_coef: 0.01
+  water_cost_low: 0.1
+  nitrogen_cost: 0.25
+
+action_safety:
+  enabled: false
+
+forecast_stress_gate:
+  enabled: true
+  weather_csv: weather_clean_qc/HLA_weather_cleaned_qc.csv
+  lookahead_days: 7
+  swfac_threshold: 0.05
+  always_block_stage_ids: [S1]
+  future_rain_threshold_by_stage:
+    S2: 10.0
+    S3: 10.0
+    S4: 20.0
+    S5: 20.0
+  min_irrigation_when_triggered_by_stage:
+    S2: 0.0
+    S3: 0.0
+    S4: 0.0
+    S5: 0.0
+
+stage_action:
+  stages:
+    - stage_id: S1
+      stage_name: establishment
+      start_dap: 0
+      end_dap: 20
+      irrigation_base: 0.0
+      irrigation_cap: 0.0
+      nitrogen_base: 50.0
+      nitrogen_cap: 50.0
+    - stage_id: S2
+      stage_name: early_vegetative
+      start_dap: 21
+      end_dap: 45
+      irrigation_base: 0.0
+      irrigation_cap: 40.0
+      nitrogen_base: 50.0
+      nitrogen_cap: 50.0
+    - stage_id: S3
+      stage_name: mid_season
+      start_dap: 46
+      end_dap: 75
+      irrigation_base: 0.0
+      irrigation_cap: 40.0
+      nitrogen_base: 50.0
+      nitrogen_cap: 50.0
+    - stage_id: S4
+      stage_name: late_water_risk
+      start_dap: 76
+      end_dap: 100
+      irrigation_base: 0.0
+      irrigation_cap: 40.0
+      nitrogen_base: 0.0
+      nitrogen_cap: 0.0
+    - stage_id: S5
+      stage_name: terminal_water_risk
+      start_dap: 101
+      end_dap: end
+      irrigation_base: 0.0
+      irrigation_cap: 40.0
+      nitrogen_base: 0.0
+      nitrogen_cap: 0.0
+
+success_criteria:
+  cap_saturation_threshold_irrigation: 150.0
+  cap_saturation_threshold_n: 160.0
+  min_grnwt_fraction_vs_fixed_I120: 0.70
+  target_first_irrigation_dap_min: 21
+

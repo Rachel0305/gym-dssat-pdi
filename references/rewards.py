@@ -1,0 +1,76 @@
+import os
+import pdb
+import numpy as np
+
+__copyright__ = 'Copyright CGIAR, Inria and CIRAD'
+__credits__ = [
+    'Romain Gautron',
+    'Emilio J. Padron',
+]
+__license__ = 'BSD 3-Clause'
+__author__ = 'Romain Gautron <romain.gautron@cirad.fr>'
+
+def _get_reward_weight(cultivar, name, default):
+    cultivar_key = cultivar.upper()
+    name_key = name.upper()
+    aliases = [
+        f"GYM_DSSAT_REWARD_{cultivar_key}_{name_key}",
+        f"GYM_DSSAT_REWARD_{name_key}",
+    ]
+    if name_key == "PENALITY":
+        aliases.extend([
+            f"GYM_DSSAT_REWARD_{cultivar_key}_PENALTY",
+            "GYM_DSSAT_REWARD_PENALTY",
+        ])
+    for env_key in aliases:
+        value = os.environ.get(env_key)
+        if value is not None:
+            return float(value)
+    return default
+
+### The rewards are fixed until specific variables
+### and objectives are selected
+
+def fertilization_reward(_previous_state, _next_state, _history, _cultivar):
+    weights = {
+            "maize"  : {"coef":1.0, "penality":0.5},
+            "cotton" : {"coef":1.0, "penality":0.75},
+            "rice"   : {"coef":1.0, "penality":0.5},  
+    }   
+    if _next_state:
+        last_action = _history['action'][-1]['anfer']
+        penality = _get_reward_weight(_cultivar, "penality", weights[_cultivar]["penality"])
+        coef = _get_reward_weight(_cultivar, "coef", weights[_cultivar]["coef"])
+        trnu = _next_state['trnu']
+        return trnu * coef - penality * last_action
+    return None
+
+
+def irrigation_reward(_previous_state, _next_state, _history, _cultivar):
+    if _next_state:
+        last_action = _history['action'][-1]['amir']
+        previous_topwt = _previous_state['topwt']
+        next_topwt = _next_state['topwt']
+        penality = 15
+        return next_topwt - previous_topwt - penality * last_action
+    return None
+
+
+
+def all_reward(_previous_state, _next_state, _history, _cultivar):
+    ferti_reward_value = fertilization_reward(_previous_state, _next_state, _history, _cultivar)
+    irrig_reward_value = irrigation_reward(_previous_state, _next_state, _history, _cultivar)
+    return [ferti_reward_value, irrig_reward_value]
+
+
+def get_reward_function(mode):
+    reward_func_dic = {'all': all_reward,
+                       'fertilization': fertilization_reward,
+                       'irrigation': irrigation_reward}
+    if mode not in reward_func_dic:
+        raise ValueError(f'"mode" parameter has to be in {[*reward_func_dic]}!')
+    return reward_func_dic[mode]
+
+
+if __name__ == '__main__':
+    pass

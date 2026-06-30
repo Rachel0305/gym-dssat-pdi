@@ -1,0 +1,6 @@
+﻿scenario,action_irrigation_total,action_fertilizer_total,mgmt_event_irrigation_total,mgmt_event_fertilizer_total,final_grain_kg_ha,final_biomass_kg_ha,max_water_stress,max_nitrogen_stress,total_reward,n_cost
+dqn_unified_ncost_0p5,120.0,250.0,120.0,250.0,9418.0,20513.0,0.0,0.01288151741027832,9172.855224609375,0.5
+dqn_unified_ncost_1p0,120.0,250.0,120.0,250.0,9418.0,20513.0,0.0,0.01288151741027832,9047.855224609375,1.0
+dqn_unified_ncost_2p0,120.0,250.0,120.0,250.0,9418.0,20513.0,0.0,0.01288151741027832,8797.855224609375,2.0
+dqn_unified_ncost_3p0,120.0,250.0,120.0,250.0,9418.0,20513.0,0.0,0.01288151741027832,8547.855224609375,3.0
+dqn_unified_ncost_5p0,120.0,250.0,120.0,250.0,9418.0,20513.0,0.0,0.01288151741027832,8047.855224609375,5.0

@@ -38,6 +38,13 @@ DSSAT_auto_validation/success_examples_four_scenario_014_14/figures/
 src/plot_success_examples_four_scenario_014_14.py
 ```
 
+新版 Nature-style 图同时导出 PNG 和 SVG。带累积奖励子图的新文件命名为：
+
+```text
+figures/*_scenario_process_nature_reward.png
+figures/*_scenario_process_nature_reward.svg
+```
+
 ## 示例与数据来源
 
 | 站点年份 | 当前整理情景 | 数据来源说明 |
@@ -59,6 +66,17 @@ src/plot_success_examples_four_scenario_014_14.py
    本次从 `CNFQ1601.WTH` 按种植日 DOY=162 映射到 DAP 后补入降雨。
 
 4. 图中胁迫指数按当前 gym/PDI 输出口径展示：数值越大表示胁迫越强。
+
+5. 新增的累积奖励子图是统一的事后评价指标，不等同于每个 DQN 模型训练时的内部 reward。  
+   计算公式为：
+
+```text
+post-hoc cumulative reward proxy
+= current grain weight - 1 × cumulative irrigation - 5 × cumulative fertilizer
+```
+
+   这样做的目的，是让 null、专家记录、DSSAT auto 和 DQN 可以放在同一把尺子下比较“产量-资源投入”的折中。  
+   因为该指标显式惩罚水氮投入，所以它可能与“单纯追求最高产量”的排序不同。
 
 ## 汇总结果
 
@@ -94,6 +112,10 @@ src/plot_success_examples_four_scenario_014_14.py
 
 4. DSSAT auto 在 HLA 和 FQ 中仍然表现出“灌溉触发有效、自动施肥未触发或施肥不足”的特征。  
    因此 DQN 与 DSSAT auto 的对比可以作为工程对照，但不能简单解释为“DSSAT 最强自动管理基线”。
+
+5. 累积奖励 proxy 的排序提示：如果导师把目标定义为“收益/资源效率”，结论会不同于“最高产量”。  
+   例如 YC2014 中 recorded expert 产量最高，但水氮投入过大，因此 reward proxy 明显低于 DQN 和 DSSAT auto。  
+   这说明下一步必须和导师确认主目标到底是“产量最大化”还是“产量-资源投入折中最优”。
 
 ## 后续建议
 

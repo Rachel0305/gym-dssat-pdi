@@ -1,5 +1,5 @@
-﻿site,year,scenario,scenario_label,total_irrigation_mm,total_fertilizer_kg_ha,final_grain_kg_ha,final_biomass_kg_ha,max_water_stress,max_nitrogen_stress
-HLA,2010,dqn_action9_seed1,DQN seed1,120.0,300.0,7853.6651611328125,20874.70458984375,0.4158359169960022,0.015815258026123
-HLA,2010,dssat_auto,DSSAT auto,190.4,0.0,7854.0,20874.0,0.416,0.035
-HLA,2010,expert_2007_shifted,Expert 2007 shifted,30.0,165.0,7679.0,20665.0,0.811,0.016
-HLA,2010,null_zero,Null,0.0,0.0,6956.0,19344.0,0.919,0.157
+﻿site,year,scenario,scenario_label,total_irrigation_mm,total_fertilizer_kg_ha,final_grain_kg_ha,final_biomass_kg_ha,max_water_stress,max_nitrogen_stress,final_reward_proxy
+HLA,2010,dqn_action9_seed1,DQN seed1,120.0,300.0,7853.6651611328125,20874.70458984375,0.4158359169960022,0.015815258026123,6233.6651611328125
+HLA,2010,dssat_auto,DSSAT auto,190.4,0.0,7854.0,20874.0,0.416,0.035,7569.0
+HLA,2010,expert_2007_shifted,Expert 2007 shifted,30.0,165.0,7679.0,20665.0,0.811,0.016,5969.0
+HLA,2010,null_zero,Null,0.0,0.0,6956.0,19344.0,0.919,0.157,6956.0

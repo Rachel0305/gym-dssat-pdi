@@ -13,6 +13,9 @@ OUT = ROOT / "DSSAT_auto_validation" / "success_examples_four_scenario_014_14"
 FIG = OUT / "figures"
 TABLE = OUT / "daily_tables"
 
+WATER_COST_FOR_REWARD_PROXY = 1.0
+NITROGEN_COST_FOR_REWARD_PROXY = 5.0
+
 
 SCENARIO_LABELS = {
     "null_zero": "Null",
@@ -93,7 +96,31 @@ def normalize_daily(df: pd.DataFrame, site: str, year: int) -> pd.DataFrame:
             df[col] = 0.0
         df[col] = pd.to_numeric(df[col], errors="coerce").fillna(0.0)
     keep = ["site", "year", "scenario", "dap", "rain", "swfac", "nstres", "grnwt", "topwt", "irrigation_mm", "fertilizer_kg_ha"]
-    return df[keep].sort_values(["scenario", "dap"]).reset_index(drop=True)
+    out = df[keep].sort_values(["scenario", "dap"]).reset_index(drop=True)
+    return add_reward_proxy(out)
+
+
+def add_reward_proxy(df: pd.DataFrame) -> pd.DataFrame:
+    """Add a common post-hoc reward proxy for cross-scenario visual comparison.
+
+    This is not claimed to be the exact internal training reward for every run.
+    It is a shared evaluation ruler:
+    cumulative_reward_at_dap = current grain - 1*cumulative irrigation - 5*cumulative fertilizer.
+    """
+    out = df.copy()
+    out["reward_proxy_daily"] = 0.0
+    out["reward_proxy_cumulative"] = 0.0
+    for scen, idx in out.groupby("scenario", sort=False).groups.items():
+        sdf = out.loc[idx].sort_values("dap")
+        cumulative_cost = (
+            - WATER_COST_FOR_REWARD_PROXY * sdf["irrigation_mm"].astype(float)
+            - NITROGEN_COST_FOR_REWARD_PROXY * sdf["fertilizer_kg_ha"].astype(float)
+        ).cumsum()
+        cumulative_reward = sdf["grnwt"].astype(float) + cumulative_cost
+        daily = cumulative_reward.diff().fillna(cumulative_reward)
+        out.loc[sdf.index, "reward_proxy_daily"] = daily.to_numpy()
+        out.loc[sdf.index, "reward_proxy_cumulative"] = cumulative_reward.to_numpy()
+    return out
 
 
 def parse_wth_rain_by_dap(wth_path: Path, planting_doy: int, max_dap: int) -> pd.DataFrame:
@@ -119,7 +146,7 @@ def parse_wth_rain_by_dap(wth_path: Path, planting_doy: int, max_dap: int) -> pd
 def attach_rain_from_map(df: pd.DataFrame, rain_map: pd.DataFrame) -> pd.DataFrame:
     out = df.drop(columns=["rain"], errors="ignore").merge(rain_map[["dap", "rain"]], on="dap", how="left")
     out["rain"] = out["rain"].fillna(0.0)
-    return out
+    return add_reward_proxy(out)
 
 
 def build_hla(year: int) -> pd.DataFrame:
@@ -201,11 +228,11 @@ def scenario_order(df: pd.DataFrame) -> list[str]:
 def plot_process(df: pd.DataFrame, site: str, year: int, note: str) -> Path:
     order = scenario_order(df)
     fig, axes = plt.subplots(
-        5,
+        6,
         1,
-        figsize=(15, 13),
+        figsize=(15, 15.2),
         sharex=True,
-        gridspec_kw={"height_ratios": [1.0, 1.2, 1.2, 1.2, 1.4], "hspace": 0.28},
+        gridspec_kw={"height_ratios": [0.9, 1.05, 1.05, 1.05, 1.25, 1.2], "hspace": 0.30},
     )
     fig.patch.set_facecolor("#FCFCFD")
     for ax in axes:
@@ -249,8 +276,32 @@ def plot_process(df: pd.DataFrame, site: str, year: int, note: str) -> Path:
         axes[4].plot(sdf["dap"], sdf["grnwt"], color=color, linestyle=linestyle, linewidth=2.1, label=f"{label} grain")
         axes[4].plot(sdf["dap"], sdf["topwt"], color=color, linewidth=1.4, linestyle=":", alpha=0.85, label=f"{label} biomass")
     axes[4].set_ylabel("kg/ha")
-    axes[4].set_xlabel("DAP")
     axes[4].legend(loc="upper left", ncol=2, frameon=False, fontsize=9)
+
+    for scen in order:
+        sdf = df[df["scenario"] == scen].sort_values("dap")
+        label = SCENARIO_LABELS.get(scen, scen)
+        color = COLORS.get(scen, "#1F2430")
+        linestyle = LINESTYLES.get(scen, "-")
+        axes[5].plot(
+            sdf["dap"],
+            sdf["reward_proxy_cumulative"],
+            color=color,
+            linestyle=linestyle,
+            linewidth=2.0,
+            label=label,
+        )
+    axes[5].axhline(0, color="#D7DBE7", linewidth=0.9)
+    axes[5].set_ylabel("Cumulative\nreward")
+    axes[5].set_xlabel("DAP")
+    axes[5].text(
+        0.0,
+        1.03,
+        "Post-hoc reward proxy = current grain - 1×cumulative irrigation - 5×cumulative fertilizer",
+        transform=axes[5].transAxes,
+        fontsize=9,
+        color="#6F768A",
+    )
 
     fig.subplots_adjust(top=0.90)
     fig.text(
@@ -264,8 +315,12 @@ def plot_process(df: pd.DataFrame, site: str, year: int, note: str) -> Path:
         color="#1F2430",
     )
     fig.text(0.08, 0.952, note, ha="left", va="top", fontsize=10, color="#6F768A")
-    out = FIG / f"{site.lower()}_{year}_scenario_process.png"
-    fig.savefig(out, dpi=240, bbox_inches="tight")
+    out = FIG / f"{site.lower()}_{year}_scenario_process_nature_reward.png"
+    fig.savefig(out, dpi=360, bbox_inches="tight")
+    fig.savefig(out.with_suffix(".svg"), bbox_inches="tight")
+    # Keep the legacy PNG name updated for downstream slides that already link it.
+    legacy = FIG / f"{site.lower()}_{year}_scenario_process.png"
+    fig.savefig(legacy, dpi=240, bbox_inches="tight")
     plt.close(fig)
     return out
 
@@ -286,6 +341,7 @@ def summarize(df: pd.DataFrame, site: str, year: int) -> pd.DataFrame:
                 "final_biomass_kg_ha": float(last["topwt"]),
                 "max_water_stress": float(sdf["swfac"].max()),
                 "max_nitrogen_stress": float(sdf["nstres"].max()),
+                "final_reward_proxy": float(sdf.sort_values("dap")["reward_proxy_cumulative"].iloc[-1]),
             }
         )
     return pd.DataFrame(rows)

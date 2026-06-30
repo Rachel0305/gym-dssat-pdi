@@ -27,21 +27,43 @@ SCENARIO_LABELS = {
 }
 
 COLORS = {
-    "null_zero": "#464C55",
-    "recorded": "#CC6F47",
-    "recorded_shifted": "#CC6F47",
-    "expert_2007_shifted": "#CC6F47",
-    "dssat_auto": "#5477C4",
+    "null_zero": "#000000",
+    "recorded": "#D62728",
+    "recorded_shifted": "#D62728",
+    "expert_2007_shifted": "#D62728",
+    "dssat_auto": "#B8A037",
     "dqn_action9_seed1": "#386411",
     "dqn_linked_free_daily_seed1": "#386411",
     "dqn_linked_agronomic_window_seed1": "#386411",
     "dqn_linked_agronomic_window": "#386411",
 }
 
+LINESTYLES = {
+    "null_zero": "-",
+    "recorded": "--",
+    "recorded_shifted": "--",
+    "expert_2007_shifted": "--",
+    "dssat_auto": "-",
+    "dqn_action9_seed1": "-",
+    "dqn_linked_free_daily_seed1": "-",
+    "dqn_linked_agronomic_window_seed1": "-",
+    "dqn_linked_agronomic_window": "-",
+}
+
 
 def ensure_dirs() -> None:
     FIG.mkdir(parents=True, exist_ok=True)
     TABLE.mkdir(parents=True, exist_ok=True)
+
+
+def safe_to_csv(df: pd.DataFrame, path: Path) -> Path:
+    try:
+        df.to_csv(path, index=False, encoding="utf-8-sig")
+        return path
+    except PermissionError:
+        fallback = path.with_name(f"{path.stem}_updated{path.suffix}")
+        df.to_csv(fallback, index=False, encoding="utf-8-sig")
+        return fallback
 
 
 def normalize_daily(df: pd.DataFrame, site: str, year: int) -> pd.DataFrame:
@@ -128,11 +150,18 @@ def build_yc2014() -> pd.DataFrame:
     base_path = ROOT / "DSSAT_auto_validation" / "yc_2008_2014_four_scenario_comparison_013_09" / "yc_2014_four_scenario_daily_for_plot_updated.csv"
     base = normalize_daily(pd.read_csv(base_path), "YC", 2014)
     base = base[base["scenario"] != "dqn"].copy()
+    rain_map = base[["dap", "rain"]].drop_duplicates("dap")
+    null_path = ROOT / "DSSAT_auto_validation" / "multisite_new_cultivar_yc2014_action_window_comparison_013_04" / "013_04_yc2014_action_window_comparison_daily.csv"
+    if null_path.exists():
+        null_raw = pd.read_csv(null_path, keep_default_na=False)
+        null_raw = null_raw[null_raw["scenario"].astype(str).str.lower().eq("null")].copy()
+        null = normalize_daily(null_raw, "YC", 2014)
+        null = attach_rain_from_map(null, rain_map)
+        base = pd.concat([null, base], ignore_index=True)
     dqn_path = ROOT / "DSSAT_auto_validation" / "multisite_new_cultivar_yc2014_linked_dqn_5k_multiseed_013_07" / "seed1" / "dqn_linked_free_daily" / "dqn_linked_free_daily_eval_daily.csv"
     dqn_raw = pd.read_csv(dqn_path)
     dqn_raw["scenario"] = "dqn_linked_free_daily_seed1"
     dqn = normalize_daily(dqn_raw, "YC", 2014)
-    rain_map = base[["dap", "rain"]].drop_duplicates("dap")
     dqn = attach_rain_from_map(dqn, rain_map)
     return pd.concat([base, dqn], ignore_index=True)
 
@@ -195,8 +224,9 @@ def plot_process(df: pd.DataFrame, site: str, year: int, note: str) -> Path:
         sdf = df[df["scenario"] == scen].sort_values("dap")
         label = SCENARIO_LABELS.get(scen, scen)
         color = COLORS.get(scen, "#1F2430")
-        axes[1].plot(sdf["dap"], sdf["swfac"], label=label, color=color, linewidth=1.9)
-        axes[2].plot(sdf["dap"], sdf["nstres"], label=label, color=color, linewidth=1.9)
+        linestyle = LINESTYLES.get(scen, "-")
+        axes[1].plot(sdf["dap"], sdf["swfac"], label=label, color=color, linestyle=linestyle, linewidth=2.0)
+        axes[2].plot(sdf["dap"], sdf["nstres"], label=label, color=color, linestyle=linestyle, linewidth=2.0)
     axes[1].set_ylabel("Water\nstress")
     axes[2].set_ylabel("Nitrogen\nstress")
     axes[1].legend(loc="upper left", ncol=2, frameon=False, fontsize=10)
@@ -215,8 +245,9 @@ def plot_process(df: pd.DataFrame, site: str, year: int, note: str) -> Path:
         sdf = df[df["scenario"] == scen].sort_values("dap")
         label = SCENARIO_LABELS.get(scen, scen)
         color = COLORS.get(scen, "#1F2430")
-        axes[4].plot(sdf["dap"], sdf["grnwt"], color=color, linewidth=2.1, label=f"{label} grain")
-        axes[4].plot(sdf["dap"], sdf["topwt"], color=color, linewidth=1.4, linestyle="--", alpha=0.75, label=f"{label} biomass")
+        linestyle = LINESTYLES.get(scen, "-")
+        axes[4].plot(sdf["dap"], sdf["grnwt"], color=color, linestyle=linestyle, linewidth=2.1, label=f"{label} grain")
+        axes[4].plot(sdf["dap"], sdf["topwt"], color=color, linewidth=1.4, linestyle=":", alpha=0.85, label=f"{label} biomass")
     axes[4].set_ylabel("kg/ha")
     axes[4].set_xlabel("DAP")
     axes[4].legend(loc="upper left", ncol=2, frameon=False, fontsize=9)
@@ -265,7 +296,7 @@ def main() -> None:
     examples = [
         ("HLA", 2010, build_hla(2010), "Four scenarios; DQN uses action9 baseline-relative seed1 5K."),
         ("HLA", 2015, build_hla(2015), "Four scenarios; DQN uses baseline-relative seed1 5K."),
-        ("YC", 2014, build_yc2014(), "Available scenarios only: recorded, DSSAT auto, DQN seed1. Null daily table was not found."),
+        ("YC", 2014, build_yc2014(), "Four scenarios; null was added from 013_04 null-only rerun, DQN uses linked free-daily seed1 5K."),
         ("FQ", 2016, build_fq2016(), "Four scenarios; DQN uses linked agronomic-window seed1 5K."),
     ]
     all_daily = []
@@ -274,11 +305,11 @@ def main() -> None:
     for site, year, df, note in examples:
         df = df.sort_values(["scenario", "dap"]).reset_index(drop=True)
         daily_path = TABLE / f"{site.lower()}_{year}_scenario_daily.csv"
-        df.to_csv(daily_path, index=False, encoding="utf-8-sig")
+        daily_path = safe_to_csv(df, daily_path)
         fig_path = plot_process(df, site, year, note)
         summary = summarize(df, site, year)
         summary_path = TABLE / f"{site.lower()}_{year}_scenario_summary.csv"
-        summary.to_csv(summary_path, index=False, encoding="utf-8-sig")
+        summary_path = safe_to_csv(summary, summary_path)
         all_daily.append(df)
         all_summary.append(summary)
         manifest.append(
@@ -291,9 +322,9 @@ def main() -> None:
                 "note": note,
             }
         )
-    pd.concat(all_daily, ignore_index=True).to_csv(OUT / "014_14_all_examples_daily.csv", index=False, encoding="utf-8-sig")
-    pd.concat(all_summary, ignore_index=True).to_csv(OUT / "014_14_all_examples_summary.csv", index=False, encoding="utf-8-sig")
-    pd.DataFrame(manifest).to_csv(OUT / "014_14_manifest.csv", index=False, encoding="utf-8-sig")
+    safe_to_csv(pd.concat(all_daily, ignore_index=True), OUT / "014_14_all_examples_daily.csv")
+    safe_to_csv(pd.concat(all_summary, ignore_index=True), OUT / "014_14_all_examples_summary.csv")
+    safe_to_csv(pd.DataFrame(manifest), OUT / "014_14_manifest.csv")
     print(f"Saved outputs to {OUT}")
 
 

@@ -44,7 +44,7 @@ src/plot_success_examples_four_scenario_014_14.py
 |---|---|---|
 | HLA 2010 | null、专家策略平移、DSSAT auto、DQN seed1 | 前三类来自既有 HLA 四情景表；DQN 使用 action9 baseline-relative reward seed1 5K 结果 |
 | HLA 2015 | null、专家策略平移、DSSAT auto、DQN seed1 | 前三类来自既有 HLA 四情景表；DQN 使用 baseline-relative reward seed1 5K 结果 |
-| YC 2014 | recorded、DSSAT auto、DQN seed1 | 当前未找到 YC2014 null 日值表，因此本次只输出可用三情景，不伪造成四情景 |
+| YC 2014 | null、recorded、DSSAT auto、DQN seed1 | null 为本轮用 `src/run_yc2014_action_window_comparison_013_04.py --only null` 补跑；其余情景来自既有 YC2014 对照表和 DQN seed1 结果 |
 | FQ 2016 | null、recorded shifted、DSSAT auto、DQN seed1 window | null/recorded/DSSAT auto 来自全年筛选表；DQN 使用 linked agronomic-window seed1 5K 结果 |
 
 ## 注意事项
@@ -74,6 +74,7 @@ src/plot_success_examples_four_scenario_014_14.py
 | HLA | 2015 | Null | 0.0 | 0.0 | 6486.0 | 17168.0 | 1.000 | 0.0930 |
 | YC | 2014 | DQN seed1 free | 120.0 | 300.0 | 9417.4 | 20497.2 | 0.000 | 0.0129 |
 | YC | 2014 | DSSAT auto | 259.5 | 0.0 | 8713.0 | 18945.0 | 0.000 | 0.4360 |
+| YC | 2014 | Null | 0.0 | 0.0 | 7825.4 | 17996.5 | 0.922 | 0.381 |
 | YC | 2014 | Recorded expert | 360.0 | 1122.0 | 9418.0 | 20514.0 | 0.000 | 0.0130 |
 | FQ | 2016 | DQN seed1 window | 30.0 | 300.0 | 8012.4 | 14093.1 | 0.000 | 0.0122 |
 | FQ | 2016 | DSSAT auto | 59.9 | 0.0 | 8012.4 | 14094.8 | 0.000 | 0.0122 |
@@ -85,8 +86,8 @@ src/plot_success_examples_four_scenario_014_14.py
 1. HLA 2010 和 HLA 2015：DQN seed1 能够明显优于 null，并接近或持平 DSSAT auto；与专家策略相比也有增产。  
    但它使用的施氮量为 300 kg/ha，需在论文叙事中明确这是当前约束下的 DQN 行为，不宜说成“节氮最优”。
 
-2. YC 2014：DQN seed1 以 I120/N300 达到与 recorded expert 几乎相同的产量，但 recorded expert 的水氮投入远高于 DQN。  
-   这是当前最有利于“有限投入下逼近专家产量”的示例之一。当前缺少 null 日值表，需要后续补齐才能形成严格四情景图。
+2. YC 2014：DQN seed1 以 I120/N300 达到与 recorded expert 几乎相同的产量，且显著高于 null；recorded expert 的水氮投入远高于 DQN。  
+   这是当前最有利于“有限投入下逼近专家产量”的示例之一。本轮已经补齐 null 日值表，可作为完整四情景示例。
 
 3. FQ 2016：DQN seed1 window 以 I30/N300 达到与 DSSAT auto 近似的产量，并高于 recorded shifted 和 null。  
    但 FQ 的氮胁迫指数几乎全程很低，说明这个站点年份更多体现水分管理/总量管理差异，氮响应解释需要谨慎。
@@ -96,6 +97,5 @@ src/plot_success_examples_four_scenario_014_14.py
 
 ## 后续建议
 
-1. 补跑 YC2014 null 情景日值，使 YC2014 也形成完整四情景。
-2. 对 HLA2010、HLA2015、YC2014、FQ2016 的 DQN seed0/seed1 结果统一生成稳定性表。
-3. 如果导师认可当前方向，再扩大训练步数或增加站点年份；如果导师更关心水氮节约，则需要把奖励和约束改成显式水氮利用效率目标。
+1. 对 HLA2010、HLA2015、YC2014、FQ2016 的 DQN seed0/seed1 结果统一生成稳定性表。
+2. 如果导师认可当前方向，再扩大训练步数或增加站点年份；如果导师更关心水氮节约，则需要把奖励和约束改成显式水氮利用效率目标。

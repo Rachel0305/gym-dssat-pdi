@@ -1,6 +1,6 @@
-﻿scenario,seed,checkpoint_step,action_irrigation_total,action_fertilizer_total,mgmt_event_irrigation_total,mgmt_event_fertilizer_total,final_grain_kg_ha,final_biomass_kg_ha,max_water_stress,max_nitrogen_stress,total_reward,source
-null,,,,,,,7825.0,17996.0,0.9223078265786172,0.3807637095451355,,base
-recorded,,,,,,,9418.0,20514.0,0.0,0.0128815174102783,,base
-dssat_auto,,,,,,,8713.0,18945.0,0.0,0.4358865618705749,,base
-dqn_best,0.0,5000.0,120.0,250.0,120.0,250.0,9418.0,20513.0,0.0,0.0128815174102783,8047.855224609375,seed0
-dqn_best,1.0,10000.0,120.0,300.0,120.0,300.0,9418.0,20493.0,0.0,0.0128815174102783,7797.901611328125,seed1
+﻿scenario,seed,checkpoint_step,irrigation_total_mm,fertilizer_total_kg_ha,final_grain_kg_ha,final_biomass_kg_ha,max_water_stress,max_nitrogen_stress,reward_proxy_final,source,representative_for_figure
+null,,,0.0,0.0,7825.0,17996.0,0.9223078265786172,0.3807637095451355,7825.439453125,base_013_03,True
+recorded,,,120.0,374.0,9418.0,20514.0,0.0,0.0128815174102783,7427.901611328123,base_013_03,True
+dssat_auto,,,86.5,0.0,8713.0,18945.0,0.0,0.4358865618705749,8626.377197265625,base_013_03,True
+dqn_best,0.0,5000.0,120.0,250.0,9418.0,20513.0,0.0,0.0128815174102783,8048.0,seed0_best_checkpoint,True
+dqn_best,1.0,10000.0,120.0,300.0,9418.0,20493.0,0.0,0.0128815174102783,7798.0,seed1_best_checkpoint,False

@@ -1,0 +1,30 @@
+﻿scenario,seed,checkpoint_step,doy,dap,operation,amount,source
+dqn_best,0.0,5000.0,,2,Fertilizer,50.0,seed0_checkpoint_5000
+dqn_best,0.0,5000.0,,2,Irrigation,15.0,seed0_checkpoint_5000
+dqn_best,0.0,5000.0,,10,Fertilizer,50.0,seed0_checkpoint_5000
+dqn_best,0.0,5000.0,,10,Irrigation,30.0,seed0_checkpoint_5000
+dqn_best,0.0,5000.0,,44,Irrigation,15.0,seed0_checkpoint_5000
+dqn_best,0.0,5000.0,,53,Irrigation,15.0,seed0_checkpoint_5000
+dqn_best,0.0,5000.0,,60,Irrigation,15.0,seed0_checkpoint_5000
+dqn_best,0.0,5000.0,,67,Irrigation,15.0,seed0_checkpoint_5000
+dqn_best,0.0,5000.0,,74,Irrigation,15.0,seed0_checkpoint_5000
+dqn_best,0.0,5000.0,,87,Fertilizer,50.0,seed0_checkpoint_5000
+dqn_best,0.0,5000.0,,94,Fertilizer,50.0,seed0_checkpoint_5000
+dqn_best,0.0,5000.0,,101,Fertilizer,50.0,seed0_checkpoint_5000
+dqn_best,1.0,10000.0,,24,Fertilizer,50.0,seed1_checkpoint_10000
+dqn_best,1.0,10000.0,,31,Fertilizer,50.0,seed1_checkpoint_10000
+dqn_best,1.0,10000.0,,38,Fertilizer,50.0,seed1_checkpoint_10000
+dqn_best,1.0,10000.0,,45,Fertilizer,100.0,seed1_checkpoint_10000
+dqn_best,1.0,10000.0,,45,Irrigation,30.0,seed1_checkpoint_10000
+dqn_best,1.0,10000.0,,52,Fertilizer,50.0,seed1_checkpoint_10000
+dqn_best,1.0,10000.0,,52,Irrigation,30.0,seed1_checkpoint_10000
+dqn_best,1.0,10000.0,,59,Irrigation,30.0,seed1_checkpoint_10000
+dqn_best,1.0,10000.0,,66,Irrigation,30.0,seed1_checkpoint_10000
+dssat_auto,,,203.0,35,Irrigation,43.6,DSSAT_auto_validation\multisite_new_cultivar_yc2014_four_scenario_smoke_013_03\dssat_auto\pdi_tmp_snapshot_eval\MgmtEvent.OUT
+dssat_auto,,,244.0,76,Irrigation,42.9,DSSAT_auto_validation\multisite_new_cultivar_yc2014_four_scenario_smoke_013_03\dssat_auto\pdi_tmp_snapshot_eval\MgmtEvent.OUT
+dssat_auto,,,272.0,104,Harvest Yield,8713.0,DSSAT_auto_validation\multisite_new_cultivar_yc2014_four_scenario_smoke_013_03\dssat_auto\pdi_tmp_snapshot_eval\MgmtEvent.OUT
+null,,,272.0,104,Harvest Yield,7825.0,DSSAT_auto_validation\multisite_new_cultivar_yc2014_four_scenario_smoke_013_03\null\pdi_tmp_snapshot_eval\MgmtEvent.OUT
+recorded,,,168.0,0,Fertilizer,96.0,DSSAT_auto_validation\multisite_new_cultivar_yc2014_four_scenario_smoke_013_03\recorded\pdi_tmp_snapshot_eval\MgmtEvent.OUT
+recorded,,,211.0,43,Fertilizer,278.0,DSSAT_auto_validation\multisite_new_cultivar_yc2014_four_scenario_smoke_013_03\recorded\pdi_tmp_snapshot_eval\MgmtEvent.OUT
+recorded,,,211.0,43,Irrigation,120.0,DSSAT_auto_validation\multisite_new_cultivar_yc2014_four_scenario_smoke_013_03\recorded\pdi_tmp_snapshot_eval\MgmtEvent.OUT
+recorded,,,272.0,104,Harvest Yield,9418.0,DSSAT_auto_validation\multisite_new_cultivar_yc2014_four_scenario_smoke_013_03\recorded\pdi_tmp_snapshot_eval\MgmtEvent.OUT

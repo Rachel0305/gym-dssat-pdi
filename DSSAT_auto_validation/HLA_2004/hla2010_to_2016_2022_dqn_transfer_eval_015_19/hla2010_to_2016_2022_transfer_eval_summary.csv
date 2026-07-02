@@ -1,0 +1,9 @@
+﻿scenario,requested_year,days,final_dap,final_gwad,final_cwad,rain_total,irrigation_total,fertilizer_total,max_water_stress,mean_wspd,max_nitrogen_stress,mean_nstd,label,train_year,train_seed,train_checkpoint_step,total_reward,irrigation_total_mgmtevent,fertilizer_total_mgmtevent,irrigation_events_mgmtevent,fertilizer_events_mgmtevent
+dssat_auto,2016,134.0,133.0,7538.0,17018.0,365.6,140.8,0.0,0.0,0.0,0.022,0.0004029850746268657,DSSAT auto,,,,,,,,
+dssat_auto,2022,137.0,136.0,7935.0,18552.0,360.4,143.6,0.0,0.0,0.0,0.012,0.00030656934306569345,DSSAT auto,,,,,,,,
+null,2016,134.0,133.0,7224.0,16612.0,365.6,0.0,0.0,0.69,0.02047014925373134,0.15,0.009828358208955223,Null,,,,,,,,
+null,2022,137.0,136.0,7787.0,18370.0,360.4,0.0,0.0,0.825,0.023051094890510947,0.117,0.006474452554744526,Null,,,,,,,,
+transfer_2010_seed0,2016,,,7538.0,17018.0,365.6,120.0,0.0,0.0,,0.022147059440612793,,2010-trained DQN seed0,2010.0,0.0,35000.0,194.4674072265625,120.0,0.0,4.0,0.0
+transfer_2010_seed1,2016,,,7538.0,17018.0,365.6,60.0,0.0,0.0,,0.022147059440612793,,2010-trained DQN seed1,2010.0,1.0,25000.0,254.4674072265625,60.0,0.0,4.0,0.0
+transfer_2010_seed0,2022,,,7935.0,18552.0,356.4,120.0,0.0,0.0,,0.012191057205200195,,2010-trained DQN seed0,2010.0,0.0,35000.0,27.681396484375,120.0,0.0,4.0,0.0
+transfer_2010_seed1,2022,,,7935.0,18552.0,356.4,60.0,0.0,0.0,,0.029478490352630615,,2010-trained DQN seed1,2010.0,1.0,25000.0,87.681396484375,60.0,0.0,4.0,0.0

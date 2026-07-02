@@ -1,0 +1,51 @@
+﻿run,date_label,year,doy,das,dap,operation,quantity,unit,scenario,requested_year
+1,"MAY 4, 2016",2016,125,1,0,Planting,0.0,,null,2016
+1,"MAY 4, 2016",2016,125,1,0,Start Sim,0.0,,null,2016
+1,"MAY 5, 2016",2016,126,2,1,Germinate,0.0,,null,2016
+1,"MAY 18, 2016",2016,139,15,14,Emergence,0.0,,null,2016
+1,"JUN 9, 2016",2016,161,37,36,End Juveni,0.0,,null,2016
+1,"JUN 16, 2016",2016,168,44,43,Floral Ini,0.0,,null,2016
+1,"JUL 25, 2016",2016,207,83,82,75% Silkin,75.0,%,null,2016
+1,"AUG 5, 2016",2016,218,94,93,Beg Gr Fil,0.0,,null,2016
+1,"SEP 10, 2016",2016,254,130,129,End Gr Fil,0.0,,null,2016
+1,"SEP 14, 2016",2016,258,134,133,Harvest,0.0,,null,2016
+1,"SEP 14, 2016",2016,258,134,133,Harvest Yield 7224. kg/ha,0.0,,null,2016
+1,"MAY 5, 2022",2022,125,1,0,Planting,0.0,,null,2022
+1,"MAY 5, 2022",2022,125,1,0,Start Sim,0.0,,null,2022
+1,"MAY 6, 2022",2022,126,2,1,Germinate,0.0,,null,2022
+1,"MAY 20, 2022",2022,140,16,15,Emergence,0.0,,null,2022
+1,"JUN 12, 2022",2022,163,39,38,End Juveni,0.0,,null,2022
+1,"JUN 19, 2022",2022,170,46,45,Floral Ini,0.0,,null,2022
+1,"JUL 25, 2022",2022,206,82,81,75% Silkin,75.0,%,null,2022
+1,"AUG 4, 2022",2022,216,92,91,Beg Gr Fil,0.0,,null,2022
+1,"SEP 15, 2022",2022,258,134,133,End Gr Fil,0.0,,null,2022
+1,"SEP 18, 2022",2022,261,137,136,Harvest,0.0,,null,2022
+1,"SEP 18, 2022",2022,261,137,136,Harvest Yield 7787. kg/ha,0.0,,null,2022
+1,"MAY 4, 2016",2016,125,1,0,Planting,0.0,,auto_irrig,2016
+1,"MAY 4, 2016",2016,125,1,0,Start Sim,0.0,,auto_irrig,2016
+1,"MAY 5, 2016",2016,126,2,1,Germinate,0.0,,auto_irrig,2016
+1,"MAY 6, 2016",2016,127,3,2,Irrigation 47.2 mm,47.2,mm,auto_irrig,2016
+1,"MAY 18, 2016",2016,139,15,14,Emergence,0.0,,auto_irrig,2016
+1,"JUN 9, 2016",2016,161,37,36,End Juveni,0.0,,auto_irrig,2016
+1,"JUN 16, 2016",2016,168,44,43,Floral Ini,0.0,,auto_irrig,2016
+1,"JUL 23, 2016",2016,205,81,80,Irrigation 46.7 mm,46.7,mm,auto_irrig,2016
+1,"JUL 25, 2016",2016,207,83,82,75% Silkin,75.0,%,auto_irrig,2016
+1,"AUG 5, 2016",2016,218,94,93,Beg Gr Fil,0.0,,auto_irrig,2016
+1,"AUG 27, 2016",2016,240,116,115,Irrigation 46.9 mm,46.9,mm,auto_irrig,2016
+1,"SEP 10, 2016",2016,254,130,129,End Gr Fil,0.0,,auto_irrig,2016
+1,"SEP 14, 2016",2016,258,134,133,Harvest,0.0,,auto_irrig,2016
+1,"SEP 14, 2016",2016,258,134,133,Harvest Yield 7538. kg/ha,0.0,,auto_irrig,2016
+1,"MAY 5, 2022",2022,125,1,0,Planting,0.0,,auto_irrig,2022
+1,"MAY 5, 2022",2022,125,1,0,Start Sim,0.0,,auto_irrig,2022
+1,"MAY 6, 2022",2022,126,2,1,Germinate,0.0,,auto_irrig,2022
+1,"MAY 14, 2022",2022,134,10,9,Irrigation 46.5 mm,46.5,mm,auto_irrig,2022
+1,"MAY 20, 2022",2022,140,16,15,Emergence,0.0,,auto_irrig,2022
+1,"JUN 12, 2022",2022,163,39,38,End Juveni,0.0,,auto_irrig,2022
+1,"JUN 19, 2022",2022,170,46,45,Floral Ini,0.0,,auto_irrig,2022
+1,"JUL 25, 2022",2022,206,82,81,75% Silkin,75.0,%,auto_irrig,2022
+1,"AUG 4, 2022",2022,216,92,91,Beg Gr Fil,0.0,,auto_irrig,2022
+1,"AUG 18, 2022",2022,230,106,105,Irrigation 49.4 mm,49.4,mm,auto_irrig,2022
+1,"SEP 15, 2022",2022,258,134,133,End Gr Fil,0.0,,auto_irrig,2022
+1,"SEP 16, 2022",2022,259,135,134,Irrigation 47.7 mm,47.7,mm,auto_irrig,2022
+1,"SEP 18, 2022",2022,261,137,136,Harvest,0.0,,auto_irrig,2022
+1,"SEP 18, 2022",2022,261,137,136,Harvest Yield 7935. kg/ha,0.0,,auto_irrig,2022

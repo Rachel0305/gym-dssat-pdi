@@ -1,0 +1,6 @@
+﻿year,scenario,final_dap,final_gwad,final_cwad,irrigation_events,irrigation_total,fertilizer_events,fertilizer_total,max_water_stress,mean_wspd,max_nitrogen_stress,mean_nstd,requested_year,label,rain_total,train_year,train_seed,train_checkpoint_step,total_reward,irrigation_total_mgmtevent,fertilizer_total_mgmtevent,irrigation_events_mgmtevent,fertilizer_events_mgmtevent
+2007.0,null,143.0,7830.0,19528.0,0.0,0.0,0.0,0.0,0.895,0.0323472222222222,0.129,0.0097708333333333,2007,Null,339.4,,,,,,,,
+2007.0,recorded,143.0,7986.0,19809.0,3.0,30.0,1.0,165.0,0.0,0.0,0.014,0.0004861111111111,2007,Recorded expert,339.4,,,,,,,,
+2007.0,dssat_auto,143.0,7973.0,19638.0,2.0,93.5,0.0,0.0,0.0,0.0,0.032,0.0020625,2007,DSSAT auto,339.4,,,,,,,,
+,transfer_2010_seed0,,7987.0,19816.0,,120.0,,0.0,0.0,,0.05940359830856323,,2007,2010-trained DQN seed0,337.6,2010.0,0.0,35000.0,36.7333984375,120.0,0.0,4.0,0.0
+,transfer_2010_seed1,,7987.0,19786.0,,45.0,,0.0,0.15344387292861938,,0.10261446237564087,,2007,2010-trained DQN seed1,337.6,2010.0,1.0,25000.0,111.7333984375,45.0,0.0,3.0,0.0

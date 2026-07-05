@@ -1,0 +1,8 @@
+﻿scenario,dap,operation,amount
+recorded_shifted,0.0,Fertilizer,96.0
+recorded_shifted,43.0,Fertilizer,278.0
+recorded_shifted,43.0,Irrigation,120.0
+dssat_auto,35.0,Irrigation,43.6
+dqn_transfer,63.0,Fertilizer,100.0
+dqn_transfer,70.0,Fertilizer,100.0
+dqn_transfer,89.0,Fertilizer,100.0

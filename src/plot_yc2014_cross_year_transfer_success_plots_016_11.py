@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import re
 from pathlib import Path
 
 import matplotlib as mpl
@@ -14,8 +15,8 @@ from run_fq_yc_new_cultivar_forward_screening_013_01 import parse_weather
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 SRC_DIR = PROJECT_ROOT / "DSSAT_auto_validation" / "yc2014_station_level3_true_model_transfer_016_04"
-OUT_DIR = PROJECT_ROOT / "DSSAT_auto_validation" / "yc2014_cross_year_transfer_success_plots_016_11"
-DOC_PATH = PROJECT_ROOT / "docs" / "2026-07-05_016_11_yc2014_cross_year_transfer_success_plots_record.md"
+OUT_DIR = PROJECT_ROOT / "DSSAT_auto_validation" / "yc2014_cross_year_transfer_success_plots_016_11_fixed"
+DOC_PATH = PROJECT_ROOT / "docs" / "2026-07-05_016_11_yc2014_cross_year_transfer_success_plots_record_fixed.md"
 
 DAILY_CSV = SRC_DIR / "yc2014_true_model_transfer_daily.csv"
 SUMMARY_CSV = SRC_DIR / "yc2014_true_model_transfer_summary.csv"
@@ -72,6 +73,20 @@ def load_tables() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     return daily, summary, success
 
 
+def scenario_run_dirs(summary: pd.DataFrame, success: pd.DataFrame, year: int, best: pd.Series) -> dict[str, Path]:
+    base = summary[summary["year"] == year].copy()
+    run_dirs = {}
+
+    null_row = base[base["scenario"] == "null"].iloc[0]
+    rec_row = base[base["scenario"] == "recorded_shifted"].iloc[0]
+    auto_row = base[base["scenario"] == "dssat_auto"].iloc[0]
+    run_dirs["null"] = PROJECT_ROOT / str(null_row["run_dir"])
+    run_dirs["recorded_shifted"] = PROJECT_ROOT / str(rec_row["run_dir"])
+    run_dirs["dssat_auto"] = PROJECT_ROOT / str(auto_row["run_dir"])
+    run_dirs["dqn_transfer"] = PROJECT_ROOT / str(best["run_dir"])
+    return run_dirs
+
+
 def pick_best_transfer(success: pd.DataFrame, year: int) -> pd.Series:
     sub = success[(success["year"] == year) & (success["scenario"].astype(str).str.startswith("transfer_"))].copy()
     if sub.empty:
@@ -111,13 +126,50 @@ def add_reward_proxy(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
-def event_table_from_daily(df: pd.DataFrame) -> pd.DataFrame:
-    rows = []
-    for _, row in df[df["irrigation_mm"].fillna(0) > 1e-8].iterrows():
-        rows.append({"scenario": row["scenario"], "dap": row["dap"], "operation": "Irrigation", "amount": row["irrigation_mm"]})
-    for _, row in df[df["fertilizer_kg_ha"].fillna(0) > 1e-8].iterrows():
-        rows.append({"scenario": row["scenario"], "dap": row["dap"], "operation": "Fertilizer", "amount": row["fertilizer_kg_ha"]})
+def parse_mgmt_events(run_dir: Path, scenario: str) -> pd.DataFrame:
+    mgmt_path = run_dir / "pdi_tmp_snapshot_eval" / "MgmtEvent.OUT"
+    if not mgmt_path.exists():
+        return pd.DataFrame(columns=["scenario", "dap", "operation", "amount"])
+
+    rows: list[dict[str, float | str]] = []
+    seen: set[tuple[str, int, float]] = set()
+    pattern = re.compile(r"^\s*\d+\s+\w{3}\s+\d+,\s+\d{4}\s+\d+\s+\d+\s+(\d+)\s+\w+\s+(.*)$")
+
+    for line in mgmt_path.read_text(encoding="latin-1", errors="ignore").splitlines():
+        if "Irrigation" not in line and "Fertilizer" not in line:
+            continue
+        match = pattern.match(line)
+        if not match:
+            continue
+        dap = int(match.group(1))
+        tail = match.group(2)
+        if "Irrigation" in tail:
+            amount_match = re.search(r"Irrigation\s+([0-9.]+)", tail)
+            if not amount_match:
+                continue
+            operation = "Irrigation"
+            amount = float(amount_match.group(1))
+        else:
+            amount_match = re.search(r"Fertilizer\s+([0-9.]+)", tail)
+            if not amount_match:
+                continue
+            operation = "Fertilizer"
+            amount = float(amount_match.group(1))
+        key = (operation, dap, amount)
+        if key in seen:
+            continue
+        seen.add(key)
+        rows.append({"scenario": scenario, "dap": float(dap), "operation": operation, "amount": amount})
+
     return pd.DataFrame(rows)
+
+
+def build_event_table(run_dirs: dict[str, Path]) -> pd.DataFrame:
+    parts = [parse_mgmt_events(run_dir, scenario) for scenario, run_dir in run_dirs.items()]
+    parts = [p for p in parts if not p.empty]
+    if not parts:
+        return pd.DataFrame(columns=["scenario", "dap", "operation", "amount"])
+    return pd.concat(parts, ignore_index=True)
 
 
 def line_handles():
@@ -127,7 +179,7 @@ def line_handles():
     ]
 
 
-def plot_year(year: int, daily_year: pd.DataFrame, out_png: Path) -> None:
+def plot_year(year: int, daily_year: pd.DataFrame, event_df: pd.DataFrame, out_png: Path) -> None:
     fig, axes = plt.subplots(
         6,
         1,
@@ -154,12 +206,12 @@ def plot_year(year: int, daily_year: pd.DataFrame, out_png: Path) -> None:
         axes[4].plot(sub["dap"], sub["topwt"], color=color, ls=":", lw=1.8, alpha=0.95)
         axes[5].plot(sub["dap"], sub["reward_proxy"], color=color, ls=ls, lw=2.2)
 
-        mg_i = sub[sub["irrigation_mm"].fillna(0) > 1e-8]
-        mg_n = sub[sub["fertilizer_kg_ha"].fillna(0) > 1e-8]
+        mg_i = event_df[(event_df["scenario"] == scenario) & (event_df["operation"] == "Irrigation")]
+        mg_n = event_df[(event_df["scenario"] == scenario) & (event_df["operation"] == "Fertilizer")]
         if not mg_i.empty:
-            axes[3].vlines(mg_i["dap"], 0, mg_i["irrigation_mm"], colors=color, linestyles=ls, linewidth=2.4, alpha=0.95)
+            axes[3].vlines(mg_i["dap"], 0, mg_i["amount"], colors=color, linestyles=ls, linewidth=2.4, alpha=0.95)
         if not mg_n.empty:
-            axes[3].scatter(mg_n["dap"], mg_n["fertilizer_kg_ha"], marker="^", s=65, color=color, edgecolor="white", linewidth=0.7, zorder=5)
+            axes[3].scatter(mg_n["dap"], mg_n["amount"], marker="^", s=65, color=color, edgecolor="white", linewidth=0.7, zorder=5)
 
     handles = line_handles()
     axes[1].set_ylabel("Water\nstress")
@@ -225,6 +277,7 @@ def main() -> None:
     for year in YEARS:
         best = pick_best_transfer(success, year)
         chosen_rows.append(best)
+        run_dirs = scenario_run_dirs(summary, success, year, best)
 
         transfer_scenario = best["scenario"]
         base = daily[(daily["year"] == year) & (daily["scenario"].isin(["null", "recorded_shifted", "dssat_auto"]))].copy()
@@ -241,12 +294,15 @@ def main() -> None:
         year_daily["scenario"] = year_daily["scenario"].fillna("null")
         year_daily = add_rain(year_daily, year)
         year_daily = add_reward_proxy(year_daily)
+        event_df = build_event_table(run_dirs)
 
         year_daily_path = OUT_DIR / "daily_tables" / f"yc_{year}_four_scenario_daily.csv"
         year_daily.to_csv(year_daily_path, index=False, encoding="utf-8-sig")
+        event_path = OUT_DIR / "daily_tables" / f"yc_{year}_four_scenario_management_events.csv"
+        event_df.to_csv(event_path, index=False, encoding="utf-8-sig")
 
         fig_path = OUT_DIR / "figures" / f"yc_{year}_four_scenario_transfer.png"
-        plot_year(year, year_daily, fig_path)
+        plot_year(year, year_daily, event_df, fig_path)
 
     selected_summary = pd.DataFrame(chosen_rows)
     selected_summary.to_csv(OUT_DIR / "summary_selected_years.csv", index=False, encoding="utf-8-sig")

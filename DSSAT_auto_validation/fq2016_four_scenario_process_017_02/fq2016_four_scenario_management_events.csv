@@ -1,0 +1,8 @@
+﻿scenario,dap,amount,unit,operation,site,station,year
+recorded_shifted,1,75.0,mm,"1 JUN 11, 2016  163     11      1  MZ                Irrigation        75.0 mm",FQ,Fengqiu,2016
+recorded_shifted,30,144.0,kg[N]/ha,"1 JUL 10, 2016  192     40     30  MZ                Fertilizer        144. kg[N]/ha",FQ,Fengqiu,2016
+dssat_auto,81,18.9,mm,"1 AUG 30, 2016  243     91     81  MZ                Irrigation        18.9 mm",FQ,Fengqiu,2016
+dssat_auto,86,19.5,mm,"1 SEP  4, 2016  248     96     86  MZ                Irrigation        19.5 mm",FQ,Fengqiu,2016
+dssat_auto,93,21.5,mm,"1 SEP 11, 2016  255    103     93  MZ                Irrigation        21.5 mm",FQ,Fengqiu,2016
+dqn_seed1_best_reward,83,30.0,mm,"1 SEP  1, 2016  245     93     83  MZ                Irrigation        30.0 mm",FQ,Fengqiu,2016
+dqn_seed1_best_reward,90,30.0,mm,"1 SEP  8, 2016  252    100     90  MZ                Irrigation        30.0 mm",FQ,Fengqiu,2016

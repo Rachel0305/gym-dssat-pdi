@@ -1,0 +1,5 @@
+﻿site,station,year,scenario,final_grain_kg_ha,final_biomass_kg_ha,final_dap,max_water_stress,max_nitrogen_stress,irrigation_total,fertilizer_total,total_reward,run_dir
+FQ,Fengqiu,2016,null_zero,7066.0,13148.0,96.0,0.6568558812141418,0.012191057205200195,0.0,0.0,0.075439453125,/workspaces/gym-dssat-pdi/DSSAT_auto_validation/fq2016_four_scenario_process_017_02/runs/null
+FQ,Fengqiu,2016,recorded_shifted,7933.0,14008.0,96.0,0.37255746126174927,0.012191057205200195,75.0,144.0,866.6043701171875,/workspaces/gym-dssat-pdi/DSSAT_auto_validation/fq2016_four_scenario_process_017_02/runs/recorded_shifted
+FQ,Fengqiu,2016,dssat_auto,8012.0,14095.0,96.0,0.0,0.012191057205200195,59.9,0.0,946.421875,/workspaces/gym-dssat-pdi/DSSAT_auto_validation/fq2016_four_scenario_process_017_02/runs/dssat_auto
+FQ,Fengqiu,2016,dqn_seed1_best_reward,7995.0,14078.0,96.0,0.0495283007621765,0.0121910572052001,60.0,0.0,869.17578125,/workspaces/gym-dssat-pdi/DSSAT_auto_validation/fq2016_baseline_relative_dqn_checkpoint_015_14/seed1_50000steps/pdi_tmp_snapshot_eval_30000

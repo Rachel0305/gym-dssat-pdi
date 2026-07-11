@@ -1,0 +1,14 @@
+# Planned only; do not change IC to create optimization space.
+extends: ../benchmark_defaults.yaml
+site_config: ../sites/hla.yaml
+experiment:
+  experiment_id: 021_03_budget_sensitivity
+  experiment_type: budget_sensitivity
+  description: Seasonal water-nitrogen budget sweep; inherits benchmark_defaults.yaml
+  dry_run: true
+  user_confirmation_required: [constraints.candidate_budgets, site.train_years, evaluation.seeds]
+constraints:
+  candidate_budgets:
+    - {irrigation_budget: 120.0, nitrogen_budget: 300.0}
+example_command: python -m benchmark.benchmark_runner --config configs/experiments/021_03_budget_sensitivity.yaml --dry-run
+

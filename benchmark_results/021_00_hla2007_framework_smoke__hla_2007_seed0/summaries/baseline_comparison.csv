@@ -1,0 +1,5 @@
+﻿experiment_id,station_code,year,seed,target_scenario,baseline_scenario,comparison_status,target_yield_kg_ha,baseline_yield_kg_ha,yield_diff_kg_ha,yield_ratio,irrigation_diff_mm,nitrogen_diff_kg_ha,WP_ET_diff_kg_m3,IWP_gross_diff_kg_m3,PFP_N_diff_kg_kg,NUtE_diff_kg_kg
+021_00_hla2007_framework_smoke__hla_2007_seed0,HLA,2007,0,dqn,null,missing_baseline,7985.0,,,,,,,,,
+021_00_hla2007_framework_smoke__hla_2007_seed0,HLA,2007,0,dqn,recorded,missing_baseline,7985.0,,,,,,,,,
+021_00_hla2007_framework_smoke__hla_2007_seed0,HLA,2007,0,dqn,dssat_auto,missing_baseline,7985.0,,,,,,,,,
+021_00_hla2007_framework_smoke__hla_2007_seed0,HLA,2007,0,dqn,official_extension_expert,missing_baseline,7985.0,,,,,,,,,

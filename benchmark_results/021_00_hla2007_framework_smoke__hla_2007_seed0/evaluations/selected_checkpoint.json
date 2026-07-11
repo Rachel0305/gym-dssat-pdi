@@ -1,0 +1,31 @@
+{
+  "selection_rule": "maximum reward_total; earliest checkpoint on ties",
+  "selected_checkpoint": 200,
+  "model_path": "/workspace/benchmark_results/021_00_hla2007_framework_smoke__hla_2007_seed0/checkpoints/checkpoint_200/model.zip",
+  "summary": {
+    "experiment_id": "021_00_hla2007_framework_smoke__hla_2007_seed0",
+    "config_hash": "5fa1364a8add26121e19fd781c6dd5fff1a40d3229a6d5405ec95936fda4274a",
+    "station_code": "HLA",
+    "year": 2007,
+    "seed": 0,
+    "scenario": "dqn",
+    "checkpoint": 200,
+    "yield_kg_ha": 7985.0,
+    "biomass_kg_ha": 19787.0,
+    "irrigation_mm": 120.0,
+    "nitrogen_kg_ha": 300.0,
+    "reward_total": -231.39306640625,
+    "number_of_irrigation_events": 8,
+    "number_of_nitrogen_events": 6,
+    "water_budget_use_ratio": 1.0,
+    "nitrogen_budget_use_ratio": 1.0,
+    "et_mm": NaN,
+    "nitrogen_uptake_kg_ha": NaN,
+    "WP_ET_kg_m3": NaN,
+    "IWP_gross_kg_m3": 6.654166666666668,
+    "PFP_N_kg_kg": 26.616666666666667,
+    "NUtE_kg_kg": NaN,
+    "yield_per_irrigation": 66.54166666666667,
+    "yield_per_nitrogen": 26.616666666666667
+  }
+}

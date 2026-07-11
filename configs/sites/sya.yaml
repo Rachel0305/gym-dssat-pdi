@@ -1,0 +1,24 @@
+site:
+  station_code: SY
+  aliases: [SYA]
+  station_name: Shenyang
+  adapter: sy_provenance_pending
+  input_status: ambiguous
+  treatment: 2
+  cultivar_id: FY0985
+  soil_id: SY99001200
+  initial_condition_mode: 2
+  supported_years: [2014]
+  train_years: [2014]
+  eval_years: [2014]
+  inputs:
+    source_dir: DSSAT_auto_validation/multisite_new_cultivar_inputs_013/SY
+    by_year:
+      '2014':
+        prepared_input_dir: DSSAT_auto_validation/multisite_new_cultivar_inputs_013/SY
+        fileX_name: CNSY1201.MZX
+        weather_name: CNSY1401.WTH
+  notes:
+    - Documentation says IC=2, but the current stored training MZX remains IC=0.
+    - Formal training is blocked until the authoritative IC=2 input is identified.
+

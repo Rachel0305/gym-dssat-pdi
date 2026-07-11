@@ -1,0 +1,23 @@
+site:
+  station_code: LC
+  aliases: [LCA]
+  station_name: Luancheng
+  adapter: lc_fixed_input_017_11
+  input_status: adapter_required
+  treatment: 3
+  cultivar_id: XY0004
+  soil_id: LC990012007
+  initial_condition_mode: 3
+  supported_years: [2010]
+  train_years: [2010]
+  eval_years: [2010]
+  inputs:
+    source_dir: DSSAT_auto_validation/multisite_new_cultivar_inputs_013/LC
+    by_year:
+      '2010':
+        prepared_input_dir: DSSAT_auto_validation/lc_fixed_input_year_screening_017_11/runs/2010/null/input
+        fileX_name: CNLC1001.MZX
+        weather_name: CNLC1001.WTH
+  notes:
+    - The raw CNLC0801.MZX soil reference is not canonical; use the 017_11 prepared input adapter.
+

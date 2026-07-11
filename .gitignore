@@ -32,6 +32,21 @@ archive_non_mainline_*/
 tensorboard/
 tb_logs/
 *.zip
+*.pkl
+*.pt
+
+# Benchmark framework: keep registries and lightweight paper artifacts
+# discoverable, while model/replay/runtime artifacts remain ignored.
+benchmark_results/**/checkpoints/
+benchmark_results/**/logs/
+benchmark_results/**/dqn_runtime/
+benchmark_results/**/null_runtime/
+benchmark_results/**/pdi_tmp_snapshot*/
+!benchmark_results/existing_results_registry.csv
+!benchmark_results/result_registry.csv
+!benchmark_results/**/summaries/*.csv
+!benchmark_results/**/evaluations/season_summary.csv
+!benchmark_results/**/evaluations/daily_trajectory.csv
 
 # ===============================
 # DSSAT outputs (VERY IMPORTANT)
@@ -65,3 +80,10 @@ Run/
 .DS_Store
 .vscode/
 .idea/
+
+# Benchmark framework exceptions must follow the global *.csv rule above.
+!benchmark_results/existing_results_registry.csv
+!benchmark_results/result_registry.csv
+!benchmark_results/**/summaries/*.csv
+!benchmark_results/**/evaluations/season_summary.csv
+!benchmark_results/**/evaluations/daily_trajectory.csv

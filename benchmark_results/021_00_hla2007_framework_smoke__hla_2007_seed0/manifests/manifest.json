@@ -1,0 +1,401 @@
+{
+  "config": {
+    "_project_root": "/workspace",
+    "action_space": {
+      "irrigation_levels": [
+        0,
+        15,
+        30
+      ],
+      "nitrogen_levels": [
+        0,
+        50,
+        100
+      ]
+    },
+    "algorithm": {
+      "batch_size": 32,
+      "buffer_size": 10000,
+      "checkpoint_interval": 100,
+      "exploration_final_eps": 0.05,
+      "exploration_fraction": 0.35,
+      "exploration_initial_eps": 1.0,
+      "gamma": 0.99,
+      "gradient_steps": 1,
+      "learning_rate": 0.0001,
+      "learning_starts": 50,
+      "max_grad_norm": 10.0,
+      "n_steps": 5,
+      "name": "DQN",
+      "policy": "MlpPolicy",
+      "save_replay_buffer": true,
+      "seed": 0,
+      "simulate_interruption_after_checkpoint": 100,
+      "target_update_interval": 10000,
+      "tau": 1.0,
+      "total_timesteps": 200,
+      "train_freq": 1
+    },
+    "constraints": {
+      "daily_irrigation_cap": 30.0,
+      "daily_nitrogen_cap": 100.0,
+      "decision_window_end_dap": 120,
+      "decision_window_start_dap": 1,
+      "interval_semantics": "shared_water_nitrogen_last_operation_dap",
+      "irrigation_budget": 120.0,
+      "min_interval_days": 7,
+      "nitrogen_budget": 300.0
+    },
+    "evaluation": {
+      "baselines": [
+        null,
+        "recorded_farmer",
+        "dssat_auto",
+        "official_extension_expert",
+        "dqn"
+      ],
+      "deterministic": true,
+      "save_action_history": true,
+      "save_daily_trajectory": true,
+      "seeds": [
+        0
+      ]
+    },
+    "experiment": {
+      "description": "Low-cost HLA2007 DQN framework smoke and resume/reuse validation",
+      "dry_run": false,
+      "experiment_id": "021_00_hla2007_framework_smoke__hla_2007_seed0",
+      "experiment_type": "framework_validation",
+      "force": false,
+      "output_root": "benchmark_results",
+      "resume": true,
+      "reuse_existing_results": true
+    },
+    "observations": {
+      "include": [
+        "dap",
+        "dtt",
+        "ep",
+        "grnwt",
+        "istage",
+        "nstres",
+        "rtdep",
+        "srad",
+        "sw",
+        "swfac",
+        "tmax",
+        "topwt",
+        "totir",
+        "vstage",
+        "wtdep",
+        "xlai"
+      ]
+    },
+    "reporting": {
+      "dpi": 300,
+      "generate_excel": true,
+      "generate_markdown": true,
+      "generate_png": true,
+      "generate_pptx": true,
+      "generate_svg": true
+    },
+    "reward": {
+      "irrigation_cost": 1.0,
+      "leaching_cost": 0.0,
+      "nitrogen_cost": 5.0,
+      "type": "local_null_terminal",
+      "yield_gain_coefficient": 1.0
+    },
+    "runtime": {
+      "engine": "legacy_frozen_dqn_adapter",
+      "isolate_cases": true,
+      "project_mount": "/workspace",
+      "python_executable": "/opt/gym_dssat_pdi/bin/python"
+    },
+    "site": {
+      "active_year": 2007,
+      "adapter": "hla_prepared_input_020_11",
+      "aliases": [
+        "HL"
+      ],
+      "critical_input_paths": [
+        "DSSAT_auto_validation/HLA_2004/hla2010_nstep_transfer_2007_2016_2022_020_10/test_cases/2007/input/CNHL07N1.MZX",
+        "DSSAT_auto_validation/HLA_2004/hla2010_nstep_transfer_2007_2016_2022_020_10/test_cases/2007/input/CNHL0701.WTH",
+        "DSSAT_auto_validation/HLA_2004/hla2010_nstep_transfer_2007_2016_2022_020_10/test_cases/2007/input/MZCER048.CUL",
+        "DSSAT_auto_validation/HLA_2004/hla2010_nstep_transfer_2007_2016_2022_020_10/test_cases/2007/input/SOIL.SOL"
+      ],
+      "cultivar_id": "HY0006",
+      "eval_years": [
+        2007
+      ],
+      "initial_condition_mode": 1,
+      "input_status": "confirmed",
+      "inputs": {
+        "by_year": {
+          "2007": {
+            "fileX_name": "CNHL07N1.MZX",
+            "prepared_input_dir": "DSSAT_auto_validation/HLA_2004/hla2010_nstep_transfer_2007_2016_2022_020_10/test_cases/2007/input",
+            "weather_name": "CNHL0701.WTH"
+          },
+          "2010": {
+            "prepared_input_dir": "DSSAT_auto_validation/HLA_2004/hla2010_nstep_dqn_seed0_020_08/nstep5_seed0_50000steps/input",
+            "weather_name": "CNHL1001.WTH"
+          },
+          "2015": {
+            "prepared_input_dir": "DSSAT_auto_validation/HLA_2004/hla2010_nstep_to_hla2015_transfer_020_09/test_case_hla2015/input",
+            "weather_name": "CNHL1501.WTH"
+          },
+          "2016": {
+            "prepared_input_dir": "DSSAT_auto_validation/HLA_2004/hla2010_nstep_transfer_2007_2016_2022_020_10/test_cases/2016/input",
+            "weather_name": "CNHL1601.WTH"
+          },
+          "2022": {
+            "prepared_input_dir": "DSSAT_auto_validation/HLA_2004/hla2010_nstep_transfer_2007_2016_2022_020_10/test_cases/2022/input",
+            "weather_name": "CNHL2201.WTH"
+          }
+        }
+      },
+      "soil_id": "HL99001200",
+      "station_code": "HLA",
+      "station_name": "Hailun",
+      "supported_years": [
+        2007,
+        2010,
+        2015,
+        2016,
+        2022
+      ],
+      "train_years": [
+        2007
+      ],
+      "treatment": 1
+    },
+    "site_config": "../sites/hla.yaml"
+  },
+  "config_hash": "5fa1364a8add26121e19fd781c6dd5fff1a40d3229a6d5405ec95936fda4274a",
+  "created_at_utc": "2026-07-11T11:52:40.815143+00:00",
+  "details": {
+    "reporting": {
+      "figure_paths": {
+        "action_timeline": {
+          "files": {
+            "png": "C:\\Users\\DELL\\gym_workspace\\gym_dssat_pdi_bingo\\gym-dssat-pdi\\benchmark_results\\021_00_hla2007_framework_smoke__hla_2007_seed0\\figures\\action_timeline.png",
+            "svg": "C:\\Users\\DELL\\gym_workspace\\gym_dssat_pdi_bingo\\gym-dssat-pdi\\benchmark_results\\021_00_hla2007_framework_smoke__hla_2007_seed0\\figures\\action_timeline.svg"
+          },
+          "source": "C:\\Users\\DELL\\gym_workspace\\gym_dssat_pdi_bingo\\gym-dssat-pdi\\benchmark_results\\021_00_hla2007_framework_smoke__hla_2007_seed0\\figures\\action_timeline_source.csv"
+        },
+        "baseline_comparison": {
+          "files": {
+            "png": "C:\\Users\\DELL\\gym_workspace\\gym_dssat_pdi_bingo\\gym-dssat-pdi\\benchmark_results\\021_00_hla2007_framework_smoke__hla_2007_seed0\\figures\\baseline_comparison.png",
+            "svg": "C:\\Users\\DELL\\gym_workspace\\gym_dssat_pdi_bingo\\gym-dssat-pdi\\benchmark_results\\021_00_hla2007_framework_smoke__hla_2007_seed0\\figures\\baseline_comparison.svg"
+          },
+          "source": "C:\\Users\\DELL\\gym_workspace\\gym_dssat_pdi_bingo\\gym-dssat-pdi\\benchmark_results\\021_00_hla2007_framework_smoke__hla_2007_seed0\\figures\\baseline_comparison_source.csv"
+        },
+        "efficiency_comparison": {
+          "files": {
+            "png": "C:\\Users\\DELL\\gym_workspace\\gym_dssat_pdi_bingo\\gym-dssat-pdi\\benchmark_results\\021_00_hla2007_framework_smoke__hla_2007_seed0\\figures\\efficiency_comparison.png",
+            "svg": "C:\\Users\\DELL\\gym_workspace\\gym_dssat_pdi_bingo\\gym-dssat-pdi\\benchmark_results\\021_00_hla2007_framework_smoke__hla_2007_seed0\\figures\\efficiency_comparison.svg"
+          },
+          "source": "C:\\Users\\DELL\\gym_workspace\\gym_dssat_pdi_bingo\\gym-dssat-pdi\\benchmark_results\\021_00_hla2007_framework_smoke__hla_2007_seed0\\figures\\efficiency_comparison_source.csv"
+        },
+        "resource_comparison": {
+          "files": {
+            "png": "C:\\Users\\DELL\\gym_workspace\\gym_dssat_pdi_bingo\\gym-dssat-pdi\\benchmark_results\\021_00_hla2007_framework_smoke__hla_2007_seed0\\figures\\resource_comparison.png",
+            "svg": "C:\\Users\\DELL\\gym_workspace\\gym_dssat_pdi_bingo\\gym-dssat-pdi\\benchmark_results\\021_00_hla2007_framework_smoke__hla_2007_seed0\\figures\\resource_comparison.svg"
+          },
+          "source": "C:\\Users\\DELL\\gym_workspace\\gym_dssat_pdi_bingo\\gym-dssat-pdi\\benchmark_results\\021_00_hla2007_framework_smoke__hla_2007_seed0\\figures\\resource_comparison_source.csv"
+        },
+        "reward_curve": {
+          "files": {
+            "png": "C:\\Users\\DELL\\gym_workspace\\gym_dssat_pdi_bingo\\gym-dssat-pdi\\benchmark_results\\021_00_hla2007_framework_smoke__hla_2007_seed0\\figures\\reward_curve.png",
+            "svg": "C:\\Users\\DELL\\gym_workspace\\gym_dssat_pdi_bingo\\gym-dssat-pdi\\benchmark_results\\021_00_hla2007_framework_smoke__hla_2007_seed0\\figures\\reward_curve.svg"
+          },
+          "source": "C:\\Users\\DELL\\gym_workspace\\gym_dssat_pdi_bingo\\gym-dssat-pdi\\benchmark_results\\021_00_hla2007_framework_smoke__hla_2007_seed0\\figures\\reward_curve_source.csv"
+        },
+        "yield_resource_pareto": {
+          "files": {
+            "png": "C:\\Users\\DELL\\gym_workspace\\gym_dssat_pdi_bingo\\gym-dssat-pdi\\benchmark_results\\021_00_hla2007_framework_smoke__hla_2007_seed0\\figures\\yield_resource_pareto.png",
+            "svg": "C:\\Users\\DELL\\gym_workspace\\gym_dssat_pdi_bingo\\gym-dssat-pdi\\benchmark_results\\021_00_hla2007_framework_smoke__hla_2007_seed0\\figures\\yield_resource_pareto.svg"
+          },
+          "source": "C:\\Users\\DELL\\gym_workspace\\gym_dssat_pdi_bingo\\gym-dssat-pdi\\benchmark_results\\021_00_hla2007_framework_smoke__hla_2007_seed0\\figures\\yield_resource_pareto_source.csv"
+        }
+      },
+      "markdown": "C:\\Users\\DELL\\gym_workspace\\gym_dssat_pdi_bingo\\gym-dssat-pdi\\benchmark_results\\021_00_hla2007_framework_smoke__hla_2007_seed0\\reports\\benchmark_report.md",
+      "plot_failures": [],
+      "pptx": "C:\\Users\\DELL\\gym_workspace\\gym_dssat_pdi_bingo\\gym-dssat-pdi\\benchmark_results\\021_00_hla2007_framework_smoke__hla_2007_seed0\\reports\\benchmark_report.pptx",
+      "summary_paths": {
+        "action_summary": "C:\\Users\\DELL\\gym_workspace\\gym_dssat_pdi_bingo\\gym-dssat-pdi\\benchmark_results\\021_00_hla2007_framework_smoke__hla_2007_seed0\\summaries\\action_summary.csv",
+        "baseline_comparison": "C:\\Users\\DELL\\gym_workspace\\gym_dssat_pdi_bingo\\gym-dssat-pdi\\benchmark_results\\021_00_hla2007_framework_smoke__hla_2007_seed0\\summaries\\baseline_comparison.csv",
+        "benchmark_summary": "C:\\Users\\DELL\\gym_workspace\\gym_dssat_pdi_bingo\\gym-dssat-pdi\\benchmark_results\\021_00_hla2007_framework_smoke__hla_2007_seed0\\summaries\\benchmark_summary.xlsx",
+        "cross_seed_summary": "C:\\Users\\DELL\\gym_workspace\\gym_dssat_pdi_bingo\\gym-dssat-pdi\\benchmark_results\\021_00_hla2007_framework_smoke__hla_2007_seed0\\summaries\\cross_seed_summary.csv",
+        "daily_trajectory": "C:\\Users\\DELL\\gym_workspace\\gym_dssat_pdi_bingo\\gym-dssat-pdi\\benchmark_results\\021_00_hla2007_framework_smoke__hla_2007_seed0\\summaries\\daily_trajectory.csv",
+        "failure_summary": "C:\\Users\\DELL\\gym_workspace\\gym_dssat_pdi_bingo\\gym-dssat-pdi\\benchmark_results\\021_00_hla2007_framework_smoke__hla_2007_seed0\\summaries\\failure_summary.csv",
+        "result_manifest": "C:\\Users\\DELL\\gym_workspace\\gym_dssat_pdi_bingo\\gym-dssat-pdi\\benchmark_results\\021_00_hla2007_framework_smoke__hla_2007_seed0\\summaries\\result_manifest.csv",
+        "season_summary": "C:\\Users\\DELL\\gym_workspace\\gym_dssat_pdi_bingo\\gym-dssat-pdi\\benchmark_results\\021_00_hla2007_framework_smoke__hla_2007_seed0\\summaries\\season_summary.csv"
+      }
+    },
+    "run_command": "C:\\Users\\DELL\\gym_workspace\\gym_dssat_pdi_bingo\\gym-dssat-pdi\\benchmark\\benchmark_runner.py --config configs/experiments/021_00_framework_smoke.yaml --report-only",
+    "smoke_test": {
+      "checks": [
+        "配置读取与校验通过",
+        "HLA2007 gym-DSSAT 环境创建通过",
+        "DQN 在 checkpoint 100 后按设计中断",
+        "model、replay buffer、RNG 与 checkpoint 保存通过",
+        "从 checkpoint 100 恢复并训练到 200",
+        "deterministic checkpoint 评估通过",
+        "统一 CSV 与 Excel 输出通过",
+        "PNG 300 dpi 与 SVG 成对输出通过",
+        "Markdown 与 14 页 PPTX 生成通过",
+        "manifest 状态转换通过",
+        "第二次 train-only/report-only 复用且未训练",
+        "dry-run 未启动训练",
+        "错误动作配置被拦截并返回 exit 2"
+      ],
+      "status": "passed"
+    },
+    "training": {
+      "daily_path": "benchmark_results/021_00_hla2007_framework_smoke__hla_2007_seed0/evaluations/daily_trajectory.csv",
+      "model_path": "benchmark_results/021_00_hla2007_framework_smoke__hla_2007_seed0/checkpoints/checkpoint_200/model.zip",
+      "replay_buffer_loaded": true,
+      "resume_semantics": "partial_reproducible_checkpoint_resume",
+      "resumed_from": 100,
+      "rng_state_loaded": true,
+      "season_path": "benchmark_results/021_00_hla2007_framework_smoke__hla_2007_seed0/evaluations/season_summary.csv",
+      "selected_checkpoint": 200,
+      "status": "completed"
+    }
+  },
+  "events": [
+    {
+      "at_utc": "2026-07-11T11:52:40.815143+00:00",
+      "message": "registered",
+      "status": "pending"
+    },
+    {
+      "at_utc": "2026-07-11T11:52:41.550112+00:00",
+      "message": "mode=train-only",
+      "status": "running"
+    },
+    {
+      "at_utc": "2026-07-11T11:52:56.282054+00:00",
+      "message": "Simulated interruption after checkpoint 100",
+      "status": "partial"
+    },
+    {
+      "at_utc": "2026-07-11T11:53:24.529043+00:00",
+      "message": "mode=train-only",
+      "status": "running"
+    },
+    {
+      "at_utc": "2026-07-11T11:53:34.489251+00:00",
+      "message": "requested mode completed",
+      "status": "completed"
+    },
+    {
+      "at_utc": "2026-07-11T11:54:04.638230+00:00",
+      "message": "mode=report-only",
+      "status": "running"
+    },
+    {
+      "at_utc": "2026-07-11T11:54:11.431588+00:00",
+      "message": "requested mode completed",
+      "status": "completed"
+    },
+    {
+      "at_utc": "2026-07-11T11:54:28.193685+00:00",
+      "message": "Exact framework manifest/config_hash reused; no training started",
+      "status": "reused"
+    },
+    {
+      "at_utc": "2026-07-11T11:54:29.623182+00:00",
+      "message": "Exact framework manifest/config_hash reused; no training started",
+      "status": "reused"
+    },
+    {
+      "at_utc": "2026-07-11T11:57:29.737859+00:00",
+      "message": "021_00 smoke/resume/reuse verification passed",
+      "status": "reused"
+    },
+    {
+      "at_utc": "2026-07-11T11:58:03.990262+00:00",
+      "message": "021_00 smoke/resume/reuse verification passed",
+      "status": "reused"
+    }
+  ],
+  "experiment_id": "021_00_hla2007_framework_smoke__hla_2007_seed0",
+  "provenance": {
+    "captured_at_utc": "2026-07-11T11:52:40.815654+00:00",
+    "config_hash": "5fa1364a8add26121e19fd781c6dd5fff1a40d3229a6d5405ec95936fda4274a",
+    "critical_inputs": {
+      "site.critical_input_paths[0]": {
+        "exists": true,
+        "kind": "file",
+        "path": "DSSAT_auto_validation/HLA_2004/hla2010_nstep_transfer_2007_2016_2022_020_10/test_cases/2007/input/CNHL07N1.MZX",
+        "sha256": "89edda781dd30975066e64371398011fa8832468355468caca23b363aab3dc4e",
+        "size_bytes": 3100
+      },
+      "site.critical_input_paths[1]": {
+        "exists": true,
+        "kind": "file",
+        "path": "DSSAT_auto_validation/HLA_2004/hla2010_nstep_transfer_2007_2016_2022_020_10/test_cases/2007/input/CNHL0701.WTH",
+        "sha256": "651024e17af1236f6fefaa263225e328149e113c7288e620ccc487e7a2b9a5ae",
+        "size_bytes": 12214
+      },
+      "site.critical_input_paths[2]": {
+        "exists": true,
+        "kind": "file",
+        "path": "DSSAT_auto_validation/HLA_2004/hla2010_nstep_transfer_2007_2016_2022_020_10/test_cases/2007/input/MZCER048.CUL",
+        "sha256": "a00860f4abfa3a91b9d009f8e6e35acda7f0f5cd9b82df96c0ca788fe1e5f5fd",
+        "size_bytes": 16938
+      },
+      "site.critical_input_paths[3]": {
+        "exists": true,
+        "kind": "file",
+        "path": "DSSAT_auto_validation/HLA_2004/hla2010_nstep_transfer_2007_2016_2022_020_10/test_cases/2007/input/SOIL.SOL",
+        "sha256": "53d485358c46ff3b0221589cbdbdd33ce6a290ab3106df2a0fac8de01a7fcb6f",
+        "size_bytes": 170500
+      },
+      "site.inputs.by_year.2007.prepared_input_dir": {
+        "exists": true,
+        "kind": "directory",
+        "path": "DSSAT_auto_validation/HLA_2004/hla2010_nstep_transfer_2007_2016_2022_020_10/test_cases/2007/input",
+        "sha256": null
+      },
+      "site.inputs.by_year.2010.prepared_input_dir": {
+        "exists": true,
+        "kind": "directory",
+        "path": "DSSAT_auto_validation/HLA_2004/hla2010_nstep_dqn_seed0_020_08/nstep5_seed0_50000steps/input",
+        "sha256": null
+      },
+      "site.inputs.by_year.2015.prepared_input_dir": {
+        "exists": true,
+        "kind": "directory",
+        "path": "DSSAT_auto_validation/HLA_2004/hla2010_nstep_to_hla2015_transfer_020_09/test_case_hla2015/input",
+        "sha256": null
+      },
+      "site.inputs.by_year.2016.prepared_input_dir": {
+        "exists": true,
+        "kind": "directory",
+        "path": "DSSAT_auto_validation/HLA_2004/hla2010_nstep_transfer_2007_2016_2022_020_10/test_cases/2016/input",
+        "sha256": null
+      },
+      "site.inputs.by_year.2022.prepared_input_dir": {
+        "exists": true,
+        "kind": "directory",
+        "path": "DSSAT_auto_validation/HLA_2004/hla2010_nstep_transfer_2007_2016_2022_020_10/test_cases/2022/input",
+        "sha256": null
+      }
+    },
+    "git_commit": "b304fdfec08178c87b1773f5cecdc0b34aeb2be8",
+    "git_dirty_tracked": null,
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+    "project_root": "/workspace",
+    "python_executable": "/opt/gym_dssat_pdi/bin/python",
+    "python_version": "3.10.12"
+  },
+  "seed": 0,
+  "station_code": "HLA",
+  "status": "reused",
+  "updated_at_utc": "2026-07-11T11:58:03.990262+00:00",
+  "year": 2007
+}

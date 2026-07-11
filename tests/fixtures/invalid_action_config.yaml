@@ -1,0 +1,17 @@
+extends: ../../configs/benchmark_defaults.yaml
+site_config: ../../configs/sites/hla.yaml
+experiment:
+  experiment_id: invalid_action_fixture
+  dry_run: true
+site:
+  train_years: [2007]
+  eval_years: [2007]
+algorithm:
+  total_timesteps: 100
+  checkpoint_interval: 100
+  seed: 0
+action_space:
+  irrigation_levels: [0, 60]
+  nitrogen_levels: [0, 50, 100]
+evaluation:
+  seeds: [0]

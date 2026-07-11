@@ -1,0 +1,21 @@
+site:
+  station_code: YC
+  aliases: [YCA]
+  station_name: Yucheng
+  adapter: yc_frozen_020_12
+  input_status: confirmed
+  treatment: 2
+  cultivar_id: ZD0985
+  soil_id: YC99001200
+  initial_condition_mode: 1
+  supported_years: [2014]
+  train_years: [2014]
+  eval_years: [2014]
+  inputs:
+    source_dir: DSSAT_auto_validation/multisite_new_cultivar_inputs_013/YC
+    by_year:
+      '2014':
+        prepared_input_dir: DSSAT_auto_validation/multisite_new_cultivar_inputs_013/YC
+        fileX_name: CNYC0801.MZX
+        weather_name: CNYC1401.WTH
+

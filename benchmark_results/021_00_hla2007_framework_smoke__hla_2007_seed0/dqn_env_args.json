@@ -1,0 +1,15 @@
+{
+  "log_saving_path": "/workspace/benchmark_results/021_00_hla2007_framework_smoke__hla_2007_seed0/dqn_runtime/pdi_gym.log",
+  "mode": "all",
+  "seed": 0,
+  "random_weather": false,
+  "evaluation": true,
+  "fileX_template_path": "/workspace/benchmark_results/021_00_hla2007_framework_smoke__hla_2007_seed0/dqn_input/HLA2007_benchmark_dqn.MZX",
+  "experiment_number": 1,
+  "auxiliary_file_paths": [
+    "/workspace/benchmark_results/021_00_hla2007_framework_smoke__hla_2007_seed0/dqn_input/CNHL0701.WTH",
+    "/workspace/benchmark_results/021_00_hla2007_framework_smoke__hla_2007_seed0/dqn_input/MZCER048.CUL",
+    "/workspace/benchmark_results/021_00_hla2007_framework_smoke__hla_2007_seed0/dqn_input/SOIL.SOL"
+  ],
+  "run_dssat_location": "/opt/dssat_pdi/run_dssat"
+}

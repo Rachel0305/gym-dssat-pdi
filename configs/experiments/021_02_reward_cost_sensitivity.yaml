@@ -1,0 +1,19 @@
+# Planned controlled cost sweep; the 021_00 frozen reward is unchanged.
+extends: ../benchmark_defaults.yaml
+site_config: ../sites/hla.yaml
+experiment:
+  experiment_id: 021_02_reward_cost_sensitivity
+  experiment_type: reward_cost_sensitivity
+  description: One-factor reward cost sweep; inherits benchmark_defaults.yaml
+  dry_run: true
+  user_confirmation_required: [reward.candidate_costs, site.train_years, evaluation.seeds]
+reward:
+  type: local_null_terminal
+  irrigation_cost: 1.0
+  nitrogen_cost: 5.0
+  yield_gain_coefficient: 1.0
+  leaching_cost: 0.0
+  candidate_costs:
+    - {irrigation_cost: 1.0, nitrogen_cost: 5.0}
+example_command: python -m benchmark.benchmark_runner --config configs/experiments/021_02_reward_cost_sensitivity.yaml --dry-run
+

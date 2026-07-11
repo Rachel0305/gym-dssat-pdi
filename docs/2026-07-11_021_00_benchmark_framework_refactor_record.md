@@ -159,5 +159,5 @@ python -m pytest tests/test_benchmark_core.py tests/test_benchmark_reporting.py 
 
 - 重构前备份提交：`b304fdf`，已推送。
 - 框架实现提交：`3bec052`（`Add configurable DQN benchmark framework`）。
-- 正式记录提交：本记录与 PPT 由后续文档提交保存，hash 见本节后续回填。
+- 正式记录与 PPT 首次提交：`ad8a3dc`（`Document benchmark framework refactor`）。
 - push 状态：框架提交已成功推送到 `codex-reward-sweep-backup`。

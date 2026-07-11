@@ -1,0 +1,337 @@
+﻿run,date_label,year,doy,das,dap,operation,quantity,unit,scenario,requested_year
+1,"MAY 5, 2007",2007,125,1,0,Planting,0.0,,null,2007
+1,"MAY 5, 2007",2007,125,1,0,Start Sim,0.0,,null,2007
+1,"MAY 6, 2007",2007,126,2,1,Germinate,0.0,,null,2007
+1,"MAY 22, 2007",2007,142,18,17,Emergence,0.0,,null,2007
+1,"JUN 12, 2007",2007,163,39,38,End Juveni,0.0,,null,2007
+1,"JUN 19, 2007",2007,170,46,45,Floral Ini,0.0,,null,2007
+1,"JUL 29, 2007",2007,210,86,85,75% Silkin,75.0,%,null,2007
+1,"AUG 11, 2007",2007,223,99,98,Beg Gr Fil,0.0,,null,2007
+1,"SEP 19, 2007",2007,262,138,137,End Gr Fil,0.0,,null,2007
+1,"SEP 25, 2007",2007,268,144,143,Harvest,0.0,,null,2007
+1,"SEP 25, 2007",2007,268,144,143,Harvest Yield 6596. kg/ha,0.0,,null,2007
+1,"SEP 25, 2007",2007,268,144,143,Harvest Yield 6596. kg/ha,0.0,,recorded_farmer,2007
+1,"MAY 5, 2007",2007,125,1,0,Planting,0.0,,recorded_farmer,2007
+1,"MAY 5, 2007",2007,125,1,0,Start Sim,0.0,,recorded_farmer,2007
+1,"MAY 5, 2007",2007,125,1,0,Fertilizer 165. kg[N]/ha,0.0,,recorded_farmer,2007
+1,"MAY 6, 2007",2007,126,2,1,Germinate,0.0,,recorded_farmer,2007
+1,"MAY 22, 2007",2007,142,18,17,Emergence,0.0,,recorded_farmer,2007
+1,"JUN 12, 2007",2007,163,39,38,End Juveni,0.0,,recorded_farmer,2007
+1,"JUN 19, 2007",2007,170,46,45,Floral Ini,0.0,,recorded_farmer,2007
+1,"JUN 23, 2007",2007,174,50,49,Irrigation 10.0 mm,10.0,mm,recorded_farmer,2007
+1,"JUL 14, 2007",2007,195,71,70,Irrigation 10.0 mm,10.0,mm,recorded_farmer,2007
+1,"JUL 29, 2007",2007,210,86,85,75% Silkin,75.0,%,recorded_farmer,2007
+1,"AUG 8, 2007",2007,220,96,95,Irrigation 10.0 mm,10.0,mm,recorded_farmer,2007
+1,"AUG 11, 2007",2007,223,99,98,Beg Gr Fil,0.0,,recorded_farmer,2007
+1,"SEP 19, 2007",2007,262,138,137,End Gr Fil,0.0,,recorded_farmer,2007
+1,"SEP 25, 2007",2007,268,144,143,Harvest,0.0,,recorded_farmer,2007
+1,"SEP 25, 2007",2007,268,144,143,Harvest Yield 7339. kg/ha,0.0,,recorded_farmer,2007
+1,"MAY 5, 2007",2007,125,1,0,Planting,0.0,,dssat_auto,2007
+1,"MAY 5, 2007",2007,125,1,0,Start Sim,0.0,,dssat_auto,2007
+1,"MAY 6, 2007",2007,126,2,1,Germinate,0.0,,dssat_auto,2007
+1,"MAY 8, 2007",2007,128,4,3,Irrigation 47.6 mm,47.6,mm,dssat_auto,2007
+1,"MAY 22, 2007",2007,142,18,17,Emergence,0.0,,dssat_auto,2007
+1,"JUN 12, 2007",2007,163,39,38,End Juveni,0.0,,dssat_auto,2007
+1,"JUN 19, 2007",2007,170,46,45,Floral Ini,0.0,,dssat_auto,2007
+1,"JUL 29, 2007",2007,210,86,85,75% Silkin,75.0,%,dssat_auto,2007
+1,"AUG 4, 2007",2007,216,92,91,Irrigation 48.8 mm,48.8,mm,dssat_auto,2007
+1,"AUG 11, 2007",2007,223,99,98,Beg Gr Fil,0.0,,dssat_auto,2007
+1,"SEP 4, 2007",2007,247,123,122,Irrigation 46.9 mm,46.9,mm,dssat_auto,2007
+1,"SEP 19, 2007",2007,262,138,137,End Gr Fil,0.0,,dssat_auto,2007
+1,"SEP 25, 2007",2007,268,144,143,Harvest,0.0,,dssat_auto,2007
+1,"SEP 25, 2007",2007,268,144,143,Harvest Yield 7986. kg/ha,0.0,,dssat_auto,2007
+1,"SEP 25, 2007",2007,268,144,143,Harvest Yield 6596. kg/ha,0.0,,extension_expert,2007
+1,"MAY 5, 2007",2007,125,1,0,Planting,0.0,,extension_expert,2007
+1,"MAY 5, 2007",2007,125,1,0,Start Sim,0.0,,extension_expert,2007
+1,"MAY 5, 2007",2007,125,1,0,Fertilizer 112. kg[N]/ha,0.0,,extension_expert,2007
+1,"MAY 5, 2007",2007,125,1,0,Irrigation 37.5 mm,37.5,mm,extension_expert,2007
+1,"MAY 6, 2007",2007,126,2,1,Germinate,0.0,,extension_expert,2007
+1,"MAY 22, 2007",2007,142,18,17,Emergence,0.0,,extension_expert,2007
+1,"JUN 4, 2007",2007,155,31,30,Fertilizer 34. kg[N]/ha,0.0,,extension_expert,2007
+1,"JUN 4, 2007",2007,155,31,30,Irrigation 45.0 mm,45.0,mm,extension_expert,2007
+1,"JUN 12, 2007",2007,163,39,38,End Juveni,0.0,,extension_expert,2007
+1,"JUN 19, 2007",2007,170,46,45,Floral Ini,0.0,,extension_expert,2007
+1,"JUN 24, 2007",2007,175,51,50,Fertilizer 68. kg[N]/ha,0.0,,extension_expert,2007
+1,"JUN 24, 2007",2007,175,51,50,Irrigation 50.0 mm,50.0,mm,extension_expert,2007
+1,"JUN 25, 2007",2007,176,52,51,Irrigation 6.2 mm,6.2,mm,extension_expert,2007
+1,"JUL 9, 2007",2007,190,66,65,Fertilizer 26. kg[N]/ha,0.0,,extension_expert,2007
+1,"JUL 9, 2007",2007,190,66,65,Irrigation 50.0 mm,50.0,mm,extension_expert,2007
+1,"JUL 10, 2007",2007,191,67,66,Irrigation 6.2 mm,6.2,mm,extension_expert,2007
+1,"JUL 29, 2007",2007,210,86,85,75% Silkin,75.0,%,extension_expert,2007
+1,"JUL 29, 2007",2007,210,86,85,Fertilizer 34. kg[N]/ha,0.0,,extension_expert,2007
+1,"JUL 29, 2007",2007,210,86,85,Irrigation 41.2 mm,41.2,mm,extension_expert,2007
+1,"AUG 11, 2007",2007,223,99,98,Beg Gr Fil,0.0,,extension_expert,2007
+1,"AUG 23, 2007",2007,235,111,110,Fertilizer 26. kg[N]/ha,0.0,,extension_expert,2007
+1,"AUG 23, 2007",2007,235,111,110,Irrigation 30.0 mm,30.0,mm,extension_expert,2007
+1,"SEP 19, 2007",2007,262,138,137,End Gr Fil,0.0,,extension_expert,2007
+1,"SEP 25, 2007",2007,268,144,143,Harvest,0.0,,extension_expert,2007
+1,"SEP 25, 2007",2007,268,144,143,Harvest Yield 7940. kg/ha,0.0,,extension_expert,2007
+1,"MAY 5, 2010",2010,125,1,0,Planting,0.0,,null,2010
+1,"MAY 5, 2010",2010,125,1,0,Start Sim,0.0,,null,2010
+1,"MAY 6, 2010",2010,126,2,1,Germinate,0.0,,null,2010
+1,"MAY 20, 2010",2010,140,16,15,Emergence,0.0,,null,2010
+1,"JUN 5, 2010",2010,156,32,31,End Juveni,0.0,,null,2010
+1,"JUN 12, 2010",2010,163,39,38,Floral Ini,0.0,,null,2010
+1,"JUL 22, 2010",2010,203,79,78,75% Silkin,75.0,%,null,2010
+1,"AUG 4, 2010",2010,216,92,91,Beg Gr Fil,0.0,,null,2010
+1,"SEP 10, 2010",2010,253,129,128,End Gr Fil,0.0,,null,2010
+1,"SEP 12, 2010",2010,255,131,130,Harvest,0.0,,null,2010
+1,"SEP 12, 2010",2010,255,131,130,Harvest Yield 6956. kg/ha,0.0,,null,2010
+1,"SEP 12, 2010",2010,255,131,130,Harvest Yield 6956. kg/ha,0.0,,recorded_farmer,2010
+1,"MAY 5, 2010",2010,125,1,0,Planting,0.0,,recorded_farmer,2010
+1,"MAY 5, 2010",2010,125,1,0,Start Sim,0.0,,recorded_farmer,2010
+1,"MAY 5, 2010",2010,125,1,0,Fertilizer 165. kg[N]/ha,0.0,,recorded_farmer,2010
+1,"MAY 6, 2010",2010,126,2,1,Germinate,0.0,,recorded_farmer,2010
+1,"MAY 20, 2010",2010,140,16,15,Emergence,0.0,,recorded_farmer,2010
+1,"JUN 5, 2010",2010,156,32,31,End Juveni,0.0,,recorded_farmer,2010
+1,"JUN 12, 2010",2010,163,39,38,Floral Ini,0.0,,recorded_farmer,2010
+1,"JUN 23, 2010",2010,174,50,49,Irrigation 10.0 mm,10.0,mm,recorded_farmer,2010
+1,"JUL 14, 2010",2010,195,71,70,Irrigation 10.0 mm,10.0,mm,recorded_farmer,2010
+1,"JUL 22, 2010",2010,203,79,78,75% Silkin,75.0,%,recorded_farmer,2010
+1,"AUG 4, 2010",2010,216,92,91,Beg Gr Fil,0.0,,recorded_farmer,2010
+1,"AUG 8, 2010",2010,220,96,95,Irrigation 10.0 mm,10.0,mm,recorded_farmer,2010
+1,"SEP 10, 2010",2010,253,129,128,End Gr Fil,0.0,,recorded_farmer,2010
+1,"SEP 12, 2010",2010,255,131,130,Harvest,0.0,,recorded_farmer,2010
+1,"SEP 12, 2010",2010,255,131,130,Harvest Yield 7679. kg/ha,0.0,,recorded_farmer,2010
+1,"MAY 5, 2010",2010,125,1,0,Planting,0.0,,dssat_auto,2010
+1,"MAY 5, 2010",2010,125,1,0,Start Sim,0.0,,dssat_auto,2010
+1,"MAY 6, 2010",2010,126,2,1,Germinate,0.0,,dssat_auto,2010
+1,"MAY 20, 2010",2010,140,16,15,Emergence,0.0,,dssat_auto,2010
+1,"JUN 5, 2010",2010,156,32,31,End Juveni,0.0,,dssat_auto,2010
+1,"JUN 11, 2010",2010,162,38,37,Irrigation 47.8 mm,47.8,mm,dssat_auto,2010
+1,"JUN 12, 2010",2010,163,39,38,Floral Ini,0.0,,dssat_auto,2010
+1,"JUN 27, 2010",2010,178,54,53,Irrigation 46.6 mm,46.6,mm,dssat_auto,2010
+1,"JUL 22, 2010",2010,203,79,78,75% Silkin,75.0,%,dssat_auto,2010
+1,"AUG 4, 2010",2010,216,92,91,Beg Gr Fil,0.0,,dssat_auto,2010
+1,"AUG 8, 2010",2010,220,96,95,Irrigation 48.1 mm,48.1,mm,dssat_auto,2010
+1,"SEP 10, 2010",2010,253,129,128,End Gr Fil,0.0,,dssat_auto,2010
+1,"SEP 11, 2010",2010,254,130,129,Irrigation 47.9 mm,47.9,mm,dssat_auto,2010
+1,"SEP 12, 2010",2010,255,131,130,Harvest,0.0,,dssat_auto,2010
+1,"SEP 12, 2010",2010,255,131,130,Harvest Yield 7854. kg/ha,0.0,,dssat_auto,2010
+1,"SEP 12, 2010",2010,255,131,130,Harvest Yield 6956. kg/ha,0.0,,extension_expert,2010
+1,"MAY 5, 2010",2010,125,1,0,Planting,0.0,,extension_expert,2010
+1,"MAY 5, 2010",2010,125,1,0,Start Sim,0.0,,extension_expert,2010
+1,"MAY 5, 2010",2010,125,1,0,Fertilizer 112. kg[N]/ha,0.0,,extension_expert,2010
+1,"MAY 5, 2010",2010,125,1,0,Irrigation 37.5 mm,37.5,mm,extension_expert,2010
+1,"MAY 6, 2010",2010,126,2,1,Germinate,0.0,,extension_expert,2010
+1,"MAY 20, 2010",2010,140,16,15,Emergence,0.0,,extension_expert,2010
+1,"JUN 4, 2010",2010,155,31,30,Fertilizer 34. kg[N]/ha,0.0,,extension_expert,2010
+1,"JUN 4, 2010",2010,155,31,30,Irrigation 45.0 mm,45.0,mm,extension_expert,2010
+1,"JUN 5, 2010",2010,156,32,31,End Juveni,0.0,,extension_expert,2010
+1,"JUN 12, 2010",2010,163,39,38,Floral Ini,0.0,,extension_expert,2010
+1,"JUN 24, 2010",2010,175,51,50,Fertilizer 68. kg[N]/ha,0.0,,extension_expert,2010
+1,"JUN 24, 2010",2010,175,51,50,Irrigation 50.0 mm,50.0,mm,extension_expert,2010
+1,"JUN 25, 2010",2010,176,52,51,Irrigation 6.2 mm,6.2,mm,extension_expert,2010
+1,"JUL 9, 2010",2010,190,66,65,Fertilizer 26. kg[N]/ha,0.0,,extension_expert,2010
+1,"JUL 9, 2010",2010,190,66,65,Irrigation 50.0 mm,50.0,mm,extension_expert,2010
+1,"JUL 10, 2010",2010,191,67,66,Irrigation 6.2 mm,6.2,mm,extension_expert,2010
+1,"JUL 22, 2010",2010,203,79,78,75% Silkin,75.0,%,extension_expert,2010
+1,"JUL 29, 2010",2010,210,86,85,Fertilizer 34. kg[N]/ha,0.0,,extension_expert,2010
+1,"JUL 29, 2010",2010,210,86,85,Irrigation 41.2 mm,41.2,mm,extension_expert,2010
+1,"AUG 4, 2010",2010,216,92,91,Beg Gr Fil,0.0,,extension_expert,2010
+1,"AUG 23, 2010",2010,235,111,110,Fertilizer 26. kg[N]/ha,0.0,,extension_expert,2010
+1,"AUG 23, 2010",2010,235,111,110,Irrigation 30.0 mm,30.0,mm,extension_expert,2010
+1,"SEP 10, 2010",2010,253,129,128,End Gr Fil,0.0,,extension_expert,2010
+1,"SEP 12, 2010",2010,255,131,130,Harvest,0.0,,extension_expert,2010
+1,"SEP 12, 2010",2010,255,131,130,Harvest Yield 7854. kg/ha,0.0,,extension_expert,2010
+1,"MAY 5, 2015",2015,125,1,0,Planting,0.0,,null,2015
+1,"MAY 5, 2015",2015,125,1,0,Start Sim,0.0,,null,2015
+1,"MAY 6, 2015",2015,126,2,1,Germinate,0.0,,null,2015
+1,"MAY 23, 2015",2015,143,19,18,Emergence,0.0,,null,2015
+1,"JUN 14, 2015",2015,165,41,40,End Juveni,0.0,,null,2015
+1,"JUN 21, 2015",2015,172,48,47,Floral Ini,0.0,,null,2015
+1,"AUG 2, 2015",2015,214,90,89,75% Silkin,75.0,%,null,2015
+1,"AUG 13, 2015",2015,225,101,100,Beg Gr Fil,0.0,,null,2015
+1,"OCT 4, 2015",2015,277,153,152,End Gr Fil,0.0,,null,2015
+1,"OCT 9, 2015",2015,282,158,157,Harvest,0.0,,null,2015
+1,"OCT 9, 2015",2015,282,158,157,Harvest Yield 6486. kg/ha,0.0,,null,2015
+1,"OCT 9, 2015",2015,282,158,157,Harvest Yield 6486. kg/ha,0.0,,recorded_farmer,2015
+1,"MAY 5, 2015",2015,125,1,0,Planting,0.0,,recorded_farmer,2015
+1,"MAY 5, 2015",2015,125,1,0,Start Sim,0.0,,recorded_farmer,2015
+1,"MAY 5, 2015",2015,125,1,0,Fertilizer 165. kg[N]/ha,0.0,,recorded_farmer,2015
+1,"MAY 6, 2015",2015,126,2,1,Germinate,0.0,,recorded_farmer,2015
+1,"MAY 23, 2015",2015,143,19,18,Emergence,0.0,,recorded_farmer,2015
+1,"JUN 14, 2015",2015,165,41,40,End Juveni,0.0,,recorded_farmer,2015
+1,"JUN 21, 2015",2015,172,48,47,Floral Ini,0.0,,recorded_farmer,2015
+1,"JUN 23, 2015",2015,174,50,49,Irrigation 10.0 mm,10.0,mm,recorded_farmer,2015
+1,"JUL 14, 2015",2015,195,71,70,Irrigation 10.0 mm,10.0,mm,recorded_farmer,2015
+1,"AUG 2, 2015",2015,214,90,89,75% Silkin,75.0,%,recorded_farmer,2015
+1,"AUG 8, 2015",2015,220,96,95,Irrigation 10.0 mm,10.0,mm,recorded_farmer,2015
+1,"AUG 13, 2015",2015,225,101,100,Beg Gr Fil,0.0,,recorded_farmer,2015
+1,"OCT 4, 2015",2015,277,153,152,End Gr Fil,0.0,,recorded_farmer,2015
+1,"OCT 9, 2015",2015,282,158,157,Harvest,0.0,,recorded_farmer,2015
+1,"OCT 9, 2015",2015,282,158,157,Harvest Yield 7296. kg/ha,0.0,,recorded_farmer,2015
+1,"MAY 5, 2015",2015,125,1,0,Planting,0.0,,dssat_auto,2015
+1,"MAY 5, 2015",2015,125,1,0,Start Sim,0.0,,dssat_auto,2015
+1,"MAY 6, 2015",2015,126,2,1,Germinate,0.0,,dssat_auto,2015
+1,"MAY 23, 2015",2015,143,19,18,Emergence,0.0,,dssat_auto,2015
+1,"JUN 6, 2015",2015,157,33,32,Irrigation 47.0 mm,47.0,mm,dssat_auto,2015
+1,"JUN 14, 2015",2015,165,41,40,End Juveni,0.0,,dssat_auto,2015
+1,"JUN 21, 2015",2015,172,48,47,Floral Ini,0.0,,dssat_auto,2015
+1,"JUL 11, 2015",2015,192,68,67,Irrigation 47.6 mm,47.6,mm,dssat_auto,2015
+1,"AUG 2, 2015",2015,214,90,89,75% Silkin,75.0,%,dssat_auto,2015
+1,"AUG 13, 2015",2015,225,101,100,Beg Gr Fil,0.0,,dssat_auto,2015
+1,"SEP 14, 2015",2015,257,133,132,Irrigation 46.9 mm,46.9,mm,dssat_auto,2015
+1,"OCT 4, 2015",2015,277,153,152,End Gr Fil,0.0,,dssat_auto,2015
+1,"OCT 9, 2015",2015,282,158,157,Harvest,0.0,,dssat_auto,2015
+1,"OCT 9, 2015",2015,282,158,157,Harvest Yield 7648. kg/ha,0.0,,dssat_auto,2015
+1,"OCT 9, 2015",2015,282,158,157,Harvest Yield 6486. kg/ha,0.0,,extension_expert,2015
+1,"MAY 5, 2015",2015,125,1,0,Planting,0.0,,extension_expert,2015
+1,"MAY 5, 2015",2015,125,1,0,Start Sim,0.0,,extension_expert,2015
+1,"MAY 5, 2015",2015,125,1,0,Fertilizer 112. kg[N]/ha,0.0,,extension_expert,2015
+1,"MAY 5, 2015",2015,125,1,0,Irrigation 37.5 mm,37.5,mm,extension_expert,2015
+1,"MAY 6, 2015",2015,126,2,1,Germinate,0.0,,extension_expert,2015
+1,"MAY 23, 2015",2015,143,19,18,Emergence,0.0,,extension_expert,2015
+1,"JUN 4, 2015",2015,155,31,30,Fertilizer 34. kg[N]/ha,0.0,,extension_expert,2015
+1,"JUN 4, 2015",2015,155,31,30,Irrigation 45.0 mm,45.0,mm,extension_expert,2015
+1,"JUN 14, 2015",2015,165,41,40,End Juveni,0.0,,extension_expert,2015
+1,"JUN 21, 2015",2015,172,48,47,Floral Ini,0.0,,extension_expert,2015
+1,"JUN 24, 2015",2015,175,51,50,Fertilizer 68. kg[N]/ha,0.0,,extension_expert,2015
+1,"JUN 24, 2015",2015,175,51,50,Irrigation 50.0 mm,50.0,mm,extension_expert,2015
+1,"JUN 25, 2015",2015,176,52,51,Irrigation 6.2 mm,6.2,mm,extension_expert,2015
+1,"JUL 9, 2015",2015,190,66,65,Fertilizer 26. kg[N]/ha,0.0,,extension_expert,2015
+1,"JUL 9, 2015",2015,190,66,65,Irrigation 50.0 mm,50.0,mm,extension_expert,2015
+1,"JUL 10, 2015",2015,191,67,66,Irrigation 6.2 mm,6.2,mm,extension_expert,2015
+1,"JUL 29, 2015",2015,210,86,85,Fertilizer 34. kg[N]/ha,0.0,,extension_expert,2015
+1,"JUL 29, 2015",2015,210,86,85,Irrigation 41.2 mm,41.2,mm,extension_expert,2015
+1,"AUG 2, 2015",2015,214,90,89,75% Silkin,75.0,%,extension_expert,2015
+1,"AUG 13, 2015",2015,225,101,100,Beg Gr Fil,0.0,,extension_expert,2015
+1,"AUG 23, 2015",2015,235,111,110,Fertilizer 26. kg[N]/ha,0.0,,extension_expert,2015
+1,"AUG 23, 2015",2015,235,111,110,Irrigation 30.0 mm,30.0,mm,extension_expert,2015
+1,"OCT 4, 2015",2015,277,153,152,End Gr Fil,0.0,,extension_expert,2015
+1,"OCT 9, 2015",2015,282,158,157,Harvest,0.0,,extension_expert,2015
+1,"OCT 9, 2015",2015,282,158,157,Harvest Yield 7603. kg/ha,0.0,,extension_expert,2015
+1,"MAY 4, 2016",2016,125,1,0,Planting,0.0,,null,2016
+1,"MAY 4, 2016",2016,125,1,0,Start Sim,0.0,,null,2016
+1,"MAY 5, 2016",2016,126,2,1,Germinate,0.0,,null,2016
+1,"MAY 18, 2016",2016,139,15,14,Emergence,0.0,,null,2016
+1,"JUN 9, 2016",2016,161,37,36,End Juveni,0.0,,null,2016
+1,"JUN 16, 2016",2016,168,44,43,Floral Ini,0.0,,null,2016
+1,"JUL 25, 2016",2016,207,83,82,75% Silkin,75.0,%,null,2016
+1,"AUG 5, 2016",2016,218,94,93,Beg Gr Fil,0.0,,null,2016
+1,"SEP 10, 2016",2016,254,130,129,End Gr Fil,0.0,,null,2016
+1,"SEP 14, 2016",2016,258,134,133,Harvest,0.0,,null,2016
+1,"SEP 14, 2016",2016,258,134,133,Harvest Yield 7224. kg/ha,0.0,,null,2016
+1,"SEP 14, 2016",2016,258,134,133,Harvest Yield 7224. kg/ha,0.0,,recorded_farmer,2016
+1,"MAY 4, 2016",2016,125,1,0,Planting,0.0,,recorded_farmer,2016
+1,"MAY 4, 2016",2016,125,1,0,Start Sim,0.0,,recorded_farmer,2016
+1,"MAY 4, 2016",2016,125,1,0,Fertilizer 165. kg[N]/ha,0.0,,recorded_farmer,2016
+1,"MAY 5, 2016",2016,126,2,1,Germinate,0.0,,recorded_farmer,2016
+1,"MAY 18, 2016",2016,139,15,14,Emergence,0.0,,recorded_farmer,2016
+1,"JUN 9, 2016",2016,161,37,36,End Juveni,0.0,,recorded_farmer,2016
+1,"JUN 16, 2016",2016,168,44,43,Floral Ini,0.0,,recorded_farmer,2016
+1,"JUN 22, 2016",2016,174,50,49,Irrigation 10.0 mm,10.0,mm,recorded_farmer,2016
+1,"JUL 13, 2016",2016,195,71,70,Irrigation 10.0 mm,10.0,mm,recorded_farmer,2016
+1,"JUL 25, 2016",2016,207,83,82,75% Silkin,75.0,%,recorded_farmer,2016
+1,"AUG 5, 2016",2016,218,94,93,Beg Gr Fil,0.0,,recorded_farmer,2016
+1,"AUG 7, 2016",2016,220,96,95,Irrigation 10.0 mm,10.0,mm,recorded_farmer,2016
+1,"SEP 10, 2016",2016,254,130,129,End Gr Fil,0.0,,recorded_farmer,2016
+1,"SEP 14, 2016",2016,258,134,133,Harvest,0.0,,recorded_farmer,2016
+1,"SEP 14, 2016",2016,258,134,133,Harvest Yield 7538. kg/ha,0.0,,recorded_farmer,2016
+1,"MAY 4, 2016",2016,125,1,0,Planting,0.0,,dssat_auto,2016
+1,"MAY 4, 2016",2016,125,1,0,Start Sim,0.0,,dssat_auto,2016
+1,"MAY 5, 2016",2016,126,2,1,Germinate,0.0,,dssat_auto,2016
+1,"MAY 6, 2016",2016,127,3,2,Irrigation 47.2 mm,47.2,mm,dssat_auto,2016
+1,"MAY 18, 2016",2016,139,15,14,Emergence,0.0,,dssat_auto,2016
+1,"JUN 9, 2016",2016,161,37,36,End Juveni,0.0,,dssat_auto,2016
+1,"JUN 16, 2016",2016,168,44,43,Floral Ini,0.0,,dssat_auto,2016
+1,"JUL 23, 2016",2016,205,81,80,Irrigation 46.7 mm,46.7,mm,dssat_auto,2016
+1,"JUL 25, 2016",2016,207,83,82,75% Silkin,75.0,%,dssat_auto,2016
+1,"AUG 5, 2016",2016,218,94,93,Beg Gr Fil,0.0,,dssat_auto,2016
+1,"AUG 27, 2016",2016,240,116,115,Irrigation 46.9 mm,46.9,mm,dssat_auto,2016
+1,"SEP 10, 2016",2016,254,130,129,End Gr Fil,0.0,,dssat_auto,2016
+1,"SEP 14, 2016",2016,258,134,133,Harvest,0.0,,dssat_auto,2016
+1,"SEP 14, 2016",2016,258,134,133,Harvest Yield 7538. kg/ha,0.0,,dssat_auto,2016
+1,"SEP 14, 2016",2016,258,134,133,Harvest Yield 7224. kg/ha,0.0,,extension_expert,2016
+1,"MAY 4, 2016",2016,125,1,0,Planting,0.0,,extension_expert,2016
+1,"MAY 4, 2016",2016,125,1,0,Start Sim,0.0,,extension_expert,2016
+1,"MAY 4, 2016",2016,125,1,0,Fertilizer 112. kg[N]/ha,0.0,,extension_expert,2016
+1,"MAY 4, 2016",2016,125,1,0,Irrigation 37.5 mm,37.5,mm,extension_expert,2016
+1,"MAY 5, 2016",2016,126,2,1,Germinate,0.0,,extension_expert,2016
+1,"MAY 18, 2016",2016,139,15,14,Emergence,0.0,,extension_expert,2016
+1,"JUN 3, 2016",2016,155,31,30,Fertilizer 34. kg[N]/ha,0.0,,extension_expert,2016
+1,"JUN 3, 2016",2016,155,31,30,Irrigation 45.0 mm,45.0,mm,extension_expert,2016
+1,"JUN 9, 2016",2016,161,37,36,End Juveni,0.0,,extension_expert,2016
+1,"JUN 16, 2016",2016,168,44,43,Floral Ini,0.0,,extension_expert,2016
+1,"JUN 23, 2016",2016,175,51,50,Fertilizer 68. kg[N]/ha,0.0,,extension_expert,2016
+1,"JUN 23, 2016",2016,175,51,50,Irrigation 50.0 mm,50.0,mm,extension_expert,2016
+1,"JUN 24, 2016",2016,176,52,51,Irrigation 6.2 mm,6.2,mm,extension_expert,2016
+1,"JUL 8, 2016",2016,190,66,65,Fertilizer 26. kg[N]/ha,0.0,,extension_expert,2016
+1,"JUL 8, 2016",2016,190,66,65,Irrigation 50.0 mm,50.0,mm,extension_expert,2016
+1,"JUL 9, 2016",2016,191,67,66,Irrigation 6.2 mm,6.2,mm,extension_expert,2016
+1,"JUL 25, 2016",2016,207,83,82,75% Silkin,75.0,%,extension_expert,2016
+1,"JUL 28, 2016",2016,210,86,85,Fertilizer 34. kg[N]/ha,0.0,,extension_expert,2016
+1,"JUL 28, 2016",2016,210,86,85,Irrigation 41.2 mm,41.2,mm,extension_expert,2016
+1,"AUG 5, 2016",2016,218,94,93,Beg Gr Fil,0.0,,extension_expert,2016
+1,"AUG 22, 2016",2016,235,111,110,Fertilizer 26. kg[N]/ha,0.0,,extension_expert,2016
+1,"AUG 22, 2016",2016,235,111,110,Irrigation 30.0 mm,30.0,mm,extension_expert,2016
+1,"SEP 10, 2016",2016,254,130,129,End Gr Fil,0.0,,extension_expert,2016
+1,"SEP 14, 2016",2016,258,134,133,Harvest,0.0,,extension_expert,2016
+1,"SEP 14, 2016",2016,258,134,133,Harvest Yield 7429. kg/ha,0.0,,extension_expert,2016
+1,"MAY 5, 2022",2022,125,1,0,Planting,0.0,,null,2022
+1,"MAY 5, 2022",2022,125,1,0,Start Sim,0.0,,null,2022
+1,"MAY 6, 2022",2022,126,2,1,Germinate,0.0,,null,2022
+1,"MAY 20, 2022",2022,140,16,15,Emergence,0.0,,null,2022
+1,"JUN 12, 2022",2022,163,39,38,End Juveni,0.0,,null,2022
+1,"JUN 19, 2022",2022,170,46,45,Floral Ini,0.0,,null,2022
+1,"JUL 25, 2022",2022,206,82,81,75% Silkin,75.0,%,null,2022
+1,"AUG 4, 2022",2022,216,92,91,Beg Gr Fil,0.0,,null,2022
+1,"SEP 15, 2022",2022,258,134,133,End Gr Fil,0.0,,null,2022
+1,"SEP 18, 2022",2022,261,137,136,Harvest,0.0,,null,2022
+1,"SEP 18, 2022",2022,261,137,136,Harvest Yield 7787. kg/ha,0.0,,null,2022
+1,"SEP 18, 2022",2022,261,137,136,Harvest Yield 7787. kg/ha,0.0,,recorded_farmer,2022
+1,"MAY 5, 2022",2022,125,1,0,Planting,0.0,,recorded_farmer,2022
+1,"MAY 5, 2022",2022,125,1,0,Start Sim,0.0,,recorded_farmer,2022
+1,"MAY 5, 2022",2022,125,1,0,Fertilizer 165. kg[N]/ha,0.0,,recorded_farmer,2022
+1,"MAY 6, 2022",2022,126,2,1,Germinate,0.0,,recorded_farmer,2022
+1,"MAY 20, 2022",2022,140,16,15,Emergence,0.0,,recorded_farmer,2022
+1,"JUN 12, 2022",2022,163,39,38,End Juveni,0.0,,recorded_farmer,2022
+1,"JUN 19, 2022",2022,170,46,45,Floral Ini,0.0,,recorded_farmer,2022
+1,"JUN 23, 2022",2022,174,50,49,Irrigation 10.0 mm,10.0,mm,recorded_farmer,2022
+1,"JUL 14, 2022",2022,195,71,70,Irrigation 10.0 mm,10.0,mm,recorded_farmer,2022
+1,"JUL 25, 2022",2022,206,82,81,75% Silkin,75.0,%,recorded_farmer,2022
+1,"AUG 4, 2022",2022,216,92,91,Beg Gr Fil,0.0,,recorded_farmer,2022
+1,"AUG 8, 2022",2022,220,96,95,Irrigation 10.0 mm,10.0,mm,recorded_farmer,2022
+1,"SEP 15, 2022",2022,258,134,133,End Gr Fil,0.0,,recorded_farmer,2022
+1,"SEP 18, 2022",2022,261,137,136,Harvest,0.0,,recorded_farmer,2022
+1,"SEP 18, 2022",2022,261,137,136,Harvest Yield 7935. kg/ha,0.0,,recorded_farmer,2022
+1,"MAY 5, 2022",2022,125,1,0,Planting,0.0,,dssat_auto,2022
+1,"MAY 5, 2022",2022,125,1,0,Start Sim,0.0,,dssat_auto,2022
+1,"MAY 6, 2022",2022,126,2,1,Germinate,0.0,,dssat_auto,2022
+1,"MAY 14, 2022",2022,134,10,9,Irrigation 46.5 mm,46.5,mm,dssat_auto,2022
+1,"MAY 20, 2022",2022,140,16,15,Emergence,0.0,,dssat_auto,2022
+1,"JUN 12, 2022",2022,163,39,38,End Juveni,0.0,,dssat_auto,2022
+1,"JUN 19, 2022",2022,170,46,45,Floral Ini,0.0,,dssat_auto,2022
+1,"JUL 25, 2022",2022,206,82,81,75% Silkin,75.0,%,dssat_auto,2022
+1,"AUG 4, 2022",2022,216,92,91,Beg Gr Fil,0.0,,dssat_auto,2022
+1,"AUG 18, 2022",2022,230,106,105,Irrigation 49.4 mm,49.4,mm,dssat_auto,2022
+1,"SEP 15, 2022",2022,258,134,133,End Gr Fil,0.0,,dssat_auto,2022
+1,"SEP 16, 2022",2022,259,135,134,Irrigation 47.7 mm,47.7,mm,dssat_auto,2022
+1,"SEP 18, 2022",2022,261,137,136,Harvest,0.0,,dssat_auto,2022
+1,"SEP 18, 2022",2022,261,137,136,Harvest Yield 7935. kg/ha,0.0,,dssat_auto,2022
+1,"SEP 18, 2022",2022,261,137,136,Harvest Yield 7787. kg/ha,0.0,,extension_expert,2022
+1,"MAY 5, 2022",2022,125,1,0,Planting,0.0,,extension_expert,2022
+1,"MAY 5, 2022",2022,125,1,0,Start Sim,0.0,,extension_expert,2022
+1,"MAY 5, 2022",2022,125,1,0,Fertilizer 112. kg[N]/ha,0.0,,extension_expert,2022
+1,"MAY 5, 2022",2022,125,1,0,Irrigation 37.5 mm,37.5,mm,extension_expert,2022
+1,"MAY 6, 2022",2022,126,2,1,Germinate,0.0,,extension_expert,2022
+1,"MAY 20, 2022",2022,140,16,15,Emergence,0.0,,extension_expert,2022
+1,"JUN 4, 2022",2022,155,31,30,Fertilizer 34. kg[N]/ha,0.0,,extension_expert,2022
+1,"JUN 4, 2022",2022,155,31,30,Irrigation 45.0 mm,45.0,mm,extension_expert,2022
+1,"JUN 12, 2022",2022,163,39,38,End Juveni,0.0,,extension_expert,2022
+1,"JUN 19, 2022",2022,170,46,45,Floral Ini,0.0,,extension_expert,2022
+1,"JUN 24, 2022",2022,175,51,50,Fertilizer 68. kg[N]/ha,0.0,,extension_expert,2022
+1,"JUN 24, 2022",2022,175,51,50,Irrigation 50.0 mm,50.0,mm,extension_expert,2022
+1,"JUN 25, 2022",2022,176,52,51,Irrigation 6.2 mm,6.2,mm,extension_expert,2022
+1,"JUL 9, 2022",2022,190,66,65,Fertilizer 26. kg[N]/ha,0.0,,extension_expert,2022
+1,"JUL 9, 2022",2022,190,66,65,Irrigation 50.0 mm,50.0,mm,extension_expert,2022
+1,"JUL 10, 2022",2022,191,67,66,Irrigation 6.2 mm,6.2,mm,extension_expert,2022
+1,"JUL 25, 2022",2022,206,82,81,75% Silkin,75.0,%,extension_expert,2022
+1,"JUL 29, 2022",2022,210,86,85,Fertilizer 34. kg[N]/ha,0.0,,extension_expert,2022
+1,"JUL 29, 2022",2022,210,86,85,Irrigation 41.2 mm,41.2,mm,extension_expert,2022
+1,"AUG 4, 2022",2022,216,92,91,Beg Gr Fil,0.0,,extension_expert,2022
+1,"AUG 23, 2022",2022,235,111,110,Fertilizer 26. kg[N]/ha,0.0,,extension_expert,2022
+1,"AUG 23, 2022",2022,235,111,110,Irrigation 30.0 mm,30.0,mm,extension_expert,2022
+1,"SEP 15, 2022",2022,258,134,133,End Gr Fil,0.0,,extension_expert,2022
+1,"SEP 18, 2022",2022,261,137,136,Harvest,0.0,,extension_expert,2022
+1,"SEP 18, 2022",2022,261,137,136,Harvest Yield 7803. kg/ha,0.0,,extension_expert,2022

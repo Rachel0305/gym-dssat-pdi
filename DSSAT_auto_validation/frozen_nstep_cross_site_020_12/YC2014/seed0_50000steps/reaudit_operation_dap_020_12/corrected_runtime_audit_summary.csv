@@ -1,0 +1,11 @@
+﻿checkpoint_step,operation_daps,intervals,passed,action_space_is_9,irrigation_within_budget,nitrogen_within_budget,single_irrigation_within_cap,single_nitrogen_within_cap,operation_interval_at_least_7,irrigation_action_reaches_mgmtevent,nitrogen_action_reaches_mgmtevent,grain_output_is_finite,biomass_output_is_finite
+5000,7;14;21;28;36;43;50;57,7;7;7;8;7;7;7,True,True,True,True,True,True,True,True,True,True,True
+10000,11;18;25;94;101,7;7;69;7,True,True,True,True,True,True,True,True,True,True,True
+15000,57;64;90;97;104,7;26;7;7,True,True,True,True,True,True,True,True,True,True,True
+20000,93;100,7,True,True,True,True,True,True,True,True,True,True,True
+25000,88;95;102,7;7,True,True,True,True,True,True,True,True,True,True,True
+30000,90;97,7,True,True,True,True,True,True,True,True,True,True,True
+35000,56;63;83;90,7;20;7,True,True,True,True,True,True,True,True,True,True,True
+40000,57;64;83;90,7;19;7,True,True,True,True,True,True,True,True,True,True,True
+45000,52;59;66;78;85;92,7;7;12;7;7,True,True,True,True,True,True,True,True,True,True,True
+50000,52;59;66;73;80;87;94,7;7;7;7;7;7,True,True,True,True,True,True,True,True,True,True,True

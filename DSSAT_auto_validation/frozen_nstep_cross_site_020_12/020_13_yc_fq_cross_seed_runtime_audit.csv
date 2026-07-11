@@ -1,0 +1,5 @@
+﻿site,year,seed,checkpoint_count,all_runtime_audits_passed,source_file
+YC,2014,0,10,True,DSSAT_auto_validation/frozen_nstep_cross_site_020_12/YC2014/seed0_50000steps/reaudit_operation_dap_020_12/corrected_runtime_audit_summary.csv
+YC,2014,1,10,True,DSSAT_auto_validation/frozen_nstep_cross_site_020_12/YC2014/seed1_50000steps/runtime_audit_summary.csv
+FQ,2016,0,10,True,DSSAT_auto_validation/frozen_nstep_cross_site_020_12/FQ2016/seed0_50000steps/runtime_audit_summary.csv
+FQ,2016,1,10,True,DSSAT_auto_validation/frozen_nstep_cross_site_020_12/FQ2016/seed1_50000steps/runtime_audit_summary.csv

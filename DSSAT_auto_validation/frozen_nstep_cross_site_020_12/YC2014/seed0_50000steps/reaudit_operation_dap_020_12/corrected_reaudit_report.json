@@ -1,0 +1,12 @@
+{
+  "purpose": "YC2014 saved-model-only re-audit using pre-action operation_dap",
+  "training_performed": false,
+  "source_run": "DSSAT_auto_validation/frozen_nstep_cross_site_020_12/YC2014/seed0_50000steps",
+  "output": "DSSAT_auto_validation/frozen_nstep_cross_site_020_12/YC2014/seed0_50000steps/reaudit_operation_dap_020_12",
+  "checkpoint_count": 10,
+  "all_runtime_audits_passed": true,
+  "all_summary_values_reproduced": true,
+  "corrected_15000_passed": true,
+  "selected_checkpoint_step": 35000,
+  "selected_total_reward": 774.15283203125
+}

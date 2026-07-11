@@ -1,0 +1,7 @@
+﻿site,framework,seed,checkpoint_step,final_grain_kg_ha,irrigation_mm,nitrogen_kg_ha,total_reward,source_file
+YC,previous_nstep1,0,25000,8657.0,120.0,0.0,711.9244384765625,DSSAT_auto_validation/yc2014_baseline_relative_checkpoint_refresh_016_08/seed0/dqn_baseline_relative_checkpoint/015_10_yc2014_baseline_relative_checkpoint_summary.csv
+YC,previous_nstep1,1,50000,8657.0,75.0,0.0,756.58447265625,DSSAT_auto_validation/yc2014_baseline_relative_checkpoint_refresh_016_08/seed1/dqn_baseline_relative_checkpoint/015_10_yc2014_baseline_relative_checkpoint_summary.csv
+FQ,previous_nstep1,0,25000,7779.0,60.0,0.0,652.6090087890625,DSSAT_auto_validation/fq2016_baseline_relative_dqn_checkpoint_015_14/seed0_50000steps/checkpoint_summary.csv
+FQ,previous_nstep1,1,30000,7995.0,60.0,0.0,869.17578125,DSSAT_auto_validation/fq2016_baseline_relative_dqn_checkpoint_015_14/seed1_50000steps/checkpoint_summary.csv
+FQ,frozen_nstep5,0,50000,7985.0,120.0,50.0,548.5635986328125,DSSAT_auto_validation/frozen_nstep_cross_site_020_12/FQ2016/seed0_50000steps/selected_checkpoint_summary.csv
+YC,frozen_nstep5,0,35000,8659.0,60.0,0.0,774.15283203125,DSSAT_auto_validation/frozen_nstep_cross_site_020_12/YC2014/seed0_50000steps/selected_checkpoint_summary.csv

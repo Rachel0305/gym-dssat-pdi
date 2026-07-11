@@ -1,0 +1,7 @@
+﻿region,source_table,stage_code,stage_cn,dap,n_kg_mu_low,n_kg_mu_high,n_kg_ha_mid,irrigation_fang_mu_low,irrigation_fang_mu_high,irrigation_mm_mid
+northeast_greatwall_spring_maize,表1 东北及长城沿线春玉米区,sowing_base,播种期/基肥,0,7.0,8.0,112.5,20.0,30.0,37.5
+northeast_greatwall_spring_maize,表1 东北及长城沿线春玉米区,small_bell,小喇叭口期,30,2.0,2.5,33.75,25.0,35.0,45.0
+northeast_greatwall_spring_maize,表1 东北及长城沿线春玉米区,large_bell,大喇叭口期,50,4.0,5.0,67.5,35.0,40.0,56.25
+northeast_greatwall_spring_maize,表1 东北及长城沿线春玉米区,tasseling_silking,抽雄散粉期,65,1.5,2.0,26.25,35.0,40.0,56.25
+northeast_greatwall_spring_maize,表1 东北及长城沿线春玉米区,early_grain_filling,灌浆初期,85,2.0,2.5,33.75,25.0,30.0,41.25
+northeast_greatwall_spring_maize,表1 东北及长城沿线春玉米区,late_milk,乳熟末期,110,1.5,2.0,26.25,15.0,25.0,30.0

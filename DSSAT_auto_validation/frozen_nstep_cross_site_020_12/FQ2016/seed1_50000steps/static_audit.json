@@ -1,0 +1,144 @@
+{
+  "site": "FQ",
+  "station": "Fengqiu",
+  "year": 2016,
+  "treatment": 2,
+  "config_id": "hla_nstep5_baseline_relative_v1_020_11",
+  "required_files": {
+    "source_mzx": "/workspace/DSSAT_auto_validation/multisite_new_cultivar_inputs_013/FQ/CNFQ0801.MZX",
+    "target_weather": "/workspace/DSSAT_auto_validation/multisite_new_cultivar_inputs_013/FQ/CNFQ1601.WTH",
+    "cultivar": "/workspace/DSSAT_auto_validation/multisite_new_cultivar_inputs_013/FQ/MZCER048.CUL",
+    "soil": "/workspace/DSSAT_auto_validation/multisite_new_cultivar_inputs_013/FQ/SOIL.SOL"
+  },
+  "required_file_hashes": {
+    "source_mzx": "3bfe509af06d2c724b0635d0150ba31544d338039634ba6cc98b64d1c8422135",
+    "target_weather": "eacc1d579f156677917d0db21bb845431e25f4f743d4fe5a57af2d6d21619cb3",
+    "cultivar": "7810190a042b2fe3c53c54d43bf8080ae02dd3d1edfec202bf572e130761403c",
+    "soil": "3c303d68dda19ba6f40573a3bba5464e40230ddd60c6c746f0ea6bbfeee9e644"
+  },
+  "dqn_input": {
+    "treatment_row": {
+      "N": "2",
+      "R": "1",
+      "O": "1",
+      "C": "0",
+      "TNAME": "Sim2016",
+      "CU": "1",
+      "FL": "2",
+      "SA": "0",
+      "IC": "1",
+      "MP": "2",
+      "MI": "2",
+      "MF": "2",
+      "MR": "0",
+      "MC": "0",
+      "MT": "0",
+      "ME": "0",
+      "MH": "0",
+      "SM": "2"
+    },
+    "options_row": {
+      "N": "2",
+      "OPTIONS": "OP",
+      "WATER": "Y",
+      "NITRO": "Y",
+      "SYMBI": "Y",
+      "PHOSP": "N",
+      "POTAS": "N",
+      "DISES": "N",
+      "CHEM": "N",
+      "TILL": "Y",
+      "CO2": "M"
+    },
+    "management_row": {
+      "N": "2",
+      "MANAGEMENT": "MA",
+      "PLANT": "R",
+      "IRRIG": "L",
+      "FERTI": "L",
+      "RESID": "R",
+      "HARVS": "M"
+    },
+    "checks": {
+      "treatment_ic_is_1": true,
+      "water_enabled": true,
+      "nitrogen_enabled": true,
+      "irrigation_mode_expected": true,
+      "fertilizer_mode_expected": true,
+      "weather_reference_present": true,
+      "soil_reference_present": true
+    },
+    "passed": true
+  },
+  "null_input": {
+    "treatment_row": {
+      "N": "2",
+      "R": "1",
+      "O": "1",
+      "C": "0",
+      "TNAME": "Sim2016",
+      "CU": "1",
+      "FL": "2",
+      "SA": "0",
+      "IC": "1",
+      "MP": "2",
+      "MI": "0",
+      "MF": "0",
+      "MR": "0",
+      "MC": "0",
+      "MT": "0",
+      "ME": "0",
+      "MH": "0",
+      "SM": "2"
+    },
+    "options_row": {
+      "N": "2",
+      "OPTIONS": "OP",
+      "WATER": "Y",
+      "NITRO": "Y",
+      "SYMBI": "Y",
+      "PHOSP": "N",
+      "POTAS": "N",
+      "DISES": "N",
+      "CHEM": "N",
+      "TILL": "Y",
+      "CO2": "M"
+    },
+    "management_row": {
+      "N": "2",
+      "MANAGEMENT": "MA",
+      "PLANT": "R",
+      "IRRIG": "N",
+      "FERTI": "N",
+      "RESID": "R",
+      "HARVS": "M"
+    },
+    "checks": {
+      "treatment_ic_is_1": true,
+      "water_enabled": true,
+      "nitrogen_enabled": true,
+      "irrigation_mode_expected": true,
+      "fertilizer_mode_expected": true,
+      "weather_reference_present": true,
+      "soil_reference_present": true
+    },
+    "passed": true
+  },
+  "checks": {
+    "dqn_input_passed": true,
+    "null_input_passed": true,
+    "action_count_is_9": true,
+    "n_steps_is_5": true,
+    "environment_seed_is_0": true,
+    "irrigation_budget_is_120": true,
+    "nitrogen_budget_is_300": true,
+    "minimum_interval_is_7": true,
+    "irrigation_window_is_dap1_120": true,
+    "nitrogen_window_is_dap1_120": true
+  },
+  "passed": true,
+  "notes": [
+    "FQ2016 keeps the shifted source ICDAT=07152 with SDATE=16153 to isolate the framework change.",
+    "The fixed-profile date choice is a recorded caveat, not changed in experiment 020_12."
+  ]
+}

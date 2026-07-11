@@ -1,0 +1,106 @@
+{
+  "config_id": "hla_nstep5_baseline_relative_v1_020_11",
+  "algorithm": "stable_baselines3.DQN",
+  "policy": "MlpPolicy",
+  "policy_network": {
+    "hidden_layers": [
+      64,
+      64
+    ],
+    "activation": "ReLU",
+    "optimizer": "Adam",
+    "source": "Stable-Baselines3 DQN MlpPolicy defaults (policy_kwargs=None)"
+  },
+  "reward": {
+    "per_step": "-1.0 * irrigation_mm - 5.0 * nitrogen_kg_ha",
+    "terminal": "+max(0, final_grain_kg_ha - local_site_year_null_yield)",
+    "water_cost": 1.0,
+    "nitrogen_cost": 5.0,
+    "null_baseline_scope": "local site-year; never shared across sites"
+  },
+  "action_table": {
+    "0": {
+      "amir": 0.0,
+      "anfer": 0.0
+    },
+    "1": {
+      "amir": 15.0,
+      "anfer": 0.0
+    },
+    "2": {
+      "amir": 30.0,
+      "anfer": 0.0
+    },
+    "3": {
+      "amir": 0.0,
+      "anfer": 50.0
+    },
+    "4": {
+      "amir": 15.0,
+      "anfer": 50.0
+    },
+    "5": {
+      "amir": 30.0,
+      "anfer": 50.0
+    },
+    "6": {
+      "amir": 0.0,
+      "anfer": 100.0
+    },
+    "7": {
+      "amir": 15.0,
+      "anfer": 100.0
+    },
+    "8": {
+      "amir": 30.0,
+      "anfer": 100.0
+    }
+  },
+  "constraints": {
+    "irrigation_budget_mm": 120.0,
+    "nitrogen_budget_kg_ha": 300.0,
+    "single_irrigation_cap_mm": 30.0,
+    "single_nitrogen_cap_kg_ha": 100.0,
+    "minimum_interval_days": 7,
+    "irrigation_windows_dap": [
+      [
+        1,
+        120
+      ]
+    ],
+    "nitrogen_windows_dap": [
+      [
+        1,
+        120
+      ]
+    ]
+  },
+  "dqn_kwargs": {
+    "learning_rate": 0.0001,
+    "buffer_size": 10000,
+    "learning_starts": 50,
+    "batch_size": 32,
+    "train_freq": 1,
+    "gradient_steps": 1,
+    "gamma": 0.99,
+    "tau": 1.0,
+    "target_update_interval": 10000,
+    "max_grad_norm": 10.0,
+    "n_steps": 5,
+    "exploration_fraction": 0.35,
+    "exploration_initial_eps": 1.0,
+    "exploration_final_eps": 0.05
+  },
+  "training_timesteps": 50000,
+  "checkpoint_interval": 5000,
+  "checkpoint_selection": "maximum total_reward; earliest checkpoint on ties",
+  "deterministic_evaluation": true,
+  "random_weather": false,
+  "environment_seed": 0,
+  "hla_selected_checkpoints": {
+    "0": 30000,
+    "1": 10000,
+    "2": 20000
+  },
+  "frozen_scope": "framework constants only; site input and local null yield remain site-specific"
+}

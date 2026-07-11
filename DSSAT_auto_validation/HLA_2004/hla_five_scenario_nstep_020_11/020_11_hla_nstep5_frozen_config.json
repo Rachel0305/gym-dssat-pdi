@@ -1,0 +1,173 @@
+{
+  "schema": "hla_nstep5_frozen_v1",
+  "status": "frozen_for_cross_site_validation",
+  "frozen_date": "2026-07-10",
+  "algorithm": "stable_baselines3.DQN",
+  "stable_baselines3_version": "2.8.0",
+  "training_site_year": "HLA2010",
+  "reward": {
+    "formula": "terminal max(0, GWAD_final - local_null_GWAD) - 1.0*irrigation - 5.0*nitrogen",
+    "water_cost": 1.0,
+    "nitrogen_cost": 5.0,
+    "negative_terminal_yield_gain_clipped_to_zero": true,
+    "local_baseline_rule": "each site-year uses its own null yield; this is normalization, not station-specific coefficient tuning",
+    "leaching_term": null
+  },
+  "action_table": {
+    "0": {
+      "amir": 0.0,
+      "anfer": 0.0
+    },
+    "1": {
+      "amir": 15.0,
+      "anfer": 0.0
+    },
+    "2": {
+      "amir": 30.0,
+      "anfer": 0.0
+    },
+    "3": {
+      "amir": 0.0,
+      "anfer": 50.0
+    },
+    "4": {
+      "amir": 15.0,
+      "anfer": 50.0
+    },
+    "5": {
+      "amir": 30.0,
+      "anfer": 50.0
+    },
+    "6": {
+      "amir": 0.0,
+      "anfer": 100.0
+    },
+    "7": {
+      "amir": 15.0,
+      "anfer": 100.0
+    },
+    "8": {
+      "amir": 30.0,
+      "anfer": 100.0
+    }
+  },
+  "constraints": {
+    "irrigation_budget_mm": 120.0,
+    "nitrogen_budget_kg_ha": 300.0,
+    "single_irrigation_cap_mm": 30.0,
+    "single_nitrogen_cap_kg_ha": 100.0,
+    "minimum_interval_days": 7,
+    "irrigation_window_dap": [
+      [
+        1,
+        120
+      ]
+    ],
+    "nitrogen_window_dap": [
+      [
+        1,
+        120
+      ]
+    ],
+    "template_management": {
+      "IRRIG": "L",
+      "FERTI": "L"
+    },
+    "initial_condition_pointer": 1
+  },
+  "dqn_hyperparameters": {
+    "policy": "MlpPolicy",
+    "policy_network": {
+      "hidden_layers": [
+        64,
+        64
+      ],
+      "activation": "ReLU",
+      "optimizer": "Adam",
+      "source": "Stable-Baselines3 DQN MlpPolicy defaults (policy_kwargs=None)"
+    },
+    "learning_rate": 0.0001,
+    "buffer_size": 10000,
+    "learning_starts": 50,
+    "batch_size": 32,
+    "train_freq": 1,
+    "gradient_steps": 1,
+    "gamma": 0.99,
+    "tau": 1.0,
+    "target_update_interval": 10000,
+    "max_grad_norm": 10.0,
+    "n_steps": 5,
+    "exploration_fraction": 0.35,
+    "exploration_initial_eps": 1.0,
+    "exploration_final_eps": 0.05,
+    "total_timesteps": 50000,
+    "checkpoint_interval": 5000
+  },
+  "evaluation": {
+    "deterministic_action": true,
+    "checkpoint_selection": "maximum deterministic total_reward; earliest checkpoint on ties"
+  },
+  "environment": {
+    "seed": 0,
+    "random_weather": false,
+    "evaluation_mode": true
+  },
+  "selected_models": [
+    {
+      "seed": 0,
+      "selected_checkpoint": 30000,
+      "selection_rule": "maximum deterministic total_reward; earliest checkpoint on ties",
+      "model_path": "DSSAT_auto_validation/HLA_2004/hla2010_nstep_dqn_seed0_020_08/nstep5_seed0_50000steps/models/nstep5_checkpoint_30000.zip",
+      "model_sha256": "cd56775ade3bad8c90cfde49ec6f1694ebaf96c2f018573f6811a91927478d66"
+    },
+    {
+      "seed": 1,
+      "selected_checkpoint": 10000,
+      "selection_rule": "maximum deterministic total_reward; earliest checkpoint on ties",
+      "model_path": "DSSAT_auto_validation/HLA_2004/hla2010_nstep_dqn_seed1_020_06/nstep5_seed1_50000steps/models/nstep5_checkpoint_10000.zip",
+      "model_sha256": "ce11fac217bbc377d1b32bb29b8bbe231ce761cf5fc7b627ec90980a0ded72b2"
+    },
+    {
+      "seed": 2,
+      "selected_checkpoint": 20000,
+      "selection_rule": "maximum deterministic total_reward; earliest checkpoint on ties",
+      "model_path": "DSSAT_auto_validation/HLA_2004/hla2010_nstep_dqn_seed2_020_07/nstep5_seed2_50000steps/models/nstep5_checkpoint_20000.zip",
+      "model_sha256": "8a27979803d9dab65c47a701b651fa71175a95174a02ed6d3285ab11fc1ed2a3"
+    }
+  ],
+  "source_code": [
+    {
+      "path": "src/run_hla_baseline_relative_dqn_checkpoint_015_12.py",
+      "sha256": "0e870106463ee23495e3a17b0d09b57c2b8137037a3007d0c86d91c55c70c386"
+    },
+    {
+      "path": "src/run_hla_unified_dqn_long_train_015_09.py",
+      "sha256": "28d402dfa3aa4983f20850812ed2a71faa2bcbabbf14489383a8e6c041be87fe"
+    },
+    {
+      "path": "src/run_hla2010_nstep_dqn_seed0_020_08.py",
+      "sha256": "ad0eab621350f473c7d2f0787b31e307d4a3f9fb88ea7d84be061927335848bf"
+    },
+    {
+      "path": "src/run_hla2010_nstep_dqn_seed1_020_06.py",
+      "sha256": "aed809ca4d65dbbd07a7bbae3433dcdbc72695eb7074d5e9de09c2e6f71398db"
+    },
+    {
+      "path": "src/run_hla2010_nstep_dqn_seed2_020_07.py",
+      "sha256": "a051c93705aaae65d2e0ab7007e2ef0f5ec83455002698f827ab2eb7ccb28232"
+    }
+  ],
+  "hla_summary_source": "DSSAT_auto_validation/HLA_2004/hla_five_scenario_nstep_020_11/020_11_hla_five_scenario_summary.csv",
+  "cross_site_change_policy": [
+    "replace only station input package and local null baseline",
+    "keep reward coefficients, action table, budgets, windows, DQN hyperparameters, n_steps and checkpoint rule unchanged",
+    "train new models independently at the target site; do not label direct HLA checkpoint replay as cross-site training validation"
+  ],
+  "verified_hla_years": [
+    2007,
+    2010,
+    2015,
+    2016,
+    2022
+  ]
+}

@@ -1,0 +1,16 @@
+extends: ../benchmark_defaults.yaml
+site_config: ../sites/lca.yaml
+experiment:
+  experiment_id: 021_01_lc2010_seed_stability
+  experiment_type: final_dqn_strategy_determination
+  description: LC2010 frozen seed stability rerun under unified DQN benchmark
+  output_root: benchmark_results/021_01
+  dry_run: false
+reward:
+  type: local_null_terminal
+  irrigation_cost: 1.0
+  nitrogen_cost: 5.0
+  yield_gain_coefficient: 1.0
+  leaching_cost: 0.0
+evaluation:
+  seeds: [0, 1, 2]

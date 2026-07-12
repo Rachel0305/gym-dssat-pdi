@@ -1,0 +1,10 @@
+﻿station_code,year,water_cost,seed,checkpoint,yield_kg_ha,biomass_kg_ha,irrigation_mm,nitrogen_kg_ha,reward_total,max_water_stress,max_nitrogen_stress,source
+FQ,2016,0.5,0,50000,7985.0,14028.0,120.0,50.0,548.5635986328125,,,new:benchmark_results\021_01\021_01_fq2016_wcost0p5__fq_2016_seed0\evaluations\season_summary.csv
+FQ,2016,0.5,1,40000,7985.0,13988.0,105.0,0.0,813.5355224609375,,,new:benchmark_results\021_01\021_01_fq2016_wcost0p5__fq_2016_seed1\evaluations\season_summary.csv
+FQ,2016,0.5,2,20000,8012.0,14086.0,105.0,0.0,841.421875,,,new:benchmark_results\021_01\021_01_fq2016_wcost0p5__fq_2016_seed2\evaluations\season_summary.csv
+FQ,2016,1.0,0,50000,7985.0,14028.0,120.0,50.0,548.5635986328125,0.0,0.0121910572052001,reused:DSSAT_auto_validation\frozen_nstep_cross_site_020_12\FQ2016\seed0_50000steps\selected_checkpoint_summary.csv
+FQ,2016,1.0,1,40000,7985.0,13988.0,105.0,0.0,813.5355224609375,0.0,0.0121910572052001,reused:DSSAT_auto_validation\frozen_nstep_cross_site_020_12\FQ2016\seed1_50000steps\selected_checkpoint_summary.csv
+FQ,2016,1.0,2,20000,8012.0,14086.0,105.0,0.0,841.421875,,,new:benchmark_results\021_01\021_01_fq2016_wcost1__fq_2016_seed2\evaluations\season_summary.csv
+FQ,2016,2.0,0,50000,7985.0,14028.0,120.0,50.0,548.5635986328125,,,new:benchmark_results\021_01\021_01_fq2016_wcost2__fq_2016_seed0\evaluations\season_summary.csv
+FQ,2016,2.0,1,40000,7985.0,13988.0,105.0,0.0,813.5355224609375,,,new:benchmark_results\021_01\021_01_fq2016_wcost2__fq_2016_seed1\evaluations\season_summary.csv
+FQ,2016,2.0,2,20000,8012.0,14086.0,105.0,0.0,841.421875,,,new:benchmark_results\021_01\021_01_fq2016_wcost2__fq_2016_seed2\evaluations\season_summary.csv

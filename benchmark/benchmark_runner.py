@@ -380,6 +380,11 @@ def run(args: argparse.Namespace) -> int:
                 else:
                     report_result = _build_reports(spec, registry, mode=mode, train_result=train_result)
 
+            completion_details: dict[str, Any] = {}
+            if train_result is not None:
+                completion_details["training"] = train_result
+            if report_result is not None:
+                completion_details["reporting"] = report_result
             registry.update_status(
                 spec.experiment_id,
                 ManifestStatus.COMPLETED,

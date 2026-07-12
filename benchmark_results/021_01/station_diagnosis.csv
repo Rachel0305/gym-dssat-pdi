@@ -1,0 +1,6 @@
+﻿station_code,focus_year,status,recommended_water_cost,recommended_nitrogen_cost,recommended_n_steps,evidence,next_action
+HLA,"2007,2010,2015,2016,2022",keep_current_config,1.0,5.0,5,Existing formal 020_11 matrix already covers 5 years x 3 seeds under the frozen n-step setup.,Reuse existing HLA formal results; no rerun needed in 021_01.
+YC,2014,keep_current_config,1.0,5.0,5,nitrogen_cost=2/5/8 formal 50K comparison shows no meaningful policy or outcome separation; selected checkpoints all stay at zero-N behavior with similar yield.,Retain current nitrogen_cost=5 for continuity and cross-station comparability.
+FQ,2016,keep_current_config,1.0,5.0,5,water_cost=0.5/1/2 formal 50K comparison shows the same checkpoint family and nearly identical resource-use pattern.,Retain current water_cost=1 for continuity and cross-station comparability.
+LC,2010,blocked_runtime_poll_wait,1.0,5.0,5,null run finished; DQN run created input/runtime shell only; pdi_gym.log ends with Client started; process slept >3h with near-zero CPU and no season_summary/training_log.,Do not launch new sensitivity runs; fix benchmark/runtime handshake first.
+SY,2014,blocked_input_provenance,1.0,5.0,5,2014 treatment row in prepared MZX is the authoritative on-disk candidate used by current adapter path.,Freeze formal training until IC/MZX provenance is authoritative.

@@ -1,0 +1,35 @@
+meta:
+  task: 021_01_final_dqn_strategy_determination
+  date: '2026-07-12'
+  status: partial
+candidate:
+  algorithm: DQN
+  reward:
+    type: null_relative_terminal_gain_minus_resource_cost
+    water_cost: 1.0
+    nitrogen_cost: 5.0
+    note: Same formula kept; diagnosis did not justify changing coefficients.
+  actions:
+    irrigation_mm:
+    - 0
+    - 15
+    - 30
+    nitrogen_kg_ha:
+    - 0
+    - 50
+    - 100
+  budgets:
+    irrigation_mm: 120
+    nitrogen_kg_ha: 300
+  training:
+    n_steps: 5
+    checkpoint_selection: best_reward_existing_protocol
+  applicability:
+    confirmed_sites:
+    - HLA
+    - YC
+    - FQ
+    blocked_sites:
+      LC: runtime poll-wait hang in 021_01 frozen benchmark run
+      SY: input provenance ambiguous (config expects IC=2, prepared 2014 treatment
+        row is IC=0)

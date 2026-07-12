@@ -1,0 +1,16 @@
+extends: ../benchmark_defaults.yaml
+site_config: ../sites/fqa.yaml
+experiment:
+  experiment_id: 021_01_fq2016_wcost0p5
+  experiment_type: final_dqn_strategy_determination
+  description: FQ2016 formal run with low irrigation penalty
+  output_root: benchmark_results/021_01
+  dry_run: false
+reward:
+  type: local_null_terminal
+  irrigation_cost: 0.5
+  nitrogen_cost: 5.0
+  yield_gain_coefficient: 1.0
+  leaching_cost: 0.0
+evaluation:
+  seeds: [0, 1, 2]

@@ -1,0 +1,10 @@
+﻿station_code,year,nitrogen_cost,seed,checkpoint,yield_kg_ha,biomass_kg_ha,irrigation_mm,nitrogen_kg_ha,reward_total,max_water_stress,max_nitrogen_stress,source
+YC,2014,2.0,0,35000,8659.0,18831.0,60.0,0.0,774.15283203125,,,new:benchmark_results\021_01\021_01_yc2014_ncost2__yc_2014_seed0\evaluations\season_summary.csv
+YC,2014,2.0,1,50000,8676.0,18869.0,90.0,0.0,760.5731201171875,,,new:benchmark_results\021_01\021_01_yc2014_ncost2__yc_2014_seed1\evaluations\season_summary.csv
+YC,2014,2.0,2,50000,8665.0,18842.0,75.0,0.0,764.7802734375,,,new:benchmark_results\021_01\021_01_yc2014_ncost2__yc_2014_seed2\evaluations\season_summary.csv
+YC,2014,5.0,0,35000,8659.0,18831.0,60.0,0.0,774.15283203125,0.0,0.4490230679512024,reused:DSSAT_auto_validation\frozen_nstep_cross_site_020_12\YC2014\seed0_50000steps\selected_checkpoint_summary.csv
+YC,2014,5.0,1,50000,8676.0,18869.0,90.0,0.0,760.5731201171875,0.0,0.4473164081573486,reused:DSSAT_auto_validation\frozen_nstep_cross_site_020_12\YC2014\seed1_50000steps\selected_checkpoint_summary.csv
+YC,2014,5.0,2,50000,8665.0,18842.0,75.0,0.0,764.7802734375,,,new:benchmark_results\021_01\021_01_yc2014_ncost5__yc_2014_seed2\evaluations\season_summary.csv
+YC,2014,8.0,0,35000,8659.0,18831.0,60.0,0.0,774.15283203125,,,new:benchmark_results\021_01\021_01_yc2014_ncost8__yc_2014_seed0\evaluations\season_summary.csv
+YC,2014,8.0,1,50000,8676.0,18869.0,90.0,0.0,760.5731201171875,,,new:benchmark_results\021_01\021_01_yc2014_ncost8__yc_2014_seed1\evaluations\season_summary.csv
+YC,2014,8.0,2,50000,8665.0,18842.0,75.0,0.0,764.7802734375,,,new:benchmark_results\021_01\021_01_yc2014_ncost8__yc_2014_seed2\evaluations\season_summary.csv

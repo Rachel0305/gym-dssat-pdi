@@ -26,6 +26,18 @@ class SimulatedInterruption(RuntimeError):
     """Raised once by the smoke configuration to verify checkpoint recovery."""
 
 
+def _stop_at_global_step_callback(stop_at_step: int):
+    """Stop one learn() call at an absolute step without changing its schedule horizon."""
+
+    from stable_baselines3.common.callbacks import BaseCallback
+
+    class StopAtGlobalStepCallback(BaseCallback):
+        def _on_step(self) -> bool:
+            return int(self.model.num_timesteps) < int(stop_at_step)
+
+    return StopAtGlobalStepCallback()
+
+
 def _import_runtime(config: dict[str, Any]):
     root = Path(config.get("_project_root", Path(__file__).resolve().parents[1]))
     for value in (root, root / "src"):
@@ -161,7 +173,14 @@ def train_case(
 
     train_env = legacy.make_train_env(prepared.dqn_env_args, null_yield)
     total_timesteps = int(config["algorithm"]["total_timesteps"])
+    run_until_timesteps = int(config["algorithm"].get("run_until_timesteps", total_timesteps))
     interval = int(config["algorithm"]["checkpoint_interval"])
+    if not 0 < run_until_timesteps <= total_timesteps:
+        raise ValueError(
+            "algorithm.run_until_timesteps must be positive and no greater than total_timesteps"
+        )
+    if run_until_timesteps % interval:
+        raise ValueError("algorithm.run_until_timesteps must be divisible by checkpoint_interval")
     completed, checkpoint_dir = latest_checkpoint(run_dir)
     resumed_from = 0
     replay_loaded = False
@@ -184,14 +203,34 @@ def train_case(
 
         raw_daily_frames: list[pd.DataFrame] = []
         raw_summaries: list[dict[str, Any]] = []
-        for checkpoint in range(completed + interval, total_timesteps + 1, interval):
+        for checkpoint in range(completed + interval, run_until_timesteps + 1, interval):
             started = time.perf_counter()
+            current_steps = int(model.num_timesteps)
+            if current_steps != completed:
+                raise RuntimeError(
+                    f"Model step mismatch before training: model={current_steps}, checkpoint={completed}"
+                )
+            remaining_schedule_steps = total_timesteps - current_steps
+            if remaining_schedule_steps <= 0:
+                raise RuntimeError(
+                    f"No remaining schedule steps at checkpoint {checkpoint}: "
+                    f"current={current_steps}, planned_total={total_timesteps}"
+                )
             model.learn(
-                total_timesteps=checkpoint - completed,
+                # SB3 adds model.num_timesteps when reset_num_timesteps=False.
+                # Passing the remaining global horizon keeps _total_timesteps fixed
+                # at the planned experiment total while the callback stops this
+                # invocation at the next checkpoint.
+                total_timesteps=remaining_schedule_steps,
                 reset_num_timesteps=False,
                 progress_bar=False,
+                callback=_stop_at_global_step_callback(checkpoint),
             )
-            completed = checkpoint
+            completed = int(model.num_timesteps)
+            if completed != checkpoint:
+                raise RuntimeError(
+                    f"Checkpoint callback stopped at {completed}, expected {checkpoint}"
+                )
             destination = run_dir / "checkpoints" / f"checkpoint_{checkpoint}"
             destination.mkdir(parents=True, exist_ok=False)
             model.save(str(destination / "model"))
@@ -215,7 +254,10 @@ def train_case(
                 "year": int(year),
                 "seed": int(seed),
                 "completed_steps": checkpoint,
-                "target_steps": total_timesteps,
+                "target_steps": run_until_timesteps,
+                "exploration_schedule_total_steps": total_timesteps,
+                "sb3_internal_total_timesteps": int(model._total_timesteps),
+                "exploration_rate": float(model.exploration_rate),
                 "elapsed_seconds": time.perf_counter() - started,
                 "model_path": str(destination / "model.zip"),
                 "replay_buffer_saved": (destination / "replay_buffer.pkl").exists(),
@@ -312,4 +354,3 @@ def train_case(
         raise
     finally:
         train_env.close()
-

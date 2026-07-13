@@ -1,8 +1,14 @@
 meta:
   task: 021_01_final_dqn_strategy_determination
   date: '2026-07-12'
-  status: partial_lc_pending_sy_multiseed_near_reproduced
+  status: provisional_training_protocol_corrected_stability_diagnosis_pending
   last_updated: '2026-07-13'
+  protocol_caveat: >-
+    The legacy 5K-segment learn() protocol exhausted the DQN exploration schedule
+    inside every segment. Saved 5K models from HLA, YC, FQ, LC and SY all had
+    exploration_rate=0.05. Existing DQN conclusions are therefore provisional
+    until rechecked under the corrected global-horizon schedule. Baseline and
+    deterministic DSSAT forward results are not affected by this training bug.
 candidate:
   algorithm: DQN
   reward:
@@ -24,18 +30,19 @@ candidate:
     nitrogen_kg_ha: 300
   training:
     n_steps: 5
-    checkpoint_selection: best_reward_existing_protocol
+    exploration_schedule: corrected_global_horizon_with_checkpoint_resume
+    checkpoint_selection: pending_revalidation_after_protocol_fix
   applicability:
-    confirmed_sites:
+    provisional_sites:
     - HLA
     - YC
     - FQ
     blocked_sites:
-      LC: formal 50K yields are similar across seeds, but irrigation differs by 90
-        mm
+      LC: legacy formal 50K yields were similar across seeds while irrigation differed
+        by 90 mm; this must be rechecked because the same exploration-schedule bug
+        affected all three seeds.
     pending_sites:
-      SY: IC=2 is confirmed; three-seed best-checkpoint yields are 11176/11097/11068
-        kg/ha at I120/N300 (CV 0.503%). Two of three strictly exceed the official
-        expert yield 11077 kg/ha; seed2 is 9 kg/ha lower. Late-training collapse
-        occurs in all seeds, so this is a high-yield multiseed candidate rather
-        than universal strict success.
+      SY: IC=2 is confirmed. A corrected-protocol seed0 run independently reproduced
+        11131 kg/ha at 10K, but still collapsed after 15K as nitrogen actions fell
+        from 300 to 0 kg/ha. The protocol bug was real but was not the only source
+        of instability; Q/target divergence remains a diagnostic hypothesis.

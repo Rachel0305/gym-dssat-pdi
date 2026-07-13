@@ -1,0 +1,11 @@
+﻿method,segment,num_timesteps,exploration_rate,sb3_internal_total_timesteps,dqn_n_calls
+old_increment,1,100,0.05,100,100
+old_increment,2,200,0.05,200,200
+wrong_full_each_call,1,100,0.7312857142857143,1000,99
+wrong_full_each_call,2,200,0.508961038961039,1100,198
+remaining_horizon,1,100,0.7312857142857143,1000,99
+remaining_horizon,2,200,0.45985714285714263,1000,198
+continuous_horizon,2,200,0.45985714285714263,1000,199
+resume_before_save,1,100,0.7312857142857143,1000,99
+resume_after_load,1,100,0.7312857142857143,1000,99
+resume_after_continue,2,200,0.45985714285714263,1000,198

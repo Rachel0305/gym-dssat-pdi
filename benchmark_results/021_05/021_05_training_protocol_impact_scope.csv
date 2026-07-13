@@ -1,0 +1,7 @@
+﻿scope,affected_experiments,status,evidence,scientific_handling
+HLA,020_06/020_07/020_08 and downstream 020_11,confirmed,5K model exploration_rate=0.05,DQN conclusions provisional; baseline and forward DSSAT results unaffected
+YC,020_12/020_13 and 021_01 coefficient diagnostics,confirmed,5K model exploration_rate=0.05,DQN conclusions and coefficient-insensitivity claim provisional
+FQ,020_12/020_13 and 021_01 coefficient diagnostics,confirmed,5K model exploration_rate=0.05,DQN conclusions and coefficient-insensitivity claim provisional
+LC,021_01 three-seed stability,confirmed,all 5K models exploration_rate=0.05,resource-use seed-sensitivity conclusion requires corrected-protocol recheck
+SY,021_03/021_04,confirmed,all 5K models exploration_rate=0.05,early high-yield checkpoints remain diagnostic only
+ALL_BASELINES,null/recorded/expert/auto and deterministic forward scans,unaffected,do not use DQN learn(),remain valid subject to their original input provenance

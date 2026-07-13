@@ -1,7 +1,8 @@
 meta:
   task: 021_01_final_dqn_strategy_determination
   date: '2026-07-12'
-  status: partial
+  status: partial_lc_sy
+  last_updated: '2026-07-13'
 candidate:
   algorithm: DQN
   reward:
@@ -30,6 +31,7 @@ candidate:
     - YC
     - FQ
     blocked_sites:
-      LC: runtime poll-wait hang in 021_01 frozen benchmark run
-      SY: input provenance ambiguous (config expects IC=2, prepared 2014 treatment
+      LC: formal 50K yields are similar across seeds, but irrigation differs by 90
+        mm
+      SY: input provenance ambiguous (site config expects IC=2, prepared 2014 treatment
         row is IC=0)

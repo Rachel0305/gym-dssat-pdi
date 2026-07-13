@@ -1,33 +1,28 @@
-# 021_01 Final DQN Strategy Determination
+# 021_01 最终 DQN 策略判定
 
-## 1. 任务目标
+## 1. 任务状态
 
-严格执行 `prompts/021_01_final_dqn_strategy_determination.md`，不继续工程重构，不扩展新的敏感性实验，优先复用已有结果，只对问题站点做必要诊断，并据此确定统一 DQN 正式候选策略。
+状态：`partial`。HLA、YC、FQ、LC 的必要诊断已经完成；LC 显示资源投入的 seed 敏感性，SY 仍因输入来源冲突而阻塞。本任务没有修改 reward、IC、DSSAT 输入值或动作空间，也没有扩大参数扫描。
 
-## 2. 已复用结果与新增诊断
+## 2. 当前统一配置
 
-- HLA：完全复用 `020_11` 已有正式五情景/多年份/多 seed 结果。
-- YC：复用旧 `nitrogen_cost=5` 的 seed0/1，并补做 `seed2`；新增 `nitrogen_cost=2/8` 正式 50K 结果。
-- FQ：复用旧 `water_cost=1` 的 seed0/1，并补做 `seed2`；新增 `water_cost=0.5/2` 正式 50K 结果。
-- LC：启动 frozen 正式复核，但 benchmark runtime 出现挂起。
-- SY：只做 provenance audit，不启动正式训练。
+- 算法：DQN；`n_steps=5`；50K steps；每 5K 保存 checkpoint。
+- 动作：灌溉 `[0, 15, 30] mm`；施氮 `[0, 50, 100] kg/ha`。
+- 季节预算：`I<=120 mm`，`N<=300 kg/ha`；决策间隔 7 DAP。
+- 奖励：相对本地 null 的终端产量增益，减去 `1*I + 5*N`。
+- checkpoint 规则：最大 `reward_total`；并列时选择更早 checkpoint。
 
-## 3. 站点诊断结论
+## 3. 五站点判定
 
-| station_code   | focus_year               | status                    |   recommended_water_cost |   recommended_nitrogen_cost |   recommended_n_steps | evidence                                                                                                                                                                    | next_action                                                                    |
-|:---------------|:-------------------------|:--------------------------|-------------------------:|----------------------------:|----------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------|
-| HLA            | 2007,2010,2015,2016,2022 | keep_current_config       |                        1 |                           5 |                     5 | Existing formal 020_11 matrix already covers 5 years x 3 seeds under the frozen n-step setup.                                                                               | Reuse existing HLA formal results; no rerun needed in 021_01.                  |
-| YC             | 2014                     | keep_current_config       |                        1 |                           5 |                     5 | nitrogen_cost=2/5/8 formal 50K comparison shows no meaningful policy or outcome separation; selected checkpoints all stay at zero-N behavior with similar yield.            | Retain current nitrogen_cost=5 for continuity and cross-station comparability. |
-| FQ             | 2016                     | keep_current_config       |                        1 |                           5 |                     5 | water_cost=0.5/1/2 formal 50K comparison shows the same checkpoint family and nearly identical resource-use pattern.                                                        | Retain current water_cost=1 for continuity and cross-station comparability.    |
-| LC             | 2010                     | blocked_runtime_poll_wait |                        1 |                           5 |                     5 | null run finished; DQN run created input/runtime shell only; pdi_gym.log ends with Client started; process slept >3h with near-zero CPU and no season_summary/training_log. | Do not launch new sensitivity runs; fix benchmark/runtime handshake first.     |
-| SY             | 2014                     | blocked_input_provenance  |                        1 |                           5 |                     5 | 2014 treatment row in prepared MZX is the authoritative on-disk candidate used by current adapter path.                                                                     | Freeze formal training until IC/MZX provenance is authoritative.               |
+| station_code   | focus_year               | status                      |   recommended_water_cost |   recommended_nitrogen_cost |   recommended_n_steps | evidence                                                                                                                                                         | next_action                                                                    |
+|:---------------|:-------------------------|:----------------------------|-------------------------:|----------------------------:|----------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------|
+| HLA            | 2007,2010,2015,2016,2022 | keep_current_config         |                        1 |                           5 |                     5 | Existing formal 020_11 matrix already covers 5 years x 3 seeds under the frozen n-step setup.                                                                    | Reuse existing HLA formal results; no rerun needed in 021_01.                  |
+| YC             | 2014                     | keep_current_config         |                        1 |                           5 |                     5 | nitrogen_cost=2/5/8 formal 50K comparison shows no meaningful policy or outcome separation; selected checkpoints all stay at zero-N behavior with similar yield. | Retain current nitrogen_cost=5 for continuity and cross-station comparability. |
+| FQ             | 2016                     | keep_current_config         |                        1 |                           5 |                     5 | water_cost=0.5/1/2 formal 50K comparison shows the same checkpoint family and nearly identical resource-use pattern.                                             | Retain current water_cost=1 for continuity and cross-station comparability.    |
+| LC             | 2010                     | resource_use_seed_sensitive |                        1 |                           5 |                     5 | After repairing the LC adapter source, seed0/1/2 formal 50K yields were 8737/8728/8707 kg/ha while irrigation was 120/60/30 mm; nitrogen was 0 for all seeds.    | Retain as diagnostic evidence; do not claim cross-seed resource stability.     |
+| SY             | 2014                     | blocked_input_provenance    |                        1 |                           5 |                     5 | 2014 treatment row in prepared MZX is the authoritative on-disk candidate used by current adapter path.                                                          | Freeze formal training until IC/MZX provenance is authoritative.               |
 
-## 4. HLA 结论
-
-- HLA 已有正式结果矩阵完整，覆盖 2007/2010/2015/2016/2022，且包含多 seed。
-- 021_01 不重复训练 HLA，直接保留当前配置结论：`keep_current_config`。
-
-## 5. YC nitrogen_cost 诊断
+## 4. YC nitrogen_cost 诊断
 
 | station_code   |   year |   nitrogen_cost |   seed |   checkpoint |   yield_kg_ha |   biomass_kg_ha |   irrigation_mm |   nitrogen_kg_ha |   reward_total |   max_water_stress |   max_nitrogen_stress | source                                                                                                              |
 |:---------------|-------:|----------------:|-------:|-------------:|--------------:|----------------:|----------------:|-----------------:|---------------:|-------------------:|----------------------:|:--------------------------------------------------------------------------------------------------------------------|
@@ -41,13 +36,9 @@
 | YC             |   2014 |               8 |      1 |        50000 |          8676 |           18869 |              90 |                0 |        760.573 |                nan |            nan        | new:benchmark_results\021_01\021_01_yc2014_ncost8__yc_2014_seed1\evaluations\season_summary.csv                     |
 | YC             |   2014 |               8 |      2 |        50000 |          8665 |           18842 |              75 |                0 |        764.78  |                nan |            nan        | new:benchmark_results\021_01\021_01_yc2014_ncost8__yc_2014_seed2\evaluations\season_summary.csv                     |
 
-结论：
+`nitrogen_cost=2/5/8` 没有形成足以支持修改统一系数的稳定分离，因此保留 5。
 
-- `nitrogen_cost=2/5/8` 在正式 50K 结果上没有形成可解释的策略分叉。
-- 现有最优 checkpoint 仍是“零追加氮、有限灌溉”的同类策略族。
-- 因此不建议仅为了 YC 单站点去改单独 reward，保留 `nitrogen_cost=5`。
-
-## 6. FQ water_cost 诊断
+## 5. FQ water_cost 诊断
 
 | station_code   |   year |   water_cost |   seed |   checkpoint |   yield_kg_ha |   biomass_kg_ha |   irrigation_mm |   nitrogen_kg_ha |   reward_total |   max_water_stress |   max_nitrogen_stress | source                                                                                                              |
 |:---------------|-------:|-------------:|-------:|-------------:|--------------:|----------------:|----------------:|-----------------:|---------------:|-------------------:|----------------------:|:--------------------------------------------------------------------------------------------------------------------|
@@ -61,29 +52,21 @@
 | FQ             |   2016 |          2   |      1 |        40000 |          7985 |           13988 |             105 |                0 |        813.536 |                nan |           nan         | new:benchmark_results\021_01\021_01_fq2016_wcost2__fq_2016_seed1\evaluations\season_summary.csv                     |
 | FQ             |   2016 |          2   |      2 |        20000 |          8012 |           14086 |             105 |                0 |        841.422 |                nan |           nan         | new:benchmark_results\021_01\021_01_fq2016_wcost2__fq_2016_seed2\evaluations\season_summary.csv                     |
 
-结论：
+`water_cost=0.5/1/2` 基本落在同一策略族，没有证据支持修改统一系数，因此保留 1。
 
-- `water_cost=0.5/1/2` 的正式 50K 结果基本落在同一策略簇。
-- 未观察到足以支撑改动统一参数的收益。
-- 因此保留 `water_cost=1`。
+## 6. LC2010 正式 50K 跨 seed 复核
 
-## 7. LC frozen configuration 复核
+| station_code   |   year |   seed | selection                                         |   checkpoint_step |   yield_kg_ha |   biomass_kg_ha |   irrigation_mm |   nitrogen_kg_ha |   total_reward |   irrigation_events |   nitrogen_events |   water_budget_use_ratio |   nitrogen_budget_use_ratio | runtime_audit_passed   | status        | source                                                                                                    |
+|:---------------|-------:|-------:|:--------------------------------------------------|------------------:|--------------:|----------------:|----------------:|-----------------:|---------------:|--------------------:|------------------:|-------------------------:|----------------------------:|:-----------------------|:--------------|:----------------------------------------------------------------------------------------------------------|
+| LC             |   2010 |      0 | maximum reward_total; earliest checkpoint on ties |             15000 |          8737 |           16366 |             120 |                0 |        566.123 |                   6 |                 0 |                     1    |                           0 | True                   | completed_50k | benchmark_results\021_01\021_01_lc2010_seed_stability_retry__lc_2010_seed0\evaluations\season_summary.csv |
+| LC             |   2010 |      1 | maximum reward_total; earliest checkpoint on ties |             40000 |          8728 |           16311 |              60 |                0 |        616.584 |                   4 |                 0 |                     0.5  |                           0 | True                   | completed_50k | benchmark_results\021_01\021_01_lc2010_seed_stability_retry__lc_2010_seed1\evaluations\season_summary.csv |
+| LC             |   2010 |      2 | maximum reward_total; earliest checkpoint on ties |             50000 |          8707 |           16199 |              30 |                0 |        626.408 |                   2 |                 0 |                     0.25 |                           0 | True                   | completed_50k | benchmark_results\021_01\021_01_lc2010_seed_stability_retry__lc_2010_seed2\evaluations\season_summary.csv |
 
-|   seed | selection                | checkpoint_step   |   yield_kg_ha |   biomass_kg_ha |   irrigation_mm |   nitrogen_kg_ha |   max_water_stress |   max_nitrogen_stress |   total_reward | status                    | source                                                                                                                               | note                                                                                                                                                                        |
-|-------:|:-------------------------|:------------------|--------------:|----------------:|----------------:|-----------------:|-------------------:|----------------------:|---------------:|:--------------------------|:-------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|      0 | best_reward              | 5000              |          8739 |           16377 |              90 |                0 |                  0 |             0.0191814 |        598.149 | legacy_reference_only     | legacy:DSSAT_auto_validation\extension_expert_baseline_018_03\018_06_lc2010_seed_stability_audit\018_06_lc2010_seed_best_summary.csv | Only 5K legacy evidence exists; not accepted as 021_01 formal frozen 50K seed review.                                                                                       |
-|      0 | best_yield_then_resource | 5000              |          8739 |           16377 |              90 |                0 |                  0 |             0.0191814 |        598.149 | legacy_reference_only     | legacy:DSSAT_auto_validation\extension_expert_baseline_018_03\018_06_lc2010_seed_stability_audit\018_06_lc2010_seed_best_summary.csv | Only 5K legacy evidence exists; not accepted as 021_01 formal frozen 50K seed review.                                                                                       |
-|      1 | best_reward              | 5000              |          8739 |           16374 |             120 |              300 |                  0 |             0.0191814 |       -932.467 | legacy_reference_only     | legacy:DSSAT_auto_validation\extension_expert_baseline_018_03\018_06_lc2010_seed_stability_audit\018_06_lc2010_seed_best_summary.csv | Only 5K legacy evidence exists; not accepted as 021_01 formal frozen 50K seed review.                                                                                       |
-|      1 | best_yield_then_resource | 5000              |          8739 |           16374 |             120 |              300 |                  0 |             0.0191814 |       -932.467 | legacy_reference_only     | legacy:DSSAT_auto_validation\extension_expert_baseline_018_03\018_06_lc2010_seed_stability_audit\018_06_lc2010_seed_best_summary.csv | Only 5K legacy evidence exists; not accepted as 021_01 formal frozen 50K seed review.                                                                                       |
-|      0 | 021_01_attempt           | <NA>              |           nan |             nan |             nan |              nan |                nan |           nan         |        nan     | blocked_runtime_poll_wait | new:benchmark_results/021_01/021_01_lc2010_seed_stability__lc_2010_seed0                                                             | null run finished; DQN run created input/runtime shell only; pdi_gym.log ends with Client started; process slept >3h with near-zero CPU and no season_summary/training_log. |
+三 seed 的最佳 checkpoint 不同（15K、40K、50K）。产量分别为 8737、8728、8707 kg/ha，差异仅 30 kg/ha；灌溉分别为 120、60、30 mm，差异达 90 mm；施氮均为 0。DSSAT auto 为 8738 kg/ha、138.5 mm、0 kg/ha，official expert 为 8739 kg/ha。LC 因而属于“产量近乎持平但资源投入跨 seed 敏感”，不能写成跨 seed 稳定成功，也不是 DQN 显著增产案例。
 
-结论：
+第一次运行挂起的根因不是训练或端口：Benchmark adapter 错把已经 null 化的 LC 输入作为 DQN 源，形成 `FERTI=L` 但 `MF=0`，DSSAT/PDI 在 `FertType_mod.for` 触发 `fertfile(0)`。修复后先通过 5K smoke，再串行完成三组 50K；全部 runtime audit 通过。
 
-- 021_01 新框架下，LC2010 的 null 已完成，但 DQN 运行在 `Client started` 后长时间停滞。
-- 进程累计运行数小时、CPU 接近 0、未生成 `season_summary.csv` 与训练日志。
-- 因此本任务内将 LC 标为 `blocked_runtime_poll_wait`，不继续追加训练。
-
-## 8. SY input provenance audit
+## 7. SY 输入来源审计
 
 | item                               | configured_value   | observed_value    | source                                                                                                                                 | status     | note                                                                                                             |
 |:-----------------------------------|:-------------------|:------------------|:---------------------------------------------------------------------------------------------------------------------------------------|:-----------|:-----------------------------------------------------------------------------------------------------------------|
@@ -92,37 +75,33 @@
 | prepared_mzx_soil_id               | SY99001200         | SY99001200        | DSSAT_auto_validation\multisite_new_cultivar_inputs_013\SY\CNSY1201.MZX                                                                | matched    | Prepared input package keeps SY99001200 as soil id.                                                              |
 | prepared_mzx_weather_2014          | CNSY1401.WTH       | CNSY1401.WTH      | DSSAT_auto_validation\multisite_new_cultivar_inputs_013\SY\CNSY1201.MZX                                                                | matched    | 2014 field row points to CNSY1401.                                                                               |
 | prepared_mzx_cultivar              | FY0985             | FY0985            | DSSAT_auto_validation\multisite_new_cultivar_inputs_013\SY\CNSY1201.MZX                                                                | matched    | Cultivar block in prepared MZX is FY0985.                                                                        |
-| diagnostic_sy2012_ic1              | n/a                | 16789.09423828125 | DSSAT_auto_validation\multisite_new_cultivar_inputs_013\SY\sy_2012_2014_ic_diagnosis_016_01_runs\sy_2012_2014_ic_diagnosis_summary.csv | evidence   | steps=158, terminated=True, description=2012 treatment, keep original IC=1                                       |
-| diagnostic_sy2014_ic0              | n/a                | 18302.4365234375  | DSSAT_auto_validation\multisite_new_cultivar_inputs_013\SY\sy_2012_2014_ic_diagnosis_016_01_runs\sy_2012_2014_ic_diagnosis_summary.csv | evidence   | steps=160, terminated=True, description=2014 treatment, keep original IC=0                                       |
-| diagnostic_sy2014_ic1              | n/a                | 13299.51171875    | DSSAT_auto_validation\multisite_new_cultivar_inputs_013\SY\sy_2012_2014_ic_diagnosis_016_01_runs\sy_2012_2014_ic_diagnosis_summary.csv | evidence   | steps=160, terminated=True, description=2014 treatment, patch treatment row back to IC=1                         |
-| diagnostic_sy2014_ic1_icdat14100   | n/a                | 13299.51171875    | DSSAT_auto_validation\multisite_new_cultivar_inputs_013\SY\sy_2012_2014_ic_diagnosis_016_01_runs\sy_2012_2014_ic_diagnosis_summary.csv | evidence   | steps=160, terminated=True, description=2014 treatment, patch to IC=1 and set ICDAT=14100                        |
-| historical_transfer_result_2014    | n/a                | 11216.0           | DSSAT_auto_validation\sy_local_dqn_train_cross_year_transfer_017_08\017_08_sy_combined_summary.csv                                     | evidence   | Historical transfer run exists, but current benchmark adapter still points to provenance-ambiguous prepared MZX. |
+| diagnostic_sy2012_ic1              | nan                | 16789.09423828125 | DSSAT_auto_validation\multisite_new_cultivar_inputs_013\SY\sy_2012_2014_ic_diagnosis_016_01_runs\sy_2012_2014_ic_diagnosis_summary.csv | evidence   | steps=158, terminated=True, description=2012 treatment, keep original IC=1                                       |
+| diagnostic_sy2014_ic0              | nan                | 18302.4365234375  | DSSAT_auto_validation\multisite_new_cultivar_inputs_013\SY\sy_2012_2014_ic_diagnosis_016_01_runs\sy_2012_2014_ic_diagnosis_summary.csv | evidence   | steps=160, terminated=True, description=2014 treatment, keep original IC=0                                       |
+| diagnostic_sy2014_ic1              | nan                | 13299.51171875    | DSSAT_auto_validation\multisite_new_cultivar_inputs_013\SY\sy_2012_2014_ic_diagnosis_016_01_runs\sy_2012_2014_ic_diagnosis_summary.csv | evidence   | steps=160, terminated=True, description=2014 treatment, patch treatment row back to IC=1                         |
+| diagnostic_sy2014_ic1_icdat14100   | nan                | 13299.51171875    | DSSAT_auto_validation\multisite_new_cultivar_inputs_013\SY\sy_2012_2014_ic_diagnosis_016_01_runs\sy_2012_2014_ic_diagnosis_summary.csv | evidence   | steps=160, terminated=True, description=2014 treatment, patch to IC=1 and set ICDAT=14100                        |
+| historical_transfer_result_2014    | nan                | 11216.0           | DSSAT_auto_validation\sy_local_dqn_train_cross_year_transfer_017_08\017_08_sy_combined_summary.csv                                     | evidence   | Historical transfer run exists, but current benchmark adapter still points to provenance-ambiguous prepared MZX. |
 
-结论：
+SY 的 authoritative IC/MZX 尚未统一，因此不能启动正式训练，也不能算作统一配置已完成五站验证。
 
-- `configs/sites/sya.yaml` 期待 `IC=2`。
-- 但当前准备输入 `CNSY1201.MZX` 的 2014 treatment 行仍显示 `IC=0`。
-- 同时历史诊断已显示 `IC=0` 与 `IC=1`/`IC=2` 会导致明显不同的产量水平。
-- 因此本任务内将 SY 标为 `blocked_input_provenance`。
+## 8. 统一参数证据
 
-## 9. 统一参数证据表
+| station_code      | status                      |   water_cost |   nitrogen_cost |   n_steps | irrigation_action_levels_mm   | nitrogen_action_levels_kg_ha   | season_budgets   | evidence                                                                                                                                                         |
+|:------------------|:----------------------------|-------------:|----------------:|----------:|:------------------------------|:-------------------------------|:-----------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| HLA               | keep_current_config         |            1 |               5 |         5 | [0, 15, 30]                   | [0, 50, 100]                   | I<=120, N<=300   | Existing formal 020_11 matrix already covers 5 years x 3 seeds under the frozen n-step setup.                                                                    |
+| YC                | keep_current_config         |            1 |               5 |         5 | [0, 15, 30]                   | [0, 50, 100]                   | I<=120, N<=300   | nitrogen_cost=2/5/8 formal 50K comparison shows no meaningful policy or outcome separation; selected checkpoints all stay at zero-N behavior with similar yield. |
+| FQ                | keep_current_config         |            1 |               5 |         5 | [0, 15, 30]                   | [0, 50, 100]                   | I<=120, N<=300   | water_cost=0.5/1/2 formal 50K comparison shows the same checkpoint family and nearly identical resource-use pattern.                                             |
+| LC                | resource_use_seed_sensitive |            1 |               5 |         5 | [0, 15, 30]                   | [0, 50, 100]                   | I<=120, N<=300   | Formal LC2010 50K seed0/1/2 had similar yields but irrigation differed by 90 mm.                                                                                 |
+| SY                | blocked_input_provenance    |            1 |               5 |         5 | [0, 15, 30]                   | [0, 50, 100]                   | I<=120, N<=300   | 2014 treatment row in prepared MZX is the authoritative on-disk candidate used by current adapter path.                                                          |
+| UNIFIED_CANDIDATE | partial_lc_sy               |            1 |               5 |         5 | [0, 15, 30]                   | [0, 50, 100]                   | I<=120, N<=300   | Frozen configuration is supported by HLA/YC/FQ; LC remains resource-use seed-sensitive and SY input provenance is blocked.                                       |
 
-| station_code      | status                    |   water_cost |   nitrogen_cost |   n_steps | irrigation_action_levels_mm   | nitrogen_action_levels_kg_ha   | season_budgets   | evidence                                                                                                                                                                    |
-|:------------------|:--------------------------|-------------:|----------------:|----------:|:------------------------------|:-------------------------------|:-----------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| HLA               | keep_current_config       |            1 |               5 |         5 | [0, 15, 30]                   | [0, 50, 100]                   | I<=120, N<=300   | Existing formal 020_11 matrix already covers 5 years x 3 seeds under the frozen n-step setup.                                                                               |
-| YC                | keep_current_config       |            1 |               5 |         5 | [0, 15, 30]                   | [0, 50, 100]                   | I<=120, N<=300   | nitrogen_cost=2/5/8 formal 50K comparison shows no meaningful policy or outcome separation; selected checkpoints all stay at zero-N behavior with similar yield.            |
-| FQ                | keep_current_config       |            1 |               5 |         5 | [0, 15, 30]                   | [0, 50, 100]                   | I<=120, N<=300   | water_cost=0.5/1/2 formal 50K comparison shows the same checkpoint family and nearly identical resource-use pattern.                                                        |
-| LC                | blocked_runtime_poll_wait |            1 |               5 |         5 | [0, 15, 30]                   | [0, 50, 100]                   | I<=120, N<=300   | null run finished; DQN run created input/runtime shell only; pdi_gym.log ends with Client started; process slept >3h with near-zero CPU and no season_summary/training_log. |
-| SY                | blocked_input_provenance  |            1 |               5 |         5 | [0, 15, 30]                   | [0, 50, 100]                   | I<=120, N<=300   | 2014 treatment row in prepared MZX is the authoritative on-disk candidate used by current adapter path.                                                                     |
-| UNIFIED_CANDIDATE | partial                   |            1 |               5 |         5 | [0, 15, 30]                   | [0, 50, 100]                   | I<=120, N<=300   | Keep the frozen HLA/YC/FQ-compatible setup; LC runtime and SY provenance remain blocked items.                                                                              |
-
-## 10. 最终候选策略
+## 9. 最终候选配置
 
 ```yaml
 meta:
   task: 021_01_final_dqn_strategy_determination
   date: '2026-07-12'
-  status: partial
+  status: partial_lc_sy
+  last_updated: '2026-07-13'
 candidate:
   algorithm: DQN
   reward:
@@ -151,67 +130,28 @@ candidate:
     - YC
     - FQ
     blocked_sites:
-      LC: runtime poll-wait hang in 021_01 frozen benchmark run
-      SY: input provenance ambiguous (config expects IC=2, prepared 2014 treatment
+      LC: formal 50K yields are similar across seeds, but irrigation differs by 90
+        mm
+      SY: input provenance ambiguous (site config expects IC=2, prepared 2014 treatment
         row is IC=0)
-
 ```
 
-## 11. 当前问题与已解决问题
+## 10. 已解决与未解决问题
 
-已解决：
+- 已解决：YC nitrogen_cost、FQ water_cost、LC adapter 和三 seed 50K 正式诊断。
+- 未解决：LC 资源投入跨 seed 敏感；SY2014 的 IC/MZX 输入来源冲突。
+- 下一步：先确认 SY authoritative input，再按同一冻结配置做 smoke 和正式 seed 复核；不新增敏感性扫描。
 
-- YC `nitrogen_cost` 诊断完成。
-- FQ `water_cost` 诊断完成。
-- HLA 当前正式配置可以直接复用。
+## 11. Methods Source
 
-未解决：
+- `benchmark/environment_adapter.py`
+- `benchmark/train_runner.py`
+- `configs/experiments/021_01_lc2010_seed_stability_retry*.yaml`
+- `src/finalize_021_01_after_lc_retry.py`
 
-- LC benchmark runtime 挂起，未完成 seed0/1/2 冻结正式复核。
-- SY 输入 provenance 未统一，仍不能进入正式训练。
+## 12. 输出与 Git
 
-## 12. 后续实验计划
-
-1. 先修 LC runtime/blocking 机制，再重新执行 frozen 50K seed 复核。
-2. 先明确 SY authoritative IC/MZX，再生成正式训练配置。
-3. 在 LC/SY 未解决前，不扩大统一参数搜索，不改 reward 结构。
-
-## 13. Methods Source
-
-- `benchmark/benchmark_runner.py`
-- `configs/experiments/021_01_*.yaml`
-- `configs/sites/hla.yaml`
-- `configs/sites/yca.yaml`
-- `configs/sites/fqa.yaml`
-- `configs/sites/lca.yaml`
-- `configs/sites/sya.yaml`
-- `src/run_021_01_final_dqn_strategy_determination.py`
-
-## 14. References
-
-- `prompts/021_01_final_dqn_strategy_determination.md`
-- `DSSAT_auto_validation/HLA_2004/hla_five_scenario_nstep_020_11/020_11_hla_five_scenario_summary.csv`
-- `DSSAT_auto_validation/frozen_nstep_cross_site_020_12/YC2014/*`
-- `DSSAT_auto_validation/frozen_nstep_cross_site_020_12/FQ2016/*`
-- `DSSAT_auto_validation/extension_expert_baseline_018_03/018_03_clean_multisite_comparison_with_extension_expert.csv`
-- `DSSAT_auto_validation/extension_expert_baseline_018_03/018_06_lc2010_seed_stability_audit/018_06_lc2010_seed_best_summary.csv`
-- `DSSAT_auto_validation/multisite_new_cultivar_inputs_013/SY/CNSY1201.MZX`
-- `DSSAT_auto_validation/multisite_new_cultivar_inputs_013/SY/sy_2012_2014_ic_diagnosis_016_01_runs/sy_2012_2014_ic_diagnosis_summary.csv`
-
-## 15. 输出文件
-
-- `benchmark_results/021_01/station_diagnosis.csv`
-- `benchmark_results/021_01/yc_nitrogen_cost_summary.csv`
-- `benchmark_results/021_01/fq_water_cost_summary.csv`
-- `benchmark_results/021_01/lc_seed_stability_summary.csv`
-- `benchmark_results/021_01/sy_input_provenance.csv`
-- `benchmark_results/021_01/unified_parameter_evidence.csv`
-- `benchmark_results/021_01/final_dqn_candidate.yaml`
-- `configs/final_dqn_candidate.yaml`
-- `docs/2026-07-12_021_01_final_dqn_strategy_determination.md`
-- `docs/2026-07-12_021_01_final_dqn_strategy_determination.pptx`
-
-## 16. Git commit 信息
-
-- Git commit: `b3a1ebf` (`Diagnose and determine unified DQN strategy`)
-- Git push: failed (`Connection closed by 198.18.0.90 port 22`)
+- LC 图：`benchmark_results/021_01/figures/lc2010_50k_cross_seed_stability.png/.svg`
+- 汇总：`benchmark_results/021_01/lc_seed_stability_summary.csv`
+- Git commit：待本次文件核验后提交。
+- Git push：上次因 SSH 22 端口连接关闭而失败；本次提交后按用户既有授权再次尝试。

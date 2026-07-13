@@ -118,7 +118,8 @@ def prepare_case(config: dict[str, Any], year: int, run_dir: Path) -> PreparedCa
     year_entry = by_year.get(str(year), by_year.get(int(year), {})) or {}
     source_filex = _find_filex(source_dir, year_entry.get("fileX_name") or site.get("fileX_name"))
 
-    if code in {"YC", "FQ"} and str(site.get("adapter", "")).startswith(("yc_", "fq_")):
+    adapter_name = str(site.get("adapter", ""))
+    if code in {"YC", "FQ"} and adapter_name.startswith(("yc_", "fq_")):
         spec = legacy.SiteSpec(
             code=code,
             station=station,
@@ -131,6 +132,28 @@ def prepare_case(config: dict[str, Any], year: int, run_dir: Path) -> PreparedCa
         )
         dqn_text = legacy.prepare_site_text(spec, "dqn")
         null_text = legacy.prepare_site_text(spec, "null")
+    elif code == "LC" and adapter_name == "lc_fixed_input_017_11":
+        # The configured 017_11 package is a scenario-specific null package:
+        # its MI/MF pointers and fertilizer rows have already been zeroed.
+        # Reusing that text for FERTI=L makes DSSAT/PDI dereference fertfile(0).
+        # Rebuild the confirmed, year-aligned LC source exactly as the validated
+        # 017_12 DQN entry did, while continuing to copy auxiliaries from the
+        # configured prepared-input directory.
+        from run_lc_fixed_input_year_screening_017_11 import fixed_source_text
+
+        source_text = fixed_source_text()
+        dqn_text = legacy.set_management_for_treatment(source_text, treatment, "L", "L")
+        null_text = legacy.prepare_text_for_scenario(source_text, treatment, "null")
+        spec = legacy.SiteSpec(
+            code=code,
+            station=station,
+            year=int(year),
+            treatment=treatment,
+            input_root=source_dir,
+            mzx_name=source_filex.name,
+            weather_name=str(year_entry.get("weather_name") or site.get("weather_name", "")),
+            soil_id=str(site.get("soil_id", "")),
+        )
     else:
         source_text = source_filex.read_text(encoding="latin-1", errors="ignore")
         dqn_text = legacy.set_management_for_treatment(source_text, treatment, "L", "L")
@@ -190,4 +213,3 @@ def load_prepared_case(config: dict[str, Any], year: int, run_dir: Path) -> Prep
         dqn_env_args=json.loads((run_dir / "dqn_env_args.json").read_text(encoding="utf-8")),
         null_env_args=json.loads((run_dir / "null_env_args.json").read_text(encoding="utf-8")),
     )
-

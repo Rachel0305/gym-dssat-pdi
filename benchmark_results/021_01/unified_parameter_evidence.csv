@@ -2,6 +2,6 @@
 HLA,keep_current_config,1.0,5.0,5,"[0, 15, 30]","[0, 50, 100]","I<=120, N<=300",Existing formal 020_11 matrix already covers 5 years x 3 seeds under the frozen n-step setup.
 YC,keep_current_config,1.0,5.0,5,"[0, 15, 30]","[0, 50, 100]","I<=120, N<=300",nitrogen_cost=2/5/8 formal 50K comparison shows no meaningful policy or outcome separation; selected checkpoints all stay at zero-N behavior with similar yield.
 FQ,keep_current_config,1.0,5.0,5,"[0, 15, 30]","[0, 50, 100]","I<=120, N<=300",water_cost=0.5/1/2 formal 50K comparison shows the same checkpoint family and nearly identical resource-use pattern.
-LC,blocked_runtime_poll_wait,1.0,5.0,5,"[0, 15, 30]","[0, 50, 100]","I<=120, N<=300",null run finished; DQN run created input/runtime shell only; pdi_gym.log ends with Client started; process slept >3h with near-zero CPU and no season_summary/training_log.
+LC,resource_use_seed_sensitive,1.0,5.0,5,"[0, 15, 30]","[0, 50, 100]","I<=120, N<=300",Formal LC2010 50K seed0/1/2 had similar yields but irrigation differed by 90 mm.
 SY,blocked_input_provenance,1.0,5.0,5,"[0, 15, 30]","[0, 50, 100]","I<=120, N<=300",2014 treatment row in prepared MZX is the authoritative on-disk candidate used by current adapter path.
-UNIFIED_CANDIDATE,partial,1.0,5.0,5,"[0, 15, 30]","[0, 50, 100]","I<=120, N<=300",Keep the frozen HLA/YC/FQ-compatible setup; LC runtime and SY provenance remain blocked items.
+UNIFIED_CANDIDATE,partial_lc_sy,1.0,5.0,5,"[0, 15, 30]","[0, 50, 100]","I<=120, N<=300",Frozen configuration is supported by HLA/YC/FQ; LC remains resource-use seed-sensitive and SY input provenance is blocked.

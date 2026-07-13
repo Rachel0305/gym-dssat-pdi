@@ -151,4 +151,5 @@ smoke 的产量不用于科学优越性结论。
 
 ## Git
 
-本节在提交后补充 commit hash。按项目规则，未经用户明确要求不执行 push。
+- 实现与证据提交：`e57caa4`（`fix DQN global exploration schedule`）。
+- push：未执行；按项目规则，未经用户明确确认不推送 GitHub。

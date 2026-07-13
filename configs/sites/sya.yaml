@@ -3,7 +3,7 @@ site:
   aliases: [SYA]
   station_name: Shenyang
   adapter: sy_ic2_confirmed
-  input_status: confirmed_forward_only
+  input_status: confirmed_seed0_candidate
   treatment: 2
   cultivar_id: FY0985
   soil_id: SY99001200
@@ -23,4 +23,5 @@ site:
     - IC=2 source SHA-256 is 20b071bc49549cbf561be3aae81caa355aa0582564db524e17d68ab6a274418a.
     - 021_02 null/recorded/DSSAT-auto forward runs completed with runtime IC=2 verification.
     - Historical 017_08 IC=0 training remains historical evidence and is not relabeled as IC=2.
-    - Formal IC=2 DQN seed evidence is still pending.
+    - 021_03 formal 50K seed0 selected checkpoint 10K with HWAM 11176 kg/ha at I120/N300.
+    - Seed1/2 are still required before any cross-seed stability claim.

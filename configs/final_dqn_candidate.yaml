@@ -1,7 +1,7 @@
 meta:
   task: 021_01_final_dqn_strategy_determination
   date: '2026-07-12'
-  status: partial_lc_sy_training_pending
+  status: partial_lc_sy_multiseed_pending
   last_updated: '2026-07-13'
 candidate:
   algorithm: DQN
@@ -34,5 +34,5 @@ candidate:
       LC: formal 50K yields are similar across seeds, but irrigation differs by 90
         mm
     pending_sites:
-      SY: IC=2 input and three-scenario forward behavior are confirmed by 021_02;
-        formal IC=2 DQN multi-seed evidence is not yet available
+      SY: IC=2 input is confirmed and 021_03 seed0 has a high-yield 10K checkpoint;
+        seed1/2 are required because the same seed collapses after 15K

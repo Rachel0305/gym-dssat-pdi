@@ -1,7 +1,7 @@
 meta:
   task: 021_01_final_dqn_strategy_determination
   date: '2026-07-12'
-  status: partial_lc_sy
+  status: partial_lc_sy_training_pending
   last_updated: '2026-07-13'
 candidate:
   algorithm: DQN
@@ -33,5 +33,6 @@ candidate:
     blocked_sites:
       LC: formal 50K yields are similar across seeds, but irrigation differs by 90
         mm
-      SY: input provenance ambiguous (site config expects IC=2, prepared 2014 treatment
-        row is IC=0)
+    pending_sites:
+      SY: IC=2 input and three-scenario forward behavior are confirmed by 021_02;
+        formal IC=2 DQN multi-seed evidence is not yet available

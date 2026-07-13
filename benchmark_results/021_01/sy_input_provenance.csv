@@ -1,6 +1,7 @@
 ﻿item,configured_value,observed_value,source,status,note
 site_config.initial_condition_mode,2,2,configs\sites\sya.yaml,configured,Benchmark site config explicitly points to IC=2 expectation.
-prepared_mzx_treatment2_IC,2,0,DSSAT_auto_validation\multisite_new_cultivar_inputs_013\SY\CNSY1201.MZX,mismatch,2014 treatment row in prepared MZX is the authoritative on-disk candidate used by current adapter path.
+prepared_mzx_treatment2_IC,2,2,DSSAT_auto_validation\multisite_new_cultivar_inputs_013\SY\CNSY1201.MZX,matched,User-restored 2014 treatment row now points to the complete IC=2 profile; verified in 021_02 runtime snapshots.
+prepared_mzx_sha256,n/a,20b071bc49549cbf561be3aae81caa355aa0582564db524e17d68ab6a274418a,DSSAT_auto_validation\multisite_new_cultivar_inputs_013\SY\CNSY1201.MZX,confirmed,Hash frozen before the 021_02 forward validation.
 prepared_mzx_soil_id,SY99001200,SY99001200,DSSAT_auto_validation\multisite_new_cultivar_inputs_013\SY\CNSY1201.MZX,matched,Prepared input package keeps SY99001200 as soil id.
 prepared_mzx_weather_2014,CNSY1401.WTH,CNSY1401.WTH,DSSAT_auto_validation\multisite_new_cultivar_inputs_013\SY\CNSY1201.MZX,matched,2014 field row points to CNSY1401.
 prepared_mzx_cultivar,FY0985,FY0985,DSSAT_auto_validation\multisite_new_cultivar_inputs_013\SY\CNSY1201.MZX,matched,Cultivar block in prepared MZX is FY0985.
@@ -8,4 +9,7 @@ diagnostic_sy2012_ic1,n/a,16789.09423828125,DSSAT_auto_validation\multisite_new_
 diagnostic_sy2014_ic0,n/a,18302.4365234375,DSSAT_auto_validation\multisite_new_cultivar_inputs_013\SY\sy_2012_2014_ic_diagnosis_016_01_runs\sy_2012_2014_ic_diagnosis_summary.csv,evidence,"steps=160, terminated=True, description=2014 treatment, keep original IC=0"
 diagnostic_sy2014_ic1,n/a,13299.51171875,DSSAT_auto_validation\multisite_new_cultivar_inputs_013\SY\sy_2012_2014_ic_diagnosis_016_01_runs\sy_2012_2014_ic_diagnosis_summary.csv,evidence,"steps=160, terminated=True, description=2014 treatment, patch treatment row back to IC=1"
 diagnostic_sy2014_ic1_icdat14100,n/a,13299.51171875,DSSAT_auto_validation\multisite_new_cultivar_inputs_013\SY\sy_2012_2014_ic_diagnosis_016_01_runs\sy_2012_2014_ic_diagnosis_summary.csv,evidence,"steps=160, terminated=True, description=2014 treatment, patch to IC=1 and set ICDAT=14100"
-historical_transfer_result_2014,n/a,11216.0,DSSAT_auto_validation\sy_local_dqn_train_cross_year_transfer_017_08\017_08_sy_combined_summary.csv,evidence,"Historical transfer run exists, but current benchmark adapter still points to provenance-ambiguous prepared MZX."
+historical_transfer_result_2014,n/a,11216.0,DSSAT_auto_validation\sy_local_dqn_train_cross_year_transfer_017_08\017_08_sy_combined_summary.csv,historical_ic0,"Historical transfer run used the then-current IC=0 input and must not be cited as IC=2 evidence."
+ic2_forward_null_HWAM,5408,5408,DSSAT_auto_validation\sy2014_ic2_forward_validation_021_02\021_02_sy2014_ic2_forward_summary.csv,confirmed,True null management; full season completed and runtime fileX passed IC=2 audit.
+ic2_forward_recorded_HWAM,9613,9613,DSSAT_auto_validation\sy2014_ic2_forward_validation_021_02\021_02_sy2014_ic2_forward_summary.csv,confirmed,Recorded management retained; agrees closely with the historical IC candidate scan near 9620 kg/ha.
+ic2_forward_auto_HWAM,5498,5498,DSSAT_auto_validation\sy2014_ic2_forward_validation_021_02\021_02_sy2014_ic2_forward_summary.csv,confirmed,DSSAT auto irrigated 66 mm and applied no nitrogen; full season completed with IC=2.

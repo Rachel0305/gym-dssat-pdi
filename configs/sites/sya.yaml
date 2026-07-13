@@ -2,8 +2,8 @@ site:
   station_code: SY
   aliases: [SYA]
   station_name: Shenyang
-  adapter: sy_provenance_pending
-  input_status: ambiguous
+  adapter: sy_ic2_confirmed
+  input_status: confirmed_forward_only
   treatment: 2
   cultivar_id: FY0985
   soil_id: SY99001200
@@ -19,6 +19,8 @@ site:
         fileX_name: CNSY1201.MZX
         weather_name: CNSY1401.WTH
   notes:
-    - Documentation says IC=2, but the current stored training MZX remains IC=0.
-    - Formal training is blocked until the authoritative IC=2 input is identified.
-
+    - Current treatment 2 points to a complete six-layer IC=2 profile.
+    - IC=2 source SHA-256 is 20b071bc49549cbf561be3aae81caa355aa0582564db524e17d68ab6a274418a.
+    - 021_02 null/recorded/DSSAT-auto forward runs completed with runtime IC=2 verification.
+    - Historical 017_08 IC=0 training remains historical evidence and is not relabeled as IC=2.
+    - Formal IC=2 DQN seed evidence is still pending.

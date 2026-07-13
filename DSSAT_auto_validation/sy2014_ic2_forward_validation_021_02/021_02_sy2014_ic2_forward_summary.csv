@@ -1,0 +1,4 @@
+﻿scenario,source_sha256,runtime_ic2_valid,completed,HWAM,CWAM,IRCM,NICM,IR_events_total,N_events_total,max_WSPD,max_NSTD,final_DAP,run_dir
+null,20b071bc49549cbf561be3aae81caa355aa0582564db524e17d68ab6a274418a,True,True,5408.0,10603.0,0.0,0.0,0.0,0.0,0.0,0.617,139.0,DSSAT_auto_validation/sy2014_ic2_forward_validation_021_02/runs/null
+recorded,20b071bc49549cbf561be3aae81caa355aa0582564db524e17d68ab6a274418a,True,True,9613.0,18194.0,0.0,293.0,0.0,293.0,0.961,0.012,139.0,DSSAT_auto_validation/sy2014_ic2_forward_validation_021_02/runs/recorded
+dssat_auto,20b071bc49549cbf561be3aae81caa355aa0582564db524e17d68ab6a274418a,True,True,5498.0,10688.0,66.0,0.0,66.0,0.0,0.0,0.564,139.0,DSSAT_auto_validation/sy2014_ic2_forward_validation_021_02/runs/dssat_auto

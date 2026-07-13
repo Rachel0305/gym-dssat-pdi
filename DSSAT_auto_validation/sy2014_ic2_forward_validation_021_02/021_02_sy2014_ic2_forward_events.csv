@@ -1,0 +1,5 @@
+﻿site,requested_year,scenario,dap,operation,amount,unit,raw
+SY,2014,recorded,0,"1 APR 18, 2014  108     18      0  MZ                Fertilizer        121. kg[N]/ha",121.0,kg[N]/ha,"   1 APR 18, 2014  108     18      0  MZ                Fertilizer        121. kg[N]/ha "
+SY,2014,recorded,61,"1 JUN 21, 2014  172     82     61  MZ                Fertilizer        172. kg[N]/ha",172.0,kg[N]/ha,"   1 JUN 21, 2014  172     82     61  MZ                Fertilizer        172. kg[N]/ha "
+SY,2014,dssat_auto,86,"1 JUL 16, 2014  197    107     86  MZ                Irrigation        32.6 mm",32.6,mm,"   1 JUL 16, 2014  197    107     86  MZ                Irrigation        32.6 mm"
+SY,2014,dssat_auto,113,"1 AUG 12, 2014  224    134    113  MZ                Irrigation        33.4 mm",33.4,mm,"   1 AUG 12, 2014  224    134    113  MZ                Irrigation        33.4 mm"

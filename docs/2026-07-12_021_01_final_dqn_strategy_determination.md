@@ -153,5 +153,5 @@ candidate:
 
 - LC 图：`benchmark_results/021_01/figures/lc2010_50k_cross_seed_stability.png/.svg`
 - 汇总：`benchmark_results/021_01/lc_seed_stability_summary.csv`
-- Git commit：待本次文件核验后提交。
-- Git push：上次因 SSH 22 端口连接关闭而失败；本次提交后按用户既有授权再次尝试。
+- 结果与修复提交：`445acb8`（`Complete LC2010 DQN stability diagnosis`）。
+- Git push：2026-07-13 再次尝试失败；SSH `198.18.0.90:22` 主动关闭连接。本地提交完整保留，未伪造远端备份成功。

@@ -1,7 +1,7 @@
 meta:
   task: 021_01_final_dqn_strategy_determination
   date: '2026-07-12'
-  status: partial_lc_sy_multiseed_pending
+  status: partial_lc_pending_sy_multiseed_near_reproduced
   last_updated: '2026-07-13'
 candidate:
   algorithm: DQN
@@ -34,5 +34,8 @@ candidate:
       LC: formal 50K yields are similar across seeds, but irrigation differs by 90
         mm
     pending_sites:
-      SY: IC=2 input is confirmed and 021_03 seed0 has a high-yield 10K checkpoint;
-        seed1/2 are required because the same seed collapses after 15K
+      SY: IC=2 is confirmed; three-seed best-checkpoint yields are 11176/11097/11068
+        kg/ha at I120/N300 (CV 0.503%). Two of three strictly exceed the official
+        expert yield 11077 kg/ha; seed2 is 9 kg/ha lower. Late-training collapse
+        occurs in all seeds, so this is a high-yield multiseed candidate rather
+        than universal strict success.

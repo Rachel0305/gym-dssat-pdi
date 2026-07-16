@@ -1,0 +1,61 @@
+{
+  "status": "completed",
+  "branch": "A_smoke_passed",
+  "checks": {
+    "sb3_version_2p8p0": true,
+    "sb3_contrib_version_2p8p0": true,
+    "num_timesteps_24": true,
+    "four_training_seasons": true,
+    "at_least_two_rollouts": true,
+    "zero_masked_action_attempts": true,
+    "all_episodes_six_stages": true,
+    "all_logged_actions_mask_valid": true,
+    "finite_episode_values": true,
+    "finite_model_parameters": true,
+    "model_saved": true,
+    "reload_action_identical": true
+  },
+  "config": {
+    "seed": 1,
+    "total_timesteps": 24,
+    "n_steps": 12,
+    "batch_size": 12,
+    "n_epochs": 2,
+    "gamma": 1.0,
+    "gae_lambda": 1.0,
+    "learning_rate": 0.0003,
+    "net_arch": [
+      32,
+      32
+    ]
+  },
+  "rollouts": 2,
+  "training_seasons": 4,
+  "total_dssat_seasons": 6,
+  "invalid_action_attempts": 0,
+  "pre_training_evaluation": {
+    "phase": "eval_pre",
+    "episode_index": 0,
+    "final_yield": 11211.36474609375,
+    "final_biomass": 20224.078369140625,
+    "irrigation_total": 60.0,
+    "nitrogen_total": 200.0,
+    "terminal_step_reward": 7.3933647460937495,
+    "stage_count": 6,
+    "episode_total_reward": 6.363364746093749
+  },
+  "post_training_evaluation": {
+    "phase": "eval_post",
+    "episode_index": 0,
+    "final_yield": 9779.265747070312,
+    "final_biomass": 18032.3095703125,
+    "irrigation_total": 75.0,
+    "nitrogen_total": 100.0,
+    "terminal_step_reward": 4.356265747070313,
+    "stage_count": 6,
+    "episode_total_reward": 3.7962657470703127
+  },
+  "model_sha256": "789c674bca72bf5739906d66558152a5857e4ca8e8efe54dac9ba2b5e4d05dee",
+  "scientific_success_claimed": false,
+  "next_step_allowed": true
+}

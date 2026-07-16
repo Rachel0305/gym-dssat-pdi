@@ -1,0 +1,14 @@
+{
+  "checkpoint_archives_all_distinct": true,
+  "saved_and_runtime_sb3_versions_match": true,
+  "target_unchanged_5k_to_10k": true,
+  "target_changed_10k_to_15k": true,
+  "target_unchanged_15k_to_20k": true,
+  "target_changed_20k_to_25k": true,
+  "online_full_n_ranking_changes": 42,
+  "online_n50_vs_n100_changes": 15,
+  "target_full_n_ranking_changes": 0,
+  "historical_training_loss_available": false,
+  "td_metric_scope": "posthoc checkpoint Bellman residual on each saved replay buffer",
+  "td_cross_evaluation_completed": true
+}

@@ -1,0 +1,14 @@
+{
+  "status": "completed",
+  "branch": "C_no_feasible_path",
+  "feasible_seed_count": 0,
+  "total_seeds": 3,
+  "alpha_grid_min": 0.0,
+  "alpha_grid_max": 1.0,
+  "alpha_grid_step": 0.001,
+  "protected_dap110_scenario_count": 8,
+  "dqn_training_steps": 0,
+  "dssat_calls": 0,
+  "saved_interpolated_checkpoint": false,
+  "limitation": "Linear parameter interpolation is a path feasibility audit, not a trained model or convergence proof."
+}

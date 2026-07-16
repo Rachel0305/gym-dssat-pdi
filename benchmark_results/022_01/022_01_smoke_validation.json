@@ -1,0 +1,34 @@
+{
+  "checks": {
+    "yield_within_2": true,
+    "irrigation_75": true,
+    "nitrogen_200": true,
+    "no_missing_daps": true,
+    "matches_previous_yield_within_2": true
+  },
+  "all_pass": true,
+  "result": {
+    "scenario": "smoke_replay_02118_oracle_I75_N200",
+    "phase": "input_chain_smoke",
+    "final_gwad": 11205.0,
+    "final_cwad": 20132.0,
+    "requested_irrigation_total": 75.0,
+    "requested_nitrogen_total": 200.0,
+    "summary_irrigation_total": 75.0,
+    "summary_nitrogen_total": 200.0,
+    "nitrogen_uptake_kg_ha": 280.0,
+    "etcp_mm": 488.0,
+    "WP_ET_kg_m3": 2.3000000000000003,
+    "WP_ET_recalculated": 2.296106557377049,
+    "IWP_gross_kg_m3": 14.940000000000001,
+    "PFP_N_kg_kg": 56.0,
+    "NUtE_kg_kg": 40.0,
+    "PNB_N": 1.4,
+    "summary_match_score": 0.0,
+    "summary_row_index": 2,
+    "missing_schedule_daps": "[]",
+    "yield_pass": true,
+    "pfp_pass": true,
+    "run_dir": "benchmark_results/022_01/runs/smoke_replay_02118_oracle_I75_N200"
+  }
+}

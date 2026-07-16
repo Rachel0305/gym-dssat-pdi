@@ -1,0 +1,11 @@
+{
+  "status": "completed_offline_no_dssat",
+  "replication_validation_passed": true,
+  "nonzero_population_fraction": 0.03125,
+  "median_nonzero_probability_mass": 0.1232694305791883,
+  "median_sample_nonzero_fraction": 0.078125,
+  "median_noop_to_nonzero_gradient_norm_ratio": 21.068178176879883,
+  "median_noop_nonzero_gradient_cosine": -0.4294109642505646,
+  "interpretation_branch": "B_nonzero_sampled_but_gradients_conflict",
+  "no_online_training_performed": true
+}

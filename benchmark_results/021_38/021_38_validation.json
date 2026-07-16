@@ -1,0 +1,8 @@
+{
+  "checkpoint_count": 5,
+  "all_finite": true,
+  "target_hash_unique_count": 1,
+  "target_network_constant_across_1k": true,
+  "no_optimizer_step_or_dssat_call": true,
+  "all_required_checks_pass": true
+}

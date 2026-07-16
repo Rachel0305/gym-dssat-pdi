@@ -1,0 +1,16 @@
+{
+  "status": "completed_seed0_single_variable_25k",
+  "only_changed_parameter": "exploration_fraction: 0.35 -> 0.70",
+  "baseline_20k": {
+    "epsilon": 0.05,
+    "yield_kg_ha": 5711.0,
+    "nitrogen_kg_ha": 0.0
+  },
+  "extended_20k": {
+    "epsilon": 0.4571700000000001,
+    "yield_kg_ha": 11068.0,
+    "nitrogen_kg_ha": 300.0
+  },
+  "collapse_prevented_through_25k_seed0": true,
+  "causal_scope": "supports exploration schedule as a contributing mechanism; cross-seed replication pending"
+}

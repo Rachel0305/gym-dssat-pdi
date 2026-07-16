@@ -1,0 +1,21 @@
+{
+  "initial_q_hash": "b4cabd173644052f0a4c37313d5e7246f89a848658d8598f4452cf1dbdebb5c7",
+  "expected_021_34_q_hash": "b4cabd173644052f0a4c37313d5e7246f89a848658d8598f4452cf1dbdebb5c7",
+  "initial_hash_matches": true,
+  "target_sync_changed_online_q": false,
+  "demonstration_hash_before": "5615150b97391072c181ed593e4d15ab7af41cb0c201e8435889163e202bce0d",
+  "demonstration_hash_after": "5615150b97391072c181ed593e4d15ab7af41cb0c201e8435889163e202bce0d",
+  "demonstrations_unchanged": true,
+  "replay_agent_count_final": 996,
+  "all_batches_16_demo_16_agent": true,
+  "all_demo_halves_8_noop_8_nonzero": true,
+  "all_updates_finite": true,
+  "gradient_clip_fraction": 0.0,
+  "reproduction_500_nonzero_recall": 0.8,
+  "all_treatment_demo_nstep_weights_zero": true,
+  "control_pass_count": 1,
+  "treatment_pass_count": 4,
+  "all_treatment_evaluations_finite": true,
+  "all_treatment_evaluations_terminated": true,
+  "all_required_checks_pass": true
+}

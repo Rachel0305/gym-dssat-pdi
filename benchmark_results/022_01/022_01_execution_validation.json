@@ -1,0 +1,11 @@
+{
+  "checks": {
+    "candidate_count_48": true,
+    "all_scheduled_daps_fired": true,
+    "irrigation_summary_matches_requested": true,
+    "nitrogen_summary_matches_requested": true,
+    "all_summary_match_scores_zero": true,
+    "all_candidates_have_no_late_n": true
+  },
+  "all_pass": true
+}

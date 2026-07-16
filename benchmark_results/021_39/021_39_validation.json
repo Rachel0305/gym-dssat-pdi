@@ -1,0 +1,14 @@
+{
+  "checkpoint_reproduction_max_abs_errors": {
+    "yield_kg_ha": 0.0,
+    "biomass_kg_ha": 0.0,
+    "irrigation_mm": 0.0,
+    "nitrogen_kg_ha": 0.0,
+    "late_n_after_dap90_kg_ha": 0.0
+  },
+  "checkpoint_trajectory_exactly_reproduced": true,
+  "update_rows": 951,
+  "expected_update_rows": 951,
+  "all_updates_finite": true,
+  "all_required_checks_pass": true
+}

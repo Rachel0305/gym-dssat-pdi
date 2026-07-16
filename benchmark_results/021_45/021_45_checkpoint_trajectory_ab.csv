@@ -1,0 +1,11 @@
+﻿online_seed,checkpoint,yield_kg_ha,biomass_kg_ha,irrigation_mm,nitrogen_kg_ha,late_n_after_dap90_kg_ha,expert_efficiency_gate,q_values_finite,terminated_or_truncated,nonzero_operation_count,reward_total,arm,feasibility_bonus_recalculated,candidate_reward_recalculated
+1.0,0,11175.0,20122.0,90.0,300.0,0.0,True,True,True,,,control_021_42_seed1,1620.0,5797.0
+1.0,250,11175.0,20123.0,75.0,300.0,0.0,True,True,True,5.0,4192.12939453125,control_021_42_seed1,1620.0,5812.0
+1.0,500,11170.0,20073.0,105.0,300.0,0.0,True,True,True,7.0,4156.727783203125,control_021_42_seed1,1620.0,5777.0
+1.0,750,11154.0,19980.0,120.0,300.0,0.0,True,True,True,8.0,4126.212646484375,control_021_42_seed1,1620.0,5746.0
+1.0,1000,10787.0,18996.0,90.0,150.0,0.0,False,True,True,6.0,4538.910400390625,control_021_42_seed1,0.0,4539.0
+,0,11175.0,20122.0,90.0,300.0,0.0,True,True,True,,5796.7802734375,treatment_terminal_bonus,1620.0,5797.0
+,250,11170.0,20074.0,90.0,300.0,0.0,True,True,True,6.0,5792.09033203125,treatment_terminal_bonus,1620.0,5792.0
+,500,11175.0,20122.0,90.0,300.0,0.0,True,True,True,6.0,5796.7802734375,treatment_terminal_bonus,1620.0,5797.0
+,750,11154.0,19980.0,120.0,300.0,0.0,True,True,True,8.0,5746.212646484375,treatment_terminal_bonus,1620.0,5746.0
+,1000,10787.0,18996.0,90.0,150.0,0.0,False,True,True,6.0,4538.910400390625,treatment_terminal_bonus,0.0,4539.0

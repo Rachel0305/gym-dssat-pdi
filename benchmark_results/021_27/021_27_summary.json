@@ -1,0 +1,10 @@
+{
+  "status": "completed_offline_no_dssat",
+  "target_validation_passed": true,
+  "control_passing_milestones": [],
+  "treatment_passing_milestones": [],
+  "control_two_consecutive_pass": false,
+  "treatment_two_consecutive_pass": false,
+  "pre_registered_interpretation_branch": "C_full_return_to_go_not_sufficient",
+  "no_online_training_performed": true
+}

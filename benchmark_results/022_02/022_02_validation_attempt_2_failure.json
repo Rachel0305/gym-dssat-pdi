@@ -1,0 +1,7 @@
+{
+  "status": "failed_before_training",
+  "error": "Expected executable initial DAP 1, got 0 after one no-op",
+  "cause": "saved 022_01 daily values show DAP0 persists for 21 initialization transitions before executable DAP1",
+  "action": "replace one-step initialization with bounded no-op loop until DAP1",
+  "training_started": false
+}

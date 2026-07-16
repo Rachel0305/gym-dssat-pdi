@@ -1,0 +1,9 @@
+{
+  "bonus_derivation": "1.0*120.0+5.0*300.0",
+  "bonus_value": 1620.0,
+  "checkpoint_rows": 12,
+  "seed_count": 3,
+  "no_training_or_dssat_calls": true,
+  "existing_reward_implementation_modified": false,
+  "all_required_checks_pass": true
+}

@@ -1,0 +1,25 @@
+check,passed,evidence
+official_source_daps_locked,True,"(0, 30, 50, 65, 85, 110)"
+gym_dap0_mapped_only_to_dap1,True,"(1, 30, 50, 65, 85, 110)"
+yaml_source_daps_match_code,True,"[0, 30, 50, 65, 85, 110]"
+yaml_executable_daps_match_code,True,"[1, 30, 50, 65, 85, 110]"
+stage_daps_strictly_increasing,True,"(1, 30, 50, 65, 85, 110)"
+all_stages_inside_growth_season,True,maturity=139
+action_table_is_cartesian_3x3,True,9 unique actions
+non_stage_day_forces_noop,True,"(0,)"
+dap110_nitrogen_action_mask,True,"(0, 1, 2)"
+pre_silking_stage_allows_9_actions,True,"(0, 1, 2, 3, 4, 5, 6, 7, 8)"
+remaining_budget_clip,True,"ExecutedAction(action_index=8, requested_irrigation=30.0, requested_nitrogen=100.0, executed_irrigation=15.0, executed_nitrogen=50.0)"
+budget_constants_frozen,True,"I=120.0,N=300.0"
+late_n_rejected_not_aliased,True,DAP110 action3 raises ValueError
+oracle_daps_not_used_as_stage_daps,True,"{22: 8, 29: 1, 42: 8, 56: 6, 79: 6}"
+oracle_proximity_is_audit_only,True,"{22: 8, 29: 1, 42: 8, 56: 6, 79: 6}"
+terminal_reward_constants,True,5408/11077/1620
+terminal_complete_return_handcheck,True,G0=6342.0
+return_has_one_target_per_stage,True,"[6342.0, 6357.0, 6622.0, 7137.0, 7402.0, 7417.0]"
+one_step_td_disabled_by_design,True,single loss target is terminal-complete G_t
+five_step_td_disabled_by_design,True,no parallel 5-step loss
+target_bootstrap_disabled_by_design,True,completed episode return contains no target-network bootstrap
+yaml_has_single_terminal_complete_target,True,"{""type"": ""terminal_complete_monte_carlo_return"", ""gamma"": 1.0, ""one_step_td_enabled"": false, ""five_step_td_enabled"": false, ""target_network_bootstrap_enabled"": false}"
+yaml_disables_training_and_dssat,True,"training=false,dssat=false"
+no_training_or_dssat_in_022_00,True,pure Python unit test

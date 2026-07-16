@@ -1,0 +1,5 @@
+scenario,irrigation_pattern,nitrogen_pattern,final_gwad,final_cwad,requested_irrigation_total,requested_nitrogen_total,expected_irrigation_total,expected_nitrogen_total,missing_schedule_daps,reference_checkpoint_gwad,absolute_reproduction_error,run_dir,actual_irrigation_total,actual_nitrogen_total,actual_irrigation_events,actual_nitrogen_events
+i_early__n_early,unscaled_021_10,unscaled_021_10,11046.0,19752.0,120.0,300.0,120.0,300.0,[],11046.28125,0.28125,benchmark_results/021_16/i_early__n_early,120.0,300.0,8.0,4.0
+i_early__n_late,unscaled_021_10,scaled_0p1_021_14,8127.0,14508.0,120.0,300.0,120.0,300.0,[],,,benchmark_results/021_16/i_early__n_late,120.0,300.0,8.0,3.0
+i_late__n_early,scaled_0p1_021_14,unscaled_021_10,11026.0,19664.0,120.0,300.0,120.0,300.0,[],,,benchmark_results/021_16/i_late__n_early,120.0,300.0,8.0,4.0
+i_late__n_late,scaled_0p1_021_14,scaled_0p1_021_14,8120.0,14461.0,120.0,300.0,120.0,300.0,[],8120.24609375,0.24609375,benchmark_results/021_16/i_late__n_late,120.0,300.0,8.0,3.0

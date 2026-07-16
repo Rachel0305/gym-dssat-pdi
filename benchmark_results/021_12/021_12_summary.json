@@ -1,0 +1,18 @@
+{
+  "status": "completed_offline",
+  "training_or_dssat_calls": 0,
+  "target_update_events": 4,
+  "target_frozen_events": 2,
+  "target_update_relative_l2_range": [
+    0.3792892768966078,
+    0.5467975080623576
+  ],
+  "target_frozen_relative_l2_max": 0.0,
+  "sy_selected_reward_median": 4108.8499755859375,
+  "sy_to_yc_fq_lc_median_ratio_range": [
+    5.0506091770359385,
+    6.663897409114496
+  ],
+  "hla_reward_evidence_status": "missing_standardized_selected_result_in_audited_scopes",
+  "interpretation_limit": "descriptive only; few update events and provisional cross-site reward scopes; do not infer causality or call reward scale a confirmed root cause"
+}

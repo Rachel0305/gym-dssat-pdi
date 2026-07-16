@@ -1,0 +1,7 @@
+window,network,comparisons,full_ranking_changes,n50_vs_n100_changes,global_argmax_changes
+10K-15K,online,54,25,10,8
+10K-15K,target,54,50,30,16
+15K-20K,online,54,17,9,6
+15K-20K,target,54,0,0,0
+20K-25K,online,54,39,24,12
+20K-25K,target,54,29,13,9

@@ -1,0 +1,13 @@
+{
+  "yield_kg_ha": 11205.0,
+  "biomass_kg_ha": 20132.0,
+  "irrigation_mm": 75.0,
+  "nitrogen_kg_ha": 200.0,
+  "observation_count": 160,
+  "action_count": 160,
+  "all_observations_finite": true,
+  "nonzero_event_count": 5,
+  "nonzero_all_uncropped": true,
+  "yield_reproduction_error": 0.0,
+  "passed": true
+}

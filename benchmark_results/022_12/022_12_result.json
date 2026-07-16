@@ -1,0 +1,22 @@
+{
+  "status": "completed",
+  "branch": "A_compatible",
+  "compatible_seed_count": 3,
+  "total_seed_count": 3,
+  "dqn_training_steps": 0,
+  "dssat_calls": 0,
+  "virtual_learning_rate": 0.0001,
+  "pair_loss_formula": "SmoothL1(Q(s,a1)-Q(s,a7), (G1-G7)/1000)",
+  "lambda_formula": "norm(grad_shared_L_MC)/norm(grad_shared_L_pair)",
+  "shared_parameters": [
+    "net.0.weight",
+    "net.0.bias",
+    "net.2.weight",
+    "net.2.bias"
+  ],
+  "output_parameters": [
+    "net.4.weight",
+    "net.4.bias"
+  ],
+  "next_step_allowed": true
+}

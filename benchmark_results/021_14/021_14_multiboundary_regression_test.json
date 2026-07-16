@@ -1,0 +1,15 @@
+{
+  "checked": true,
+  "stored_count": 9998,
+  "record_count": 10000,
+  "committed_record_count": 9998,
+  "callback_boundary_uncommitted_final_step": true,
+  "uncommitted_boundary_steps": [
+    5000,
+    10000
+  ],
+  "max_abs_error": 1.2207031204525265e-05,
+  "mean_abs_error": 7.569873321469958e-08,
+  "all_finite": true,
+  "passed": true
+}

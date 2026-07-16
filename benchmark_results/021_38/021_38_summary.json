@@ -1,0 +1,8 @@
+{
+  "status": "completed",
+  "branch": "B",
+  "conflict_checkpoints": [],
+  "interpretation": "demo n-step/margin\u68af\u5ea6\u51b2\u7a81\u6307\u6807\u5728\u65f6\u95f4\u4e0a\u6ca1\u6709\u533a\u5206\u529b\uff0c\u4e0d\u80fd\u89e3\u91ca\u574d\u7f29\u4e0e\u6062\u590d\u3002",
+  "agent_gradient_not_available": true,
+  "causal_claim_allowed": false
+}

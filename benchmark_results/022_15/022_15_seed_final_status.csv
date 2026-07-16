@@ -1,0 +1,4 @@
+seed,final_pass,intermediate_pass,intermediate_pass_then_regressed,final_mc_loss_relative_change,final_all_pair_margins_positive,final_dap1_changes,final_dap110_changes
+0,False,False,False,-0.4150483818153998,True,0,6
+1,False,False,False,-0.4234122052905516,True,0,2
+2,False,False,False,-0.4288314375617179,True,0,3

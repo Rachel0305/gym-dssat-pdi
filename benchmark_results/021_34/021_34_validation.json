@@ -1,0 +1,20 @@
+{
+  "offline_500_max_abs_errors": {
+    "noop_accuracy": 1.1102230246251565e-16,
+    "nonzero_action_recall": 0.0,
+    "positive_expert_margin_fraction_nonzero": 0.0,
+    "mean_expert_margin_nonzero": 8.326672684688674e-17
+  },
+  "offline_500_reproduced": true,
+  "parameter_hash_before_forward": "b4cabd173644052f0a4c37313d5e7246f89a848658d8598f4452cf1dbdebb5c7",
+  "parameter_hash_after_forward": "b4cabd173644052f0a4c37313d5e7246f89a848658d8598f4452cf1dbdebb5c7",
+  "parameters_unchanged": true,
+  "replay_agent_size_before": 0,
+  "replay_agent_size_after": 0,
+  "replay_unchanged_and_demo_only": true,
+  "q_values_finite": true,
+  "season_terminated_or_truncated": true,
+  "resource_totals_within_wrapper_budgets": true,
+  "no_optimizer_or_online_learning": true,
+  "all_required_checks_pass": true
+}

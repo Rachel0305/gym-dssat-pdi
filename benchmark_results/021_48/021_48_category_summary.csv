@@ -1,0 +1,3 @@
+category,draws,unique_transitions,target_actual_mean,target_no_bonus_mean,residual_actual_mean,residual_no_bonus_mean,bonus_share_of_actual_residual_mean,no_bonus_still_huber_linear_fraction,huber_gradient_identical_fraction
+direct_bonus,1703,4,7390.028463671646,5770.028463671646,7377.382863107178,5757.382863107178,0.21959044544234957,1.0,1.0
+nstep_contains_bonus,1890,20,7372.332815858548,5756.179410415691,7359.834529277508,5743.681123834651,0.21959140039307146,1.0,1.0

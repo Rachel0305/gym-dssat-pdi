@@ -1,0 +1,36 @@
+{
+  "scale": 0.1,
+  "demo_reward_max_abs_error": 0.0,
+  "demo_n_step_return_max_abs_error": 0.0,
+  "demo_reward_nonzero_ratio_min": 0.10000000149011612,
+  "demo_reward_nonzero_ratio_max": 0.10000000149011612,
+  "demo_nstep_nonzero_ratio_min": 0.10000000149011612,
+  "demo_nstep_nonzero_ratio_max": 0.10000000894069672,
+  "environment_observation_variables": [
+    "cumsumfert",
+    "dap",
+    "dtt",
+    "ep",
+    "grnwt",
+    "istage",
+    "nstres",
+    "rtdep",
+    "srad",
+    "sw",
+    "swfac",
+    "tmax",
+    "topwt",
+    "totir",
+    "vstage",
+    "wtdep",
+    "xlai"
+  ],
+  "environment_observation_shape": [
+    25
+  ],
+  "agent_reward_max_abs_error": 0.0,
+  "agent_nonzero_reward_ratio_min": 0.1,
+  "agent_nonzero_reward_ratio_max": 0.1,
+  "component_scaled_sum_max_abs_error": 0.0,
+  "all_scale_checks_pass": true
+}

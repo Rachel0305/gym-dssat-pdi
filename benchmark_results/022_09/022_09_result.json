@@ -1,0 +1,48 @@
+{
+  "status": "completed",
+  "branch": "B_partial_improvement_critical_pair_reversed",
+  "next_step": "pause_warmstart_run_controlled_dap65_action_swap",
+  "zero_training": true,
+  "zero_dssat_calls": true,
+  "checks": {
+    "three_seeds": true,
+    "six_actions_each_seed": true,
+    "exact_expected_actions": true,
+    "finite_q_and_target": true
+  },
+  "spearman_at_least_0p5_seed_count": 0,
+  "q_prefers_action1_over_action7_seed_count": 0,
+  "seed_summaries": [
+    {
+      "seed": 0,
+      "dap65_q_target_spearman": 0.2571428571428572,
+      "q_best_action": 7,
+      "recorded_target_best_action": 1,
+      "q_action7_minus_action1": 0.0142974853515625,
+      "target_action7_minus_action1": -0.4852561950683585,
+      "q_prefers_action1_over_action7": false,
+      "spearman_improved_over_022_06_minus_0p6": true
+    },
+    {
+      "seed": 1,
+      "dap65_q_target_spearman": 0.3142857142857143,
+      "q_best_action": 7,
+      "recorded_target_best_action": 1,
+      "q_action7_minus_action1": 0.34686851501464844,
+      "target_action7_minus_action1": -0.4852561950683585,
+      "q_prefers_action1_over_action7": false,
+      "spearman_improved_over_022_06_minus_0p6": true
+    },
+    {
+      "seed": 2,
+      "dap65_q_target_spearman": 0.14285714285714288,
+      "q_best_action": 7,
+      "recorded_target_best_action": 1,
+      "q_action7_minus_action1": 0.18544816970825195,
+      "target_action7_minus_action1": -0.4852561950683585,
+      "q_prefers_action1_over_action7": false,
+      "spearman_improved_over_022_06_minus_0p6": true
+    }
+  ],
+  "guardrail": "DAP65 grouped targets are history-confounded descriptive evidence, not same-state causal counterfactuals."
+}

@@ -1,0 +1,13 @@
+{
+  "unchanged_fields_max_abs_error": {
+    "observations": 0.0,
+    "actions": 0.0,
+    "rewards": 0.0,
+    "next_observations": 0.0,
+    "dones": 0.0
+  },
+  "all_treatment_targets_terminal": true,
+  "all_nonzero_full_returns_positive": true,
+  "all_arrays_finite": true,
+  "passed": true
+}

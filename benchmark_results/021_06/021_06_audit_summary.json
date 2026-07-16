@@ -1,0 +1,11 @@
+{
+  "fixed_state_count": 18,
+  "rank_flip_count_online": 28,
+  "robust_rank_flip_count_online": 19,
+  "rank_flip_count_target": 0,
+  "robust_rank_flip_count_target": 0,
+  "states_with_aliasing": 9,
+  "states_all_requests_alias_to_one": 8,
+  "observation_explicitly_contains_budget_or_last_operation": false,
+  "totir_is_available_as_irrigation_proxy": true
+}

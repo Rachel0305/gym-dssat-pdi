@@ -1,0 +1,7 @@
+{
+  "status": "failed_before_training",
+  "error": "Expected initial DAP 1, got 0",
+  "cause": "gym-DSSAT reset exposes DAP0 initialization state; wrapper had not yet advanced it with explicit no-op",
+  "action": "add explicit DAP0 no-op initialization transition and rerun validation only",
+  "training_started": false
+}

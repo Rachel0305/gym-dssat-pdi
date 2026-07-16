@@ -1,0 +1,4 @@
+seed,dap65_q_target_spearman,q_best_action,recorded_target_best_action,q_action7_minus_action1,target_action7_minus_action1,q_prefers_action1_over_action7,spearman_improved_over_022_06_minus_0p6
+0,0.2571428571428572,7,1,0.0142974853515625,-0.4852561950683585,False,True
+1,0.3142857142857143,7,1,0.34686851501464844,-0.4852561950683585,False,True
+2,0.14285714285714288,7,1,0.18544816970825195,-0.4852561950683585,False,True

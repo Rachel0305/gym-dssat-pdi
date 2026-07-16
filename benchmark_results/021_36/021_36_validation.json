@@ -1,0 +1,9 @@
+{
+  "checkpoint_count": 5,
+  "expected_checkpoint_count": 5,
+  "event_rows": 25,
+  "expected_event_rows": 25,
+  "all_q_and_parameters_finite": true,
+  "no_training_or_dssat_calls": true,
+  "all_required_checks_pass": true
+}

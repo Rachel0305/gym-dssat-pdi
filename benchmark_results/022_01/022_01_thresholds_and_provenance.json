@@ -1,0 +1,11 @@
+{
+  "yield_min": 11077.0,
+  "wp_et_min": 2.26,
+  "pfp_n_min": 36.9,
+  "strict_i_max": 90.0,
+  "strict_n_max": 250.0,
+  "budget_i_max": 120.0,
+  "budget_n_max": 300.0,
+  "primary_source": "prompts/021_18_sy2014_deterministic_upper_bound_oracle_search.md pre-registered criteria",
+  "strict_source": "later 021_20 smoke gate, informed by 021_18 I75/N200 result; secondary only"
+}

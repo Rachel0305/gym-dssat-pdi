@@ -1,0 +1,55 @@
+{
+  "status": "passed",
+  "checks": {
+    "six_exact_stage_daps": true,
+    "yield_11202_pm2": true,
+    "irrigation_total_60": true,
+    "nitrogen_total_200": true,
+    "g0_6354": true,
+    "all_nonstage_noop": true,
+    "dap110_n_action_raises": true,
+    "summary_resources_match": true,
+    "finite_scaled_returns": true
+  },
+  "action_sequence": [
+    3,
+    4,
+    7,
+    1,
+    1,
+    0
+  ],
+  "final_yield": 11202.00439453125,
+  "final_biomass": 20111.038818359375,
+  "irrigation_total": 60.0,
+  "nitrogen_total": 200.0,
+  "returns_raw": [
+    6354.00439453125,
+    6604.00439453125,
+    6869.00439453125,
+    7384.00439453125,
+    7399.00439453125,
+    7414.00439453125
+  ],
+  "returns_scaled": [
+    6.35400439453125,
+    6.60400439453125,
+    6.86900439453125,
+    7.38400439453125,
+    7.39900439453125,
+    7.41400439453125
+  ],
+  "summary_metrics": {
+    "summary_irrigation_total": 60.0,
+    "summary_nitrogen_total": 200.0,
+    "etcp_mm": 484.8,
+    "WP_ET_kg_m3": 2.31,
+    "PFP_N_kg_kg": 56.0,
+    "summary_match_score": 0.00439453125,
+    "summary_row_index": 2,
+    "no_late_n": true,
+    "primary_pass": true,
+    "strict_pass": true
+  },
+  "return_formula": "11202.00439453125-5408+1620-60-5*200=6354.00439453125"
+}

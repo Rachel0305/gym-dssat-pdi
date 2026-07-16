@@ -1,0 +1,6 @@
+﻿checkpoint,yield_kg_ha,biomass_kg_ha,irrigation_mm,nitrogen_kg_ha,late_n_after_dap90_kg_ha,nonzero_operation_count,reward_total,q_values_finite,terminated_or_truncated,expert_efficiency_gate,source
+0,11175.0,20122.0,90.0,300.0,0.0,6,4176.7802734375,True,True,True,reused_021_34
+250,5408.0,10603.0,0.0,0.0,0.0,0,0.0963134765625,True,True,False,
+500,5408.0,10603.0,0.0,0.0,0.0,0,0.0963134765625,True,True,False,
+750,10603.0,19305.0,30.0,200.0,0.0,2,4165.387451171875,True,True,False,
+1000,11175.0,20123.0,75.0,300.0,0.0,5,4192.12939453125,True,True,True,

@@ -1,0 +1,6 @@
+﻿transition_index,dap,action,immediate_reward,n_step_return,n_step_horizon,steps_to_terminal,terminal_reward,terminal_reward_inside_n_step_window,n_step_contains_any_positive_reward,absolute_cost_to_margin_0p8_ratio
+42,22,1,-15.0,-15.0,5,117,5797.423828125,False,False,18.75
+49,29,4,-265.0,-265.0,5,110,5797.423828125,False,False,331.25
+62,42,7,-515.0,-515.0,5,97,5797.423828125,False,False,643.75
+76,56,4,-265.0,-265.0,5,83,5797.423828125,False,False,331.25
+99,79,1,-15.0,-15.0,5,60,5797.423828125,False,False,18.75

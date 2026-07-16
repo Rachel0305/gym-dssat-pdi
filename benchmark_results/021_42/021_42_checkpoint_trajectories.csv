@@ -1,0 +1,11 @@
+﻿online_seed,checkpoint,yield_kg_ha,biomass_kg_ha,irrigation_mm,nitrogen_kg_ha,late_n_after_dap90_kg_ha,expert_efficiency_gate,q_values_finite,terminated_or_truncated,nonzero_operation_count,reward_total
+1,0,11175.0,20122.0,90.0,300.0,0.0,True,True,True,,
+1,250,11175.0,20123.0,75.0,300.0,0.0,True,True,True,5.0,4192.12939453125
+1,500,11170.0,20073.0,105.0,300.0,0.0,True,True,True,7.0,4156.727783203125
+1,750,11154.0,19980.0,120.0,300.0,0.0,True,True,True,8.0,4126.212646484375
+1,1000,10787.0,18996.0,90.0,150.0,0.0,False,True,True,6.0,4538.910400390625
+2,0,11175.0,20122.0,90.0,300.0,0.0,True,True,True,,
+2,250,11175.0,20122.0,90.0,300.0,0.0,True,True,True,6.0,4176.7802734375
+2,500,11170.0,20073.0,105.0,300.0,0.0,True,True,True,7.0,4156.727783203125
+2,750,10787.0,18996.0,90.0,150.0,0.0,False,True,True,6.0,4538.910400390625
+2,1000,10787.0,18996.0,90.0,150.0,0.0,False,True,True,6.0,4538.910400390625

@@ -1,0 +1,14 @@
+{
+  "status": "completed",
+  "branch": "A_compatible",
+  "compatible_seed_count": 3,
+  "total_seeds": 3,
+  "lambda65_fixed": 0.003002436945892297,
+  "lambda110_fixed": 0.06764715488665898,
+  "causal_gradient_budget_rule": "each pair group gets half the MC shared-gradient norm",
+  "soft_anchor_included": false,
+  "dqn_training_steps": 0,
+  "dssat_calls": 0,
+  "saved_updated_checkpoint": false,
+  "next_step_allowed": true
+}

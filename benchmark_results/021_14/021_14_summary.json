@@ -1,0 +1,16 @@
+{
+  "status": "completed",
+  "comparison_is_single_variable_within_exploration_fraction_0p70": true,
+  "scaled_yield_range_kg_ha": [
+    8120.0,
+    11199.0
+  ],
+  "unscaled_yield_range_kg_ha": [
+    7352.0,
+    11074.0
+  ],
+  "scaled_has_two_large_intermediate_declines": true,
+  "scaled_final_yield_kg_ha": 11199.0,
+  "unscaled_final_yield_kg_ha": 10794.0,
+  "interpretation": "Reward scaling changes Q magnitude and training trajectory but does not eliminate checkpoint instability for seed1; it is not a sufficient standalone fix."
+}

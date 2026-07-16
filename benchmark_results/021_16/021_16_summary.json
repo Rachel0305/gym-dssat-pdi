@@ -1,0 +1,11 @@
+{
+  "status": "completed_deterministic_forward",
+  "training_calls": 0,
+  "dssat_forward_runs": 4,
+  "mean_n_timing_effect_early_minus_late_kg_ha": 2912.5,
+  "mean_irrigation_timing_effect_late_minus_early_kg_ha": -13.5,
+  "all_actual_totals_i120_n300": true,
+  "high_schedule_reproduction_error_kg_ha": 0.28125,
+  "low_schedule_reproduction_error_kg_ha": 0.24609375,
+  "interpretation": "Under fixed SY2014 IC=2 input and identical seasonal I120/N300, swapping only the nitrogen timing changes yield by about 2.91 t/ha, while swapping only the two observed irrigation timings changes yield by 7-20 kg/ha. This controlled DSSAT comparison supports nitrogen timing as the dominant cause for the two 10K checkpoint yield outcomes. It does not by itself identify the DQN training root cause."
+}

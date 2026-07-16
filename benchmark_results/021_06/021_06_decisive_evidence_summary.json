@@ -1,0 +1,24 @@
+{
+  "online_rank_flips_total": 28,
+  "online_robust_rank_flips_total": 19,
+  "online_rank_flips_in_unaliased_states": 14,
+  "online_robust_rank_flips_in_unaliased_states": 11,
+  "target_rank_flips_total": 0,
+  "target_q_max_abs_difference_15k_vs_20k": 0.0,
+  "online_argmax_changed_states": 15,
+  "online_argmax_changed_unaliased_states": 9,
+  "states_total": 18,
+  "states_with_action_aliasing": 9,
+  "states_all_requests_alias_to_one": 8,
+  "initial_dap1_argmax_15k": {
+    "action_index": 8,
+    "irrigation": 30.0,
+    "nitrogen": 100.0
+  },
+  "initial_dap1_argmax_20k": {
+    "action_index": 0,
+    "irrigation": 0.0,
+    "nitrogen": 0.0
+  },
+  "interpretation": "Both online-Q ordering drift and state-dependent action aliasing are present. The DAP1 argmax changes from action 8 (I30/N100) at 15K to action 0 (I0/N0) at 20K while all nine actions are executable, so wrapper aliasing alone cannot explain nitrogen abandonment. Target-Q values are identical between the 15K and 20K checkpoints on all fixed states, localizing the observed ordering change to the online network during this interval; causality remains unproven."
+}

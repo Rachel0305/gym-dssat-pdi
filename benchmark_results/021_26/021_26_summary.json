@@ -1,0 +1,22 @@
+{
+  "status": "completed_offline_no_dssat",
+  "milestones": [
+    0,
+    10,
+    25,
+    50,
+    100,
+    250,
+    500,
+    1000,
+    2000,
+    5000
+  ],
+  "demo_transition_count": 160,
+  "demo_nonzero_action_count": 5,
+  "passing_milestones": [],
+  "two_consecutive_milestones_passed": false,
+  "pre_registered_interpretation_branch": "C_more_current_pretraining_not_sufficient",
+  "no_online_training_performed": true,
+  "no_parameter_changed_after_results": true
+}

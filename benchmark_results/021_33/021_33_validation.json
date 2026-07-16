@@ -1,0 +1,25 @@
+{
+  "021_32_treatment_max_abs_errors": {
+    "noop_accuracy": 1.1102230246251565e-16,
+    "nonzero_action_recall": 0.0,
+    "positive_expert_margin_fraction_nonzero": 0.0,
+    "mean_expert_margin_nonzero": 8.326672684688674e-17
+  },
+  "learning_curve_reproduced": true,
+  "false_positive_count_checks": {
+    "500": {
+      "expected": 9,
+      "observed": 9,
+      "match": true
+    },
+    "1000": {
+      "expected": 17,
+      "observed": 17,
+      "match": true
+    }
+  },
+  "false_positive_counts_match": true,
+  "all_q_values_finite": true,
+  "all_updates_finite": true,
+  "passed": true
+}

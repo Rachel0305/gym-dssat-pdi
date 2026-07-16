@@ -1,0 +1,21 @@
+{
+  "status": "completed_seed1_25k",
+  "seed0_20k": {
+    "yield_kg_ha": 11068.0,
+    "nitrogen_kg_ha": 300.0,
+    "reward_total": 4039.6171875
+  },
+  "seed1_20k": {
+    "yield_kg_ha": 7352.0,
+    "nitrogen_kg_ha": 50.0,
+    "reward_total": 1573.749267578125
+  },
+  "seed1_25k": {
+    "yield_kg_ha": 10794.0,
+    "nitrogen_kg_ha": 300.0,
+    "reward_total": 3765.721923828125
+  },
+  "strict_cross_seed_stability_through_all_checkpoints": false,
+  "permanent_n0_lock_in_avoided_through_25k_both_seeds": true,
+  "interpretation": "Extended exploration prevents permanent N0 lock-in through 25K, but seed1 shows a transient nitrogen/yield collapse at 15K-20K and recovery at 25K."
+}

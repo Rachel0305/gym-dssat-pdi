@@ -1,0 +1,13 @@
+﻿checkpoint,yield_kg_ha,biomass_kg_ha,irrigation_mm,nitrogen_kg_ha,late_n_after_dap90_kg_ha,nonzero_operation_count,reward_total,q_values_finite,terminated_or_truncated,expert_efficiency_gate,source,arm,online_seed,recalculated_reward,expert_gate_recomputed
+250,11175.0,20122.0,90.0,300.0,0.0,6.0,4176.7802734375,True,True,True,,treatment_mask_demo_nstep,0,4177.0,True
+500,11175.0,20122.0,90.0,300.0,0.0,6.0,4176.7802734375,True,True,True,,treatment_mask_demo_nstep,0,4177.0,True
+750,11205.0,20119.0,90.0,200.0,0.0,6.0,4706.90478515625,True,True,True,,treatment_mask_demo_nstep,0,4707.0,True
+1000,11205.0,20119.0,90.0,200.0,0.0,6.0,4706.90478515625,True,True,True,,treatment_mask_demo_nstep,0,4707.0,True
+250,11175.0,20123.0,75.0,300.0,0.0,5.0,4192.12939453125,True,True,True,,,1,4192.0,True
+500,11170.0,20073.0,105.0,300.0,0.0,7.0,4156.727783203125,True,True,True,,,1,4157.0,True
+750,11154.0,19980.0,120.0,300.0,0.0,8.0,4126.212646484375,True,True,True,,,1,4126.0,True
+1000,10787.0,18996.0,90.0,150.0,0.0,6.0,4538.910400390625,True,True,False,,,1,4539.0,False
+250,11175.0,20122.0,90.0,300.0,0.0,6.0,4176.7802734375,True,True,True,,,2,4177.0,True
+500,11170.0,20073.0,105.0,300.0,0.0,7.0,4156.727783203125,True,True,True,,,2,4157.0,True
+750,10787.0,18996.0,90.0,150.0,0.0,6.0,4538.910400390625,True,True,False,,,2,4539.0,False
+1000,10787.0,18996.0,90.0,150.0,0.0,6.0,4538.910400390625,True,True,False,,,2,4539.0,False

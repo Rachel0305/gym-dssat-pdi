@@ -1,0 +1,6 @@
+extends: 021_14_sy2014_reward_scale_seed1_25k.yaml
+site_config: ../sites/sya.yaml
+experiment:
+  experiment_id: 021_14_sy2014_reward_scale_seed1_25k_retry
+  description: SY2014 reward scale 0.1 formal retry after multi-checkpoint replay-boundary audit fix
+

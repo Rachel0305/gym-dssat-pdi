@@ -1,0 +1,32 @@
+{
+  "status": "smoke_passed_after_callback_boundary_fix",
+  "formal_25k_started": false,
+  "training_or_dssat_scope": "200-step smoke only",
+  "first_attempt": {
+    "status": "failed_safely",
+    "reason": "replay audit aligned 199 stored transitions with the last 199 of 200 wrapper records; SB3 stop callback observes one final env step before replay insertion",
+    "reward_formula_checks_were_already_exact": true
+  },
+  "retry": {
+    "experiment_id": "021_13_sy2014_reward_scale_smoke_retry__sy_2014_seed1",
+    "config_hash": "e6717a33db33e212c620a8cb961753a1549dec455bc447f99fc694090832ed26",
+    "steps": 200,
+    "reward_scale": 0.1,
+    "max_scale_identity_error": 0.0,
+    "max_component_identity_error": 0.0,
+    "component_fields_missing": 0,
+    "replay_stored_count": 199,
+    "wrapper_record_count": 200,
+    "callback_boundary_uncommitted_final_step": true,
+    "replay_max_abs_error": 1.2207031204525265e-05,
+    "replay_tolerance": 0.00013631146866828204,
+    "all_rewards_finite": true,
+    "audit_passed": true,
+    "exploration_rate": 0.9945985714285714,
+    "sb3_internal_total_timesteps": 50000,
+    "evaluation_reward_scope": "raw_unscaled_economic_reward",
+    "evaluation_reward_total": 3826.644775390625
+  },
+  "scientific_interpretation": "Implementation chain verified only.  The 200-step agricultural outcome is not evidence that reward scaling improves stability or policy quality.",
+  "next_gate": "User approval is required before a SY2014 seed1 25K single-variable comparison; that run must repeat 021_12 parameter-L2 and fixed-state Q/ranking metrics."
+}

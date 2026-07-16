@@ -1,0 +1,25 @@
+{
+  "threshold": 11077.0,
+  "bonus": 1620.0,
+  "bonus_derivation": "1.0*120.0+5.0*300.0",
+  "provenance": {
+    "yield_kg_ha": 11077.0,
+    "benchmark_scenario": "official_extension_expert",
+    "source_csv": "benchmark_results/021_18/021_18_baseline_metrics.csv",
+    "source_column": "yield_kg_ha",
+    "note": "SY2014 official extension expert threshold; no default fallback is allowed.",
+    "resolved_source_csv": "/workspace/benchmark_results/021_18/021_18_baseline_metrics.csv",
+    "source_value": 11077.0
+  },
+  "checks": {
+    "terminal_11076_bonus": true,
+    "terminal_11077_bonus": true,
+    "terminal_11078_bonus": true,
+    "nonterminal_bonus_zero": true,
+    "bonus_is_derived_not_fitted": true,
+    "feasible_n200_n300_difference_preserved_500": true,
+    "threshold_matches_provenance": true,
+    "missing_mapping_fails_closed": true
+  },
+  "all_pass": true
+}

@@ -1,0 +1,12 @@
+{
+  "seed_count": 3,
+  "checkpoint_rows": 12,
+  "formula_constants": {
+    "null_yield": 5408.0,
+    "water_cost": 1.0,
+    "nitrogen_cost": 5.0
+  },
+  "expert_gate_matches_saved": true,
+  "no_training_or_dssat_calls": true,
+  "all_required_checks_pass": true
+}

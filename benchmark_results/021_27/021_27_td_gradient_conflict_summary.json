@@ -1,0 +1,9 @@
+{
+  "status": "completed_offline_no_training",
+  "scaler_validation_passed": true,
+  "nonzero_event_count": 5,
+  "all_td_slopes_opposite": true,
+  "all_opposing_slopes_saturated": true,
+  "max_abs_equal_weight_td_slope_sum": 0.0,
+  "interpretation": "at initialization, equal-weight 1-step and full-return Huber gradients cancel exactly on every nonzero demonstration event"
+}

@@ -1,0 +1,7 @@
+{
+  "status": "failed_before_training",
+  "error": "Non-finite raw observation at the first executable stage DAP1",
+  "cause": "specific non-finite field not yet identified; zero imputation was deliberately not used",
+  "action": "add field-level diagnostics and rerun validation only",
+  "training_started": false
+}

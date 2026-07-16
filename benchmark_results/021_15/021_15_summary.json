@@ -1,0 +1,39 @@
+{
+  "status": "completed_offline",
+  "training_or_dssat_calls": 0,
+  "key_same_total_comparison": {
+    "unscaled_10k": {
+      "yield_kg_ha": 11046.0,
+      "irrigation_mm": 120.0,
+      "nitrogen_kg_ha": 300.0,
+      "irrigation_events": 8.0,
+      "irrigation_first_dap": 1.0,
+      "irrigation_last_dap": 50.0,
+      "irrigation_weighted_mean_dap": 25.5,
+      "nitrogen_events": 4.0,
+      "nitrogen_first_dap": 69.0,
+      "nitrogen_last_dap": 90.0,
+      "nitrogen_weighted_mean_dap": 78.33333333333333,
+      "nitrogen_after_silking_kg_ha": 50.0,
+      "nitrogen_after_grain_fill_start_kg_ha": 0.0
+    },
+    "scaled_10k": {
+      "yield_kg_ha": 8120.0,
+      "irrigation_mm": 120.0,
+      "nitrogen_kg_ha": 300.0,
+      "irrigation_events": 8.0,
+      "irrigation_first_dap": 1.0,
+      "irrigation_last_dap": 55.0,
+      "irrigation_weighted_mean_dap": 26.125,
+      "nitrogen_events": 3.0,
+      "nitrogen_first_dap": 94.0,
+      "nitrogen_last_dap": 109.0,
+      "nitrogen_weighted_mean_dap": 101.66666666666667,
+      "nitrogen_after_silking_kg_ha": 300.0,
+      "nitrogen_after_grain_fill_start_kg_ha": 200.0
+    }
+  },
+  "scaled_10k_nitrogen_all_after_silking": true,
+  "unscaled_10k_nitrogen_after_silking_kg_ha": 50.0,
+  "interpretation": "The same seasonal I120/N300 masks a major timing difference.  The scaled 10K policy applies all N at/after silking and much of it during grain fill, whereas the unscaled 10K policy applies most N before silking.  This supports real timing sensitivity and unstable temporal policy quality, but does not by itself prove a Markov-observation defect or isolate causality."
+}

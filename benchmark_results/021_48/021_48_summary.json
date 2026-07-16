@@ -1,0 +1,18 @@
+{
+  "status": "completed",
+  "branch": "B",
+  "input": "benchmark_results\\021_47\\021_47_agent_sample_draws.csv",
+  "identity_error": 0.0,
+  "direct_draws": 1703,
+  "direct_unique_transitions": 4,
+  "direct_no_bonus_still_huber_linear_fraction": 1.0,
+  "direct_huber_gradient_identical_fraction": 1.0,
+  "direct_actual_target_mean": 7390.028463671646,
+  "direct_no_bonus_target_mean": 5770.028463671646,
+  "direct_actual_residual_mean": 7377.382863107178,
+  "direct_no_bonus_residual_mean": 5757.382863107178,
+  "direct_bonus_share_of_actual_residual_mean": 0.21959044544234957,
+  "direct_empirical_mean_residual_closure_fraction": 0.0003580831101207382,
+  "direct_empirical_median_residual_closure_fraction": 0.000250398153224423,
+  "note": "Counterfactual holds the sampled rows fixed; PER probabilities and importance weights are not counterfactual training weights."
+}

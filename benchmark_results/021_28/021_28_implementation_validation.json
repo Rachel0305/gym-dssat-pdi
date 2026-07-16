@@ -1,0 +1,11 @@
+{
+  "same_first_sample_indices": true,
+  "same_first_target_1": true,
+  "same_first_target_n": true,
+  "control_td1_weight": 1.0,
+  "treatment_td1_weight": 0.0,
+  "all_samples_demonstrations": true,
+  "all_updates_finite": true,
+  "no_dssat_or_online_training": true,
+  "passed": true
+}

@@ -1,0 +1,9 @@
+{
+  "update_rows": 951,
+  "expected_update_rows": 951,
+  "interval_rows_sum": 951,
+  "all_values_finite": true,
+  "component_sum_matches_total_max_abs_error": 8.46810289658606e-05,
+  "no_training_or_dssat_calls": true,
+  "all_required_checks_pass": true
+}

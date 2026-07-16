@@ -1,0 +1,5 @@
+scenario,yield_kg_ha,irrigation_mm_summary,nitrogen_kg_ha_summary,nitrogen_uptake_kg_ha,ETCP_mm,WP_ET_kg_m3,WP_ET_recalculated,IWP_gross_kg_m3,PFP_N_kg_kg,NUtE_kg_kg,PNB_N,source_summary_out
+null,5408.0,0.0,0.0,97.0,441.7,1.22,1.2243604256282545,,,55.8,,DSSAT_auto_validation/sy2014_ic2_forward_validation_021_02/runs/null/pdi_tmp_snapshot/Summary.OUT
+recorded,9613.0,0.0,247.0,274.0,444.7,2.16,2.161682032831122,,38.9,35.1,1.1093117408906883,DSSAT_auto_validation/sy2014_ic2_forward_validation_021_02/runs/recorded/pdi_tmp_snapshot/Summary.OUT
+dssat_auto,5498.0,66.0,0.0,103.0,457.8,1.2000000000000002,1.200961118392311,8.33,,53.4,,DSSAT_auto_validation/sy2014_ic2_forward_validation_021_02/runs/dssat_auto/pdi_tmp_snapshot/Summary.OUT
+official_extension_expert,11077.0,266.0,300.0,298.0,490.3,2.2600000000000002,2.25922904344279,4.16,36.9,37.2,0.9933333333333333,DSSAT_auto_validation/extension_expert_baseline_018_03/SY2014/extension_expert_fixed_dap/pdi_tmp_snapshot_eval/Summary.OUT

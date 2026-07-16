@@ -1,0 +1,24 @@
+extends: ../benchmark_defaults.yaml
+site_config: ../sites/sya.yaml
+experiment:
+  experiment_id: 021_14_sy2014_reward_scale_seed1_25k
+  experiment_type: dqn_training_reward_scale_single_variable_25k
+  description: SY2014 IC2 seed1 exploration 0.70, whole training reward scaled by 0.1
+  output_root: benchmark_results/021_14
+  dry_run: false
+  reuse_existing_results: false
+algorithm:
+  total_timesteps: 50000
+  run_until_timesteps: 25000
+  checkpoint_interval: 5000
+  exploration_fraction: 0.70
+reward:
+  type: local_null_terminal
+  irrigation_cost: 1.0
+  nitrogen_cost: 5.0
+  yield_gain_coefficient: 1.0
+  leaching_cost: 0.0
+  training_scale: 0.1
+evaluation:
+  seeds: [1]
+

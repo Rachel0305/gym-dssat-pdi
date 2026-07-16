@@ -1,0 +1,11 @@
+﻿arm,checkpoint,yield_kg_ha,biomass_kg_ha,irrigation_mm,nitrogen_kg_ha,late_n_after_dap90_kg_ha,reward_total,q_abs_max,q_values_finite,nonzero_action_count
+control_raw_observation,1000,11226.0,20313.0,120.0,300.0,100.0,4197.85205078125,538.917236328125,True,5
+control_raw_observation,2000,11239.0,20441.0,105.0,300.0,200.0,4226.493408203125,541.9310302734375,True,4
+control_raw_observation,3000,8841.0,17394.0,15.0,100.0,0.0,2917.8123779296875,481.6888122558594,True,1
+control_raw_observation,4000,11077.0,19783.0,45.0,150.0,50.0,4874.279052734375,584.3843994140625,True,2
+control_raw_observation,5000,5408.0,10603.0,0.0,0.0,0.0,0.0963134765625,330.0318298339844,True,0
+treatment_standardized_observation,1000,5408.0,10603.0,0.0,0.0,0.0,0.0963134765625,4.76985502243042,True,0
+treatment_standardized_observation,2000,5408.0,10603.0,0.0,0.0,0.0,0.0963134765625,5.748578071594238,True,0
+treatment_standardized_observation,3000,5408.0,10603.0,0.0,0.0,0.0,0.0963134765625,7.272398471832275,True,0
+treatment_standardized_observation,4000,5408.0,10603.0,0.0,0.0,0.0,0.0963134765625,8.84487247467041,True,0
+treatment_standardized_observation,5000,5408.0,10603.0,0.0,0.0,0.0,0.0963134765625,10.522136688232422,True,0

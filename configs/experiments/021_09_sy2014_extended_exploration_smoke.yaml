@@ -1,0 +1,21 @@
+extends: ../benchmark_defaults.yaml
+site_config: ../sites/sya.yaml
+experiment:
+  experiment_id: 021_09_sy2014_extended_exploration_smoke
+  experiment_type: dqn_exploration_schedule_single_variable_test
+  description: SY2014 IC2 seed0 exploration_fraction 0.70 global-horizon 5K smoke
+  output_root: benchmark_results/021_09
+  dry_run: false
+algorithm:
+  total_timesteps: 50000
+  run_until_timesteps: 5000
+  checkpoint_interval: 5000
+  exploration_fraction: 0.70
+reward:
+  type: local_null_terminal
+  irrigation_cost: 1.0
+  nitrogen_cost: 5.0
+  yield_gain_coefficient: 1.0
+  leaching_cost: 0.0
+evaluation:
+  seeds: [0]

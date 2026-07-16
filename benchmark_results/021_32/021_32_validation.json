@@ -1,0 +1,15 @@
+{
+  "control_021_30_max_abs_errors": {
+    "noop_accuracy": 1.1102230246251565e-16,
+    "nonzero_action_recall": 0.0,
+    "positive_expert_margin_fraction_nonzero": 0.0,
+    "mean_expert_margin_nonzero": 8.326672684688674e-17
+  },
+  "control_reproduced": true,
+  "treatment_all_batches_16_noop": true,
+  "treatment_all_batches_16_nonzero": true,
+  "each_event_has_16_samples_per_five_update_block": true,
+  "each_event_has_3200_total_samples": true,
+  "all_updates_finite": true,
+  "passed": true
+}

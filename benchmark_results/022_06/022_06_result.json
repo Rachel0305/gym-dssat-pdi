@@ -1,0 +1,30 @@
+{
+  "status": "completed",
+  "branch": "A_supported_q_ranking_misalignment_primary",
+  "zero_training": true,
+  "zero_dssat_calls": true,
+  "q_ranking_summary": {
+    "dap1_identical_state_max_abs_difference": 0.0,
+    "ranking_comparisons": 24,
+    "q_best_target_best_match_count": 12,
+    "checkpoint_selected_target_best_match_count": 12,
+    "dap1_checkpoint_selected_target_best_match_count": 3,
+    "dap1_comparison_count": 4,
+    "median_stage_spearman": 0.39999999999999997
+  },
+  "budget_alias_summary": {
+    "stage_decisions": 24,
+    "clipped_selected_action_count": 3,
+    "selected_execution_alias_stage_count": 5,
+    "post_n_budget_exhaustion_decision_count": 8,
+    "all_checkpoints_reach_n300": true,
+    "n300_is_real_executed_total_not_accounting_illusion": true,
+    "first_dap_reaching_n300": {
+      "15": 65,
+      "30": 65,
+      "45": 65,
+      "60": 65
+    }
+  },
+  "interpretation_guardrail": "DAP1 is an identical-state action comparison; later-stage target means are history-confounded and descriptive only."
+}

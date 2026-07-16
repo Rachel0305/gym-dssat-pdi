@@ -1,0 +1,5 @@
+﻿from_checkpoint,to_checkpoint,online_max_parameter_abs_diff,target_max_parameter_abs_diff,target_hash_changed,target_update_count_change
+5000,10000,0.224995955824852,0.0,False,0
+10000,15000,0.16441971063613892,0.41566863656044006,True,1
+15000,20000,0.36945629119873047,0.0,False,0
+20000,25000,0.2524079978466034,0.41225844621658325,True,1

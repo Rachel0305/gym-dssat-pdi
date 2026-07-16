@@ -1,0 +1,69 @@
+{
+  "status": "completed",
+  "method_label": "minimal DQfD-style; not a full DQfD reproduction",
+  "prepare": {
+    "phase": "prepare",
+    "demonstration": {
+      "yield_kg_ha": 11205.0,
+      "biomass_kg_ha": 20132.0,
+      "irrigation_mm": 75.0,
+      "nitrogen_kg_ha": 200.0,
+      "transition_count": 160,
+      "terminal_count": 1,
+      "last_transition_terminal": true,
+      "nonzero_event_count": 5,
+      "nonzero_all_uncropped": true,
+      "all_arrays_finite": true,
+      "yield_reproduction_error": 0.0,
+      "passed": true
+    },
+    "unit_tests": {
+      "transition_count": 160,
+      "last_done": true,
+      "all_n_step_discounts_positive": true,
+      "large_margin_zero_case": 0.0,
+      "large_margin_positive_case": 0.2999999523162842,
+      "toy_loss_before": 1.2999999523162842,
+      "toy_loss_after": 1.1050000190734863,
+      "toy_expert_margin_before": 0.0,
+      "toy_expert_margin_after": 0.09999998658895493,
+      "permanent_demo_count": 160,
+      "ordinary_replay_size_before_online_training": 0,
+      "passed": true
+    },
+    "passed": true
+  },
+  "training_audits": {
+    "control": {
+      "arm": "control",
+      "treatment": false,
+      "planned_schedule_timesteps": 50000,
+      "actual_stop_timesteps": 5000,
+      "checkpoint_count": 5,
+      "exploration_rate_at_5k": 0.7286257142857144,
+      "all_parameters_finite": true,
+      "demonstration_count_before_training": 0,
+      "demonstration_count_after_training": 0,
+      "demonstration_update_count": 0,
+      "pretrain_updates": 0,
+      "passed": true
+    },
+    "minimal_dqfd_style": {
+      "arm": "minimal_dqfd_style",
+      "treatment": true,
+      "planned_schedule_timesteps": 50000,
+      "actual_stop_timesteps": 5000,
+      "checkpoint_count": 5,
+      "exploration_rate_at_5k": 0.7286257142857144,
+      "all_parameters_finite": true,
+      "demonstration_count_before_training": 160,
+      "demonstration_count_after_training": 160,
+      "demonstration_update_count": 5049,
+      "pretrain_updates": 100,
+      "passed": true
+    }
+  },
+  "preregistered_candidate_passed": false,
+  "passing_checkpoints": [],
+  "stop_rule": "If false, do not tune margin/lambda or expand seed/training length."
+}

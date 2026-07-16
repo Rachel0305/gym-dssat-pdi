@@ -1,0 +1,7 @@
+{
+  "status": "failed_before_training",
+  "error": "raw DSSAT dictionary has NaN for sw_layer_1..9 at DAP1",
+  "cause": "the 021_24 scaler was trained on the 25-dimensional SB3 wrapper observation, not a reconstruction from the raw DSSAT dictionary",
+  "action": "use the exact wrapper observation and verify its order against every finite raw dictionary field",
+  "training_started": false
+}

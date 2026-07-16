@@ -1,0 +1,10 @@
+{
+  "status": "completed",
+  "branch": "A",
+  "gradient_candidate_metrics": [],
+  "cosine_candidate_metrics": [
+    "cos_tdn_margin"
+  ],
+  "interpretation": "\u81f3\u5c11\u4e00\u4e2a\u5206\u9879\u68af\u5ea6\u8303\u6570\u6216\u65b9\u5411\u5728\u574d\u7f29/\u6062\u590d\u671f\u51fa\u73b0\u9884\u6ce8\u518c\u7684\u65f6\u6bb5\u5dee\u5f02\u3002",
+  "causal_claim_allowed": false
+}

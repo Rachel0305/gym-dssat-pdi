@@ -1,0 +1,7 @@
+model,phenology_phase,irrigation_total,nitrogen_total,nonzero_irrigation_days,nonzero_nitrogen_days
+scaled_0p1_021_14_10k,grain_fill,0.0,200.0,0,2
+scaled_0p1_021_14_10k,pre_or_at_silking,120.0,0.0,8,0
+scaled_0p1_021_14_10k,silking_to_grain_fill,0.0,100.0,0,1
+unscaled_021_10_10k,grain_fill,0.0,0.0,0,0
+unscaled_021_10_10k,pre_or_at_silking,120.0,250.0,8,3
+unscaled_021_10_10k,silking_to_grain_fill,0.0,50.0,0,1

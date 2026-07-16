@@ -1,0 +1,15 @@
+{
+  "status": "completed",
+  "no_training_beyond_5k": true,
+  "only_scientific_variable": "fixed_observation_standardization",
+  "numeric_gate_passed": true,
+  "agronomic_gate_passed": false,
+  "consecutive_two_passing_checkpoints": false,
+  "no_later_collapse_after_first_pass": false,
+  "passing_checkpoints": [],
+  "pre_registered_interpretation_branch": "B_numeric_pass_agronomic_fail",
+  "control_median_online_gradient": 695.0587158203125,
+  "treatment_median_online_gradient": 0.48939406871795654,
+  "treatment_to_control_gradient_ratio": 0.0007041046426421266,
+  "treatment_gradient_clip_fraction": 0.0
+}

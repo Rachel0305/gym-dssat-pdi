@@ -1,0 +1,8 @@
+{
+  "status": "completed",
+  "branch": "A",
+  "spearman_yield_vs_nonzero_recall": 0.9733285267845753,
+  "spearman_yield_vs_positive_margin_fraction": 0.9733285267845753,
+  "interpretation": "\u56fa\u5b9a\u793a\u8303\u72b6\u6001\u7684\u975e\u96f6\u52a8\u4f5cQ\u6392\u5e8f\u4e0e\u95ed\u73af\u4ea7\u91cf\u574d\u7f29/\u6062\u590d\u9ad8\u5ea6\u540c\u6b65\u3002",
+  "causal_claim_allowed": false
+}

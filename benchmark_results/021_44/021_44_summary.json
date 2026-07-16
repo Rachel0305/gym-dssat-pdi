@@ -1,0 +1,8 @@
+{
+  "status": "completed",
+  "branch": "A",
+  "candidate_best_gate_pass_count": 3,
+  "candidate_formula": "base_reward + 1620 * I[yield >= local official expert yield]",
+  "interpretation": "\u5019\u9009\u53ef\u884c\u6027\u4f18\u5148\u516c\u5f0f\u5728\u4e09\u4e2a\u5728\u7ebfseed\u4e0a\u5747\u628a\u6700\u9ad8\u5206\u6392\u5e8f\u8f6c\u5411expert-gate\u53ef\u884c\u7b56\u7565\u3002",
+  "training_authorized": false
+}

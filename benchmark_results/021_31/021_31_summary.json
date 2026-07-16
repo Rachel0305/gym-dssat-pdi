@@ -1,0 +1,14 @@
+{
+  "status": "completed_offline_no_dssat",
+  "validation_passed": true,
+  "action_reference_shares": {
+    "1": 0.4,
+    "4": 0.4,
+    "7": 0.2
+  },
+  "action1_sample_share_updates_251_1000": 0.19425,
+  "action1_all_missed_at_1000": true,
+  "action4_and_action7_all_recalled_at_1000": true,
+  "interpretation_branch": "A_strong_within_nonzero_per_bias_support",
+  "no_online_training_performed": true
+}

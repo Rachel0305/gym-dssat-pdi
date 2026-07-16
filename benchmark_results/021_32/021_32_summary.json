@@ -1,0 +1,13 @@
+{
+  "status": "completed_offline_no_dssat",
+  "validation_passed": true,
+  "control_passing_milestones": [],
+  "treatment_passing_milestones": [],
+  "control_two_consecutive_pass": false,
+  "treatment_two_consecutive_pass": false,
+  "treatment_max_nonzero_recall": 0.8,
+  "treatment_max_noop_accuracy": 1.0,
+  "treatment_max_positive_margin_fraction": 0.8,
+  "interpretation_branch": "B_event_balance_partial_but_not_stable",
+  "no_online_training_performed": true
+}

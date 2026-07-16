@@ -1,0 +1,82 @@
+{
+  "status": "completed",
+  "branch": "A_offline_ranking_learning_feasible",
+  "next_step": "allow_preregistered_short_online_warmstart_smoke",
+  "zero_dssat_calls": true,
+  "zero_online_interactions": true,
+  "minimum_support": 2,
+  "singleton_pairs": [
+    {
+      "dap": 85,
+      "action_index": 5,
+      "total_transition_count": 1,
+      "primary_evaluable": false,
+      "status": "not_estimable_singleton"
+    }
+  ],
+  "singleton_scenarios": [
+    "W120_critical__N200_spread"
+  ],
+  "split_seed": 20260716,
+  "split_search_attempt": 74,
+  "checks": {
+    "exactly_one_preregistered_singleton": true,
+    "singleton_scenario_train_only": true,
+    "scenario_disjoint": true,
+    "train_36_test_12": true,
+    "identifiable_actions_covered_both_splits": true,
+    "success_failure_both_splits": true,
+    "three_seeds": true,
+    "updates_2000_each": true,
+    "finite_metrics": true
+  },
+  "preregistered_seed_pass_count": 2,
+  "trained_seed_metrics": [
+    {
+      "seed": 0,
+      "arm": "offline_mc_q_2000",
+      "test_recorded_action_mae": 0.363319993019104,
+      "test_recorded_action_rmse": 0.5289574861526489,
+      "test_recorded_action_spearman": 0.8001415756252663,
+      "constant_train_mean_baseline_mae": 0.6683440208435059,
+      "mae_improvement_over_constant": 0.30502402782440186,
+      "mae_better_than_constant": true,
+      "median_stage_aggregate_spearman": 0.5285714285714286,
+      "dap1_predicted_best_action": 4,
+      "dap1_recorded_target_best_action": 4,
+      "dap1_best_action_match": true,
+      "all_preregistered_conditions": true
+    },
+    {
+      "seed": 1,
+      "arm": "offline_mc_q_2000",
+      "test_recorded_action_mae": 0.3772555887699127,
+      "test_recorded_action_rmse": 0.536475658416748,
+      "test_recorded_action_spearman": 0.7997877299497868,
+      "constant_train_mean_baseline_mae": 0.6683440208435059,
+      "mae_improvement_over_constant": 0.29108843207359314,
+      "mae_better_than_constant": true,
+      "median_stage_aggregate_spearman": 0.5571428571428572,
+      "dap1_predicted_best_action": 4,
+      "dap1_recorded_target_best_action": 4,
+      "dap1_best_action_match": true,
+      "all_preregistered_conditions": true
+    },
+    {
+      "seed": 2,
+      "arm": "offline_mc_q_2000",
+      "test_recorded_action_mae": 0.3720356225967407,
+      "test_recorded_action_rmse": 0.5332619547843933,
+      "test_recorded_action_spearman": 0.8015891261158644,
+      "constant_train_mean_baseline_mae": 0.6683440208435059,
+      "mae_improvement_over_constant": 0.29630839824676514,
+      "mae_better_than_constant": true,
+      "median_stage_aggregate_spearman": 0.4714285714285714,
+      "dap1_predicted_best_action": 4,
+      "dap1_recorded_target_best_action": 4,
+      "dap1_best_action_match": true,
+      "all_preregistered_conditions": false
+    }
+  ],
+  "guardrail": "DAP30+ aggregate action rankings are history-confounded descriptive metrics, not causal counterfactuals."
+}

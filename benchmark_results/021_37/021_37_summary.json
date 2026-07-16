@@ -1,0 +1,12 @@
+{
+  "status": "completed",
+  "branch": "A",
+  "gradient_collapse_to_recovery_ratio": 1.374894410130524,
+  "candidate_components": [
+    "td1_agent_only",
+    "tdn_all"
+  ],
+  "interpretation": "\u81f3\u5c11\u4e00\u4e2a\u635f\u5931\u9879\u5728\u574d\u7f29\u671f\u4e0e\u6062\u590d\u671f\u51fa\u73b0\u9884\u6ce8\u518c\u7684\u663e\u8457\u6784\u6210\u53d8\u5316\uff0c\u53ef\u4f5c\u4e3a\u4e0b\u4e00\u8f6e\u4f18\u5148\u5019\u9009\u3002",
+  "causal_claim_allowed": false,
+  "per_component_gradient_available": false
+}

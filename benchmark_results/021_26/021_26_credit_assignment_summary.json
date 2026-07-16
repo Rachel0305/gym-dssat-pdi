@@ -1,0 +1,12 @@
+{
+  "status": "completed_offline_no_training",
+  "terminal_transition_index": 159,
+  "terminal_reward": 5797.423828125,
+  "nonzero_action_count": 5,
+  "all_nonzero_actions_have_negative_immediate_reward": true,
+  "all_nonzero_nstep_returns_equal_immediate_cost": true,
+  "any_nonzero_action_sees_terminal_reward_in_nstep": false,
+  "minimum_steps_from_nonzero_action_to_terminal": 60,
+  "maximum_steps_from_nonzero_action_to_terminal": 117,
+  "interpretation": "with frozen target and 5-step returns, demonstration resource actions receive cost-only targets and no harvest-yield credit"
+}

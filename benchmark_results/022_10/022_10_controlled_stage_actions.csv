@@ -1,0 +1,13 @@
+episode,stage_index,dap,action_index,requested_irrigation,requested_nitrogen,executed_irrigation,executed_nitrogen,cumulative_irrigation,cumulative_nitrogen,arm
+control_action1_I15_N0,0,1,3,0.0,50.0,0.0,50.0,0.0,50.0,control_action1_I15_N0
+control_action1_I15_N0,1,30,4,15.0,50.0,15.0,50.0,15.0,100.0,control_action1_I15_N0
+control_action1_I15_N0,2,50,7,15.0,100.0,15.0,100.0,30.0,200.0,control_action1_I15_N0
+control_action1_I15_N0,3,65,1,15.0,0.0,15.0,0.0,45.0,200.0,control_action1_I15_N0
+control_action1_I15_N0,4,85,1,15.0,0.0,15.0,0.0,60.0,200.0,control_action1_I15_N0
+control_action1_I15_N0,5,110,0,0.0,0.0,0.0,0.0,60.0,200.0,control_action1_I15_N0
+treatment_action7_I15_N100,0,1,3,0.0,50.0,0.0,50.0,0.0,50.0,treatment_action7_I15_N100
+treatment_action7_I15_N100,1,30,4,15.0,50.0,15.0,50.0,15.0,100.0,treatment_action7_I15_N100
+treatment_action7_I15_N100,2,50,7,15.0,100.0,15.0,100.0,30.0,200.0,treatment_action7_I15_N100
+treatment_action7_I15_N100,3,65,7,15.0,100.0,15.0,100.0,45.0,300.0,treatment_action7_I15_N100
+treatment_action7_I15_N100,4,85,1,15.0,0.0,15.0,0.0,60.0,300.0,treatment_action7_I15_N100
+treatment_action7_I15_N100,5,110,0,0.0,0.0,0.0,0.0,60.0,300.0,treatment_action7_I15_N100

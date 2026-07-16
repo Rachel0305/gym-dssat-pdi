@@ -1,0 +1,21 @@
+{
+  "status": "completed",
+  "branch": "B",
+  "pass_count_out_of_4": 1,
+  "final_checkpoint": {
+    "checkpoint": 1000,
+    "yield_kg_ha": 11175.0,
+    "biomass_kg_ha": 20123.0,
+    "irrigation_mm": 75.0,
+    "nitrogen_kg_ha": 300.0,
+    "late_n_after_dap90_kg_ha": 0.0,
+    "nonzero_operation_count": 5,
+    "reward_total": 4192.12939453125,
+    "q_values_finite": true,
+    "terminated_or_truncated": true,
+    "expert_efficiency_gate": true,
+    "source": "021_35_deterministic_evaluation"
+  },
+  "online_5k_started": false,
+  "interpretation": "\u5728\u7ebf\u66f4\u65b0\u53ea\u5728\u90e8\u5206\u68c0\u67e5\u70b9\u4fdd\u6301\u4f18\u8d28\u7b56\u7565\uff0c\u5c1a\u4e0d\u80fd\u653e\u5927\u8bad\u7ec3\u3002"
+}

@@ -1,0 +1,17 @@
+{
+  "reference": "021_28 treatment_mask_demo_td1",
+  "reference_milestones_all_matched": true,
+  "additional_audit_milestones": [
+    1
+  ],
+  "max_abs_errors": {
+    "noop_accuracy": 5.551115123125783e-17,
+    "nonzero_action_recall": 0.0,
+    "positive_expert_margin_fraction_nonzero": 0.0,
+    "mean_expert_margin_nonzero": 8.326672684688674e-17
+  },
+  "all_finite": true,
+  "max_data_loss_reconstruction_error": 0.00048828125,
+  "max_data_loss_reconstruction_relative_error": 2.1645417540645494e-07,
+  "passed": true
+}

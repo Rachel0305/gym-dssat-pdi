@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "checks": {
+    "exactly_48_unique_grid_scenarios": true,
+    "all_scenario_replays_match": true,
+    "maximum_yield_error_le_2": true,
+    "resource_totals_exact": true,
+    "exactly_288_transitions": true,
+    "all_observations_25d_finite": true,
+    "contains_primary_success_and_failure": true,
+    "six_transitions_per_scenario": true
+  },
+  "scenario_count": 48,
+  "transition_count": 288,
+  "primary_success_scenarios": 28,
+  "primary_failure_scenarios": 20,
+  "strict_success_scenarios": 18,
+  "max_abs_yield_error": 0.48486328125,
+  "max_abs_irrigation_error": 0.0,
+  "max_abs_nitrogen_error": 0.0,
+  "dataset_path": "benchmark_results/022_03/022_03_fixed_grid_replay_dataset.npz"
+}

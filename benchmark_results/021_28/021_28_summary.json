@@ -1,0 +1,10 @@
+{
+  "status": "completed_offline_no_dssat",
+  "implementation_validation_passed": true,
+  "control_passing_milestones": [],
+  "treatment_passing_milestones": [],
+  "control_two_consecutive_pass": false,
+  "treatment_two_consecutive_pass": false,
+  "pre_registered_interpretation_branch": "C_masking_demo_td1_not_sufficient",
+  "no_online_training_performed": true
+}

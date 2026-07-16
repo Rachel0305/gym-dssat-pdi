@@ -1,0 +1,92 @@
+{
+  "status": "passed",
+  "checks": {
+    "dataset_validation_passed": true,
+    "prefill_size_288": true,
+    "six_stage_support_exact": true,
+    "each_stage_has_success_and_failure_sources": true,
+    "all_support_actions_originally_legal": true,
+    "random_selection_never_leaves_support": true,
+    "greedy_selection_never_leaves_support": true,
+    "dap110_has_no_nitrogen_actions": true
+  },
+  "derived_support": {
+    "1": [
+      0,
+      1,
+      3,
+      4
+    ],
+    "30": [
+      4,
+      5,
+      7,
+      8
+    ],
+    "50": [
+      4,
+      5,
+      7,
+      8
+    ],
+    "65": [
+      1,
+      2,
+      4,
+      5,
+      7,
+      8
+    ],
+    "85": [
+      1,
+      2,
+      4,
+      5
+    ],
+    "110": [
+      0,
+      1
+    ]
+  },
+  "expected_support": {
+    "1": [
+      0,
+      1,
+      3,
+      4
+    ],
+    "30": [
+      4,
+      5,
+      7,
+      8
+    ],
+    "50": [
+      4,
+      5,
+      7,
+      8
+    ],
+    "65": [
+      1,
+      2,
+      4,
+      5,
+      7,
+      8
+    ],
+    "85": [
+      1,
+      2,
+      4,
+      5
+    ],
+    "110": [
+      0,
+      1
+    ]
+  },
+  "manifest_rows": 288,
+  "replay_prefill_size": 288,
+  "scientific_change": "behavior_support_mask_applied_during_exploration_greedy_training_and_evaluation"
+}

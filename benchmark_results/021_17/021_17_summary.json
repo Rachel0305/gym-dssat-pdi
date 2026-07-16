@@ -1,0 +1,15 @@
+{
+  "status": "completed_offline",
+  "training_calls": 0,
+  "dssat_calls": 0,
+  "observation_dimension": 25,
+  "exact_dap_index": 1,
+  "exact_cumulative_irrigation_index": 21,
+  "exact_cumulative_nitrogen_index": 0,
+  "all_three_exact_mae_zero": true,
+  "istage_configured": true,
+  "vstage_configured": true,
+  "totir_configured": true,
+  "models_with_dap_direction_consistent_all_groups": [],
+  "interpretation_boundary": "The actual DQN input already contains exact DAP, cumulative irrigation, cumulative nitrogen, istage and vstage information. DAP-only perturbations test network sensitivity but are partly off-manifold and cannot by themselves establish an agronomic causal policy rule."
+}

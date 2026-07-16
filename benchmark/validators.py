@@ -197,6 +197,11 @@ def _validate_reward(reward: Mapping[str, Any], errors: list[str]) -> None:
             errors.append(f"reward.{key}: a numeric value is required")
         elif value < 0:
             errors.append(f"reward.{key}: must be non-negative")
+    training_scale = reward.get("training_scale", 1.0)
+    if not _is_number(training_scale):
+        errors.append("reward.training_scale: must be numeric when provided")
+    elif training_scale <= 0:
+        errors.append("reward.training_scale: must be positive")
 
 
 def _validate_output(config: Mapping[str, Any], root: Path, errors: list[str]) -> None:

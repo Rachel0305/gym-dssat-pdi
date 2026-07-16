@@ -1,0 +1,6 @@
+﻿transition_index,dap,action,immediate_reward,control_5step_return,treatment_full_return_to_go,control_horizon,treatment_horizon,treatment_terminal
+42,22,1,-15.0,-15.0,908.7885131835938,5,118,True
+49,29,4,-265.0,-265.0,991.119873046875,5,111,True
+62,42,7,-515.0,-515.0,1431.44140625,5,98,True
+76,56,4,-265.0,-265.0,2240.518798828125,5,84,True
+99,79,1,-15.0,-15.0,3157.098876953125,5,61,True

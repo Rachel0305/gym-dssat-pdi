@@ -1,0 +1,11 @@
+{
+  "status": "completed_offline_no_training",
+  "demo_transition_count": 160,
+  "demo_nonzero_action_count": 5,
+  "always_noop_naive_accuracy": 0.96875,
+  "treatment_nonzero_recall_all_checkpoints_zero": true,
+  "treatment_predicted_noop_fraction_all_checkpoints_one": true,
+  "treatment_nonzero_expert_margin_1k": -0.6872453689575195,
+  "treatment_nonzero_expert_margin_5k": -0.5065892934799194,
+  "interpretation": "standardization fixed numerical gradients but the network did not recall any of five sparse nonzero demonstration actions"
+}

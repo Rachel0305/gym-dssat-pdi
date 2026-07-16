@@ -1,0 +1,18 @@
+{
+  "status": "completed",
+  "branch": "A_pairwise_not_necessary_for_dap110_drift",
+  "mc_only_dap110_drift_seed_count": 3,
+  "total_seeds": 3,
+  "updates_per_seed": 3000,
+  "total_offline_updates": 9000,
+  "dssat_calls": 0,
+  "online_interactions": 0,
+  "dap110_total_transitions": 48,
+  "dap110_action_counts": {
+    "0": 40,
+    "1": 8
+  },
+  "scope": "Tests whether pairwise is necessary for drift; does not identify the full drift mechanism.",
+  "guardrail_not_changed": true,
+  "warmstart_started": false
+}

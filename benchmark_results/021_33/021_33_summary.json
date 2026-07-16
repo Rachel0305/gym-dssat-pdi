@@ -1,0 +1,11 @@
+{
+  "status": "completed_offline_no_dssat",
+  "validation_passed": true,
+  "primary_milestone": 500,
+  "false_positive_count_500": 9,
+  "fraction_within_any_oracle_3dap_500": 0.6666666666666666,
+  "fraction_within_same_action_oracle_3dap_500": 0.3333333333333333,
+  "interpretation_branch": "B_mixed_temporal_and_dispersed_false_positives",
+  "agronomic_equivalence_not_claimed": true,
+  "no_online_training_performed": true
+}

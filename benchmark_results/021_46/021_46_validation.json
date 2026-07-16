@@ -1,0 +1,16 @@
+{
+  "planned_timesteps_from_source": 50000.0,
+  "exploration_fraction_from_source": 0.35,
+  "decay_steps": 17500.0,
+  "final_epsilon": 0.9457142857142856,
+  "late_751_1000_epsilon_mean": 0.9524728571428571,
+  "late_751_1000_random_action_fraction": 0.952,
+  "control_treatment_epsilon_arrays_exactly_equal": true,
+  "control_max_formula_error": 1.1102230246251565e-16,
+  "treatment_max_formula_error": 1.1102230246251565e-16,
+  "uses_custom_explicit_schedule_not_sb3_learn_schedule": true,
+  "dssat_calls": 0,
+  "training_steps": 0,
+  "compressed_exploration_hypothesis_supported": false,
+  "all_required_checks_pass": true
+}

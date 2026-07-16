@@ -1,0 +1,18 @@
+{
+  "status": "completed",
+  "branch": "C_mixed_consequences",
+  "scenario_count": 9,
+  "dssat_seasons": 18,
+  "dqn_training_steps": 0,
+  "outcome_counts": {
+    "degraded": 17,
+    "alias": 2,
+    "improved": 2
+  },
+  "execution_alias_scenarios": [
+    "W120_critical__N300_bal"
+  ],
+  "tolerance_g0": 1.0,
+  "guardrail_changed": false,
+  "warmstart_started": false
+}

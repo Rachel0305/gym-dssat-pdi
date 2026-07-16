@@ -1,0 +1,47 @@
+{
+  "tests": {
+    "source_demonstration_count": 160,
+    "source_all_fields_finite": true,
+    "agent_capacity": 20,
+    "agent_insertions": 50,
+    "agent_active_count_after_overflow": 20,
+    "demo_hash_before": "08f8fe3c7c04deac5bacab931839d0fbbe9362acf94ebc7a1e4e9a55fa44db80",
+    "demo_hash_after_overflow": "08f8fe3c7c04deac5bacab931839d0fbbe9362acf94ebc7a1e4e9a55fa44db80",
+    "demonstrations_permanent_after_overflow": true,
+    "demo_priority_equal_td": 3.0,
+    "agent_priority_equal_td": 2.001,
+    "demo_bonus_strictly_higher": true,
+    "sampling_probability_sum": 1.0000000000000002,
+    "sampling_probability_manual_max_error": 0.0,
+    "importance_weights_finite": true,
+    "importance_weight_max": 1.0,
+    "importance_weight_probability_correlation": -0.9775458786975766,
+    "importance_weights_inverse_to_probability": true,
+    "fixed_seed_sampling_reproducible": true,
+    "priority_update_changed_demo_positions": [
+      1
+    ],
+    "priority_update_changed_agent_positions": [
+      1
+    ],
+    "priority_update_identity_and_content_preserved": true,
+    "large_margin_zero_case": 0.0,
+    "large_margin_positive_case": 0.2999999523162842,
+    "agent_only_margin_loss": 0.0,
+    "all_loss_components_finite": true,
+    "weighted_component_sum_error": 1.4604665921069682e-08,
+    "no_dssat_or_network_training_performed": true,
+    "passed": true
+  },
+  "loss_components": {
+    "td_1_raw": 0.045500002801418304,
+    "td_n_raw": 0.10999999940395355,
+    "margin_raw": 0.2800000309944153,
+    "l2_raw": 2.370000123977661,
+    "td_1_weighted": 0.045500002801418304,
+    "td_n_weighted": 0.10999999940395355,
+    "margin_weighted": 0.2800000309944153,
+    "l2_weighted": 2.370000038354192e-05,
+    "total": 0.43552371859550476
+  }
+}

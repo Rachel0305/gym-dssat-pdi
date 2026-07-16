@@ -1,0 +1,10 @@
+{
+  "status": "completed",
+  "checks": 24,
+  "passed": 24,
+  "failed": 0,
+  "training_calls": 0,
+  "dssat_calls": 0,
+  "next_gate": "022_01 deterministic fixed-stage feasibility search",
+  "fixed_stage_scientific_feasibility_verified": false
+}

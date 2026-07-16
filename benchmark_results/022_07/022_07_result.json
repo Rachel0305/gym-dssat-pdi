@@ -1,0 +1,16 @@
+{
+  "status": "failed",
+  "branch": "D_implementation_or_split_failure",
+  "next_step": "redesign_split_preregistration_before_any_training",
+  "zero_dssat_calls": true,
+  "zero_online_interactions": true,
+  "zero_gradient_updates": true,
+  "reason": "The preregistered requirement that every stage-action pair appear in both train and test is mathematically impossible when a pair has fewer than two total samples.",
+  "impossible_stage_action_pairs": [
+    {
+      "dap": 85,
+      "action_index": 5,
+      "total_transition_count": 1
+    }
+  ]
+}

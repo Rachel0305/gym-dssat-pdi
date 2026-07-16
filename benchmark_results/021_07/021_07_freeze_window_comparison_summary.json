@@ -1,0 +1,57 @@
+{
+  "source": "021_06 fixed-state Q values",
+  "summary": [
+    {
+      "window": "5K\u219210K",
+      "network": "online",
+      "comparisons": 54,
+      "full_ranking_changes": 36,
+      "n50_vs_n100_changes": 22,
+      "nitrogen_sign_flips": 22,
+      "robust_sign_flips": 16,
+      "unaliased_comparisons": 27,
+      "unaliased_full_ranking_changes": 21,
+      "global_argmax_changes": 17,
+      "mean_q_mae": 8.604021823424615
+    },
+    {
+      "window": "5K\u219210K",
+      "network": "target",
+      "comparisons": 54,
+      "full_ranking_changes": 0,
+      "n50_vs_n100_changes": 0,
+      "nitrogen_sign_flips": 0,
+      "robust_sign_flips": 0,
+      "unaliased_comparisons": 27,
+      "unaliased_full_ranking_changes": 0,
+      "global_argmax_changes": 0,
+      "mean_q_mae": 0.0
+    },
+    {
+      "window": "15K\u219220K",
+      "network": "online",
+      "comparisons": 54,
+      "full_ranking_changes": 42,
+      "n50_vs_n100_changes": 15,
+      "nitrogen_sign_flips": 28,
+      "robust_sign_flips": 19,
+      "unaliased_comparisons": 27,
+      "unaliased_full_ranking_changes": 21,
+      "global_argmax_changes": 15,
+      "mean_q_mae": 4.29051224887371
+    },
+    {
+      "window": "15K\u219220K",
+      "network": "target",
+      "comparisons": 54,
+      "full_ranking_changes": 0,
+      "n50_vs_n100_changes": 0,
+      "nitrogen_sign_flips": 0,
+      "robust_sign_flips": 0,
+      "unaliased_comparisons": 27,
+      "unaliased_full_ranking_changes": 0,
+      "global_argmax_changes": 0,
+      "mean_q_mae": 0.0
+    }
+  ]
+}

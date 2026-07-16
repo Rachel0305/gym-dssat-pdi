@@ -1,0 +1,91 @@
+{
+  "status": "completed_offline",
+  "training": false,
+  "dssat_called": false,
+  "limitations": [
+    "replay stores requested action index, not wrapper executed action",
+    "replay does not store whether each action came from epsilon exploration or greedy selection",
+    "scalar reward components cannot be reconstructed exactly from saved fields",
+    "endpoint greedy comparison is posthoc and not action-generation provenance"
+  ],
+  "buffer_extraction": [
+    {
+      "window": "5K-10K",
+      "start_pos": 4999,
+      "end_pos": 9998,
+      "capacity": 10000,
+      "start_full": false,
+      "end_full": false,
+      "extracted_transition_count": 4999,
+      "expected_environment_steps": 5000
+    },
+    {
+      "window": "15K-20K",
+      "start_pos": 4997,
+      "end_pos": 9996,
+      "capacity": 10000,
+      "start_full": true,
+      "end_full": true,
+      "extracted_transition_count": 4999,
+      "expected_environment_steps": 5000
+    }
+  ],
+  "window_summary": [
+    {
+      "window": "5K-10K",
+      "transition_count": 4999,
+      "expected_environment_steps": 5000,
+      "start_exploration_rate": 0.7286257142857144,
+      "end_exploration_rate": 0.45719714285714275,
+      "noop_fraction": 0.10582116423284657,
+      "positive_irrigation_fraction": 0.6547309461892379,
+      "positive_nitrogen_fraction": 0.6163232646529306,
+      "joint_positive_fraction": 0.376875375075015,
+      "requested_n0_fraction": 0.3836767353470694,
+      "requested_n50_fraction": 0.3046609321864373,
+      "requested_n100_fraction": 0.3116623324664933,
+      "action_entropy": 2.168108191596089,
+      "normalized_action_entropy": 0.9867485617808675,
+      "reward_mean": 24.94880147904581,
+      "reward_median": 0.0,
+      "reward_positive_fraction": 0.00620124024804961,
+      "reward_negative_fraction": 0.051010202040408084,
+      "reward_zero_fraction": 0.9427885577115424,
+      "reward_p95": 0.0,
+      "reward_max": 5796.8056640625,
+      "terminal_fraction": 0.00620124024804961,
+      "matches_endpoint_greedy_fraction": 0.240248049609922,
+      "endpoint_greedy_is_posthoc_only": true,
+      "executed_action_available_in_replay": false,
+      "exploration_origin_available_per_transition": false
+    },
+    {
+      "window": "15K-20K",
+      "transition_count": 4999,
+      "expected_environment_steps": 5000,
+      "start_exploration_rate": 0.1857685714285714,
+      "end_exploration_rate": 0.05,
+      "noop_fraction": 0.11182236447289458,
+      "positive_irrigation_fraction": 0.6515303060612122,
+      "positive_nitrogen_fraction": 0.45529105821164234,
+      "joint_positive_fraction": 0.21864372874574914,
+      "requested_n0_fraction": 0.5447089417883577,
+      "requested_n50_fraction": 0.17863572714542908,
+      "requested_n100_fraction": 0.27665533106621326,
+      "action_entropy": 1.8897017442228465,
+      "normalized_action_entropy": 0.8600403271083947,
+      "reward_mean": 23.568226364999564,
+      "reward_median": 0.0,
+      "reward_positive_fraction": 0.00620124024804961,
+      "reward_negative_fraction": 0.060012002400480095,
+      "reward_zero_fraction": 0.9337867573514703,
+      "reward_p95": 0.0,
+      "reward_max": 5777.8212890625,
+      "terminal_fraction": 0.00620124024804961,
+      "matches_endpoint_greedy_fraction": 0.4936987397479496,
+      "endpoint_greedy_is_posthoc_only": true,
+      "executed_action_available_in_replay": false,
+      "exploration_origin_available_per_transition": false
+    }
+  ]
+}

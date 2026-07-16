@@ -17,6 +17,7 @@ import pandas as pd
 from .action_space_factory import build_action_table
 from .environment_adapter import PreparedCase, load_prepared_case, prepare_case
 from .evaluation_runner import standardize_daily, standardize_season
+from .reward_scaling import AuditableTrainingRewardScaleWrapper
 
 
 LOGGER = logging.getLogger(__name__)
@@ -172,6 +173,17 @@ def train_case(
         raise RuntimeError(f"Non-finite local null yield for {prepared.station_code}{year}")
 
     train_env = legacy.make_train_env(prepared.dqn_env_args, null_yield)
+    reward_scale = float(config.get("reward", {}).get("training_scale", 1.0))
+    reward_scale_wrapper: AuditableTrainingRewardScaleWrapper | None = None
+    if reward_scale != 1.0:
+        reward_scale_wrapper = AuditableTrainingRewardScaleWrapper(
+            train_env,
+            reward_scale,
+            # Retain enough env-step records to reconstruct a full replay ring
+            # after excluding one uncommitted transition at every stop callback.
+            audit_capacity=int(config["algorithm"].get("total_timesteps", 50000)) + 1,
+        )
+        train_env = reward_scale_wrapper
     total_timesteps = int(config["algorithm"]["total_timesteps"])
     run_until_timesteps = int(config["algorithm"].get("run_until_timesteps", total_timesteps))
     interval = int(config["algorithm"]["checkpoint_interval"])
@@ -237,6 +249,46 @@ def train_case(
             if bool(config["algorithm"].get("save_replay_buffer", True)):
                 model.save_replay_buffer(str(destination / "replay_buffer.pkl"))
             _save_rng_state(destination / "rng_state.pt")
+            reward_scale_audit: dict[str, Any] = {
+                "enabled": False,
+                "reward_scale": reward_scale,
+                "passed": reward_scale == 1.0,
+            }
+            if reward_scale_wrapper is not None:
+                reward_scale_wrapper.mark_callback_boundary_uncommitted_step()
+                reward_scale_audit = reward_scale_wrapper.audit_snapshot(model.replay_buffer)
+                replay_audit = reward_scale_audit["replay_consistency"]
+                expected_values = np.asarray(
+                    [row["training_reward"] for row in reward_scale_wrapper.audit_records],
+                    dtype=np.float64,
+                )
+                float32_tolerance = float(
+                    2.0
+                    * np.finfo(np.float32).eps
+                    * max(1.0, float(np.abs(expected_values).max()) if len(expected_values) else 1.0)
+                )
+                replay_tolerance = max(1e-5, float32_tolerance)
+                reward_scale_audit["replay_abs_error_tolerance"] = replay_tolerance
+                reward_scale_audit["passed"] = bool(
+                    reward_scale_audit["component_fields_missing"] == 0
+                    and reward_scale_audit["all_rewards_finite"]
+                    and reward_scale_audit["max_scale_identity_error"] <= 1e-6
+                    and reward_scale_audit["max_component_identity_error"] <= 1e-6
+                    and replay_audit.get("checked", False)
+                    and replay_audit.get("all_finite", False)
+                    and replay_audit.get("max_abs_error", np.inf) <= replay_tolerance
+                )
+                (destination / "reward_scale_audit.json").write_text(
+                    json.dumps(reward_scale_audit, indent=2, ensure_ascii=False), encoding="utf-8"
+                )
+                pd.DataFrame(list(reward_scale_wrapper.audit_records)).to_csv(
+                    destination / "reward_scale_records.csv", index=False, encoding="utf-8-sig"
+                )
+                if not reward_scale_audit["passed"]:
+                    raise RuntimeError(
+                        "Training reward scale audit failed; see "
+                        f"{destination / 'reward_scale_audit.json'}"
+                    )
             raw_daily, raw_summary, runtime_audit = legacy.evaluate_checkpoint(
                 model,
                 spec,
@@ -258,6 +310,8 @@ def train_case(
                 "exploration_schedule_total_steps": total_timesteps,
                 "sb3_internal_total_timesteps": int(model._total_timesteps),
                 "exploration_rate": float(model.exploration_rate),
+                "training_reward_scale": reward_scale,
+                "reward_scale_audit_passed": bool(reward_scale_audit["passed"]),
                 "elapsed_seconds": time.perf_counter() - started,
                 "model_path": str(destination / "model.zip"),
                 "replay_buffer_saved": (destination / "replay_buffer.pkl").exists(),

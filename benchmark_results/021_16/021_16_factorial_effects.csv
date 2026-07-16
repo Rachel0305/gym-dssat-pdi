@@ -1,0 +1,5 @@
+contrast,yield_difference_kg_ha,interpretation
+N_early_minus_N_late_under_I_early,2919.0,固定 I-early，仅交换施氮时点
+N_early_minus_N_late_under_I_late,2906.0,固定 I-late，仅交换施氮时点
+I_late_minus_I_early_under_N_early,-20.0,固定 N-early，仅交换灌溉时点
+I_late_minus_I_early_under_N_late,-7.0,固定 N-late，仅交换灌溉时点

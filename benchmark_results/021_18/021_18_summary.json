@@ -1,0 +1,14 @@
+{
+  "status": "completed",
+  "candidate_count": 28,
+  "strict_success_count": 3,
+  "selected_demonstration": "R_I75_no_early_mid_N200",
+  "selected_yield_kg_ha": 11205.0,
+  "selected_irrigation_mm": 75.0,
+  "selected_nitrogen_kg_ha": 200.0,
+  "selected_wp_et_kg_m3": 2.3000000000000003,
+  "selected_iwp_kg_m3": 14.94,
+  "selected_pfp_n_kg_kg": 56.0,
+  "selected_nute_kg_kg": 40.0,
+  "interpretation": "A feasible schedule exists; this is deterministic oracle evidence, not a learned DQN result."
+}

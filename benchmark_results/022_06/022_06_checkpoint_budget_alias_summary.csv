@@ -1,0 +1,5 @@
+checkpoint_season,first_dap_reaching_n300,final_executed_nitrogen,final_executed_irrigation,clipped_selected_action_count,selected_execution_alias_stage_count,n300_was_reached_by_positive_executed_n_before_or_at_saturation
+15,65,300.0,90.0,2,2,True
+30,65,300.0,105.0,1,1,True
+45,65,300.0,90.0,0,1,True
+60,65,300.0,90.0,0,1,True

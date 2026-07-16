@@ -1,0 +1,23 @@
+{
+  "status": "completed",
+  "branch": "A",
+  "control_pass_count": 1,
+  "treatment_pass_count": 4,
+  "final_treatment": {
+    "checkpoint": 1000,
+    "yield_kg_ha": 11205.0,
+    "biomass_kg_ha": 20119.0,
+    "irrigation_mm": 90.0,
+    "nitrogen_kg_ha": 200.0,
+    "late_n_after_dap90_kg_ha": 0.0,
+    "nonzero_operation_count": 6,
+    "reward_total": 4706.90478515625,
+    "q_values_finite": true,
+    "terminated_or_truncated": true,
+    "expert_efficiency_gate": true,
+    "source": NaN,
+    "arm": "treatment_mask_demo_nstep"
+  },
+  "online_5k_started": false,
+  "interpretation": "\u5c4f\u853d\u5728\u7ebfdemo n-step\u663e\u8457\u63d0\u9ad8\u4f18\u8d28\u7b56\u7565\u4fdd\u6301\u6027\uff0c\u53ef\u53e6\u7acb5K/\u591aseed\u4efb\u52a1\u3002"
+}

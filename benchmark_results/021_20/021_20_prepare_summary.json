@@ -1,0 +1,32 @@
+{
+  "phase": "prepare",
+  "demonstration": {
+    "yield_kg_ha": 11205.0,
+    "biomass_kg_ha": 20132.0,
+    "irrigation_mm": 75.0,
+    "nitrogen_kg_ha": 200.0,
+    "transition_count": 160,
+    "terminal_count": 1,
+    "last_transition_terminal": true,
+    "nonzero_event_count": 5,
+    "nonzero_all_uncropped": true,
+    "all_arrays_finite": true,
+    "yield_reproduction_error": 0.0,
+    "passed": true
+  },
+  "unit_tests": {
+    "transition_count": 160,
+    "last_done": true,
+    "all_n_step_discounts_positive": true,
+    "large_margin_zero_case": 0.0,
+    "large_margin_positive_case": 0.2999999523162842,
+    "toy_loss_before": 1.2999999523162842,
+    "toy_loss_after": 1.1050000190734863,
+    "toy_expert_margin_before": 0.0,
+    "toy_expert_margin_after": 0.09999998658895493,
+    "permanent_demo_count": 160,
+    "ordinary_replay_size_before_online_training": 0,
+    "passed": true
+  },
+  "passed": true
+}

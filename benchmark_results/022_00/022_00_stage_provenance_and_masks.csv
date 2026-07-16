@@ -1,0 +1,7 @@
+source_dap,executable_dap,dssat_phase_interpretation,valid_action_indices
+0,1,pre_emergence,"[0, 1, 2, 3, 4, 5, 6, 7, 8]"
+30,30,juvenile,"[0, 1, 2, 3, 4, 5, 6, 7, 8]"
+50,50,floral_init_to_silking,"[0, 1, 2, 3, 4, 5, 6, 7, 8]"
+65,65,floral_init_to_silking,"[0, 1, 2, 3, 4, 5, 6, 7, 8]"
+85,85,floral_init_to_silking,"[0, 1, 2, 3, 4, 5, 6, 7, 8]"
+110,110,grain_fill,"[0, 1, 2]"

@@ -1,0 +1,30 @@
+{
+  "demonstration": {
+    "yield_kg_ha": 11205.0,
+    "biomass_kg_ha": 20132.0,
+    "irrigation_mm": 75.0,
+    "nitrogen_kg_ha": 200.0,
+    "observation_count": 160,
+    "action_count": 160,
+    "all_observations_finite": true,
+    "nonzero_event_count": 5,
+    "nonzero_all_uncropped": true,
+    "yield_reproduction_error": 0.0,
+    "passed": true
+  },
+  "supervised": {
+    "epochs": 100,
+    "final_loss": 0.5460111498832703,
+    "overall_accuracy": 0.625,
+    "nonzero_accuracy": 1.0,
+    "passed": false
+  },
+  "free_evaluation": {
+    "yield_kg_ha": 11154.0,
+    "biomass_kg_ha": 20041.0,
+    "irrigation_mm": 120.0,
+    "nitrogen_kg_ha": 300.0,
+    "reward_total": 4126.132080078125
+  },
+  "interpretation": "Warm-start smoke only; no RL training performed."
+}

@@ -1,0 +1,13 @@
+{
+  "status": "completed",
+  "branch": "C_failed",
+  "final_seed_pass_count": 0,
+  "total_seeds": 3,
+  "lambda65": 0.003002436945892297,
+  "lambda110": 0.06764715488665898,
+  "updates_per_seed": 3000,
+  "total_offline_updates": 9000,
+  "dssat_calls": 0,
+  "online_interactions": 0,
+  "next_step_allowed": false
+}

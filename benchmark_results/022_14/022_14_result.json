@@ -1,0 +1,14 @@
+{
+  "status": "completed",
+  "lambda_fixed": 0.0060048738917845,
+  "lambda_source": "median of 022_12 seed-specific shared-gradient norm ratios",
+  "all_initial_residuals_in_smooth_l1_quadratic_region": true,
+  "maximum_linear_sign_flip_estimate": 2172,
+  "maximum_quadratic_local_sign_flip_estimate": 2884,
+  "recommended_single_offline_training_updates": 3000,
+  "maximum_quadratic_local_90pct_target_estimate": 14008,
+  "dqn_formal_training_steps": 0,
+  "dssat_calls": 0,
+  "saved_updated_checkpoint": false,
+  "limitation": "Local extrapolation only: gradients, Jacobian, MC interaction and optimizer dynamics can change during actual training; the update budget is not a convergence guarantee."
+}

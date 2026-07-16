@@ -1,0 +1,22 @@
+{
+  "status": "completed",
+  "branch": "C_labels_insufficient",
+  "strict_success_scenarios_total": 18,
+  "causal_test_scenarios_total": 11,
+  "strict_success_scenarios_remaining_for_imitation": 13,
+  "dap65_causal_test_states": 3,
+  "dap110_causal_test_states": 8,
+  "behavior_supported_actions_total": 23,
+  "train_validation_supported_actions": 13,
+  "singleton_actions": 3,
+  "unknown_actions": 5,
+  "causal_test_only_actions": 2,
+  "all_behavior_actions_identifiable": false,
+  "every_stage_has_trainable_label": true,
+  "causal_test_complete": true,
+  "scenario_leakage": false,
+  "formal_supervised_training_steps": 0,
+  "dssat_calls": 0,
+  "next_step_allowed": false,
+  "scope": "Label provenance and coverage only; historical MC associations are not treated as causal labels."
+}

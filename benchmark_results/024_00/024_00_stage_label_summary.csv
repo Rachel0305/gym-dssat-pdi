@@ -1,0 +1,7 @@
+dap,behavior_supported_action_count,train_validation_supported_action_count,causal_test_only_action_count,singleton_action_count,unknown_action_count,all_behavior_actions_identifiable
+1,4,2,0,0,2,False
+30,4,2,0,0,2,False
+50,4,3,0,1,0,False
+65,6,3,1,2,0,False
+85,3,2,0,0,1,False
+110,2,1,1,0,0,True

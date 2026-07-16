@@ -1,0 +1,4 @@
+seed,unique_parameter_storage,initial_q_max_abs_diff,dispatch_q_max_abs_diff,dap65_gradient_isolation_pass,dap65_parameter_q_isolation_pass,dap110_gradient_isolation_pass,dap110_parameter_q_isolation_pass,roundtrip_hash_equal,roundtrip_q_max_abs_diff,finite,seed_pass
+0,True,0.0,0.0,True,True,True,True,True,0.0,True,True
+1,True,0.0,0.0,True,True,True,True,True,0.0,True,True
+2,True,0.0,0.0,True,True,True,True,True,0.0,True,True

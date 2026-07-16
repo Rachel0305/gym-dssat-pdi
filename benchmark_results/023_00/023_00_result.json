@@ -1,0 +1,25 @@
+{
+  "status": "completed",
+  "branch": "A_structure_isolated",
+  "seed_pass_count": 3,
+  "total_seeds": 3,
+  "coverage_pass": true,
+  "stage_daps": [
+    1,
+    30,
+    50,
+    65,
+    85,
+    110
+  ],
+  "network_architecture_each_stage": "25-64-64-9",
+  "parameters_each_stage": 6409,
+  "total_ensemble_parameters": 38454,
+  "formal_dqn_training_steps": 0,
+  "unit_test_optimizer_steps": 6,
+  "dssat_calls": 0,
+  "online_interactions": 0,
+  "saved_updated_checkpoint": false,
+  "next_step_allowed": true,
+  "scope": "Structural isolation only; no claim of policy improvement or online success."
+}

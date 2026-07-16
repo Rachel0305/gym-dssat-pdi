@@ -1,0 +1,13 @@
+{
+  "status": "partial",
+  "branch": "C_input_or_execution_blocked",
+  "eligible_years": [
+    2012,
+    2014,
+    2015
+  ],
+  "blocking_reason": "SDATE/ICDAT/PDATE chain is not year-aligned for every authoritative treatment",
+  "training_steps": 0,
+  "dssat_calls_in_formal_run": 0,
+  "next_step_allowed": false
+}

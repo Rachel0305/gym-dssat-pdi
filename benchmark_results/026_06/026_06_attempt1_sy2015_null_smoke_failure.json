@@ -1,0 +1,16 @@
+{
+  "status": "failed_non_scientific_input_preflight",
+  "year": 2015,
+  "scenario": "null",
+  "training_steps": 0,
+  "completed_seasons": 0,
+  "outer_wait_timeout_seconds": 300,
+  "dssat_stop_code": 99,
+  "dssat_error_key": "Y4KDOY",
+  "dssat_message": "Input date is greather than 99 years after start simulation date.",
+  "sdate": 15091,
+  "icdat": 14099,
+  "pdate": 15108,
+  "scientific_result": false,
+  "source_runtime_directory": "benchmark_results/026_06_smoke_2015_null"
+}

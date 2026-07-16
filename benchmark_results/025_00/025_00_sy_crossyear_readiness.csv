@@ -1,0 +1,14 @@
+item,passed,category
+protocol_yaml_loaded,True,registration_or_protocol
+strict_candidate_count_18,True,blocking_input
+strict_candidate_scenarios_unique,True,blocking_input
+mzx_exists,True,blocking_input
+mzx_2012_treatment_ic1,True,blocking_input
+mzx_2014_treatment_ic2,True,blocking_input
+weather_2012_exists,True,blocking_input
+weather_2014_exists,True,registration_or_protocol
+soil_exists,True,blocking_input
+cultivar_exists,True,blocking_input
+historical_2012_forward_completed,True,blocking_input
+site_config_registers_2014,True,registration_or_protocol
+site_config_registers_2012,False,registration_or_protocol

@@ -1,0 +1,18 @@
+{
+  "status": "completed",
+  "branch": "A_protocol_ready_input_validation_required",
+  "protocol_ready": true,
+  "sy2014_strict_candidate_count": 18,
+  "sy2012_historical_forward_evidence": true,
+  "sy2012_site_config_registered": false,
+  "sy2012_four_baselines_current_input_complete": false,
+  "candidate_transfer_allowed_now": false,
+  "next_step": "025_01_sy2012_input_provenance_and_four_baseline_forward_validation",
+  "mzx_sha256": "20b071bc49549cbf561be3aae81caa355aa0582564db524e17d68ab6a274418a",
+  "weather_2012_sha256": "4e2489653b7a72f75ce255602b2a58953e40e6424b4f27e8cf64d900361e7c68",
+  "formal_optimization_runs": 0,
+  "dssat_calls": 0,
+  "learning_training_steps": 0,
+  "files_modified_in_input_package": 0,
+  "claim_boundary": "SY2014 results remain a retrospective oracle until unchanged schedules pass SY2012."
+}

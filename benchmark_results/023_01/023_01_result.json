@@ -1,0 +1,30 @@
+{
+  "status": "completed",
+  "branch": "C_budget_not_identified",
+  "coverage_pass": true,
+  "seed_stage_virtual_step_pass_count": 6,
+  "seed_stage_virtual_step_total": 6,
+  "shared_parameters_per_sample": 29.671296296296298,
+  "separated_parameters_per_sample": 178.02777777777777,
+  "ratio_worsening_factor": 6.0,
+  "maximum_local_sign_flip_estimate": 1299,
+  "recommended_updates_for_023_02": null,
+  "finite_case_diagnostic_candidate_updates": 1500,
+  "budget_rounding_rule": "maximum local sign-flip estimate rounded up to nearest 500; no safety multiplier",
+  "stages_to_train": [
+    65,
+    110
+  ],
+  "stages_to_freeze": [
+    1,
+    30,
+    50,
+    85
+  ],
+  "formal_dqn_training_steps": 0,
+  "virtual_gradient_steps": 6,
+  "dssat_calls": 0,
+  "saved_updated_checkpoint": false,
+  "next_step_allowed": false,
+  "limitation": "Local one-step extrapolation is a preregistration aid, not a convergence guarantee."
+}

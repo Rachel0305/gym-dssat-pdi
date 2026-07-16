@@ -1,0 +1,28 @@
+{
+  "status": "completed",
+  "branch": "A_environment_ready_dependency_missing",
+  "checks": {
+    "six_stage_decisions": true,
+    "all_selected_actions_mask_valid": true,
+    "yield_11202_pm2": true,
+    "irrigation_total_60": true,
+    "nitrogen_total_200": true,
+    "reward_closure": true,
+    "reward_6p354_pm0p002": true,
+    "wp_et_2p31": true,
+    "pfp_n_56": true,
+    "summary_resource_match": true,
+    "finite_rewards": true
+  },
+  "sb3_version": "2.8.0",
+  "sb3_contrib_available": false,
+  "ppo_training_steps": 0,
+  "dssat_seasons": 1,
+  "total_reward": 6.35400439453125,
+  "expected_g0_scaled": 6.35400439453125,
+  "final_yield": 11202.00439453125,
+  "irrigation_total": 60.0,
+  "nitrogen_total": 200.0,
+  "next_step_allowed": false,
+  "next_requirement": "explicit_user_approval_to_install_matching_sb3_contrib_in_container_venv"
+}

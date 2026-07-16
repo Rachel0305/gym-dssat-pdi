@@ -1,0 +1,130 @@
+experiment:
+  experiment_id: 021_01_fq2016_wcost0p5__fq_2016_seed1
+  experiment_type: final_dqn_strategy_determination
+  description: FQ2016 formal run with low irrigation penalty
+  output_root: benchmark_results/021_01
+  reuse_existing_results: true
+  resume: true
+  dry_run: false
+  force: false
+algorithm:
+  name: DQN
+  policy: MlpPolicy
+  total_timesteps: 50000
+  learning_rate: 0.0001
+  buffer_size: 10000
+  learning_starts: 50
+  batch_size: 32
+  gamma: 0.99
+  tau: 1.0
+  target_update_interval: 10000
+  train_freq: 1
+  gradient_steps: 1
+  max_grad_norm: 10.0
+  n_steps: 5
+  exploration_fraction: 0.35
+  exploration_initial_eps: 1.0
+  exploration_final_eps: 0.05
+  seed: 1
+  checkpoint_interval: 5000
+  save_replay_buffer: true
+action_space:
+  irrigation_levels:
+  - 0
+  - 15
+  - 30
+  nitrogen_levels:
+  - 0
+  - 50
+  - 100
+constraints:
+  irrigation_budget: 120.0
+  nitrogen_budget: 300.0
+  daily_irrigation_cap: 30.0
+  daily_nitrogen_cap: 100.0
+  min_interval_days: 7
+  decision_window_start_dap: 1
+  decision_window_end_dap: 120
+  interval_semantics: shared_water_nitrogen_last_operation_dap
+reward:
+  type: local_null_terminal
+  irrigation_cost: 0.5
+  nitrogen_cost: 5.0
+  yield_gain_coefficient: 1.0
+  leaching_cost: 0.0
+observations:
+  include:
+  - dap
+  - dtt
+  - ep
+  - grnwt
+  - istage
+  - nstres
+  - rtdep
+  - srad
+  - sw
+  - swfac
+  - tmax
+  - topwt
+  - totir
+  - vstage
+  - wtdep
+  - xlai
+evaluation:
+  seeds:
+  - 0
+  - 1
+  - 2
+  baselines:
+  - null
+  - recorded_farmer
+  - dssat_auto
+  - official_extension_expert
+  - dqn
+  save_daily_trajectory: true
+  save_action_history: true
+  deterministic: true
+reporting:
+  generate_markdown: true
+  generate_pptx: true
+  generate_excel: true
+  generate_png: true
+  generate_svg: true
+  dpi: 300
+runtime:
+  engine: legacy_frozen_dqn_adapter
+  python_executable: /opt/gym_dssat_pdi/bin/python
+  project_mount: /workspace
+  isolate_cases: true
+site:
+  station_code: FQ
+  aliases:
+  - FQA
+  station_name: Fengqiu
+  adapter: fq_frozen_020_12
+  input_status: confirmed
+  treatment: 2
+  cultivar_id: FQ0985
+  soil_id: FQ99001200
+  initial_condition_mode: 1
+  supported_years:
+  - 2016
+  train_years:
+  - 2016
+  eval_years:
+  - 2016
+  inputs:
+    source_dir: DSSAT_auto_validation/multisite_new_cultivar_inputs_013/FQ
+    by_year:
+      '2016':
+        prepared_input_dir: DSSAT_auto_validation/multisite_new_cultivar_inputs_013/FQ
+        fileX_name: CNFQ0801.MZX
+        weather_name: CNFQ1601.WTH
+  critical_input_paths:
+  - DSSAT_auto_validation/multisite_new_cultivar_inputs_013/FQ/CNFQ0801.MZX
+  - DSSAT_auto_validation/multisite_new_cultivar_inputs_013/FQ/CNFQ1601.WTH
+  - DSSAT_auto_validation/multisite_new_cultivar_inputs_013/FQ/MZCER048.CUL
+  - DSSAT_auto_validation/multisite_new_cultivar_inputs_013/FQ/SOIL.SOL
+  active_year: 2016
+site_config: ../sites/fqa.yaml
+_project_root: /workspace

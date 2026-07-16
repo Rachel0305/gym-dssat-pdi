@@ -1,0 +1,31 @@
+{
+  "selection_rule": "maximum reward_total; earliest checkpoint on ties",
+  "selected_checkpoint": 5000,
+  "model_path": "/workspace/benchmark_results/021_01/021_01_yc2014_ncost8_smoke__yc_2014_seed0/checkpoints/checkpoint_5000/model.zip",
+  "summary": {
+    "experiment_id": "021_01_yc2014_ncost8_smoke__yc_2014_seed0",
+    "config_hash": "07a3517775476bcb9207bfb6dfe09296648a88db7e40b20bf5b02b50f480b88c",
+    "station_code": "YC",
+    "year": 2014,
+    "seed": 0,
+    "scenario": "dqn",
+    "checkpoint": 5000,
+    "yield_kg_ha": 9418.0,
+    "biomass_kg_ha": 20511.0,
+    "irrigation_mm": 120.0,
+    "nitrogen_kg_ha": 300.0,
+    "reward_total": -27.2039794921875,
+    "number_of_irrigation_events": 8,
+    "number_of_nitrogen_events": 3,
+    "water_budget_use_ratio": 1.0,
+    "nitrogen_budget_use_ratio": 1.0,
+    "et_mm": NaN,
+    "nitrogen_uptake_kg_ha": NaN,
+    "WP_ET_kg_m3": NaN,
+    "IWP_gross_kg_m3": 7.848333333333334,
+    "PFP_N_kg_kg": 31.393333333333334,
+    "NUtE_kg_kg": NaN,
+    "yield_per_irrigation": 78.48333333333333,
+    "yield_per_nitrogen": 31.393333333333334
+  }
+}

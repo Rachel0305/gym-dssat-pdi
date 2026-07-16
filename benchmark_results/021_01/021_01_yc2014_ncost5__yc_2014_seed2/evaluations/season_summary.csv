@@ -1,0 +1,2 @@
+﻿experiment_id,config_hash,station_code,year,seed,scenario,checkpoint,yield_kg_ha,biomass_kg_ha,irrigation_mm,nitrogen_kg_ha,reward_total,number_of_irrigation_events,number_of_nitrogen_events,water_budget_use_ratio,nitrogen_budget_use_ratio,et_mm,nitrogen_uptake_kg_ha,WP_ET_kg_m3,IWP_gross_kg_m3,PFP_N_kg_kg,NUtE_kg_kg,yield_per_irrigation,yield_per_nitrogen
+021_01_yc2014_ncost5__yc_2014_seed2,f9c8662686c2a9fd45b70bae45edefc87a7e76e22d37d9dae058eb3b6388955a,YC,2014,2,dqn,50000,8665.0,18842.0,75.0,0.0,764.7802734375,5,0,0.625,0.0,,,,11.553333333333335,,,115.53333333333333,

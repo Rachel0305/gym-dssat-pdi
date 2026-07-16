@@ -42,11 +42,32 @@ benchmark_results/**/logs/
 benchmark_results/**/dqn_runtime/
 benchmark_results/**/null_runtime/
 benchmark_results/**/pdi_tmp_snapshot*/
+benchmark_results/**/runtime/
+benchmark_results/**/*_runtime/
+benchmark_results/**/runs/
+benchmark_results/**/training/
+benchmark_results/*_failed_attempt_*/
+# Nested framework run packages contain repeated DSSAT inputs and runtime state.
+# Curated summaries/evaluations are force-added when they are scientifically useful.
+benchmark_results/021_*/021_*/
+benchmark_results/021_16/i_*__n_*/
+benchmark_results/021_20/evaluations/
+benchmark_results/021_25/evaluations/
 !benchmark_results/existing_results_registry.csv
 !benchmark_results/result_registry.csv
 !benchmark_results/**/summaries/*.csv
 !benchmark_results/**/evaluations/season_summary.csv
 !benchmark_results/**/evaluations/daily_trajectory.csv
+
+# Large binary research references and generated proposal artifacts stay local.
+# Reproducible source scripts and Markdown records remain eligible for Git.
+*.pdf
+*.pptx
+*.docx
+references/nature-skills/
+proposal_materials/ppt_work/extracted_media/
+proposal_materials/ppt_work/*.jpg
+proposal_materials/ppt_work/*.png
 
 # ===============================
 # DSSAT outputs (VERY IMPORTANT)

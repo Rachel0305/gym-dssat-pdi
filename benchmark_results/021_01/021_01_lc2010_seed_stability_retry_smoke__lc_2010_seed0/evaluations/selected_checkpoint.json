@@ -1,0 +1,31 @@
+{
+  "selection_rule": "maximum reward_total; earliest checkpoint on ties",
+  "selected_checkpoint": 5000,
+  "model_path": "/workspace/benchmark_results/021_01/021_01_lc2010_seed_stability_retry_smoke__lc_2010_seed0/checkpoints/checkpoint_5000/model.zip",
+  "summary": {
+    "experiment_id": "021_01_lc2010_seed_stability_retry_smoke__lc_2010_seed0",
+    "config_hash": "8accd7554803556c63ae8a15304d4272b294504f36622b516e05fb589e45f8d9",
+    "station_code": "LC",
+    "year": 2010,
+    "seed": 0,
+    "scenario": "dqn",
+    "checkpoint": 5000,
+    "yield_kg_ha": 8737.0,
+    "biomass_kg_ha": 16367.0,
+    "irrigation_mm": 120.0,
+    "nitrogen_kg_ha": 200.0,
+    "reward_total": -433.6092529296875,
+    "number_of_irrigation_events": 6,
+    "number_of_nitrogen_events": 4,
+    "water_budget_use_ratio": 1.0,
+    "nitrogen_budget_use_ratio": 0.6666666666666666,
+    "et_mm": NaN,
+    "nitrogen_uptake_kg_ha": NaN,
+    "WP_ET_kg_m3": NaN,
+    "IWP_gross_kg_m3": 7.280833333333334,
+    "PFP_N_kg_kg": 43.685,
+    "NUtE_kg_kg": NaN,
+    "yield_per_irrigation": 72.80833333333334,
+    "yield_per_nitrogen": 43.685
+  }
+}

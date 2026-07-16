@@ -1,0 +1,133 @@
+experiment:
+  experiment_id: 021_01_lc2010_seed_stability_retry__lc_2010_seed0
+  experiment_type: final_dqn_strategy_determination
+  description: LC2010 frozen 50K seed stability rerun after adapter repair
+  output_root: benchmark_results/021_01
+  reuse_existing_results: true
+  resume: true
+  dry_run: false
+  force: false
+algorithm:
+  name: DQN
+  policy: MlpPolicy
+  total_timesteps: 50000
+  learning_rate: 0.0001
+  buffer_size: 10000
+  learning_starts: 50
+  batch_size: 32
+  gamma: 0.99
+  tau: 1.0
+  target_update_interval: 10000
+  train_freq: 1
+  gradient_steps: 1
+  max_grad_norm: 10.0
+  n_steps: 5
+  exploration_fraction: 0.35
+  exploration_initial_eps: 1.0
+  exploration_final_eps: 0.05
+  seed: 0
+  checkpoint_interval: 5000
+  save_replay_buffer: true
+action_space:
+  irrigation_levels:
+  - 0
+  - 15
+  - 30
+  nitrogen_levels:
+  - 0
+  - 50
+  - 100
+constraints:
+  irrigation_budget: 120.0
+  nitrogen_budget: 300.0
+  daily_irrigation_cap: 30.0
+  daily_nitrogen_cap: 100.0
+  min_interval_days: 7
+  decision_window_start_dap: 1
+  decision_window_end_dap: 120
+  interval_semantics: shared_water_nitrogen_last_operation_dap
+reward:
+  type: local_null_terminal
+  irrigation_cost: 1.0
+  nitrogen_cost: 5.0
+  yield_gain_coefficient: 1.0
+  leaching_cost: 0.0
+observations:
+  include:
+  - dap
+  - dtt
+  - ep
+  - grnwt
+  - istage
+  - nstres
+  - rtdep
+  - srad
+  - sw
+  - swfac
+  - tmax
+  - topwt
+  - totir
+  - vstage
+  - wtdep
+  - xlai
+evaluation:
+  seeds:
+  - 0
+  - 1
+  - 2
+  baselines:
+  - null
+  - recorded_farmer
+  - dssat_auto
+  - official_extension_expert
+  - dqn
+  save_daily_trajectory: true
+  save_action_history: true
+  deterministic: true
+reporting:
+  generate_markdown: true
+  generate_pptx: true
+  generate_excel: true
+  generate_png: true
+  generate_svg: true
+  dpi: 300
+runtime:
+  engine: legacy_frozen_dqn_adapter
+  python_executable: /opt/gym_dssat_pdi/bin/python
+  project_mount: /workspace
+  isolate_cases: true
+site:
+  station_code: LC
+  aliases:
+  - LCA
+  station_name: Luancheng
+  adapter: lc_fixed_input_017_11
+  input_status: adapter_required
+  treatment: 3
+  cultivar_id: XY0004
+  soil_id: LC990012007
+  initial_condition_mode: 3
+  supported_years:
+  - 2010
+  train_years:
+  - 2010
+  eval_years:
+  - 2010
+  inputs:
+    source_dir: DSSAT_auto_validation/multisite_new_cultivar_inputs_013/LC
+    by_year:
+      '2010':
+        prepared_input_dir: DSSAT_auto_validation/lc_fixed_input_year_screening_017_11/runs/2010/null/input
+        fileX_name: CNLC1001.MZX
+        weather_name: CNLC1001.WTH
+  notes:
+  - The raw CNLC0801.MZX soil reference is not canonical; use the 017_11 prepared
+    input adapter.
+  critical_input_paths:
+  - DSSAT_auto_validation/lc_fixed_input_year_screening_017_11/runs/2010/null/input/CNLC1001.MZX
+  - DSSAT_auto_validation/lc_fixed_input_year_screening_017_11/runs/2010/null/input/CNLC1001.WTH
+  - DSSAT_auto_validation/lc_fixed_input_year_screening_017_11/runs/2010/null/input/MZCER048.CUL
+  - DSSAT_auto_validation/lc_fixed_input_year_screening_017_11/runs/2010/null/input/SOIL.SOL
+  active_year: 2010
+site_config: ../sites/lca.yaml
+_project_root: /workspace

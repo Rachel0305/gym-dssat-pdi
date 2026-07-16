@@ -1,0 +1,248 @@
+{
+  "config": {
+    "_project_root": "/workspace",
+    "action_space": {
+      "irrigation_levels": [
+        0,
+        15,
+        30
+      ],
+      "nitrogen_levels": [
+        0,
+        50,
+        100
+      ]
+    },
+    "algorithm": {
+      "batch_size": 32,
+      "buffer_size": 10000,
+      "checkpoint_interval": 5000,
+      "exploration_final_eps": 0.05,
+      "exploration_fraction": 0.35,
+      "exploration_initial_eps": 1.0,
+      "gamma": 0.99,
+      "gradient_steps": 1,
+      "learning_rate": 0.0001,
+      "learning_starts": 50,
+      "max_grad_norm": 10.0,
+      "n_steps": 5,
+      "name": "DQN",
+      "policy": "MlpPolicy",
+      "save_replay_buffer": true,
+      "seed": 2,
+      "target_update_interval": 10000,
+      "tau": 1.0,
+      "total_timesteps": 50000,
+      "train_freq": 1
+    },
+    "constraints": {
+      "daily_irrigation_cap": 30.0,
+      "daily_nitrogen_cap": 100.0,
+      "decision_window_end_dap": 120,
+      "decision_window_start_dap": 1,
+      "interval_semantics": "shared_water_nitrogen_last_operation_dap",
+      "irrigation_budget": 120.0,
+      "min_interval_days": 7,
+      "nitrogen_budget": 300.0
+    },
+    "evaluation": {
+      "baselines": [
+        null,
+        "recorded_farmer",
+        "dssat_auto",
+        "official_extension_expert",
+        "dqn"
+      ],
+      "deterministic": true,
+      "save_action_history": true,
+      "save_daily_trajectory": true,
+      "seeds": [
+        0,
+        1,
+        2
+      ]
+    },
+    "experiment": {
+      "description": "FQ2016 frozen formal run for unified DQN benchmark",
+      "dry_run": false,
+      "experiment_id": "021_01_fq2016_wcost1__fq_2016_seed2",
+      "experiment_type": "final_dqn_strategy_determination",
+      "force": false,
+      "output_root": "benchmark_results/021_01",
+      "resume": true,
+      "reuse_existing_results": true
+    },
+    "observations": {
+      "include": [
+        "dap",
+        "dtt",
+        "ep",
+        "grnwt",
+        "istage",
+        "nstres",
+        "rtdep",
+        "srad",
+        "sw",
+        "swfac",
+        "tmax",
+        "topwt",
+        "totir",
+        "vstage",
+        "wtdep",
+        "xlai"
+      ]
+    },
+    "reporting": {
+      "dpi": 300,
+      "generate_excel": true,
+      "generate_markdown": true,
+      "generate_png": true,
+      "generate_pptx": true,
+      "generate_svg": true
+    },
+    "reward": {
+      "irrigation_cost": 1.0,
+      "leaching_cost": 0.0,
+      "nitrogen_cost": 5.0,
+      "type": "local_null_terminal",
+      "yield_gain_coefficient": 1.0
+    },
+    "runtime": {
+      "engine": "legacy_frozen_dqn_adapter",
+      "isolate_cases": true,
+      "project_mount": "/workspace",
+      "python_executable": "/opt/gym_dssat_pdi/bin/python"
+    },
+    "site": {
+      "active_year": 2016,
+      "adapter": "fq_frozen_020_12",
+      "aliases": [
+        "FQA"
+      ],
+      "critical_input_paths": [
+        "DSSAT_auto_validation/multisite_new_cultivar_inputs_013/FQ/CNFQ0801.MZX",
+        "DSSAT_auto_validation/multisite_new_cultivar_inputs_013/FQ/CNFQ1601.WTH",
+        "DSSAT_auto_validation/multisite_new_cultivar_inputs_013/FQ/MZCER048.CUL",
+        "DSSAT_auto_validation/multisite_new_cultivar_inputs_013/FQ/SOIL.SOL"
+      ],
+      "cultivar_id": "FQ0985",
+      "eval_years": [
+        2016
+      ],
+      "initial_condition_mode": 1,
+      "input_status": "confirmed",
+      "inputs": {
+        "by_year": {
+          "2016": {
+            "fileX_name": "CNFQ0801.MZX",
+            "prepared_input_dir": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013/FQ",
+            "weather_name": "CNFQ1601.WTH"
+          }
+        },
+        "source_dir": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013/FQ"
+      },
+      "soil_id": "FQ99001200",
+      "station_code": "FQ",
+      "station_name": "Fengqiu",
+      "supported_years": [
+        2016
+      ],
+      "train_years": [
+        2016
+      ],
+      "treatment": 2
+    },
+    "site_config": "../sites/fqa.yaml"
+  },
+  "config_hash": "43547c730e1ee22f033c82f3184c6f0ab01e9c11254a763ffa9000600caa41f1",
+  "created_at_utc": "2026-07-12T11:32:29.868560+00:00",
+  "details": {
+    "run_command": "/workspace/benchmark/benchmark_runner.py --config configs/experiments/021_01_fq2016_wcost1.yaml --train-only --resume --seed 2",
+    "training": {
+      "daily_path": "/workspace/benchmark_results/021_01/021_01_fq2016_wcost1__fq_2016_seed2/evaluations/daily_trajectory.csv",
+      "model_path": "/workspace/benchmark_results/021_01/021_01_fq2016_wcost1__fq_2016_seed2/checkpoints/checkpoint_20000/model.zip",
+      "replay_buffer_loaded": false,
+      "resume_semantics": "partial_reproducible_checkpoint_resume",
+      "resumed_from": 0,
+      "rng_state_loaded": false,
+      "season_path": "/workspace/benchmark_results/021_01/021_01_fq2016_wcost1__fq_2016_seed2/evaluations/season_summary.csv",
+      "selected_checkpoint": 20000,
+      "status": "completed"
+    }
+  },
+  "events": [
+    {
+      "at_utc": "2026-07-12T11:32:29.868560+00:00",
+      "message": "registered",
+      "status": "pending"
+    },
+    {
+      "at_utc": "2026-07-12T11:32:30.239540+00:00",
+      "message": "mode=train-only",
+      "status": "running"
+    },
+    {
+      "at_utc": "2026-07-12T11:39:25.715910+00:00",
+      "message": "requested mode completed",
+      "status": "completed"
+    }
+  ],
+  "experiment_id": "021_01_fq2016_wcost1__fq_2016_seed2",
+  "provenance": {
+    "captured_at_utc": "2026-07-12T11:32:29.869165+00:00",
+    "config_hash": "43547c730e1ee22f033c82f3184c6f0ab01e9c11254a763ffa9000600caa41f1",
+    "critical_inputs": {
+      "site.critical_input_paths[0]": {
+        "exists": true,
+        "kind": "file",
+        "path": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013/FQ/CNFQ0801.MZX",
+        "sha256": "3bfe509af06d2c724b0635d0150ba31544d338039634ba6cc98b64d1c8422135",
+        "size_bytes": 6893
+      },
+      "site.critical_input_paths[1]": {
+        "exists": true,
+        "kind": "file",
+        "path": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013/FQ/CNFQ1601.WTH",
+        "sha256": "eacc1d579f156677917d0db21bb845431e25f4f743d4fe5a57af2d6d21619cb3",
+        "size_bytes": 12247
+      },
+      "site.critical_input_paths[2]": {
+        "exists": true,
+        "kind": "file",
+        "path": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013/FQ/MZCER048.CUL",
+        "sha256": "7810190a042b2fe3c53c54d43bf8080ae02dd3d1edfec202bf572e130761403c",
+        "size_bytes": 17118
+      },
+      "site.critical_input_paths[3]": {
+        "exists": true,
+        "kind": "file",
+        "path": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013/FQ/SOIL.SOL",
+        "sha256": "3c303d68dda19ba6f40573a3bba5464e40230ddd60c6c746f0ea6bbfeee9e644",
+        "size_bytes": 170440
+      },
+      "site.inputs.by_year.2016.prepared_input_dir": {
+        "exists": true,
+        "kind": "directory",
+        "path": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013/FQ",
+        "sha256": null
+      },
+      "site.inputs.source_dir": {
+        "exists": true,
+        "kind": "directory",
+        "path": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013/FQ",
+        "sha256": null
+      }
+    },
+    "git_commit": "98c63167e84d18d622cb734c8408a463f7614a49",
+    "git_dirty_tracked": null,
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+    "project_root": "/workspace",
+    "python_executable": "/opt/gym_dssat_pdi/bin/python",
+    "python_version": "3.10.12"
+  },
+  "seed": 2,
+  "station_code": "FQ",
+  "status": "completed",
+  "updated_at_utc": "2026-07-12T11:39:25.715910+00:00",
+  "year": 2016
+}

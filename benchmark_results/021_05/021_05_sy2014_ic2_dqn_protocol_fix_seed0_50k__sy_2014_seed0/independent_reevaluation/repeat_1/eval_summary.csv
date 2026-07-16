@@ -1,0 +1,2 @@
+﻿site,station,year,checkpoint_step,null_baseline_yield,final_grain_kg_ha,final_biomass_kg_ha,action_irrigation_total_mm,action_nitrogen_total_kg_ha,mgmt_event_irrigation_total_mm,mgmt_event_nitrogen_total_kg_ha,max_water_stress,max_nitrogen_stress,total_reward,steps
+SY,Shenyang,2014,10000,5408.0,11131.0,20064.0,120.0,300.0,120.0,300.0,0.3923991322517395,0.012191057205200195,4103.077880859375,160

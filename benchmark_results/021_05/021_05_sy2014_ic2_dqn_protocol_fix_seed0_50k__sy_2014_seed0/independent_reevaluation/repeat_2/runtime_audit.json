@@ -1,0 +1,43 @@
+{
+  "checkpoint_step": 10000,
+  "operation_daps": [
+    1,
+    8,
+    15,
+    22,
+    29,
+    36,
+    43,
+    50,
+    57,
+    64,
+    71,
+    78
+  ],
+  "intervals": [
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7
+  ],
+  "checks": {
+    "action_space_is_9": true,
+    "irrigation_within_budget": true,
+    "nitrogen_within_budget": true,
+    "single_irrigation_within_cap": true,
+    "single_nitrogen_within_cap": true,
+    "operation_interval_at_least_7": true,
+    "irrigation_action_reaches_mgmtevent": true,
+    "nitrogen_action_reaches_mgmtevent": true,
+    "grain_output_is_finite": true,
+    "biomass_output_is_finite": true
+  },
+  "passed": true
+}

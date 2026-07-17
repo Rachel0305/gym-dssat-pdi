@@ -1,0 +1,43 @@
+{
+  "status": "passed",
+  "year": 2014,
+  "scenario": "official_extension_expert",
+  "checks": {
+    "no_invalid_irrigation_placeholder_rows": true,
+    "finite_yield": true,
+    "summary_match": true,
+    "original_mzx_hash_unchanged": true
+  },
+  "summary": {
+    "site": "SY",
+    "station": "Shenyang",
+    "year": 2014,
+    "region": "northeast_greatwall_spring_maize",
+    "scenario": "extension_expert_fixed_dap",
+    "status": "ok",
+    "final_gwad": 11059.0,
+    "final_cwad": 19440.0,
+    "rain_total_obs": 0.0,
+    "action_irrigation_total": 266.25,
+    "action_fertilizer_total": 300.0,
+    "event_irrigation_total": 266.09999999999997,
+    "event_fertilizer_total": 300.0,
+    "max_water_stress": 0.0,
+    "max_nitrogen_stress": 0.012191057205200195,
+    "final_dap": 139.0,
+    "run_dir": "benchmark_results/026_07_smoke_2014_expert_render_fix_attempt3/runs/2014/seed0/transfer_official_extension_expert",
+    "error": ""
+  },
+  "metrics": {
+    "summary_irrigation_total": 266.0,
+    "summary_nitrogen_total": 300.0,
+    "etcp_mm": 490.1,
+    "WP_ET_kg_m3": 2.2600000000000002,
+    "PFP_N_kg_kg": 36.9,
+    "summary_match_score": 0.25,
+    "summary_row_index": 2,
+    "management_or_action_n_total": 300.0,
+    "n_accounting_difference_vs_summary": 0.0
+  },
+  "training_steps": 0
+}

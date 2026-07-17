@@ -1,0 +1,20 @@
+{
+  "status": "failed",
+  "failure_type": "non_scientific_runtime_input_rendering_error",
+  "completed_before_failure": {
+    "year": 2012,
+    "seasons": 7,
+    "artifacts_written": true
+  },
+  "failed_at": {
+    "year": 2014,
+    "scenario": "official_extension_expert",
+    "dssat_error_key": "IPIRR",
+    "file": "fileX.MZX",
+    "line": 61
+  },
+  "root_cause": "The target-only cleanup left a non-target original irrigation placeholder row with IROP=-99. DSSAT parsed that row after MI was enabled for the external-action expert scenario.",
+  "scientific_result": false,
+  "training_steps": 0,
+  "preservation": "This complete attempt directory is retained separately before the corrected rerun."
+}

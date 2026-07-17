@@ -1,0 +1,11 @@
+{
+  "status": "failed",
+  "failure_type": "non_scientific_runtime_management_level_pointer_error",
+  "year": 2014,
+  "scenario": "official_extension_expert",
+  "dssat_error_key": "IPFERT",
+  "root_cause": "The selected treatment points to MI=1/MF=1, but the safe zero application rows were incorrectly labeled with treatment id 2 instead of management level id 1.",
+  "scientific_result": false,
+  "training_steps": 0,
+  "next_action": "Preserve this directory, label both safe application rows with management level 1, and rerun in a new smoke directory."
+}

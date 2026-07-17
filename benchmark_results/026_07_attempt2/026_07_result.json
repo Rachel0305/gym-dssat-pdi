@@ -1,0 +1,71 @@
+{
+  "status": "completed",
+  "branch": "A_SY_all_years_transfer_after_icdat_alignment",
+  "eligible_years": [
+    2012,
+    2014,
+    2015
+  ],
+  "approved_icdat_alignment": {
+    "2012": 12099,
+    "2014": 14099,
+    "2015": 15099
+  },
+  "original_mzx_sha256": "20b071bc49549cbf561be3aae81caa355aa0582564db524e17d68ab6a274418a",
+  "model_hashes": {
+    "0": "d88938a7d939cc772f5da185360298f59af86ea0b95cf411d3ccb0722ba541ab",
+    "1": "96d5d85e82a0e7a10b3fe68014b8f6c93ef903326d8640478c0becc6477832ec",
+    "2": "6add96bd8e827ec9613d5f04e18cb233f83418aa7bc07f690811acd5509e4b64"
+  },
+  "year_results": {
+    "2012": {
+      "source": "fresh_026_07_after_approved_icdat_alignment",
+      "targets": {
+        "yield_min": 9609.0,
+        "wp_et_min": 2.2100000000000004,
+        "pfp_n_min": 32.0
+      },
+      "pass_count": 3
+    },
+    "2014": {
+      "source": "fresh_026_07_after_approved_icdat_alignment",
+      "targets": {
+        "yield_min": 11059.0,
+        "wp_et_min": 2.2600000000000002,
+        "pfp_n_min": 36.9
+      },
+      "pass_count": 3
+    },
+    "2015": {
+      "source": "fresh_026_07_after_approved_icdat_alignment",
+      "targets": {
+        "yield_min": 10891.0,
+        "wp_et_min": 2.33,
+        "pfp_n_min": 36.3
+      },
+      "pass_count": 2
+    }
+  },
+  "engineering_checks": {
+    "approved_date_audit_pass": true,
+    "all_three_models_each_year": true,
+    "all_model_hashes_unchanged": true,
+    "zero_training_steps": true,
+    "zero_invalid_actions": true,
+    "all_runtime_manifests_present": true,
+    "all_runtime_icdat_targets_correct": true,
+    "original_mzx_hash_unchanged": true,
+    "all_model_metrics_valid_with_pfp_undefined_at_zero_n": true
+  },
+  "all_years_at_least_two_of_three": true,
+  "training_steps": 0,
+  "scientific_success_claimed": false,
+  "recorded_is_separate_comparator": true,
+  "next_step_allowed": true,
+  "post_run_aggregation_correction": {
+    "reason": "PFP_N is mathematically undefined for zero-N strategies and must not be required to be finite.",
+    "dssat_rerun": false,
+    "affected_scientific_values": false,
+    "runtime_manifest_count": 21
+  }
+}

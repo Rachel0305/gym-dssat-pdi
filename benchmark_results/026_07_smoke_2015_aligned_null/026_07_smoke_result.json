@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "year": 2015,
+  "scenario": "null",
+  "checks": {
+    "one_runtime_manifest": true,
+    "runtime_icdat_is_15099": true,
+    "runtime_copy_changed": true,
+    "original_mzx_hash_unchanged": true,
+    "finite_yield": true,
+    "summary_match": true
+  },
+  "summary": {
+    "site": "SY",
+    "station": "Shenyang",
+    "year": 2015,
+    "scenario": "null",
+    "final_gwad": 6601.0,
+    "final_cwad": 12320.0,
+    "rain_total": 628.5,
+    "irrigation_total": 0.0,
+    "fertilizer_total": 0.0,
+    "mgmt_event_irrigation_total": 0.0,
+    "mgmt_event_fertilizer_total": 0.0,
+    "max_water_stress": 0.5601254403591156,
+    "max_nitrogen_stress": 0.6072967052459717,
+    "total_reward": 12446.740044514881,
+    "run_dir": "benchmark_results/026_07_smoke_2015_aligned_null/runs/2015/seed0/null"
+  },
+  "metrics": {
+    "summary_irrigation_total": 0.0,
+    "summary_nitrogen_total": 0.0,
+    "etcp_mm": 438.0,
+    "WP_ET_kg_m3": 1.51,
+    "PFP_N_kg_kg": NaN,
+    "summary_match_score": 0.0,
+    "summary_row_index": 2,
+    "management_or_action_n_total": 0.0,
+    "n_accounting_difference_vs_summary": 0.0
+  },
+  "training_steps": 0
+}

@@ -1,0 +1,11 @@
+{
+  "status": "failed",
+  "failure_type": "non_scientific_runtime_table_termination_error",
+  "year": 2014,
+  "scenario": "official_extension_expert",
+  "dssat_error_key": "IPFERT",
+  "root_cause": "The safe table renderer removed the blank line that terminates the reported irrigation/fertilizer application tables.",
+  "scientific_result": false,
+  "training_steps": 0,
+  "next_action": "Preserve this directory, restore explicit blank table terminators, and rerun in a new smoke directory."
+}

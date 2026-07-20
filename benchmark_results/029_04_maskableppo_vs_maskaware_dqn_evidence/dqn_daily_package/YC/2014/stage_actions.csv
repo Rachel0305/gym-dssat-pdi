@@ -1,0 +1,7 @@
+﻿site,year,seed,stage_index,phase,episode_index,dap,action_index,mask_valid,valid_actions,requested_irrigation,requested_nitrogen,executed_irrigation,executed_nitrogen,used_irrigation_before,used_nitrogen_before,remaining_irrigation_before,remaining_nitrogen_before,resource_reward,yield_gain,gate_bonus,terminal_reward,reward
+YC,2014,0,0,evidence_seed0,0,7,0,True,"0,1,2,3,4,5,6,7,8",0.0,0.0,0.0,0.0,0.0,0.0,120.0,300.0,-0.0,0.0,0.0,0.0,-0.0
+YC,2014,0,1,evidence_seed0,0,30,2,True,"0,1,2,3,4,5,6,7,8",30.0,0.0,30.0,0.0,0.0,0.0,120.0,300.0,-0.03,0.0,0.0,0.0,-0.03
+YC,2014,0,2,evidence_seed0,0,45,3,True,"0,1,2,3,4,5,6,7,8",0.0,50.0,0.0,50.0,30.0,0.0,90.0,300.0,-0.25,0.0,0.0,0.0,-0.25
+YC,2014,0,3,evidence_seed0,0,60,3,True,"0,1,2,3,4,5,6,7,8",0.0,50.0,0.0,50.0,30.0,50.0,90.0,250.0,-0.25,0.0,0.0,0.0,-0.25
+YC,2014,0,4,evidence_seed0,0,80,0,True,"0,1,2,3,4,5,6,7,8",0.0,0.0,0.0,0.0,30.0,100.0,90.0,200.0,-0.0,0.0,0.0,0.0,-0.0
+YC,2014,0,5,evidence_seed0,0,100,0,True,"0,1,2",0.0,0.0,0.0,0.0,30.0,100.0,90.0,200.0,-0.0,1592.462158203125,1620.0,3.212462158203125,3.212462158203125

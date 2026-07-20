@@ -1,0 +1,7 @@
+﻿checkpoint,phase,episode_index,stage_index,dap,action_index,mask_valid,valid_actions,requested_irrigation,requested_nitrogen,executed_irrigation,executed_nitrogen,used_irrigation_before,used_nitrogen_before,remaining_irrigation_before,remaining_nitrogen_before,resource_reward,yield_gain,gate_bonus,terminal_reward,reward
+120,frozen_daily_evidence,0,0,7,8,True,"0,1,2,3,4,5,6,7,8",30.0,100.0,30.0,100.0,0.0,0.0,120.0,300.0,-0.53,0.0,0.0,0.0,-0.53
+120,frozen_daily_evidence,0,1,30,2,True,"0,1,2,3,4,5,6,7,8",30.0,0.0,30.0,0.0,30.0,100.0,90.0,200.0,-0.03,0.0,0.0,0.0,-0.03
+120,frozen_daily_evidence,0,2,45,2,True,"0,1,2,3,4,5,6,7,8",30.0,0.0,30.0,0.0,60.0,100.0,60.0,200.0,-0.03,0.0,0.0,0.0,-0.03
+120,frozen_daily_evidence,0,3,60,2,True,"0,1,2,3,4,5,6,7,8",30.0,0.0,30.0,0.0,90.0,100.0,30.0,200.0,-0.03,0.0,0.0,0.0,-0.03
+120,frozen_daily_evidence,0,4,80,0,True,"0,3,6",0.0,0.0,0.0,0.0,120.0,100.0,0.0,200.0,-0.0,0.0,0.0,0.0,-0.0
+120,frozen_daily_evidence,0,5,100,0,True,0,0.0,0.0,0.0,0.0,120.0,100.0,0.0,200.0,-0.0,1592.42919921875,1620.0,3.21242919921875,3.21242919921875

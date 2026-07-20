@@ -1,0 +1,13 @@
+﻿region,source_table,stage_code,stage_cn,dap,n_kg_mu_low,n_kg_mu_high,n_kg_ha_mid,irrigation_fang_mu_low,irrigation_fang_mu_high,irrigation_mm_mid,template_total_irrigation_mm,template_total_n_kg_ha
+huanghuai_fenwei_summer_maize,表3 华北黄淮和汾渭平原夏玉米区,emergence_water,出苗水,7,5.0,6.0,82.5,10.0,20.0,22.5,228.75,247.5
+huanghuai_fenwei_summer_maize,表3 华北黄淮和汾渭平原夏玉米区,small_bell,小喇叭口期,30,2.5,3.0,41.25,20.0,30.0,37.5,228.75,247.5
+huanghuai_fenwei_summer_maize,表3 华北黄淮和汾渭平原夏玉米区,large_bell,大喇叭口期,45,3.5,4.0,56.25,30.0,35.0,48.75,228.75,247.5
+huanghuai_fenwei_summer_maize,表3 华北黄淮和汾渭平原夏玉米区,tasseling_silking,抽雄散粉期,60,2.0,2.5,33.75,30.0,35.0,48.75,228.75,247.5
+huanghuai_fenwei_summer_maize,表3 华北黄淮和汾渭平原夏玉米区,grain_filling,灌浆期,80,2.0,2.5,33.75,25.0,30.0,41.25,228.75,247.5
+huanghuai_fenwei_summer_maize,表3 华北黄淮和汾渭平原夏玉米区,milk_stage,乳熟期,100,0.0,0.0,0.0,15.0,25.0,30.0,228.75,247.5
+northeast_greatwall_spring_maize,表1 东北及长城沿线春玉米区,sowing_base,播种期/基肥,0,7.0,8.0,112.5,20.0,30.0,37.5,266.25,300.0
+northeast_greatwall_spring_maize,表1 东北及长城沿线春玉米区,small_bell,小喇叭口期,30,2.0,2.5,33.75,25.0,35.0,45.0,266.25,300.0
+northeast_greatwall_spring_maize,表1 东北及长城沿线春玉米区,large_bell,大喇叭口期,50,4.0,5.0,67.5,35.0,40.0,56.25,266.25,300.0
+northeast_greatwall_spring_maize,表1 东北及长城沿线春玉米区,tasseling_silking,抽雄散粉期,65,1.5,2.0,26.25,35.0,40.0,56.25,266.25,300.0
+northeast_greatwall_spring_maize,表1 东北及长城沿线春玉米区,early_grain_filling,灌浆初期,85,2.0,2.5,33.75,25.0,30.0,41.25,266.25,300.0
+northeast_greatwall_spring_maize,表1 东北及长城沿线春玉米区,late_milk,乳熟末期,110,1.5,2.0,26.25,15.0,25.0,30.0,266.25,300.0

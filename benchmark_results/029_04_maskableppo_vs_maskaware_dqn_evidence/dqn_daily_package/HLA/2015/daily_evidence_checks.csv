@@ -1,0 +1,26 @@
+﻿site,algorithm,scenario,check,passed,value
+HLA,Mask-aware DQN,null,snapshot_exists,True,DSSAT_auto_validation/HLA_2004/hla_five_scenario_nstep_020_11/runs/2015/null/pdi_tmp_snapshot_eval
+HLA,Mask-aware DQN,null,daily_irrigation_matches_summary_event_total,True,0.0
+HLA,Mask-aware DQN,null,daily_nitrogen_matches_summary_event_total,True,0.0
+HLA,Mask-aware DQN,null,rain_not_all_zero_unless_weather_is_zero,True,346.0
+HLA,Mask-aware DQN,null,temperature_source_anomaly_count_documented,True,0
+HLA,Mask-aware DQN,recorded_farmer,snapshot_exists,True,DSSAT_auto_validation/HLA_2004/hla_five_scenario_nstep_020_11/runs/2015/recorded_farmer/pdi_tmp_snapshot_eval
+HLA,Mask-aware DQN,recorded_farmer,daily_irrigation_matches_summary_event_total,True,30.0
+HLA,Mask-aware DQN,recorded_farmer,daily_nitrogen_matches_summary_event_total,True,165.0
+HLA,Mask-aware DQN,recorded_farmer,rain_not_all_zero_unless_weather_is_zero,True,346.0
+HLA,Mask-aware DQN,recorded_farmer,temperature_source_anomaly_count_documented,True,0
+HLA,Mask-aware DQN,dssat_auto,snapshot_exists,True,DSSAT_auto_validation/HLA_2004/hla_five_scenario_nstep_020_11/runs/2015/dssat_auto/pdi_tmp_snapshot_eval
+HLA,Mask-aware DQN,dssat_auto,daily_irrigation_matches_summary_event_total,True,141.5
+HLA,Mask-aware DQN,dssat_auto,daily_nitrogen_matches_summary_event_total,True,0.0
+HLA,Mask-aware DQN,dssat_auto,rain_not_all_zero_unless_weather_is_zero,True,346.0
+HLA,Mask-aware DQN,dssat_auto,temperature_source_anomaly_count_documented,True,0
+HLA,Mask-aware DQN,official_extension_expert,snapshot_exists,True,DSSAT_auto_validation/HLA_2004/hla_five_scenario_nstep_020_11/runs/2015/extension_expert/pdi_tmp_snapshot_eval
+HLA,Mask-aware DQN,official_extension_expert,daily_irrigation_matches_summary_event_total,True,266.1
+HLA,Mask-aware DQN,official_extension_expert,daily_nitrogen_matches_summary_event_total,True,300.0
+HLA,Mask-aware DQN,official_extension_expert,rain_not_all_zero_unless_weather_is_zero,True,346.0
+HLA,Mask-aware DQN,official_extension_expert,temperature_source_anomaly_count_documented,True,0
+HLA,Mask-aware DQN,rl_candidate,snapshot_exists,True,benchmark_results/029_03_frozen_maskaware_dqn_crossyear/HLA/runs/2015/seed1/pdi_tmp_snapshot_eval
+HLA,Mask-aware DQN,rl_candidate,daily_irrigation_matches_summary_event_total,True,90.0
+HLA,Mask-aware DQN,rl_candidate,daily_nitrogen_matches_summary_event_total,True,0.0
+HLA,Mask-aware DQN,rl_candidate,rain_not_all_zero_unless_weather_is_zero,True,346.0
+HLA,Mask-aware DQN,rl_candidate,temperature_source_anomaly_count_documented,True,0

@@ -1,0 +1,7 @@
+{
+  "site": "YC",
+  "year": 2014,
+  "error_type": "TypeError",
+  "error": "Object of type bool_ is not JSON serializable",
+  "traceback": "Traceback (most recent call last):\n  File \"/workspace/src/run_yc_fq_lc_site_specific_stage_maskable_ppo_027_07.py\", line 1108, in main\n    result = run_site(spec, out_root)\n  File \"/workspace/src/run_yc_fq_lc_site_specific_stage_maskable_ppo_027_07.py\", line 991, in run_site\n    readiness = run_readiness(spec, site_root)\n  File \"/workspace/src/run_yc_fq_lc_site_specific_stage_maskable_ppo_027_07.py\", line 734, in run_readiness\n    json.dumps(payload, ensure_ascii=False, indent=2, allow_nan=True), encoding=\"utf-8\"\n  File \"/usr/lib/python3.10/json/__init__.py\", line 238, in dumps\n    **kw).encode(obj)\n  File \"/usr/lib/python3.10/json/encoder.py\", line 201, in encode\n    chunks = list(chunks)\n  File \"/usr/lib/python3.10/json/encoder.py\", line 431, in _iterencode\n    yield from _iterencode_dict(o, _current_indent_level)\n  File \"/usr/lib/python3.10/json/encoder.py\", line 405, in _iterencode_dict\n    yield from chunks\n  File \"/usr/lib/python3.10/json/encoder.py\", line 405, in _iterencode_dict\n    yield from chunks\n  File \"/usr/lib/python3.10/json/encoder.py\", line 438, in _iterencode\n    o = _default(o)\n  File \"/usr/lib/python3.10/json/encoder.py\", line 179, in default\n    raise TypeError(f'Object of type {o.__class__.__name__} '\nTypeError: Object of type bool_ is not JSON serializable\n"
+}

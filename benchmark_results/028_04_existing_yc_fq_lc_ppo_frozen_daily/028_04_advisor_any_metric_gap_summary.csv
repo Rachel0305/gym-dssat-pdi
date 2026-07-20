@@ -1,0 +1,5 @@
+﻿site,year,seed,checkpoint,rl_yield,baseline_max_yield,gap_yield,gap_pct_yield,winning_yield,rl_WP_ET,baseline_max_WP_ET,gap_WP_ET,gap_pct_WP_ET,winning_WP_ET,rl_PFP_N,baseline_max_PFP_N,gap_PFP_N,gap_pct_PFP_N,winning_PFP_N,advisor_any_metric_strict_winner,winning_metrics,close_other_metrics_status
+FQ,2016,0,60,8012.0,8012.0,0.0,0.0,False,2.41,2.5,-0.08999999999999986,-3.5999999999999943,False,40.1,55.1,-15.0,-27.22323049001815,False,False,none,not_adjudicated_no_advisor_tolerance
+LC,2010,0,240,8739.0,8739.0,0.0,0.0,False,3.0600000000000005,3.1300000000000003,-0.06999999999999984,-2.2364217252396115,False,58.3,35.3,23.0,65.1558073654391,True,True,PFP_N,not_adjudicated_no_advisor_tolerance
+YC,2014,0,60,9418.0,9418.0,0.0,0.0,False,2.5700000000000003,2.64,-0.06999999999999984,-2.651515151515145,False,47.1,38.0,9.100000000000001,23.947368421052634,True,True,PFP_N,not_adjudicated_no_advisor_tolerance
+YC,2014,2,120,9418.0,9418.0,0.0,0.0,False,2.5700000000000003,2.64,-0.06999999999999984,-2.651515151515145,False,94.2,38.0,56.2,147.89473684210526,True,True,PFP_N,not_adjudicated_no_advisor_tolerance

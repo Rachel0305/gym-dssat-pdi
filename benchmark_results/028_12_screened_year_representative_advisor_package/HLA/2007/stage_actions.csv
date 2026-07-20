@@ -1,0 +1,7 @@
+﻿site,year,seed,stage_index,dap,action_index,mask_valid,requested_irrigation,requested_nitrogen,executed_irrigation,executed_nitrogen,resource_reward,yield_gain,gate_bonus,terminal_reward,reward
+HLA,2007,0,0,1,1,True,15.0,0.0,15.0,0.0,-0.015,0.0,0.0,0.0,-0.015
+HLA,2007,0,1,30,1,True,15.0,0.0,15.0,0.0,-0.015,0.0,0.0,0.0,-0.015
+HLA,2007,0,2,50,0,True,0.0,0.0,0.0,0.0,-0.0,0.0,0.0,0.0,-0.0
+HLA,2007,0,3,65,0,True,0.0,0.0,0.0,0.0,-0.0,0.0,0.0,0.0,-0.0
+HLA,2007,0,4,85,2,True,30.0,0.0,30.0,0.0,-0.03,0.0,0.0,0.0,-0.03
+HLA,2007,0,5,110,2,True,30.0,0.0,30.0,0.0,-0.03,1390.693115234375,1620.0,3.010693115234375,2.9806931152343754

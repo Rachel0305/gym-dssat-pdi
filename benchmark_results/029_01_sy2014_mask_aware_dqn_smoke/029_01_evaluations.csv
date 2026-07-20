@@ -1,0 +1,3 @@
+checkpoint,action_sequence,episode_total_reward,final_yield,final_biomass,irrigation_total,nitrogen_total,summary_irrigation_total,summary_nitrogen_total,etcp_mm,WP_ET_kg_m3,PFP_N_kg_kg,summary_match_score,summary_row_index,no_late_n,primary_pass,strict_pass
+0,"4,4,6,6,1,1",5.779330322265626,11127.330322265625,20254.08203125,60.0,300.0,60.0,300.0,488.2,2.2800000000000002,37.1,0.330322265625,2,True,True,False
+60,"4,0,0,0,4,1",3.5953001708984376,9548.300170898438,17568.546142578125,45.0,100.0,45.0,100.0,483.1,1.9800000000000002,95.5,0.3001708984375,3,True,False,False

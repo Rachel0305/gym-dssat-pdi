@@ -1,0 +1,7 @@
+﻿site,year,seed,stage_index,dap,action_index,mask_valid,requested_irrigation,requested_nitrogen,executed_irrigation,executed_nitrogen,resource_reward,yield_gain,gate_bonus,terminal_reward,reward,algorithm
+HLA,2016,0,0,1,1,True,15.0,0.0,15.0,0.0,-0.015,0.0,0.0,0.0,-0.015,Mask-aware DQN
+HLA,2016,0,1,30,2,True,30.0,0.0,30.0,0.0,-0.03,0.0,0.0,0.0,-0.03,Mask-aware DQN
+HLA,2016,0,2,50,1,True,15.0,0.0,15.0,0.0,-0.015,0.0,0.0,0.0,-0.015,Mask-aware DQN
+HLA,2016,0,3,65,2,True,30.0,0.0,30.0,0.0,-0.03,0.0,0.0,0.0,-0.03,Mask-aware DQN
+HLA,2016,0,4,85,2,True,30.0,0.0,30.0,0.0,-0.03,0.0,0.0,0.0,-0.03,Mask-aware DQN
+HLA,2016,0,5,110,0,True,0.0,0.0,0.0,0.0,-0.0,310.70703125,1620.0,1.93070703125,1.93070703125,Mask-aware DQN

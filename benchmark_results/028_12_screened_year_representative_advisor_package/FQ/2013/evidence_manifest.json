@@ -1,0 +1,20 @@
+{
+  "site": "FQ",
+  "year": 2013,
+  "seed": 0,
+  "checkpoint": 60,
+  "model_path": "benchmark_results/027_07_site_specific_stage_maskable_ppo_attempt2/FQ/seed0/checkpoint_000060.zip",
+  "model_sha256": "c0bc9716b0b649d0c89f6dcddecb916942025b06e9ed8956eec1584db136d2b0",
+  "daily_sha256": "3a7e89667aa9ea2b5d1aec88348a8bac309b5a3d6fe4ea0188a7f9c3090b9a5b",
+  "summary_sha256": "798699834711851f147dddc769f3a90866ab5627d927654b07c2ba9acee63d8a",
+  "figures": [
+    "benchmark_results/028_12_screened_year_representative_advisor_package/FQ/2013/figures/027_05_fq2013_ppo_five_scenario_endpoints.png",
+    "benchmark_results/028_12_screened_year_representative_advisor_package/FQ/2013/figures/027_05_fq2013_ppo_five_scenario_endpoints.svg",
+    "benchmark_results/028_12_screened_year_representative_advisor_package/FQ/2013/figures/027_05_fq2013_maskableppo_five_scenario_daily.png",
+    "benchmark_results/028_12_screened_year_representative_advisor_package/FQ/2013/figures/027_05_fq2013_maskableppo_five_scenario_daily.svg",
+    "benchmark_results/028_12_screened_year_representative_advisor_package/FQ/2013/figures/027_05_fq2013_ppo_selected_stage_actions.png",
+    "benchmark_results/028_12_screened_year_representative_advisor_package/FQ/2013/figures/027_05_fq2013_ppo_selected_stage_actions.svg"
+  ],
+  "training_calls_for_package": 0,
+  "extra_dssat_evaluations_for_package": 0
+}

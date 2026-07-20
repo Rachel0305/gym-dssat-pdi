@@ -1,0 +1,20 @@
+{
+  "site": "HLA",
+  "year": 2022,
+  "seed": 1,
+  "checkpoint": 60,
+  "model_path": "benchmark_results/027_03/seed1/checkpoint_000060.zip",
+  "model_sha256": "ba2c101588be78653c05e47be99744c3ab81c224af5ce976e9f72eeaacb221c8",
+  "daily_sha256": "9984cc3b5538a3f5bccc3b9501b671744c1a1503da4a54804a7376321d267685",
+  "summary_sha256": "d8729eba410d96f49afe10d0067f083547798bc592050c3075f191e94d5366d3",
+  "figures": [
+    "benchmark_results/028_12_screened_year_representative_advisor_package/HLA/2022/figures/027_05_hla2022_ppo_five_scenario_endpoints.png",
+    "benchmark_results/028_12_screened_year_representative_advisor_package/HLA/2022/figures/027_05_hla2022_ppo_five_scenario_endpoints.svg",
+    "benchmark_results/028_12_screened_year_representative_advisor_package/HLA/2022/figures/027_05_hla2022_maskableppo_five_scenario_daily.png",
+    "benchmark_results/028_12_screened_year_representative_advisor_package/HLA/2022/figures/027_05_hla2022_maskableppo_five_scenario_daily.svg",
+    "benchmark_results/028_12_screened_year_representative_advisor_package/HLA/2022/figures/027_05_hla2022_ppo_selected_stage_actions.png",
+    "benchmark_results/028_12_screened_year_representative_advisor_package/HLA/2022/figures/027_05_hla2022_ppo_selected_stage_actions.svg"
+  ],
+  "training_calls_for_package": 0,
+  "extra_dssat_evaluations_for_package": 0
+}

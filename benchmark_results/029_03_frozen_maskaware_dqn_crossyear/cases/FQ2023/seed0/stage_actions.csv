@@ -1,0 +1,6 @@
+﻿site,year,seed,stage_index,phase,episode_index,dap,action_index,mask_valid,valid_actions,requested_irrigation,requested_nitrogen,executed_irrigation,executed_nitrogen,used_irrigation_before,used_nitrogen_before,remaining_irrigation_before,remaining_nitrogen_before,resource_reward,yield_gain,gate_bonus,terminal_reward,reward,algorithm
+FQ,2023,0,0,frozen_transfer_2023_seed0,0,7,6,True,"0,1,2,3,4,5,6,7,8",0.0,100.0,0.0,100.0,0.0,0.0,120.0,300.0,-0.5,0.0,0.0,0.0,-0.5,Mask-aware DQN
+FQ,2023,0,1,frozen_transfer_2023_seed0,0,30,6,True,"0,1,2,3,4,5,6,7,8",0.0,100.0,0.0,100.0,0.0,100.0,120.0,200.0,-0.5,0.0,0.0,0.0,-0.5,Mask-aware DQN
+FQ,2023,0,2,frozen_transfer_2023_seed0,0,45,6,True,"0,1,2,3,4,5,6,7,8",0.0,100.0,0.0,100.0,0.0,200.0,120.0,100.0,-0.5,0.0,0.0,0.0,-0.5,Mask-aware DQN
+FQ,2023,0,3,frozen_transfer_2023_seed0,0,60,1,True,"0,1,2",15.0,0.0,15.0,0.0,0.0,300.0,120.0,0.0,-0.015,0.0,0.0,0.0,-0.015,Mask-aware DQN
+FQ,2023,0,4,frozen_transfer_2023_seed0,0,80,1,True,"0,1,2",15.0,0.0,15.0,0.0,15.0,300.0,105.0,0.0,-0.015,231.7650146484375,0.0,0.2317650146484375,0.2167650146484375,Mask-aware DQN

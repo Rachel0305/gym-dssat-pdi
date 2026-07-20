@@ -1,0 +1,18 @@
+{
+  "status": "completed",
+  "checks": {
+    "exact_17_site_years": true,
+    "exact_51_dqn_seed_results": true,
+    "all_dqn_three_seed": true,
+    "ppo_dqn_same_scope": true
+  },
+  "overall": {
+    "PPO_total_winner_seeds": 29,
+    "DQN_total_winner_seeds": 23,
+    "PPO_years_2of3": 10,
+    "DQN_years_2of3": 8,
+    "DQN_higher_years": 2,
+    "PPO_higher_years": 6,
+    "tied_years": 9
+  }
+}

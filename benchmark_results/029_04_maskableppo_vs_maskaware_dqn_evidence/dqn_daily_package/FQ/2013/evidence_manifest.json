@@ -1,0 +1,21 @@
+{
+  "site": "FQ",
+  "year": 2013,
+  "seed": 1,
+  "checkpoint": 240,
+  "model_path": "benchmark_results/029_02_five_site_stage_mask_aware_dqn/FQ/seed1/checkpoint_000240.pt",
+  "model_sha256": "6949d9a6b984418e5cca02aacd2ef40aefb6bac58d99af90c65c32bc26f1966b",
+  "snapshot_path": "benchmark_results/029_03_frozen_maskaware_dqn_crossyear/FQ/runs/2013/seed1/pdi_tmp_snapshot_eval",
+  "daily_sha256": "3a6f5cf4ada8273cbf89469b2006778214afbc058f95cdc974d0744305978e69",
+  "summary_sha256": "dbb40d57938fa3aa499dac534ed0d8acc494121661dc0a033040ad6761af560c",
+  "figures": [
+    "benchmark_results/029_04_maskableppo_vs_maskaware_dqn_evidence/dqn_daily_package/FQ/2013/figures/027_05_fq2013_dqn_five_scenario_endpoints.png",
+    "benchmark_results/029_04_maskableppo_vs_maskaware_dqn_evidence/dqn_daily_package/FQ/2013/figures/027_05_fq2013_dqn_five_scenario_endpoints.svg",
+    "benchmark_results/029_04_maskableppo_vs_maskaware_dqn_evidence/dqn_daily_package/FQ/2013/figures/027_05_fq2013_mask-aware dqn_five_scenario_daily.png",
+    "benchmark_results/029_04_maskableppo_vs_maskaware_dqn_evidence/dqn_daily_package/FQ/2013/figures/027_05_fq2013_mask-aware dqn_five_scenario_daily.svg",
+    "benchmark_results/029_04_maskableppo_vs_maskaware_dqn_evidence/dqn_daily_package/FQ/2013/figures/029_04_fq2013_dqn_selected_stage_actions.png",
+    "benchmark_results/029_04_maskableppo_vs_maskaware_dqn_evidence/dqn_daily_package/FQ/2013/figures/029_04_fq2013_dqn_selected_stage_actions.svg"
+  ],
+  "training_calls_for_package": 0,
+  "representative_only": true
+}

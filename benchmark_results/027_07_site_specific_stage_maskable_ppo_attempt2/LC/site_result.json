@@ -1,0 +1,36 @@
+{
+  "site": "LC",
+  "year": 2010,
+  "status": "completed",
+  "branch": "B_seed0_primary_failed_stop",
+  "readiness_branch": "A_ready_for_seed0",
+  "seeds_run": [
+    0
+  ],
+  "primary_pass_count": 0,
+  "advisor_any_metric_strict_winner_count": 1,
+  "selected_seed_summary": [
+    {
+      "seed": 0,
+      "engineering_pass": true,
+      "selected_checkpoint": 240,
+      "model_sha256": "b60930af841fb642a4ae3a90b9f30e4c0d6fcf40ef44f88a697f5b56c1377266",
+      "yield": 8738.970947265625,
+      "irrigation": 60.0,
+      "nitrogen": 150.0,
+      "WP_ET": 3.0600000000000005,
+      "PFP_N": 58.3,
+      "reward": 1.4981036376953125,
+      "primary_pass": false,
+      "advisor_any_metric_strict_winner": true,
+      "winning_yield": false,
+      "winning_WP_ET": false,
+      "winning_PFP_N": true,
+      "yield_gap_vs_all_four_max": 0.0,
+      "wp_gap_vs_all_four_max": -0.06999999999999984,
+      "pfp_gap_vs_all_four_positive_n_max": 23.0
+    }
+  ],
+  "next_step_allowed": false,
+  "cross_year_started": false
+}

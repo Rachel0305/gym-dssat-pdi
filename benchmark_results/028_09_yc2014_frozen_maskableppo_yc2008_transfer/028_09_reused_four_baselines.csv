@@ -1,0 +1,5 @@
+﻿site,year,scenario,final_gwad,final_cwad,irrigation_total,fertilizer_total,snapshot,summary_irrigation_total,summary_nitrogen_total,etcp_mm,WP_ET_kg_m3,PFP_N_kg_kg,summary_match_score,summary_row_index,management_or_action_n_total,n_accounting_difference_vs_summary,i_accounting_difference_vs_summary
+YC,2008,null,7930.0,18131.0,0.0,0.0,DSSAT_auto_validation/multisite_new_cultivar_forward_screening_013_01/runs/YC/2008_null/pdi_tmp_snapshot,0.0,0.0,355.7,2.23,,0.0,2,0.0,0.0,0.0
+YC,2008,recorded,8160.0,18772.0,120.0,303.0,DSSAT_auto_validation/multisite_new_cultivar_forward_screening_013_01/runs/YC/2008_recorded/pdi_tmp_snapshot,120.0,303.0,358.6,2.2800000000000002,26.9,0.0,2,303.0,0.0,0.0
+YC,2008,dssat_auto,7930.0,18131.0,0.0,0.0,DSSAT_auto_validation/multisite_new_cultivar_forward_screening_013_01/runs/YC/2008_dssat_auto/pdi_tmp_snapshot,0.0,0.0,355.7,2.23,,0.0,2,0.0,0.0,0.0
+YC,2008,official_extension_expert,8157.0,18718.0,228.75,247.5,benchmark_results/028_07_missing_official_expert_six_season_completion/runs_completed/YC2008/official_extension_expert/pdi_tmp_snapshot_eval,229.0,248.0,365.6,2.23,33.0,0.75,2,247.5,-0.5,-0.25

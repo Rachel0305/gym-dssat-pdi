@@ -1,0 +1,27 @@
+{
+  "status": "completed",
+  "generated_at_utc": "2026-07-17T16:51:01.508777+00:00",
+  "training_calls": 0,
+  "dssat_calls": 0,
+  "registry_row_count": 104,
+  "tier_counts": {
+    "A_authoritative_treatment": 16,
+    "B_derived_weather_replay": 13,
+    "C_weather_only": 75
+  },
+  "strict_feasibility_certified_count_under_028": 0,
+  "latest_stage_ppo_fixed_weight_crossyear_sites": [
+    "SY"
+  ],
+  "all_five_sites_latest_ppo_crossyear_complete": false,
+  "unified_strict_all_four_three_metric_config_exists": false,
+  "next_training_allowed": false,
+  "next_required_task": "028_02 four-baseline completion and deterministic strict-feasibility certification",
+  "missing_hashed_sources": [],
+  "important_scope_corrections": [
+    "HLA 2007/2010/2015/2016/2022 is a formal prepared-adapter set, not five original multi-treatment years.",
+    "FQ2016 is a derived FQ2008-template weather replay, not an original FQ treatment year.",
+    "Only SY has current stage-PPO fixed-weight cross-year evaluation, and it used the older auto+expert local-primary rule.",
+    "No site-year has yet been certified under the new all-four, three-metric 028 strict definition."
+  ]
+}

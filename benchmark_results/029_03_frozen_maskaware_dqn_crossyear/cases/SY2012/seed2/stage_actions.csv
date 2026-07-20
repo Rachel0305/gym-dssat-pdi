@@ -1,0 +1,7 @@
+﻿year,seed,stage_index,dap,action_index,mask_valid,requested_irrigation,requested_nitrogen,executed_irrigation,executed_nitrogen,algorithm
+2012,2,0,1,6,True,0.0,100.0,0.0,100.0,Mask-aware DQN
+2012,2,1,30,6,True,0.0,100.0,0.0,100.0,Mask-aware DQN
+2012,2,2,50,6,True,0.0,100.0,0.0,100.0,Mask-aware DQN
+2012,2,3,65,1,True,15.0,0.0,15.0,0.0,Mask-aware DQN
+2012,2,4,85,1,True,15.0,0.0,15.0,0.0,Mask-aware DQN
+2012,2,5,110,1,True,15.0,0.0,15.0,0.0,Mask-aware DQN

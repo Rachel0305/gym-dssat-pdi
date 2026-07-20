@@ -1,0 +1,15 @@
+{
+  "status": "completed",
+  "training_calls": 0,
+  "new_dssat_runs": 0,
+  "site_years": 17,
+  "five_scenario_rows": 85,
+  "daily_rows": 11155,
+  "metric_gap_rows": 51,
+  "all_site_years_have_three_metrics": true,
+  "all_representatives_any_metric_win": true,
+  "all_budget_ok": true,
+  "all_stage_actions_valid": true,
+  "all_no_n_after_dap90": true,
+  "three_seed_stable_2of3_or_better": 10
+}

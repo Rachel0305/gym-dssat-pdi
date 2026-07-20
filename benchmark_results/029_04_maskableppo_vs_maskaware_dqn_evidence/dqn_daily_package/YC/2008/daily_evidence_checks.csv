@@ -1,0 +1,26 @@
+﻿site,algorithm,scenario,check,passed,value
+YC,Mask-aware DQN,null,snapshot_exists,True,DSSAT_auto_validation/multisite_new_cultivar_forward_screening_013_01/runs/YC/2008_null/pdi_tmp_snapshot
+YC,Mask-aware DQN,null,daily_irrigation_matches_summary_event_total,True,0.0
+YC,Mask-aware DQN,null,daily_nitrogen_matches_summary_event_total,True,0.0
+YC,Mask-aware DQN,null,rain_not_all_zero_unless_weather_is_zero,True,380.9
+YC,Mask-aware DQN,null,temperature_source_anomaly_count_documented,True,0
+YC,Mask-aware DQN,recorded_farmer,snapshot_exists,True,DSSAT_auto_validation/multisite_new_cultivar_forward_screening_013_01/runs/YC/2008_recorded/pdi_tmp_snapshot
+YC,Mask-aware DQN,recorded_farmer,daily_irrigation_matches_summary_event_total,True,120.0
+YC,Mask-aware DQN,recorded_farmer,daily_nitrogen_matches_summary_event_total,True,303.0
+YC,Mask-aware DQN,recorded_farmer,rain_not_all_zero_unless_weather_is_zero,True,380.9
+YC,Mask-aware DQN,recorded_farmer,temperature_source_anomaly_count_documented,True,0
+YC,Mask-aware DQN,dssat_auto,snapshot_exists,True,DSSAT_auto_validation/multisite_new_cultivar_forward_screening_013_01/runs/YC/2008_dssat_auto/pdi_tmp_snapshot
+YC,Mask-aware DQN,dssat_auto,daily_irrigation_matches_summary_event_total,True,0.0
+YC,Mask-aware DQN,dssat_auto,daily_nitrogen_matches_summary_event_total,True,0.0
+YC,Mask-aware DQN,dssat_auto,rain_not_all_zero_unless_weather_is_zero,True,380.9
+YC,Mask-aware DQN,dssat_auto,temperature_source_anomaly_count_documented,True,0
+YC,Mask-aware DQN,official_extension_expert,snapshot_exists,True,benchmark_results/028_07_missing_official_expert_six_season_completion/runs_completed/YC2008/official_extension_expert/pdi_tmp_snapshot_eval
+YC,Mask-aware DQN,official_extension_expert,daily_irrigation_matches_summary_event_total,True,228.8
+YC,Mask-aware DQN,official_extension_expert,daily_nitrogen_matches_summary_event_total,True,247.0
+YC,Mask-aware DQN,official_extension_expert,rain_not_all_zero_unless_weather_is_zero,True,380.9
+YC,Mask-aware DQN,official_extension_expert,temperature_source_anomaly_count_documented,True,0
+YC,Mask-aware DQN,rl_candidate,snapshot_exists,True,benchmark_results/029_03_frozen_maskaware_dqn_crossyear/YC/runs/2008/seed2/pdi_tmp_snapshot_eval
+YC,Mask-aware DQN,rl_candidate,daily_irrigation_matches_summary_event_total,True,105.0
+YC,Mask-aware DQN,rl_candidate,daily_nitrogen_matches_summary_event_total,True,250.0
+YC,Mask-aware DQN,rl_candidate,rain_not_all_zero_unless_weather_is_zero,True,380.9
+YC,Mask-aware DQN,rl_candidate,temperature_source_anomaly_count_documented,True,0

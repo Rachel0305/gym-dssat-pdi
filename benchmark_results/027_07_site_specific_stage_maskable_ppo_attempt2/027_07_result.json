@@ -1,0 +1,168 @@
+{
+  "status": "completed",
+  "sites_requested": [
+    "YC",
+    "FQ",
+    "LC"
+  ],
+  "sites_completed": [
+    "YC",
+    "FQ",
+    "LC"
+  ],
+  "failures": [],
+  "training_parallelism": 1,
+  "results": [
+    {
+      "site": "YC",
+      "year": 2014,
+      "status": "completed",
+      "branch": "A_three_seed_primary_replicated",
+      "readiness_branch": "A_ready_for_seed0",
+      "seeds_run": [
+        0,
+        1,
+        2
+      ],
+      "primary_pass_count": 2,
+      "advisor_any_metric_strict_winner_count": 2,
+      "selected_seed_summary": [
+        {
+          "seed": 0,
+          "engineering_pass": true,
+          "selected_checkpoint": 60,
+          "model_sha256": "c853a879728b9bed351b50f716e4f5d35e856803033d9c50d3042c995bc6aa46",
+          "yield": 9417.883911132812,
+          "irrigation": 105.0,
+          "nitrogen": 200.0,
+          "WP_ET": 2.5700000000000003,
+          "PFP_N": 47.1,
+          "reward": 2.107444458007812,
+          "primary_pass": true,
+          "advisor_any_metric_strict_winner": true,
+          "winning_yield": false,
+          "winning_WP_ET": false,
+          "winning_PFP_N": true,
+          "yield_gap_vs_all_four_max": -0.01770019531068101,
+          "wp_gap_vs_all_four_max": -0.06999999999999984,
+          "pfp_gap_vs_all_four_positive_n_max": 9.100000000000001
+        },
+        {
+          "seed": 1,
+          "engineering_pass": true,
+          "selected_checkpoint": 60,
+          "model_sha256": "47969c701cac54bf2d6818947adf65faa1641745da6ec6da6bdc096585e13c0e",
+          "yield": 8722.329711914062,
+          "irrigation": 105.0,
+          "nitrogen": 0.0,
+          "WP_ET": 2.44,
+          "PFP_N": NaN,
+          "reward": 0.7918902587890625,
+          "primary_pass": false,
+          "advisor_any_metric_strict_winner": false,
+          "winning_yield": false,
+          "winning_WP_ET": false,
+          "winning_PFP_N": false,
+          "yield_gap_vs_all_four_max": -695.5718994140607,
+          "wp_gap_vs_all_four_max": -0.20000000000000018,
+          "pfp_gap_vs_all_four_positive_n_max": NaN
+        },
+        {
+          "seed": 2,
+          "engineering_pass": true,
+          "selected_checkpoint": 120,
+          "model_sha256": "c8f579ebcd95c6ce4e7acfbff812bc4520c0d324e9c6d0c15f1eb73671a123d8",
+          "yield": 9417.86865234375,
+          "irrigation": 120.0,
+          "nitrogen": 100.0,
+          "WP_ET": 2.5700000000000003,
+          "PFP_N": 94.2,
+          "reward": 2.59242919921875,
+          "primary_pass": true,
+          "advisor_any_metric_strict_winner": true,
+          "winning_yield": false,
+          "winning_WP_ET": false,
+          "winning_PFP_N": true,
+          "yield_gap_vs_all_four_max": -0.03295898437318101,
+          "wp_gap_vs_all_four_max": -0.06999999999999984,
+          "pfp_gap_vs_all_four_positive_n_max": 56.2
+        }
+      ],
+      "next_step_allowed": true,
+      "cross_year_started": false
+    },
+    {
+      "site": "FQ",
+      "year": 2016,
+      "status": "completed",
+      "branch": "B_seed0_primary_failed_stop",
+      "readiness_branch": "A_ready_for_seed0",
+      "seeds_run": [
+        0
+      ],
+      "primary_pass_count": 0,
+      "advisor_any_metric_strict_winner_count": 0,
+      "selected_seed_summary": [
+        {
+          "seed": 0,
+          "engineering_pass": true,
+          "selected_checkpoint": 60,
+          "model_sha256": "c0bc9716b0b649d0c89f6dcddecb916942025b06e9ed8956eec1584db136d2b0",
+          "yield": 8012.421875,
+          "irrigation": 75.0,
+          "nitrogen": 200.0,
+          "WP_ET": 2.41,
+          "PFP_N": 40.1,
+          "reward": 1.4913464355468746,
+          "primary_pass": false,
+          "advisor_any_metric_strict_winner": false,
+          "winning_yield": false,
+          "winning_WP_ET": false,
+          "winning_PFP_N": false,
+          "yield_gap_vs_all_four_max": 0.0,
+          "wp_gap_vs_all_four_max": -0.08999999999999986,
+          "pfp_gap_vs_all_four_positive_n_max": -15.0
+        }
+      ],
+      "next_step_allowed": false,
+      "cross_year_started": false
+    },
+    {
+      "site": "LC",
+      "year": 2010,
+      "status": "completed",
+      "branch": "B_seed0_primary_failed_stop",
+      "readiness_branch": "A_ready_for_seed0",
+      "seeds_run": [
+        0
+      ],
+      "primary_pass_count": 0,
+      "advisor_any_metric_strict_winner_count": 1,
+      "selected_seed_summary": [
+        {
+          "seed": 0,
+          "engineering_pass": true,
+          "selected_checkpoint": 240,
+          "model_sha256": "b60930af841fb642a4ae3a90b9f30e4c0d6fcf40ef44f88a697f5b56c1377266",
+          "yield": 8738.970947265625,
+          "irrigation": 60.0,
+          "nitrogen": 150.0,
+          "WP_ET": 3.0600000000000005,
+          "PFP_N": 58.3,
+          "reward": 1.4981036376953125,
+          "primary_pass": false,
+          "advisor_any_metric_strict_winner": true,
+          "winning_yield": false,
+          "winning_WP_ET": false,
+          "winning_PFP_N": true,
+          "yield_gap_vs_all_four_max": 0.0,
+          "wp_gap_vs_all_four_max": -0.06999999999999984,
+          "pfp_gap_vs_all_four_positive_n_max": 23.0
+        }
+      ],
+      "next_step_allowed": false,
+      "cross_year_started": false
+    }
+  ],
+  "record_path": "docs/2026-07-17_027_07_yc_fq_lc_site_specific_stage_maskable_ppo_attempt2.md"
+}

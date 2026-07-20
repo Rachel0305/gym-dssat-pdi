@@ -1,0 +1,16 @@
+{
+  "status": "completed_audit_only",
+  "scenario_units": 40,
+  "reusable_existing_snapshots": 34,
+  "missing_scenarios": 6,
+  "missing_case_keys": [
+    "YC2008:official_extension_expert",
+    "FQ2013:official_extension_expert",
+    "FQ2014:official_extension_expert",
+    "FQ2019:official_extension_expert",
+    "FQ2020:official_extension_expert",
+    "FQ2023:official_extension_expert"
+  ],
+  "dssat_runs": 0,
+  "training_calls": 0
+}

@@ -1,0 +1,9 @@
+{
+  "status": "completed_audit_only",
+  "candidate_year_count": 17,
+  "current_four_baseline_complete": 7,
+  "current_stage_ppo_present": 7,
+  "current_stage_ppo_daily_or_snapshot_present": 4,
+  "training_or_dssat_calls": 0,
+  "scope_note": "Tier is provenance; selection_basis is optimization-screen evidence."
+}

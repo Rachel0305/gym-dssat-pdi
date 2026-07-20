@@ -1,0 +1,18 @@
+{
+  "site": "SY",
+  "year": 2015,
+  "seed": 0,
+  "checkpoint": 120,
+  "model_sha256": "d88938a7d939cc772f5da185360298f59af86ea0b95cf411d3ccb0722ba541ab",
+  "daily_sha256": "951a4524cbe0d172c2bde7efe4d5f27fa0733ac8fd8d6c5a06e33973dd0c4e11",
+  "summary_sha256": "dc943f9bffa7ac0bbb2bdc3d2114bd156d4309c3de4a217545f26d0b2fc1be50",
+  "figure_paths": [
+    "benchmark_results/028_05_sy_crossyear_frozen_ppo_daily/2015/seed0/figures/027_05_sy2015_ppo_five_scenario_endpoints.png",
+    "benchmark_results/028_05_sy_crossyear_frozen_ppo_daily/2015/seed0/figures/027_05_sy2015_ppo_five_scenario_endpoints.svg",
+    "benchmark_results/028_05_sy_crossyear_frozen_ppo_daily/2015/seed0/figures/027_05_sy2015_maskableppo_five_scenario_daily.png",
+    "benchmark_results/028_05_sy_crossyear_frozen_ppo_daily/2015/seed0/figures/027_05_sy2015_maskableppo_five_scenario_daily.svg",
+    "benchmark_results/028_05_sy_crossyear_frozen_ppo_daily/2015/seed0/figures/027_05_sy2015_ppo_selected_stage_actions.png",
+    "benchmark_results/028_05_sy_crossyear_frozen_ppo_daily/2015/seed0/figures/027_05_sy2015_ppo_selected_stage_actions.svg"
+  ],
+  "training_calls": 0
+}

@@ -1,0 +1,6 @@
+﻿site,year,seed,stage_index,phase,episode_index,dap,action_index,mask_valid,valid_actions,requested_irrigation,requested_nitrogen,executed_irrigation,executed_nitrogen,used_irrigation_before,used_nitrogen_before,remaining_irrigation_before,remaining_nitrogen_before,resource_reward,yield_gain,gate_bonus,terminal_reward,reward
+FQ,2013,0,0,frozen_transfer_2013_seed0,0,7,5,True,"0,1,2,3,4,5,6,7,8",30.0,50.0,30.0,50.0,0.0,0.0,120.0,300.0,-0.28,0.0,0.0,0.0,-0.28
+FQ,2013,0,1,frozen_transfer_2013_seed0,0,30,6,True,"0,1,2,3,4,5,6,7,8",0.0,100.0,0.0,100.0,30.0,50.0,90.0,250.0,-0.5,0.0,0.0,0.0,-0.5
+FQ,2013,0,2,frozen_transfer_2013_seed0,0,45,6,True,"0,1,2,3,4,5,6,7,8",0.0,100.0,0.0,100.0,30.0,150.0,90.0,150.0,-0.5,0.0,0.0,0.0,-0.5
+FQ,2013,0,3,frozen_transfer_2013_seed0,0,60,1,True,"0,1,2,3,4,5",15.0,0.0,15.0,0.0,30.0,250.0,90.0,50.0,-0.015,0.0,0.0,0.0,-0.015
+FQ,2013,0,4,frozen_transfer_2013_seed0,0,80,1,True,"0,1,2,3,4,5",15.0,0.0,15.0,0.0,45.0,250.0,75.0,50.0,-0.015,385.246826171875,1620.0,2.005246826171875,1.990246826171875

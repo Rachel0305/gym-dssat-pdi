@@ -1,0 +1,18 @@
+{
+  "log_saving_path": "/workspace/benchmark_results/029_03_frozen_maskaware_dqn_crossyear/SY/2012/ppo_runs/2012/seed1/transfer_frozen_ppo_seed1/pdi_gym.log",
+  "mode": "all",
+  "seed": 1,
+  "random_weather": false,
+  "evaluation": true,
+  "fileX_template_path": "/workspace/benchmark_results/029_03_frozen_maskaware_dqn_crossyear/SY/2012/ppo_runs/2012/seed1/transfer_frozen_ppo_seed1/input/CNSY1201.MZX",
+  "experiment_number": 1,
+  "auxiliary_file_paths": [
+    "/workspace/benchmark_results/029_03_frozen_maskaware_dqn_crossyear/SY/2012/ppo_runs/2012/seed1/transfer_frozen_ppo_seed1/input/CNSY1201.WTH",
+    "/workspace/benchmark_results/029_03_frozen_maskaware_dqn_crossyear/SY/2012/ppo_runs/2012/seed1/transfer_frozen_ppo_seed1/input/SOIL.SOL",
+    "/workspace/benchmark_results/029_03_frozen_maskaware_dqn_crossyear/SY/2012/ppo_runs/2012/seed1/transfer_frozen_ppo_seed1/input/MZCER048.CUL",
+    "/workspace/benchmark_results/029_03_frozen_maskaware_dqn_crossyear/SY/2012/ppo_runs/2012/seed1/transfer_frozen_ppo_seed1/input/CNSY.CLI",
+    "/workspace/benchmark_results/029_03_frozen_maskaware_dqn_crossyear/SY/2012/ppo_runs/2012/seed1/transfer_frozen_ppo_seed1/input/CNSY.PRM",
+    "/workspace/benchmark_results/029_03_frozen_maskaware_dqn_crossyear/SY/2012/ppo_runs/2012/seed1/transfer_frozen_ppo_seed1/input/CNSY.wdb"
+  ],
+  "run_dssat_location": "/opt/dssat_pdi/run_dssat"
+}

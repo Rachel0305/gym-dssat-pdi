@@ -1,0 +1,18 @@
+{
+  "status": "completed",
+  "training_steps": 0,
+  "dssat_runs": 0,
+  "sites": 5,
+  "strict_any_metric_above_all_four_count": 1,
+  "comparable_any_metric_winner_count": 2,
+  "universal_framework_verified_all_five": false,
+  "current_stage_maskableppo_formally_trained_sites": [
+    "SY",
+    "HLA"
+  ],
+  "current_stage_maskableppo_not_yet_formally_trained_sites": [
+    "YC",
+    "FQ",
+    "LC"
+  ]
+}

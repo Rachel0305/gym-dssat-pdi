@@ -1,0 +1,53 @@
+{
+  "status": "completed",
+  "checks": {
+    "twelve_seasons": true,
+    "all_six_stage_actions": true,
+    "zero_invalid_actions": true,
+    "all_model_hashes_unchanged": true,
+    "zero_training_steps": true
+  },
+  "year_matrix": [
+    {
+      "year": 2007,
+      "seed_count": 3,
+      "winner_count": 2,
+      "yield_win_count": 1,
+      "wp_win_count": 0,
+      "pfp_win_count": 1,
+      "invalid_actions": 0,
+      "at_least_two_of_three": true
+    },
+    {
+      "year": 2015,
+      "seed_count": 3,
+      "winner_count": 2,
+      "yield_win_count": 2,
+      "wp_win_count": 1,
+      "pfp_win_count": 2,
+      "invalid_actions": 0,
+      "at_least_two_of_three": true
+    },
+    {
+      "year": 2016,
+      "seed_count": 3,
+      "winner_count": 2,
+      "yield_win_count": 2,
+      "wp_win_count": 0,
+      "pfp_win_count": 0,
+      "invalid_actions": 0,
+      "at_least_two_of_three": true
+    },
+    {
+      "year": 2022,
+      "seed_count": 3,
+      "winner_count": 1,
+      "yield_win_count": 0,
+      "wp_win_count": 0,
+      "pfp_win_count": 1,
+      "invalid_actions": 0,
+      "at_least_two_of_three": false
+    }
+  ],
+  "training_steps": 0
+}

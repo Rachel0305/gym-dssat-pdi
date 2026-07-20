@@ -1,0 +1,18 @@
+{
+  "site": "YC",
+  "year": 2014,
+  "seed": 0,
+  "checkpoint": 60,
+  "model_sha256": "c853a879728b9bed351b50f716e4f5d35e856803033d9c50d3042c995bc6aa46",
+  "daily_sha256": "801ca60c40c6b503172ba5b53256cb3d16f4f8d3cb108c4e7de2bf81ff8ec2f6",
+  "summary_sha256": "7b5e80baadc1cc7bf939e7b36f07c02c658f0773cbe4fd6f0b0fd577a4733544",
+  "figure_paths": [
+    "benchmark_results/028_04_existing_yc_fq_lc_ppo_frozen_daily/YC/seed0_checkpoint60/figures/027_05_yc2014_ppo_five_scenario_endpoints.png",
+    "benchmark_results/028_04_existing_yc_fq_lc_ppo_frozen_daily/YC/seed0_checkpoint60/figures/027_05_yc2014_ppo_five_scenario_endpoints.svg",
+    "benchmark_results/028_04_existing_yc_fq_lc_ppo_frozen_daily/YC/seed0_checkpoint60/figures/027_05_yc2014_maskableppo_five_scenario_daily.png",
+    "benchmark_results/028_04_existing_yc_fq_lc_ppo_frozen_daily/YC/seed0_checkpoint60/figures/027_05_yc2014_maskableppo_five_scenario_daily.svg",
+    "benchmark_results/028_04_existing_yc_fq_lc_ppo_frozen_daily/YC/seed0_checkpoint60/figures/027_05_yc2014_ppo_selected_stage_actions.png",
+    "benchmark_results/028_04_existing_yc_fq_lc_ppo_frozen_daily/YC/seed0_checkpoint60/figures/027_05_yc2014_ppo_selected_stage_actions.svg"
+  ],
+  "training_calls": 0
+}

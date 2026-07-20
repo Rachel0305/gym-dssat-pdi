@@ -1,0 +1,4 @@
+﻿site,seed,engineering_pass,selected_checkpoint,model_sha256,yield,irrigation,nitrogen,WP_ET,PFP_N,reward,primary_pass,advisor_any_metric_strict_winner,winning_yield,winning_WP_ET,winning_PFP_N,yield_gap_vs_all_four_max,wp_gap_vs_all_four_max,pfp_gap_vs_all_four_positive_n_max
+FQ,0,True,60,c0bc9716b0b649d0c89f6dcddecb916942025b06e9ed8956eec1584db136d2b0,8012.421875,75.0,200.0,2.41,40.1,1.4913464355468746,False,False,False,False,False,0.0,-0.08999999999999986,-15.0
+FQ,1,True,60,edcad3eee1592059008e78e325aad1725ce684ff1f35875a10d8e3676f4c1302,8012.421875,30.0,250.0,2.5500000000000003,32.0,1.2863464355468748,False,True,False,True,False,0.0,0.050000000000000266,-23.1
+FQ,2,True,60,0c9f7af9b59f2bd60c143551f21ffc11204eaec58d697bc64fa2b4b09c01883d,8012.421875,75.0,100.0,2.41,80.1,1.9913464355468746,False,True,False,False,True,0.0,-0.08999999999999986,24.999999999999993

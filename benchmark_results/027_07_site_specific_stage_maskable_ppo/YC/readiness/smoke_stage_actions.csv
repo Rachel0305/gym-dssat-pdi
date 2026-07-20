@@ -1,0 +1,7 @@
+﻿phase,episode_index,stage_index,dap,action_index,mask_valid,valid_actions,requested_irrigation,requested_nitrogen,executed_irrigation,executed_nitrogen,used_irrigation_before,used_nitrogen_before,remaining_irrigation_before,remaining_nitrogen_before,resource_reward,yield_gain,gate_bonus,terminal_reward,reward
+pretrain_noop_smoke,0,0,7,0,True,"0,1,2,3,4,5,6,7,8",0.0,0.0,0.0,0.0,0.0,0.0,120.0,300.0,-0.0,0.0,0.0,0.0,-0.0
+pretrain_noop_smoke,0,1,30,0,True,"0,1,2,3,4,5,6,7,8",0.0,0.0,0.0,0.0,0.0,0.0,120.0,300.0,-0.0,0.0,0.0,0.0,-0.0
+pretrain_noop_smoke,0,2,45,0,True,"0,1,2,3,4,5,6,7,8",0.0,0.0,0.0,0.0,0.0,0.0,120.0,300.0,-0.0,0.0,0.0,0.0,-0.0
+pretrain_noop_smoke,0,3,60,0,True,"0,1,2,3,4,5,6,7,8",0.0,0.0,0.0,0.0,0.0,0.0,120.0,300.0,-0.0,0.0,0.0,0.0,-0.0
+pretrain_noop_smoke,0,4,80,0,True,"0,1,2,3,4,5,6,7,8",0.0,0.0,0.0,0.0,0.0,0.0,120.0,300.0,-0.0,0.0,0.0,0.0,-0.0
+pretrain_noop_smoke,0,5,100,0,True,"0,1,2",0.0,0.0,0.0,0.0,0.0,0.0,120.0,300.0,-0.0,0.0,0.0,0.0,0.0

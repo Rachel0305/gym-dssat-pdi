@@ -1,0 +1,37 @@
+# 028_03 已筛选年份 RL 证据缺口审计记录
+
+## 结论
+
+共登记 **17** 个首批站点—年份。本轮为零训练、零 DSSAT 文件审计。
+其中当前四基线完整 7 个，已有当前阶段型 MaskablePPO 证据 7 个。
+Tier 只表示输入来源；是否来自历史优化空间筛选由 `selection_basis` 独立记录。
+
+## 逐年缺口矩阵
+
+|站点|年份|Tier|角色|筛选依据|四基线|RL|seed|日值|图|导师单项领先状态|下一步|
+|---|---:|---|---|---|---|---|---|---|---|---|---|
+|HLA|2007|A|screened_candidate|014_02_null_auto_response_screen|missing_current_four_baselines|none_current_stage_ppo|none|missing|missing|not_evaluated|complete_baselines_then_decide_training_or_fixed_transfer|
+|HLA|2010|A|training_anchor|014_02_null_auto_response_screen|complete_current|stage_maskable_ppo|0,1,2|complete_selected_seed|complete_selected_seed|yes_selected_seed_PFP_N|report_existing_and_keep_other_seeds_in_table|
+|HLA|2015|B|screened_candidate|014_02_null_auto_response_screen|missing_current_four_baselines|none_current_stage_ppo|none|missing|missing|not_evaluated|complete_baselines_then_decide_training_or_fixed_transfer|
+|HLA|2016|B|screened_candidate|014_02_null_auto_response_screen|missing_current_four_baselines|none_current_stage_ppo|none|missing|missing|not_evaluated|complete_baselines_then_decide_training_or_fixed_transfer|
+|HLA|2022|B|screened_candidate|014_02_null_auto_response_screen|missing_current_four_baselines|none_current_stage_ppo|none|missing|missing|not_evaluated|complete_baselines_then_decide_training_or_fixed_transfer|
+|YC|2008|A|secondary_candidate|013_01_forward_optimization_space_screen|missing_current_four_baselines|none_current_stage_ppo|none|missing|missing|not_evaluated|complete_baselines_then_decide_training_or_fixed_transfer|
+|YC|2014|A|training_anchor|013_01_forward_optimization_space_screen|complete_current|stage_maskable_ppo|0,1,2|missing_for_current_ppo|missing_for_current_ppo|2_of_3_PFP_N|reuse_models_and_snapshots_then_complete_daily_figures|
+|FQ|2013|B|screened_candidate|014_01_all_year_optimization_space_screen|missing_current_four_baselines|none_current_stage_ppo|none|missing|missing|not_evaluated|complete_baselines_then_decide_training_or_fixed_transfer|
+|FQ|2014|B|screened_candidate|014_01_all_year_optimization_space_screen|missing_current_four_baselines|none_current_stage_ppo|none|missing|missing|not_evaluated|complete_baselines_then_decide_training_or_fixed_transfer|
+|FQ|2016|B|training_anchor|014_01_all_year_optimization_space_screen|complete_current|stage_maskable_ppo|0|missing_for_current_ppo|historical_dqn_only|0_of_1|do_not_repeat_seed0; advisor_rule_requires_new_preregistered_decision_before_more_seeds|
+|FQ|2019|B|screened_candidate|014_01_all_year_optimization_space_screen|missing_current_four_baselines|none_current_stage_ppo|none|missing|missing|not_evaluated|complete_baselines_then_decide_training_or_fixed_transfer|
+|FQ|2020|B|screened_candidate|014_01_all_year_optimization_space_screen|missing_current_four_baselines|none_current_stage_ppo|none|missing|missing|not_evaluated|complete_baselines_then_decide_training_or_fixed_transfer|
+|FQ|2023|B|screened_candidate|014_01_all_year_optimization_space_screen|missing_current_four_baselines|none_current_stage_ppo|none|missing|missing|not_evaluated|complete_baselines_then_decide_training_or_fixed_transfer|
+|LC|2010|A|training_anchor|017_11_fixed_input_baseline_screen|complete_current|stage_maskable_ppo|0|missing_for_current_ppo|historical_dqn_only|1_of_1_PFP_N|reuse_seed0_and_complete_current_ppo_daily_figures|
+|SY|2012|A|fixed_weight_validation_year|026_07_authoritative_crossyear_protocol|complete_current|stage_maskable_ppo|0,1,2|snapshots_exist|needs_02705_style_confirmation|needs_advisor_rule_summary|no_training; reuse_frozen_evaluations|
+|SY|2014|A|training_anchor|current_authoritative_treatment_and_026_07|complete_current|stage_maskable_ppo|0,1,2|complete_selected_seed|complete_selected_seed|3_of_3_at_least_one_comparable_metric|report_existing|
+|SY|2015|A|fixed_weight_validation_year|026_07_authoritative_crossyear_protocol|complete_current|stage_maskable_ppo|0,1,2|snapshots_exist|needs_02705_style_confirmation|needs_advisor_rule_summary|no_training; reuse_frozen_evaluations|
+
+## 判据边界
+
+- 至少一项严格第一是硬标签；另外两项只报告差值和百分比差。
+- 导师尚未定义‘接近’容差，本任务不自行设阈值。
+- 历史 DQN 图表保留，但受 021_05 训练协议问题影响的结果不冒充当前统一框架。
+- 下一步优先补当前模型已有但日值/图缺失的 YC2014、LC2010，以及复用 SY2012/2015 snapshot；不重复训练。
+- 其余年份先补四基线和 provenance，再决定固定权重迁移或本地训练。

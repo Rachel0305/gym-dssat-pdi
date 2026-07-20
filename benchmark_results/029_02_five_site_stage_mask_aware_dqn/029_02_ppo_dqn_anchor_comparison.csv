@@ -1,0 +1,6 @@
+site,year,PPO_winner_seed_count,DQN_winner_seed_count,PPO_2of3_initially_stable,DQN_2of3_initially_stable,winner_count_difference_DQN_minus_PPO
+SY,2014,3,3,True,True,0
+HLA,2010,2,0,True,False,-2
+YC,2014,2,2,True,True,0
+FQ,2016,2,2,True,True,0
+LC,2010,1,2,False,True,1

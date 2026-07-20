@@ -1,0 +1,20 @@
+{
+  "site": "FQ",
+  "year": 2016,
+  "seed": 2,
+  "checkpoint": 60,
+  "model_path": "benchmark_results/028_10_fq2016_missing_seed1_seed2/FQ/seed2/checkpoint_000060.zip",
+  "model_sha256": "0c9f7af9b59f2bd60c143551f21ffc11204eaec58d697bc64fa2b4b09c01883d",
+  "daily_sha256": "6ed98f212d095fe656109cba0f1d0949da5d10a8964a206c616e168c6d18f59d",
+  "summary_sha256": "211e4022bdfc1c8116e08bf44c16de0c0a7ac8c2f1ecb381b50486fc380479ae",
+  "figures": [
+    "benchmark_results/028_12_screened_year_representative_advisor_package/FQ/2016/figures/027_05_fq2016_ppo_five_scenario_endpoints.png",
+    "benchmark_results/028_12_screened_year_representative_advisor_package/FQ/2016/figures/027_05_fq2016_ppo_five_scenario_endpoints.svg",
+    "benchmark_results/028_12_screened_year_representative_advisor_package/FQ/2016/figures/027_05_fq2016_maskableppo_five_scenario_daily.png",
+    "benchmark_results/028_12_screened_year_representative_advisor_package/FQ/2016/figures/027_05_fq2016_maskableppo_five_scenario_daily.svg",
+    "benchmark_results/028_12_screened_year_representative_advisor_package/FQ/2016/figures/027_05_fq2016_ppo_selected_stage_actions.png",
+    "benchmark_results/028_12_screened_year_representative_advisor_package/FQ/2016/figures/027_05_fq2016_ppo_selected_stage_actions.svg"
+  ],
+  "training_calls_for_package": 0,
+  "extra_dssat_evaluations_for_package": 1
+}

@@ -1,0 +1,13 @@
+{
+  "site": "YC",
+  "year": 2014,
+  "local_null_yield": 7825.439453125,
+  "local_feasibility_yield": 9417.448120117188,
+  "water_cost": 1.0,
+  "nitrogen_cost": 5.0,
+  "feasibility_bonus": 1620.0,
+  "irrigation_budget": 120.0,
+  "nitrogen_budget": 300.0,
+  "recorded_used_in_reward": false,
+  "precision_source": "fresh deterministic 027_07 rerun"
+}

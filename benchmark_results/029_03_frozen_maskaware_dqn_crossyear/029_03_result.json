@@ -1,0 +1,144 @@
+{
+  "status": "completed",
+  "checks": {
+    "exact_36_frozen_seasons": true,
+    "zero_validation_training_steps": true,
+    "zero_invalid_actions": true,
+    "all_models_unchanged": true,
+    "all_expected_cases_present": true
+  },
+  "year_matrix": [
+    {
+      "site": "FQ",
+      "year": 2013,
+      "seed_count": 3,
+      "winner_count": 0,
+      "yield_win_count": 0,
+      "wp_win_count": 0,
+      "pfp_win_count": 0,
+      "invalid_actions": 0,
+      "at_least_two_of_three": false
+    },
+    {
+      "site": "FQ",
+      "year": 2014,
+      "seed_count": 3,
+      "winner_count": 1,
+      "yield_win_count": 1,
+      "wp_win_count": 1,
+      "pfp_win_count": 1,
+      "invalid_actions": 0,
+      "at_least_two_of_three": false
+    },
+    {
+      "site": "FQ",
+      "year": 2019,
+      "seed_count": 3,
+      "winner_count": 3,
+      "yield_win_count": 1,
+      "wp_win_count": 2,
+      "pfp_win_count": 1,
+      "invalid_actions": 0,
+      "at_least_two_of_three": true
+    },
+    {
+      "site": "FQ",
+      "year": 2020,
+      "seed_count": 3,
+      "winner_count": 1,
+      "yield_win_count": 0,
+      "wp_win_count": 1,
+      "pfp_win_count": 1,
+      "invalid_actions": 0,
+      "at_least_two_of_three": false
+    },
+    {
+      "site": "FQ",
+      "year": 2023,
+      "seed_count": 3,
+      "winner_count": 2,
+      "yield_win_count": 0,
+      "wp_win_count": 2,
+      "pfp_win_count": 1,
+      "invalid_actions": 0,
+      "at_least_two_of_three": true
+    },
+    {
+      "site": "HLA",
+      "year": 2007,
+      "seed_count": 3,
+      "winner_count": 0,
+      "yield_win_count": 0,
+      "wp_win_count": 0,
+      "pfp_win_count": 0,
+      "invalid_actions": 0,
+      "at_least_two_of_three": false
+    },
+    {
+      "site": "HLA",
+      "year": 2015,
+      "seed_count": 3,
+      "winner_count": 1,
+      "yield_win_count": 1,
+      "wp_win_count": 0,
+      "pfp_win_count": 0,
+      "invalid_actions": 0,
+      "at_least_two_of_three": false
+    },
+    {
+      "site": "HLA",
+      "year": 2016,
+      "seed_count": 3,
+      "winner_count": 2,
+      "yield_win_count": 2,
+      "wp_win_count": 0,
+      "pfp_win_count": 0,
+      "invalid_actions": 0,
+      "at_least_two_of_three": true
+    },
+    {
+      "site": "HLA",
+      "year": 2022,
+      "seed_count": 3,
+      "winner_count": 0,
+      "yield_win_count": 0,
+      "wp_win_count": 0,
+      "pfp_win_count": 0,
+      "invalid_actions": 0,
+      "at_least_two_of_three": false
+    },
+    {
+      "site": "SY",
+      "year": 2012,
+      "seed_count": 3,
+      "winner_count": 1,
+      "yield_win_count": 1,
+      "wp_win_count": 1,
+      "pfp_win_count": 0,
+      "invalid_actions": 0,
+      "at_least_two_of_three": false
+    },
+    {
+      "site": "SY",
+      "year": 2015,
+      "seed_count": 3,
+      "winner_count": 2,
+      "yield_win_count": 2,
+      "wp_win_count": 1,
+      "pfp_win_count": 2,
+      "invalid_actions": 0,
+      "at_least_two_of_three": true
+    },
+    {
+      "site": "YC",
+      "year": 2008,
+      "seed_count": 3,
+      "winner_count": 1,
+      "yield_win_count": 0,
+      "wp_win_count": 1,
+      "pfp_win_count": 0,
+      "invalid_actions": 0,
+      "at_least_two_of_three": false
+    }
+  ]
+}

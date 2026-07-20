@@ -1,0 +1,15 @@
+{
+  "log_saving_path": "/workspace/benchmark_results/029_02_five_site_stage_mask_aware_dqn/HLA/seed0/runtime_train/pdi_gym.log",
+  "mode": "all",
+  "seed": 0,
+  "random_weather": false,
+  "evaluation": true,
+  "fileX_template_path": "/workspace/benchmark_results/029_02_five_site_stage_mask_aware_dqn/HLA/seed0/runtime_train/input/CNHL10N1.MZX",
+  "experiment_number": 1,
+  "auxiliary_file_paths": [
+    "/workspace/benchmark_results/029_02_five_site_stage_mask_aware_dqn/HLA/seed0/runtime_train/input/CNHL1001.WTH",
+    "/workspace/benchmark_results/029_02_five_site_stage_mask_aware_dqn/HLA/seed0/runtime_train/input/MZCER048.CUL",
+    "/workspace/benchmark_results/029_02_five_site_stage_mask_aware_dqn/HLA/seed0/runtime_train/input/SOIL.SOL"
+  ],
+  "run_dssat_location": "/opt/dssat_pdi/run_dssat"
+}

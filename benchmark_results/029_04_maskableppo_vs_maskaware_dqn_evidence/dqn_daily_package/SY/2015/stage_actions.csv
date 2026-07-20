@@ -1,0 +1,7 @@
+﻿site,year,seed,stage_index,dap,action_index,requested_irrigation,requested_nitrogen,executed_irrigation,executed_nitrogen
+SY,2015,0,0,1,4,15.0,50.0,15.0,50.0
+SY,2015,0,1,30,4,15.0,50.0,15.0,50.0
+SY,2015,0,2,50,4,15.0,50.0,15.0,50.0
+SY,2015,0,3,65,6,0.0,100.0,0.0,100.0
+SY,2015,0,4,85,1,15.0,0.0,15.0,0.0
+SY,2015,0,5,110,1,15.0,0.0,15.0,0.0

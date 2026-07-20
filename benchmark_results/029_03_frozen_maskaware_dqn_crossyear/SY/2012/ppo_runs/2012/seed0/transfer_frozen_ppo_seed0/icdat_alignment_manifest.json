@@ -1,0 +1,20 @@
+{
+  "year": 2012,
+  "treatment": 1,
+  "ic_pointer": 1,
+  "approved_target_icdat": 12099,
+  "original_authoritative_mzx": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013/SY/CNSY1201.MZX",
+  "original_authoritative_mzx_sha256": "20b071bc49549cbf561be3aae81caa355aa0582564db524e17d68ab6a274418a",
+  "runtime_mzx_sha256_before": "4b5ce361e66d1e455862e325c373cd1e147b623364cc641deec8a8f00859aeec",
+  "runtime_mzx_sha256_after": "349faa78749bfc19d99dfb9e05a19645744eecb461d864388ee400d3bd2c4915",
+  "ic_row_before": " 1    MZ 14099   100     0     1     1   -99  1000    .8     0   100    15 -99",
+  "ic_row_after": " 1    MZ 12099   100     0     1     1   -99  1000    .8     0   100    15 -99",
+  "changed": true,
+  "only_icdat_field_changed": true,
+  "runtime_mzx_sha256_after_management_rewrite": "5d6d32f54769c81accef5c72cf2d65e83a5537b1d4f96d69a6789184a7cfbaf7",
+  "ic_row_after_management_rewrite": " 1    MZ 12099   100     0     1     1   -99  1000    .8     0   100    15 -99",
+  "alignment_survived_management_rewrite": true,
+  "reported_management_tables_redrawn_for_external_actions": true,
+  "reported_management_level_pointer": 1,
+  "reported_zero_placeholder_date": 12092
+}

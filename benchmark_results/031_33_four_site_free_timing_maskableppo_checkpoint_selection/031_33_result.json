@@ -1,0 +1,12 @@
+{
+  "task": "031_33_four_site_free_timing_maskableppo_checkpoint_selection",
+  "record_md": "docs/031_33_four_site_free_timing_maskableppo_checkpoint_selection_record.md",
+  "checkpoint_inventory": "benchmark_results/031_33_four_site_free_timing_maskableppo_checkpoint_selection/evaluation/031_33_checkpoint_inventory.csv",
+  "eval_summary": "benchmark_results/031_33_four_site_free_timing_maskableppo_checkpoint_selection/evaluation/031_33_checkpoint_eval_summary.csv",
+  "selected_checkpoints": "benchmark_results/031_33_four_site_free_timing_maskableppo_checkpoint_selection/evaluation/031_33_selected_checkpoints_train_year.csv",
+  "station_subset": [
+    "YCA"
+  ],
+  "seed_subset": "all",
+  "completed_selected_rows": 12
+}

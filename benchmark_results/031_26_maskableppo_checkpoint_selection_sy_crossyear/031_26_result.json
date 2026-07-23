@@ -1,0 +1,8 @@
+{
+  "task": "031_26_maskableppo_checkpoint_selection_sy_crossyear",
+  "record_md": "docs/031_26_maskableppo_checkpoint_selection_sy_crossyear_record.md",
+  "training_summary": "benchmark_results/031_26_maskableppo_checkpoint_selection_sy_crossyear/evaluation/031_26_training_summary.csv",
+  "selected_checkpoints": "benchmark_results/031_26_maskableppo_checkpoint_selection_sy_crossyear/evaluation/031_26_selected_checkpoints_from_validation.csv",
+  "final_eval_summary": "benchmark_results/031_26_maskableppo_checkpoint_selection_sy_crossyear/evaluation/031_26_selected_final_eval_summary.csv",
+  "ppo_vs_ddqn_comparison": "benchmark_results/031_26_maskableppo_checkpoint_selection_sy_crossyear/evaluation/031_26_ppo_vs_ddqn_selected_comparison.csv"
+}

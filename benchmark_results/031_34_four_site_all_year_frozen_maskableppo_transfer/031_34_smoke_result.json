@@ -1,0 +1,9 @@
+{
+  "task": "031_34_four_site_all_year_frozen_maskableppo_transfer",
+  "mode": "smoke",
+  "record_md": "docs/031_34_four_site_all_year_frozen_maskableppo_transfer_record.md",
+  "candidate_summary": "benchmark_results/031_34_four_site_all_year_frozen_maskableppo_transfer/evaluation/031_34_smoke_candidate_summary.csv",
+  "candidate_vs_baseline": "benchmark_results/031_34_four_site_all_year_frozen_maskableppo_transfer/evaluation/031_34_smoke_candidate_vs_baseline.csv",
+  "baseline_rows": "benchmark_results/031_34_four_site_all_year_frozen_maskableppo_transfer/evaluation/031_34_baseline_rows_reused.csv",
+  "row_count": 1
+}

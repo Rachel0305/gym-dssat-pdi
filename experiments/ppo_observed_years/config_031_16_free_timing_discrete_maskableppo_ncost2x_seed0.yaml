@@ -1,0 +1,55 @@
+seed: 0
+mode: water_nitrogen
+algorithm: MaskablePPO
+total_timesteps: 20000
+
+paths:
+  base_env_config: experiments/ppo_observed_years/config_all_year_weather_calibration_validation.yaml
+  output_root: benchmark_results/031_16_free_timing_discrete_maskableppo_ncost2x_seed0
+  scenario_pool_csv: Leave_One_experiments/all_year_weather_calibration_validation/scenario_pool/all_year_weather_scenario_pool.csv
+  weather_inventory_csv: Leave_One_experiments/all_year_weather_calibration_validation/weather_inventory/weather_year_inventory.csv
+  weather_clean_csv: weather_clean_qc/all_sites_weather_cleaned_qc.csv
+  cultivar_file: my_data/MZCER048.CUL
+  my_data_dir: my_data
+  wth_dir: Leave_One_experiments/wth_generated_qc
+
+runtime:
+  mode: all
+  max_steps: 260
+  episode_timeout_seconds: 300
+  train_years_per_station: 1
+  eval_years_per_station: 1
+  smoke_station: SYA
+
+ppo:
+  learning_rate: 0.0003
+  gamma: 1.0
+  gae_lambda: 1.0
+  n_steps: 144
+  batch_size: 144
+  n_epochs: 5
+  ent_coef: 0.01
+  clip_range: 0.2
+  net_arch: [64, 64]
+
+discrete_actions:
+  irrigation_levels: [0.0, 6.0, 12.0, 18.0, 24.0]
+  nitrogen_levels: [0.0, 40.0, 80.0, 120.0, 160.0]
+
+action_safety:
+  enabled: true
+  daily_irrigation_max: 24.0
+  daily_n_max: 160.0
+  season_irrigation_soft_limit: 160.0
+  season_n_soft_limit: 250.0
+  min_days_between_irrigation: 7
+  min_days_between_fertilization: 7
+  irrigation_allowed_dap_range: [1, 120]
+  fertilization_allowed_dap_range: [1, 90]
+
+reward:
+  reward_type: literature_harvest_yield_minus_water_nitrogen_cost_ncost2x
+  yield_coef: 0.158
+  nitrogen_cost: 1.58
+  water_cost: 1.1
+

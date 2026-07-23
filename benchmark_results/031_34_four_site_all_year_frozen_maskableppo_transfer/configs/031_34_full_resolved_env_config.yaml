@@ -1,0 +1,469 @@
+seed: 0
+paths:
+  output_root: benchmark_results/031_34_four_site_all_year_frozen_maskableppo_transfer
+  weather_dir: weather_clean_qc
+  wth_dir: Leave_One_experiments/wth_generated_qc
+  my_data_dir: my_data
+  cultivar_file: my_data/MZCER048.CUL
+runtime:
+  mode: all
+  max_steps: 260
+  episode_timeout_seconds: 300
+economics:
+  grain_value_coef: 0.01
+  water_cost_default: 0.5
+  water_cost_low: 0.1
+  n_cost: 0.25
+fixed_management_treatments:
+- treatment_id: T0
+  treatment_name: T0_null_zero
+  nitrogen_by_dap: {}
+  irrigation_by_dap: {}
+- treatment_id: T1
+  treatment_name: T1_N_only_medium
+  nitrogen_by_dap:
+    1: 50.0
+    30: 50.0
+    60: 50.0
+  irrigation_by_dap: {}
+- treatment_id: T2
+  treatment_name: T2_N_medium_I_low
+  nitrogen_by_dap:
+    1: 50.0
+    30: 50.0
+    60: 50.0
+  irrigation_by_dap:
+    35: 30.0
+    65: 30.0
+- treatment_id: T3
+  treatment_name: T3_N_medium_I_mid
+  nitrogen_by_dap:
+    1: 50.0
+    30: 50.0
+    60: 50.0
+  irrigation_by_dap:
+    25: 40.0
+    50: 40.0
+    75: 40.0
+- treatment_id: T4
+  treatment_name: T4_N_high_no_I
+  nitrogen_by_dap:
+    1: 75.0
+    30: 75.0
+    60: 75.0
+  irrigation_by_dap: {}
+screening:
+  water_stress_threshold: 0.05
+  n_stress_threshold: 0.05
+  irrigation_yield_gain_abs_threshold: 200.0
+  irrigation_yield_gain_ratio_threshold: 1.03
+  low_water_profit_tolerance: 0.0
+action_safety:
+  enabled: true
+  daily_irrigation_max: 24.0
+  daily_n_max: 160.0
+  season_irrigation_soft_limit: 160.0
+  season_n_soft_limit: 250.0
+  min_days_between_irrigation: 7
+  min_days_between_fertilization: 7
+  irrigation_allowed_dap_range:
+  - 1
+  - 120
+  fertilization_allowed_dap_range:
+  - 1
+  - 90
+observed_years:
+  FQA:
+  - year: 2005
+    label: wet_year;water_stress_year;nitrogen_stress_year
+    planting_date: '2005-06-11'
+    weather_file: Leave_One_experiments\wth_generated_qc\FQA\FQA2005.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2006
+    label: wet_year;nitrogen_stress_year;low_response_year
+    planting_date: '2006-06-11'
+    weather_file: Leave_One_experiments\wth_generated_qc\FQA\FQA2006.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2007
+    label: normal_year;water_stress_year;nitrogen_stress_year;irrigation_responsive_year
+    planting_date: '2007-06-11'
+    weather_file: Leave_One_experiments\wth_generated_qc\FQA\FQA2007.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2008
+    label: normal_year;water_stress_year;nitrogen_stress_year;irrigation_responsive_year
+    planting_date: '2008-06-10'
+    weather_file: Leave_One_experiments\wth_generated_qc\FQA\FQA2008.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2009
+    label: normal_year;nitrogen_stress_year;low_response_year
+    planting_date: '2009-06-11'
+    weather_file: Leave_One_experiments\wth_generated_qc\FQA\FQA2009.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2010
+    label: normal_year;nitrogen_stress_year;low_response_year
+    planting_date: '2010-06-11'
+    weather_file: Leave_One_experiments\wth_generated_qc\FQA\FQA2010.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2011
+    label: wet_year;water_stress_year;nitrogen_stress_year
+    planting_date: '2011-06-11'
+    weather_file: Leave_One_experiments\wth_generated_qc\FQA\FQA2011.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2012
+    label: wet_year;nitrogen_stress_year;low_response_year
+    planting_date: '2012-06-10'
+    weather_file: Leave_One_experiments\wth_generated_qc\FQA\FQA2012.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2013
+    label: wet_year;nitrogen_stress_year;low_response_year
+    planting_date: '2013-06-11'
+    weather_file: Leave_One_experiments\wth_generated_qc\FQA\FQA2013.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2014
+    label: wet_year;nitrogen_stress_year;low_response_year
+    planting_date: '2014-06-11'
+    weather_file: Leave_One_experiments\wth_generated_qc\FQA\FQA2014.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2015
+    label: normal_year;water_stress_year;nitrogen_stress_year
+    planting_date: '2015-06-11'
+    weather_file: Leave_One_experiments\wth_generated_qc\FQA\FQA2015.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2016
+    label: normal_year;water_stress_year;nitrogen_stress_year;irrigation_responsive_year
+    planting_date: '2016-06-10'
+    weather_file: Leave_One_experiments\wth_generated_qc\FQA\FQA2016.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2017
+    label: normal_year;water_stress_year;nitrogen_stress_year
+    planting_date: '2017-06-11'
+    weather_file: Leave_One_experiments\wth_generated_qc\FQA\FQA2017.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2018
+    label: normal_year;water_stress_year;nitrogen_stress_year
+    planting_date: '2018-06-11'
+    weather_file: Leave_One_experiments\wth_generated_qc\FQA\FQA2018.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2019
+    label: dry_year;water_stress_year;nitrogen_stress_year
+    planting_date: '2019-06-11'
+    weather_file: Leave_One_experiments\wth_generated_qc\FQA\FQA2019.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2020
+    label: normal_year;water_stress_year;nitrogen_stress_year
+    planting_date: '2020-06-10'
+    weather_file: Leave_One_experiments\wth_generated_qc\FQA\FQA2020.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2021
+    label: wet_year;nitrogen_stress_year;low_response_year
+    planting_date: '2021-06-11'
+    weather_file: Leave_One_experiments\wth_generated_qc\FQA\FQA2021.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2022
+    label: normal_year;nitrogen_stress_year;low_response_year
+    planting_date: '2022-06-11'
+    weather_file: Leave_One_experiments\wth_generated_qc\FQA\FQA2022.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2023
+    label: normal_year;water_stress_year;nitrogen_stress_year
+    planting_date: '2023-06-11'
+    weather_file: Leave_One_experiments\wth_generated_qc\FQA\FQA2023.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  HLA:
+  - year: 2004
+    label: dry_year;water_stress_year;nitrogen_stress_year;irrigation_responsive_year
+    planting_date: '2004-05-04'
+    weather_file: Leave_One_experiments\wth_generated_qc\HLA\HLA2004.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2005
+    label: normal_year;nitrogen_stress_year;low_response_year
+    planting_date: '2005-05-05'
+    weather_file: Leave_One_experiments\wth_generated_qc\HLA\HLA2005.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2006
+    label: normal_year;nitrogen_stress_year;low_response_year
+    planting_date: '2006-05-05'
+    weather_file: Leave_One_experiments\wth_generated_qc\HLA\HLA2006.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2007
+    label: normal_year;nitrogen_stress_year;low_response_year
+    planting_date: '2007-05-05'
+    weather_file: Leave_One_experiments\wth_generated_qc\HLA\HLA2007.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2008
+    label: normal_year;nitrogen_stress_year;low_response_year
+    planting_date: '2008-05-04'
+    weather_file: Leave_One_experiments\wth_generated_qc\HLA\HLA2008.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2009
+    label: normal_year;nitrogen_stress_year;low_response_year
+    planting_date: '2009-05-05'
+    weather_file: Leave_One_experiments\wth_generated_qc\HLA\HLA2009.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2010
+    label: normal_year;nitrogen_stress_year;low_response_year
+    planting_date: '2010-05-05'
+    weather_file: Leave_One_experiments\wth_generated_qc\HLA\HLA2010.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2011
+    label: normal_year;nitrogen_stress_year;low_response_year
+    planting_date: '2011-05-05'
+    weather_file: Leave_One_experiments\wth_generated_qc\HLA\HLA2011.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2012
+    label: wet_year;nitrogen_stress_year;low_response_year
+    planting_date: '2012-05-04'
+    weather_file: Leave_One_experiments\wth_generated_qc\HLA\HLA2012.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2013
+    label: wet_year;nitrogen_stress_year;low_response_year
+    planting_date: '2013-05-05'
+    weather_file: Leave_One_experiments\wth_generated_qc\HLA\HLA2013.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2014
+    label: normal_year;nitrogen_stress_year;low_response_year
+    planting_date: '2014-05-05'
+    weather_file: Leave_One_experiments\wth_generated_qc\HLA\HLA2014.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2015
+    label: dry_year;nitrogen_stress_year;low_response_year
+    planting_date: '2015-05-05'
+    weather_file: Leave_One_experiments\wth_generated_qc\HLA\HLA2015.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2016
+    label: normal_year;nitrogen_stress_year;low_response_year
+    planting_date: '2016-05-04'
+    weather_file: Leave_One_experiments\wth_generated_qc\HLA\HLA2016.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2017
+    label: normal_year;nitrogen_stress_year;low_response_year
+    planting_date: '2017-05-05'
+    weather_file: Leave_One_experiments\wth_generated_qc\HLA\HLA2017.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2018
+    label: wet_year;nitrogen_stress_year;low_response_year
+    planting_date: '2018-05-05'
+    weather_file: Leave_One_experiments\wth_generated_qc\HLA\HLA2018.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2019
+    label: wet_year;nitrogen_stress_year;low_response_year
+    planting_date: '2019-05-05'
+    weather_file: Leave_One_experiments\wth_generated_qc\HLA\HLA2019.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2020
+    label: wet_year;nitrogen_stress_year;low_response_year
+    planting_date: '2020-05-04'
+    weather_file: Leave_One_experiments\wth_generated_qc\HLA\HLA2020.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2021
+    label: wet_year;nitrogen_stress_year;low_response_year
+    planting_date: '2021-05-05'
+    weather_file: Leave_One_experiments\wth_generated_qc\HLA\HLA2021.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2022
+    label: normal_year;nitrogen_stress_year;low_response_year
+    planting_date: '2022-05-05'
+    weather_file: Leave_One_experiments\wth_generated_qc\HLA\HLA2022.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2023
+    label: wet_year;nitrogen_stress_year;low_response_year
+    planting_date: '2023-05-05'
+    weather_file: Leave_One_experiments\wth_generated_qc\HLA\HLA2023.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  LCA:
+  - year: 2005
+    label: normal_year;nitrogen_stress_year;low_response_year
+    planting_date: '2005-06-15'
+    weather_file: Leave_One_experiments\wth_generated_qc\LCA\LCA2005.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2006
+    label: wet_year;nitrogen_stress_year;low_response_year
+    planting_date: '2006-06-15'
+    weather_file: Leave_One_experiments\wth_generated_qc\LCA\LCA2006.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2007
+    label: normal_year;nitrogen_stress_year;low_response_year
+    planting_date: '2007-06-15'
+    weather_file: Leave_One_experiments\wth_generated_qc\LCA\LCA2007.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2008
+    label: wet_year;nitrogen_stress_year;low_response_year
+    planting_date: '2008-06-14'
+    weather_file: Leave_One_experiments\wth_generated_qc\LCA\LCA2008.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2009
+    label: wet_year;nitrogen_stress_year;low_response_year
+    planting_date: '2009-06-15'
+    weather_file: Leave_One_experiments\wth_generated_qc\LCA\LCA2009.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2010
+    label: normal_year;nitrogen_stress_year;low_response_year
+    planting_date: '2010-06-15'
+    weather_file: Leave_One_experiments\wth_generated_qc\LCA\LCA2010.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2011
+    label: normal_year;nitrogen_stress_year;low_response_year
+    planting_date: '2011-06-15'
+    weather_file: Leave_One_experiments\wth_generated_qc\LCA\LCA2011.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2012
+    label: normal_year;nitrogen_stress_year;low_response_year
+    planting_date: '2012-06-14'
+    weather_file: Leave_One_experiments\wth_generated_qc\LCA\LCA2012.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2013
+    label: wet_year;nitrogen_stress_year;low_response_year
+    planting_date: '2013-06-15'
+    weather_file: Leave_One_experiments\wth_generated_qc\LCA\LCA2013.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2014
+    label: normal_year;nitrogen_stress_year;low_response_year
+    planting_date: '2014-06-15'
+    weather_file: Leave_One_experiments\wth_generated_qc\LCA\LCA2014.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2015
+    label: normal_year;nitrogen_stress_year;low_response_year
+    planting_date: '2015-06-15'
+    weather_file: Leave_One_experiments\wth_generated_qc\LCA\LCA2015.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2016
+    label: normal_year;nitrogen_stress_year;low_response_year
+    planting_date: '2016-06-14'
+    weather_file: Leave_One_experiments\wth_generated_qc\LCA\LCA2016.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2017
+    label: dry_year;water_stress_year;nitrogen_stress_year
+    planting_date: '2017-06-15'
+    weather_file: Leave_One_experiments\wth_generated_qc\LCA\LCA2017.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2018
+    label: normal_year;nitrogen_stress_year;low_response_year
+    planting_date: '2018-06-15'
+    weather_file: Leave_One_experiments\wth_generated_qc\LCA\LCA2018.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2019
+    label: normal_year;nitrogen_stress_year;low_response_year
+    planting_date: '2019-06-15'
+    weather_file: Leave_One_experiments\wth_generated_qc\LCA\LCA2019.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2020
+    label: normal_year;nitrogen_stress_year;low_response_year
+    planting_date: '2020-06-14'
+    weather_file: Leave_One_experiments\wth_generated_qc\LCA\LCA2020.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2021
+    label: wet_year;nitrogen_stress_year;low_response_year
+    planting_date: '2021-06-15'
+    weather_file: Leave_One_experiments\wth_generated_qc\LCA\LCA2021.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2022
+    label: wet_year;nitrogen_stress_year;low_response_year
+    planting_date: '2022-06-15'
+    weather_file: Leave_One_experiments\wth_generated_qc\LCA\LCA2022.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2023
+    label: wet_year;nitrogen_stress_year;low_response_year
+    planting_date: '2023-06-15'
+    weather_file: Leave_One_experiments\wth_generated_qc\LCA\LCA2023.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  YCA:
+  - year: 2004
+    label: dry_year;nitrogen_stress_year;irrigation_responsive_year
+    planting_date: '2004-06-17'
+    weather_file: Leave_One_experiments\wth_generated_qc\YCA\YCA2004.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2005
+    label: wet_year;nitrogen_stress_year;low_response_year
+    planting_date: '2005-06-18'
+    weather_file: Leave_One_experiments\wth_generated_qc\YCA\YCA2005.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2006
+    label: normal_year;nitrogen_stress_year;low_response_year
+    planting_date: '2006-06-18'
+    weather_file: Leave_One_experiments\wth_generated_qc\YCA\YCA2006.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2007
+    label: normal_year;nitrogen_stress_year;low_response_year
+    planting_date: '2007-06-18'
+    weather_file: Leave_One_experiments\wth_generated_qc\YCA\YCA2007.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2008
+    label: normal_year;nitrogen_stress_year;low_response_year
+    planting_date: '2008-06-17'
+    weather_file: Leave_One_experiments\wth_generated_qc\YCA\YCA2008.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2009
+    label: normal_year;nitrogen_stress_year;low_response_year
+    planting_date: '2009-06-18'
+    weather_file: Leave_One_experiments\wth_generated_qc\YCA\YCA2009.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2010
+    label: wet_year;nitrogen_stress_year;low_response_year
+    planting_date: '2010-06-18'
+    weather_file: Leave_One_experiments\wth_generated_qc\YCA\YCA2010.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2011
+    label: normal_year;nitrogen_stress_year;low_response_year
+    planting_date: '2011-06-18'
+    weather_file: Leave_One_experiments\wth_generated_qc\YCA\YCA2011.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2012
+    label: wet_year;nitrogen_stress_year;low_response_year
+    planting_date: '2012-06-17'
+    weather_file: Leave_One_experiments\wth_generated_qc\YCA\YCA2012.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2013
+    label: wet_year;nitrogen_stress_year;low_response_year
+    planting_date: '2013-06-18'
+    weather_file: Leave_One_experiments\wth_generated_qc\YCA\YCA2013.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2014
+    label: normal_year;water_stress_year;nitrogen_stress_year
+    planting_date: '2014-06-18'
+    weather_file: Leave_One_experiments\wth_generated_qc\YCA\YCA2014.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2015
+    label: normal_year;water_stress_year;nitrogen_stress_year
+    planting_date: '2015-06-18'
+    weather_file: Leave_One_experiments\wth_generated_qc\YCA\YCA2015.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2016
+    label: normal_year;nitrogen_stress_year;low_response_year
+    planting_date: '2016-06-17'
+    weather_file: Leave_One_experiments\wth_generated_qc\YCA\YCA2016.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2017
+    label: normal_year;nitrogen_stress_year;low_response_year
+    planting_date: '2017-06-18'
+    weather_file: Leave_One_experiments\wth_generated_qc\YCA\YCA2017.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2018
+    label: wet_year;nitrogen_stress_year;low_response_year
+    planting_date: '2018-06-18'
+    weather_file: Leave_One_experiments\wth_generated_qc\YCA\YCA2018.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2019
+    label: dry_year;water_stress_year;nitrogen_stress_year
+    planting_date: '2019-06-18'
+    weather_file: Leave_One_experiments\wth_generated_qc\YCA\YCA2019.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2020
+    label: normal_year;nitrogen_stress_year;low_response_year
+    planting_date: '2020-06-17'
+    weather_file: Leave_One_experiments\wth_generated_qc\YCA\YCA2020.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2021
+    label: wet_year;nitrogen_stress_year;low_response_year
+    planting_date: '2021-06-18'
+    weather_file: Leave_One_experiments\wth_generated_qc\YCA\YCA2021.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2022
+    label: wet_year;nitrogen_stress_year;low_response_year
+    planting_date: '2022-06-18'
+    weather_file: Leave_One_experiments\wth_generated_qc\YCA\YCA2022.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2023
+    label: normal_year;nitrogen_stress_year;low_response_year
+    planting_date: '2023-06-18'
+    weather_file: Leave_One_experiments\wth_generated_qc\YCA\YCA2023.WTH
+    source: 006_17_all_year_direct_action_safe_ppo

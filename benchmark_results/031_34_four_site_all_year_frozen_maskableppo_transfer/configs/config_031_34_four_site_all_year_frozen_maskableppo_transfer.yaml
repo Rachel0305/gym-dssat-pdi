@@ -1,0 +1,21 @@
+base_config: experiments/ppo_observed_years/config_031_20_free_timing_discrete_maskableppo_scaled_reward_five_station_smoke.yaml
+output_root: benchmark_results/031_34_four_site_all_year_frozen_maskableppo_transfer
+candidate_selection_csv: benchmark_results/031_34a_reselect_03133_checkpoints_by_advisor_metrics/evaluation/031_34a_guardrailed_reselection_sensitivity.csv
+checkpoint_eval_summary_csv: benchmark_results/031_33_four_site_free_timing_maskableppo_checkpoint_selection/evaluation/031_33_checkpoint_eval_summary.csv
+candidate_yield_guardrail_fraction: 0.95
+scenario_pool_csv: Leave_One_experiments/all_year_weather_calibration_validation/scenario_pool/all_year_weather_scenario_pool.csv
+baseline_sources:
+  - benchmark_results/031_29_sy_auto_and_recorded_template_completion/evaluation/031_29_sy_baseline_summary.csv
+  - benchmark_results/028_12_screened_year_representative_advisor_package/028_12_all_representative_five_scenario_summary.csv
+  - benchmark_results/027_05/027_05_five_scenario_summary.csv
+min_year: 2000
+target_stations: [HLA, FQA, LCA, YCA]
+station_to_site:
+  HLA: HLA
+  FQA: FQ
+  LCA: LC
+  YCA: YC
+smoke:
+  station_code: YCA
+  year: 2014
+  seed: 0

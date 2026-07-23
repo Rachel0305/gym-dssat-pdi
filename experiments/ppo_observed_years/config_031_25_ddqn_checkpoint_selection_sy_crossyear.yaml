@@ -1,0 +1,14 @@
+base_config: experiments/ppo_observed_years/config_031_22_literature_aligned_ppo_dqn_ddqn_sy2014_smoke.yaml
+seeds: [0, 1, 2]
+max_train_steps: 100000
+checkpoint_steps: [10000, 20000, 30000, 50000, 75000, 100000]
+train_site: SYA
+train_year: 2014
+validation_year: 2012
+test_year: 2015
+transfer_years: [2012, 2015]
+output_root: benchmark_results/031_25_ddqn_checkpoint_selection_sy_crossyear
+four_baseline_summary_csv: benchmark_results/028_05_sy_crossyear_frozen_ppo_daily/028_05_all_cases_five_scenario_summary.csv
+selection:
+  min_yield_fraction_of_validation_baseline_max: 0.70
+

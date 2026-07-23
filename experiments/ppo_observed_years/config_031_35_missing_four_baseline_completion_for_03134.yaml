@@ -1,0 +1,37 @@
+base_config: experiments/ppo_observed_years/config_031_20_free_timing_discrete_maskableppo_scaled_reward_five_station_smoke.yaml
+output_root: benchmark_results/031_35_missing_four_baseline_completion_for_03134
+ppo_full_summary_csv: benchmark_results/031_34_four_site_all_year_frozen_maskableppo_transfer/evaluation/031_34_full_candidate_summary.csv
+ppo_full_comparison_csv: benchmark_results/031_34_four_site_all_year_frozen_maskableppo_transfer/evaluation/031_34_full_candidate_vs_baseline.csv
+scenario_pool_csv: Leave_One_experiments/all_year_weather_calibration_validation/scenario_pool/all_year_weather_scenario_pool.csv
+min_year: 2000
+target_stations: [HLA, FQA, LCA, YCA]
+station_to_site:
+  HLA: HLA
+  FQA: FQ
+  LCA: LC
+  YCA: YC
+site_to_station:
+  HLA: HLA
+  FQ: FQA
+  LC: LCA
+  YC: YCA
+site_regions:
+  HLA: northeast_greatwall_spring_maize
+  FQ: huanghuai_fenwei_summer_maize
+  LC: huanghuai_fenwei_summer_maize
+  YC: huanghuai_fenwei_summer_maize
+existing_baseline_sources:
+  - benchmark_results/031_29_sy_auto_and_recorded_template_completion/evaluation/031_29_sy_baseline_summary.csv
+  - benchmark_results/028_12_screened_year_representative_advisor_package/028_12_all_representative_five_scenario_summary.csv
+  - benchmark_results/027_05/027_05_five_scenario_summary.csv
+  - DSSAT_auto_validation/fq_all_year_screen_and_dqn_transfer_014_01/014_01_fq_all_year_screening_summary.csv
+  - DSSAT_auto_validation/lc_fixed_input_year_screening_017_11/017_11_lc_fixed_input_summary.csv
+  - DSSAT_auto_validation/multisite_new_cultivar_forward_screening_013_01/013_01_fq_yc_forward_summary.csv
+  - DSSAT_auto_validation/extension_expert_baseline_018_03/018_03_extension_expert_summary.csv
+recorded_template_daily_csv: benchmark_results/027_05/027_05_daily_values.csv
+scenarios_to_generate: ["null", recorded_farmer_template_02705, official_extension_expert]
+seed: 0
+max_steps: 260
+smoke:
+  station_code: YCA
+  year: 2005

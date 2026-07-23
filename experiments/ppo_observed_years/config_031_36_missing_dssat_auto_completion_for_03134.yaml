@@ -1,0 +1,15 @@
+task_id: "031_36"
+description: "Complete missing true DSSAT-auto baselines after 031_35 template-aware fixed-baseline completion."
+base_config: "experiments/ppo_observed_years/config_031_20_free_timing_discrete_maskableppo_scaled_reward_five_station_smoke.yaml"
+output_root: "benchmark_results/031_36_missing_dssat_auto_completion_for_03134"
+ppo_full_summary_csv: "benchmark_results/031_34_four_site_all_year_frozen_maskableppo_transfer/evaluation/031_34_full_candidate_summary.csv"
+template_aware_comparison_csv: "benchmark_results/031_35_missing_four_baseline_completion_for_03134/evaluation/031_35_full_ppo_vs_expanded_template_aware_baselines.csv"
+03135_unified_baseline_csv: "benchmark_results/031_35_missing_four_baseline_completion_for_03134/evaluation/031_35_full_template_aware_unified_baseline_summary.csv"
+scenario_pool_csv: "Leave_One_experiments/all_year_weather_calibration_validation/scenario_pool/all_year_weather_scenario_pool.csv"
+target_status: "baseline_incomplete_3rows"
+target_scenario: "dssat_auto"
+seed: 0
+max_steps: 260
+smoke:
+  station_code: "HLA"
+  year: 2004

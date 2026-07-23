@@ -1,0 +1,27 @@
+base_config: experiments/ppo_observed_years/config_031_20_free_timing_discrete_maskableppo_scaled_reward_five_station_smoke.yaml
+output_root: benchmark_results/031_33_four_site_free_timing_maskableppo_checkpoint_selection
+target_site_years:
+  - station_code: HLA
+    year: 2015
+  - station_code: FQA
+    year: 2016
+  - station_code: LCA
+    year: 2010
+  - station_code: YCA
+    year: 2014
+seeds: [0, 1, 2]
+max_train_steps: 100000
+checkpoint_steps: [10000, 20000, 30000, 50000, 75000, 100000]
+selection_metric: literature_reward_sum
+tie_breakers:
+  - final_grnwt_desc
+  - total_n_asc
+  - total_irrigation_asc
+  - checkpoint_step_asc
+runtime_notes:
+  no_parameter_tuning: true
+  no_reward_change: true
+  no_expert_dap_windows: true
+  selection_on_train_year_only: true
+  cross_year_transfer_deferred_to_031_34: true
+

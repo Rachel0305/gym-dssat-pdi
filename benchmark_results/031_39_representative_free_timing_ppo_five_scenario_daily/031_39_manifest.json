@@ -1,0 +1,22 @@
+{
+  "task": "031_39",
+  "site": "LC",
+  "station_code": "LCA",
+  "year": 2010,
+  "seed": 1,
+  "checkpoint_step": 75000,
+  "model_path": "benchmark_results/031_33_four_site_free_timing_maskableppo_checkpoint_selection/models/LCA/LCA_2010_maskableppo_seed1_ckpt75000.zip",
+  "model_sha256": "4a01837ec8c1a0009675bdf1279a3591377f9894b6243acfa4deaea9e60fa4fe",
+  "candidate_snapshot": "benchmark_results/031_34_four_site_all_year_frozen_maskableppo_transfer/runs/LCA/2010/seed1_ckpt75000/snapshot",
+  "training_calls": 0,
+  "new_dssat_runs": 0,
+  "daily_csv": "benchmark_results/031_39_representative_free_timing_ppo_five_scenario_daily/031_39_lca2010_current_free_timing_ppo_five_scenario_daily.csv",
+  "summary_csv": "benchmark_results/031_39_representative_free_timing_ppo_five_scenario_daily/031_39_lca2010_current_free_timing_ppo_five_scenario_summary.csv",
+  "checks_csv": "benchmark_results/031_39_representative_free_timing_ppo_five_scenario_daily/031_39_lca2010_daily_evidence_checks.csv",
+  "figures": [
+    "benchmark_results/031_39_representative_free_timing_ppo_five_scenario_daily/figures/027_05_lc2010_maskableppo_five_scenario_daily.png",
+    "benchmark_results/031_39_representative_free_timing_ppo_five_scenario_daily/figures/027_05_lc2010_maskableppo_five_scenario_daily.svg",
+    "benchmark_results/031_39_representative_free_timing_ppo_five_scenario_daily/figures/027_05_lc2010_ppo_five_scenario_endpoints.png",
+    "benchmark_results/031_39_representative_free_timing_ppo_five_scenario_daily/figures/027_05_lc2010_ppo_five_scenario_endpoints.svg"
+  ]
+}

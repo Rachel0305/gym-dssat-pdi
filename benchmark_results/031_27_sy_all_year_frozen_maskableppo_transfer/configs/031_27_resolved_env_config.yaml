@@ -1,0 +1,171 @@
+seed: 1
+paths:
+  output_root: benchmark_results/031_27_sy_all_year_frozen_maskableppo_transfer
+  weather_dir: weather_clean_qc
+  wth_dir: Leave_One_experiments/wth_generated_qc
+  my_data_dir: my_data
+  cultivar_file: my_data/MZCER048.CUL
+runtime:
+  mode: all
+  max_steps: 260
+  episode_timeout_seconds: 300
+economics:
+  grain_value_coef: 0.01
+  water_cost_default: 0.5
+  water_cost_low: 0.1
+  n_cost: 0.25
+fixed_management_treatments:
+- treatment_id: T0
+  treatment_name: T0_null_zero
+  nitrogen_by_dap: {}
+  irrigation_by_dap: {}
+- treatment_id: T1
+  treatment_name: T1_N_only_medium
+  nitrogen_by_dap:
+    1: 50.0
+    30: 50.0
+    60: 50.0
+  irrigation_by_dap: {}
+- treatment_id: T2
+  treatment_name: T2_N_medium_I_low
+  nitrogen_by_dap:
+    1: 50.0
+    30: 50.0
+    60: 50.0
+  irrigation_by_dap:
+    35: 30.0
+    65: 30.0
+- treatment_id: T3
+  treatment_name: T3_N_medium_I_mid
+  nitrogen_by_dap:
+    1: 50.0
+    30: 50.0
+    60: 50.0
+  irrigation_by_dap:
+    25: 40.0
+    50: 40.0
+    75: 40.0
+- treatment_id: T4
+  treatment_name: T4_N_high_no_I
+  nitrogen_by_dap:
+    1: 75.0
+    30: 75.0
+    60: 75.0
+  irrigation_by_dap: {}
+screening:
+  water_stress_threshold: 0.05
+  n_stress_threshold: 0.05
+  irrigation_yield_gain_abs_threshold: 200.0
+  irrigation_yield_gain_ratio_threshold: 1.03
+  low_water_profit_tolerance: 0.0
+action_safety:
+  enabled: true
+  daily_irrigation_max: 24.0
+  daily_n_max: 160.0
+  season_irrigation_soft_limit: 160.0
+  season_n_soft_limit: 250.0
+  min_days_between_irrigation: 7
+  min_days_between_fertilization: 7
+  irrigation_allowed_dap_range:
+  - 1
+  - 120
+  fertilization_allowed_dap_range:
+  - 1
+  - 90
+observed_years:
+  SYA:
+  - year: 2005
+    label: normal_year;nitrogen_stress_year;low_response_year
+    planting_date: '2005-04-21'
+    weather_file: Leave_One_experiments\wth_generated_qc\SYA\SYA2005.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2006
+    label: normal_year;nitrogen_stress_year;low_response_year
+    planting_date: '2006-04-21'
+    weather_file: Leave_One_experiments\wth_generated_qc\SYA\SYA2006.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2007
+    label: normal_year;nitrogen_stress_year;low_response_year
+    planting_date: '2007-04-21'
+    weather_file: Leave_One_experiments\wth_generated_qc\SYA\SYA2007.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2008
+    label: wet_year;nitrogen_stress_year;low_response_year
+    planting_date: '2008-04-20'
+    weather_file: Leave_One_experiments\wth_generated_qc\SYA\SYA2008.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2009
+    label: normal_year;water_stress_year;nitrogen_stress_year
+    planting_date: '2009-04-21'
+    weather_file: Leave_One_experiments\wth_generated_qc\SYA\SYA2009.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2010
+    label: wet_year;nitrogen_stress_year;low_response_year
+    planting_date: '2010-04-21'
+    weather_file: Leave_One_experiments\wth_generated_qc\SYA\SYA2010.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2011
+    label: normal_year;nitrogen_stress_year;low_response_year
+    planting_date: '2011-04-21'
+    weather_file: Leave_One_experiments\wth_generated_qc\SYA\SYA2011.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2012
+    label: wet_year;nitrogen_stress_year;low_response_year
+    planting_date: '2012-04-20'
+    weather_file: Leave_One_experiments\wth_generated_qc\SYA\SYA2012.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2013
+    label: normal_year;nitrogen_stress_year;low_response_year
+    planting_date: '2013-04-21'
+    weather_file: Leave_One_experiments\wth_generated_qc\SYA\SYA2013.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2014
+    label: normal_year;water_stress_year;nitrogen_stress_year
+    planting_date: '2014-04-21'
+    weather_file: Leave_One_experiments\wth_generated_qc\SYA\SYA2014.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2015
+    label: normal_year;nitrogen_stress_year;low_response_year
+    planting_date: '2015-04-21'
+    weather_file: Leave_One_experiments\wth_generated_qc\SYA\SYA2015.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2016
+    label: wet_year;nitrogen_stress_year;low_response_year
+    planting_date: '2016-04-20'
+    weather_file: Leave_One_experiments\wth_generated_qc\SYA\SYA2016.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2017
+    label: dry_year;water_stress_year;nitrogen_stress_year;irrigation_responsive_year
+    planting_date: '2017-04-21'
+    weather_file: Leave_One_experiments\wth_generated_qc\SYA\SYA2017.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2018
+    label: normal_year;nitrogen_stress_year;low_response_year
+    planting_date: '2018-04-21'
+    weather_file: Leave_One_experiments\wth_generated_qc\SYA\SYA2018.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2019
+    label: wet_year;nitrogen_stress_year;low_response_year
+    planting_date: '2019-04-21'
+    weather_file: Leave_One_experiments\wth_generated_qc\SYA\SYA2019.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2020
+    label: normal_year;water_stress_year;nitrogen_stress_year
+    planting_date: '2020-04-20'
+    weather_file: Leave_One_experiments\wth_generated_qc\SYA\SYA2020.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2021
+    label: normal_year;nitrogen_stress_year;low_response_year
+    planting_date: '2021-04-21'
+    weather_file: Leave_One_experiments\wth_generated_qc\SYA\SYA2021.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2022
+    label: wet_year;nitrogen_stress_year;low_response_year
+    planting_date: '2022-04-21'
+    weather_file: Leave_One_experiments\wth_generated_qc\SYA\SYA2022.WTH
+    source: 006_17_all_year_direct_action_safe_ppo
+  - year: 2023
+    label: normal_year;nitrogen_stress_year;low_response_year
+    planting_date: '2023-04-21'
+    weather_file: Leave_One_experiments\wth_generated_qc\SYA\SYA2023.WTH
+    source: 006_17_all_year_direct_action_safe_ppo

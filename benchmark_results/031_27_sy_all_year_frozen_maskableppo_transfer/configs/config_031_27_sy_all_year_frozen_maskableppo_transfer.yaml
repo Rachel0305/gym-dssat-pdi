@@ -1,0 +1,18 @@
+﻿source_task: 031_26_maskableppo_checkpoint_selection_sy_crossyear
+source_selected_final_eval_csv: benchmark_results/031_26_maskableppo_checkpoint_selection_sy_crossyear/evaluation/031_26_selected_final_eval_summary.csv
+source_base_config: experiments/ppo_observed_years/config_031_26_maskableppo_checkpoint_selection_sy_crossyear.yaml
+scenario_pool_csv: Leave_One_experiments/all_year_weather_calibration_validation/scenario_pool/all_year_weather_scenario_pool.csv
+four_baseline_metrics_csv: benchmark_results/028_02_four_baseline_envelope_readiness/028_02_baseline_metrics_recomputed.csv
+output_root: benchmark_results/031_27_sy_all_year_frozen_maskableppo_transfer
+site: SY
+station_code: SYA
+min_year: 2000
+seeds: [0, 1, 2]
+selected_checkpoints:
+  0: 20000
+  1: 100000
+  2: 50000
+notes:
+  - no new training
+  - no year screening
+  - compare against four baselines only where existing baseline envelope exists

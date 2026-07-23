@@ -1,0 +1,36 @@
+{
+  "status": "completed",
+  "years": [
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "expected_evaluations": 57,
+  "successful_evaluations": 57,
+  "baseline_comparable_years": [
+    2012,
+    2014,
+    2015
+  ],
+  "outputs": {
+    "candidate_summary": "benchmark_results/031_27_sy_all_year_frozen_maskableppo_transfer/evaluation/031_27_sy_all_year_candidate_summary.csv",
+    "available_baseline_comparison": "benchmark_results/031_27_sy_all_year_frozen_maskableppo_transfer/evaluation/031_27_sy_available_baseline_comparison.csv",
+    "record": "docs/031_27_sy_all_year_frozen_maskableppo_transfer_record.md"
+  }
+}

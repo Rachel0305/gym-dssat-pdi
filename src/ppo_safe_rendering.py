@@ -12,14 +12,97 @@ import yaml
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 PPO_ROOT = PROJECT_ROOT / "Leave_One_experiments" / "ppo_observed_years"
 DEFAULT_CONFIG = PROJECT_ROOT / "experiments" / "ppo_observed_years" / "config_ppo_observed_years.yaml"
+MULTISITE_INPUT_ROOT = PROJECT_ROOT / "DSSAT_auto_validation" / "multisite_new_cultivar_inputs_013"
 
 SITE_INFO = {
-    "HLA": {"short": "HL", "template": "UFGA8201-HL.jinja2", "soil": "HL.SOL", "weather_prefix": "HLA", "expected_weather": "CNHL0701.WTH"},
-    "SYA": {"short": "SY", "template": "UFGA8201-SY.jinja2", "soil": "SY.SOL", "weather_prefix": "SYA", "expected_weather": "CNSY1201.WTH"},
-    "LCA": {"short": "LC", "template": "UFGA8201-LC.jinja2", "soil": "LC.SOL", "weather_prefix": "LCA", "expected_weather": "CNLC0801.WTH"},
-    "YCA": {"short": "YC", "template": "UFGA8201-YC.jinja2", "soil": "YC.SOL", "weather_prefix": "YCA", "expected_weather": "CNYC0801.WTH"},
-    "FQA": {"short": "FQ", "template": "UFGA8201-FQ.jinja2", "soil": "FQ.SOL", "weather_prefix": "FQA", "expected_weather": "CNFQ0701.WTH"},
+    "HLA": {
+        "short": "HL",
+        "template": "CNHL0701_corrected_IC123.MZX",
+        "soil": "SOIL.SOL",
+        "cultivar": "MZCER048.CUL",
+        "weather_prefix": "CNHL",
+        "expected_weather": "CNHL0701.WTH",
+    },
+    "SYA": {
+        "short": "SY",
+        "template": "CNSY1201.MZX",
+        "soil": "SOIL.SOL",
+        "cultivar": "MZCER048.CUL",
+        "weather_prefix": "CNSY",
+        "expected_weather": "CNSY1201.WTH",
+    },
+    "LCA": {
+        "short": "LC",
+        "template": "CNLC0801.MZX",
+        "soil": "SOIL.SOL",
+        "cultivar": "MZCER048.CUL",
+        "weather_prefix": "CNLC",
+        "expected_weather": "CNLC0801.WTH",
+    },
+    "YCA": {
+        "short": "YC",
+        "template": "CNYC0801.MZX",
+        "soil": "SOIL.SOL",
+        "cultivar": "MZCER048.CUL",
+        "weather_prefix": "CNYC",
+        "expected_weather": "CNYC0801.WTH",
+    },
+    "FQA": {
+        "short": "FQ",
+        "template": "CNFQ0801.MZX",
+        "soil": "SOIL.SOL",
+        "cultivar": "MZCER048.CUL",
+        "weather_prefix": "CNFQ",
+        "expected_weather": "CNFQ0701.WTH",
+    },
 }
+
+
+def site_input_dir(station: str) -> Path:
+    info = SITE_INFO[station]
+    path = MULTISITE_INPUT_ROOT / info["short"]
+    if not path.exists():
+        raise FileNotFoundError(f"Missing multisite input directory for {station}: {path}")
+    return path
+
+
+def source_template_path(station: str) -> Path:
+    info = SITE_INFO[station]
+    path = site_input_dir(station) / info["template"]
+    if not path.exists():
+        raise FileNotFoundError(f"Missing multisite MZX template for {station}: {path}")
+    return path
+
+
+def source_weather_path(station: str, year: int) -> Path:
+    info = SITE_INFO[station]
+    standard_name = f"{info['weather_prefix']}{int(year) % 100:02d}01.WTH"
+    path = site_input_dir(station) / standard_name
+    if path.exists():
+        return path
+    aliases = sorted(site_input_dir(station).glob(f"{Path(standard_name).stem}*.WTH"))
+    if len(aliases) == 1:
+        return aliases[0]
+    raise FileNotFoundError(f"Missing multisite WTH for {station} {year}: {path}")
+
+
+def target_weather_stem(station: str, year: int) -> str:
+    info = SITE_INFO[station]
+    return f"{info['weather_prefix']}{int(year) % 100:02d}01"
+
+
+def source_soil_path(station: str) -> Path:
+    path = site_input_dir(station) / SITE_INFO[station]["soil"]
+    if not path.exists():
+        raise FileNotFoundError(f"Missing multisite SOIL.SOL for {station}: {path}")
+    return path
+
+
+def source_cultivar_path(station: str) -> Path:
+    path = site_input_dir(station) / SITE_INFO[station]["cultivar"]
+    if not path.exists():
+        raise FileNotFoundError(f"Missing multisite MZCER048.CUL for {station}: {path}")
+    return path
 
 
 def load_yaml(path: Path = DEFAULT_CONFIG) -> dict:
@@ -38,11 +121,50 @@ def yyddd(date_text: str) -> str:
 
 
 def force_management_levels_on(text: str) -> str:
-    return re.sub(
-        r"(Sim\d{4}\s+1\s+1\s+0\s+0\s+1\s+)0(\s+)0",
-        r"\g<1>1\g<2>1",
-        text,
-    )
+    """Enable the management factor levels required by generated X files.
+
+    DSSAT only uses a management block when the corresponding factor in
+    ``*TREATMENTS`` points to a non-zero level.  Older project templates already
+    contained ``*INITIAL CONDITIONS`` blocks, but the treatment ``IC`` factor was
+    left as 0, so those initial soil water/nitrogen values were not active.
+
+    Keep the source templates unchanged; only the rendered working copy is
+    adjusted here.  We explicitly enable:
+    - IC: initial conditions
+    - MI: irrigation management
+    - MF: fertilizer management
+    """
+    factors = ["CU", "FL", "SA", "IC", "MP", "MI", "MF", "MR", "MC", "MT", "ME", "MH", "SM"]
+    enable = {"IC", "MI", "MF"}
+
+    output: list[str] = []
+    waiting_for_treatment_row = False
+    for line in text.splitlines():
+        stripped = line.strip()
+        if stripped.startswith("@N R O C TNAME"):
+            waiting_for_treatment_row = True
+            output.append(line)
+            continue
+        if waiting_for_treatment_row and stripped and not stripped.startswith("@") and not stripped.startswith("*"):
+            token_matches = list(re.finditer(r"\S+", line))
+            tokens = [m.group(0) for m in token_matches]
+            if len(tokens) >= 5 + len(factors):
+                factor_values = tokens[5 : 5 + len(factors)]
+                if all(factor_values[factors.index(name)] == "1" for name in enable):
+                    output.append(line)
+                    waiting_for_treatment_row = False
+                    continue
+                chars = list(line)
+                for idx, name in enumerate(factors):
+                    if name in enable:
+                        span = token_matches[5 + idx].span()
+                        replacement = " " * (span[1] - span[0] - 1) + "1"
+                        chars[span[0] : span[1]] = list(replacement)
+                output.append("".join(chars))
+                waiting_for_treatment_row = False
+                continue
+        output.append(line)
+    return "\n".join(output) + "\n"
 
 
 def ensure_irrigation_section(text: str, safe_yyddd: str, year: int) -> str:
@@ -113,7 +235,7 @@ def safe_render_template(
 ) -> Path:
     output_root = output_root or PPO_ROOT
     info = SITE_INFO[station]
-    src = PROJECT_ROOT / "my_data" / info["template"]
+    src = source_template_path(station)
     out_dir = output_root / "rendered_inputs" / station / str(year) / run_tag
     out_dir.mkdir(parents=True, exist_ok=True)
     out = out_dir / f"{station}_{year}_{run_tag}.jinja2"
@@ -131,7 +253,10 @@ def safe_render_template(
     text = re.sub(rf"\b{old_yy}(\d{{3}})\b", rf"{new_yy}\1", text)
     text = re.sub(r"\b20\d{2}\b", str(year), text)
     text = re.sub(r"\bSim20\d{2}\b", f"Sim{year}", text)
+    text = re.sub(rf"{info['weather_prefix']}\d{{2}}01", f"{info['weather_prefix']}{new_yy}01", text)
     text = re.sub(r"CN([A-Z]{2})20\d{2}", lambda m: f"CN{m.group(1)}{year}", text)
+    target_wsta = target_weather_stem(station, year)
+    text = re.sub(rf"{info['weather_prefix']}(?:\d{{2}}01|20\d{{2}})", target_wsta, text)
     text = re.sub(r"(@P PDATE EDATE[^\n]*\n\s*1\s+)(\d{5})(\s+)(\d{5})", rf"\g<1>{safe_date}\g<3>{yyddd(emergence.strftime('%Y-%m-%d'))}", text)
     text = re.sub(r"(\sS\s+)(\d{5})(\s+2150)", rf"\g<1>{yyddd(start.strftime('%Y-%m-%d'))}\g<3>", text)
     text = re.sub(r"(\sMZ\s+)(\d{5})(\s+100)", rf"\g<1>{yyddd(start.strftime('%Y-%m-%d'))}\g<3>", text)
@@ -144,12 +269,9 @@ def safe_render_template(
 
 
 def copy_weather_to_rendered_dir(station: str, year: int, template: Path, config: dict) -> Path:
-    info = SITE_INFO[station]
-    wth_dir = PROJECT_ROOT / config["paths"]["wth_dir"]
-    source_weather = wth_dir / station / f"{info['weather_prefix']}{year}.WTH"
-    rendered_weather = template.parent / info["expected_weather"]
-    if source_weather.exists():
-        shutil.copyfile(source_weather, rendered_weather)
+    source_weather = source_weather_path(station, year)
+    rendered_weather = template.parent / f"{target_weather_stem(station, year)}.WTH"
+    shutil.copyfile(source_weather, rendered_weather)
     return rendered_weather
 
 
@@ -167,8 +289,8 @@ def build_env_args(
     info = SITE_INFO[station]
     template = safe_render_template(station, year, planting_date, output_root, run_tag)
     weather = copy_weather_to_rendered_dir(station, year, template, config)
-    cultivar = PROJECT_ROOT / config["paths"]["cultivar_file"]
-    soil = PROJECT_ROOT / config["paths"]["my_data_dir"] / info["soil"]
+    cultivar = source_cultivar_path(station)
+    soil = source_soil_path(station)
     missing = [p for p in [template, weather, cultivar, soil] if not p.exists()]
     if missing:
         raise FileNotFoundError("; ".join(str(p) for p in missing))
@@ -196,7 +318,7 @@ def check_rendered_input(template: Path, weather: Path | None = None) -> list[di
         ("fertilizer_section_present", "*FERTILIZERS (INORGANIC)" in text, ""),
         ("simulation_controls_present", "*SIMULATION CONTROLS" in text, ""),
         ("planting_section_present", "*PLANTING DETAILS" in text, ""),
-        ("mi_mf_enabled", bool(re.search(r"Sim\d{4}\s+1\s+1\s+0\s+0\s+1\s+1\s+1", text)), ""),
+        ("ic_mi_mf_enabled", bool(re.search(r"Sim\d{4}\s+1\s+1\s+0\s+1\s+1\s+1\s+1", text)), ""),
     ]
     if weather is not None:
         checks.append(("weather_exists", weather.exists(), str(weather)))

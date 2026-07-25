@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "/workspace/src/run_multisite_input_enabled_five_site_half_split_maskableppo_rerun_033_04.py", line 167, in main
+    base.main()
+  File "/workspace/src/run_five_site_half_split_stress_aware_maskableppo_batch_032_22.py", line 429, in main
+    write_record(split, train_all, reset_all, eval_all, by_station)
+  File "/workspace/src/run_multisite_input_enabled_five_site_half_split_maskableppo_rerun_033_04.py", line 89, in write_record
+    skipped_df = pd.read_csv(SKIPPED_WTH, keep_default_na=False) if SKIPPED_WTH.exists() else pd.DataFrame()
+  File "/opt/gym_dssat_pdi/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/opt/gym_dssat_pdi/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/opt/gym_dssat_pdi/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/opt/gym_dssat_pdi/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1898, in _make_engine
+    return mapping[engine](f, **self.options)
+  File "/opt/gym_dssat_pdi/lib/python3.10/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 93, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas/_libs/parsers.pyx", line 581, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file

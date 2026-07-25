@@ -1,0 +1,19 @@
+{
+  "task": "033_04_multisite_input_enabled_five_site_half_split_maskableppo_rerun",
+  "record_md": "docs/033_04_multisite_input_enabled_five_site_half_split_maskableppo_rerun_record.md",
+  "train_inventory": "benchmark_results/033_04_multisite_input_enabled_five_site_half_split_maskableppo_rerun/evaluation/032_22_training_checkpoint_inventory.csv",
+  "validation_summary": "benchmark_results/033_04_multisite_input_enabled_five_site_half_split_maskableppo_rerun/evaluation/032_22_checkpoint_validation_summary.csv",
+  "by_station": "benchmark_results/033_04_multisite_input_enabled_five_site_half_split_maskableppo_rerun/evaluation/032_22_validation_summary_by_station_checkpoint.csv",
+  "filtered_split": "benchmark_results/033_04_multisite_input_enabled_five_site_half_split_maskableppo_rerun/configs/033_04_available_weather_half_split_years.csv",
+  "skipped_missing_multisite_wth": "benchmark_results/033_04_multisite_input_enabled_five_site_half_split_maskableppo_rerun/configs/033_04_skipped_missing_multisite_wth.csv",
+  "input_source": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013",
+  "stations": [
+    "FQA",
+    "HLA",
+    "LCA",
+    "SYA",
+    "YCA"
+  ],
+  "total_timesteps_per_station": 100000,
+  "baseline_comparison": "not_computed_old_baselines_use_old_input_chain"
+}

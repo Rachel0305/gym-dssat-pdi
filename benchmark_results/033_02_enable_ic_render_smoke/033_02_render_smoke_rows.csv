@@ -1,0 +1,6 @@
+﻿station,year,planting_date,rendered_path,IC,MI,MF,initial_condition_ids,ic_valid,pass,treatment_row
+HLA,2007,2007-05-05,benchmark_results/033_02_enable_ic_render_smoke/rendered_inputs/HLA/2007/033_02_ic_smoke/HLA_2007_033_02_ic_smoke.jinja2,1,1,1,1;2;3,True,True,1 1 1 0 Sim2007                     1  1  0  1  1  1  1  0  0  0  0  0  1
+SYA,2014,2014-04-21,benchmark_results/033_02_enable_ic_render_smoke/rendered_inputs/SYA/2014/033_02_ic_smoke/SYA_2014_033_02_ic_smoke.jinja2,1,1,1,1;2,True,True,1 1 1 0 Sim2014                     1  1  0  1  1  1  1  0  0  0  0  0  1
+LCA,2010,2010-06-06,benchmark_results/033_02_enable_ic_render_smoke/rendered_inputs/LCA/2010/033_02_ic_smoke/LCA_2010_033_02_ic_smoke.jinja2,1,1,1,1,True,True,1 1 1 0 Sim2010                     1  1  0  1  1  1  1  0  0  0  0  0  1
+FQA,2008,2008-06-10,benchmark_results/033_02_enable_ic_render_smoke/rendered_inputs/FQA/2008/033_02_ic_smoke/FQA_2008_033_02_ic_smoke.jinja2,1,1,1,1,True,True,1 1 1 0 Sim2008                     1  1  0  1  1  1  1  0  0  0  0  0  1
+YCA,2014,2014-06-17,benchmark_results/033_02_enable_ic_render_smoke/rendered_inputs/YCA/2014/033_02_ic_smoke/YCA_2014_033_02_ic_smoke.jinja2,1,1,1,1,True,True,1 1 1 0 Sim2014                     1  1  0  1  1  1  1  0  0  0  0  0  1

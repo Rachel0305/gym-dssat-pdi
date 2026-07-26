@@ -1,0 +1,11 @@
+{
+  "task": "034_00",
+  "mode": "full",
+  "selected_station_years": 97,
+  "expected_runs": 388,
+  "successful_runs": 388,
+  "failed_runs": 0,
+  "output_root": "benchmark_results/034_00_multisite_input_ic1_four_baseline_rebuild",
+  "record_md": "docs/034_00_multisite_input_ic1_four_baseline_rebuild_record.md",
+  "elapsed_seconds": 1350.031394958496
+}

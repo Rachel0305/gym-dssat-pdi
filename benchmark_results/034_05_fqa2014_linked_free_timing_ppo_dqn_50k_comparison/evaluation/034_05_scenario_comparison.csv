@@ -1,0 +1,6 @@
+﻿model_type,scenario,algorithm,station_code,year,grain_yield_kg_ha,actual_irrigation_mm,actual_nitrogen_kg_ha,etcp_mm,WP_ET_kg_m3,PFP_N_kg_kg,simple_profit,delta_vs_best_baseline_grain_yield_kg_ha,delta_vs_best_baseline_WP_ET_kg_m3,delta_vs_best_baseline_PFP_N_kg_kg,delta_vs_best_baseline_simple_profit,saving_vs_min_baseline_actual_irrigation_mm,saving_vs_min_baseline_actual_nitrogen_kg_ha
+baseline,null,null,FQA,2014,7953.630981445312,0.0,0.0,351.6,2.26,,7953.630981445312,-364.7637939453134,-0.06000000000000005,,-209.90379394531374,0.0,0.0
+baseline,recorded_farmer_template,recorded_farmer_template,FQA,2014,8273.1494140625,75.0,144.0,364.1,2.27,57.5,7963.1294140625,-45.245361328125,-0.04999999999999982,-43.900000000000006,-200.40536132812576,-75.0,-144.0
+baseline,official_extension_expert,official_extension_expert,FQA,2014,8318.394775390625,23.0,82.0,359.0,2.32,101.4,8163.534775390625,0.0,0.0,0.0,0.0,-23.0,-82.0
+baseline,dssat_auto,dssat_auto,FQA,2014,7953.630981445312,0.0,0.0,351.6,2.26,,7953.630981445312,-364.7637939453134,-0.06000000000000005,,-209.90379394531374,0.0,0.0
+RL,linked_free_timing_maskableppo_50k,MaskablePPO,FQA,2014,8080.126953125,150.0,240.0,363.8,2.22,33.7,7535.926953125,-238.267822265625,-0.09999999999999964,-67.7,-627.6078222656251,-150.0,-240.0

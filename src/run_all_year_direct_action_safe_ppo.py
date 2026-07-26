@@ -386,6 +386,7 @@ def make_base_env(env_config: dict, station: str, year: int, seed: int, run_tag:
         run_tag=run_tag,
         evaluation=evaluation,
         mode=env_config.get("runtime", {}).get("mode", "all"),
+        linked_management=True,
     )
     return GymDssatWrapper(gym.make("gym_dssat_pdi:GymDssatPdi-v0", **env_args).unwrapped)
 

@@ -1,0 +1,3 @@
+﻿algorithm,station_code,train_years,seed,total_timesteps,run_status,model_path,notes,task,linked_management_expected
+MaskablePPO,FQA,2014,0,5000,ok,benchmark_results/034_04_linked_free_timing_ppo_dqn_train_smoke/models/FQA/maskableppo_stress_aware_seed0.zip,,034_04,True
+DQN,FQA,2014,0,5000,ok,benchmark_results/034_04_linked_free_timing_ppo_dqn_train_smoke/models/FQA/dqn_stress_aware_seed0.zip,,034_04,True

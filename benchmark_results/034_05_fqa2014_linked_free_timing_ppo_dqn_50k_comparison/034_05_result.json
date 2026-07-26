@@ -1,0 +1,7 @@
+{
+  "task": "034_05",
+  "record_md": "docs/034_05_fqa2014_linked_free_timing_ppo_dqn_50k_comparison_record.md",
+  "ppo_evaluated": true,
+  "dqn_status": "runtime_stopped",
+  "comparison_csv": "benchmark_results/034_05_fqa2014_linked_free_timing_ppo_dqn_50k_comparison/evaluation/034_05_scenario_comparison.csv"
+}

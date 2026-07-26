@@ -1,0 +1,6 @@
+﻿station_code,year,checkpoint_step,ppo_safe_i,ppo_safe_n,ppo_summary_i,ppo_summary_n,null_summary_i,null_summary_n,null_zero,ppo_summary_matches_safe,overview_is_linked,pass
+FQA,2014,25000,45.0,80.0,45.0,80.0,0.0,0.0,True,True,True,True
+HLA,2014,25000,150.0,200.0,150.0,200.0,0.0,0.0,True,True,True,True
+LCA,2014,25000,135.0,200.0,135.0,200.0,0.0,0.0,True,True,True,True
+SYA,2014,25000,150.0,240.0,150.0,240.0,0.0,0.0,True,True,True,True
+YCA,2014,25000,150.0,240.0,150.0,240.0,0.0,0.0,True,True,True,True

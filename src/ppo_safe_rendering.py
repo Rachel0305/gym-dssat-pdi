@@ -226,6 +226,35 @@ def reset_static_application_rows(text: str, safe_yyddd: str, year: int) -> str:
     return "\n".join(output) + "\n"
 
 
+def set_management_modes_for_treatment(text: str, treatment: int, irrig: str, ferti: str) -> str:
+    """Set the DSSAT management mode for one treatment row.
+
+    Dynamic RL actions are only applied by DSSAT when irrigation/fertilizer
+    management are linked (``IRRIG=L, FERTI=L``).  Static baseline schedules
+    should remain reported/automatic as rendered by their own scenario logic,
+    so this helper is only called by dynamic RL env construction.
+    """
+    out: list[str] = []
+    changed = False
+    in_management = False
+    for line in text.splitlines():
+        stripped = line.strip()
+        if stripped.startswith("@N MANAGEMENT") and "IRRIG" in stripped and "FERTI" in stripped:
+            in_management = True
+            out.append(line)
+            continue
+        if in_management and re.match(rf"^\s*{int(treatment)}\s+MA\b", line):
+            out.append(f"{int(treatment):2d} MA              R     {irrig}     {ferti}     R     M")
+            changed = True
+            continue
+        if in_management and stripped.startswith("*"):
+            in_management = False
+        out.append(line)
+    if not changed:
+        raise RuntimeError(f"Could not update management line for treatment {treatment}")
+    return "\n".join(out) + "\n"
+
+
 def safe_render_template(
     station: str,
     year: int,
@@ -284,10 +313,14 @@ def build_env_args(
     run_tag: str,
     evaluation: bool = False,
     mode: str = "all",
+    linked_management: bool = False,
 ) -> dict:
     output_root = PROJECT_ROOT / config["paths"]["output_root"]
     info = SITE_INFO[station]
     template = safe_render_template(station, year, planting_date, output_root, run_tag)
+    if linked_management:
+        text = template.read_text(encoding="utf-8", errors="replace")
+        template.write_text(set_management_modes_for_treatment(text, 1, "L", "L"), encoding="utf-8")
     weather = copy_weather_to_rendered_dir(station, year, template, config)
     cultivar = source_cultivar_path(station)
     soil = source_soil_path(station)

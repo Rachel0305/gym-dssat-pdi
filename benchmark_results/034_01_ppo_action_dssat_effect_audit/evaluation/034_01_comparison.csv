@@ -1,0 +1,6 @@
+﻿station_code,year,checkpoint_step,ppo_safe_i,ppo_safe_n,external_summary_i,external_summary_n,static_summary_i,static_summary_n,null_yield,external_yield,static_yield,external_minus_null_yield,static_minus_null_yield,external_summary_matches_safe,static_summary_matches_safe,external_behaves_like_null,static_changes_dssat,external_summary_zero_despite_safe_action,diagnosis
+FQA,2014,25000,45.0,80.0,0.0,0.0,45.0,80.0,7953.6309814453125,7953.6309814453125,8294.3603515625,0.0,340.7293701171875,False,True,True,True,True,external_action_not_applied_to_dssat
+HLA,2014,25000,150.0,240.0,0.0,0.0,30.0,40.0,7333.8958740234375,7333.8958740234375,7326.590576171875,0.0,-7.3052978515625,False,False,True,True,True,external_action_not_applied_to_dssat
+LCA,2014,25000,135.0,200.0,0.0,0.0,45.0,120.0,10524.20654296875,10524.20654296875,10524.20654296875,0.0,0.0,False,False,True,True,True,external_action_not_applied_to_dssat
+SYA,2014,25000,150.0,240.0,0.0,0.0,45.0,120.0,4361.468811035156,4361.468811035156,6362.733154296875,0.0,2001.2643432617188,False,False,True,True,True,external_action_not_applied_to_dssat
+YCA,2014,25000,150.0,240.0,0.0,0.0,45.0,40.0,8034.7528076171875,8034.7528076171875,9145.100708007812,0.0,1110.347900390625,False,False,True,True,True,external_action_not_applied_to_dssat

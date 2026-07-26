@@ -1,0 +1,9 @@
+{
+  "task": "034_01",
+  "record_md": "docs/034_01_ppo_action_dssat_effect_audit_record.md",
+  "case_selection": "benchmark_results/034_01_ppo_action_dssat_effect_audit/evaluation/034_01_case_selection.csv",
+  "summary": "benchmark_results/034_01_ppo_action_dssat_effect_audit/evaluation/034_01_summary.csv",
+  "comparison": "benchmark_results/034_01_ppo_action_dssat_effect_audit/evaluation/034_01_comparison.csv",
+  "n_cases": 5,
+  "n_failures": 0
+}

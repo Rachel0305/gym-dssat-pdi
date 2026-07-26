@@ -1,0 +1,18 @@
+{
+  "task": "036_02",
+  "ppo_rows": 200,
+  "corrected_rows": 200,
+  "stations": [
+    "FQA",
+    "HLA",
+    "LCA",
+    "SYA",
+    "YCA"
+  ],
+  "wp_et_missing_rows": 200,
+  "baseline_unmatched_rows": 0,
+  "zero_yield_rows": 4,
+  "record_md": "docs/036_02_correct_03601_baseline_metric_postprocess_record.md",
+  "corrected_summary": "benchmark_results/036_02_correct_03601_baseline_metric_postprocess/tables/036_02_corrected_checkpoint_validation_summary.csv",
+  "by_station": "benchmark_results/036_02_correct_03601_baseline_metric_postprocess/tables/036_02_corrected_by_station_checkpoint.csv"
+}

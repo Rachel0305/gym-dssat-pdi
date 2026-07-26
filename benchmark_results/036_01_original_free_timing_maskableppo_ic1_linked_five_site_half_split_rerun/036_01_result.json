@@ -1,0 +1,15 @@
+{
+  "task": "036_01_original_free_timing_maskableppo_ic1_linked_five_site_half_split_rerun",
+  "record_md": "docs/036_01_original_free_timing_maskableppo_ic1_linked_five_site_half_split_rerun_record.md",
+  "train_inventory": "benchmark_results/036_01_original_free_timing_maskableppo_ic1_linked_five_site_half_split_rerun/evaluation/036_01_training_checkpoint_inventory.csv",
+  "validation_summary": "benchmark_results/036_01_original_free_timing_maskableppo_ic1_linked_five_site_half_split_rerun/evaluation/036_01_checkpoint_validation_summary.csv",
+  "by_station": "benchmark_results/036_01_original_free_timing_maskableppo_ic1_linked_five_site_half_split_rerun/evaluation/036_01_validation_summary_by_station_checkpoint.csv",
+  "stations": [
+    "FQA",
+    "HLA",
+    "LCA",
+    "SYA",
+    "YCA"
+  ],
+  "total_timesteps_per_station": 100000
+}

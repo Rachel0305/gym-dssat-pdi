@@ -1,0 +1,6 @@
+﻿station_code,years,any_metric_win_years,mean_total_irrigation,mean_total_n,mean_irrigation_event_count,mean_n_event_count,mean_first_irrigation_dap,mean_first_n_dap,early_dump_warning_years,interval_warning_years,late_n_warning_years,zero_yield_warning_years,mostly_preventive_warning_years,mean_management_risk_flag_count,max_swfac,max_nstres
+FQA,10,7,45.0,160.0,1.0,2.0,1.0,2.0,10,8,0,1,10,2.9,0.60550656914711,0.0121910572052001
+HLA,10,7,150.0,240.0,4.0,3.0,1.0,1.0,10,0,0,0,10,2.0,0.0,0.0283873677253723
+LCA,10,10,45.0,40.0,1.0,1.0,1.0,1.0,10,0,0,0,10,2.0,0.0,0.0121910572052001
+SYA,10,10,150.0,212.0,4.0,4.3,1.0,1.0,0,0,0,0,10,1.0,0.6164999008178711,0.0437457561492919
+YCA,10,10,45.0,80.0,1.0,1.0,1.0,2.0,10,0,0,0,10,2.0,0.0,0.1341451406478881

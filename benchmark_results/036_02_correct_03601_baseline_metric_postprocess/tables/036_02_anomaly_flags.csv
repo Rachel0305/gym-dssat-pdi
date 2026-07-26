@@ -1,0 +1,7 @@
+﻿severity,issue,station_code,year,checkpoint_step,details
+high,ppo_final_grnwt_zero,FQA,2018,25000,final_grnwt=0; daily_csv_path=benchmark_results/036_01_original_free_timing_maskableppo_ic1_linked_five_site_half_split_rerun/daily_outputs/FQA/FQA_2018_seed0_ckpt25000_daily.csv
+high,ppo_final_grnwt_zero,FQA,2018,50000,final_grnwt=0; daily_csv_path=benchmark_results/036_01_original_free_timing_maskableppo_ic1_linked_five_site_half_split_rerun/daily_outputs/FQA/FQA_2018_seed0_ckpt50000_daily.csv
+high,ppo_final_grnwt_zero,FQA,2018,75000,final_grnwt=0; daily_csv_path=benchmark_results/036_01_original_free_timing_maskableppo_ic1_linked_five_site_half_split_rerun/daily_outputs/FQA/FQA_2018_seed0_ckpt75000_daily.csv
+high,ppo_final_grnwt_zero,FQA,2018,100000,final_grnwt=0; daily_csv_path=benchmark_results/036_01_original_free_timing_maskableppo_ic1_linked_five_site_half_split_rerun/daily_outputs/FQA/FQA_2018_seed0_ckpt100000_daily.csv
+medium,ppo_wp_et_missing_all_rows,ALL,,,200/200 PPO rows lack WP_ET_kg_m3; requires checkpoint replay with DSSAT summary retention.
+low,multiple_recorded_family_rows,ALL,,,94 station-years have more than one recorded_farmer/template row; available-baseline max is conservative but not always a single canonical recorded_farmer.

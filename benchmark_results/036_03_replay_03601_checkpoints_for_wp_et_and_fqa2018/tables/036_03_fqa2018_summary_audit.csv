@@ -1,0 +1,5 @@
+﻿station_code,year,checkpoint_step,run_status_replay,final_grnwt,total_irrigation,total_n,etcp_mm,WP_ET_kg_m3,PFP_N_kg_kg,summary_irrigation_total,summary_nitrogen_total,summary_match_score,summary_row_index,saved_snapshot_path
+FQA,2018,25000,ok_replay,0.0,45.0,160.0,182.5,0.0,,45.0,160.0,0.0,2,benchmark_results/036_03_replay_03601_checkpoints_for_wp_et_and_fqa2018/snapshots/FQA/2018/ckpt25000
+FQA,2018,50000,ok_replay,0.0,75.0,240.0,189.5,0.0,,75.0,240.0,0.0,2,benchmark_results/036_03_replay_03601_checkpoints_for_wp_et_and_fqa2018/snapshots/FQA/2018/ckpt50000
+FQA,2018,75000,ok_replay,0.0,45.0,240.0,182.6,0.0,,45.0,240.0,0.0,2,benchmark_results/036_03_replay_03601_checkpoints_for_wp_et_and_fqa2018/snapshots/FQA/2018/ckpt75000
+FQA,2018,100000,ok_replay,0.0,45.0,240.0,182.6,0.0,,45.0,240.0,0.0,2,benchmark_results/036_03_replay_03601_checkpoints_for_wp_et_and_fqa2018/snapshots/FQA/2018/ckpt100000

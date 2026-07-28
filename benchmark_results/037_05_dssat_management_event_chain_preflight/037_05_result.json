@@ -1,0 +1,8 @@
+{
+  "task": "037_05_dssat_management_event_chain_preflight",
+  "audited_snapshots": 388,
+  "issue_snapshots": 245,
+  "record_md": "docs/037_05_dssat_management_event_chain_preflight_record.md",
+  "detail_csv": "benchmark_results/037_05_dssat_management_event_chain_preflight/tables/037_05_management_event_chain_audit.csv",
+  "issues_csv": "benchmark_results/037_05_dssat_management_event_chain_preflight/tables/037_05_management_event_chain_issues.csv"
+}

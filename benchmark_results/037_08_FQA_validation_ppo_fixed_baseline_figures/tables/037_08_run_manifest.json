@@ -1,0 +1,24 @@
+{
+  "station":"FQA",
+  "years":"2014-2023",
+  "selected_checkpoint_step":25000,
+  "daily_figures":[
+    "benchmark_results\\037_08_FQA_validation_ppo_fixed_baseline_figures\\figures\\037_08_FQ2014_ppo25k_five_scenario_daily.png",
+    "benchmark_results\\037_08_FQA_validation_ppo_fixed_baseline_figures\\figures\\037_08_FQ2015_ppo25k_five_scenario_daily.png",
+    "benchmark_results\\037_08_FQA_validation_ppo_fixed_baseline_figures\\figures\\037_08_FQ2016_ppo25k_five_scenario_daily.png",
+    "benchmark_results\\037_08_FQA_validation_ppo_fixed_baseline_figures\\figures\\037_08_FQ2017_ppo25k_five_scenario_daily.png",
+    "benchmark_results\\037_08_FQA_validation_ppo_fixed_baseline_figures\\figures\\037_08_FQ2018_ppo25k_five_scenario_daily.png",
+    "benchmark_results\\037_08_FQA_validation_ppo_fixed_baseline_figures\\figures\\037_08_FQ2019_ppo25k_five_scenario_daily.png",
+    "benchmark_results\\037_08_FQA_validation_ppo_fixed_baseline_figures\\figures\\037_08_FQ2020_ppo25k_five_scenario_daily.png",
+    "benchmark_results\\037_08_FQA_validation_ppo_fixed_baseline_figures\\figures\\037_08_FQ2021_ppo25k_five_scenario_daily.png",
+    "benchmark_results\\037_08_FQA_validation_ppo_fixed_baseline_figures\\figures\\037_08_FQ2022_ppo25k_five_scenario_daily.png",
+    "benchmark_results\\037_08_FQA_validation_ppo_fixed_baseline_figures\\figures\\037_08_FQ2023_ppo25k_five_scenario_daily.png"
+  ],
+  "summary_figures":[
+    "benchmark_results\\037_08_FQA_validation_ppo_fixed_baseline_figures\\figures\\037_08_FQA_validation_yield_vs_four_baselines.png",
+    "benchmark_results\\037_08_FQA_validation_ppo_fixed_baseline_figures\\figures\\037_08_FQA_validation_wp_et_vs_four_baselines.png",
+    "benchmark_results\\037_08_FQA_validation_ppo_fixed_baseline_figures\\figures\\037_08_FQA_validation_pfp_n_vs_four_baselines.png"
+  ],
+  "metrics_csv":"benchmark_results\\037_08_FQA_validation_ppo_fixed_baseline_figures\\tables\\037_08_FQA_validation_ppo25k_vs_fixed_four_baseline_metrics.csv",
+  "warning":"PPO daily CSV does not include SWTD; soil-water panel plots four fixed baselines only."
+}

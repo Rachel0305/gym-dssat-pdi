@@ -1,0 +1,40 @@
+{
+  "task": "040_05_sya_lowIC_ppo_extra_irrigation_counterfactual",
+  "mode": "dry_run",
+  "next_step_allowed": true,
+  "intervention_plan": [
+    {
+      "station_code": "SYA",
+      "year": 2014,
+      "ppo_checkpoint_step": 75000,
+      "original_total_irrigation": 150.0,
+      "original_total_n": 240.0,
+      "original_swfac_days_gt_0p05": 27,
+      "original_yield": 5506.15478515625,
+      "intervention_dap": 86,
+      "intervention_irrigation_mm": 45.0,
+      "intervention_n_kg_ha": 0.0,
+      "relaxed_irrigation_limit": 205.0,
+      "original_action_sequence": "DAP1 I45/N40; DAP8 I45/N40; DAP15 I30/N0; DAP16 I0/N40; DAP22 I30/N0; DAP23 I0/N40; DAP30 I0/N40; DAP37 I0/N40",
+      "original_daily_csv_path": "benchmark_results/040_00_sya_lowIC_free_timing_maskableppo/daily_outputs/SYA/SYA_2014_seed0_ckpt75000_daily.csv",
+      "nonzero_action_count": 8
+    },
+    {
+      "station_code": "SYA",
+      "year": 2017,
+      "ppo_checkpoint_step": 75000,
+      "original_total_irrigation": 150.0,
+      "original_total_n": 240.0,
+      "original_swfac_days_gt_0p05": 31,
+      "original_yield": 5204.1900634765625,
+      "intervention_dap": 68,
+      "intervention_irrigation_mm": 45.0,
+      "intervention_n_kg_ha": 0.0,
+      "relaxed_irrigation_limit": 205.0,
+      "original_action_sequence": "DAP1 I45/N40; DAP8 I45/N40; DAP15 I45/N40; DAP22 I0/N40; DAP29 I15/N80",
+      "original_daily_csv_path": "benchmark_results/040_00_sya_lowIC_free_timing_maskableppo/daily_outputs/SYA/SYA_2017_seed0_ckpt75000_daily.csv",
+      "nonzero_action_count": 5
+    }
+  ],
+  "record_md": "docs/040_05_sya_lowIC_ppo_extra_irrigation_counterfactual_record.md"
+}

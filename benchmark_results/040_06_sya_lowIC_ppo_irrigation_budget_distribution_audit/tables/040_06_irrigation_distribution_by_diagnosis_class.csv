@@ -1,0 +1,5 @@
+﻿diagnosis_class,year_count,mean_yield_gap_vs_expert,mean_total_irrigation,mean_swfac_days_gt_0p05,mean_first_swfac_gt_0p05_dap,mean_irrigation_DAP1_30_share,mean_irrigation_DAP31_60_share,mean_irrigation_DAP61_90_share,mean_irrigation_DAP91_plus_share,years_with_irrigation_after_first_stress
+yield_gap_other,5,-1918.3697509765625,150.0,9.6,92.2,0.9800000000000001,0.0,0.02,0.0,0
+water_stress_failure,2,-5513.019714355469,150.0,29.0,77.0,1.0,0.0,0.0,0.0,0
+yield_win,2,242.37762451171784,150.0,0.0,,0.95,0.0,0.05,0.0,0
+near_yield_resource_saving,1,-24.14794921875,150.0,0.0,,1.0,0.0,0.0,0.0,0

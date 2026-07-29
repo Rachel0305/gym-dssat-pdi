@@ -1,0 +1,9 @@
+{
+  "task": "040_06_sya_lowIC_ppo_irrigation_budget_distribution_audit",
+  "branch": "audit_completed",
+  "by_year_csv": "benchmark_results/040_06_sya_lowIC_ppo_irrigation_budget_distribution_audit/tables/040_06_irrigation_distribution_by_year.csv",
+  "by_class_csv": "benchmark_results/040_06_sya_lowIC_ppo_irrigation_budget_distribution_audit/tables/040_06_irrigation_distribution_by_diagnosis_class.csv",
+  "record_md": "docs/040_06_sya_lowIC_ppo_irrigation_budget_distribution_audit_record.md",
+  "mean_DAP1_30_irrigation_share": 0.9800000000000001,
+  "years_with_irrigation_after_first_stress": 0
+}

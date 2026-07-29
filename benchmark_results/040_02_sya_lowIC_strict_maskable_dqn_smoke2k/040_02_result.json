@@ -1,0 +1,13 @@
+{
+  "task": "040_02_sya_lowIC_strict_maskable_dqn",
+  "algorithm": "StrictMaskableDQN",
+  "record_md": "docs/040_02_sya_lowIC_strict_maskable_dqn_smoke2k_record.md",
+  "train_inventory": "benchmark_results/040_02_sya_lowIC_strict_maskable_dqn_smoke2k/evaluation/040_02_training_checkpoint_inventory.csv",
+  "validation_summary": "benchmark_results/040_02_sya_lowIC_strict_maskable_dqn_smoke2k/evaluation/040_02_checkpoint_validation_summary.csv",
+  "by_checkpoint": "benchmark_results/040_02_sya_lowIC_strict_maskable_dqn_smoke2k/evaluation/040_02_validation_summary_by_checkpoint.csv",
+  "stations": [
+    "SYA"
+  ],
+  "total_timesteps_per_station": 2000,
+  "input_root": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013_lowIC_manual"
+}

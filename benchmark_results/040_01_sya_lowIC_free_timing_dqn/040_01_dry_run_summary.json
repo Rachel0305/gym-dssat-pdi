@@ -1,0 +1,196 @@
+{
+  "task": "040_01_sya_lowIC_free_timing_dqn",
+  "mode": "dry_run",
+  "station": "SYA",
+  "lowIC_input_root": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013_lowIC_manual",
+  "lowIC_input_root_exists": true,
+  "prompt_exists": true,
+  "split_years": [
+    {
+      "station_code": "SYA",
+      "site": "SY",
+      "year": 2005,
+      "split": "train"
+    },
+    {
+      "station_code": "SYA",
+      "site": "SY",
+      "year": 2006,
+      "split": "train"
+    },
+    {
+      "station_code": "SYA",
+      "site": "SY",
+      "year": 2007,
+      "split": "train"
+    },
+    {
+      "station_code": "SYA",
+      "site": "SY",
+      "year": 2008,
+      "split": "train"
+    },
+    {
+      "station_code": "SYA",
+      "site": "SY",
+      "year": 2009,
+      "split": "train"
+    },
+    {
+      "station_code": "SYA",
+      "site": "SY",
+      "year": 2010,
+      "split": "train"
+    },
+    {
+      "station_code": "SYA",
+      "site": "SY",
+      "year": 2011,
+      "split": "train"
+    },
+    {
+      "station_code": "SYA",
+      "site": "SY",
+      "year": 2012,
+      "split": "train"
+    },
+    {
+      "station_code": "SYA",
+      "site": "SY",
+      "year": 2013,
+      "split": "train"
+    },
+    {
+      "station_code": "SYA",
+      "site": "SY",
+      "year": 2014,
+      "split": "validation"
+    },
+    {
+      "station_code": "SYA",
+      "site": "SY",
+      "year": 2015,
+      "split": "validation"
+    },
+    {
+      "station_code": "SYA",
+      "site": "SY",
+      "year": 2016,
+      "split": "validation"
+    },
+    {
+      "station_code": "SYA",
+      "site": "SY",
+      "year": 2017,
+      "split": "validation"
+    },
+    {
+      "station_code": "SYA",
+      "site": "SY",
+      "year": 2018,
+      "split": "validation"
+    },
+    {
+      "station_code": "SYA",
+      "site": "SY",
+      "year": 2019,
+      "split": "validation"
+    },
+    {
+      "station_code": "SYA",
+      "site": "SY",
+      "year": 2020,
+      "split": "validation"
+    },
+    {
+      "station_code": "SYA",
+      "site": "SY",
+      "year": 2021,
+      "split": "validation"
+    },
+    {
+      "station_code": "SYA",
+      "site": "SY",
+      "year": 2022,
+      "split": "validation"
+    },
+    {
+      "station_code": "SYA",
+      "site": "SY",
+      "year": 2023,
+      "split": "validation"
+    }
+  ],
+  "lowIC_class_counts": {
+    "A_RL_training_candidate": 19
+  },
+  "seed": 0,
+  "total_timesteps": 100000,
+  "checkpoint_steps": [
+    25000,
+    50000,
+    75000,
+    100000
+  ],
+  "config_dqn": {
+    "learning_rate": 1e-05,
+    "buffer_size": 100000,
+    "learning_starts": 1024,
+    "batch_size": 1024,
+    "gamma": 0.99,
+    "train_freq": 4,
+    "gradient_steps": 1,
+    "target_update_interval": 120,
+    "exploration_fraction": 1.0,
+    "exploration_initial_eps": 1.0,
+    "exploration_final_eps": 0.0,
+    "max_grad_norm": 10.0,
+    "net_arch": [
+      256,
+      256,
+      256
+    ],
+    "weight_decay": 0.001
+  },
+  "config_action_safety": {
+    "enabled": true,
+    "daily_irrigation_max": 45.0,
+    "daily_n_max": 120.0,
+    "season_irrigation_soft_limit": 160.0,
+    "season_n_soft_limit": 250.0,
+    "min_days_between_irrigation": 7,
+    "min_days_between_fertilization": 7,
+    "irrigation_allowed_dap_range": [
+      1,
+      120
+    ],
+    "fertilization_allowed_dap_range": [
+      1,
+      90
+    ]
+  },
+  "config_discrete_actions": {
+    "irrigation_levels": [
+      0.0,
+      15.0,
+      30.0,
+      45.0
+    ],
+    "nitrogen_levels": [
+      0.0,
+      40.0,
+      80.0,
+      120.0
+    ]
+  },
+  "config_reward": {
+    "reward_type": "harvest_yield_minus_water_nitrogen_cost_plus_stress_relief_scaled_0p001",
+    "yield_coef": 0.158,
+    "nitrogen_cost": 1.58,
+    "water_cost": 1.1,
+    "water_stress_relief_coef": 10.0,
+    "nitrogen_stress_relief_coef": 5.0,
+    "reward_scale": 0.001
+  },
+  "next_step_allowed": true
+}

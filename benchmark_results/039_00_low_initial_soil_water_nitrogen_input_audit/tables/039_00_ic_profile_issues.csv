@@ -1,0 +1,8 @@
+﻿station,file,row_index,status,orig_line,low_line,icbl_orig,icbl_low,sh2o_orig,sh2o_low,sh2o_ratio,snh4_orig,snh4_low,snh4_ratio,sno3_orig,sno3_low,sno3_ratio,issue
+HL,CNHL1001.MZX,,missing_lowIC_file,,,,,,,,,,,,,,missing_lowIC_file
+SY,CNSY1201(1).MZX,1,issue,35,35,10.0,10.0,0.27,0.27,1.0,4.6,4.6,1.0,2.6,2.6,1.0,SH2O_not_half;SNH4_not_half;SNO3_not_half
+SY,CNSY1201(1).MZX,2,issue,36,36,20.0,20.0,0.24,0.24,1.0,4.6,4.6,1.0,2.6,2.6,1.0,SH2O_not_half;SNH4_not_half;SNO3_not_half
+SY,CNSY1201(1).MZX,3,issue,37,37,30.0,30.0,0.24,0.24,1.0,4.1,4.1,1.0,2.5,2.5,1.0,SH2O_not_half;SNH4_not_half;SNO3_not_half
+SY,CNSY1201(1).MZX,4,issue,38,38,40.0,40.0,0.24,0.24,1.0,4.1,4.1,1.0,2.5,2.5,1.0,SH2O_not_half;SNH4_not_half;SNO3_not_half
+SY,CNSY1201(1).MZX,5,issue,39,39,60.0,60.0,0.23,0.23,1.0,3.8,3.8,1.0,2.0,2.0,1.0,SH2O_not_half;SNH4_not_half;SNO3_not_half
+SY,CNSY1201(1).MZX,6,issue,40,40,100.0,100.0,0.25,0.25,1.0,3.5,3.5,1.0,1.5,1.5,1.0,SH2O_not_half;SNH4_not_half;SNO3_not_half

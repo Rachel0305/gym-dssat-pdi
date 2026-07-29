@@ -1,0 +1,11 @@
+{
+  "task": "039_01_lowIC_dssat_stress_smoke",
+  "station_code": "YCA",
+  "year": 2014,
+  "branch": "A_lowIC_smoke_pass",
+  "successful_runs": 4,
+  "failed_runs": 0,
+  "output_root": "benchmark_results/039_01_lowIC_dssat_stress_smoke",
+  "figure": "benchmark_results/039_01_lowIC_dssat_stress_smoke/figures/039_01_YCA2014_original_vs_lowIC_stress.png",
+  "elapsed_seconds": 14.909944772720337
+}

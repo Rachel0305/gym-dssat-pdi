@@ -1,0 +1,4 @@
+station,station_dir,mzx_file,selected_mzx_name,treatment_n,tname,ic,ic_block_ids,ic_enabled_and_valid,irrig_mode,ferti_mode,management_mode_ok
+SYA,SY,DSSAT_auto_validation/multisite_new_cultivar_inputs_013_lowIC_manual/SY/CNSY1201.MZX,CNSY1201.MZX,1,,1,1;2,True,R,R,True
+SYA,SY,DSSAT_auto_validation/multisite_new_cultivar_inputs_013_lowIC_manual/SY/CNSY1201.MZX,CNSY1201.MZX,2,,2,1;2,True,R,R,True
+SYA,SY,DSSAT_auto_validation/multisite_new_cultivar_inputs_013_lowIC_manual/SY/CNSY1201.MZX,CNSY1201.MZX,3,,1,1;2,True,R,R,True

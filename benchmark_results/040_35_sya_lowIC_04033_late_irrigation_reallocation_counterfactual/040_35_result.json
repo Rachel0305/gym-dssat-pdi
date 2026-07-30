@@ -1,0 +1,12 @@
+{
+  "task": "040_35_sya_lowIC_04033_late_irrigation_reallocation_counterfactual",
+  "branch": "completed",
+  "years": [
+    2014,
+    2017,
+    2022
+  ],
+  "summary_csv": "benchmark_results/040_35_sya_lowIC_04033_late_irrigation_reallocation_counterfactual/tables/040_35_counterfactual_summary.csv",
+  "daily_csv": "benchmark_results/040_35_sya_lowIC_04033_late_irrigation_reallocation_counterfactual/tables/040_35_counterfactual_daily.csv",
+  "record_md": "docs/040_35_sya_lowIC_04033_late_irrigation_reallocation_counterfactual_record.md"
+}

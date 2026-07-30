@@ -1,0 +1,7 @@
+{
+  "task": "040_35_sya_lowIC_04033_late_irrigation_reallocation_counterfactual",
+  "mode": "dry_run",
+  "next_step_allowed": true,
+  "action_plan": "benchmark_results/040_35_sya_lowIC_04033_late_irrigation_reallocation_counterfactual/tables/040_35_action_plan_dry_run.csv",
+  "record_md": "docs/040_35_sya_lowIC_04033_late_irrigation_reallocation_counterfactual_record.md"
+}

@@ -1,0 +1,28 @@
+{
+  "task": "040_33_sya_lowIC_ppo_i240_swfac_guardrail_coarse_actions",
+  "record_md": "docs/040_33_sya_lowIC_ppo_i240_swfac_guardrail_coarse_actions_record.md",
+  "train_inventory": "benchmark_results/040_33_sya_lowIC_ppo_i240_swfac_guardrail_coarse_actions/evaluation/032_22_training_checkpoint_inventory.csv",
+  "validation_summary": "benchmark_results/040_33_sya_lowIC_ppo_i240_swfac_guardrail_coarse_actions/evaluation/032_22_checkpoint_validation_summary.csv",
+  "by_station": "benchmark_results/040_33_sya_lowIC_ppo_i240_swfac_guardrail_coarse_actions/evaluation/032_22_validation_summary_by_station_checkpoint.csv",
+  "stations": [
+    "SYA"
+  ],
+  "total_timesteps_per_station": 100000,
+  "input_root": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013_lowIC_manual",
+  "station_scope": [
+    "SYA"
+  ],
+  "coarse_action_levels": {
+    "irrigation_levels": [
+      0.0,
+      30.0,
+      45.0
+    ],
+    "nitrogen_levels": [
+      0.0,
+      80.0,
+      120.0
+    ],
+    "reward_changed": false
+  }
+}

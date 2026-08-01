@@ -1,0 +1,53 @@
+{
+  "task": "042_05_sya_lowIC_04202_checkpoint_weather_response_guardrail",
+  "branch": "C_no_checkpoint_passes_endpoint_plus_response_guardrail",
+  "source": "benchmark_results\\042_02_sya_lowIC_normalized_weather_teacher_warmstart_stress_response_rerun100k",
+  "checkpoints": [
+    0,
+    25000,
+    50000,
+    75000,
+    100000
+  ],
+  "passed_checkpoints": [],
+  "checkpoint_75k": {
+    "checkpoint_step": 75000,
+    "unique_nonzero_action_signatures": 1,
+    "unique_irrigation_signatures": 1,
+    "unique_nitrogen_signatures": 1,
+    "sd_total_irrigation": 0.0,
+    "sd_total_nitrogen": 0.0,
+    "sd_irrigation_events": 0.0,
+    "sd_nitrogen_events": 0.0,
+    "mean_irrigation_event_dap_sd": 0.0,
+    "mean_nitrogen_event_dap_sd": 0.0,
+    "irrigation_future7_rain_abs_std_diff": 0.1612549665208843,
+    "irrigation_past7_rain_abs_std_diff": 0.18484977874433664,
+    "irrigation_swfac_abs_std_diff": 0.11057507964068605,
+    "nitrogen_nstres_abs_std_diff": 0.06509086425898941,
+    "nitrogen_dap_abs_std_diff": 1.502032533601242,
+    "years": 10,
+    "mean_yield": 9931.7,
+    "mean_wp_et": 2.145,
+    "mean_pfp_n": 41.36,
+    "mean_irrigation": 225.0,
+    "mean_nitrogen": 240.0,
+    "any_metric_win_years": 10,
+    "all3_win_years": 6,
+    "max_swfac": 0.8591654449701309,
+    "max_nstres": 0.2379828691482544,
+    "endpoint_guardrail_pass": true,
+    "non_template_guardrail_pass": false,
+    "irrigation_response_guardrail_pass": false,
+    "nitrogen_response_guardrail_pass": false,
+    "overall_response_guardrail_pass": false
+  },
+  "outputs": {
+    "record_md": "docs\\042_05_sya_lowIC_04202_checkpoint_weather_response_guardrail_record.md",
+    "guardrail_summary": "benchmark_results\\042_05_sya_lowIC_04202_checkpoint_weather_response_guardrail\\tables\\042_05_checkpoint_response_guardrail_summary.csv",
+    "action_sequence": "benchmark_results\\042_05_sya_lowIC_04202_checkpoint_weather_response_guardrail\\tables\\042_05_action_sequence_by_year_checkpoint.csv",
+    "event_position_variability": "benchmark_results\\042_05_sya_lowIC_04202_checkpoint_weather_response_guardrail\\tables\\042_05_event_position_variability.csv",
+    "action_feature_association": "benchmark_results\\042_05_sya_lowIC_04202_checkpoint_weather_response_guardrail\\tables\\042_05_action_feature_association.csv",
+    "figure": "benchmark_results\\042_05_sya_lowIC_04202_checkpoint_weather_response_guardrail\\figures\\042_05_checkpoint_metric_response_guardrail.png"
+  }
+}

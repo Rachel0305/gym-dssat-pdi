@@ -1,0 +1,5 @@
+﻿station_code,site,train_years,seed,checkpoint_step,run_status,model_path,model_sha256,notes
+SYA,SY,"2005,2006,2007,2008,2009,2010,2011,2012,2013",0,25000,ok,benchmark_results/040_40_sya_lowIC_ppo_yield_guardrail_v3/models/SYA/SYA_half_split_stress_aware_maskableppo_seed0_ckpt25000.zip,e8a60c81e257205748f5226ada0d2ffde1e05d661d99cec017be857353b26522,
+SYA,SY,"2005,2006,2007,2008,2009,2010,2011,2012,2013",0,50000,ok,benchmark_results/040_40_sya_lowIC_ppo_yield_guardrail_v3/models/SYA/SYA_half_split_stress_aware_maskableppo_seed0_ckpt50000.zip,a196b3926733d939d16279cd3bfca7de12db4589acc05e4c366cd278848b83d0,
+SYA,SY,"2005,2006,2007,2008,2009,2010,2011,2012,2013",0,75000,ok,benchmark_results/040_40_sya_lowIC_ppo_yield_guardrail_v3/models/SYA/SYA_half_split_stress_aware_maskableppo_seed0_ckpt75000.zip,1c38b5b8639326515ad38c27f96914fa3c692d266cb5c0d2f99833e8e429ea21,
+SYA,SY,"2005,2006,2007,2008,2009,2010,2011,2012,2013",0,100000,ok,benchmark_results/040_40_sya_lowIC_ppo_yield_guardrail_v3/models/SYA/SYA_half_split_stress_aware_maskableppo_seed0_ckpt100000.zip,b504e89ec34d5d180241f92d6b35c5d0f8faba7bca7cdfa9e8f0f02ea695ad48,

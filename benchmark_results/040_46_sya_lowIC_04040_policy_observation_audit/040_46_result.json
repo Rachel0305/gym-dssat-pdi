@@ -1,0 +1,14 @@
+{
+  "task": "040_46_sya_lowIC_04040_policy_observation_audit",
+  "training_run": false,
+  "reward_changed": false,
+  "constraints_changed": false,
+  "station": "SYA",
+  "years": [
+    2005,
+    2014
+  ],
+  "conclusion": "observation_names_unresolved_run_runtime_probe",
+  "summary_csv": "benchmark_results/040_46_sya_lowIC_04040_policy_observation_audit/tables/040_46_policy_observation_summary.csv",
+  "variables_csv": "benchmark_results/040_46_sya_lowIC_04040_policy_observation_audit/tables/040_46_policy_observation_variables.csv"
+}

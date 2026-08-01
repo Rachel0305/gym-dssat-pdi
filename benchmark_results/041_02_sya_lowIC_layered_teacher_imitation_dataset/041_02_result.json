@@ -1,0 +1,19 @@
+{
+  "task": "041_02_sya_lowIC_layered_teacher_imitation_dataset",
+  "branch": "A_layered_teacher_dataset_ready",
+  "training_run": false,
+  "selected_year_count": 10,
+  "strong_teacher_year_count": 5,
+  "near_miss_teacher_year_count": 5,
+  "daily_sample_count": 1398,
+  "nonzero_action_sample_count": 73,
+  "outputs": {
+    "selected_teachers": "benchmark_results/041_02_sya_lowIC_layered_teacher_imitation_dataset/tables/041_02_selected_teacher_trajectories.csv",
+    "imitation_daily_dataset": "benchmark_results/041_02_sya_lowIC_layered_teacher_imitation_dataset/tables/041_02_imitation_daily_dataset.csv",
+    "imitation_action_days": "benchmark_results/041_02_sya_lowIC_layered_teacher_imitation_dataset/tables/041_02_imitation_action_days.csv",
+    "action_distribution": "benchmark_results/041_02_sya_lowIC_layered_teacher_imitation_dataset/tables/041_02_action_distribution.csv",
+    "action_grid": "benchmark_results/041_02_sya_lowIC_layered_teacher_imitation_dataset/configs/041_02_action_grid.csv",
+    "result_json": "benchmark_results/041_02_sya_lowIC_layered_teacher_imitation_dataset/041_02_result.json",
+    "record_md": "docs/041_02_sya_lowIC_layered_teacher_imitation_dataset_record.md"
+  }
+}

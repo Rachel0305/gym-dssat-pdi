@@ -1,0 +1,6 @@
+﻿station_code,site,year,split,split_rule,n_available_years_for_station,selected_for_train,selected_for_eval,selection_reason
+SYA,SY,2014,validation,按年份排序；前半训练、后半验证；奇数年份数时后半验证多1年,19,False,True,040_43_sya_lowIC_04040_ckpt100k_key_year_five_scenario_daily_plots
+SYA,SY,2017,validation,按年份排序；前半训练、后半验证；奇数年份数时后半验证多1年,19,False,True,040_43_sya_lowIC_04040_ckpt100k_key_year_five_scenario_daily_plots
+SYA,SY,2021,validation,按年份排序；前半训练、后半验证；奇数年份数时后半验证多1年,19,False,True,040_43_sya_lowIC_04040_ckpt100k_key_year_five_scenario_daily_plots
+SYA,SY,2022,validation,按年份排序；前半训练、后半验证；奇数年份数时后半验证多1年,19,False,True,040_43_sya_lowIC_04040_ckpt100k_key_year_five_scenario_daily_plots
+SYA,SY,2023,validation,按年份排序；前半训练、后半验证；奇数年份数时后半验证多1年,19,False,True,040_43_sya_lowIC_04040_ckpt100k_key_year_five_scenario_daily_plots

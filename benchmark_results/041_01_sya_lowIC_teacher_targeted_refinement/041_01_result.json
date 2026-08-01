@@ -1,0 +1,28 @@
+{
+  "task": "041_01_sya_lowIC_teacher_targeted_refinement",
+  "branch": "C_no_all3_teacher_in_refinement_grid",
+  "training_run": false,
+  "station": "SYA",
+  "site": "SY",
+  "years": [
+    2015,
+    2017,
+    2019,
+    2022,
+    2023
+  ],
+  "lowIC_input_root": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013_lowIC_manual",
+  "candidate_runs_attempted": 150,
+  "successful_runs": 150,
+  "failed_runs": 0,
+  "all3_teacher_count": 0,
+  "all3_years": [],
+  "outputs": {
+    "candidate_summary": "benchmark_results/041_01_sya_lowIC_teacher_targeted_refinement/tables/041_01_candidate_summary.csv",
+    "all3_teacher_candidates": "benchmark_results/041_01_sya_lowIC_teacher_targeted_refinement/tables/041_01_all3_teacher_candidates.csv",
+    "requested_actions": "benchmark_results/041_01_sya_lowIC_teacher_targeted_refinement/tables/041_01_requested_actions.csv",
+    "refinement_grid": "benchmark_results/041_01_sya_lowIC_teacher_targeted_refinement/tables/041_01_refinement_grid.csv",
+    "result_json": "benchmark_results/041_01_sya_lowIC_teacher_targeted_refinement/041_01_result.json",
+    "record_md": "docs/041_01_sya_lowIC_teacher_targeted_refinement_record.md"
+  }
+}

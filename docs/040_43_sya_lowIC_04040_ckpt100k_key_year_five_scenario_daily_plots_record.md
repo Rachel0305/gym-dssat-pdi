@@ -1,0 +1,26 @@
+# 040_43 SYA lowIC 040_40 checkpoint100K 关键年份五情景日过程图记录
+
+## 任务说明
+
+- 本任务不训练模型，只绘制 040_40 checkpoint100000 的关键年份日过程图。
+- 固定年份：2014、2017、2021、2022、2023。
+- 目的：检查 040_40 的措施是否能解释 040_42 指标表现，尤其关注 2017 低产和 2022 WP_ET 不足。
+
+## 输出图
+
+- `benchmark_results/040_43_sya_lowIC_04040_ckpt100k_key_year_five_scenario_daily_plots/figures/040_43_lowIC_04040_ckpt100k_sy2014_five_scenario_daily.png`
+- `benchmark_results/040_43_sya_lowIC_04040_ckpt100k_key_year_five_scenario_daily_plots/figures/040_43_lowIC_04040_ckpt100k_sy2017_five_scenario_daily.png`
+- `benchmark_results/040_43_sya_lowIC_04040_ckpt100k_key_year_five_scenario_daily_plots/figures/040_43_lowIC_04040_ckpt100k_sy2021_five_scenario_daily.png`
+- `benchmark_results/040_43_sya_lowIC_04040_ckpt100k_key_year_five_scenario_daily_plots/figures/040_43_lowIC_04040_ckpt100k_sy2022_five_scenario_daily.png`
+- `benchmark_results/040_43_sya_lowIC_04040_ckpt100k_key_year_five_scenario_daily_plots/figures/040_43_lowIC_04040_ckpt100k_sy2023_five_scenario_daily.png`
+
+## 输出表
+
+- 日值表：`benchmark_results/040_43_sya_lowIC_04040_ckpt100k_key_year_five_scenario_daily_plots/tables/040_43_sya_2014_2017_2021_2022_2023_lowIC_04040_ckpt100k_five_scenario_daily.csv`
+- 终值表：`benchmark_results/040_43_sya_lowIC_04040_ckpt100k_key_year_five_scenario_daily_plots/tables/040_43_sya_2014_2017_2021_2022_2023_lowIC_04040_ckpt100k_five_scenario_summary.csv`
+- PPO 管理事件表：`benchmark_results/040_43_sya_lowIC_04040_ckpt100k_key_year_five_scenario_daily_plots/tables/040_43_sya_2014_2017_2021_2022_2023_lowIC_04040_ckpt100k_ppo_management_events.csv`
+
+## 解释边界
+
+- 本图用于人工检查措施合理性，不用于现场更换 reward、checkpoint 或约束。
+- 若发现个别年份仍有问题，应另开后续任务诊断。

@@ -1,0 +1,3 @@
+﻿arm,gate_state,model_path,irrigation_sequence,nitrogen_sequence,total_irrigation_mm,total_n_kg_ha,final_grnwt_kg_ha,max_swfac,station_code,year,checkpoint_step
+control_gate_on,"{'before': 90, 'after': 90}",benchmark_results/040_49_sya_lowIC_dap90_gate_ablation_sy2014_controlled/models/SYA_2014_control_gate_on_seed0_ckpt100000.zip,DAP1:I45; DAP8:I30; DAP31:I30; DAP38:I30; DAP61:I45; DAP91:I45,DAP1:N80; DAP8:N120,225.0,200.0,10895.26123046875,0.2549999952316284,SYA,2014,100000
+treatment_gate_off,"{'before': 90, 'after': 0}",benchmark_results/040_49_sya_lowIC_dap90_gate_ablation_sy2014_controlled/models/SYA_2014_treatment_gate_off_seed0_ckpt100000.zip,DAP1:I45; DAP8:I30,DAP1:N80; DAP8:N120,75.0,200.0,7635.7708740234375,0.9542391858994961,SYA,2014,100000

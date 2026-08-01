@@ -1,0 +1,40 @@
+{
+  "task": "041_06_sya_lowIC_teacher_policy_sensitivity_audit",
+  "branch": "A_teacher_policy_sensitivity_audit_completed",
+  "obs_shape": [
+    1398,
+    25
+  ],
+  "teacher_years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "models": {
+    "bc_init": "benchmark_results/041_04_sya_lowIC_teacher_warmstart_balanced_bc_maskableppo/models/SYA/SYA_teacher_warmstart_maskableppo_seed0_bc_init.zip",
+    "ppo100k": "benchmark_results/041_04_sya_lowIC_teacher_warmstart_balanced_bc_maskableppo/models/SYA/SYA_teacher_warmstart_maskableppo_seed0_ckpt100000.zip"
+  },
+  "outputs": {
+    "teacher_summary": "benchmark_results/041_06_sya_lowIC_teacher_policy_sensitivity_audit/tables/041_06_teacher_trajectory_summary.csv",
+    "teacher_pairwise_distance": "benchmark_results/041_06_sya_lowIC_teacher_policy_sensitivity_audit/tables/041_06_teacher_pairwise_action_distance.csv",
+    "observation_coverage": "benchmark_results/041_06_sya_lowIC_teacher_policy_sensitivity_audit/tables/041_06_observation_variable_coverage.csv",
+    "observation_ranges": "benchmark_results/041_06_sya_lowIC_teacher_policy_sensitivity_audit/tables/041_06_observation_dimension_ranges.csv",
+    "policy_states": "benchmark_results/041_06_sya_lowIC_teacher_policy_sensitivity_audit/tables/041_06_policy_predictions_on_teacher_states.csv",
+    "policy_diversity": "benchmark_results/041_06_sya_lowIC_teacher_policy_sensitivity_audit/tables/041_06_policy_diversity_summary.csv",
+    "policy_sensitivity": "benchmark_results/041_06_sya_lowIC_teacher_policy_sensitivity_audit/tables/041_06_policy_perturbation_sensitivity.csv",
+    "top_sensitive_dimensions": "benchmark_results/041_06_sya_lowIC_teacher_policy_sensitivity_audit/tables/041_06_top_sensitive_observation_dimensions.csv",
+    "figures": [
+      "benchmark_results/041_06_sya_lowIC_teacher_policy_sensitivity_audit/figures/041_06_teacher_resource_diversity.png",
+      "benchmark_results/041_06_sya_lowIC_teacher_policy_sensitivity_audit/figures/041_06_policy_sensitivity_top20.png",
+      "benchmark_results/041_06_sya_lowIC_teacher_policy_sensitivity_audit/figures/041_06_teacher_nonzero_match_rate.png"
+    ],
+    "record_md": "docs/041_06_sya_lowIC_teacher_policy_sensitivity_audit_record.md"
+  }
+}

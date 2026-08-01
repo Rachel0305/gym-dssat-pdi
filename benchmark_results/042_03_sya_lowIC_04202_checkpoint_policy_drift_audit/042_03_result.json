@@ -1,0 +1,14 @@
+{
+  "task": "042_03_sya_lowIC_04202_checkpoint_policy_drift_audit",
+  "branch": "A_late_finetune_nitrogen_collapse_confirmed",
+  "source": "benchmark_results\\042_02_sya_lowIC_normalized_weather_teacher_warmstart_stress_response_rerun100k",
+  "n_paired_years": 10,
+  "nitrogen_lost_by_100k_years": 10,
+  "outputs": {
+    "record_md": "docs\\042_03_sya_lowIC_04202_checkpoint_policy_drift_audit_record.md",
+    "action_metrics": "benchmark_results\\042_03_sya_lowIC_04202_checkpoint_policy_drift_audit\\tables\\042_03_checkpoint_year_action_metrics.csv",
+    "checkpoint_summary": "benchmark_results\\042_03_sya_lowIC_04202_checkpoint_policy_drift_audit\\tables\\042_03_checkpoint_drift_summary.csv",
+    "nitrogen_events_pivot": "benchmark_results\\042_03_sya_lowIC_04202_checkpoint_policy_drift_audit\\tables\\042_03_nitrogen_events_by_year_checkpoint.csv",
+    "paired_drift": "benchmark_results\\042_03_sya_lowIC_04202_checkpoint_policy_drift_audit\\tables\\042_03_75k_vs_100k_policy_drift.csv"
+  }
+}

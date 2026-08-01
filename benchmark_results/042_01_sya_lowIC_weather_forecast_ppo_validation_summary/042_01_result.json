@@ -1,0 +1,17 @@
+{
+  "task": "042_01_sya_lowIC_weather_forecast_ppo_validation_summary",
+  "ppo_rows": 40,
+  "checkpoints": [
+    25000,
+    50000,
+    75000,
+    100000
+  ],
+  "observation_audit_pass": true,
+  "wp_et_available": false,
+  "enriched": "benchmark_results\\042_01_sya_lowIC_weather_forecast_ppo_validation_summary\\tables\\042_01_ppo_validation_enriched_vs_four_baselines.csv",
+  "by_checkpoint": "benchmark_results\\042_01_sya_lowIC_weather_forecast_ppo_validation_summary\\tables\\042_01_validation_summary_by_checkpoint_vs_four_baselines.csv",
+  "record_md": "docs\\042_01_sya_lowIC_weather_forecast_ppo_validation_summary_record.md",
+  "best_mean_yield_checkpoint": 25000,
+  "best_partial_any_metric_checkpoint": 25000
+}

@@ -1,0 +1,23 @@
+{
+  "task": "040_44_sya_lowIC_ppo_policy_response_audit",
+  "branch": "fixed_irrigation_schedule_detected",
+  "years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "checkpoint": 100000,
+  "unique_irrigation_sequence_count": 1,
+  "unique_nitrogen_sequence_count": 5,
+  "failures": 0,
+  "summary_csv": "benchmark_results/040_44_sya_lowIC_ppo_policy_response_audit/tables/040_44_sya_lowIC_ppo_policy_response_year_summary.csv",
+  "event_context_csv": "benchmark_results/040_44_sya_lowIC_ppo_policy_response_audit/tables/040_44_sya_lowIC_ppo_irrigation_event_context.csv",
+  "record_md": "docs/040_44_sya_lowIC_ppo_policy_response_audit_record.md"
+}

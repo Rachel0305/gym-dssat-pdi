@@ -1,0 +1,17 @@
+{
+  "task": "042_04_sya_lowIC_04202_weather_responsiveness_audit",
+  "branch": "A_75k_nonzero_management_is_template_like",
+  "source": "benchmark_results\\042_02_sya_lowIC_normalized_weather_teacher_warmstart_stress_response_rerun100k",
+  "checkpoint_count": 5,
+  "year_count": 10,
+  "checkpoint_75k_unique_action_signatures": 1,
+  "checkpoint_75k_pairwise_hamming_mean": 5.444444444444445,
+  "outputs": {
+    "record_md": "docs\\042_04_sya_lowIC_04202_weather_responsiveness_audit_record.md",
+    "action_sequence": "benchmark_results\\042_04_sya_lowIC_04202_weather_responsiveness_audit\\tables\\042_04_action_sequence_by_year_checkpoint.csv",
+    "diversity": "benchmark_results\\042_04_sya_lowIC_04202_weather_responsiveness_audit\\tables\\042_04_action_diversity_by_checkpoint.csv",
+    "association": "benchmark_results\\042_04_sya_lowIC_04202_weather_responsiveness_audit\\tables\\042_04_weather_stress_action_association.csv",
+    "top_associations": "benchmark_results\\042_04_sya_lowIC_04202_weather_responsiveness_audit\\tables\\042_04_top_action_association_features.csv",
+    "performance_plus_diversity": "benchmark_results\\042_04_sya_lowIC_04202_weather_responsiveness_audit\\tables\\042_04_performance_plus_diversity.csv"
+  }
+}

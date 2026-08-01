@@ -1,0 +1,13 @@
+concept,directly_in_observation,observation_names,observation_indices,note
+DAP,True,dap,1,
+TMAX,True,tmax,19,
+TMIN,False,,,not directly visible to policy in current 25-dim observation
+SRAD,True,srad,8,
+RAIN,False,,,not directly visible to policy in current 25-dim observation
+soil_water,True,sw_1;sw_2;sw_3;sw_4;sw_5;sw_6;sw_7;sw_8;sw_9,9;10;11;12;13;14;15;16;17,
+SWFAC,True,swfac,18,
+NSTRES,True,nstres,6,
+cumulative_irrigation,True,totir,21,
+cumulative_nitrogen,True,cumsumfert,0,
+yield_state,True,grnwt,4,
+biomass_state,True,topwt,20,

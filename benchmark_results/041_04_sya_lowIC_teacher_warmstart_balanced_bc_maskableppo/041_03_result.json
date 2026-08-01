@@ -1,0 +1,28 @@
+{
+  "task": "041_04_sya_lowIC_teacher_warmstart_balanced_bc_maskableppo",
+  "branch": "A_teacher_warmstart_training_completed",
+  "algorithm": "MaskablePPO",
+  "training_run": true,
+  "same_year_teacher_feasibility": true,
+  "strict_cross_year_generalization": false,
+  "total_timesteps": 100000,
+  "checkpoint_steps": [
+    25000,
+    50000,
+    75000,
+    100000
+  ],
+  "bc_epochs": 20,
+  "bc_final_loss": 1.2619977990786235,
+  "bc_final_action_accuracy": 0.4459635416666667,
+  "outputs": {
+    "record_md": "docs/041_04_sya_lowIC_teacher_warmstart_balanced_bc_maskableppo_record.md",
+    "training_inventory": "benchmark_results/041_04_sya_lowIC_teacher_warmstart_balanced_bc_maskableppo/evaluation/041_03_training_checkpoint_inventory.csv",
+    "validation_summary": "benchmark_results/041_04_sya_lowIC_teacher_warmstart_balanced_bc_maskableppo/evaluation/041_03_checkpoint_validation_summary.csv",
+    "by_checkpoint": "benchmark_results/041_04_sya_lowIC_teacher_warmstart_balanced_bc_maskableppo/evaluation/041_03_validation_summary_by_checkpoint.csv",
+    "bc_dataset_npz": "benchmark_results/041_04_sya_lowIC_teacher_warmstart_balanced_bc_maskableppo/bc_dataset/041_03_bc_dataset.npz",
+    "bc_dataset_meta": "benchmark_results/041_04_sya_lowIC_teacher_warmstart_balanced_bc_maskableppo/bc_dataset/041_03_bc_dataset_meta.csv",
+    "bc_log": "benchmark_results/041_04_sya_lowIC_teacher_warmstart_balanced_bc_maskableppo/logs/041_03_bc_pretrain_log.csv",
+    "result_json": "benchmark_results/041_04_sya_lowIC_teacher_warmstart_balanced_bc_maskableppo/041_03_result.json"
+  }
+}

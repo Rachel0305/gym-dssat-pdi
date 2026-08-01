@@ -1,0 +1,25 @@
+{
+  "task": "040_47_sya_lowIC_04040_policy_observation_index_resolution",
+  "checkpoint": "benchmark_results/040_40_sya_lowIC_ppo_yield_guardrail_v3/models/SYA/SYA_half_split_stress_aware_maskableppo_seed0_ckpt100000.zip",
+  "validation_years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "observation_size": 25,
+  "named_count": 17,
+  "dap_index_check": {
+    "dap_index_resolved": true,
+    "resolved_dap_raw_index": 1,
+    "all_years_increment_by_one_each_step": false,
+    "n_years_checked": 10
+  },
+  "record_md": "docs/040_47_sya_lowIC_04040_policy_observation_index_resolution_record.md"
+}

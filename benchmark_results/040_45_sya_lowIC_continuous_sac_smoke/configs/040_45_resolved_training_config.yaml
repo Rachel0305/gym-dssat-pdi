@@ -1,0 +1,126 @@
+seed: 0
+mode: water_nitrogen
+algorithm: SAC
+total_timesteps: 200000
+paths:
+  base_env_config: experiments/ppo_observed_years/config_all_year_weather_calibration_validation.yaml
+  output_root: benchmark_results/040_45_sya_lowIC_continuous_sac_smoke
+  scenario_pool_csv: Leave_One_experiments/all_year_weather_calibration_validation/scenario_pool/all_year_weather_scenario_pool.csv
+  weather_inventory_csv: Leave_One_experiments/all_year_weather_calibration_validation/weather_inventory/weather_year_inventory.csv
+  weather_clean_csv: weather_clean_qc/all_sites_weather_cleaned_qc.csv
+  cultivar_file: my_data/MZCER048.CUL
+  my_data_dir: my_data
+  wth_dir: Leave_One_experiments/wth_generated_qc
+runtime:
+  mode: all
+  max_steps: 260
+  episode_timeout_seconds: 300
+  smoke_station: SYA
+  smoke_year: 2005
+ppo:
+  learning_rate: 0.0003
+  gamma: 1.0
+  gae_lambda: 1.0
+  n_steps: 144
+  batch_size: 144
+  n_epochs: 5
+  ent_coef: 0.01
+  clip_range: 0.2
+  net_arch:
+  - 64
+  - 64
+dqn:
+  learning_rate: 1.0e-05
+  buffer_size: 100000
+  learning_starts: 1024
+  batch_size: 1024
+  gamma: 0.99
+  train_freq: 4
+  gradient_steps: 1
+  target_update_interval: 120
+  exploration_fraction: 1.0
+  exploration_initial_eps: 1.0
+  exploration_final_eps: 0.0
+  max_grad_norm: 10.0
+  net_arch:
+  - 256
+  - 256
+  - 256
+  weight_decay: 0.001
+discrete_actions:
+  irrigation_levels:
+  - 0.0
+  - 30.0
+  - 45.0
+  nitrogen_levels:
+  - 0.0
+  - 80.0
+  - 120.0
+  coarse_action_source: 040_33 removes 15 mm and 40 kg/ha fragmented action levels;
+    reward unchanged from 040_28
+action_safety:
+  enabled: true
+  daily_irrigation_max: 45.0
+  daily_n_max: 120.0
+  season_irrigation_soft_limit: 240.0
+  season_n_soft_limit: 250.0
+  min_days_between_irrigation: 7
+  min_days_between_fertilization: 7
+  irrigation_allowed_dap_range:
+  - 1
+  - 120
+  fertilization_allowed_dap_range:
+  - 1
+  - 90
+  late_irrigation_reserve_mask:
+    enabled: true
+    dap_end: 90
+    pre_late_cum_irrigation_cap_mm: 195.0
+    reserved_for_after_dap90_mm: 45.0
+    reason: reserve at least one 45 mm irrigation opportunity after DAP90; do not
+      force an exact irrigation day
+reward:
+  reward_type: harvest_yield_minus_water_nitrogen_cost_plus_stress_relief_scaled_0p001
+  yield_coef: 0.158
+  nitrogen_cost: 1.58
+  water_cost: 1.1
+  water_stress_relief_coef: 10.0
+  nitrogen_stress_relief_coef: 5.0
+  reward_scale: 0.001
+  swfac_guardrail_process_penalty:
+    enabled: true
+    threshold: 0.05
+    coef: 50.0
+    formula: coef * max(0, swfac_after_step - threshold) * reward_scale
+  terminal_yield_guardrail:
+    enabled: true
+    target: 0.98 * same-year official_extension_expert grain yield from 040_41 target
+      table when available, otherwise 040_21 lowIC baseline
+    target_fraction: 0.98
+    penalty_formula: yield_coef * max(0, target_yield - final_grnwt) * reward_scale
+    yield_coef: 0.158
+    reward_scale: 0.001
+    reason: 040_39 found checkpoint selection alone cannot solve insufficient yield;
+      add a conservative yield-deficit guardrail without changing action constraints.
+continuous_actions:
+  irrigation_low_high_mm:
+  - 0.0
+  - 45.0
+  nitrogen_low_high_kg_ha:
+  - 0.0
+  - 120.0
+  note: SAC emits continuous real amounts; agronomic constraints are applied before
+    DSSAT execution.
+sac:
+  learning_rate: 0.0003
+  buffer_size: 100000
+  learning_starts: 1024
+  batch_size: 256
+  tau: 0.005
+  gamma: 1.0
+  train_freq: 1
+  gradient_steps: 1
+  ent_coef: auto
+  net_arch:
+  - 64
+  - 64

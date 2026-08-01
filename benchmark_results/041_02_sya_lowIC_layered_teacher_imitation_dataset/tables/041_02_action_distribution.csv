@@ -1,0 +1,13 @@
+teacher_tier,teacher_action_index,requested_irrigation_mm_action,requested_nitrogen_kg_ha_action,samples,weighted_samples
+near_miss,0,0.0,0.0,665,66.5
+near_miss,1,0.0,80.0,6,3.0
+near_miss,2,0.0,120.0,1,0.5
+near_miss,3,30.0,0.0,10,5.0
+near_miss,6,45.0,0.0,11,5.5
+near_miss,7,45.0,80.0,6,3.0
+near_miss,8,45.0,120.0,1,0.5
+strong_all3,0,0.0,0.0,660,132.0
+strong_all3,1,0.0,80.0,10,10.0
+strong_all3,2,0.0,120.0,2,2.0
+strong_all3,3,30.0,0.0,10,10.0
+strong_all3,6,45.0,0.0,16,16.0

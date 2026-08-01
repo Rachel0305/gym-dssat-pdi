@@ -1,0 +1,36 @@
+{
+  "task": "040_48_sya_lowIC_dap90_gate_ablation_sy2014",
+  "station": "SYA",
+  "year": 2014,
+  "seed": 0,
+  "total_timesteps": 100000,
+  "model_path": "benchmark_results/040_48_sya_lowIC_dap90_gate_ablation_sy2014/models/SYA_2014_dap90_gate_ablation_seed0_ckpt100000.zip",
+  "ablation_state": {
+    "before": {
+      "LATE_RESERVE_DAP_END": 90,
+      "PRE_LATE_CUM_IRRIGATION_CAP": 195.0
+    },
+    "after": {
+      "LATE_RESERVE_DAP_END": 0,
+      "PRE_LATE_CUM_IRRIGATION_CAP": 195.0
+    },
+    "early_mid_caps_ablated": false
+  },
+  "eval_result": {
+    "irrigation_sequence": "DAP0:I45; DAP8:I30",
+    "nitrogen_sequence": "DAP0:N80; DAP8:N120",
+    "total_irrigation_mm": 75.0,
+    "total_n_kg_ha": 200.0,
+    "final_grnwt_kg_ha": 7635.7708740234375,
+    "max_swfac": 0.9542391858994961
+  },
+  "baseline_reference": {
+    "irrigation_sequence": "DAP1:I45; DAP8:I30; DAP31:I45; DAP38:I30; DAP61:I45; DAP91:I45",
+    "nitrogen_sequence": "DAP43:N120; DAP50:N120",
+    "total_irrigation_mm": 240.0,
+    "total_n_kg_ha": 240.0,
+    "final_grnwt_kg_ha": 10210.0989
+  },
+  "sequences_identical_to_baseline": false,
+  "record_md": "docs/040_48_sya_lowIC_dap90_gate_ablation_sy2014_record.md"
+}

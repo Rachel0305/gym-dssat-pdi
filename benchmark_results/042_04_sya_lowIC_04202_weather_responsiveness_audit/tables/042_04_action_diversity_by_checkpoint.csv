@@ -1,0 +1,6 @@
+﻿checkpoint_step,years,unique_action_signatures,mean_total_irrigation,sd_total_irrigation,mean_total_nitrogen,sd_total_nitrogen,mean_irrigation_events,sd_irrigation_events,mean_nitrogen_events,sd_nitrogen_events,pairwise_hamming_mean,pairwise_hamming_max
+0,10,1,240.0,0.0,240.0,0.0,6.0,0.0,3.0,0.0,5.444444444444445,15.0
+25000,10,1,225.0,0.0,0.0,0.0,5.0,0.0,0.0,0.0,5.444444444444445,15.0
+50000,10,1,225.0,0.0,0.0,0.0,5.0,0.0,0.0,0.0,5.444444444444445,15.0
+75000,10,1,225.0,0.0,240.0,0.0,5.0,0.0,3.0,0.0,5.444444444444445,15.0
+100000,10,1,225.0,0.0,0.0,0.0,5.0,0.0,0.0,0.0,5.444444444444445,15.0

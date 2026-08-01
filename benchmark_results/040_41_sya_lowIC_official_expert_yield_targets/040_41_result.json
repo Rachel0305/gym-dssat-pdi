@@ -1,0 +1,14 @@
+{
+  "task": "040_41_sya_lowIC_official_expert_yield_targets",
+  "mode": "full",
+  "selected_years": 19,
+  "expected_runs": 19,
+  "successful_runs": 19,
+  "non_ok_runs": 0,
+  "output_root": "benchmark_results/040_41_sya_lowIC_official_expert_yield_targets",
+  "record_md": "docs/040_41_sya_lowIC_official_expert_yield_targets_record.md",
+  "elapsed_seconds": 110.2076780796051,
+  "target_csv": "benchmark_results/040_41_sya_lowIC_official_expert_yield_targets/evaluation/040_41_official_expert_yield_targets.csv",
+  "successful_years": 19,
+  "next_step_allowed": true
+}

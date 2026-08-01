@@ -1,0 +1,6 @@
+﻿checkpoint_step,validation_years,unique_action_signatures,sd_total_irrigation,sd_total_n,mean_total_irrigation,mean_total_n,mean_yield,mean_pfp_n,any_metric_win_years,mean_irrigation_event_dap_sd,mean_nitrogen_event_dap_sd,template_like
+1000,10,9,0.0,0.0,225.0,240.0,8948.111389160156,37.28379745483399,0,5.373032987620776,0.0,False
+2000,10,1,0.0,0.0,135.0,240.0,7702.1549072265625,32.09231211344401,0,0.0,0.0,True
+5000,10,1,0.0,0.0,0.0,0.0,1515.1003875732422,,0,0.0,0.0,True
+10000,10,1,0.0,0.0,0.0,80.0,3729.7217407226562,46.6215217590332,0,0.0,0.0,True
+25000,10,7,0.0,0.0,225.0,240.0,9909.843505859375,41.29101460774741,0,2.502798433753705,2.780887148615228,False

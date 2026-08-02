@@ -1,0 +1,3 @@
+﻿checkpoint_step,sample_count,nonzero_count,teacher_argmax_rate,nonzero_teacher_argmax_rate,mean_teacher_rank,mean_q_teacher_minus_noop,mean_q_teacher_minus_max_other,margin_satisfied_rate
+1000,1398,67,0.952074391988555,0.0,1.0801144492131616,-0.011531236377652623,0.19806744405206353,0.0
+2000,1398,67,0.952074391988555,0.0,1.0722460658082975,-0.0423257821725844,0.7373148264842859,0.3791130185979971

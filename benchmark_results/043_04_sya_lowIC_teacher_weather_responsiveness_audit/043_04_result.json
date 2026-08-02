@@ -1,0 +1,16 @@
+{
+  "task": "043_04_sya_lowIC_teacher_weather_responsiveness_audit",
+  "branch": "A_teacher_has_more_weather_responsive_signal_than_04302_ppo",
+  "training_run": false,
+  "dssat_run": false,
+  "teacher_selected": "benchmark_results/041_02_sya_lowIC_layered_teacher_imitation_dataset/tables/041_02_selected_teacher_trajectories.csv",
+  "teacher_action_days": "benchmark_results/041_02_sya_lowIC_layered_teacher_imitation_dataset/tables/041_02_imitation_action_days.csv",
+  "ppo_04302_eval": "benchmark_results/043_02_sya_lowIC_binary_timing_forecast_normalized_maskableppo/evaluation/043_02_checkpoint_validation_summary.csv",
+  "outputs": {
+    "teacher_year_summary": "benchmark_results/043_04_sya_lowIC_teacher_weather_responsiveness_audit/tables/043_04_teacher_year_summary.csv",
+    "teacher_year_weather_context": "benchmark_results/043_04_sya_lowIC_teacher_weather_responsiveness_audit/tables/043_04_teacher_year_weather_context.csv",
+    "teacher_event_weather": "benchmark_results/043_04_sya_lowIC_teacher_weather_responsiveness_audit/tables/043_04_teacher_event_weather.csv",
+    "teacher_vs_04302_ppo_summary": "benchmark_results/043_04_sya_lowIC_teacher_weather_responsiveness_audit/tables/043_04_teacher_vs_04302_ppo_summary.csv"
+  },
+  "record_md": "docs/043_04_sya_lowIC_teacher_weather_responsiveness_audit_record.md"
+}

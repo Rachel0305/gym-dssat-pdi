@@ -1,0 +1,40 @@
+{
+  "task": "043_01_sya_lowIC_04215_policy_input_sensitivity_audit",
+  "branch": "C_weak_or_no_policy_input_sensitivity_detected",
+  "training_run": false,
+  "reward_changed": false,
+  "dssat_input_changed": false,
+  "model_path": "benchmark_results/042_11_sya_lowIC_binary_timing_training_length_curve/models/SYA/SYA_half_split_stress_aware_maskableppo_seed0_ckpt25000.zip",
+  "input_root": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013_lowIC_manual",
+  "checkpoint": 25000,
+  "years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "audit_daps": [
+    1,
+    2,
+    31,
+    38,
+    51,
+    61,
+    91
+  ],
+  "observation_name_source": "env_chain[0].observation_variables;expanded_sw_to_9_layers",
+  "observation_names_match_vector": true,
+  "detail_csv": "benchmark_results/043_01_sya_lowIC_04215_policy_input_sensitivity_audit/tables/043_01_policy_input_sensitivity_detail.csv",
+  "by_scenario_csv": "benchmark_results/043_01_sya_lowIC_04215_policy_input_sensitivity_audit/tables/043_01_policy_input_sensitivity_by_scenario.csv",
+  "by_dap_csv": "benchmark_results/043_01_sya_lowIC_04215_policy_input_sensitivity_audit/tables/043_01_policy_input_sensitivity_by_dap.csv",
+  "observation_variables_csv": "benchmark_results/043_01_sya_lowIC_04215_policy_input_sensitivity_audit/tables/043_01_policy_observation_variables.csv",
+  "unobservable_weather_csv": "benchmark_results/043_01_sya_lowIC_04215_policy_input_sensitivity_audit/tables/043_01_unobservable_weather_variables.csv",
+  "sampled_context_csv": "benchmark_results/043_01_sya_lowIC_04215_policy_input_sensitivity_audit/tables/043_01_sampled_policy_state_context.csv",
+  "record_md": "docs/043_01_sya_lowIC_04215_policy_input_sensitivity_audit_record.md"
+}

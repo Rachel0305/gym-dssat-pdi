@@ -1,0 +1,4 @@
+﻿station_code,year,obs_dim,raw_dim,norm_dim,base_observation_dim,enhanced_observation_dim,mask_dim,valid_action_count_at_reset,rain_today_mm,tmin_today_c,rain_past7_mm,rain_future7_mm,tmean_future7_c
+SYA,2005,30,30,30,25,30,4,4,0.0,4.475318431854248,24.700000762939453,8.699999809265137,10.817357063293457
+SYA,2014,30,30,30,25,30,4,4,0.0,3.799999952316284,0.0,0.0,17.235713958740234
+SYA,2023,30,30,30,25,30,4,4,0.0,4.400000095367432,0.0,16.0,9.514286041259766

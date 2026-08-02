@@ -1,0 +1,101 @@
+{
+  "task": "043_01_sya_lowIC_04215_policy_input_sensitivity_audit",
+  "mode": "dry_run_or_preflight",
+  "station": "SYA",
+  "years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "audit_daps": [
+    1,
+    2,
+    31,
+    38,
+    51,
+    61,
+    91
+  ],
+  "model_path": "benchmark_results/042_11_sya_lowIC_binary_timing_training_length_curve/models/SYA/SYA_half_split_stress_aware_maskableppo_seed0_ckpt25000.zip",
+  "model_exists": true,
+  "prompt_path": "prompts/043_01_sya_lowIC_04215_policy_input_sensitivity_audit.md",
+  "prompt_exists": true,
+  "lowIC_input_root": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013_lowIC_manual",
+  "lowIC_input_root_exists": true,
+  "binary_irrigation_levels": [
+    0.0,
+    45.0
+  ],
+  "binary_nitrogen_levels": [
+    0.0,
+    80.0
+  ],
+  "split_years_available": [
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "config_reward": {
+    "reward_type": "harvest_yield_minus_water_nitrogen_cost_plus_stress_relief_scaled_0p001",
+    "yield_coef": 0.158,
+    "nitrogen_cost": 1.58,
+    "water_cost": 1.1,
+    "water_stress_relief_coef": 10.0,
+    "nitrogen_stress_relief_coef": 5.0,
+    "reward_scale": 0.001,
+    "swfac_guardrail_process_penalty": {
+      "enabled": true,
+      "threshold": 0.05,
+      "coef": 50.0,
+      "formula": "coef * max(0, swfac_after_step - threshold) * reward_scale"
+    }
+  },
+  "config_action_safety": {
+    "enabled": true,
+    "daily_irrigation_max": 45.0,
+    "daily_n_max": 120.0,
+    "season_irrigation_soft_limit": 240.0,
+    "season_n_soft_limit": 250.0,
+    "min_days_between_irrigation": 7,
+    "min_days_between_fertilization": 7,
+    "irrigation_allowed_dap_range": [
+      1,
+      120
+    ],
+    "fertilization_allowed_dap_range": [
+      1,
+      90
+    ],
+    "late_irrigation_reserve_mask": {
+      "enabled": true,
+      "dap_end": 90,
+      "pre_late_cum_irrigation_cap_mm": 195.0,
+      "reserved_for_after_dap90_mm": 45.0,
+      "reason": "reserve at least one 45 mm irrigation opportunity after DAP90; do not force an exact irrigation day"
+    }
+  },
+  "next_step_allowed": true
+}

@@ -1,0 +1,25 @@
+{
+  "task": "044_02_sya_lowIC_demo_only_pretrain_dqn_audit",
+  "branch": "B_demo_only_pretrain_still_insufficient",
+  "training_run": "demo_only_pretrain",
+  "online_dqn_run": false,
+  "snapshot_epochs": [
+    0,
+    50,
+    200,
+    500
+  ],
+  "demo_transition_count": 1398,
+  "demo_nonzero_count": 67,
+  "max_nonzero_teacher_argmax_rate": 0.5671641791044776,
+  "outputs": {
+    "by_checkpoint": "benchmark_results/044_02_sya_lowIC_demo_only_pretrain_dqn_audit/tables/044_02_q_ranking_by_checkpoint.csv",
+    "by_action": "benchmark_results/044_02_sya_lowIC_demo_only_pretrain_dqn_audit/tables/044_02_q_ranking_by_action.csv",
+    "by_year": "benchmark_results/044_02_sya_lowIC_demo_only_pretrain_dqn_audit/tables/044_02_q_ranking_by_year.csv",
+    "train_log": "benchmark_results/044_02_sya_lowIC_demo_only_pretrain_dqn_audit/logs/044_02_demo_only_pretrain_log.csv",
+    "demo_meta": "benchmark_results/044_02_sya_lowIC_demo_only_pretrain_dqn_audit/demo_buffer/044_02_demo_transition_meta.csv",
+    "skipped": "benchmark_results/044_02_sya_lowIC_demo_only_pretrain_dqn_audit/demo_buffer/044_02_skipped_masked_teacher_actions.csv",
+    "result": "benchmark_results/044_02_sya_lowIC_demo_only_pretrain_dqn_audit/044_02_result.json"
+  },
+  "record_md": "docs/044_02_sya_lowIC_demo_only_pretrain_dqn_audit_record.md"
+}

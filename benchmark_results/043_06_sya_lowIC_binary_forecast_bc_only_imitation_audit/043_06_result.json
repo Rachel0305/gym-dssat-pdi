@@ -1,0 +1,28 @@
+{
+  "task": "043_06_sya_lowIC_binary_forecast_bc_only_imitation_audit",
+  "branch": "C_bc_still_template_like",
+  "training_run": false,
+  "ppo_finetune_run": false,
+  "algorithm_shell": "MaskablePPO policy network",
+  "training_method": "BC imitation only",
+  "snapshot_epochs": [
+    0,
+    5,
+    20,
+    50
+  ],
+  "bc_sample_count": 1398,
+  "bc_year_count": 10,
+  "skipped_masked_teacher_action_count": 6,
+  "max_unique_action_signatures": 2,
+  "outputs": {
+    "record_md": "docs/043_06_sya_lowIC_binary_forecast_bc_only_imitation_audit_record.md",
+    "bc_log": "benchmark_results/043_06_sya_lowIC_binary_forecast_bc_only_imitation_audit/logs/043_06_bc_snapshot_log.csv",
+    "inventory": "benchmark_results/043_06_sya_lowIC_binary_forecast_bc_only_imitation_audit/evaluation/043_06_bc_only_model_inventory.csv",
+    "validation_summary": "benchmark_results/043_06_sya_lowIC_binary_forecast_bc_only_imitation_audit/evaluation/043_06_bc_only_validation_summary.csv",
+    "by_epoch": "benchmark_results/043_06_sya_lowIC_binary_forecast_bc_only_imitation_audit/evaluation/043_06_bc_only_summary_by_epoch.csv",
+    "bc_dataset_meta": "benchmark_results/043_06_sya_lowIC_binary_forecast_bc_only_imitation_audit/bc_dataset/043_05_bc_dataset_meta.csv",
+    "skipped_masked_teacher_actions": "benchmark_results/043_06_sya_lowIC_binary_forecast_bc_only_imitation_audit/bc_dataset/043_05_bc_skipped_masked_teacher_actions.csv",
+    "result_json": "benchmark_results/043_06_sya_lowIC_binary_forecast_bc_only_imitation_audit/043_06_result.json"
+  }
+}

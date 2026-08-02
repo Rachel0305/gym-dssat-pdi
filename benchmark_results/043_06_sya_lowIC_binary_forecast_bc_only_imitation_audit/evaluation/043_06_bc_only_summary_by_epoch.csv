@@ -1,0 +1,5 @@
+﻿stage,checkpoint_step,validation_years,mean_yield,mean_wp_et,mean_pfp_n,mean_irrigation,mean_nitrogen,any_metric_win_years,all3_win_years,unique_action_signatures,max_swfac,max_nstres
+bc_only,0,10,9633.1,2.0130000000000003,40.13,225.0,240.0,9,2,2,1.0,0.14085924625396729
+bc_only,5,10,9634.2,2.0130000000000003,40.14,225.0,240.0,9,2,1,1.0,0.14085924625396729
+bc_only,20,10,9634.2,2.0130000000000003,40.14,225.0,240.0,9,2,1,1.0,0.14085924625396729
+bc_only,50,10,9634.2,2.0130000000000003,40.14,225.0,240.0,9,2,1,1.0,0.14085924625396729

@@ -1,0 +1,19 @@
+{
+  "task": "043_07_sya_lowIC_bc_failure_mechanism_audit",
+  "branch": "B_open_loop_imitation_insufficient_and_closed_loop_template",
+  "training_run": false,
+  "dssat_run": false,
+  "source_task": "043_06_sya_lowIC_binary_forecast_bc_only_imitation_audit",
+  "max_open_loop_nonzero_action_accuracy": 0.6716417910447762,
+  "max_closed_loop_unique_policy_action_signatures": 2,
+  "max_closed_loop_unique_teacher_action_signatures": 8,
+  "outputs": {
+    "open_loop_summary": "benchmark_results/043_07_sya_lowIC_bc_failure_mechanism_audit/tables/043_07_open_loop_summary.csv",
+    "open_loop_by_action": "benchmark_results/043_07_sya_lowIC_bc_failure_mechanism_audit/tables/043_07_open_loop_by_action.csv",
+    "open_loop_by_year": "benchmark_results/043_07_sya_lowIC_bc_failure_mechanism_audit/tables/043_07_open_loop_by_year.csv",
+    "closed_loop_detail": "benchmark_results/043_07_sya_lowIC_bc_failure_mechanism_audit/tables/043_07_closed_loop_teacher_vs_policy_detail.csv",
+    "closed_loop_summary": "benchmark_results/043_07_sya_lowIC_bc_failure_mechanism_audit/tables/043_07_closed_loop_summary.csv",
+    "result_json": "benchmark_results/043_07_sya_lowIC_bc_failure_mechanism_audit/043_07_result.json"
+  },
+  "record_md": "docs/043_07_sya_lowIC_bc_failure_mechanism_audit_record.md"
+}

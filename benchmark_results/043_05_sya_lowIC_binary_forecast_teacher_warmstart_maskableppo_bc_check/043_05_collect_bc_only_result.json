@@ -1,0 +1,32 @@
+{
+  "task": "043_05_sya_lowIC_binary_forecast_teacher_warmstart_maskableppo_bc_check",
+  "mode": "collect_bc_only",
+  "training_run": false,
+  "dssat_episode_rollout": false,
+  "teacher_mapping": "positive teacher irrigation/nitrogen mapped to binary I45/N80 timing action",
+  "bc_sample_count": 1398,
+  "bc_year_count": 10,
+  "skipped_masked_teacher_action_count": 6,
+  "action_index_counts": {
+    "0": 1331,
+    "1": 19,
+    "2": 41,
+    "3": 7
+  },
+  "observation_shape": [
+    1398,
+    30
+  ],
+  "mask_shape": [
+    1398,
+    4
+  ],
+  "outputs": {
+    "bc_dataset_npz": "benchmark_results/043_05_sya_lowIC_binary_forecast_teacher_warmstart_maskableppo_bc_check/bc_dataset/043_05_bc_dataset.npz",
+    "bc_dataset_meta": "benchmark_results/043_05_sya_lowIC_binary_forecast_teacher_warmstart_maskableppo_bc_check/bc_dataset/043_05_bc_dataset_meta.csv",
+    "skipped_masked_teacher_actions": "benchmark_results/043_05_sya_lowIC_binary_forecast_teacher_warmstart_maskableppo_bc_check/bc_dataset/043_05_bc_skipped_masked_teacher_actions.csv",
+    "config": "benchmark_results/043_05_sya_lowIC_binary_forecast_teacher_warmstart_maskableppo_bc_check/configs/043_05_config.json",
+    "env_config": "benchmark_results/043_05_sya_lowIC_binary_forecast_teacher_warmstart_maskableppo_bc_check/configs/043_05_env_config.json",
+    "result_json": "benchmark_results/043_05_sya_lowIC_binary_forecast_teacher_warmstart_maskableppo_bc_check/043_05_collect_bc_only_result.json"
+  }
+}

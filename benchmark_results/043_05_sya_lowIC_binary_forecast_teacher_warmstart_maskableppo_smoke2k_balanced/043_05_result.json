@@ -1,0 +1,26 @@
+{
+  "task": "043_05_sya_lowIC_binary_forecast_teacher_warmstart_maskableppo_smoke2k_balanced",
+  "branch": "A_binary_forecast_teacher_warmstart_training_completed",
+  "algorithm": "MaskablePPO",
+  "training_run": true,
+  "teacher_mapping": "positive teacher irrigation/nitrogen mapped to binary I45/N80 timing action",
+  "total_timesteps": 2000,
+  "checkpoint_steps": [
+    1000,
+    2000
+  ],
+  "bc_epochs": 20,
+  "bc_final_loss": 0.9876632789770762,
+  "bc_final_action_accuracy": 0.4090638260046641,
+  "outputs": {
+    "record_md": "docs/043_05_sya_lowIC_binary_forecast_teacher_warmstart_maskableppo_smoke2k_balanced_record.md",
+    "training_inventory": "benchmark_results/043_05_sya_lowIC_binary_forecast_teacher_warmstart_maskableppo_smoke2k_balanced/evaluation/043_05_training_checkpoint_inventory.csv",
+    "validation_summary": "benchmark_results/043_05_sya_lowIC_binary_forecast_teacher_warmstart_maskableppo_smoke2k_balanced/evaluation/043_05_checkpoint_validation_summary.csv",
+    "by_checkpoint": "benchmark_results/043_05_sya_lowIC_binary_forecast_teacher_warmstart_maskableppo_smoke2k_balanced/evaluation/043_05_validation_summary_by_checkpoint.csv",
+    "bc_dataset_npz": "benchmark_results/043_05_sya_lowIC_binary_forecast_teacher_warmstart_maskableppo_smoke2k_balanced/bc_dataset/043_05_bc_dataset.npz",
+    "bc_dataset_meta": "benchmark_results/043_05_sya_lowIC_binary_forecast_teacher_warmstart_maskableppo_smoke2k_balanced/bc_dataset/043_05_bc_dataset_meta.csv",
+    "skipped_masked_teacher_actions": "benchmark_results/043_05_sya_lowIC_binary_forecast_teacher_warmstart_maskableppo_smoke2k_balanced/bc_dataset/043_05_bc_skipped_masked_teacher_actions.csv",
+    "bc_log": "benchmark_results/043_05_sya_lowIC_binary_forecast_teacher_warmstart_maskableppo_smoke2k_balanced/logs/043_05_bc_pretrain_log.csv",
+    "result_json": "benchmark_results/043_05_sya_lowIC_binary_forecast_teacher_warmstart_maskableppo_smoke2k_balanced/043_05_result.json"
+  }
+}

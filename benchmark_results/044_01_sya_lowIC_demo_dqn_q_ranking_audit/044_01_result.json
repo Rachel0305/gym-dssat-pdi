@@ -1,0 +1,24 @@
+{
+  "task": "044_01_sya_lowIC_demo_dqn_q_ranking_audit",
+  "branch": "B_demo_q_ranking_insufficient",
+  "training_run": false,
+  "dssat_rollout_run": false,
+  "source_task": "044_00_sya_lowIC_binary_forecast_demo_dqn_smoke_smoke2k",
+  "checkpoints": [
+    1000,
+    2000
+  ],
+  "demo_transition_count": 1398,
+  "demo_nonzero_count": 67,
+  "max_nonzero_teacher_argmax_rate": 0.0,
+  "outputs": {
+    "detail": "benchmark_results/044_01_sya_lowIC_demo_dqn_q_ranking_audit/tables/044_01_q_ranking_detail.csv",
+    "by_checkpoint": "benchmark_results/044_01_sya_lowIC_demo_dqn_q_ranking_audit/tables/044_01_q_ranking_by_checkpoint.csv",
+    "by_action": "benchmark_results/044_01_sya_lowIC_demo_dqn_q_ranking_audit/tables/044_01_q_ranking_by_action.csv",
+    "by_year": "benchmark_results/044_01_sya_lowIC_demo_dqn_q_ranking_audit/tables/044_01_q_ranking_by_year.csv",
+    "demo_meta": "benchmark_results/044_01_sya_lowIC_demo_dqn_q_ranking_audit/demo_buffer/044_01_demo_transition_meta.csv",
+    "skipped": "benchmark_results/044_01_sya_lowIC_demo_dqn_q_ranking_audit/demo_buffer/044_01_skipped_masked_teacher_actions.csv",
+    "result": "benchmark_results/044_01_sya_lowIC_demo_dqn_q_ranking_audit/044_01_result.json"
+  },
+  "record_md": "docs/044_01_sya_lowIC_demo_dqn_q_ranking_audit_record.md"
+}

@@ -1,0 +1,13 @@
+﻿metric,value,interpretation
+teacher_unique_action_signatures,9.0,teacher逐年完整动作序列唯一数；越高越非模板化
+teacher_unique_irrigation_signatures,7.0,teacher逐年灌溉序列唯一数
+teacher_unique_nitrogen_signatures,4.0,teacher逐年施氮序列唯一数
+teacher_total_irrigation_sd,34.72751070837067,teacher逐年总灌溉量标准差
+teacher_total_n_sd,26.5329983228432,teacher逐年总施氮量标准差
+teacher_first_irrigation_dap_sd,18.255136263528684,teacher首次灌溉DAP标准差
+teacher_first_nitrogen_dap_sd,16.8,teacher首次施氮DAP标准差
+corr_total_irrigation_vs_max_swfac,0.12229772015203255,总灌溉与水分胁迫强度相关性；正值说明胁迫重年份用水更多
+corr_total_n_vs_max_nstres,-0.3750938585814001,总施氮与氮胁迫强度相关性
+corr_total_irrigation_vs_season_rain,-0.5511570695508808,总灌溉与季节降雨相关性；负值通常更符合补水直觉
+ppo_04302_50k_unique_action_signatures,1.0,043_02 50K PPO验证年动作序列唯一数
+ppo_04302_75k_unique_action_signatures,1.0,043_02 75K PPO验证年动作序列唯一数

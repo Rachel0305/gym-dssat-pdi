@@ -1,0 +1,21 @@
+{
+  "task": "044_00_sya_lowIC_binary_forecast_demo_dqn_smoke_smoke2k",
+  "branch": "A_demo_dqn_smoke_completed",
+  "algorithm": "StrictMaskableDQN_with_demo_replay_margin_loss",
+  "timesteps": 2000,
+  "checkpoint_steps": [
+    1000,
+    2000
+  ],
+  "demo_transition_count": 1398,
+  "demo_nonzero_count": 67,
+  "skipped_masked_teacher_action_count": 6,
+  "update_count": 436,
+  "outputs": {
+    "record_md": "docs/044_00_sya_lowIC_binary_forecast_demo_dqn_smoke_smoke2k_record.md",
+    "update_log": "benchmark_results/044_00_sya_lowIC_binary_forecast_demo_dqn_smoke_smoke2k/logs/044_00_update_log.csv",
+    "validation_summary": "benchmark_results/044_00_sya_lowIC_binary_forecast_demo_dqn_smoke_smoke2k/evaluation/044_00_checkpoint_validation_summary.csv",
+    "by_checkpoint": "benchmark_results/044_00_sya_lowIC_binary_forecast_demo_dqn_smoke_smoke2k/evaluation/044_00_validation_summary_by_checkpoint.csv",
+    "result_json": "benchmark_results/044_00_sya_lowIC_binary_forecast_demo_dqn_smoke_smoke2k/044_00_result.json"
+  }
+}

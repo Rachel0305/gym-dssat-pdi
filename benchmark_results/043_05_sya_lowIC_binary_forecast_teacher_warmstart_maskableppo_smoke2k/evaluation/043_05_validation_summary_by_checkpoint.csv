@@ -1,0 +1,4 @@
+﻿stage,checkpoint_step,validation_years,mean_yield,mean_wp_et,mean_pfp_n,mean_irrigation,mean_nitrogen,any_metric_win_years,all3_win_years,unique_action_signatures,max_swfac,max_nstres
+bc_init,0,10,1515.3,0.5962500000000001,,0.0,0.0,0,0,1,1.0,0.5701473355293274
+ppo_finetune,1000,10,1515.3,0.5962500000000001,,0.0,0.0,0,0,1,1.0,0.5701473355293274
+ppo_finetune,2000,10,1515.3,0.5962500000000001,,0.0,0.0,0,0,1,1.0,0.5701473355293274

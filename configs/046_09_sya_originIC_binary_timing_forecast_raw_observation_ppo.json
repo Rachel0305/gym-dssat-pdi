@@ -1,0 +1,36 @@
+{
+  "task_id": "046_09",
+  "task_name": "sya_originIC_binary_timing_forecast_raw_observation_ppo",
+  "station_code": "SYA",
+  "input_profile": "originIC",
+  "seed": 0,
+  "scope": {
+    "train_years": [2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013],
+    "validation_years": [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023]
+  },
+  "training": {
+    "total_timesteps": 100000,
+    "checkpoint_steps": [25000, 50000, 75000, 100000]
+  },
+  "actions": {
+    "irrigation_levels_mm": [0, 45],
+    "nitrogen_levels_kg_ha": [0, 80]
+  },
+  "report_checkpoint": 100000,
+  "external_auto_n_rule": {
+    "output_suffix": "nstd005",
+    "nitrogen_stress_threshold": 0.05,
+    "nitrogen_dose_kg_ha": 25,
+    "min_days_between_nitrogen": 7,
+    "season_nitrogen_cap_kg_ha": 250,
+    "fertilization_last_dap": 90
+  },
+  "weather_forecast_observation_04609": {
+    "enabled": true,
+    "normalization_enabled": false,
+    "feature_names": ["rain_today_mm", "tmin_today_c", "rain_past7_mm", "rain_future7_mm", "tmean_future7_c"],
+    "past_window_days": 7,
+    "future_window_days": 7,
+    "future_weather_assumption": "perfect historical weather forecast"
+  }
+}

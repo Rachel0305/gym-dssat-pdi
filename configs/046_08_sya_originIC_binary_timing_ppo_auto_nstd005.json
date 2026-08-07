@@ -1,0 +1,35 @@
+{
+  "task_id": "046_02",
+  "task_name": "sya_originIC_binary_timing_ppo",
+  "station_code": "SYA",
+  "site": "SY",
+  "input_profile": "originIC",
+  "seed": 0,
+  "scope": {
+    "train_years": [2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013],
+    "validation_years": [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023]
+  },
+  "actions": {
+    "irrigation_levels_mm": [0.0, 45.0],
+    "nitrogen_levels_kg_ha": [0.0, 80.0]
+  },
+  "training": {
+    "total_timesteps": 100000,
+    "checkpoint_steps": [25000, 50000, 75000, 100000]
+  },
+  "report_checkpoint": 100000,
+  "notes": {
+    "purpose": "Use the existing 046_02 PPO run, but rebuild the DSSAT-auto comparison with a lower external NSTRES fertilizer trigger."
+  },
+  "external_auto_n_rule": {
+    "enabled": true,
+    "output_suffix": "nstd005",
+    "nitrogen_stress_threshold": 0.05,
+    "nitrogen_dose_kg_ha": 25.0,
+    "min_days_between_nitrogen": 7,
+    "season_nitrogen_cap_kg_ha": 250.0,
+    "fertilization_last_dap": 90,
+    "irrigation_mode": "DSSAT_native_auto",
+    "nitrogen_mode": "gym_dssat_external_stress_trigger"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "task_id": "050_01",
+  "task_name": "yca_originIC_external_auto_n_rule_nstd050_minimal",
+  "station_code": "YCA",
+  "site": "YC",
+  "input_profile": "originIC",
+  "seed": 0,
+  "scope": {
+    "validation_years": [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023]
+  },
+  "external_auto_n_rule": {
+    "enabled": true,
+    "output_suffix": "nstd050_minimal",
+    "nitrogen_stress_threshold": 0.5,
+    "nitrogen_dose_kg_ha": 25.0,
+    "irrigation_mode": "DSSAT_native_auto",
+    "nitrogen_mode": "gym_dssat_external_minimal_stress_trigger",
+    "removed_constraints": [
+      "min_days_between_nitrogen",
+      "season_nitrogen_cap_kg_ha",
+      "fertilization_last_dap"
+    ]
+  }
+}

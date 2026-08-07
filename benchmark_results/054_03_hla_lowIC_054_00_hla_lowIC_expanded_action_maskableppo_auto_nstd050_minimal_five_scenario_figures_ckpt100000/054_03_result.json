@@ -1,0 +1,45 @@
+{
+  "task": "054_03_hla_five_scenario_figures",
+  "checkpoint": 100000,
+  "years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "output_root": "benchmark_results/054_03_hla_lowIC_054_00_hla_lowIC_expanded_action_maskableppo_auto_nstd050_minimal_five_scenario_figures_ckpt100000",
+  "ppo_run_dir": "benchmark_results/054_00_hla_lowIC_expanded_action_maskableppo",
+  "baseline_root": "benchmark_results/054_02_hla_lowIC_four_baselines_static_level1",
+  "auto_output_root": "benchmark_results/054_01_hla_lowIC_external_auto_n_rule_nstd050_minimal",
+  "missing_inputs": [],
+  "figures": [
+    "benchmark_results/054_03_hla_lowIC_054_00_hla_lowIC_expanded_action_maskableppo_auto_nstd050_minimal_five_scenario_figures_ckpt100000/figures/054_03_hla2014_five_scenario_daily.png",
+    "benchmark_results/054_03_hla_lowIC_054_00_hla_lowIC_expanded_action_maskableppo_auto_nstd050_minimal_five_scenario_figures_ckpt100000/figures/054_03_hla2015_five_scenario_daily.png",
+    "benchmark_results/054_03_hla_lowIC_054_00_hla_lowIC_expanded_action_maskableppo_auto_nstd050_minimal_five_scenario_figures_ckpt100000/figures/054_03_hla2016_five_scenario_daily.png",
+    "benchmark_results/054_03_hla_lowIC_054_00_hla_lowIC_expanded_action_maskableppo_auto_nstd050_minimal_five_scenario_figures_ckpt100000/figures/054_03_hla2017_five_scenario_daily.png",
+    "benchmark_results/054_03_hla_lowIC_054_00_hla_lowIC_expanded_action_maskableppo_auto_nstd050_minimal_five_scenario_figures_ckpt100000/figures/054_03_hla2018_five_scenario_daily.png",
+    "benchmark_results/054_03_hla_lowIC_054_00_hla_lowIC_expanded_action_maskableppo_auto_nstd050_minimal_five_scenario_figures_ckpt100000/figures/054_03_hla2019_five_scenario_daily.png",
+    "benchmark_results/054_03_hla_lowIC_054_00_hla_lowIC_expanded_action_maskableppo_auto_nstd050_minimal_five_scenario_figures_ckpt100000/figures/054_03_hla2020_five_scenario_daily.png",
+    "benchmark_results/054_03_hla_lowIC_054_00_hla_lowIC_expanded_action_maskableppo_auto_nstd050_minimal_five_scenario_figures_ckpt100000/figures/054_03_hla2021_five_scenario_daily.png",
+    "benchmark_results/054_03_hla_lowIC_054_00_hla_lowIC_expanded_action_maskableppo_auto_nstd050_minimal_five_scenario_figures_ckpt100000/figures/054_03_hla2022_five_scenario_daily.png",
+    "benchmark_results/054_03_hla_lowIC_054_00_hla_lowIC_expanded_action_maskableppo_auto_nstd050_minimal_five_scenario_figures_ckpt100000/figures/054_03_hla2023_five_scenario_daily.png"
+  ],
+  "metric_bars": "benchmark_results/054_03_hla_lowIC_054_00_hla_lowIC_expanded_action_maskableppo_auto_nstd050_minimal_five_scenario_figures_ckpt100000/figures/054_03_hla_five_scenario_metrics.png",
+  "management_bars": "benchmark_results/054_03_hla_lowIC_054_00_hla_lowIC_expanded_action_maskableppo_auto_nstd050_minimal_five_scenario_figures_ckpt100000/figures/054_03_hla_five_scenario_management.png",
+  "daily_csv": "benchmark_results/054_03_hla_lowIC_054_00_hla_lowIC_expanded_action_maskableppo_auto_nstd050_minimal_five_scenario_figures_ckpt100000/tables/054_03_hla_five_scenario_daily.csv",
+  "season_summary": "benchmark_results/054_03_hla_lowIC_054_00_hla_lowIC_expanded_action_maskableppo_auto_nstd050_minimal_five_scenario_figures_ckpt100000/tables/054_03_hla_five_scenario_season_summary.csv",
+  "management_events": "benchmark_results/054_03_hla_lowIC_054_00_hla_lowIC_expanded_action_maskableppo_auto_nstd050_minimal_five_scenario_figures_ckpt100000/tables/054_03_hla_five_scenario_management_events.csv",
+  "gaps": "benchmark_results/054_03_hla_lowIC_054_00_hla_lowIC_expanded_action_maskableppo_auto_nstd050_minimal_five_scenario_figures_ckpt100000/tables/054_03_hla_metric_gaps_vs_four_baseline_max.csv",
+  "record_md": "docs/054_03_hla_lowIC_054_00_hla_lowIC_expanded_action_maskableppo_five_scenario_figures_ckpt100000_record.md",
+  "ppo_win_counts": {
+    "PFP_N_kg_kg": 1,
+    "WP_ET_kg_m3": 1,
+    "grain_yield_kg_ha": 1
+  }
+}

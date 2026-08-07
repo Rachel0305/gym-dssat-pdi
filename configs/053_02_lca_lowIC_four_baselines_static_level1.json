@@ -1,0 +1,17 @@
+{
+  "task_id": "053_02",
+  "task_name": "lca_lowIC_four_baselines_static_level1",
+  "station_code": "LCA",
+  "site": "LC",
+  "input_profile": "lowIC",
+  "seed": 0,
+  "scope": {
+    "validation_years": [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023]
+  },
+  "baseline_contract": {
+    "scenarios": ["null", "recorded_farmer_template", "dssat_auto", "official_extension_expert"],
+    "static_management_renderer": "037_07_replace_static_application_rows_level1",
+    "baseline_source": "034_00 scenario definitions with corrected static application rows",
+    "purpose": "Regenerate LCA/LC four non-PPO baselines so recorded/expert multi-event management is actually selected by DSSAT."
+  }
+}

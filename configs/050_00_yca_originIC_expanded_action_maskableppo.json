@@ -1,0 +1,29 @@
+{
+  "task_id": "050_00",
+  "task_name": "yca_originIC_expanded_action_maskableppo",
+  "reference_run": "046_10_sya_originIC_expanded_action_maskableppo",
+  "station_code": "YCA",
+  "site": "YC",
+  "input_profile": "originIC",
+  "seed": 0,
+  "report_checkpoint": 100000,
+  "training": {
+    "total_timesteps": 100000,
+    "checkpoint_steps": [25000, 50000, 75000, 100000]
+  },
+  "actions": {
+    "irrigation_levels_mm": [0.0, 15.0, 30.0, 45.0],
+    "nitrogen_levels_kg_ha": [0.0, 40.0, 80.0, 120.0]
+  },
+  "observation_contract": {
+    "base": "046_02_raw_observation",
+    "normalization_enabled": false,
+    "weather_forecast_enabled": false
+  },
+  "scope": {
+    "train_years": [2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013],
+    "validation_years": [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023],
+    "reward_and_safety": "inherit_042_15_via_046_02_unchanged",
+    "purpose": "Transfer the frozen SYA 046_10 PPO method to YCA/YC; change only station/input years."
+  }
+}

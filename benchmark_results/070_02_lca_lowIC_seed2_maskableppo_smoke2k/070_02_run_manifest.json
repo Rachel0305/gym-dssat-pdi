@@ -1,0 +1,207 @@
+{
+  "status": "completed_smoke",
+  "config": {
+    "task_id": "070_02",
+    "task_name": "lca_lowIC_seed2_maskableppo_smoke2k",
+    "reference_run": "053_00_lca_lowIC_expanded_action_maskableppo",
+    "input_profile": "lowIC",
+    "station_code": "LCA",
+    "seed": 2,
+    "training": {
+      "total_timesteps": 2000,
+      "checkpoint_steps": [
+        1000,
+        2000
+      ]
+    },
+    "scope": {
+      "train_years": [
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013
+      ],
+      "validation_years": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ]
+    },
+    "actions": {
+      "irrigation_levels_mm": [
+        0.0,
+        15.0,
+        30.0,
+        45.0
+      ],
+      "nitrogen_levels_kg_ha": [
+        0.0,
+        40.0,
+        80.0,
+        120.0
+      ]
+    },
+    "observation_contract": {
+      "base": "046_02_raw_observation",
+      "normalization_enabled": false,
+      "weather_forecast_enabled": false
+    },
+    "ppo": {
+      "learning_rate": 0.0003,
+      "gamma": 1.0,
+      "gae_lambda": 1.0,
+      "n_steps": 144,
+      "batch_size": 144,
+      "n_epochs": 5,
+      "ent_coef": 0.01,
+      "clip_range": 0.2,
+      "net_arch": [
+        64,
+        64
+      ]
+    },
+    "prompt": "prompts/2026-08-13_lc_seed2_smoke_and_seed1_diagnostic.md"
+  },
+  "preflight": {
+    "task": "070_02_lca_lowIC_seed2_maskableppo_smoke2k",
+    "which": "lc",
+    "output_root": "benchmark_results/070_02_lca_lowIC_seed2_maskableppo_smoke2k",
+    "input_root": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013_lowIC_manual",
+    "train_years": [
+      2005,
+      2006,
+      2007,
+      2008,
+      2009,
+      2010,
+      2011,
+      2012,
+      2013
+    ],
+    "validation_years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "config_ppo": {
+      "learning_rate": 0.0003,
+      "gamma": 1.0,
+      "gae_lambda": 1.0,
+      "n_steps": 144,
+      "batch_size": 144,
+      "n_epochs": 5,
+      "ent_coef": 0.01,
+      "clip_range": 0.2,
+      "net_arch": [
+        64,
+        64
+      ]
+    },
+    "issues": [],
+    "next_step_allowed": true
+  },
+  "result": {
+    "task": "070_02_lca_lowIC_seed2_maskableppo_smoke2k",
+    "which": "lc",
+    "output_root": "benchmark_results/070_02_lca_lowIC_seed2_maskableppo_smoke2k",
+    "input_root": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013_lowIC_manual",
+    "train_years": [
+      2005,
+      2006,
+      2007,
+      2008,
+      2009,
+      2010,
+      2011,
+      2012,
+      2013
+    ],
+    "validation_years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "config_ppo": {
+      "learning_rate": 0.0003,
+      "gamma": 1.0,
+      "gae_lambda": 1.0,
+      "n_steps": 144,
+      "batch_size": 144,
+      "n_epochs": 5,
+      "ent_coef": 0.01,
+      "clip_range": 0.2,
+      "net_arch": [
+        64,
+        64
+      ]
+    },
+    "issues": [],
+    "next_step_allowed": false,
+    "phase": "LC_seed2_smoke2k",
+    "elapsed_s": 82.62881354400088,
+    "action_audits": {
+      "1000": "benchmark_results/070_02_lca_lowIC_seed2_maskableppo_smoke2k/audits/070_02_ckpt1000_action_audit.csv",
+      "2000": "benchmark_results/070_02_lca_lowIC_seed2_maskableppo_smoke2k/audits/070_02_ckpt2000_action_audit.csv"
+    },
+    "action_gates": {
+      "1000": {
+        "checkpoint": 1000,
+        "validation_rows": 10,
+        "daily_files_complete": true,
+        "audit_fields_complete": true,
+        "off_grid_rows": 0,
+        "requested_to_safe_mismatch_rows": 0,
+        "raw_to_safe_mismatch_rows": 0,
+        "safe_to_dssat_mismatch_rows": 0,
+        "unique_nonzero_action_pairs": 4,
+        "post_dap1_years": 10,
+        "crossyear_action_signature_count": 1,
+        "all_action_collapse": true,
+        "mechanism_pass": false
+      },
+      "2000": {
+        "checkpoint": 2000,
+        "validation_rows": 10,
+        "daily_files_complete": true,
+        "audit_fields_complete": true,
+        "off_grid_rows": 0,
+        "requested_to_safe_mismatch_rows": 0,
+        "raw_to_safe_mismatch_rows": 0,
+        "safe_to_dssat_mismatch_rows": 0,
+        "unique_nonzero_action_pairs": 5,
+        "post_dap1_years": 10,
+        "crossyear_action_signature_count": 1,
+        "all_action_collapse": true,
+        "mechanism_pass": false
+      }
+    },
+    "WP_ET_status": "not available from smoke summary; not inferred",
+    "stop_reason": "seed2 smoke only; no LC long training authorized"
+  }
+}

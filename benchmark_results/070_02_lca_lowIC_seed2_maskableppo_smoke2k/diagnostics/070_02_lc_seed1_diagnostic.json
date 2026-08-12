@@ -1,0 +1,100 @@
+{
+  "phase": "LC_read_only_seed1_vs_seed0",
+  "sources": {
+    "seed1_1k": "benchmark_results/069_01_lca_lowIC_seed1_maskableppo_smoke2k_rerun1/evaluation/042_10_checkpoint_validation_summary.csv",
+    "seed0_formal": "benchmark_results/053_00_lca_lowIC_expanded_action_maskableppo/evaluation/053_00_checkpoint_validation_summary.csv"
+  },
+  "gates_and_action_distribution_diagnostics": {
+    "seed1_1k_1000": {
+      "checkpoint": 1000,
+      "validation_rows": 10,
+      "daily_files_complete": true,
+      "audit_fields_complete": true,
+      "off_grid_rows": 0,
+      "requested_to_safe_mismatch_rows": 0,
+      "raw_to_safe_mismatch_rows": 0,
+      "safe_to_dssat_mismatch_rows": 0,
+      "unique_nonzero_action_pairs": 4,
+      "post_dap1_years": 10,
+      "crossyear_action_signature_count": 1,
+      "all_action_collapse": true,
+      "mechanism_pass": false
+    },
+    "seed1_1k_2000": {
+      "checkpoint": 2000,
+      "validation_rows": 10,
+      "daily_files_complete": true,
+      "audit_fields_complete": true,
+      "off_grid_rows": 0,
+      "requested_to_safe_mismatch_rows": 0,
+      "raw_to_safe_mismatch_rows": 0,
+      "safe_to_dssat_mismatch_rows": 0,
+      "unique_nonzero_action_pairs": 5,
+      "post_dap1_years": 10,
+      "crossyear_action_signature_count": 1,
+      "all_action_collapse": true,
+      "mechanism_pass": false
+    },
+    "seed0_formal_25000": {
+      "checkpoint": 25000,
+      "validation_rows": 10,
+      "daily_files_complete": true,
+      "audit_fields_complete": true,
+      "off_grid_rows": 0,
+      "requested_to_safe_mismatch_rows": 0,
+      "raw_to_safe_mismatch_rows": 0,
+      "safe_to_dssat_mismatch_rows": 0,
+      "unique_nonzero_action_pairs": 5,
+      "post_dap1_years": 10,
+      "crossyear_action_signature_count": 2,
+      "all_action_collapse": false,
+      "mechanism_pass": true
+    },
+    "seed0_formal_50000": {
+      "checkpoint": 50000,
+      "validation_rows": 10,
+      "daily_files_complete": true,
+      "audit_fields_complete": true,
+      "off_grid_rows": 0,
+      "requested_to_safe_mismatch_rows": 0,
+      "raw_to_safe_mismatch_rows": 0,
+      "safe_to_dssat_mismatch_rows": 0,
+      "unique_nonzero_action_pairs": 5,
+      "post_dap1_years": 10,
+      "crossyear_action_signature_count": 1,
+      "all_action_collapse": true,
+      "mechanism_pass": false
+    },
+    "seed0_formal_75000": {
+      "checkpoint": 75000,
+      "validation_rows": 10,
+      "daily_files_complete": true,
+      "audit_fields_complete": true,
+      "off_grid_rows": 0,
+      "requested_to_safe_mismatch_rows": 0,
+      "raw_to_safe_mismatch_rows": 0,
+      "safe_to_dssat_mismatch_rows": 0,
+      "unique_nonzero_action_pairs": 4,
+      "post_dap1_years": 10,
+      "crossyear_action_signature_count": 1,
+      "all_action_collapse": true,
+      "mechanism_pass": false
+    },
+    "seed0_formal_100000": {
+      "checkpoint": 100000,
+      "validation_rows": 10,
+      "daily_files_complete": true,
+      "audit_fields_complete": true,
+      "off_grid_rows": 0,
+      "requested_to_safe_mismatch_rows": 0,
+      "raw_to_safe_mismatch_rows": 0,
+      "safe_to_dssat_mismatch_rows": 0,
+      "unique_nonzero_action_pairs": 4,
+      "post_dap1_years": 10,
+      "crossyear_action_signature_count": 1,
+      "all_action_collapse": true,
+      "mechanism_pass": false
+    }
+  },
+  "note": "action_pair_entropy is empirical positive-action-pair entropy, not statewise policy entropy; daily CSV does not retain logits/probabilities."
+}

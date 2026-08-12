@@ -1,0 +1,140 @@
+{
+  "task": "070_00_sya_originIC_seed1_maskableppo_100k",
+  "which": "sy",
+  "output_root": "benchmark_results/070_00_sya_originIC_seed1_maskableppo_100k",
+  "input_root": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013",
+  "train_years": [
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013
+  ],
+  "validation_years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "config_ppo": {
+    "learning_rate": 0.0003,
+    "gamma": 1.0,
+    "gae_lambda": 1.0,
+    "n_steps": 144,
+    "batch_size": 144,
+    "n_epochs": 5,
+    "ent_coef": 0.01,
+    "clip_range": 0.2,
+    "net_arch": [
+      64,
+      64
+    ]
+  },
+  "issues": [],
+  "next_step_allowed": true,
+  "phase": "SY_seed1_resume_2k_to_100k",
+  "elapsed_s": 702.775210593998,
+  "effective_kwargs_from_loaded_2k_model": {
+    "learning_rate": 0.0003,
+    "gamma": 1.0,
+    "gae_lambda": 1.0,
+    "n_steps": 144,
+    "batch_size": 144,
+    "n_epochs": 5,
+    "ent_coef": 0.01,
+    "clip_range": 0.2,
+    "policy_net_widths": [
+      64,
+      64
+    ],
+    "value_net_widths": [
+      64,
+      64
+    ]
+  },
+  "checkpoints": [
+    25000,
+    50000,
+    75000,
+    100000
+  ],
+  "action_audits": {
+    "25000": "benchmark_results/070_00_sya_originIC_seed1_maskableppo_100k/audits/070_00_ckpt25000_action_audit.csv",
+    "50000": "benchmark_results/070_00_sya_originIC_seed1_maskableppo_100k/audits/070_00_ckpt50000_action_audit.csv",
+    "75000": "benchmark_results/070_00_sya_originIC_seed1_maskableppo_100k/audits/070_00_ckpt75000_action_audit.csv",
+    "100000": "benchmark_results/070_00_sya_originIC_seed1_maskableppo_100k/audits/070_00_ckpt100000_action_audit.csv"
+  },
+  "action_gates": {
+    "25000": {
+      "checkpoint": 25000,
+      "validation_rows": 10,
+      "daily_files_complete": true,
+      "audit_fields_complete": true,
+      "off_grid_rows": 0,
+      "requested_to_safe_mismatch_rows": 0,
+      "raw_to_safe_mismatch_rows": 0,
+      "safe_to_dssat_mismatch_rows": 0,
+      "unique_nonzero_action_pairs": 3,
+      "post_dap1_years": 10,
+      "crossyear_action_signature_count": 1,
+      "all_action_collapse": true,
+      "mechanism_pass": false
+    },
+    "50000": {
+      "checkpoint": 50000,
+      "validation_rows": 10,
+      "daily_files_complete": true,
+      "audit_fields_complete": true,
+      "off_grid_rows": 0,
+      "requested_to_safe_mismatch_rows": 0,
+      "raw_to_safe_mismatch_rows": 0,
+      "safe_to_dssat_mismatch_rows": 0,
+      "unique_nonzero_action_pairs": 4,
+      "post_dap1_years": 10,
+      "crossyear_action_signature_count": 1,
+      "all_action_collapse": true,
+      "mechanism_pass": false
+    },
+    "75000": {
+      "checkpoint": 75000,
+      "validation_rows": 10,
+      "daily_files_complete": true,
+      "audit_fields_complete": true,
+      "off_grid_rows": 0,
+      "requested_to_safe_mismatch_rows": 0,
+      "raw_to_safe_mismatch_rows": 0,
+      "safe_to_dssat_mismatch_rows": 0,
+      "unique_nonzero_action_pairs": 3,
+      "post_dap1_years": 10,
+      "crossyear_action_signature_count": 1,
+      "all_action_collapse": true,
+      "mechanism_pass": false
+    },
+    "100000": {
+      "checkpoint": 100000,
+      "validation_rows": 10,
+      "daily_files_complete": true,
+      "audit_fields_complete": true,
+      "off_grid_rows": 0,
+      "requested_to_safe_mismatch_rows": 0,
+      "raw_to_safe_mismatch_rows": 0,
+      "safe_to_dssat_mismatch_rows": 0,
+      "unique_nonzero_action_pairs": 5,
+      "post_dap1_years": 10,
+      "crossyear_action_signature_count": 2,
+      "all_action_collapse": false,
+      "mechanism_pass": true
+    }
+  },
+  "WP_ET_status": "not available from training summaries; five-scenario replay required"
+}

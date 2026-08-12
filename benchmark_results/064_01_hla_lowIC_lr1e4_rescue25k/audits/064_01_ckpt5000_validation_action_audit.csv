@@ -1,0 +1,11 @@
+﻿year,daily_csv_path,positive_actions,after_dap1_actions,off_grid_rows,requested_to_safe_changed_rows,raw_to_safe_changed_rows,safe_to_dssat_mismatch_rows,action_pairs
+2014,benchmark_results/064_01_hla_lowIC_lr1e4_rescue25k/daily_outputs/HLA/HLA_2014_seed0_ckpt5000_daily.csv,11,10,0,0,0,0,I0/N40;I30/N0;I45/N80
+2015,benchmark_results/064_01_hla_lowIC_lr1e4_rescue25k/daily_outputs/HLA/HLA_2015_seed0_ckpt5000_daily.csv,11,10,0,0,0,0,I0/N40;I30/N0;I45/N80
+2016,benchmark_results/064_01_hla_lowIC_lr1e4_rescue25k/daily_outputs/HLA/HLA_2016_seed0_ckpt5000_daily.csv,11,10,0,0,0,0,I0/N40;I30/N0;I45/N80
+2017,benchmark_results/064_01_hla_lowIC_lr1e4_rescue25k/daily_outputs/HLA/HLA_2017_seed0_ckpt5000_daily.csv,11,10,0,0,0,0,I0/N40;I30/N0;I45/N80
+2018,benchmark_results/064_01_hla_lowIC_lr1e4_rescue25k/daily_outputs/HLA/HLA_2018_seed0_ckpt5000_daily.csv,11,10,0,0,0,0,I0/N40;I30/N0;I45/N80
+2019,benchmark_results/064_01_hla_lowIC_lr1e4_rescue25k/daily_outputs/HLA/HLA_2019_seed0_ckpt5000_daily.csv,11,10,0,0,0,0,I0/N40;I30/N0;I45/N80
+2020,benchmark_results/064_01_hla_lowIC_lr1e4_rescue25k/daily_outputs/HLA/HLA_2020_seed0_ckpt5000_daily.csv,11,10,0,0,0,0,I0/N40;I30/N0;I45/N80
+2021,benchmark_results/064_01_hla_lowIC_lr1e4_rescue25k/daily_outputs/HLA/HLA_2021_seed0_ckpt5000_daily.csv,11,10,0,0,0,0,I0/N40;I30/N0;I45/N80
+2022,benchmark_results/064_01_hla_lowIC_lr1e4_rescue25k/daily_outputs/HLA/HLA_2022_seed0_ckpt5000_daily.csv,11,10,0,0,0,0,I0/N40;I30/N0;I45/N80
+2023,benchmark_results/064_01_hla_lowIC_lr1e4_rescue25k/daily_outputs/HLA/HLA_2023_seed0_ckpt5000_daily.csv,11,10,0,0,0,0,I0/N40;I30/N0;I45/N80

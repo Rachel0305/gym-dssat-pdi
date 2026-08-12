@@ -1,0 +1,11 @@
+﻿year,daily_csv_path,daily_exists,missing_required_columns,null_required_field_rows,off_grid_rows,requested_to_safe_mismatch_rows,raw_to_safe_mismatch_rows,safe_to_dssat_mismatch_rows,positive_actions,after_dap1_actions,action_signature
+2014,benchmark_results/069_01_lca_lowIC_seed1_maskableppo_smoke2k_rerun1/daily_outputs/LCA/LCA_2014_seed1_ckpt2000_daily.csv,True,,0,0,0,0,0,10,9,I0/N40;I0/N80;I15/N0;I30/N120;I45/N0
+2015,benchmark_results/069_01_lca_lowIC_seed1_maskableppo_smoke2k_rerun1/daily_outputs/LCA/LCA_2015_seed1_ckpt2000_daily.csv,True,,0,0,0,0,0,10,9,I0/N40;I0/N80;I15/N0;I30/N120;I45/N0
+2016,benchmark_results/069_01_lca_lowIC_seed1_maskableppo_smoke2k_rerun1/daily_outputs/LCA/LCA_2016_seed1_ckpt2000_daily.csv,True,,0,0,0,0,0,10,9,I0/N40;I0/N80;I15/N0;I30/N120;I45/N0
+2017,benchmark_results/069_01_lca_lowIC_seed1_maskableppo_smoke2k_rerun1/daily_outputs/LCA/LCA_2017_seed1_ckpt2000_daily.csv,True,,0,0,0,0,0,10,9,I0/N40;I0/N80;I15/N0;I30/N120;I45/N0
+2018,benchmark_results/069_01_lca_lowIC_seed1_maskableppo_smoke2k_rerun1/daily_outputs/LCA/LCA_2018_seed1_ckpt2000_daily.csv,True,,0,0,0,0,0,11,10,I0/N40;I0/N80;I15/N0;I30/N120;I45/N0
+2019,benchmark_results/069_01_lca_lowIC_seed1_maskableppo_smoke2k_rerun1/daily_outputs/LCA/LCA_2019_seed1_ckpt2000_daily.csv,True,,0,0,0,0,0,10,9,I0/N40;I0/N80;I15/N0;I30/N120;I45/N0
+2020,benchmark_results/069_01_lca_lowIC_seed1_maskableppo_smoke2k_rerun1/daily_outputs/LCA/LCA_2020_seed1_ckpt2000_daily.csv,True,,0,0,0,0,0,11,10,I0/N40;I0/N80;I15/N0;I30/N120;I45/N0
+2021,benchmark_results/069_01_lca_lowIC_seed1_maskableppo_smoke2k_rerun1/daily_outputs/LCA/LCA_2021_seed1_ckpt2000_daily.csv,True,,0,0,0,0,0,10,9,I0/N40;I0/N80;I15/N0;I30/N120;I45/N0
+2022,benchmark_results/069_01_lca_lowIC_seed1_maskableppo_smoke2k_rerun1/daily_outputs/LCA/LCA_2022_seed1_ckpt2000_daily.csv,True,,0,0,0,0,0,10,9,I0/N40;I0/N80;I15/N0;I30/N120;I45/N0
+2023,benchmark_results/069_01_lca_lowIC_seed1_maskableppo_smoke2k_rerun1/daily_outputs/LCA/LCA_2023_seed1_ckpt2000_daily.csv,True,,0,0,0,0,0,10,9,I0/N40;I0/N80;I15/N0;I30/N120;I45/N0

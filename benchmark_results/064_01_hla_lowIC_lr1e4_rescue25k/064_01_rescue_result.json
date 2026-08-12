@@ -1,0 +1,159 @@
+{
+  "effective_ppo": {
+    "learning_rate": 0.0001,
+    "gamma": 1.0,
+    "gae_lambda": 1.0,
+    "n_steps": 144,
+    "batch_size": 144,
+    "n_epochs": 5,
+    "ent_coef": 0.01,
+    "clip_range": 0.2,
+    "net_arch": [
+      64,
+      64
+    ]
+  },
+  "input_root": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013_lowIC_manual",
+  "source_mzx": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013_lowIC_manual/HL/CNHL0701_corrected_IC123.MZX",
+  "issues": [],
+  "next_step_allowed": false,
+  "mode": "completed_rescue25k",
+  "output_root": "benchmark_results/064_01_hla_lowIC_lr1e4_rescue25k",
+  "effective_yaml": "configs/064_01_effective_lr1e4_ppo_config.yaml",
+  "checkpoint_results": [
+    {
+      "checkpoint_step": 5000,
+      "validation_metrics_mean": {
+        "final_grnwt": 6818.55078125,
+        "total_irrigation": 225.0,
+        "total_n": 240.0,
+        "PFP_N": 28.41062825520833
+      },
+      "WP_ET_status": "not_available_in_25K_training_validation_summary; not inferred",
+      "action_gate": {
+        "validation_rows": 10,
+        "off_grid_rows": 0,
+        "safe_to_dssat_mismatch_rows": 0,
+        "unique_nonzero_action_pairs": 3,
+        "mean_after_dap1_actions": 10.0,
+        "crossyear_action_signature_count": 1,
+        "mechanism_pass": false
+      },
+      "action_audit": "benchmark_results/064_01_hla_lowIC_lr1e4_rescue25k/audits/064_01_ckpt5000_validation_action_audit.csv",
+      "effective_kwargs_from_loaded_model": {
+        "learning_rate": 0.0001,
+        "gamma": 1.0,
+        "gae_lambda": 1.0,
+        "n_steps": 144,
+        "batch_size": 144,
+        "n_epochs": 5,
+        "ent_coef": 0.01,
+        "clip_range": "FloatSchedule(ConstantSchedule(val=0.2))",
+        "policy_kwargs": {
+          "net_arch": [
+            64,
+            64
+          ]
+        },
+        "policy_net_widths": [
+          64,
+          64
+        ],
+        "value_net_widths": [
+          64,
+          64
+        ]
+      }
+    },
+    {
+      "checkpoint_step": 10000,
+      "validation_metrics_mean": {
+        "final_grnwt": 6818.526672363281,
+        "total_irrigation": 225.0,
+        "total_n": 240.0,
+        "PFP_N": 28.410527801513673
+      },
+      "WP_ET_status": "not_available_in_25K_training_validation_summary; not inferred",
+      "action_gate": {
+        "validation_rows": 10,
+        "off_grid_rows": 0,
+        "safe_to_dssat_mismatch_rows": 0,
+        "unique_nonzero_action_pairs": 4,
+        "mean_after_dap1_actions": 9.0,
+        "crossyear_action_signature_count": 1,
+        "mechanism_pass": false
+      },
+      "action_audit": "benchmark_results/064_01_hla_lowIC_lr1e4_rescue25k/audits/064_01_ckpt10000_validation_action_audit.csv",
+      "effective_kwargs_from_loaded_model": {
+        "learning_rate": 0.0001,
+        "gamma": 1.0,
+        "gae_lambda": 1.0,
+        "n_steps": 144,
+        "batch_size": 144,
+        "n_epochs": 5,
+        "ent_coef": 0.01,
+        "clip_range": "FloatSchedule(ConstantSchedule(val=0.2))",
+        "policy_kwargs": {
+          "net_arch": [
+            64,
+            64
+          ]
+        },
+        "policy_net_widths": [
+          64,
+          64
+        ],
+        "value_net_widths": [
+          64,
+          64
+        ]
+      }
+    },
+    {
+      "checkpoint_step": 25000,
+      "validation_metrics_mean": {
+        "final_grnwt": 6824.860656738281,
+        "total_irrigation": 225.0,
+        "total_n": 240.0,
+        "PFP_N": 28.43691940307617
+      },
+      "WP_ET_status": "not_available_in_25K_training_validation_summary; not inferred",
+      "action_gate": {
+        "validation_rows": 10,
+        "off_grid_rows": 0,
+        "safe_to_dssat_mismatch_rows": 0,
+        "unique_nonzero_action_pairs": 7,
+        "mean_after_dap1_actions": 8.1,
+        "crossyear_action_signature_count": 2,
+        "mechanism_pass": true
+      },
+      "action_audit": "benchmark_results/064_01_hla_lowIC_lr1e4_rescue25k/audits/064_01_ckpt25000_validation_action_audit.csv",
+      "effective_kwargs_from_loaded_model": {
+        "learning_rate": 0.0001,
+        "gamma": 1.0,
+        "gae_lambda": 1.0,
+        "n_steps": 144,
+        "batch_size": 144,
+        "n_epochs": 5,
+        "ent_coef": 0.01,
+        "clip_range": "FloatSchedule(ConstantSchedule(val=0.2))",
+        "policy_kwargs": {
+          "net_arch": [
+            64,
+            64
+          ]
+        },
+        "policy_net_widths": [
+          64,
+          64
+        ],
+        "value_net_widths": [
+          64,
+          64
+        ]
+      }
+    }
+  ],
+  "training_year_action_diversity": "not_exported_by_inherited_engine; not estimated",
+  "rescue_mechanism_pass_at_25k": true
+}

@@ -1,0 +1,11 @@
+{
+  "task": "032_22_five_site_half_split_stress_aware_maskableppo_batch",
+  "record_md": "docs/069_00_sya_originIC_seed1_maskableppo_smoke2k_rerun1_record.md",
+  "train_inventory": "benchmark_results/069_00_sya_originIC_seed1_maskableppo_smoke2k_rerun1/evaluation/032_22_training_checkpoint_inventory.csv",
+  "validation_summary": "benchmark_results/069_00_sya_originIC_seed1_maskableppo_smoke2k_rerun1/evaluation/032_22_checkpoint_validation_summary.csv",
+  "by_station": "benchmark_results/069_00_sya_originIC_seed1_maskableppo_smoke2k_rerun1/evaluation/032_22_validation_summary_by_station_checkpoint.csv",
+  "stations": [
+    "SYA"
+  ],
+  "total_timesteps_per_station": 2000
+}

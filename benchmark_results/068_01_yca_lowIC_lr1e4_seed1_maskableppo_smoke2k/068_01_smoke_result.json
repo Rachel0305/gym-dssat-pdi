@@ -1,0 +1,130 @@
+{
+  "task": "068_01_yca_lowIC_lr1e4_seed1_maskableppo_smoke2k",
+  "station_code": "YCA",
+  "site": "YC",
+  "seed": 1,
+  "input_root": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013_lowIC_manual",
+  "source_mzx": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013_lowIC_manual/YC/CNYC0801.MZX",
+  "train_years": [
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013
+  ],
+  "validation_years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "action_grid": {
+    "irrigation_levels_mm": [
+      0.0,
+      15.0,
+      30.0,
+      45.0
+    ],
+    "nitrogen_levels_kg_ha": [
+      0.0,
+      40.0,
+      80.0,
+      120.0
+    ]
+  },
+  "observation_contract": {
+    "base": "046_02_raw_observation",
+    "normalization_enabled": false,
+    "weather_forecast_enabled": false
+  },
+  "effective_ppo": {
+    "learning_rate": 0.0001,
+    "gamma": 1.0,
+    "gae_lambda": 1.0,
+    "n_steps": 144,
+    "batch_size": 144,
+    "n_epochs": 5,
+    "ent_coef": 0.01,
+    "clip_range": 0.2,
+    "net_arch": [
+      64,
+      64
+    ]
+  },
+  "output_root": "benchmark_results/068_01_yca_lowIC_lr1e4_seed1_maskableppo_smoke2k",
+  "issues": [],
+  "next_step_allowed": false,
+  "phase": "smoke",
+  "elapsed_s": 107.29479547299707,
+  "rss_delta_bytes": 144707584,
+  "effective_yaml": "configs/068_effective_yca_seed1_smoke.yaml",
+  "effective_kwargs_from_loaded_model": {
+    "learning_rate": 0.0001,
+    "gamma": 1.0,
+    "gae_lambda": 1.0,
+    "n_steps": 144,
+    "batch_size": 144,
+    "n_epochs": 5,
+    "ent_coef": 0.01,
+    "clip_range": "FloatSchedule(ConstantSchedule(val=0.2))",
+    "policy_net_widths": [
+      64,
+      64
+    ],
+    "value_net_widths": [
+      64,
+      64
+    ]
+  },
+  "action_audits": {
+    "1000": "benchmark_results/068_01_yca_lowIC_lr1e4_seed1_maskableppo_smoke2k/audits/068_01_ckpt1000_action_audit.csv",
+    "2000": "benchmark_results/068_01_yca_lowIC_lr1e4_seed1_maskableppo_smoke2k/audits/068_01_ckpt2000_action_audit.csv"
+  },
+  "action_gates": {
+    "1000": {
+      "checkpoint": 1000,
+      "validation_years_expected": 10,
+      "validation_rows": 10,
+      "daily_files_complete": true,
+      "audit_fields_complete": true,
+      "off_grid_rows": 0,
+      "requested_to_safe_mismatch_rows": 0,
+      "raw_to_safe_mismatch_rows": 0,
+      "safe_to_dssat_mismatch_rows": 0,
+      "unique_nonzero_action_pairs": 6,
+      "post_dap1_years": 10,
+      "crossyear_action_signature_count": 1,
+      "all_action_collapse": true,
+      "mechanism_pass": false
+    },
+    "2000": {
+      "checkpoint": 2000,
+      "validation_years_expected": 10,
+      "validation_rows": 10,
+      "daily_files_complete": true,
+      "audit_fields_complete": true,
+      "off_grid_rows": 0,
+      "requested_to_safe_mismatch_rows": 0,
+      "raw_to_safe_mismatch_rows": 0,
+      "safe_to_dssat_mismatch_rows": 0,
+      "unique_nonzero_action_pairs": 5,
+      "post_dap1_years": 10,
+      "crossyear_action_signature_count": 1,
+      "all_action_collapse": true,
+      "mechanism_pass": false
+    }
+  },
+  "WP_ET_status": "not_available_from_training summaries; not inferred",
+  "stop_reason": "smoke gate failed"
+}

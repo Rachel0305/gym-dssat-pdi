@@ -1,0 +1,129 @@
+{
+  "task": "152E3_sya_originIC_dual_branch_noforecast_control_5k_seed0",
+  "station_code": "SYA",
+  "site": "SY",
+  "input_profile": "originIC",
+  "resolved_input_root": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013",
+  "source_mzx": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013/SY/CNSY1201.MZX",
+  "config_train_years": [
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013
+  ],
+  "config_validation_years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "engine_train_years": [
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013
+  ],
+  "engine_validation_years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "reference_run": "143E2_sya_originIC_dual_branch_weather_reader_5k",
+  "observation_contract": {
+    "base": "046_02_raw_observation",
+    "normalization_enabled": false,
+    "weather_forecast_enabled": false,
+    "weather_forecast_mode": "matched_architecture_zero_weather_control",
+    "weather_forecast_note": "Keep E2 dual-branch input width, but set all 12 weather-branch values to zero at every decision."
+  },
+  "forecast_features": [
+    "rain_next1_norm",
+    "rain_next3_norm",
+    "rain_next7_norm",
+    "rain_max_next7_norm",
+    "rain_days_next7_norm",
+    "first_rain_lead_norm",
+    "tmax_mean_next7_norm",
+    "tmax_max_next7_norm",
+    "tmin_mean_next7_norm",
+    "srad_mean_next7_norm",
+    "valid_days_next7_norm",
+    "dry_spell_next7_flag"
+  ],
+  "irrigation_levels_mm": [
+    0.0,
+    15.0,
+    30.0,
+    45.0
+  ],
+  "nitrogen_levels_kg_ha": [
+    0.0,
+    40.0,
+    80.0,
+    120.0
+  ],
+  "combined_action_count": 16,
+  "issues": [],
+  "next_step_allowed": true,
+  "mode": "formal_train_and_validate",
+  "output_root": "benchmark_results/152E3_sya_originIC_dual_branch_noforecast_control_5k_seed0",
+  "manifest": "benchmark_results/152E3_sya_originIC_dual_branch_noforecast_control_5k_seed0/152E3_run_manifest.json",
+  "record_md": "docs/152E3_sya_originIC_dual_branch_noforecast_control_5k_seed0_record.md",
+  "observation_smoke_csv": "benchmark_results/152E3_sya_originIC_dual_branch_noforecast_control_5k_seed0/audits/152E3_forecast_observation_smoke.csv",
+  "forecast_calendar_audit_csv": "benchmark_results/152E3_sya_originIC_dual_branch_noforecast_control_5k_seed0/audits/152E3_zero_weather_calendar_audit.csv",
+  "action_forecast_audit_path": "benchmark_results/152E3_sya_originIC_dual_branch_noforecast_control_5k_seed0/audits/152E3_formal_action_forecast_audit.csv",
+  "action_forecast_gate": {
+    "final_checkpoint": 5000,
+    "expected_validation_rows": 10,
+    "observed_validation_rows": 10,
+    "all_daily_files_exist": true,
+    "all_actions_on_declared_grid": true,
+    "positive_actions_present": true,
+    "not_all_positive_actions_at_dap1": true,
+    "zero_weather_columns_present_and_all_zero": true,
+    "next_step_allowed": true
+  },
+  "smoke_verification": {
+    "smoke_result_exists": true,
+    "smoke_manifest_exists": true,
+    "smoke_status_completed": true,
+    "smoke_gate_passed": true,
+    "smoke_timesteps_match": true,
+    "smoke_checkpoints_match": true,
+    "smoke_input_profile_match": true,
+    "smoke_station_match": true,
+    "smoke_actions_match": true,
+    "smoke_forecast_features_match": true,
+    "smoke_output_root": "benchmark_results/152E3_sya_originIC_dual_branch_noforecast_control_5k_seed0_smoke2k",
+    "next_step_allowed": true
+  },
+  "e3_control": {
+    "changed_factor": "weather_signal_zeroed_only_with_E2_dual_branch_architecture",
+    "reward_changed": false,
+    "action_evaluation_changed": false,
+    "next_step_allowed": true
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "task_id": "142E2",
+  "task_name": "sya_originIC_dual_branch_weather_reader",
+  "reference_run": "141E1_sya_originIC_actionable_weather_encoding_smoke2k",
+  "station_code": "SYA",
+  "site": "SY",
+  "input_profile": "originIC",
+  "seed": 0,
+  "report_checkpoint": 2000,
+  "training": {"total_timesteps": 2000, "checkpoint_steps": [1000, 2000]},
+  "actions": {
+    "irrigation_levels_mm": [0.0, 15.0, 30.0, 45.0],
+    "nitrogen_levels_kg_ha": [0.0, 40.0, 80.0, 120.0]
+  },
+  "observation_contract": {
+    "base": "046_02_raw_observation",
+    "normalization_enabled": false,
+    "weather_forecast_enabled": true,
+    "weather_forecast_mode": "rolling_7d_actionable_prefix_encoding",
+    "weather_forecast_note": "Identical to E1: bounded timing-aware 1/3/7-day rainfall and 7-day weather summaries from date+1 through date+7."
+  },
+  "forecast_features": {
+    "enabled": true,
+    "include_today_in_future_windows": false,
+    "source": "historical_WTH_as_perfect_rolling_7d_forecast",
+    "feature_names": [
+      "rain_next1_norm",
+      "rain_next3_norm",
+      "rain_next7_norm",
+      "rain_max_next7_norm",
+      "rain_days_next7_norm",
+      "first_rain_lead_norm",
+      "tmax_mean_next7_norm",
+      "tmax_max_next7_norm",
+      "tmin_mean_next7_norm",
+      "srad_mean_next7_norm",
+      "valid_days_next7_norm",
+      "dry_spell_next7_flag"
+    ],
+    "raw_feature_names": [
+      "rain_next1_mm",
+      "rain_next3_mm",
+      "rain_next7_mm",
+      "rain_max_next7_mm",
+      "rain_days_next7",
+      "first_rain_lead_days",
+      "tmax_mean_next7_c",
+      "tmax_max_next7_c",
+      "tmin_mean_next7_c",
+      "srad_mean_next7_mj_m2",
+      "valid_days_next7",
+      "dry_spell_next7_flag"
+    ],
+    "scales": {
+      "rain_next1_mm": 45.0,
+      "rain_next3_mm": 90.0,
+      "rain_next7_mm": 160.0,
+      "rain_max_next7_mm": 60.0,
+      "rain_day_threshold_mm": 1.0,
+      "dry_spell_next7_mm": 5.0,
+      "tmax_center_c": 30.0,
+      "tmax_scale_c": 10.0,
+      "tmin_center_c": 20.0,
+      "tmin_scale_c": 10.0,
+      "srad_center_mj_m2": 20.0,
+      "srad_scale_mj_m2": 10.0,
+      "clip_abs": 2.0
+    }
+  },
+  "policy_architecture": {
+    "name": "dual_branch_base_weather_layernorm",
+    "base_observation_dim": 25,
+    "weather_observation_dim": 12,
+    "base_latent_dim": 64,
+    "weather_latent_dim": 32,
+    "combined_features_dim": 96,
+    "branch_activation": "Tanh",
+    "branch_normalization": "LayerNorm",
+    "downstream_net_arch": [64, 64]
+  },
+  "scope": {
+    "train_years": [2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013],
+    "validation_years": [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023],
+    "reward_and_safety": "inherit_046_02_unchanged",
+    "external_n": false,
+    "native_dssat_automatic_irrigation": false,
+    "purpose": "E2 changes only how the unchanged E1 observation is read by the policy network."
+  },
+  "execution_policy": {
+    "smoke_only_now": true,
+    "five_k_requires_new_user_authorization": true,
+    "no_25k_50k_75k_100k": true
+  },
+  "prompt": "prompts/2026-08-16_sya_E2_dual_branch_weather_reader_smoke2k.md"
+}

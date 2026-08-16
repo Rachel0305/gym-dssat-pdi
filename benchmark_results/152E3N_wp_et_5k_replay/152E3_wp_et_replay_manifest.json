@@ -1,0 +1,32 @@
+{
+  "task": "152E3N_wp_et_5k_replay",
+  "scope": "SYA originIC validation years 2014-2023; frozen checkpoint 5000; serial DSSAT replay",
+  "policies": [
+    "e3_s0"
+  ],
+  "years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "rows_completed": 10,
+  "failures": [],
+  "summary_csv": "benchmark_results/152E3N_wp_et_5k_replay/152E3_wp_et_replay_summary.csv",
+  "by_year_csv": "benchmark_results/152E3N_wp_et_5k_replay/152E3_wp_et_replay_by_year.csv",
+  "reproducibility_csv": "benchmark_results/152E3N_wp_et_5k_replay/152E3_wp_et_replay_reproducibility_check.csv",
+  "paired_by_year_csv": "benchmark_results/152E3N_wp_et_5k_replay/151_wp_et_paired_forecast_noforecast_by_year.csv",
+  "paired_summary_csv": "benchmark_results/152E3N_wp_et_5k_replay/151_wp_et_paired_forecast_noforecast_summary.csv",
+  "four_baseline_summary_csv": "benchmark_results/152E3N_wp_et_5k_replay/151_wp_et_vs_four_baselines_summary.csv",
+  "four_baseline_max_win_summary_csv": "benchmark_results/152E3N_wp_et_5k_replay/151_wp_et_four_baseline_max_win_summary.csv",
+  "report_md": "benchmark_results/152E3N_wp_et_5k_replay/2026-08-16_sya_E3_wp_et_5k_replay.md",
+  "metric_definition": "WP_ET_kg_m3 = YPEM*0.1 when valid, otherwise HWAM/(ETCP*10); ETCP in mm",
+  "no_training": true,
+  "policy": "e3_s0"
+}

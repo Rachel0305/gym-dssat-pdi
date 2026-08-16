@@ -1,0 +1,9 @@
+{
+  "rows": 60,
+  "max_abs_diff": {
+    "yield_abs_diff_vs_original": 0.0,
+    "irrigation_abs_diff_vs_original": 0.0,
+    "n_abs_diff_vs_original": 0.0
+  },
+  "action_sequence_all_match": true
+}

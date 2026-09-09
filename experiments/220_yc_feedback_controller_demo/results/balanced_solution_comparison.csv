@@ -1,0 +1,5 @@
+﻿comparison_case,data_status,grain_yield_kg_ha,total_nitrogen_kg_ha,total_irrigation_mm,note
+balanced_controller,simulated_DSSAT,7399.3408203125,96.0,150.0,single-year controller candidate; not a field measurement
+official_extension_expert,simulated_DSSAT_reference,7453.509521484375,247.5,198.75,used for simulated yield constraint; not field measured
+recorded_farmer_template,template_simulation_not_year_specific,6557.869873046875,470.0,120.0,"template reused, not validated YC2019 field measurement"
+field_measured,unavailable,,,,no independent YC2019 field-measured record was found; normalized Euclidean comparison not computed

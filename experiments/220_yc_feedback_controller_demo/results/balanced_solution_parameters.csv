@@ -1,0 +1,13 @@
+﻿parameter,value,role,unit_or_semantics
+n_threshold,0.1755531516998298,optimized,stress index
+n_dose,20.0,optimized,kg N/ha
+n_min_interval_days,8.0,optimized,DAP
+n_season_budget,250.0,optimized,kg N/ha
+n_start_dap,7.0,fixed,DAP
+n_stop_dap,90.0,fixed,DAP
+water_threshold,0.1381251647646606,optimized,stress index
+irrigation_dose,50.0,optimized,mm
+irrigation_min_interval_days,9.0,optimized,DAP
+irrigation_season_budget,180.0,optimized,mm
+irrigation_start_dap,7.0,fixed,DAP
+irrigation_stop_dap,90.0,fixed,DAP

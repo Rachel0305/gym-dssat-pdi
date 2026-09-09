@@ -1,0 +1,108 @@
+{
+  "task": "221YCA_yc_ppo_domain_augmentation",
+  "reference_run": "055_00_yca_lowIC_expanded_action_maskableppo",
+  "source_input_root": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013_lowIC_manual",
+  "augmented_input_root": "DSSAT_auto_validation/yca_lowIC_weather_scenario_bank_217_v1_fixed_width",
+  "source_manifest": "benchmark_results/217YCA_yca_lowIC_weather_scenario_bank_v1_fixed_width/217YCA_weather_scenario_manifest.csv",
+  "train_source_years": [
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013
+  ],
+  "train_scenario_rows": 60,
+  "train_variant_counts": {
+    "early_dry": 10,
+    "early_wet": 10,
+    "late_dry": 10,
+    "mid_dry": 10,
+    "mid_wet": 10,
+    "original": 10
+  },
+  "validation_original_years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "validation_hash_mismatch_rows": 0,
+  "unique_training_target_wth": 60,
+  "actions": {
+    "irrigation_levels_mm": [
+      0.0,
+      15.0,
+      30.0,
+      45.0
+    ],
+    "nitrogen_levels_kg_ha": [
+      0.0,
+      40.0,
+      80.0,
+      120.0
+    ]
+  },
+  "observation_contract": {
+    "base": "046_02_raw_observation",
+    "normalization_enabled": false,
+    "weather_forecast_enabled": false
+  },
+  "reward_and_safety": "055_00/040_36/042_10 unchanged",
+  "runtime_safety": {
+    "environment_cache_limit": 2,
+    "memory_warning_mb": 1536,
+    "memory_stop_mb": 2048,
+    "single_process_training": true,
+    "device": "cpu",
+    "scenario_sampler": "balanced_shuffled_cycle_without_replacement",
+    "cycle_definition": "each 60-episode cycle visits every source_year_x_variant pair exactly once"
+  },
+  "code_sha256": {
+    "src/run_sya_lowIC_binary_timing_maskableppo_042_10.py": "8ec856b4cadbb01a26de8fb87e681393f43916244c124f86a21368910679a16c",
+    "src/run_five_site_half_split_stress_aware_maskableppo_batch_032_22.py": "b79e024168fdcae75edc193e747ca4de72a79d32b2965baf71c018b6456ef0b8",
+    "src/run_all_year_direct_action_safe_ppo.py": "8fbd6f5a5d9772faa791b6d3ebb692249b0f7cf4f8513fab5e08190a74903074",
+    "src/ppo_safe_rendering.py": "0714deea114c3fdb029baf1210a1a09e650f4418ef6aa52dfc9e90de2a4e15cd",
+    "src/054_hla_lowIC_site_transfer/run_054_00_hla_lowIC_expanded_action_maskableppo.py": "707e7c2b4ea7f59fe10b1eee8406e090d803b5dfba958c937673ca37c3b549fa",
+    "src/weather_scenario_bank_160.py": "d4acd414d4f887256c70a63c457f2e13cdf876304ad84b0a341a3dbc4e736477",
+    "src/build_202HLA_hla_lowIC_weather_scenario_bank.py": "23cc71c3a45034aa94901ec0ae3d3bfee08566f626d26c25880aaa36abcc8797",
+    "src/run_203HLA_hla_lowIC_10y_six_weather_aug_maskableppo.py": "49ab8926b7e8f2788d2f7c6c273bc28bfd5aa03ccfeeec061142c34826c55cd7",
+    "experiments/221_yc_ppo_domain_augmentation/scripts/run_221YCA_yc_ppo_domain_augmentation.py": "62dbd686cd34b3ba8dadf835598f605a16b6bed66a394a2cc134dad16b1c04cc",
+    "experiments/221_yc_ppo_domain_augmentation/configs/221YCA_yc_ppo_domain_augmentation.json": "50a968e0c43ebc6f69f0790633b3fca3c495c2e264675ca4b888346e8b6983b9",
+    "prompt_01/002_codex_prompt_yc_ppo_domain_augmentation.md": "14f9a85232870e072766d52f817013375a11e49c4aafd344e2f2ec1fe339c682",
+    "benchmark_results/217YCA_yca_lowIC_weather_scenario_bank_v1_fixed_width/217YCA_weather_scenario_manifest.csv": "2c9e658983ec2fc828a3f4c462fcac2dcc10cfdc49bb39a9413e261972989b1e",
+    "benchmark_results/217YCA_yca_lowIC_weather_physical_gate/217YCA_result.json": "58b5d79f5c65ed404fd1b447b9321d2f3720b090a9d18c420af4d91f25d19c0f"
+  },
+  "issues": [],
+  "next_step_allowed": true,
+  "station_mapping": {
+    "station_code": "YCA",
+    "site": "YC",
+    "short_input_dir": "YC"
+  },
+  "paired_baseline_alias": "benchmark_results/221YCA_paired_baseline_055_00_alias/evaluation/054_00_checkpoint_validation_summary.csv",
+  "paired_baseline_source": "benchmark_results/055_00_yca_lowIC_expanded_action_maskableppo/evaluation/055_00_checkpoint_validation_summary.csv",
+  "augmentation_factor": "training-domain diversity only",
+  "required_physical_gate": "benchmark_results/217YCA_yca_lowIC_weather_physical_gate/217YCA_result.json",
+  "physical_gate": {
+    "all_six_scenarios_completed": true,
+    "all_weather_log_rain_matches_wth_within_2mm": true,
+    "all_scenarios_matured": true,
+    "all_scenarios_positive_yield": true,
+    "physical_yield_response_detected": true,
+    "old_055_policy_action_response_detected": false,
+    "allow_2k_smoke": true
+  },
+  "ic_profile": "lowIC only; originIC not mixed",
+  "cultivar": "ZD0985 only; genotype randomization skipped"
+}

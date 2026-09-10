@@ -1,0 +1,7 @@
+﻿criterion,observed,threshold,pass,reference
+3-seed mean Yield >= 98% expert,7076.3,8036.543474121094,False,"official_extension_expert, 2014-2023"
+Each seed mean Yield >= 95% expert,6024.5,7790.526837158202,False,"official_extension_expert, 2014-2023"
+3-seed mean irrigation <= 110% expert,113.5,232.10000000000002,True,"official_extension_expert, 2014-2023"
+3-seed mean N <= 100% expert,146.66666666666666,245.0,True,"official_extension_expert, 2014-2023"
+3-seed mean PFP-N >= 100% expert,55.95666666666667,33.480000000000004,True,"official_extension_expert, 2014-2023"
+3-seed mean WP_ET >= 95% expert,2.045666666666667,2.17835,False,"official_extension_expert, 2014-2023"

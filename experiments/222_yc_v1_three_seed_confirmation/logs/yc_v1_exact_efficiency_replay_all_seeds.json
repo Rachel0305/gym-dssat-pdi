@@ -1,0 +1,37 @@
+{
+  "task": "yc_v1_exact_efficiency_replay",
+  "phase": "full_three_seeds",
+  "policies": [
+    "Original_seed0",
+    "Augmented_seed0",
+    "Original_seed1",
+    "Augmented_seed1",
+    "Original_seed2",
+    "Augmented_seed2"
+  ],
+  "checkpoints": [
+    25000,
+    50000,
+    75000,
+    100000
+  ],
+  "years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "rows_completed": 240,
+  "rows_expected": 240,
+  "failures": [],
+  "output_csv": "experiments/222_yc_v1_three_seed_confirmation/results/yc_v1_exact_efficiency_replay_all_seeds.csv",
+  "metric_definition": "WP_ET = YPEM*0.1 when valid, otherwise HWAM/(ETCP*10); ETCP is Summary.OUT ETCP in mm; PFP_N = YPNAM when NICM > 0.",
+  "source_engine": "src/055_yca_lowIC_site_transfer/run_055_03_yca_lowIC_five_scenario_figures.py",
+  "read_only_replay": true
+}

@@ -1,0 +1,25 @@
+{
+  "task": "yc_v1_exact_efficiency_replay",
+  "phase": "smoke",
+  "policies": [
+    "Original_seed0",
+    "Augmented_seed0",
+    "Original_seed1",
+    "Augmented_seed1",
+    "Original_seed2",
+    "Augmented_seed2"
+  ],
+  "checkpoints": [
+    25000
+  ],
+  "years": [
+    2014
+  ],
+  "rows_completed": 6,
+  "rows_expected": 6,
+  "failures": [],
+  "output_csv": "experiments/222_yc_v1_three_seed_confirmation/results/yc_v1_exact_efficiency_replay_smoke.csv",
+  "metric_definition": "WP_ET = YPEM*0.1 when valid, otherwise HWAM/(ETCP*10); ETCP is Summary.OUT ETCP in mm; PFP_N = YPNAM when NICM > 0.",
+  "source_engine": "src/055_yca_lowIC_site_transfer/run_055_03_yca_lowIC_five_scenario_figures.py",
+  "read_only_replay": true
+}

@@ -1,0 +1,165 @@
+{
+  "task_id": "222YCA_A2",
+  "task_name": "yc_v1_augmented_seed2",
+  "reference_run": "055_00_yca_lowIC_expanded_action_maskableppo",
+  "reference_framework": "055_00_via_040_36_042_10_032_22",
+  "station_code": "YCA",
+  "site": "YC",
+  "input_profile": "lowIC",
+  "seed": 2,
+  "source_manifest": "benchmark_results/217YCA_yca_lowIC_weather_scenario_bank_v1_fixed_width/217YCA_weather_scenario_manifest.csv",
+  "input_root": "DSSAT_auto_validation/yca_lowIC_weather_scenario_bank_217_v1_fixed_width",
+  "source_input_root": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013_lowIC_manual",
+  "required_physical_gate": "benchmark_results/217YCA_yca_lowIC_weather_physical_gate/217YCA_result.json",
+  "report_checkpoint": 100000,
+  "smoke": {
+    "total_timesteps": 2000,
+    "checkpoint_steps": [
+      1000,
+      2000
+    ]
+  },
+  "training": {
+    "total_timesteps": 100000,
+    "checkpoint_steps": [
+      25000,
+      50000,
+      75000,
+      100000
+    ]
+  },
+  "actions": {
+    "irrigation_levels_mm": [
+      0.0,
+      15.0,
+      30.0,
+      45.0
+    ],
+    "nitrogen_levels_kg_ha": [
+      0.0,
+      40.0,
+      80.0,
+      120.0
+    ]
+  },
+  "observation_contract": {
+    "base": "046_02_raw_observation",
+    "normalization_enabled": false,
+    "weather_forecast_enabled": false
+  },
+  "ppo_contract": {
+    "algorithm": "MaskablePPO",
+    "network": [
+      64,
+      64
+    ],
+    "learning_rate": 0.0003,
+    "gamma": 1.0,
+    "gae_lambda": 1.0,
+    "n_steps": 144,
+    "batch_size": 144,
+    "n_epochs": 5,
+    "ent_coef": 0.01,
+    "clip_range": 0.2
+  },
+  "reward_contract": {
+    "source": "040_36/042_10 inherited stress-aware reward with swfac guardrail",
+    "changed": false,
+    "formula_note": "same as 055_00; no simple-profit replacement"
+  },
+  "scope": {
+    "train_source_years": [
+      2004,
+      2005,
+      2006,
+      2007,
+      2008,
+      2009,
+      2010,
+      2011,
+      2012,
+      2013
+    ],
+    "train_weather_variants": [
+      "original",
+      "early_dry",
+      "mid_dry",
+      "late_dry",
+      "early_wet",
+      "mid_wet"
+    ],
+    "expected_train_scenarios": 60,
+    "validation_years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "validation_weather": "original_lowIC_only",
+    "reward_and_safety": "055_00/040_36/042_10 unchanged",
+    "external_n": false,
+    "native_dssat_automatic_irrigation": false,
+    "ic_profile": "lowIC_only_formal_contract; originIC not mixed",
+    "cultivar": "single_validated_ZD0985; genotype randomization skipped"
+  },
+  "augmentation": {
+    "factor": "training_domain_diversity",
+    "weather": {
+      "enabled": true,
+      "mode": "whole_year_scenario_sampling",
+      "scenario_count": 60,
+      "sequence_integrity": "each WTH is a complete daily sequence; no cross-year concatenation or date shuffle",
+      "physical_gate": "217YCA physical gate must allow 2K smoke"
+    },
+    "initial_condition": {
+      "enabled": false,
+      "reason": "originIC and lowIC are separate transfer contracts; mixing would confound the single-factor test"
+    },
+    "genotype": {
+      "enabled": false,
+      "reason": "only one validated YC cultivar vector is available"
+    }
+  },
+  "runtime_safety": {
+    "environment_cache_limit": 2,
+    "memory_warning_mb": 1536,
+    "memory_stop_mb": 2048,
+    "single_process_training": true,
+    "device": "cpu",
+    "scenario_sampler": "balanced_shuffled_cycle_without_replacement",
+    "cycle_definition": "each 60-episode cycle visits every source_year_x_variant pair exactly once"
+  },
+  "comparison": {
+    "baseline_run": "benchmark_results/221YCA_paired_baseline_055_00_alias",
+    "baseline_source": "benchmark_results/055_00_yca_lowIC_expanded_action_maskableppo/evaluation/055_00_checkpoint_validation_summary.csv",
+    "matched_seed": 0,
+    "matched_checkpoint": 100000,
+    "primary_metrics": [
+      "final_grnwt",
+      "WP_ET_kg_m3",
+      "PFP_N",
+      "reward_stress_aware_sum"
+    ],
+    "resource_metrics": [
+      "total_irrigation",
+      "total_n"
+    ],
+    "baseline_summary": "benchmark_results/055_02_yca_lowIC_four_baselines_static_level1/evaluation/055_02_baseline_summary.csv",
+    "external_rule_summary": "benchmark_results/055_01_yca_lowIC_external_auto_n_rule_nstd050_minimal/evaluation/055_01_external_auto_n_summary.csv"
+  },
+  "execution_policy": {
+    "formal_first_pass_one_seed": true,
+    "require_prior_smoke": true,
+    "expand_to_three_seeds_only_if_improved": true,
+    "stop_if_no_improvement": true,
+    "do_not_change_reward_during_this_run": true,
+    "do_not_overwrite_old_results": true
+  },
+  "prompt": "prompt_01/002_codex_prompt_yc_ppo_domain_augmentation.md"
+}

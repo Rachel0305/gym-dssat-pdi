@@ -1,0 +1,19 @@
+field,required,description
+scenario_id,yes,stable unique scenario key
+site,yes,short site code such as YC
+station_code,yes,DSSAT station code such as YCA
+split,yes,"train, validation, test, or diagnostic"
+source_years,yes,historical years used to fit or resample this weather
+generator_name,yes,implementation name; do not conflate with PPO seed
+generator_version,yes,version or commit of generator parameters
+weather_selection_seed,conditional,seed selecting source years/scenarios
+weather_generation_seed,conditional,seed for stochastic generation after parameters are fixed
+ppo_seed,no,PPO training seed; must stay separate from weather seeds
+weather_file,yes,generated or selected DSSAT .WTH path
+file_sha256,yes,hash of exact WTH bytes
+climate_parameter_file,conditional,.CLI or external parameter file if used
+parameters_hash,yes,hash of generator configuration and fitted parameters
+generation_config,yes,machine-readable compact JSON config
+validation_status,yes,quality gate status
+leakage_status,yes,evidence no validation/test years fit the generator
+dssat_smoke_source,conditional,DSSAT reset/single-season smoke evidence path

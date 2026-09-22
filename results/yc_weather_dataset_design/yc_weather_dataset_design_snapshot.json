@@ -1,0 +1,57 @@
+{
+  "created_at": "2026-09-22T22:27:57",
+  "git_branch": "codex/sya-forecast-freeze-2026-08-16",
+  "git_head": "523588e",
+  "task": "002_yc_weather_dataset_design",
+  "scope": "YC/YCA only; design and lightweight evidence; no PPO training",
+  "config_055": "configs/055_00_yca_lowIC_expanded_action_maskableppo.json",
+  "training_entry": "src/055_yca_lowIC_site_transfer/run_055_00_yca_lowIC_expanded_action_maskableppo.py",
+  "random_weather_current": false,
+  "current_weather_file_example": "results/yc_weather_audit/rendered_probe/rendered_inputs/YCA/2004/yc_weather_audit_probe/CNYC0401.WTH",
+  "episode_weather_changes": true,
+  "weather_reproducible": true,
+  "gym_supports_random_weather_arg": true,
+  "train_years": [
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013
+  ],
+  "validation_years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "test_years": [],
+  "small_sample_policy": "reuse existing 217YCA deterministic rain-window scenarios for feasibility evidence; do not claim statistical generation",
+  "small_sample_count": 5,
+  "existing_physical_gate": {
+    "all_six_scenarios_completed": true,
+    "all_weather_log_rain_matches_wth_within_2mm": true,
+    "all_scenarios_matured": true,
+    "all_scenarios_positive_yield": true,
+    "physical_yield_response_detected": true,
+    "old_055_policy_action_response_detected": false,
+    "allow_2k_smoke": true
+  },
+  "outputs": {
+    "manifest_schema": "results/yc_weather_dataset_design/yc_weather_manifest_schema.csv",
+    "small_sample_manifest": "results/yc_weather_dataset_design/yc_weather_small_sample_manifest.csv",
+    "quality_summary": "results/yc_weather_dataset_design/yc_weather_small_sample_quality_summary.csv",
+    "route_comparison": "results/yc_weather_dataset_design/yc_weather_route_comparison.csv",
+    "cleanup_inventory": "results/yc_weather_dataset_design/yc_weather_cleanup_inventory.csv"
+  }
+}

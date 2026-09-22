@@ -1,0 +1,4 @@
+path,exists,tracked,file_count,bytes,recommendation
+.codex-yc-weather-pptx-build,True,False,7800,335246768,retain_as_audit_evidence_or_build_cache; not deleted by 002
+results/yc_weather_audit/rendered_probe,True,False,2,17099,retain_as_audit_evidence_or_build_cache; not deleted by 002
+results/yc_weather_audit/gym_reset_probe,True,False,12,70732,retain_as_audit_evidence_or_build_cache; not deleted by 002

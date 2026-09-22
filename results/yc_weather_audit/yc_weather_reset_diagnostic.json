@@ -1,0 +1,190 @@
+{
+  "diagnostic_mode": "rng_year_selection_and_env_arg_render_no_ppo",
+  "site": "YC",
+  "station_code": "YCA",
+  "training_entry": "src/055_yca_lowIC_site_transfer/run_055_00_yca_lowIC_expanded_action_maskableppo.py",
+  "config_path": "configs/055_00_yca_lowIC_expanded_action_maskableppo.json",
+  "preflight": {
+    "task": "055_00_yca_lowIC_expanded_action_maskableppo",
+    "station_code": "YCA",
+    "site": "YC",
+    "input_profile": "lowIC",
+    "resolved_input_root": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013_lowIC_manual",
+    "source_mzx": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013_lowIC_manual/YC/CNYC0801.MZX",
+    "config_train_years": [
+      2004,
+      2005,
+      2006,
+      2007,
+      2008,
+      2009,
+      2010,
+      2011,
+      2012,
+      2013
+    ],
+    "config_validation_years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "engine_train_years": [
+      2004,
+      2005,
+      2006,
+      2007,
+      2008,
+      2009,
+      2010,
+      2011,
+      2012,
+      2013
+    ],
+    "engine_validation_years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "reference_run": "046_10_sya_originIC_expanded_action_maskableppo",
+    "observation_contract": {
+      "base": "046_02_raw_observation",
+      "normalization_enabled": false,
+      "weather_forecast_enabled": false
+    },
+    "irrigation_levels_mm": [
+      0.0,
+      15.0,
+      30.0,
+      45.0
+    ],
+    "nitrogen_levels_kg_ha": [
+      0.0,
+      40.0,
+      80.0,
+      120.0
+    ],
+    "combined_action_count": 16,
+    "issues": [],
+    "next_step_allowed": true
+  },
+  "package_info": {
+    "gym_dssat_version": "0.0.5",
+    "gym_dssat_package_file": "/opt/gym_dssat_pdi/lib/python3.10/site-packages/gym_dssat_pdi/__init__.py",
+    "gym_dssat_env_file": "/opt/gym_dssat_pdi/lib/python3.10/site-packages/gym_dssat_pdi/envs/dssat_pdi.py",
+    "gym_dssat_init_signature": "(self, run_dssat_location='run_dssat', log_saving_path=None, mode='all', auxiliary_file_paths=None, files_prefix='./', random_weather=True, seed=None, fileX_template_path=None, experiment_number=None, evaluation=False, cultivar='maize')",
+    "supports_random_weather_arg": true,
+    "supports_auxiliary_file_paths_arg": true
+  },
+  "ppo_seed": 0,
+  "weather_seed": 0,
+  "weather_seed_currently_separate_from_ppo_seed": false,
+  "train_years": [
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013
+  ],
+  "rng_sequence_seed_a": [
+    2012,
+    2010,
+    2009,
+    2006,
+    2007,
+    2004,
+    2004,
+    2004,
+    2005,
+    2012,
+    2010,
+    2013
+  ],
+  "rng_sequence_seed_a_repeat": [
+    2012,
+    2010,
+    2009,
+    2006,
+    2007,
+    2004,
+    2004,
+    2004,
+    2005,
+    2012,
+    2010,
+    2013
+  ],
+  "rng_sequence_seed_a_plus_1": [
+    2008,
+    2009,
+    2011,
+    2013,
+    2004,
+    2005,
+    2012,
+    2013,
+    2006,
+    2007,
+    2012,
+    2008
+  ],
+  "episode_weather_changes": true,
+  "weather_sequence_reproducible": true,
+  "different_weather_seed_changes_sequence": true,
+  "env_args": {
+    "log_saving_path": "/workspace/results/yc_weather_audit/rendered_probe/logs/YCA/YCA_2004_yc_weather_audit_probe.log",
+    "mode": "all",
+    "seed": 0,
+    "random_weather": false,
+    "evaluation": false,
+    "fileX_template_path": "/workspace/results/yc_weather_audit/rendered_probe/rendered_inputs/YCA/2004/yc_weather_audit_probe/YCA_2004_yc_weather_audit_probe.jinja2",
+    "experiment_number": 1,
+    "auxiliary_file_paths": [
+      "/workspace/DSSAT_auto_validation/multisite_new_cultivar_inputs_013_lowIC_manual/YC/MZCER048.CUL",
+      "/workspace/results/yc_weather_audit/rendered_probe/rendered_inputs/YCA/2004/yc_weather_audit_probe/CNYC0401.WTH",
+      "/workspace/DSSAT_auto_validation/multisite_new_cultivar_inputs_013_lowIC_manual/YC/SOIL.SOL"
+    ],
+    "run_dssat_location": "/opt/dssat_pdi/run_dssat"
+  },
+  "rendered_template": "results/yc_weather_audit/rendered_probe/rendered_inputs/YCA/2004/yc_weather_audit_probe/YCA_2004_yc_weather_audit_probe.jinja2",
+  "rendered_weather_file": "results/yc_weather_audit/rendered_probe/rendered_inputs/YCA/2004/yc_weather_audit_probe/CNYC0401.WTH",
+  "rendered_weather_summary": {
+    "rows": 366,
+    "first_date_code": 2004001,
+    "last_date_code": 2004366,
+    "rain_sum": 67.4,
+    "tmax_mean": 18.811475409836067,
+    "tmin_mean": 8.5827868852459,
+    "sha256": "333e976a52ed6135a37774adb7925b0189f2d6b30137692e792fb8ec2283a700"
+  },
+  "cultivar_file": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013_lowIC_manual/YC/MZCER048.CUL",
+  "soil_file": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013_lowIC_manual/YC/SOIL.SOL",
+  "climate_files_in_current_yc_lowic_input_dir": [],
+  "gym_reset_probe": {
+    "gym_reset_attempted": true,
+    "gym_reset_sequence": [
+      2012,
+      2010,
+      2009
+    ],
+    "gym_reset_error": ""
+  }
+}

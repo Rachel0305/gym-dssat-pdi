@@ -1,0 +1,15 @@
+{
+  "site": "YC",
+  "gym_dssat_version": "0.0.5",
+  "training_entry": "src/055_yca_lowIC_site_transfer/run_055_00_yca_lowIC_expanded_action_maskableppo.py",
+  "random_weather": false,
+  "ppo_seed": 0,
+  "weather_seed": 0,
+  "experiment_file": "results/yc_weather_audit/rendered_probe/rendered_inputs/YCA/2004/yc_weather_audit_probe/YCA_2004_yc_weather_audit_probe.jinja2",
+  "weather_file": "results/yc_weather_audit/rendered_probe/rendered_inputs/YCA/2004/yc_weather_audit_probe/CNYC0401.WTH",
+  "climate_file": "",
+  "soil_file": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013_lowIC_manual/YC/SOIL.SOL",
+  "wsta": "CNYC0401",
+  "episode_weather_changes": true,
+  "weather_reproducible": true
+}

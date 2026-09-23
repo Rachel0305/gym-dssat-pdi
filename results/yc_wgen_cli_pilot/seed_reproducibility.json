@@ -1,0 +1,17 @@
+{
+  "status": "not_tested_cli_generation_blocked",
+  "ppo_seed": 0,
+  "ppo_seed_used": false,
+  "weather_generation_seeds_planned": [
+    101,
+    102,
+    103,
+    104,
+    105
+  ],
+  "weather_generation_seeds_attempted": [],
+  "same_seed_reproducibility": null,
+  "different_seed_weather_difference": null,
+  "evidence_artifacts": [],
+  "reason": "No credible YC .CLI was available, so no weather generation call was made."
+}

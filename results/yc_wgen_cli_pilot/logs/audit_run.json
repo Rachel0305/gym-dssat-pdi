@@ -1,0 +1,64 @@
+{
+  "task": "003_01_yc_wgen_cli_pilot",
+  "command": "python scripts/audit_yc_wgen_cli_pilot.py",
+  "source_input_directory": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013_lowIC_manual/YC",
+  "train_years": [
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013
+  ],
+  "train_weather_qc_status": "pass",
+  "historical_train_files_checked": 10,
+  "cli_generation_attempted": false,
+  "wgen_pilot_attempted": false,
+  "dssat_smoke_attempted": false,
+  "ppo_training_attempted": false,
+  "cleaned_csv_crosscheck": {
+    "status": "pass",
+    "path": "weather_clean/YCA_weather_cleaned.csv",
+    "training_years_checked": [
+      2004,
+      2005,
+      2006,
+      2007,
+      2008,
+      2009,
+      2010,
+      2011,
+      2012,
+      2013
+    ]
+  },
+  "legacy_cli_candidate": {
+    "path": "DSSAT_auto_validation/run_CNYC0802_DSSAT480_IC0_null_2000_2023/pdi_smoke_test/input_used_by_pdi/CNYC.CLI",
+    "sha256": "58dbe11fdb3af9d34cc25644d8fb965627403778eb92da31a8f91619bd100d51",
+    "same_hash_copy_count_in_broad_null_run": 33,
+    "station_id": "CNYC",
+    "contains_wgen_parameter_section": true,
+    "source_label_in_file": "Calculated_from_daily_data",
+    "recorded_flagged_data_window": {
+      "start": "2008-01-01",
+      "end": "2014-12-31"
+    },
+    "valid_daily_records_by_variable": {
+      "all_values": 2924,
+      "rain": 731,
+      "tmax": 731,
+      "tmin": 731,
+      "srad": 731
+    },
+    "eligible_for_this_pilot": false,
+    "exclusion_reason": "The file's recorded window includes validation year 2014, its exact estimator inputs are not documented as 2004-2013 only, and the associated PDI env_args explicitly set random_weather=false.",
+    "source_path_in_current_repo_code": "src/compare_yc_windows480_vs_pdi_yearly_ic0.py references my_data/CNYC.CLI",
+    "referenced_my_data_cli_exists": false
+  },
+  "qc_rows": 10,
+  "cli_files_in_yc_input_directory": []
+}

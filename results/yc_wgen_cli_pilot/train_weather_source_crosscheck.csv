@@ -1,0 +1,11 @@
+﻿site,year,wth_file,wth_sha256,wth_daily_records,cleaned_csv_daily_records,wth_annual_rain_mm,cleaned_csv_annual_rain_mm,rain_total_delta_mm,match_within_0p1mm
+YC,2004,DSSAT_auto_validation/multisite_new_cultivar_inputs_013_lowIC_manual/YC/CNYC0401.WTH,333e976a52ed6135a37774adb7925b0189f2d6b30137692e792fb8ec2283a700,366,366,67.4,67.4,0.0,True
+YC,2005,DSSAT_auto_validation/multisite_new_cultivar_inputs_013_lowIC_manual/YC/CNYC0501.WTH,840ff3c5dc89ae5bc861979f1c619dc0e43da0ad38402fd47462755d54a6b268,365,365,678.4,678.4,-0.0,True
+YC,2006,DSSAT_auto_validation/multisite_new_cultivar_inputs_013_lowIC_manual/YC/CNYC0601.WTH,65904f7c465c5e7e9c68be71be144549a543533d46c4bb63bc8897a90ffab060,365,365,381.8,381.8,0.0,True
+YC,2007,DSSAT_auto_validation/multisite_new_cultivar_inputs_013_lowIC_manual/YC/CNYC0701.WTH,23b449da3be4836a73e290ba50befdec17802f46cd58be75146127a94850822f,365,365,571.7,571.7,0.0,True
+YC,2008,DSSAT_auto_validation/multisite_new_cultivar_inputs_013_lowIC_manual/YC/CNYC0801.WTH,9a9c659bc053749342b7b4f5103c406643ff223868f4945a8886a36b8fb3b9bf,366,366,527.1,527.1,-0.0,True
+YC,2009,DSSAT_auto_validation/multisite_new_cultivar_inputs_013_lowIC_manual/YC/CNYC0901.WTH,232de880855112c9115c064c62f6fc41a22d8f2d80463671c0d164049a5604fd,365,365,802.7,802.7,-0.0,True
+YC,2010,DSSAT_auto_validation/multisite_new_cultivar_inputs_013_lowIC_manual/YC/CNYC1001.WTH,26a2807c9450119432ef13b6dcef9fafc0887a3e313a1800ee9e3cfa4fbcf337,365,365,739.9,739.9,0.0,True
+YC,2011,DSSAT_auto_validation/multisite_new_cultivar_inputs_013_lowIC_manual/YC/CNYC1101.WTH,d56de1ec0c380d97f09e54e47459ae757b00fdd5b27066ccd2ba08e522355aaa,365,365,565.9,565.9,0.0,True
+YC,2012,DSSAT_auto_validation/multisite_new_cultivar_inputs_013_lowIC_manual/YC/CNYC1201.WTH,3e61a5fc61abafdf978bb2029b26640fe177d565026563c3c93e78dd22f49196,366,366,575.8,575.8,0.0,True
+YC,2013,DSSAT_auto_validation/multisite_new_cultivar_inputs_013_lowIC_manual/YC/CNYC1301.WTH,5d00950fd08f9bc7ac10776ad082dc5bf91f543bdefdc8d3f5250060b5947290,365,365,727.3,727.3,-0.0,True

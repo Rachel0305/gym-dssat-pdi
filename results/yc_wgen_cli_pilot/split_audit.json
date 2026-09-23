@@ -1,0 +1,98 @@
+{
+  "training_years": [
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013
+  ],
+  "validation_years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "configured_independent_test_years": [],
+  "available_real_weather_years_in_yc_input": [
+    2000,
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "extra_year_candidates_outside_train_and_validation": [
+    2000,
+    2001,
+    2002,
+    2003
+  ],
+  "independent_test_status": "not_available_or_not_verified",
+  "independent_test_reason": "2000-2003 exist as historical weather files, but the repository does not provide a complete, auditable log of prior model selection and manual comparisons for those years. A 2000-2023 null-run directory also exists, so they are not certified as untouched test years.",
+  "split_evidence": [
+    "configs/055_00_yca_lowIC_expanded_action_maskableppo.json",
+    "docs/yc_weather_pipeline_audit.md"
+  ],
+  "broad_null_run_evidence": "DSSAT_auto_validation/run_CNYC0802_DSSAT480_IC0_null_2000_2023",
+  "missing_train_year_files": [],
+  "train_weather_qc_status": "pass",
+  "train_annual_rainfall_description_mm": {
+    "minimum": 67.4,
+    "maximum": 802.7,
+    "mean": 563.8,
+    "median": 573.75,
+    "q1_inclusive": 536.8,
+    "q3_inclusive": 715.075,
+    "low_outlier_review_fence_1p5_iqr": 269.388,
+    "manual_review_years": [
+      2004
+    ],
+    "interpretation": "Descriptive review flag only; it does not invalidate an observed weather year."
+  },
+  "cleaned_csv_rainfall_crosscheck": {
+    "status": "pass",
+    "path": "weather_clean/YCA_weather_cleaned.csv",
+    "training_years_checked": [
+      2004,
+      2005,
+      2006,
+      2007,
+      2008,
+      2009,
+      2010,
+      2011,
+      2012,
+      2013
+    ]
+  },
+  "source_files_modified": false
+}

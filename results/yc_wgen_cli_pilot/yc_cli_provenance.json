@@ -1,0 +1,81 @@
+{
+  "status": "BLOCKED_CLI_GENERATION",
+  "site": "YC",
+  "station_code": "YCA",
+  "wth_station_id": "CNYC",
+  "filex_wsta_examples": [
+    "CNYC0801",
+    "CNYC1401"
+  ],
+  "filex_template": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013_lowIC_manual/YC/CNYC0801.MZX",
+  "yc_cli_files_in_current_input_directory": [],
+  "legacy_yc_cli_candidate_outside_current_input_directory": {
+    "path": "DSSAT_auto_validation/run_CNYC0802_DSSAT480_IC0_null_2000_2023/pdi_smoke_test/input_used_by_pdi/CNYC.CLI",
+    "sha256": "58dbe11fdb3af9d34cc25644d8fb965627403778eb92da31a8f91619bd100d51",
+    "same_hash_copy_count_in_broad_null_run": 33,
+    "station_id": "CNYC",
+    "contains_wgen_parameter_section": true,
+    "source_label_in_file": "Calculated_from_daily_data",
+    "recorded_flagged_data_window": {
+      "start": "2008-01-01",
+      "end": "2014-12-31"
+    },
+    "valid_daily_records_by_variable": {
+      "all_values": 2924,
+      "rain": 731,
+      "tmax": 731,
+      "tmin": 731,
+      "srad": 731
+    },
+    "eligible_for_this_pilot": false,
+    "exclusion_reason": "The file's recorded window includes validation year 2014, its exact estimator inputs are not documented as 2004-2013 only, and the associated PDI env_args explicitly set random_weather=false.",
+    "source_path_in_current_repo_code": "src/compare_yc_windows480_vs_pdi_yearly_ic0.py references my_data/CNYC.CLI",
+    "referenced_my_data_cli_exists": false
+  },
+  "cli_path": null,
+  "cli_sha256": null,
+  "parameter_source_years": null,
+  "parameter_estimator": null,
+  "parameter_estimator_version": null,
+  "parameter_estimator_run": false,
+  "in_project_official_weather_tool_found": false,
+  "reason": "The YC lowIC input contains no .CLI. A legacy CNYC.CLI exists in the 2000-2023 null-run artifacts, but its internal flagged-data window is 2008-2014, its training-only estimation provenance is absent, and its associated Gym-DSSAT run set random_weather=false. The checked-in Gym-DSSAT 0.0.5 source can request DSSAT WGEN and pass a seed, but it does not estimate YC .CLI parameters. No verified WeatherMan parameter-estimation executable or script is present in the project. Project AGENTS.md limits file inspection to this project, so external installation directories were not inspected.",
+  "source_train_years": [
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013
+  ],
+  "input_weather_hashes": {
+    "2004": "333e976a52ed6135a37774adb7925b0189f2d6b30137692e792fb8ec2283a700",
+    "2005": "840ff3c5dc89ae5bc861979f1c619dc0e43da0ad38402fd47462755d54a6b268",
+    "2006": "65904f7c465c5e7e9c68be71be144549a543533d46c4bb63bc8897a90ffab060",
+    "2007": "23b449da3be4836a73e290ba50befdec17802f46cd58be75146127a94850822f",
+    "2008": "9a9c659bc053749342b7b4f5103c406643ff223868f4945a8886a36b8fb3b9bf",
+    "2009": "232de880855112c9115c064c62f6fc41a22d8f2d80463671c0d164049a5604fd",
+    "2010": "26a2807c9450119432ef13b6dcef9fafc0887a3e313a1800ee9e3cfa4fbcf337",
+    "2011": "d56de1ec0c380d97f09e54e47459ae757b00fdd5b27066ccd2ba08e522355aaa",
+    "2012": "3e61a5fc61abafdf978bb2029b26640fe177d565026563c3c93e78dd22f49196",
+    "2013": "5d00950fd08f9bc7ac10776ad082dc5bf91f543bdefdc8d3f5250060b5947290"
+  },
+  "provenance_verified": false,
+  "generator_artifacts_created": 0,
+  "weather_realizations_created": 0,
+  "dssat_smoke_runs": 0,
+  "ppo_runs": 0,
+  "wsta_cli_mapping_status": "requires runtime confirmation; current FileX WSTA examples are 8-character year-specific stems",
+  "official_steps": [
+    "In WeatherMan, select the YC station code CNYC and import only CNYC0401.WTH through CNYC1301.WTH as the IBSNAT3 daily format.",
+    "Use Generate > Calculate Parameters and restrict the period to 2004/001 through 2013/365, selecting WGEN parameters.",
+    "Export and preserve the generated climate file with WeatherMan version, exact period, source file hashes, and output hash.",
+    "Confirm how the resulting CNYC climate file maps to the current FileX WSTA before a DSSAT WGEN smoke run; do not copy another station's CLI."
+  ],
+  "official_manual": "https://dssat.net/wp-content/uploads/2011/10/DSSAT-vol3.pdf",
+  "official_source": "https://github.com/DSSAT/dssat-csm-os/blob/develop/Weather/WGEN.for"
+}

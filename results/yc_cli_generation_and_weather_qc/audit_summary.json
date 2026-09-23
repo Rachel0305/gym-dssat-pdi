@@ -1,0 +1,172 @@
+﻿{
+    "train_years":  [
+                        2004,
+                        2005,
+                        2006,
+                        2007,
+                        2008,
+                        2009,
+                        2010,
+                        2011,
+                        2012,
+                        2013
+                    ],
+    "all_train_years_source_gap_values":  [
+                                              {
+                                                  "srad":  41,
+                                                  "tmax":  47,
+                                                  "rain":  0,
+                                                  "year":  2004,
+                                                  "tmin":  47
+                                              },
+                                              {
+                                                  "srad":  59,
+                                                  "tmax":  8,
+                                                  "rain":  0,
+                                                  "year":  2005,
+                                                  "tmin":  8
+                                              },
+                                              {
+                                                  "srad":  23,
+                                                  "tmax":  17,
+                                                  "rain":  0,
+                                                  "year":  2006,
+                                                  "tmin":  17
+                                              },
+                                              {
+                                                  "srad":  3,
+                                                  "tmax":  0,
+                                                  "rain":  0,
+                                                  "year":  2007,
+                                                  "tmin":  0
+                                              },
+                                              {
+                                                  "srad":  36,
+                                                  "tmax":  26,
+                                                  "rain":  0,
+                                                  "year":  2008,
+                                                  "tmin":  26
+                                              },
+                                              {
+                                                  "srad":  17,
+                                                  "tmax":  14,
+                                                  "rain":  0,
+                                                  "year":  2009,
+                                                  "tmin":  14
+                                              },
+                                              {
+                                                  "srad":  4,
+                                                  "tmax":  3,
+                                                  "rain":  0,
+                                                  "year":  2010,
+                                                  "tmin":  3
+                                              },
+                                              {
+                                                  "srad":  42,
+                                                  "tmax":  39,
+                                                  "rain":  0,
+                                                  "year":  2011,
+                                                  "tmin":  39
+                                              },
+                                              {
+                                                  "srad":  1,
+                                                  "tmax":  1,
+                                                  "rain":  0,
+                                                  "year":  2012,
+                                                  "tmin":  1
+                                              },
+                                              {
+                                                  "srad":  2,
+                                                  "tmax":  0,
+                                                  "rain":  0,
+                                                  "year":  2013,
+                                                  "tmin":  0
+                                              }
+                                          ],
+    "first_failed_gate":  "B",
+    "ppo_runs":  0,
+    "dssat_smoke_runs":  0,
+    "daily_cleaned_csv_match_passed_years":  [
+                                                 2004,
+                                                 2005,
+                                                 2006,
+                                                 2007,
+                                                 2008,
+                                                 2009,
+                                                 2010,
+                                                 2011,
+                                                 2012,
+                                                 2013
+                                             ],
+    "tools_found_in_project":  {
+                                   "official_dssat_wgen_runtime_execution":  false,
+                                   "weather_man_or_cli_parameter_estimator":  false
+                               },
+    "all_train_years_have_source_gaps":  true,
+    "format_qc_passed_years":  [
+                                   2004,
+                                   2005,
+                                   2006,
+                                   2007,
+                                   2008,
+                                   2009,
+                                   2010,
+                                   2011,
+                                   2012,
+                                   2013
+                               ],
+    "cli_generated":  false,
+    "result_files":  [
+                         "train_weather_integrity.csv",
+                         "train_weather_monthly_summary.csv",
+                         "weather_2004_provenance.json",
+                         "weather_2004_raw_excel_audit.json",
+                         "test_split_status.json",
+                         "seed_reproducibility.json",
+                         "wsta_mapping.json"
+                     ],
+    "wgen_realizations":  0,
+    "final_status":  "BLOCKED_WEATHER_INTEGRITY",
+    "input_weather_hashes":  [
+                                 {
+                                     "sha256":  "333e976a52ed6135a37774adb7925b0189f2d6b30137692e792fb8ec2283a700",
+                                     "year":  2004
+                                 },
+                                 {
+                                     "sha256":  "840ff3c5dc89ae5bc861979f1c619dc0e43da0ad38402fd47462755d54a6b268",
+                                     "year":  2005
+                                 },
+                                 {
+                                     "sha256":  "65904f7c465c5e7e9c68be71be144549a543533d46c4bb63bc8897a90ffab060",
+                                     "year":  2006
+                                 },
+                                 {
+                                     "sha256":  "23b449da3be4836a73e290ba50befdec17802f46cd58be75146127a94850822f",
+                                     "year":  2007
+                                 },
+                                 {
+                                     "sha256":  "9a9c659bc053749342b7b4f5103c406643ff223868f4945a8886a36b8fb3b9bf",
+                                     "year":  2008
+                                 },
+                                 {
+                                     "sha256":  "232de880855112c9115c064c62f6fc41a22d8f2d80463671c0d164049a5604fd",
+                                     "year":  2009
+                                 },
+                                 {
+                                     "sha256":  "26a2807c9450119432ef13b6dcef9fafc0887a3e313a1800ee9e3cfa4fbcf337",
+                                     "year":  2010
+                                 },
+                                 {
+                                     "sha256":  "d56de1ec0c380d97f09e54e47459ae757b00fdd5b27066ccd2ba08e522355aaa",
+                                     "year":  2011
+                                 },
+                                 {
+                                     "sha256":  "3e61a5fc61abafdf978bb2029b26640fe177d565026563c3c93e78dd22f49196",
+                                     "year":  2012
+                                 },
+                                 {
+                                     "sha256":  "5d00950fd08f9bc7ac10776ad082dc5bf91f543bdefdc8d3f5250060b5947290",
+                                     "year":  2013
+                                 }
+                             ]
+}

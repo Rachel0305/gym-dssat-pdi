@@ -1,0 +1,16 @@
+{
+  "path": "docs/yc_cli_generation_and_weather_qc.pptx",
+  "sha256": "b2bcd93ab6ef1281362356a91bd28a9d50ff2736195b13e3d1480b60e1e02454",
+  "slide_count": 8,
+  "rendered_slide_count": 8,
+  "visually_reviewed_slide_count": 8,
+  "native_table_count": 4,
+  "native_chart_count": 2,
+  "package_integrity_status": "pass",
+  "first_party_artifact_tool_import_passed": true,
+  "layout_findings": 0,
+  "layout_warnings": 0,
+  "font_family_policy": "Arial",
+  "native_powerpoint_open_verified": false,
+  "note": "Rendered and reviewed all final slides. Structural checks do not establish native PowerPoint opening behavior."
+}

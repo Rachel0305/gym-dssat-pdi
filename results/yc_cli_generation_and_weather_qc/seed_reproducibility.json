@@ -1,0 +1,26 @@
+﻿{
+    "ppo_seed":  null,
+    "weather_generation_seeds_planned":  [
+                                             101,
+                                             102,
+                                             103,
+                                             104,
+                                             105
+                                         ],
+    "weather_generation_seed":  null,
+    "cli_sha256":  null,
+    "reason":  "Gate B failed before CLI generation. No WGEN seed execution or weather capture was attempted.",
+    "generated_weather_hashes":  [
+
+                                 ],
+    "same_seed_reproducibility":  "not_tested",
+    "different_seed_weather_difference":  "not_tested",
+    "wrapper_contract_evidence":  {
+                                      "weather_seed_uses_same_environment_numpy_rng":  true,
+                                      "random_weather_false_in_active_args":  true,
+                                      "when_enabled_random_weather_selects_wgen_mode":  true,
+                                      "source":  "references/dssat_pdi.py",
+                                      "independent_weather_generation_seed_api":  "not present in checked-in wrapper; a pilot-only adapter would be needed after gates pass"
+                                  },
+    "status":  "not_attempted_blocked_before_cli"
+}

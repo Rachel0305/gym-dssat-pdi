@@ -1,0 +1,119 @@
+﻿{
+    "weather_sha256":  "333e976a52ed6135a37774adb7925b0189f2d6b30137692e792fb8ec2283a700",
+    "station_id":  "YCA",
+    "raw_dry_spell_crosswalk":  {
+                                    "end_date_code":  "2004257",
+                                    "length_days":  257,
+                                    "raw_rain_source_categories":  {
+                                                                       "zero":  0,
+                                                                       "blank":  257,
+                                                                       "numeric":  0,
+                                                                       "absent":  0,
+                                                                       "unparsed":  0,
+                                                                       "sentinel":  0
+                                                                   },
+                                    "start_date_code":  "2004001"
+                                },
+    "year":  2004,
+    "site":  "YC",
+    "raw_source_files":  [
+                             {
+                                 "duplicate_rows":  0,
+                                 "unique_dates":  366,
+                                 "first_date":  "2004-01-01",
+                                 "sha256":  "d95ceee849df1717f3f2c9e301048467372c3974623d68ce59b7dadffed54b01",
+                                 "sheet":  "Sheet0",
+                                 "rows":  366,
+                                 "variables":  {
+                                                   "TMIN":  {
+                                                                "min":  -14,
+                                                                "blank_count":  47,
+                                                                "zero_count":  2,
+                                                                "sentinel_count":  0,
+                                                                "max":  27.2,
+                                                                "numeric_count":  319,
+                                                                "rows":  366
+                                                            },
+                                                   "TMAX":  {
+                                                                "min":  -4.4,
+                                                                "blank_count":  47,
+                                                                "zero_count":  0,
+                                                                "sentinel_count":  0,
+                                                                "max":  35,
+                                                                "numeric_count":  319,
+                                                                "rows":  366
+                                                            }
+                                               },
+                                 "last_date":  "2004-12-31",
+                                 "file":  "T2.xls"
+                             },
+                             {
+                                 "duplicate_rows":  0,
+                                 "unique_dates":  366,
+                                 "first_date":  "2004-01-01",
+                                 "sha256":  "fd885aff6690cc5d415a3a31a4d409bd032a9bc3502827f5161aa60fdaa983e8",
+                                 "sheet":  "Sheet0",
+                                 "rows":  366,
+                                 "variables":  {
+                                                   "SRAD":  {
+                                                                "min":  1.403,
+                                                                "blank_count":  41,
+                                                                "zero_count":  0,
+                                                                "sentinel_count":  0,
+                                                                "max":  28.389,
+                                                                "numeric_count":  325,
+                                                                "rows":  366
+                                                            }
+                                               },
+                                 "last_date":  "2004-12-31",
+                                 "file":  "D32.xls"
+                             },
+                             {
+                                 "duplicate_rows":  0,
+                                 "unique_dates":  366,
+                                 "first_date":  "2004-01-01",
+                                 "sha256":  "6e797937abdd021f061cf8a89711a6b24ee462c1d33ce361328dde5741e66430",
+                                 "sheet":  "Sheet0",
+                                 "rows":  366,
+                                 "variables":  {
+                                                   "RAIN":  {
+                                                                "min":  0,
+                                                                "blank_count":  348,
+                                                                "zero_count":  4,
+                                                                "sentinel_count":  0,
+                                                                "max":  25.1,
+                                                                "numeric_count":  18,
+                                                                "rows":  366
+                                                            }
+                                               },
+                                 "last_date":  "2004-12-31",
+                                 "file":  "HLLCYCFQ降雨数据.xls"
+                             }
+                         ],
+    "status":  "BLOCKED_WEATHER_INTEGRITY",
+    "conclusion":  "The WTH is full-year and physically parseable, but not a complete raw-observation record: SRAD/TMAX/TMIN have source blanks filled by monthly means, and the 257-day WTH dry spell maps to raw rainfall blanks that preprocessing converted to zero. The earlier blanket blank-means-no-rain confirmation does not independently establish completeness for this contiguous interval; do not use 2004 to fit WGEN until the station source coverage/semantics are resolved.",
+    "preprocessing":  {
+                          "exact_fill_rule_lines":  "260-289",
+                          "script":  "src/weather_preprocess.py",
+                          "rain_blank_rule":  "coerce missing to zero before source-date merge",
+                          "temperature_and_srad_fill":  "station-month mean, then station annual mean fallback",
+                          "exact_rain_rule_lines":  "148-150"
+                      },
+    "weather_file":  "DSSAT_auto_validation/multisite_new_cultivar_inputs_013_lowIC_manual/YC/CNYC0401.WTH",
+    "wth_max_dry_spell_days":  257,
+    "wth_annual_rain_mm":  67.4,
+    "cleaned_weather_daily_match":  {
+                                        "cleaned_csv":  "weather_clean/YCA_weather_cleaned.csv",
+                                        "tolerance":  0.051,
+                                        "srad_matches":  366,
+                                        "source_missing_days":  {
+                                                                    "srad":  41,
+                                                                    "tmax":  47,
+                                                                    "rain":  0,
+                                                                    "tmin":  47
+                                                                },
+                                        "rain_matches":  366,
+                                        "tmin_matches":  366,
+                                        "tmax_matches":  366
+                                    }
+}

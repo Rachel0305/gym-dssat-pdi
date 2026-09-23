@@ -1,0 +1,36 @@
+﻿{
+    "site":  "YC",
+    "filex_path":  "DSSAT_auto_validation/multisite_new_cultivar_inputs_013_lowIC_manual/YC/CNYC0801.MZX",
+    "historical_weather_prefix":  "CNYC",
+    "active_training_wsta_example":  "CNYC0401",
+    "current_run_random_weather":  false,
+    "evidence":  [
+                     "DSSAT_auto_validation/multisite_new_cultivar_inputs_013_lowIC_manual/YC/CNYC0801.MZX:21-23",
+                     "src/ppo_safe_rendering.py:42-48",
+                     "src/ppo_safe_rendering.py:77-91",
+                     "src/ppo_safe_rendering.py:258-289",
+                     "src/ppo_safe_rendering.py:300-304",
+                     "src/ppo_safe_rendering.py:317-341",
+                     "references/dssat_pdi.py:88-92",
+                     "official DSSAT SECLI.for: https://github.com/DSSAT/dssat-csm-os/blob/develop/InputModule/SECLI.for"
+                 ],
+    "mapping_verified":  true,
+    "current_run_weather_mode":  "measured",
+    "current_run_cli_lookup_exercised":  false,
+    "wsta_in_filex":  "CNYC0801 (template row); CNYC1401 (second treatment row)",
+    "rendered_wsta_pattern":  "CNYCyy01",
+    "experiment_number":  1,
+    "station_code":  "YCA",
+    "filex_sha256":  "5070b63b92b953ce72cf2bb5734927b050d262986f72f9926809e73d0b53023d",
+    "station_id":  "CNYC",
+    "source_filex_wsta":  [
+                              "CNYC0801",
+                              "CNYC1401"
+                          ],
+    "external_runtime_version_verified":  false,
+    "expected_cli_name":  "CNYC.CLI",
+    "status":  "verified_static_station_prefix_mapping_runtime_not_executed",
+    "active_config":  "configs/055_00_yca_lowIC_expanded_action_maskableppo.json",
+    "mapping_note":  "Gym-DSSAT passes a copied year-specific CNYCyy01.WTH in measured mode. DSSAT SECLI uses the 4-character CNYC site prefix for its climate file name (CNYC.CLI). Static identifier/name mapping is established; runtime WGEN lookup was not executed and the installed runtime version was not inspected outside the project boundary.",
+    "active_config_sha256":  "22ad8c50db2940a2e20119b6c964c056b5d99edca2654f187ad20d4b719d93ef"
+}

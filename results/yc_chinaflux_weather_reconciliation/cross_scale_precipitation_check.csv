@@ -1,0 +1,9 @@
+﻿year,expected_days,half_hour_records,half_hour_rain_valid_sum_mm_lower_bound,half_hour_rain_missing_records,half_hour_rain_incomplete_days,daily_rain_valid_sum_mm,daily_rain_valid_days,daily_rain_missing_days,monthly_rain_valid_sum_mm,monthly_rain_valid_months,yearly_rain_mm,daily_minus_half_hour_mm,monthly_minus_half_hour_mm,yearly_minus_half_hour_mm,daily_minus_monthly_mm,srad_crosscheck_days,srad_crosscheck_mae_MJ_m2_day,srad_crosscheck_max_abs_MJ_m2_day,old_wth_rain_total_mm,legacy_rain_fallback_days,rain_days_still_unresolved_after_legacy_check
+2003,365,17520,697.1,0,0,697.1,365,0,697.1,12,697.1,0.0,0.0,0.0,0.0,365,0.0,0.0,0.0,0,0
+2004,366,17568,846.3,186,5,846.2,361,5,846.2,12,846.2,-0.1,-0.1,-0.1,0.0,366,0.0,0.0,67.4,0,5
+2005,365,17520,627.2,0,0,627.2,365,0,627.2,12,627.2,0.0,0.0,0.0,0.0,365,0.0,0.0,678.4,0,0
+2006,365,17520,380.2,0,0,380.2,365,0,380.2,12,380.2,0.0,0.0,-0.0,0.0,365,0.0,0.0,381.8,0,0
+2007,365,17520,535.7,32,3,11.16,364,1,535.7,12,535.7,-524.54,-0.0,-0.0,-524.54,365,0.0,0.0,571.7,0,3
+2008,366,17568,477.9,106,3,477.9,364,2,477.9,12,477.9,0.0,0.0,0.0,0.0,366,0.0,0.0,527.1,0,3
+2009,365,17520,733.7,163,6,733.7,360,5,733.7,12,733.7,0.0,0.0,-0.0,0.0,365,0.0,0.0,802.7,1,5
+2010,365,17520,186.7,706,26,186.5,349,16,186.5,12,186.5,-0.2,-0.2,-0.2,0.0,365,0.0,0.0,739.9,7,19

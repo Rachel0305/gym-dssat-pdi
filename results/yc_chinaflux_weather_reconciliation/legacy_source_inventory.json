@@ -1,0 +1,109 @@
+{
+  "sheet_variable_columns": [
+    {
+      "source_file": "T2.xls",
+      "sheet": "Sheet0",
+      "variable_columns": {
+        "TMIN": 8,
+        "TMAX": 6
+      }
+    },
+    {
+      "source_file": "T2.xls",
+      "sheet": "Sheet1",
+      "variable_columns": {
+        "TMIN": 8,
+        "TMAX": 6
+      }
+    },
+    {
+      "source_file": "D32.xls",
+      "sheet": "Sheet0",
+      "variable_columns": {
+        "SRAD": 5
+      }
+    },
+    {
+      "source_file": "D32.xls",
+      "sheet": "Sheet1",
+      "variable_columns": {
+        "SRAD": 5
+      }
+    },
+    {
+      "source_file": "HLLCYCFQ降雨数据.xls",
+      "sheet": "Sheet0",
+      "variable_columns": {
+        "RAIN": 5
+      }
+    },
+    {
+      "source_file": "HLLCYCFQ降雨数据.xls",
+      "sheet": "Sheet1",
+      "variable_columns": {
+        "RAIN": 9
+      }
+    }
+  ],
+  "source_files": {
+    "D32.xls": "fd885aff6690cc5d415a3a31a4d409bd032a9bc3502827f5161aa60fdaa983e8",
+    "T2.xls": "d95ceee849df1717f3f2c9e301048467372c3974623d68ce59b7dadffed54b01",
+    "HLLCYCFQ降雨数据.xls": "6e797937abdd021f061cf8a89711a6b24ee462c1d33ce361328dde5741e66430"
+  },
+  "extracted_daily_rows": 2557,
+  "output_csv": "legacy_source_observations_2004_2010.csv",
+  "extraction": "Excel COM; source workbooks opened ReadOnly=true and closed without saving",
+  "dates_without_any_source_row": 31,
+  "station": "YCA",
+  "expected_daily_rows": 2557,
+  "site": "YC",
+  "dates_without_any_source_row_by_year": [
+    {
+      "count": 31,
+      "dates": [
+        "2009-12-01",
+        "2009-12-02",
+        "2009-12-03",
+        "2009-12-04",
+        "2009-12-05",
+        "2009-12-06",
+        "2009-12-07",
+        "2009-12-08",
+        "2009-12-09",
+        "2009-12-10",
+        "2009-12-11",
+        "2009-12-12",
+        "2009-12-13",
+        "2009-12-14",
+        "2009-12-15",
+        "2009-12-16",
+        "2009-12-17",
+        "2009-12-18",
+        "2009-12-19",
+        "2009-12-20",
+        "2009-12-21",
+        "2009-12-22",
+        "2009-12-23",
+        "2009-12-24",
+        "2009-12-25",
+        "2009-12-26",
+        "2009-12-27",
+        "2009-12-28",
+        "2009-12-29",
+        "2009-12-30",
+        "2009-12-31"
+      ],
+      "year": 2009
+    }
+  ],
+  "raw_blank_semantics": "Preserved as blank status; no blank converted to a weather observation.",
+  "years": [
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010
+  ]
+}

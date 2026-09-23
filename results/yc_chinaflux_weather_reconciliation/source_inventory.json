@@ -1,0 +1,123 @@
+{
+  "source": "ChinaFLUX / National Ecosystem Science Data Center",
+  "site": "YC/YCA Yucheng Station",
+  "data_period": "2003-2010",
+  "official_resource_page": "https://www.nesdc.org.cn/otherProject/index?menuId=station&projectId=1047",
+  "archives": {
+    "YCA_M_30min.zip": {
+      "bytes": 25376989,
+      "sha256": "0ef898b6718c63cfa91a52cdb66cf8a0df53c0b245ee2a237e708281b39faee4",
+      "xlsx_member_count": 8,
+      "year_coverage": [
+        2003,
+        2004,
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010
+      ],
+      "internal_excel_filenames": [
+        "30分钟/2003年禹城气象30分钟数据.xlsx",
+        "30分钟/2004年禹城气象30分钟数据.xlsx",
+        "30分钟/2005年禹城气象30分钟数据.xlsx",
+        "30分钟/2006年禹城气象30分钟数据.xlsx",
+        "30分钟/2007年禹城气象30分钟数据.xlsx",
+        "30分钟/2008年禹城气象30分钟数据.xlsx",
+        "30分钟/2009年禹城气象30分钟数据.xlsx",
+        "30分钟/2010年禹城气象30分钟数据.xlsx"
+      ],
+      "parse_status": "parsed_all_8_annual_workbooks"
+    },
+    "YCA_M_daily.zip": {
+      "bytes": 756276,
+      "sha256": "0e38d3d23a36a0968fbcbf743951a66328af022fc891cb4358ea542641b74aee",
+      "xlsx_member_count": 8,
+      "year_coverage": [
+        2003,
+        2004,
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010
+      ],
+      "internal_excel_filenames": [
+        "日尺度/2003年禹城气象日统计数据.xlsx",
+        "日尺度/2004年禹城气象日统计数据.xlsx",
+        "日尺度/2005年禹城气象日统计数据.xlsx",
+        "日尺度/2006年禹城气象日统计数据.xlsx",
+        "日尺度/2007年禹城气象日统计数据.xlsx",
+        "日尺度/2008年禹城气象日统计数据.xlsx",
+        "日尺度/2009年禹城气象日统计数据.xlsx",
+        "日尺度/2010年禹城气象日统计数据.xlsx"
+      ],
+      "parse_status": "parsed_all_8_annual_workbooks"
+    },
+    "YCA_M_monthly.zip": {
+      "bytes": 77651,
+      "sha256": "fde763a148526fec60e83ae13aa873894b1346bd60eb81d534e73e1430aedfd4",
+      "xlsx_member_count": 8,
+      "year_coverage": [
+        2003,
+        2004,
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010
+      ],
+      "internal_excel_filenames": [
+        "月尺度/2003年禹城气象月统计数据.xlsx",
+        "月尺度/2004年禹城气象月统计数据.xlsx",
+        "月尺度/2005年禹城气象月统计数据.xlsx",
+        "月尺度/2006年禹城气象月统计数据.xlsx",
+        "月尺度/2007年禹城气象月统计数据.xlsx",
+        "月尺度/2008年禹城气象月统计数据.xlsx",
+        "月尺度/2009年禹城气象月统计数据.xlsx",
+        "月尺度/2010年禹城气象月统计数据.xlsx"
+      ],
+      "parse_status": "parsed_all_8_annual_workbooks"
+    },
+    "YCA_M_yearly.zip": {
+      "bytes": 51992,
+      "sha256": "b4716cb4990b6b6b7a7dc4e5b92fbe0bbc68956ea4c1ebb317701ac04312ce6e",
+      "xlsx_member_count": 8,
+      "year_coverage": [
+        2003,
+        2004,
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010
+      ],
+      "internal_excel_filenames": [
+        "年尺度/2003年禹城气象年统计数据.xlsx",
+        "年尺度/2004年禹城气象年统计数据.xlsx",
+        "年尺度/2005年禹城气象年统计数据.xlsx",
+        "年尺度/2006年禹城气象年统计数据.xlsx",
+        "年尺度/2007年禹城气象年统计数据.xlsx",
+        "年尺度/2008年禹城气象年统计数据.xlsx",
+        "年尺度/2009年禹城气象年统计数据.xlsx",
+        "年尺度/2010年禹城气象年统计数据.xlsx"
+      ],
+      "parse_status": "parsed_all_8_annual_workbooks"
+    }
+  },
+  "legacy_raw_excel_extraction": {
+    "csv": "legacy_source_observations_2004_2010.csv",
+    "manifest": "legacy_source_inventory.json",
+    "method": "Excel COM read-only extraction of original T2.xls, D32.xls, and HLLCYCFQ rainfall workbook"
+  },
+  "product_metadata_documents": [
+    "YCA_M_30min.pdf",
+    "YCA_M_DAILY.pdf",
+    "YCA_M_MONTHLY.pdf",
+    "YCA_M_YEARLY.pdf"
+  ]
+}

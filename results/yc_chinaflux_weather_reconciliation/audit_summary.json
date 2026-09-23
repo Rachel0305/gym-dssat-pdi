@@ -1,0 +1,130 @@
+{
+  "task": "003_03_yc_chinaflux_weather_reconciliation",
+  "final_status": "BLOCKED_TEMPERATURE_SENSOR_MAPPING",
+  "secondary_blockers": [
+    "BLOCKED_PRECIPITATION_GAPS"
+  ],
+  "site_scope": "YC/YCA only",
+  "parsed_archives": 4,
+  "annual_workbooks_parsed": 32,
+  "chinaflux_years": [
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010
+  ],
+  "train_candidate_years": [
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010
+  ],
+  "temperature_sensor_mapping_confirmed": false,
+  "rain_missing_days_in_chinaflux_30min": 43,
+  "rain_days_replaced_from_traceable_legacy_source": 8,
+  "rain_days_unresolved_after_legacy_source_check": 35,
+  "source_table_dates_without_any_row": [
+    "2009-12-01",
+    "2009-12-02",
+    "2009-12-03",
+    "2009-12-04",
+    "2009-12-05",
+    "2009-12-06",
+    "2009-12-07",
+    "2009-12-08",
+    "2009-12-09",
+    "2009-12-10",
+    "2009-12-11",
+    "2009-12-12",
+    "2009-12-13",
+    "2009-12-14",
+    "2009-12-15",
+    "2009-12-16",
+    "2009-12-17",
+    "2009-12-18",
+    "2009-12-19",
+    "2009-12-20",
+    "2009-12-21",
+    "2009-12-22",
+    "2009-12-23",
+    "2009-12-24",
+    "2009-12-25",
+    "2009-12-26",
+    "2009-12-27",
+    "2009-12-28",
+    "2009-12-29",
+    "2009-12-30",
+    "2009-12-31"
+  ],
+  "daily_temperature_candidate_branches": 2,
+  "canonical_daily_TMAX_TMIN_selected": false,
+  "formal_WTH_created": false,
+  "CLI_created": false,
+  "PPO_runs": 0,
+  "DSSAT_smoke_runs": 0,
+  "fit_options": {
+    "dssat_weatherMan_guidance": {
+      "nominal_input_years": "5-10 years of daily weather data",
+      "source": "DSSAT.net FAQ: How to generate daily weather data",
+      "url": "https://dssat.net/5165/",
+      "meaning": "Nominal record-length guidance only; it does not waive variable completeness or provenance requirements."
+    },
+    "option_A": {
+      "years": "2004-2010",
+      "nominal_year_count": 7,
+      "all_years_inside_original_train_window": true,
+      "validation_or_test_information_used": false,
+      "candidate_days": 2557,
+      "rain_days_still_unresolved_after_traceable_legacy_fallback": 35,
+      "days_using_traceable_legacy_rain_fallback": 8,
+      "source_consistency": "ChinaFLUX 30-minute series plus explicitly flagged legacy daily observations on missing-interval dates; not ChinaFLUX-only after fallback.",
+      "nominal_WeatherMan_length_adequate": true,
+      "eligible_for_CLI": false,
+      "reason": "Temperature field-to-height mapping remains unresolved; any residual rain gaps also block parameter fitting. Seven nominal years cannot override these gates."
+    },
+    "option_B": {
+      "years": "2004-2013",
+      "nominal_year_count": 10,
+      "all_years_inside_original_train_window": true,
+      "validation_or_test_information_used": false,
+      "chinaflux_years": "2004-2010",
+      "legacy_only_years": "2011-2013",
+      "legacy_2011_2013_prefill_counts": {
+        "2011": {
+          "SRAD": 42,
+          "TMAX": 39,
+          "TMIN": 39,
+          "RAIN": 0,
+          "inserted_missing_dates": 0
+        },
+        "2012": {
+          "SRAD": 1,
+          "TMAX": 1,
+          "TMIN": 1,
+          "RAIN": 0,
+          "inserted_missing_dates": 0
+        },
+        "2013": {
+          "SRAD": 2,
+          "TMAX": 0,
+          "TMIN": 0,
+          "RAIN": 0,
+          "inserted_missing_dates": 0
+        }
+      },
+      "legacy_2011_2013_source_gap_values_excluding_rain": 125,
+      "source_consistency": "Not met; the last three years rely on legacy sources and contain pre-fill SRAD/temperature or date gaps.",
+      "nominal_WeatherMan_length_adequate": true,
+      "eligible_for_CLI": false,
+      "reason": "2011-2013 lack a comparable, complete weather source and some variables were monthly-mean imputed; temperature mapping for ChinaFLUX remains unresolved."
+    },
+    "final_decision": "No final fitting window approved and no CLI generated."
+  }
+}

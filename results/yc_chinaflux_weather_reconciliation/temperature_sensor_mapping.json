@@ -1,0 +1,28 @@
+{
+  "status": "BLOCKED_TEMPERATURE_SENSOR_MAPPING",
+  "selected_field": null,
+  "candidate_fields": [
+    {
+      "field": "近地面空气温度",
+      "physical_meaning": "air temperature below the vegetation canopy",
+      "height_m": null,
+      "height_evidence": "Product documentation lists 1.6 m and 2.9 m for two temperature sensors but does not pair a height to this exported column."
+    },
+    {
+      "field": "冠层上方空气温度",
+      "physical_meaning": "air temperature above the vegetation canopy",
+      "height_m": null,
+      "height_evidence": "Product documentation lists 1.6 m and 2.9 m for two temperature sensors but does not pair a height to this exported column."
+    }
+  ],
+  "available_heights_m": [
+    1.6,
+    2.9
+  ],
+  "decision": "Both temperature series are retained as parallel daily candidates. No TMAX/TMIN field is selected until the metadata owner confirms the field-to-height pairing and DSSAT-representative level.",
+  "evidence": [
+    "The local YCA_M_30min.pdf data dictionary defines near-ground temperature as below-canopy and the second field as above-canopy.",
+    "The same product document lists both sensor heights, 1.6 m and 2.9 m, without an explicit field-to-height assignment.",
+    "The 2003-2005 ChinaFLUX network paper reports YC air-temperature sensor levels at 2 m and 1 m, but does not identify which current exported column matches either sensor or the later 1.6/2.9 m pair."
+  ]
+}

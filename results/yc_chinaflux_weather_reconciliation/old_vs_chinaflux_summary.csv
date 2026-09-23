@@ -1,0 +1,43 @@
+﻿year,variable,candidate_temperature_field,n_paired_days,mean_bias_candidate_minus_old_C,MAE_C,RMSE_C,Pearson_r,mean_bias_candidate_minus_old_MJ_m2_day,MAE_MJ_m2_day,RMSE_MJ_m2_day,mean_bias_candidate_minus_old_mm,MAE_mm,RMSE_mm,ChinaFLUX_complete_day_rain_sum_mm,old_WTH_annual_rain_sum_mm,ChinaFLUX_complete_day_wet_days_gt_0p1mm,ChinaFLUX_complete_day_max_daily_rain_mm,ChinaFLUX_max_observed_dry_spell_on_complete_days,rain_metric_scope
+2004,TMAX,near_surface_below_canopy,366,0.1065,1.0247,2.0155,0.98085,,,,,,,,,,,,
+2004,TMIN,near_surface_below_canopy,366,-0.2314,0.9672,1.8415,0.98334,,,,,,,,,,,,
+2004,TMAX,above_canopy,366,-0.0255,0.9807,1.9772,0.98109,,,,,,,,,,,,
+2004,TMIN,above_canopy,366,0.1387,1.0394,1.8218,0.98332,,,,,,,,,,,,
+2004,SRAD,,366,,,,0.97505,-0.2854,0.9222,1.4773,,,,,,,,,
+2004,RAIN,,361,,,,0.11587,,,,2.1573,2.303,9.2319,846.2,67.4,71,89.6,50,30-minute complete days only; incomplete and fallback days excluded
+2005,TMAX,near_surface_below_canopy,365,-0.6471,0.9106,1.2911,0.99538,,,,,,,,,,,,
+2005,TMIN,near_surface_below_canopy,365,-0.1341,0.6775,1.1741,0.9947,,,,,,,,,,,,
+2005,TMAX,above_canopy,365,-0.8306,1.0707,1.3649,0.99552,,,,,,,,,,,,
+2005,TMIN,above_canopy,365,0.3188,0.854,1.2287,0.99453,,,,,,,,,,,,
+2005,SRAD,,365,,,,0.90618,-0.1995,1.5682,2.8968,,,,,,,,,
+2005,RAIN,,365,,,,0.95809,,,,-0.1403,0.674,2.6105,627.2,678.4,64,90.6,47,30-minute complete days only; incomplete and fallback days excluded
+2006,TMAX,near_surface_below_canopy,365,-0.8409,0.9589,1.2358,0.99658,,,,,,,,,,,,
+2006,TMIN,near_surface_below_canopy,365,-0.093,0.6767,1.1544,0.99372,,,,,,,,,,,,
+2006,TMAX,above_canopy,365,-0.968,1.0826,1.3238,0.9966,,,,,,,,,,,,
+2006,TMIN,above_canopy,365,0.2125,0.8057,1.1833,0.99357,,,,,,,,,,,,
+2006,SRAD,,365,,,,0.97834,-0.6198,0.8394,1.5239,,,,,,,,,
+2006,RAIN,,365,,,,0.82558,,,,-0.0044,0.4855,2.5606,380.2,381.8,51,44.1,46,30-minute complete days only; incomplete and fallback days excluded
+2007,TMAX,near_surface_below_canopy,365,-0.7729,0.879,1.1687,0.99622,,,,,,,,,,,,
+2007,TMIN,near_surface_below_canopy,365,-0.1278,0.5488,0.9352,0.99571,,,,,,,,,,,,
+2007,TMAX,above_canopy,365,-0.8094,0.9335,1.2466,0.99563,,,,,,,,,,,,
+2007,TMIN,above_canopy,365,0.2408,0.7474,1.0199,0.99512,,,,,,,,,,,,
+2007,SRAD,,365,,,,0.97969,-1.148,1.2613,1.851,,,,,,,,,
+2007,RAIN,,362,,,,0.96548,,,,-0.0994,0.484,1.8119,535.7,571.7,73,78.4,37,30-minute complete days only; incomplete and fallback days excluded
+2008,TMAX,near_surface_below_canopy,366,-0.67,1.2076,1.64,0.99023,,,,,,,,,,,,
+2008,TMIN,near_surface_below_canopy,366,-0.3056,0.7609,1.3364,0.9924,,,,,,,,,,,,
+2008,TMAX,above_canopy,366,-0.7679,1.2356,1.6346,0.99084,,,,,,,,,,,,
+2008,TMIN,above_canopy,366,0.1612,0.9043,1.3145,0.99237,,,,,,,,,,,,
+2008,SRAD,,366,,,,0.96971,-0.5193,0.9869,1.6478,,,,,,,,,
+2008,RAIN,,363,,,,0.99213,,,,-0.1355,0.2887,0.9903,477.9,527.1,65,58.8,44,30-minute complete days only; incomplete and fallback days excluded
+2009,TMAX,near_surface_below_canopy,365,-1.0174,1.0964,1.5252,0.99477,,,,,,,,,,,,
+2009,TMIN,near_surface_below_canopy,365,-0.3936,0.6852,1.2323,0.99353,,,,,,,,,,,,
+2009,TMAX,above_canopy,365,-1.0751,1.1554,1.5704,0.99464,,,,,,,,,,,,
+2009,TMIN,above_canopy,365,0.0689,0.8195,1.2218,0.99294,,,,,,,,,,,,
+2009,SRAD,,365,,,,0.99179,-0.3226,0.5642,1.0152,,,,,,,,,
+2009,RAIN,,359,,,,0.94667,,,,-0.1485,0.768,3.5915,716.2,802.7,68,66.4,38,30-minute complete days only; incomplete and fallback days excluded
+2010,TMAX,near_surface_below_canopy,365,-1.0079,1.042,1.3056,0.9972,,,,,,,,,,,,
+2010,TMIN,near_surface_below_canopy,365,-0.3509,0.6504,1.143,0.99502,,,,,,,,,,,,
+2010,TMAX,above_canopy,365,-1.0627,1.0982,1.348,0.99722,,,,,,,,,,,,
+2010,TMIN,above_canopy,365,0.029,0.7653,1.1421,0.99455,,,,,,,,,,,,
+2010,SRAD,,365,,,,0.98577,-0.2921,0.5011,1.1623,,,,,,,,,
+2010,RAIN,,339,,,,0.92344,,,,-0.8855,1.0077,7.1828,151.8,739.9,47,42.0,47,30-minute complete days only; incomplete and fallback days excluded

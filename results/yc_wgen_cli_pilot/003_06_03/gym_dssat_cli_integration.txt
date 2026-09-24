@@ -1,0 +1,26 @@
+Gym-DSSAT and .CLI consumption path (source-only audit)
+
+Repository wrapper: references/dssat_pdi.py
+- DssatPdi.__init__ accepts auxiliary_file_paths and random_weather; the current reference default is random_weather=True, but the active YC PPO wrapper explicitly supplies False.
+- For non-cotton YC/maize, .CLI is not automatically added by the wrapper. The caller must include the exact .CLI path in auxiliary_file_paths.
+- _make_tmp_folder creates the temporary DSSAT run folder. _copy_auxiliary_files copies every caller-supplied file into it under its basename.
+- _launch_client runs the configured run_dssat command with cwd=self._tmp_folder and FileX fileX.MZX. No separate .CLI environment variable/config is set by the wrapper code inspected.
+- random_weather=True maps the rendered weather mode to W; False maps to measured mode M. rseed1 is placed in dssat-pdi.yml and refreshed from the environment RNG when random_weather is true.
+- The current YC safe-render path in src/ppo_safe_rendering.py sets random_weather=False and auxiliary_file_paths to cultivar, historical WTH, and soil; it does not pass a .CLI.
+
+Official DSSAT source-level filename behavior
+- The public DSSAT CSM 4.8.5 SECLI source uses weather mode W for internal WGEN and mode S for SIMMETEO; when selecting either it replaces FILEW positions 5-12 with '.CLI ' while retaining the first four characters.
+- For the project example FileX WSTA=CNYC0801, that source derives CNYC.CLI. The local wrapper's basename copy places a caller-supplied CNYC.CLI in the same temporary working directory from which DSSAT is launched.
+- SECLI source checks the named file and can resolve a configured climate path. Static source makes local basename placement coherent, but no runtime call was made to prove the active installation's actual lookup, parser, or fallback behavior.
+- Exact CNYC station-ID equality validation and Windows WeatherMan output -> Linux runtime interoperability have not been exercised. .CLI samples are readable text files; that alone is not an interoperability test.
+
+Current readiness
+- Existing YC PPO measured-weather path: random_weather=false; unchanged.
+- WGEN path for this task: not enabled, not invoked, no .CLI supplied.
+- Do not modify PPO or FileX for the current path-confirmation task.
+
+Key source references
+- references/dssat_pdi.py:34-35, 74-92, 258-276, 294, 332-342, 486-504.
+- src/ppo_safe_rendering.py:336-340.
+- DSSAT public source SECLI.for: https://github.com/DSSAT/dssat-csm-os/blob/develop/InputModule/SECLI.for
+- DSSAT public simulation weather-mode dictionary: https://github.com/DSSAT/dssat-csm-os/blob/develop/Data/SIMULATION.CDE

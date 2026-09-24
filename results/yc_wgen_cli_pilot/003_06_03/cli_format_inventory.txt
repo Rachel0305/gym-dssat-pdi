@@ -1,0 +1,30 @@
+003_06_03 repository and official-document inventory
+Audit date: 2026-09-24
+Scope: YC only; no WGEN, DSSAT, WeatherMan, CLI generation, PPO, or validation-weather run.
+
+Frozen input identity
+- results/yc_weather_gapfill_finalize/yc_wgen_fitting_weather_2004_2013.csv
+- SHA256 4B8FFE9E881D0A0743921B78B9C0E0EBFB1D2D645C5AA9737948B2B088ED7B34
+- 3653 daily rows; first DATE 2004-01-01; last DATE 2013-12-31.
+- Header fields: DATE,YEAR,DOY,SRAD,TMAX,TMIN,RAIN,SRAD_source,TMAX_source,TMIN_source,RAIN_source,SRAD_qc,TMAX_qc,TMIN_qc,RAIN_qc
+- Hash, line count, header, and endpoint fields were read only. No weather values were refit or changed.
+
+Current project .CLI examples (structure only; no parameter values copied)
+1. benchmark_results/027_07_site_specific_stage_maskable_ppo/LC/readiness/baseline_runs/dssat_auto/input/CNLC.CLI
+   9 lines. Shows *CLIMATE, station/location header, descriptive fields, and GSST/GSDU. It has no *WGEN PARAMETERS block, so it does not establish a complete WGEN input schema.
+2. benchmark_results/028_05_sy_crossyear_frozen_ppo_daily/2012/seed0/snapshot/CNSY.CLI
+   56 lines. Shows *CLIMATE, *MONTHLY AVERAGES, *WGEN PARAMETERS, *RANGE CHECK VALUES, and *FLAGGED DATA COUNT blocks.
+3. These samples demonstrate text, sectioned .CLI records used in the repository. Their exact DSSAT runtime versions were not established during this audit.
+
+YC-specific .CLI status
+- No CNYC.CLI appeared in the current rg file inventory.
+- The historical raw path recorded in prior YC audit notes, DSSAT_auto_validation/run_CNYC0802_DSSAT480_IC0_null_2000_2023/pdi_smoke_test/input_used_by_pdi/CNYC.CLI, is absent in the current checkout.
+- Prior reports record SHA256 58dbe11fdb3af9d34cc25644d8fb965627403778eb92da31a8f91619bd100d51, a flagged-data window 2008-2014, and random_weather=false. Those notes are historical provenance only, not a currently inspectable source or train-only parameter artifact.
+
+Field-definition source and limits
+- DSSAT User's Guide Vol. 3, Appendix B (legacy DSSAT v3 guide), documents climate/location, monthly averages, WGEN parameters, range-check values, and flagged-data counts. It provides meanings/units for many fields.
+- The official public DSSAT CSM develop source reviewed for this task is identified as 4.8.5 source in its CSM header; SECLI.for derives a .CLI suffix from the first four characters of FILEW for weather modes S/W.
+- Neither the older guide nor the current project samples prove that every field/section is mandatory in active DSSAT 4.8.0.024 or 4.8.5, or that the two versions have identical .CLI schemas.
+- See cli_field_structure.json for observed fields, documented meanings, units, derivation, time scale, and requiredness confidence.
+
+No CNYC.CLI was assembled. Other-site CLI climate parameter values were not copied or used.

@@ -1,0 +1,69 @@
+{
+  "task": "003_06_03_confirm_cli_generation_path",
+  "site": "YC",
+  "target_station_code": "CNYC",
+  "target_cli_filename": "CNYC.CLI",
+  "status": "PARTIAL; STATION_ID_AND_COORDINATES_CONFIRMED; REQUIRED_STATION_FIELDS_INCOMPLETE_OR_UNPROVEN",
+  "source_scope": "Only 2004-2013 WTH headers were read for station metadata; no validation-year daily weather values were opened or used.",
+  "train_weather_header_audit": {
+    "years": [2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013],
+    "wth_station_id": "CNYC",
+    "latitude": 36.83,
+    "longitude": 116.57,
+    "elevation": 22,
+    "field_units": {
+      "latitude": "degrees north (official legacy WeatherMan climate-file specification)",
+      "longitude": "degrees east (official legacy WeatherMan climate-file specification)",
+      "elevation": "m (official legacy WeatherMan climate-file specification)"
+    },
+    "consistency": "All ten 2004-2013 WTH headers agree exactly at stored precision.",
+    "additional_header_fields": {
+      "TAV": {"value": 14.0, "status": "same in all ten train-period file headers, but estimation period/source is not documented; do not use as train-only CLI statistic"},
+      "AMP": {"value": 28.9, "status": "same in all ten train-period file headers, but estimation period/source is not documented; do not use as train-only CLI statistic"},
+      "REFHT": {"value": -99.0, "status": "sentinel/unknown, not a usable instrument height"},
+      "WNDHT": {"value": -99.0, "status": "sentinel/unknown, not a usable anemometer height"}
+    },
+    "source_files": [
+      "DSSAT_auto_validation/multisite_new_cultivar_inputs_013/YC/CNYC0401.WTH",
+      "DSSAT_auto_validation/multisite_new_cultivar_inputs_013/YC/CNYC0501.WTH",
+      "DSSAT_auto_validation/multisite_new_cultivar_inputs_013/YC/CNYC0601.WTH",
+      "DSSAT_auto_validation/multisite_new_cultivar_inputs_013/YC/CNYC0701.WTH",
+      "DSSAT_auto_validation/multisite_new_cultivar_inputs_013/YC/CNYC0801.WTH",
+      "DSSAT_auto_validation/multisite_new_cultivar_inputs_013/YC/CNYC0901.WTH",
+      "DSSAT_auto_validation/multisite_new_cultivar_inputs_013/YC/CNYC1001.WTH",
+      "DSSAT_auto_validation/multisite_new_cultivar_inputs_013/YC/CNYC1101.WTH",
+      "DSSAT_auto_validation/multisite_new_cultivar_inputs_013/YC/CNYC1201.WTH",
+      "DSSAT_auto_validation/multisite_new_cultivar_inputs_013/YC/CNYC1301.WTH"
+    ]
+  },
+  "site_and_station_code_interpretation": {
+    "YC": "Confirmed project/site label from the YC directory and experiment context.",
+    "CNYC": "Confirmed full four-character station identifier from WTH headers and official station-code conventions.",
+    "CN_component": "The repository does not formally define the substring CN; do not claim a validated semantic expansion.",
+    "YC_component_inside_CNYC": "The repository does not formally define the substring YC within CNYC; do not claim a validated semantic expansion."
+  },
+  "legacy_weatherMan_new_station_fields": {
+    "latitude": "Known and consistent from ten train-period headers; official legacy guide calls it essential.",
+    "longitude": "Known and consistent from ten train-period headers.",
+    "elevation_m": "Known and consistent from ten train-period headers.",
+    "angstrom_A_B": "Not present in audited WTH headers; not derived from another station or guessed.",
+    "reference_height_m": "WTH header is -99.0; unresolved.",
+    "wind_reference_height_m": "WTH header is -99.0; unresolved.",
+    "mean_annual_temperature_TAV": "Header value 14.0 is repeated, but its climate reference period is unknown; must be recomputed from frozen 2004-2013 data or verified as compatible with the train-only protocol.",
+    "temperature_amplitude_AMP": "Header value 28.9 is repeated, but its climate reference period is unknown; must be recomputed from frozen 2004-2013 data or verified as compatible with the train-only protocol.",
+    "start_of_growing_season_START": "Not present in audited WTH headers; source and method unresolved.",
+    "duration_of_growing_season_DURN": "Not present in audited WTH headers; source and method unresolved.",
+    "guide_caveat": "These fields are listed as new-station information by the legacy DSSAT v3 WeatherMan guide; requiredness in the target current 4.8.x build must be checked in its Help/About."
+  },
+  "filex_and_weather_mapping": {
+    "filex_example": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013/YC/CNYC0801.MZX",
+    "filex_wsta_example": "CNYC0801",
+    "wth_filename_example": "CNYC0801.WTH",
+    "wth_internal_station_id": "CNYC",
+    "weather_mode_w_cli_filename_rule": "The inspected official public DSSAT 4.8.5 SECLI source writes '.CLI' into FILEW characters 5-12 for internal WGEN/SIMMETEO modes, leaving the leading four-character prefix. For WSTA CNYC0801, the source-level derived basename is CNYC.CLI.",
+    "internal_cli_header_match": "Repository examples use *CLIMATE:CNYC. Strict runtime validation that the internal climate identifier must equal the filename prefix was not executed.",
+    "source_runtime_relation": "Static source rule only; active local runtime version and file lookup were not tested."
+  },
+  "conflicts": [],
+  "next_action": "Before generating, preserve the confirmed station ID/location; verify instrument heights and any additional metadata requested by the actual WeatherMan version. Do not copy another station's climate parameters."
+}

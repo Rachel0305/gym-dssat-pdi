@@ -1,0 +1,53 @@
+{
+  "task": "003_06_03_confirm_cli_generation_path",
+  "as_of": "2026-09-24",
+  "decision": "BLOCKED_BY_WEATHERMAN_ACCESS",
+  "additional_blocking_items": [
+    "BLOCKED_BY_UNKNOWN_IMPORT_FORMAT",
+    "BLOCKED_BY_UNKNOWN_CLI_FORMAT",
+    "BLOCKED_BY_UNKNOWN_STATION_METADATA"
+  ],
+  "frozen_weather_candidate": {
+    "path": "results/yc_weather_gapfill_finalize/yc_wgen_fitting_weather_2004_2013.csv",
+    "sha256": "4B8FFE9E881D0A0743921B78B9C0E0EBFB1D2D645C5AA9737948B2B088ED7B34",
+    "rows": 3653,
+    "date_start": "2004-01-01",
+    "date_end": "2013-12-31",
+    "modified": false
+  },
+  "historical_dssat_version": "4.8.0.024",
+  "historical_dssat_version_status": "CONFIRMED_FOR_SAVED_2026-07-02_RUN_ONLY",
+  "current_active_runtime_version": "UNKNOWN",
+  "target_cli": "CNYC.CLI",
+  "target_station_code": "CNYC",
+  "cli_format_status": "PARTIALLY_DOCUMENTED_BY_LEGACY_OFFICIAL_GUIDE_AND_NON_YC_PROJECT_SAMPLES; ACTIVE_4_8_X_SCHEMA_UNVERIFIED",
+  "cli_required_fields": {
+    "legacy_guide_wgen_block": "*WGEN PARAMETERS is needed for WGEN according to the guide",
+    "active_4_8_x_exact_required_columns": "UNKNOWN",
+    "other_sections": "The guide describes climate metadata, monthly averages, range checks, and flagged counts; strict WGEN parser requirements are untested."
+  },
+  "yc_station_metadata_status": "PARTIAL: CNYC, LAT/LONG/ELEV confirmed; Angstrom A/B and growing-season metadata absent; REFHT/WNDHT are -99; TAV/AMP header values have unknown reference period and are not approved as train-only statistics.",
+  "weatherman_role": "Official DSSAT weather import/analysis/export tool; preferred parameter-estimation route in principle.",
+  "weatherman_generation_capability": "Legacy official manual documents import, selected-period WGEN parameter calculation, and recording climate parameters to .CLI.",
+  "weatherman_access_status": "UNKNOWN; no external install/runtime probing under project AGENTS.md boundary",
+  "weatherman_current_4_8_x_cli_or_gui_interface": "UNKNOWN",
+  "official_alternative_cli_generator_in_repository": "NONE_FOUND",
+  "required_weather_import_format": "Daily DATE + SRAD (MJ/m2), TMAX/TMIN (°C), RAIN (mm) through a confirmed custom column format; current CSV delimiter/date import contract not confirmed and CSV does not carry a units row.",
+  "candidate_conversion_required": "UNKNOWN; direct import has not been verified. Do not convert until the target version's import profile is known.",
+  "gym_dssat_cli_integration_status": "CALLER_SUPPLIED auxiliary_file_paths -> copy by basename to temporary run directory -> DSSAT launched with that directory as cwd; source-level CNYC.CLI lookup derived from first four WSTA characters for W mode.",
+  "random_weather_current_status": "FALSE in current YC safe-render path; wrapper's default is TRUE but current caller explicitly disables it.",
+  "preferred_generation_route": "WeatherMan GUI/manual workflow, after tool version and CSV import contract are verified.",
+  "weather_candidate_modified": false,
+  "validation_data_used": false,
+  "cli_generated": false,
+  "dssat_simulation_run": false,
+  "ppo_modified": false,
+  "other_sites_modified": false,
+  "exact_next_step": "Have the user place WeatherMan About/version, station-editor requirements, and Import/Export format/help evidence inside the project; then source missing station metadata without validation leakage, define the CSV mapping in isolation, and approve a hash-preserving conversion only if required.",
+  "report_md": "docs/yc_cli_generation_path.md",
+  "report_pptx": "docs/yc_cli_generation_path.pptx",
+  "results_directory": "results/yc_wgen_cli_pilot/003_06_03",
+  "git_commit": "RECORDED_IN_FINAL_TERMINAL_SUMMARY",
+  "git_push": false,
+  "github_backup_status": "Pending explicit user approval"
+}

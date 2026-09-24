@@ -1,0 +1,145 @@
+{
+  "task": "003_06_03_confirm_cli_generation_path",
+  "audit_date": "2026-09-24",
+  "target_file": "CNYC.CLI",
+  "format_status": "OBSERVED_STRUCTURE_AND_LEGACY_FIELD_DEFINITIONS; 4.8.x strict schema not fully version-verified",
+  "sources": [
+    {
+      "kind": "repository_sample",
+      "path": "benchmark_results/027_07_site_specific_stage_maskable_ppo/LC/readiness/baseline_runs/dssat_auto/input/CNLC.CLI",
+      "use": "section/header structure only; climate values excluded"
+    },
+    {
+      "kind": "repository_sample",
+      "path": "benchmark_results/028_05_sy_crossyear_frozen_ppo_daily/2012/seed0/snapshot/CNSY.CLI",
+      "use": "section/header structure only; climate values excluded"
+    },
+    {
+      "kind": "official_document",
+      "title": "DSSAT User's Guide, Volume 3, WeatherMan Reference Guide, Appendix B, pp. 197-199",
+      "url": "https://dssat.net/wp-content/uploads/2011/10/DSSAT-vol3.pdf",
+      "version_caveat": "The guide labels itself DSSAT v3 and is not a 4.8.0.024 or 4.8.5 schema conformance test."
+    }
+  ],
+  "observed_file_sections": [
+    "*CLIMATE",
+    "*MONTHLY AVERAGES",
+    "*WGEN PARAMETERS",
+    "*RANGE CHECK VALUES",
+    "*FLAGGED DATA COUNT"
+  ],
+  "sample_variation": "CNLC.CLI has only the climate/descriptive and GSST/GSDU portion in the inspected 9-line file; CNSY.CLI has all five sections. This is not enough to determine the active WGEN parser's minimum required blocks.",
+  "requiredness_summary": {
+    "WGEN mode": "The legacy official guide says WGEN parameters must be present in the climate file to use WGEN. Exact required columns and parser behavior for the active 4.8.x runtime remain untested.",
+    "SIMMETEO": "The legacy guide identifies monthly averages as SIMMETEO inputs; not a substitute for WGEN parameters.",
+    "range checks and flagged counts": "The legacy guide describes range checks as WeatherMan import QC metadata and flagged counts as archive statistics; active-runtime parser requiredness is unconfirmed."
+  },
+  "groups": [
+    {
+      "section": "*CLIMATE",
+      "purpose": "Station/location description and annual climate summaries in the legacy guide.",
+      "required_or_optional": "Core climate section is documented; strict active 4.8.x requirement for every listed field is unknown.",
+      "fields": [
+        {"field":"INSI","meaning":"Station identifier shown in repository examples; not separately defined in the inspected manual table.","unit":"none","time_scale":"station","source":"Repository CLI header","how_generated":"Assign the confirmed station code; internal code parsing must be version-checked.","required_or_optional":"Observed; strict parser requirement unknown."},
+        {"field":"LAT","meaning":"Latitude, degrees north.","unit":"degrees north","time_scale":"station location","source":"Official guide Appendix B; YC WTH station headers","how_generated":"Use verified YC station metadata.","required_or_optional":"Documented field; active parser minimum unknown."},
+        {"field":"LONG","meaning":"Longitude, degrees east.","unit":"degrees east","time_scale":"station location","source":"Official guide Appendix B; YC WTH station headers","how_generated":"Use verified YC station metadata.","required_or_optional":"Documented field; active parser minimum unknown."},
+        {"field":"ELEV","meaning":"Elevation.","unit":"m","time_scale":"station location","source":"Official guide Appendix B; YC WTH station headers","how_generated":"Use verified YC station metadata.","required_or_optional":"Documented field; active parser minimum unknown."},
+        {"field":"TAV","meaning":"Mean annual temperature.","unit":"°C","time_scale":"annual/climate summary","source":"Official guide Appendix B","how_generated":"WeatherMan climate summary over a chosen source period; exact 4.8.x estimator behavior unverified.","required_or_optional":"Documented; active parser requirement unknown."},
+        {"field":"AMP","meaning":"Half the mean temperature difference between warmest and coolest month.","unit":"not stated in Appendix B","time_scale":"annual/climate summary","source":"Official guide Appendix B","how_generated":"WeatherMan climate summary; exact estimator period must be 2004-2013.","required_or_optional":"Documented; active parser requirement unknown."},
+        {"field":"SRAY","meaning":"Mean annual daily solar radiation.","unit":"MJ/m2/day","time_scale":"annual/climate summary","source":"Official guide Appendix B","how_generated":"WeatherMan climate summary on 2004-2013 only.","required_or_optional":"Documented; active parser requirement unknown."},
+        {"field":"TMXY","meaning":"Mean annual daily maximum temperature.","unit":"°C","time_scale":"annual/climate summary","source":"Official guide Appendix B","how_generated":"WeatherMan climate summary on 2004-2013 only.","required_or_optional":"Documented; active parser requirement unknown."},
+        {"field":"TMNY","meaning":"Mean annual daily minimum temperature.","unit":"°C","time_scale":"annual/climate summary","source":"Official guide Appendix B","how_generated":"WeatherMan climate summary on 2004-2013 only.","required_or_optional":"Documented; active parser requirement unknown."},
+        {"field":"RAIY","meaning":"Mean annual daily rainfall.","unit":"mm","time_scale":"annual/climate summary","source":"Official guide Appendix B","how_generated":"WeatherMan climate summary on 2004-2013 only.","required_or_optional":"Documented; active parser requirement unknown."},
+        {"field":"START","meaning":"Mean day of year of first frost-free day.","unit":"day of year","time_scale":"station/climate summary","source":"Official guide Appendix B","how_generated":"No YC-specific source/method confirmed.","required_or_optional":"Documented; active parser requirement unknown."},
+        {"field":"DURN","meaning":"Mean number of days between last and first frost.","unit":"days","time_scale":"station/climate summary","source":"Official guide Appendix B","how_generated":"No YC-specific source/method confirmed.","required_or_optional":"Documented; active parser requirement unknown."},
+        {"field":"ANGA","meaning":"Intercept A in the Angstrom equation.","unit":"not stated","time_scale":"station/climate summary","source":"Official guide Appendix B","how_generated":"WeatherMan/site parameter workflow; active estimator not run.","required_or_optional":"Documented; active parser requirement unknown."},
+        {"field":"ANGB","meaning":"Multiplier B in the Angstrom equation.","unit":"not stated","time_scale":"station/climate summary","source":"Official guide Appendix B","how_generated":"WeatherMan/site parameter workflow; active estimator not run.","required_or_optional":"Documented; active parser requirement unknown."},
+        {"field":"REFHT","meaning":"Height of weather instruments above ground.","unit":"m","time_scale":"station metadata","source":"Official guide Appendix B","how_generated":"Use version-specific station metadata; YC value not established in the audited headers.","required_or_optional":"Documented; active parser requirement unknown."},
+        {"field":"WNDHT","meaning":"Height of anemometer above ground.","unit":"m","time_scale":"station metadata","source":"Official guide Appendix B","how_generated":"Use version-specific station metadata; YC value not established in the audited headers.","required_or_optional":"Documented; active parser requirement unknown."},
+        {"field":"SOURCE","meaning":"A source label appears in one repository sample; meaning is not given in the inspected manual appendix.","unit":"n/a","time_scale":"provenance","source":"Repository CLI header","how_generated":"Do not infer or invent; verify the target WeatherMan version.","required_or_optional":"Observed in one sample only; unknown."},
+        {"field":"GSST","meaning":"First year of observed weather data.","unit":"year","time_scale":"observation window","source":"Official guide Appendix B","how_generated":"Derive from the train-only daily archive (2004).","required_or_optional":"Documented; exact 4.8.x field presence unknown."},
+        {"field":"GSDU","meaning":"Number of years of observed weather data.","unit":"years","time_scale":"observation window","source":"Official guide Appendix B","how_generated":"Derive from the train-only daily archive (10 years).","required_or_optional":"Documented; exact 4.8.x field presence unknown."}
+      ]
+    },
+    {
+      "section": "*MONTHLY AVERAGES",
+      "purpose": "Monthly means and Angstrom coefficients identified by the legacy guide as SIMMETEO inputs.",
+      "required_or_optional": "Relevant to SIMMETEO; not evidence of the WGEN parameter block. Active parser behavior untested.",
+      "fields": [
+        {"field":"MTH","meaning":"Month, 1-12.","unit":"month index","time_scale":"monthly","source":"Official guide Appendix B","how_generated":"WeatherMan monthly aggregation.","required_or_optional":"One row per month in inspected sample; parser rule untested."},
+        {"field":"SAMN","meaning":"Mean daily solar radiation for month.","unit":"MJ/m2/day","time_scale":"monthly","source":"Official guide Appendix B","how_generated":"WeatherMan monthly aggregation.","required_or_optional":"SIMMETEO-related; active parser rule untested."},
+        {"field":"XAMN","meaning":"Mean daily maximum temperature for month.","unit":"°C","time_scale":"monthly","source":"Official guide Appendix B","how_generated":"WeatherMan monthly aggregation.","required_or_optional":"SIMMETEO-related; active parser rule untested."},
+        {"field":"NAMN","meaning":"Mean daily minimum temperature for month.","unit":"°C","time_scale":"monthly","source":"Official guide Appendix B","how_generated":"WeatherMan monthly aggregation.","required_or_optional":"SIMMETEO-related; active parser rule untested."},
+        {"field":"RTOT","meaning":"Mean total rainfall for month.","unit":"mm","time_scale":"monthly","source":"Official guide Appendix B","how_generated":"WeatherMan monthly aggregation.","required_or_optional":"SIMMETEO-related; active parser rule untested."},
+        {"field":"RNUM","meaning":"Mean number of days with rainfall.","unit":"days","time_scale":"monthly","source":"Official guide Appendix B","how_generated":"WeatherMan monthly aggregation.","required_or_optional":"SIMMETEO-related; active parser rule untested."},
+        {"field":"SHMN","meaning":"Mean daily bright sunshine hours as a fraction/percent of daylength.","unit":"percent of daylength","time_scale":"monthly","source":"Official guide Appendix B","how_generated":"WeatherMan monthly aggregation if supported/input available.","required_or_optional":"Observed/documented; active parser rule untested."},
+        {"field":"AMTH","meaning":"Angstrom equation intercept A for month.","unit":"not stated","time_scale":"monthly","source":"Official guide Appendix B","how_generated":"WeatherMan monthly parameter calculation.","required_or_optional":"Observed/documented; active parser rule untested."},
+        {"field":"BMTH","meaning":"Angstrom equation multiplier B for month.","unit":"not stated","time_scale":"monthly","source":"Official guide Appendix B","how_generated":"WeatherMan monthly parameter calculation.","required_or_optional":"Observed/documented; active parser rule untested."}
+      ]
+    },
+    {
+      "section": "*WGEN PARAMETERS",
+      "purpose": "Monthly distribution parameters used by WGEN in the legacy guide.",
+      "required_or_optional": "The legacy guide says WGEN parameters must be in the climate file to use WGEN. Exact active 4.8.x required field list is unconfirmed.",
+      "fields": [
+        {"field":"MTH","meaning":"Month, 1-12.","unit":"month index","time_scale":"monthly","source":"Official guide Appendix B","how_generated":"WeatherMan WGEN parameter calculation from daily weather.","required_or_optional":"Expected per monthly parameter row; active parser rule untested."},
+        {"field":"SDMN","meaning":"Mean daily solar radiation on dry days.","unit":"MJ/m2/day","time_scale":"monthly, conditional on dry day","source":"Official guide Appendix B","how_generated":"WeatherMan WGEN estimator.","required_or_optional":"WGEN block field in legacy format; active parser rule untested."},
+        {"field":"SDSD","meaning":"Standard deviation of solar radiation on dry days.","unit":"not separately stated","time_scale":"monthly, conditional on dry day","source":"Official guide Appendix B","how_generated":"WeatherMan WGEN estimator.","required_or_optional":"WGEN block field in legacy format; active parser rule untested."},
+        {"field":"SWMN","meaning":"Mean daily solar radiation on wet days.","unit":"MJ/m2/day","time_scale":"monthly, conditional on wet day","source":"Official guide Appendix B","how_generated":"WeatherMan WGEN estimator.","required_or_optional":"WGEN block field in legacy format; active parser rule untested."},
+        {"field":"SWSD","meaning":"Standard deviation of solar radiation on wet days.","unit":"not separately stated","time_scale":"monthly, conditional on wet day","source":"Official guide Appendix B","how_generated":"WeatherMan WGEN estimator.","required_or_optional":"WGEN block field in legacy format; active parser rule untested."},
+        {"field":"XDMN","meaning":"Mean daily maximum temperature on dry days.","unit":"°C","time_scale":"monthly, conditional on dry day","source":"Official guide Appendix B","how_generated":"WeatherMan WGEN estimator.","required_or_optional":"WGEN block field in legacy format; active parser rule untested."},
+        {"field":"XDSD","meaning":"Standard deviation of maximum temperature on dry days.","unit":"not separately stated","time_scale":"monthly, conditional on dry day","source":"Official guide Appendix B","how_generated":"WeatherMan WGEN estimator.","required_or_optional":"WGEN block field in legacy format; active parser rule untested."},
+        {"field":"XWMN","meaning":"Mean daily maximum temperature on wet days.","unit":"°C","time_scale":"monthly, conditional on wet day","source":"Official guide Appendix B","how_generated":"WeatherMan WGEN estimator.","required_or_optional":"WGEN block field in legacy format; active parser rule untested."},
+        {"field":"XWSD","meaning":"Standard deviation of maximum temperature on wet days.","unit":"not separately stated","time_scale":"monthly, conditional on wet day","source":"Official guide Appendix B","how_generated":"WeatherMan WGEN estimator.","required_or_optional":"WGEN block field in legacy format; active parser rule untested."},
+        {"field":"NAMN","meaning":"Mean daily minimum temperature.","unit":"°C","time_scale":"monthly","source":"Official guide Appendix B","how_generated":"WeatherMan WGEN estimator.","required_or_optional":"WGEN block field in legacy format; active parser rule untested."},
+        {"field":"NASD","meaning":"Standard deviation of minimum temperature.","unit":"not separately stated","time_scale":"monthly","source":"Official guide Appendix B","how_generated":"WeatherMan WGEN estimator.","required_or_optional":"WGEN block field in legacy format; active parser rule untested."},
+        {"field":"ALPHA","meaning":"Alpha coefficient of the gamma distribution for rainfall.","unit":"not stated","time_scale":"monthly rainfall distribution","source":"Official guide Appendix B","how_generated":"WeatherMan WGEN estimator.","required_or_optional":"WGEN block field in legacy format; active parser rule untested."},
+        {"field":"RTOT","meaning":"Total rainfall.","unit":"mm","time_scale":"monthly","source":"Official guide Appendix B","how_generated":"WeatherMan WGEN estimator.","required_or_optional":"WGEN block field in legacy format; active parser rule untested."},
+        {"field":"PDW","meaning":"Probability of a wet day following a dry day.","unit":"probability","time_scale":"monthly transition probability","source":"Official guide Appendix B","how_generated":"WeatherMan WGEN estimator.","required_or_optional":"WGEN block field in legacy format; active parser rule untested."},
+        {"field":"RNUM","meaning":"Mean number of days with rainfall.","unit":"days","time_scale":"monthly","source":"Official guide Appendix B","how_generated":"WeatherMan WGEN estimator.","required_or_optional":"WGEN block field in legacy format; active parser rule untested."}
+      ]
+    },
+    {
+      "section": "*RANGE CHECK VALUES",
+      "purpose": "MIN/MAX/RATE thresholds for data import QC in the legacy guide.",
+      "required_or_optional": "Described as import-QC data, not as WGEN coefficient fields; exact runtime parser requirement unknown.",
+      "row_fields": ["MIN", "MAX", "RATE"],
+      "weather_variables_and_legacy_default_units": {
+        "SRAD": "MJ/m2",
+        "TMAX": "°C",
+        "TMIN": "°C",
+        "RAIN": "mm",
+        "DEWP": "°C or vapor-pressure unit per WM.VAR",
+        "WIND": "km daily wind run by default",
+        "SUNH": "percent-hours by default; Hrs or n/N alternatives",
+        "PAR": "mol/m2",
+        "TDRY": "°C",
+        "TWET": "°C",
+        "EVAP": "mm",
+        "RHUM": "unit not recoverable from inspected excerpt; verify target WM.VAR"
+      },
+      "source": "Official DSSAT User's Guide Vol. 3, Appendix B and WeatherMan variables table; default units may be configurable."
+    },
+    {
+      "section": "*FLAGGED DATA COUNT",
+      "purpose": "Counts of archive observations and quality flags in the legacy guide.",
+      "required_or_optional": "Archive provenance/QC; active runtime requirement unknown.",
+      "date_fields": [
+        {"field":"BEGYR","meaning":"Year of first daily weather record","unit":"year","time_scale":"archive window"},
+        {"field":"BEGMN","meaning":"Month field present in repository sample; not listed in the inspected legacy Appendix B definitions","unit":"month index","time_scale":"archive window"},
+        {"field":"BEGDY","meaning":"Day of year of first daily weather record","unit":"DOY","time_scale":"archive window"},
+        {"field":"ENDYR","meaning":"Year of last daily weather record","unit":"year","time_scale":"archive window"},
+        {"field":"ENDMN","meaning":"Month field present in repository sample; not listed in the inspected legacy Appendix B definitions","unit":"month index","time_scale":"archive window"},
+        {"field":"ENDDY","meaning":"Day of year of last daily weather record","unit":"DOY","time_scale":"archive window"}
+      ],
+      "count_rows": ["TOTAL", "VALID", "MISSING", "ERROR", "ABOVE", "BELOW", "RATE"],
+      "row_meanings": "Counts of all observations, valid observations, missing values, nonnumeric values, out-of-range values, and excessive day-to-day changes, as defined in Appendix B.",
+      "source": "Official DSSAT User's Guide Vol. 3, Appendix B; BEGMN/ENDMN observed only in current project example."
+    }
+  ],
+  "target_version_open_items": [
+    "Obtain a raw .CLI generated by the approved WeatherMan version and its About/version evidence.",
+    "Compare the actual generated headers/field order against the active DSSAT 4.8.x runtime parser before accepting the schema.",
+    "Do not construct or estimate any fields manually."
+  ]
+}

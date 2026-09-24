@@ -1,0 +1,33 @@
+WeatherMan / official generator path assessment
+Audit date: 2026-09-24
+
+Official tool role
+- DSSAT's official Tools page describes WeatherMan as a tool for importing, analyzing, and exporting daily weather; it lists importing raw data/creating stations, editing station information, saving/exporting, and generating daily weather.
+- The official DSSAT User's Guide Vol. 3 WeatherMan Reference Guide (legacy DSSAT v3 manual) describes selecting a 4-character station, importing one or more raw data files through a user-defined format, entering date/variable/unit/column mappings, calculating WGEN parameters over a selected time window, and recording calculated monthly parameters in the climate file (.CLI).
+- The manual's documented interaction is a menu-driven interface. The inspected material does not establish a batch/command-line parameter-estimation interface for a current DSSAT 4.8.x WeatherMan build.
+- This is evidence for WeatherMan as the preferred official route in principle, not evidence that it is installed or that a specific version is available on this machine. The local audit deliberately did not inspect outside-project paths under AGENTS.md.
+
+Input contract known from the official legacy manual
+- Import may use a previously supplied format (including IBSNAT2/IBSNAT3) or a user-defined format. A format defines skipped header lines, dates, variables, units, and columns; imported data enter a station archive file (.WTD).
+- The manual documents parameter calculation for WGEN and SIMMETEO separately or together and allows a start/end period. It says WGEN parameters must be in the climate file to use WGEN and cautions that parameterization should rely on adequate reliable daily data.
+- For a new station, the guide's station-information table lists latitude, longitude, elevation, Angstrom A/B, reference/wind heights, mean annual temperature, temperature amplitude, and growing-season start/duration; it says export is disabled until the station information is complete. The target WeatherMan version's exact requirement set remains unknown.
+- The manual is old (DSSAT v3) and not proof of the current 4.8.0.024/4.8.5 input parser, CSV dialect, or GUI/API behavior.
+
+Frozen candidate-specific assessment
+- Input is a comma-separated 15-column CSV with ISO DATE, YEAR, DOY, SRAD, TMAX, TMIN, RAIN, and source/QC fields. The verified SHA256 is 4B8FFE9E881D0A0743921B78B9C0E0EBFB1D2D645C5AA9737948B2B088ED7B34.
+- The target mapping is daily SRAD (WeatherMan default MJ/m2), TMAX/TMIN (°C), and RAIN (mm). Those defaults are documented in the official WeatherMan guide; the frozen CSV header itself has no unit row, so the import profile must record and verify the source pipeline's units before import.
+- No repository evidence proves that the target installed WeatherMan version accepts this CSV delimiter/date encoding directly. Its custom column-format capability is documented, but delimiter support and the exact current import template are not.
+- The ten 2004-2013 YC WTH headers agree on latitude/longitude/elevation. Their TAV=14.0 and AMP=28.9 entries have no documented reference period, and REFHT/WNDHT are -99.0; the audited headers contain no Angstrom A/B or growing-season start/duration. Do not use unknown-window climate summaries as train-only estimates or replace missing values with another station's metadata.
+- Therefore the direct-import versus conversion decision is UNKNOWN. Do not build a conversion until the accepted delimiter/position/date/units/sentinel contract is confirmed. If conversion is required, derive it read-only from this frozen CSV, write to a new task-specific input path, and record source/output hashes, row count, dates, field mapping, and any unit transformation (expected none unless officially required).
+- No validation-year data may enter the station archive or parameter calculation. Set the estimator period explicitly to 2004/001-2013/365 and disable automatic missing-data filling unless separately authorized.
+
+Route status
+- Route A, WeatherMan: PREFERRED_OFFICIAL_ROUTE_IN_PRINCIPLE; BLOCKED_BY_TOOL_ACCESS_AND_IMPORT_PROFILE.
+- Route B, another official CLI parameter estimator: none was found in the repository; current external tool availability is unknown.
+- Route C, hand-written parameter fitting: NOT_IMPLEMENTED; prohibited until official routes are ruled out and official equations/distributions are specified.
+
+Official references
+- https://dssat.net/tools/
+- https://dssat.net/wp-content/uploads/2011/10/DSSAT-vol3.pdf (WeatherMan Reference Guide; import and Appendix B climate file format)
+- https://dssat.net/wp-content/uploads/2011/10/DSSAT-vol1.pdf (WeatherMan import/export and Generate overview)
+- The station-information fields and export gate are in Vol. 3, pp. 161-163.

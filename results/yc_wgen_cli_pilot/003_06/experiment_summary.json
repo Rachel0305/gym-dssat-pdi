@@ -1,0 +1,25 @@
+{
+  "task": "003_06_yc_train_only_cli_and_wgen_pilot",
+  "final_status": "BLOCKED_CLI_GENERATION",
+  "candidate_frozen": true,
+  "candidate_sha256": "4B8FFE9E881D0A0743921B78B9C0E0EBFB1D2D645C5AA9737948B2B088ED7B34",
+  "candidate_matches_previous_freeze": true,
+  "train_only_cli_generated": false,
+  "cli_parameter_years": null,
+  "cli_sha256": null,
+  "ppo_seed": "NOT_USED",
+  "weather_seed_reproducibility": "NOT_RUN",
+  "weather_seed_101_vs_102": "NOT_RUN",
+  "wgen_pilot_weather_count": 0,
+  "weather_qc": "NOT_RUN",
+  "dssat_smoke_count": 0,
+  "ppo_runs": 0,
+  "presentation": {
+    "path": "docs/yc_train_only_cli_and_wgen_pilot.pptx",
+    "sha256": "65d3744c04dcf14652eaf5385c4bf7f035eb859fc4495d085517fd962128b2d4",
+    "slide_count": 4,
+    "structure_and_layout_validation": "PASS",
+    "native_powerpoint_rendering_verified": false
+  },
+  "next_minimal_task": "在项目约束内提供可验证的官方 WeatherMan 估计路径，并仅用冻结 candidate 的 2004-2013 数据生成含完整 provenance 的 CNYC.CLI。"
+}

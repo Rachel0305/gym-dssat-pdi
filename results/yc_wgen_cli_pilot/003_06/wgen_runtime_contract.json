@@ -1,0 +1,28 @@
+{
+  "task": "003_06_yc_train_only_cli_and_wgen_pilot",
+  "status": "SOURCE_REVIEW_ONLY_CLI_BLOCKED",
+  "gym_dssat_version_recorded": "0.0.5",
+  "evidence": {
+    "source_path": "references/dssat_pdi.py",
+    "random_weather_sets_weather_mode_W": true,
+    "rseed1_drawn_from_gym_environment_rng": true,
+    "rseed_range_depends_on_evaluation_flag": true,
+    "rseed_passed_to_dssat_configuration": true,
+    "production_runner_random_weather": false,
+    "prior_package_runtime_path": "/opt/gym_dssat_pdi/lib/python3.10/site-packages/gym_dssat_pdi/",
+    "prior_reset_diagnostic_path": "results/yc_weather_audit/yc_weather_reset_diagnostic.json"
+  },
+  "unverified_runtime_items": {
+    "cli_search_path": true,
+    "filex_wsta_to_cli_mapping": true,
+    "current_dssat_wgen_executable_and_version": true,
+    "actual_rseed_observed_in_dssat_run": true,
+    "full_daily_wgen_weather_export": true,
+    "same_seed_actual_weather_hash": true,
+    "different_seed_actual_weather_difference": true
+  },
+  "weather_seed_independent_from_ppo_seed": "NOT_IMPLEMENTED_OR_VERIFIED",
+  "pilot_adapter_created": false,
+  "runtime_call_attempted": false,
+  "reason": "缺少合格 train-only CLI，故不启动 WGEN runtime。"
+}

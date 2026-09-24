@@ -1,0 +1,23 @@
+{
+  "task": "003_06_yc_train_only_cli_and_wgen_pilot",
+  "status": "BLOCKED_CLI_GENERATION",
+  "site": "YC/YCA",
+  "station_code": "CNYC",
+  "candidate_path": "results/yc_weather_gapfill_finalize/yc_wgen_fitting_weather_2004_2013.csv",
+  "candidate_sha256": "4B8FFE9E881D0A0743921B78B9C0E0EBFB1D2D645C5AA9737948B2B088ED7B34",
+  "parameter_source_years": null,
+  "parameter_estimator": null,
+  "parameter_estimator_version": null,
+  "generation_method": null,
+  "cli_path": null,
+  "cli_sha256": null,
+  "parameter_estimation_run": false,
+  "legacy_cli": {
+    "path": "DSSAT_auto_validation/run_CNYC0802_DSSAT480_IC0_null_2000_2023/pdi_smoke_test/input_used_by_pdi/CNYC.CLI",
+    "sha256": "58dbe11fdb3af9d34cc25644d8fb965627403778eb92da31a8f91619bd100d51",
+    "recorded_window": {"start": "2008-01-01", "end": "2014-12-31"},
+    "eligible": false,
+    "exclusion_reason": "包含 validation year 2014，缺少严格 2004-2013 参数估计 provenance，关联环境设置 random_weather=false。"
+  },
+  "blocking_reason": "项目内没有已验证的官方 WeatherMan 参数估计路径；外部安装目录按项目边界未检查，无法确认当前 GUI/CLI 能力。"
+}

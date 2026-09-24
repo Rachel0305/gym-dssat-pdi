@@ -1,0 +1,9 @@
+{
+  "task": "003_06_yc_train_only_cli_and_wgen_pilot",
+  "status": "NOT_RUN_NO_WGEN_PILOTS",
+  "realizations_expected_min": 3,
+  "realizations_generated": 0,
+  "candidate_reference_sha256": "4B8FFE9E881D0A0743921B78B9C0E0EBFB1D2D645C5AA9737948B2B088ED7B34",
+  "qc_results": [],
+  "reason": "CLI generation blocked;没有随机天气样本可检验。"
+}

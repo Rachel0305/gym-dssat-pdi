@@ -1,0 +1,27 @@
+{
+  "task": "003_06_yc_train_only_cli_and_wgen_pilot",
+  "site": "YC/YCA",
+  "candidate_path": "results/yc_weather_gapfill_finalize/yc_wgen_fitting_weather_2004_2013.csv",
+  "sha256": "4B8FFE9E881D0A0743921B78B9C0E0EBFB1D2D645C5AA9737948B2B088ED7B34",
+  "file_bytes": 1046053,
+  "row_count": 3653,
+  "start_date": "2004-01-01",
+  "end_date": "2013-12-31",
+  "days": 3653,
+  "date_sequence_contiguous": true,
+  "date_mismatch_count": 0,
+  "variables": ["RAIN", "TMAX", "TMIN", "SRAD"],
+  "missing_values_by_variable": {"RAIN": 0, "TMAX": 0, "TMIN": 0, "SRAD": 0},
+  "unique_dates": 3653,
+  "physical_qc": {
+    "negative_rain_count": 0,
+    "negative_srad_count": 0,
+    "tmax_below_tmin_count": 0,
+    "duplicate_date_count": 0
+  },
+  "candidate_status": "FROZEN",
+  "upstream_status": "PASS_YC_WEATHER_CANDIDATE",
+  "matches_004_upstream_gate_sha256": true,
+  "validation_years_excluded": "2014-2023",
+  "candidate_modified": false
+}

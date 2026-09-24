@@ -1,0 +1,14 @@
+{
+  "task": "003_06_yc_train_only_cli_and_wgen_pilot",
+  "status": "NOT_TESTED_CLI_GENERATION_BLOCKED",
+  "ppo_seed": "NOT_USED",
+  "weather_generation_seeds_planned": [101, 102, 103, 104, 105],
+  "weather_generation_seeds_attempted": [],
+  "seed_101_A_weather_hash": null,
+  "seed_101_B_weather_hash": null,
+  "same_seed_reproducibility": null,
+  "seed_102_weather_hash": null,
+  "different_seed_weather_difference": null,
+  "evidence_artifacts": [],
+  "reason": "没有可信 train-only CNYC.CLI，未调用 WGEN。既有 wrapper RNG 诊断不等同于逐日 WGEN 天气复现证据。"
+}

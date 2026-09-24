@@ -1,0 +1,28 @@
+{
+  "task": "003_06_yc_train_only_cli_and_wgen_pilot",
+  "inspection_scope": "project_only",
+  "scope_reason": "项目 AGENTS.md 限定文件访问范围为项目目录；未检查项目外安装目录。",
+  "dssat_current_version": "NOT_VERIFIED",
+  "dssat_current_executable_path": null,
+  "historical_dssat_evidence": {
+    "version_label": "DSSAT 4.8",
+    "evidence": "旧运行目录名含 DSSAT480；不作为当前安装版本证据。"
+  },
+  "weatherman_version": "NOT_VERIFIED",
+  "weatherman_executable_path": null,
+  "weatherman_cli_available": "NOT_VERIFIED",
+  "weatherman_gui_available": "NOT_VERIFIED",
+  "in_project_official_parameter_estimator_found": false,
+  "gym_dssat": {
+    "version_recorded_in_project": "0.0.5",
+    "evidence_path": "results/yc_weather_audit/yc_weather_reset_diagnostic.json",
+    "historical_runtime_package_path": "/opt/gym_dssat_pdi/lib/python3.10/site-packages/gym_dssat_pdi/",
+    "current_runtime_reverified": false,
+    "vendored_source_path": "references/dssat_pdi.py"
+  },
+  "wgen_executable_path": "NOT_VERIFIED",
+  "cli_format_compatibility": "NOT_VERIFIED_WITH_CURRENT_DSSAT",
+  "cli_generation_attempted": false,
+  "legacy_cli_reused": false,
+  "status": "BLOCKED_CLI_GENERATION"
+}

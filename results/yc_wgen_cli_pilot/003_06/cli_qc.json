@@ -1,0 +1,7 @@
+{
+  "task": "003_06_yc_train_only_cli_and_wgen_pilot",
+  "status": "NOT_RUN_CLI_NOT_GENERATED",
+  "cli_path": null,
+  "checks": null,
+  "reason": "没有可信 CLI 文件可供结构与 provenance QC。"
+}

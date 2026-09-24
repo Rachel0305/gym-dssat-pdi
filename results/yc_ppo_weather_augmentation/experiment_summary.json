@@ -1,0 +1,53 @@
+{
+  "final_status": "BLOCKED_UPSTREAM_WGEN_NOT_READY",
+  "scientific_result_status": "NOT_RUN",
+  "research_question": "在 PPO 配置完全冻结时，YC train-only WGEN 合成天气增强能否改善 2014-2023 validation 表现与稳定性。",
+  "data_split": {
+    "train_weather": "2004-2013",
+    "validation_weather": "2014-2023",
+    "independent_test": "not_available_or_not_verified"
+  },
+  "upstream_required_status": "PASS_YC_WGEN_PILOT",
+  "upstream_gate_passed": false,
+  "upstream_evidence_path": "results/yc_ppo_weather_augmentation/upstream_gate.json",
+  "ppo_launch_allowed": false,
+  "synthetic_weather_bank": {
+    "status": "NOT_STARTED_UPSTREAM_GATE",
+    "unique_weather_years_created": 0,
+    "weather_seed_manifest_created": false
+  },
+  "arms": {
+    "HISTORICAL_ONLY": "NOT_RUN",
+    "HISTORICAL_PLUS_WGEN": "NOT_RUN"
+  },
+  "source_sampler": {
+    "planned_historical_probability": 0.5,
+    "planned_synthetic_probability": 0.5,
+    "implemented_or_smoke_tested": false,
+    "actual_episode_counts": null
+  },
+  "ppo_seed_set": null,
+  "ppo_config_frozen": false,
+  "stage0_integration_smoke": "NOT_RUN_UPSTREAM_GATE",
+  "stage1_full_training": "NOT_RUN_UPSTREAM_GATE",
+  "training_run_count": 0,
+  "validation_completed": false,
+  "validation_years": "2014-2023",
+  "paired_metrics": null,
+  "seed_success_criteria_frozen": false,
+  "seed_success_rate": null,
+  "cherry_picking": "NOT_APPLICABLE_NO_RUNS",
+  "deliverables": {
+    "report_path": "docs/yc_ppo_weather_augmentation_experiment.md",
+    "report_sha256": "C66FD80C9509F6F53AD4E4946371980D0B41170D29316763704B3B2B8424E50A",
+    "presentation_path": "docs/yc_ppo_weather_augmentation_experiment.pptx",
+    "presentation_sha256": "FECC1674D9019A2CB63DA9CC08C0CE540D1E9DEBFCB398E55AB5D3768DAA9362",
+    "presentation_validation_path": "results/yc_ppo_weather_augmentation/presentation_validation.json",
+    "presentation_validation_sha256": "F5B3E7AAA7A2901CD574391583BC9A6CBADEE38FA4F899C6EBCCFE8333AEEA46",
+    "presentation_slide_count": 4,
+    "presentation_package_integrity": "PASS",
+    "presentation_layout_check": "PASS",
+    "native_powerpoint_font_rendering_verified": false
+  },
+  "interpretation": "本状态表示实验未启动，不是天气增强的正面或负面科学结果。不得用历史天气场景增强实验替代本任务要求的 WGEN upstream gate。"
+}

@@ -1,0 +1,77 @@
+{
+  "task": "003_06_05_run_wgen_seed_pilot",
+  "station": "YC",
+  "cli_path": "results/yc_wgen_cli_pilot/003_06_04/generated/CNYC.CLI",
+  "cli_sha256_expected": "5ABF5D7BB97EFAAE5E8361ABB4C773E1554B58116CBCA2213E75DCFF838285F0",
+  "cli_sha256_before": "5ABF5D7BB97EFAAE5E8361ABB4C773E1554B58116CBCA2213E75DCFF838285F0",
+  "cli_sha256_after": "5ABF5D7BB97EFAAE5E8361ABB4C773E1554B58116CBCA2213E75DCFF838285F0",
+  "cli_hash_verified": true,
+  "training_weather_sha256_after": "4B8FFE9E881D0A0743921B78B9C0E0EBFB1D2D645C5AA9737948B2B088ED7B34",
+  "training_weather_hash_verified": true,
+  "weather_candidate_modified": false,
+  "cli_modified": false,
+  "validation_data_used_for_fitting": false,
+  "ppo_training_run": false,
+  "other_sites_modified": false,
+  "runs_requested": [
+    "seed_101_run_a",
+    "seed_101_run_b",
+    "seed_102",
+    "seed_103",
+    "seed_104",
+    "seed_105"
+  ],
+  "runs_completed": [
+    "seed_101_run_a"
+  ],
+  "run_results": {
+    "seed_101_run_a": {
+      "run_id": "seed_101_run_a",
+      "station": "YC",
+      "weather_seed": 101,
+      "ppo_seed": "NOT_APPLICABLE",
+      "runtime_compatibility_status": "FAIL_CLI_PARSE",
+      "error": "Note: The following floating-point exceptions are signalling: IEEE_DENORMAL\nSTOP 99\n\nUnknown ERROR. Error number:  5010                                            \nFile: CNYC.CLI   Line:    27   Error key: WGENIN\n\nAdditional information may be available in WARNING.OUT file.\n \u0007\n\n Please press < ENTER > key to continue Client started\n\n*RUN-TIME ERRORS OUTPUT FILE\n\n\n\n*DSSAT Cropping System Model Ver. 4.8.0.024 -stable  SEP 24, 2026 16:03:16\n\n*RUN   1        : Sim2008                   MZCER048 fileX.MZ    1\n MODEL          : MZCER048 - Maize\n EXPERIMENT     : fileX.MZ    CNYC\n DATA PATH      :\n TREATMENT  1   : Sim2008                   MZCER048\n  \nfileX.MZX   , Trt    1\n\nUnknown ERROR. Error number:  5010                                            \n\nFile: CNYC.CLI   Line:    27   Error key: WGENIN\n\nAdditional information may be available in WARNING.OUT file.\n\n*WARNING DETAIL FILE\n\n******************************************************************************\n\n*DSSAT Cropping System Model Ver. 4.8.0.024 -stable  SEP 24, 2026 16:03:16\n\n*RUN   1        : Sim2008                            fileX.MZ    1\n\n EXPERIMENT     : fileX.MZ    CNYC\n DATA PATH      :\n TREATMENT  1   : Sim2008\n  \n\n IPEXP   YEAR DOY =    0   0\n Photosynthesis method (PHOTO in FILEX) has been changed                       \n from \"L\" to \"C\" for compatibility with crop model, MZCER.                     \n\n IPFLD   YEAR DOY =    0   0\n Error reading latitude from experimental file                                 \n fileX.MZX                                                                     \n\n IPFLD   YEAR DOY =    0   0\n Error reading longitude from experimental file                                \n fileX.MZX                                                                     \n\n IPFLD   YEAR DOY =    0   0\n Error reading elevation from experimental file                                \n fileX.MZX                                                                     \n\n PUT_Integer  YEAR DOY =    0   0\n Error transferring variable: CYCRDin FIELD                                    \n Value not saved! Errors may result.                                           \n\n PUT_Integer  YEAR DOY =    0   0\n Error transferring variable: CXCRDin FIELD                                    \n Value not saved! Errors may result.                                           \n\n PUT_Integer  YEAR DOY =    0   0\n Error transferring variable: CELEVin FIELD                                    \n Value not saved! Errors may result.                                           \n\n PUT_Integer  YEAR DOY = 2008 153\n Error transferring variable: CYCRDin FIELD                                    \n Value not saved! Errors may result.                                           \n\n PUT_Integer  YEAR DOY = 2008 153\n Error transferring variable: CXCRDin FIELD                                    \n Value not saved! Errors may result.                                           \n\n PUT_Integer  YEAR DOY = 2008 153\n Error transferring variable: CELEVin FIELD                                    \n Value not saved! Errors may result.                                           \n\n WGENIN  YEAR DOY = 2008 153\n Unknown ERROR. Error number:  5010                                            \n File: CNYC.CLI                                                                \n    Line:    27                                                                \n    Error key: WGENIN                                                          \n Simulations terminated.                                                       \n",
+      "runtime_cli_sha256": "5ABF5D7BB97EFAAE5E8361ABB4C773E1554B58116CBCA2213E75DCFF838285F0",
+      "runtime_working_directory": "C:\\Users\\DELL\\gym_workspace\\gym_dssat_pdi_bingo\\gym-dssat-pdi\\results\\yc_wgen_cli_pilot\\003_06_05\\runtime\\tmp\\tmplio0s6cn",
+      "filex_wther": "W",
+      "runtime_snapshot_files": [
+        "results\\yc_wgen_cli_pilot\\003_06_05\\runtime\\seed_101_run_a\\runtime_snapshot\\CNYC.CLI",
+        "results\\yc_wgen_cli_pilot\\003_06_05\\runtime\\seed_101_run_a\\runtime_snapshot\\dssat-pdi.yml",
+        "results\\yc_wgen_cli_pilot\\003_06_05\\runtime\\seed_101_run_a\\runtime_snapshot\\DSSAT48.INH",
+        "results\\yc_wgen_cli_pilot\\003_06_05\\runtime\\seed_101_run_a\\runtime_snapshot\\DSSAT48.INP",
+        "results\\yc_wgen_cli_pilot\\003_06_05\\runtime\\seed_101_run_a\\runtime_snapshot\\ERROR.OUT",
+        "results\\yc_wgen_cli_pilot\\003_06_05\\runtime\\seed_101_run_a\\runtime_snapshot\\fileX.MZX",
+        "results\\yc_wgen_cli_pilot\\003_06_05\\runtime\\seed_101_run_a\\runtime_snapshot\\INFO.OUT",
+        "results\\yc_wgen_cli_pilot\\003_06_05\\runtime\\seed_101_run_a\\runtime_snapshot\\RunList.OUT",
+        "results\\yc_wgen_cli_pilot\\003_06_05\\runtime\\seed_101_run_a\\runtime_snapshot\\WARNING.OUT"
+      ],
+      "runtime_log": "results/yc_wgen_cli_pilot/003_06_05/runtime/seed_101_run_a/runtime_log.txt",
+      "peak_process_tree_rss_mb": 0.0,
+      "elapsed_seconds": 31.726,
+      "candidate_cli_sha256_after_run": "5ABF5D7BB97EFAAE5E8361ABB4C773E1554B58116CBCA2213E75DCFF838285F0",
+      "init_exception": "Note: The following floating-point exceptions are signalling: IEEE_DENORMAL\nSTOP 99\n\nUnknown ERROR. Error number:  5010                                            \nFile: CNYC.CLI   Line:    27   Error key: WGENIN\n\nAdditional information may be available in WARNING.OUT file.\n \u0007\n\n Please press < ENTER > key to continue Client started\n\n*RUN-TIME ERRORS OUTPUT FILE\n\n\n\n*DSSAT Cropping System Model Ver. 4.8.0.024 -stable  SEP 24, 2026 16:03:16\n\n*RUN   1        : Sim2008                   MZCER048 fileX.MZ    1\n MODEL          : MZCER048 - Maize\n EXPERIMENT     : fileX.MZ    CNYC\n DATA PATH      :\n TREATMENT  1   : Sim2008                   MZCER048\n  \nfileX.MZX   , Trt    1\n\nUnknown ERROR. Error number:  5010                                            \n\nFile: CNYC.CLI   Line:    27   Error key: WGENIN\n\nAdditional information may be available in WARNING.OUT file.\n\n*WARNING DETAIL FILE\n\n******************************************************************************\n\n*DSSAT Cropping System Model Ver. 4.8.0.024 -stable  SEP 24, 2026 16:03:16\n\n*RUN   1        : Sim2008                            fileX.MZ    1\n\n EXPERIMENT     : fileX.MZ    CNYC\n DATA PATH      :\n TREATMENT  1   : Sim2008\n  \n\n IPEXP   YEAR DOY =    0   0\n Photosynthesis method (PHOTO in FILEX) has been changed                       \n from \"L\" to \"C\" for compatibility with crop model, MZCER.                     \n\n IPFLD   YEAR DOY =    0   0\n Error reading latitude from experimental file                                 \n fileX.MZX                                                                     \n\n IPFLD   YEAR DOY =    0   0\n Error reading longitude from experimental file                                \n fileX.MZX                                                                     \n\n IPFLD   YEAR DOY =    0   0\n Error reading elevation from experimental file                                \n fileX.MZX                                                                     \n\n PUT_Integer  YEAR DOY =    0   0\n Error transferring variable: CYCRDin FIELD                                    \n Value not saved! Errors may result.                                           \n\n PUT_Integer  YEAR DOY =    0   0\n Error transferring variable: CXCRDin FIELD                                    \n Value not saved! Errors may result.                                           \n\n PUT_Integer  YEAR DOY =    0   0\n Error transferring variable: CELEVin FIELD                                    \n Value not saved! Errors may result.                                           \n\n PUT_Integer  YEAR DOY = 2008 153\n Error transferring variable: CYCRDin FIELD                                    \n Value not saved! Errors may result.                                           \n\n PUT_Integer  YEAR DOY = 2008 153\n Error transferring variable: CXCRDin FIELD                                    \n Value not saved! Errors may result.                                           \n\n PUT_Integer  YEAR DOY = 2008 153\n Error transferring variable: CELEVin FIELD                                    \n Value not saved! Errors may result.                                           \n\n WGENIN  YEAR DOY = 2008 153\n Unknown ERROR. Error number:  5010                                            \n File: CNYC.CLI                                                                \n    Line:    27                                                                \n    Error key: WGENIN                                                          \n Simulations terminated.                                                       \n",
+      "runtime_diagnostics": {
+        "error_out": "results\\yc_wgen_cli_pilot\\003_06_05\\runtime\\seed_101_run_a\\runtime_snapshot\\ERROR.OUT",
+        "warning_out": "results\\yc_wgen_cli_pilot\\003_06_05\\runtime\\seed_101_run_a\\runtime_snapshot\\WARNING.OUT",
+        "error_key_wgenin_5010": true
+      },
+      "pdi_rseed1_configured": true
+    }
+  },
+  "runtime_compatibility_status": "FAIL_CLI_PARSE",
+  "weather_capture_method": [
+    "WEATHER_SEQUENCE_NOT_DIRECTLY_OBSERVABLE"
+  ],
+  "same_seed_reproducible": null,
+  "same_seed_weather_hash": null,
+  "different_seeds_distinct": null,
+  "distinct_weather_sequences": 0,
+  "physical_sanity_status": "NOT_RUN_NO_WEATHER_OUTPUT",
+  "seed_coupling_status": "SEPARATE: pilot weather_seed is explicitly injected as PDI rseed1; no PPO seed used",
+  "wgen_seed_pilot_status": "INCOMPLETE_OR_FAILED",
+  "peak_process_tree_rss_mb": 0.0,
+  "remaining_blockers": [
+    "seed_101_run_a: Note: The following floating-point exceptions are signalling: IEEE_DENORMAL\nSTOP 99\n\nUnknown ERROR. Error number:  5010                                            \nFile: CNYC.CLI   Line:    27   Error key: WGENIN\n\nAdditional information may be available in WARNING.OUT file.\n \u0007\n\n Please press < ENTER > key to continue Client started\n\n*RUN-TIME ERRORS OUTPUT FILE\n\n\n\n*DSSAT Cropping System Model Ver. 4.8.0.024 -stable  SEP 24, 2026 16:03:16\n\n*RUN   1        : Sim2008                   MZCER048 fileX.MZ    1\n MODEL          : MZCER048 - Maize\n EXPERIMENT     : fileX.MZ    CNYC\n DATA PATH      :\n TREATMENT  1   : Sim2008                   MZCER048\n  \nfileX.MZX   , Trt    1\n\nUnknown ERROR. Error number:  5010                                            \n\nFile: CNYC.CLI   Line:    27   Error key: WGENIN\n\nAdditional information may be available in WARNING.OUT file.\n\n*WARNING DETAIL FILE\n\n******************************************************************************\n\n*DSSAT Cropping System Model Ver. 4.8.0.024 -stable  SEP 24, 2026 16:03:16\n\n*RUN   1        : Sim2008                            fileX.MZ    1\n\n EXPERIMENT     : fileX.MZ    CNYC\n DATA PATH      :\n TREATMENT  1   : Sim2008\n  \n\n IPEXP   YEAR DOY =    0   0\n Photosynthesis method (PHOTO in FILEX) has been changed                       \n from \"L\" to \"C\" for compatibility with crop model, MZCER.                     \n\n IPFLD   YEAR DOY =    0   0\n Error reading latitude from experimental file                                 \n fileX.MZX                                                                     \n\n IPFLD   YEAR DOY =    0   0\n Error reading longitude from experimental file                                \n fileX.MZX                                                                     \n\n IPFLD   YEAR DOY =    0   0\n Error reading elevation from experimental file                                \n fileX.MZX                                                                     \n\n PUT_Integer  YEAR DOY =    0   0\n Error transferring variable: CYCRDin FIELD                                    \n Value not saved! Errors may result.                                           \n\n PUT_Integer  YEAR DOY =    0   0\n Error transferring variable: CXCRDin FIELD                                    \n Value not saved! Errors may result.                                           \n\n PUT_Integer  YEAR DOY =    0   0\n Error transferring variable: CELEVin FIELD                                    \n Value not saved! Errors may result.                                           \n\n PUT_Integer  YEAR DOY = 2008 153\n Error transferring variable: CYCRDin FIELD                                    \n Value not saved! Errors may result.                                           \n\n PUT_Integer  YEAR DOY = 2008 153\n Error transferring variable: CXCRDin FIELD                                    \n Value not saved! Errors may result.                                           \n\n PUT_Integer  YEAR DOY = 2008 153\n Error transferring variable: CELEVin FIELD                                    \n Value not saved! Errors may result.                                           \n\n WGENIN  YEAR DOY = 2008 153\n Unknown ERROR. Error number:  5010                                            \n File: CNYC.CLI                                                                \n    Line:    27                                                                \n    Error key: WGENIN                                                          \n Simulations terminated.                                                       \n"
+  ]
+}

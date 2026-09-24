@@ -1,0 +1,17 @@
+{
+  "seed": 101,
+  "run_a": "seed_101_run_a",
+  "run_b": "seed_101_run_b",
+  "run_a_hash": null,
+  "run_b_hash": null,
+  "identical": null,
+  "variables_compared": [
+    "RAIN",
+    "SRAD",
+    "TMAX",
+    "TMIN"
+  ],
+  "row_count_run_a": 0,
+  "row_count_run_b": 0,
+  "status": "PENDING"
+}

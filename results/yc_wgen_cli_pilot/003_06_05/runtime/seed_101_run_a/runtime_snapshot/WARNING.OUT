@@ -1,0 +1,59 @@
+*WARNING DETAIL FILE
+
+******************************************************************************
+
+*DSSAT Cropping System Model Ver. 4.8.0.024 -stable  SEP 24, 2026 16:03:16
+
+*RUN   1        : Sim2008                            fileX.MZ    1
+
+ EXPERIMENT     : fileX.MZ    CNYC
+ DATA PATH      :
+ TREATMENT  1   : Sim2008
+  
+
+ IPEXP   YEAR DOY =    0   0
+ Photosynthesis method (PHOTO in FILEX) has been changed                       
+ from "L" to "C" for compatibility with crop model, MZCER.                     
+
+ IPFLD   YEAR DOY =    0   0
+ Error reading latitude from experimental file                                 
+ fileX.MZX                                                                     
+
+ IPFLD   YEAR DOY =    0   0
+ Error reading longitude from experimental file                                
+ fileX.MZX                                                                     
+
+ IPFLD   YEAR DOY =    0   0
+ Error reading elevation from experimental file                                
+ fileX.MZX                                                                     
+
+ PUT_Integer  YEAR DOY =    0   0
+ Error transferring variable: CYCRDin FIELD                                    
+ Value not saved! Errors may result.                                           
+
+ PUT_Integer  YEAR DOY =    0   0
+ Error transferring variable: CXCRDin FIELD                                    
+ Value not saved! Errors may result.                                           
+
+ PUT_Integer  YEAR DOY =    0   0
+ Error transferring variable: CELEVin FIELD                                    
+ Value not saved! Errors may result.                                           
+
+ PUT_Integer  YEAR DOY = 2008 153
+ Error transferring variable: CYCRDin FIELD                                    
+ Value not saved! Errors may result.                                           
+
+ PUT_Integer  YEAR DOY = 2008 153
+ Error transferring variable: CXCRDin FIELD                                    
+ Value not saved! Errors may result.                                           
+
+ PUT_Integer  YEAR DOY = 2008 153
+ Error transferring variable: CELEVin FIELD                                    
+ Value not saved! Errors may result.                                           
+
+ WGENIN  YEAR DOY = 2008 153
+ Unknown ERROR. Error number:  5010                                            
+ File: CNYC.CLI                                                                
+    Line:    27                                                                
+    Error key: WGENIN                                                          
+ Simulations terminated.                                                       

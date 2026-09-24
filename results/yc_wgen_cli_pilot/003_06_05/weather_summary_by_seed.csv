@@ -1,0 +1,2 @@
+run_id,weather_seed,capture_method,weather_sha256,window_type,row_count,start_date,end_date,season_rainfall_mm,rainy_days_gt_0mm,maximum_daily_rainfall_mm,longest_dry_spell_days,mean_srad,mean_tmax,mean_tmin,min_tmin,max_tmax,max_srad
+seed_101_run_a,101,WEATHER_SEQUENCE_NOT_DIRECTLY_OBSERVABLE,,simulation-season statistics,0,,,,0,,0,,,,,,

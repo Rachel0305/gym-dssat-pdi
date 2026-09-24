@@ -1,0 +1,104 @@
+{
+  "overall_status": "NOT_RUN_NO_WEATHER_OUTPUT",
+  "per_seed": {
+    "seed_101_run_a": {
+      "status": "NOT_RUN_NO_WEATHER_OUTPUT",
+      "row_count": 0,
+      "missing_by_field": {
+        "RAIN": 0,
+        "SRAD": 0,
+        "TMAX": 0,
+        "TMIN": 0
+      },
+      "all_zero_rainfall": false,
+      "issues": [],
+      "bounds_are_screening_checks_not_calibrated_extreme_value_tests": true
+    }
+  },
+  "frozen_training_reference": {
+    "path": "results/yc_weather_gapfill_finalize/yc_wgen_fitting_weather_2004_2013.csv",
+    "sha256": "4B8FFE9E881D0A0743921B78B9C0E0EBFB1D2D645C5AA9737948B2B088ED7B34",
+    "expected_sha256": "4B8FFE9E881D0A0743921B78B9C0E0EBFB1D2D645C5AA9737948B2B088ED7B34",
+    "hash_verified": true,
+    "date_start": "2004-01-01",
+    "date_end": "2013-12-31",
+    "row_count": 3653,
+    "monthly_means": {
+      "1": {
+        "RAIN": 0.06258064516129033,
+        "SRAD": 7.572943183500657,
+        "TMAX": 3.2126696895922118,
+        "TMIN": -7.159163724893487
+      },
+      "2": {
+        "RAIN": 0.36819787985865715,
+        "SRAD": 9.8800968823574,
+        "TMAX": 7.242515901060073,
+        "TMIN": -3.552734982332158
+      },
+      "3": {
+        "RAIN": 0.5941935483870966,
+        "SRAD": 13.550107582343642,
+        "TMAX": 13.831307912355447,
+        "TMIN": 2.007561077297625
+      },
+      "4": {
+        "RAIN": 1.0813333333333335,
+        "SRAD": 18.15873051369049,
+        "TMAX": 20.544441174004195,
+        "TMIN": 8.068990199161426
+      },
+      "5": {
+        "RAIN": 1.4890322580645161,
+        "SRAD": 20.32210154034564,
+        "TMAX": 26.367144207750048,
+        "TMIN": 14.01160683708663
+      },
+      "6": {
+        "RAIN": 2.9579999999999997,
+        "SRAD": 19.119724759836725,
+        "TMAX": 32.02343584905659,
+        "TMIN": 19.580971855345908
+      },
+      "7": {
+        "RAIN": 5.7135483870967745,
+        "SRAD": 17.31496939046412,
+        "TMAX": 32.50451016433357,
+        "TMIN": 22.562084875228244
+      },
+      "8": {
+        "RAIN": 5.668387096774194,
+        "SRAD": 15.475211794098076,
+        "TMAX": 30.339391154392374,
+        "TMIN": 21.386632024751467
+      },
+      "9": {
+        "RAIN": 2.0290000000000004,
+        "SRAD": 13.683599017625857,
+        "TMAX": 26.967080670859527,
+        "TMIN": 15.313152494758898
+      },
+      "10": {
+        "RAIN": 0.5270967741935484,
+        "SRAD": 11.36928556643048,
+        "TMAX": 21.83557103834448,
+        "TMIN": 9.215054137553256
+      },
+      "11": {
+        "RAIN": 0.43200000000000005,
+        "SRAD": 8.562119726658159,
+        "TMAX": 12.912911174004188,
+        "TMIN": 1.8100368658280919
+      },
+      "12": {
+        "RAIN": 0.11838709677419355,
+        "SRAD": 7.136293102360105,
+        "TMAX": 5.037816940555893,
+        "TMIN": -4.870731659565834
+      }
+    }
+  },
+  "monthly_climatology_sanity_comparison": [],
+  "interpretation": "Train-period-only sanity reference; descriptive, not a formal fit or acceptance threshold.",
+  "validation_data_used_for_fitting": false
+}

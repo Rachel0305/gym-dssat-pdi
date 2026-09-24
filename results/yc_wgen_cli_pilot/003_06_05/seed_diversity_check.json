@@ -1,0 +1,96 @@
+{
+  "seeds_tested": [],
+  "weather_hashes": {
+    "seed_101": null,
+    "seed_102": null,
+    "seed_103": null,
+    "seed_104": null,
+    "seed_105": null
+  },
+  "pairwise_comparisons": [
+    {
+      "left_run": "seed_101",
+      "right_run": "seed_102",
+      "left_hash": null,
+      "right_hash": null,
+      "identical": null,
+      "weather_differences": null
+    },
+    {
+      "left_run": "seed_101",
+      "right_run": "seed_103",
+      "left_hash": null,
+      "right_hash": null,
+      "identical": null,
+      "weather_differences": null
+    },
+    {
+      "left_run": "seed_101",
+      "right_run": "seed_104",
+      "left_hash": null,
+      "right_hash": null,
+      "identical": null,
+      "weather_differences": null
+    },
+    {
+      "left_run": "seed_101",
+      "right_run": "seed_105",
+      "left_hash": null,
+      "right_hash": null,
+      "identical": null,
+      "weather_differences": null
+    },
+    {
+      "left_run": "seed_102",
+      "right_run": "seed_103",
+      "left_hash": null,
+      "right_hash": null,
+      "identical": null,
+      "weather_differences": null
+    },
+    {
+      "left_run": "seed_102",
+      "right_run": "seed_104",
+      "left_hash": null,
+      "right_hash": null,
+      "identical": null,
+      "weather_differences": null
+    },
+    {
+      "left_run": "seed_102",
+      "right_run": "seed_105",
+      "left_hash": null,
+      "right_hash": null,
+      "identical": null,
+      "weather_differences": null
+    },
+    {
+      "left_run": "seed_103",
+      "right_run": "seed_104",
+      "left_hash": null,
+      "right_hash": null,
+      "identical": null,
+      "weather_differences": null
+    },
+    {
+      "left_run": "seed_103",
+      "right_run": "seed_105",
+      "left_hash": null,
+      "right_hash": null,
+      "identical": null,
+      "weather_differences": null
+    },
+    {
+      "left_run": "seed_104",
+      "right_run": "seed_105",
+      "left_hash": null,
+      "right_hash": null,
+      "identical": null,
+      "weather_differences": null
+    }
+  ],
+  "distinct_weather_sequences": 0,
+  "all_five_seeds_present": false,
+  "different_seeds_distinct": null,
+  "not_all_seeds_identical": null
+}

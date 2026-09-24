@@ -1,0 +1,19 @@
+*RUN-TIME ERRORS OUTPUT FILE
+
+
+
+*DSSAT Cropping System Model Ver. 4.8.0.024 -stable  SEP 24, 2026 16:03:16
+
+*RUN   1        : Sim2008                   MZCER048 fileX.MZ    1
+ MODEL          : MZCER048 - Maize
+ EXPERIMENT     : fileX.MZ    CNYC
+ DATA PATH      :
+ TREATMENT  1   : Sim2008                   MZCER048
+  
+fileX.MZX   , Trt    1
+
+Unknown ERROR. Error number:  5010                                            
+
+File: CNYC.CLI   Line:    27   Error key: WGENIN
+
+Additional information may be available in WARNING.OUT file.

@@ -1,0 +1,33 @@
+{
+  "station": "YC",
+  "site_code": "CNYC",
+  "source_filex": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013/YC/CNYC0801.MZX",
+  "source_filex_sha256": "793EB12137B05F1A5F4730EB21A3281AF65CDBBF58A2698338AE630224A5406B",
+  "isolated_filex_template": "results/yc_wgen_cli_pilot/003_06_05/configs/CNYC0801_wgen_template.jinja2",
+  "cultivar_input": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013/YC/MZCER048.CUL",
+  "cultivar_sha256": "7810190A042B2FE3C53C54D43BF8080AE02DD3D1EDFEC202BF572E130761403C",
+  "soil_input": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013/YC/SOIL.SOL",
+  "soil_sha256": "3C303D68DDA19BA6F40573A3BBA5464E40230DDD60C6C746F0EA6BBFEEE9E644",
+  "cli_input": "results/yc_wgen_cli_pilot/003_06_04/generated/CNYC.CLI",
+  "cli_sha256": "5ABF5D7BB97EFAAE5E8361ABB4C773E1554B58116CBCA2213E75DCFF838285F0",
+  "train_weather_reference": "results/yc_weather_gapfill_finalize/yc_wgen_fitting_weather_2004_2013.csv",
+  "train_weather_sha256": "4B8FFE9E881D0A0743921B78B9C0E0EBFB1D2D645C5AA9737948B2B088ED7B34",
+  "selected_treatment": "YC/CNYC 2008, treatment 1 (isolated copy only)",
+  "filex_wsta": "CNYC0801; DSSAT CLI lookup basename expected CNYC.CLI",
+  "random_weather": true,
+  "filex_wther_template_value": "{{ wther }} rendered by Gym-DSSAT as W",
+  "weather_seed_map": {
+    "seed_101_run_a": 101,
+    "seed_101_run_b": 101,
+    "seed_102": 102,
+    "seed_103": 103,
+    "seed_104": 104,
+    "seed_105": 105
+  },
+  "ppo_seed": "NOT_APPLICABLE",
+  "action_policy": "constant zero action for all runtime action variables; no agent or PPO",
+  "max_daily_steps": 400,
+  "temporary_directory_root": "results/yc_wgen_cli_pilot/003_06_05/runtime/tmp",
+  "validation_weather_used": false,
+  "existing_wrapper_modified": false
+}

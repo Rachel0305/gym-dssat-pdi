@@ -1,0 +1,10 @@
+YC DSSAT runtime audit: gym_dssat_pdi version
+Audit date: 2026-09-24
+
+Current installed version: UNKNOWN_DUE_TO_ACCESS_RESTRICTION
+
+Conflicting non-current evidence:
+1. requirements.txt:9 declares `gym-dssat-pdi @ file:///home/gymdev/gym_dssat_pdi/gym-dssat-pdi-0.0.9`. This is a dependency declaration, not proof of the installed package version.
+2. results/yc_weather_audit/yc_weather_reset_diagnostic.json:85-89 records a prior environment inspection with version `0.0.5`, package path `/opt/gym_dssat_pdi/lib/python3.10/site-packages/gym_dssat_pdi/__init__.py`, and environment module path under the same installation. This is historical run evidence, not a current query.
+
+Because the declared dependency and prior runtime record differ, neither is promoted to the current installed version. The current container package metadata could not be read within the project-only access boundary. No `pip show`, `pip list`, or import/version probe was run against an external environment.

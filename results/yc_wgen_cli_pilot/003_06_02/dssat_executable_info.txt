@@ -1,0 +1,14 @@
+YC DSSAT runtime audit: executable configuration
+Audit date: 2026-09-24
+
+Project-configured Gym-DSSAT launcher:
+- Filename/configured command: `run_dssat`
+- Configured path in src/ppo_safe_rendering.py:341: `/opt/dssat_pdi/run_dssat`
+- Prior rendered environment record: results/yc_weather_audit/yc_weather_reset_diagnostic.json:165 also records `/opt/dssat_pdi/run_dssat`.
+
+Wrapper call chain in references/dssat_pdi.py:
+- Lines 34-38 accept `run_dssat_location` and check it with `shutil.which` at environment construction.
+- Lines 259-270 construct `/usr/bin/env {run_dssat_location} C fileX.MZX {experiment_number}` and launch it with `subprocess.Popen` in the temporary run directory.
+
+Conclusion:
+`run_dssat` is the configured Gym-DSSAT/PDI launcher, not a confirmed underlying DSSAT model executable. The actual executable filename and resolved absolute path behind this launcher are UNKNOWN_DUE_TO_ACCESS_RESTRICTION because the configured `/opt/dssat_pdi/` runtime was not accessible under AGENTS.md. No `dscsm048` name or path is inferred.

@@ -1,0 +1,19 @@
+YC DSSAT runtime audit: runtime environment
+Audit date: 2026-09-24
+
+Status: SUPPORTED_BUT_NOT_FULLY_CONFIRMED
+
+Repository evidence:
+- src/audit_220_yc_feedback_controller_site_year.py:127 records the project execution route as Docker container `nifty_taussig`, using `/opt/gym_dssat_pdi/bin/python` from the container.
+- docs/2026-09-09_yc_feedback_controller_demo_audit.md:13 repeats that recorded route.
+- Historical YC runtime diagnostic records package files under `/opt/gym_dssat_pdi/lib/python3.10/site-packages/` and a configured launcher under `/opt/dssat_pdi/`.
+- No repository Dockerfile, docker-compose file, or compose YAML was found by a project-scoped filename search.
+
+Interpretation:
+The checked-in evidence supports a Windows project checkout that has historically run Python and DSSAT in a Linux Docker container. It does not establish that this container is currently running, that the same image is selected now, or that the recorded files still exist.
+
+Access boundary:
+AGENTS.md limits access to the project directory. No Docker daemon, container, host PATH, or external installation path was probed. In particular, `nifty_taussig`, `/opt/gym_dssat_pdi/`, and `/opt/dssat_pdi/` were not inspected in the live runtime. This was a deliberate restriction, not a failed runtime command.
+
+Current live runtime: UNKNOWN_DUE_TO_ACCESS_RESTRICTION
+Recorded architecture: Windows checkout -> Docker/Linux `nifty_taussig` -> `/opt/gym_dssat_pdi/bin/python` -> Gym-DSSAT -> configured `/opt/dssat_pdi/run_dssat` launcher -> underlying DSSAT binary not identified.

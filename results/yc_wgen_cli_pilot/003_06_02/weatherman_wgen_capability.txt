@@ -1,0 +1,16 @@
+YC DSSAT runtime audit: WeatherMan and WGEN
+Audit date: 2026-09-24
+
+weatherman_status: UNKNOWN_DUE_TO_ACCESS_RESTRICTION
+
+The current Linux runtime was not enumerated. No claim is made that WeatherMan is installed or absent. The project repository contains guidance describing WeatherMan as a separate parameter-estimation workflow, but repository documentation does not establish what is installed in the active container.
+
+wgen_weather_generation_capability:
+- Gym-DSSAT wrapper interface: code supports requesting random weather. references/dssat_pdi.py:91-92 maps `random_weather=True` to weather mode `W`; lines 294 and 486-504 pass/regenerate `rseed1` through the PDI interaction.
+- Current runtime effect: UNKNOWN_DUE_TO_ACCESS_RESTRICTION. No DSSAT process was run to prove that WGEN is present, reads a `.CLI`, or generates a weather sequence in the active runtime.
+
+cli_generation_capability:
+- The inspected Gym-DSSAT wrapper does not fit or create `.CLI` parameters; it only copies caller-supplied auxiliary files and invokes the configured launcher.
+- Whether the active runtime contains WeatherMan or another `.CLI` parameter estimator: UNKNOWN_DUE_TO_ACCESS_RESTRICTION.
+
+The ability to consume an existing `.CLI` for random-weather simulation and the ability to fit/create a new `.CLI` from historical daily weather are separate capabilities. Neither active-runtime capability is confirmed by this audit.

@@ -1,0 +1,24 @@
+{
+  "audit_date": "2026-09-24",
+  "gym_dssat_pdi_version": "UNKNOWN_DUE_TO_ACCESS_RESTRICTION",
+  "version_evidence": {
+    "requirements_declaration": "0.0.9",
+    "prior_runtime_record": "0.0.5",
+    "current_installed_version": "UNKNOWN_DUE_TO_ACCESS_RESTRICTION"
+  },
+  "runtime_type": "Docker/Linux supported by project records; current live state unknown",
+  "runtime_architecture_status": "SUPPORTED_BUT_NOT_FULLY_CONFIRMED",
+  "dssat_executable": "UNKNOWN; run_dssat is the configured wrapper launcher",
+  "dssat_executable_path": "UNKNOWN; configured launcher path is /opt/dssat_pdi/run_dssat",
+  "dssat_version": "UNKNOWN",
+  "dssat_version_status": "UNKNOWN",
+  "weatherman_status": "UNKNOWN_DUE_TO_ACCESS_RESTRICTION",
+  "wgen_weather_generation_capability": "Wrapper supports requesting W/random seed; active runtime behavior UNKNOWN_DUE_TO_ACCESS_RESTRICTION",
+  "cli_generation_capability": "No estimator in inspected wrapper; active runtime utility UNKNOWN_DUE_TO_ACCESS_RESTRICTION",
+  "current_random_weather": false,
+  "weather_candidate_modified": false,
+  "ppo_modified": false,
+  "other_sites_modified": false,
+  "git_push": false,
+  "github_backup_status": "Pending explicit user approval"
+}

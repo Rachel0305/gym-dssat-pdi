@@ -1,0 +1,14 @@
+YC DSSAT runtime audit: DSSAT version evidence
+Audit date: 2026-09-24
+
+dssat_version: UNKNOWN
+dssat_version_status: UNKNOWN
+
+No live DSSAT version output, simulation header, installation metadata, package metadata, image metadata, or runtime documentation was inspected. The configured wrapper path is not a version identifier. Executable names such as `dscsm048` were not observed in the current runtime and are not used to infer a version.
+
+Evidence unavailable due to the project-only access boundary:
+- `/opt/dssat_pdi/run_dssat` and its target executable
+- the active container/image metadata
+- DSSAT version/help output and simulation output headers
+
+No version was guessed from the user's recollection or a historical filename.

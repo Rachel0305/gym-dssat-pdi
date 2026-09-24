@@ -1,0 +1,19 @@
+YC DSSAT runtime audit: repository CLI/WGEN search
+Audit date: 2026-09-24
+
+Current YC environment configuration:
+- src/ppo_safe_rendering.py:336 sets `random_weather` to false.
+- Lines 340-341 pass cultivar, one `.WTH`, and soil as auxiliary files and configure `/opt/dssat_pdi/run_dssat`; no `.CLI` is passed by this builder.
+- Historical YC diagnostic results/yc_weather_audit/yc_weather_reset_diagnostic.json:156,165 records the same false flag and configured launcher.
+
+Wrapper behavior:
+- references/dssat_pdi.py:74-78 accepts explicit auxiliary files (and has a package cotton `.CLI` default); this is file-input wiring, not parameter fitting.
+- Lines 336-341 copy each explicit auxiliary file into the temporary run directory using its basename.
+- Lines 259-270 invoke the configured PDI launcher on `fileX.MZX`; weather mode and random seed are configured through the wrapper/PDI files.
+
+Repository examples:
+- A project `.CLI` format example exists at `benchmark_results/027_07_site_specific_stage_maskable_ppo/LC/readiness/baseline_runs/dssat_auto/input/CNLC.CLI`.
+- It is only a format/reference example from a different station. Its climate parameters were not copied, renamed, or used for YC.
+- No repository code path was found that estimates new `.CLI` parameters from historical daily weather.
+
+No YC `CNYC.CLI` was created. No weather candidate was read, changed, rebuilt, or evaluated in this audit.

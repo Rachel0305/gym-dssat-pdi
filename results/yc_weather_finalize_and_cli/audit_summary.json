@@ -1,0 +1,1273 @@
+{
+  "scope": "YC/YCA only",
+  "period": "2004-2013",
+  "run_time_utc": "2026-09-24T07:23:55.531966+00:00",
+  "final_status": "BLOCKED_EXTERNAL_GAPFILL",
+  "gap_counts": {
+    "2004": {
+      "RAIN": 5
+    },
+    "2005": {
+      "SRAD": 40,
+      "TMAX": 8,
+      "TMIN": 8
+    },
+    "2006": {
+      "SRAD": 19,
+      "TMAX": 17,
+      "TMIN": 17
+    },
+    "2007": {
+      "SRAD": 1
+    },
+    "2008": {
+      "SRAD": 30,
+      "TMAX": 26,
+      "TMIN": 26
+    },
+    "2009": {
+      "SRAD": 17,
+      "TMAX": 14,
+      "TMIN": 14
+    },
+    "2010": {
+      "SRAD": 3,
+      "TMAX": 3,
+      "TMIN": 3
+    },
+    "2011": {
+      "SRAD": 38,
+      "TMAX": 38,
+      "TMIN": 38
+    },
+    "2012": {
+      "SRAD": 1,
+      "TMAX": 1,
+      "TMIN": 1
+    },
+    "2013": {
+      "SRAD": 2
+    }
+  },
+  "compact_gap_dates": [
+    {
+      "year": "2004",
+      "variable": "RAIN",
+      "dates": "2004-10-16 至 2004-10-20"
+    },
+    {
+      "year": "2005",
+      "variable": "SRAD",
+      "dates": "2005-02-04 至 2005-02-15、2005-03-14 至 2005-03-17、2005-03-19 至 2005-03-23、2005-03-26 至 2005-03-28、2005-03-31 至 2005-04-06、2005-06-10 至 2005-06-18"
+    },
+    {
+      "year": "2005",
+      "variable": "TMAX",
+      "dates": "2005-06-11 至 2005-06-18"
+    },
+    {
+      "year": "2005",
+      "variable": "TMIN",
+      "dates": "2005-06-11 至 2005-06-18"
+    },
+    {
+      "year": "2006",
+      "variable": "SRAD",
+      "dates": "2006-01-05 至 2006-01-16、2006-02-16、2006-12-02 至 2006-12-07"
+    },
+    {
+      "year": "2006",
+      "variable": "TMAX",
+      "dates": "2006-01-05 至 2006-01-16、2006-12-03 至 2006-12-07"
+    },
+    {
+      "year": "2006",
+      "variable": "TMIN",
+      "dates": "2006-01-05 至 2006-01-16、2006-12-03 至 2006-12-07"
+    },
+    {
+      "year": "2007",
+      "variable": "SRAD",
+      "dates": "2007-11-06"
+    },
+    {
+      "year": "2008",
+      "variable": "SRAD",
+      "dates": "2008-06-28 至 2008-07-02、2008-08-01 至 2008-08-08、2008-08-11、2008-10-01 至 2008-10-03、2008-10-25 至 2008-10-28、2008-10-31 至 2008-11-01、2008-11-06 至 2008-11-12"
+    },
+    {
+      "year": "2008",
+      "variable": "TMAX",
+      "dates": "2008-06-28 至 2008-07-02、2008-08-01 至 2008-08-08、2008-10-01 至 2008-10-03、2008-10-26 至 2008-10-28、2008-11-01、2008-11-07 至 2008-11-12"
+    },
+    {
+      "year": "2008",
+      "variable": "TMIN",
+      "dates": "2008-06-28 至 2008-07-02、2008-08-01 至 2008-08-08、2008-10-01 至 2008-10-03、2008-10-26 至 2008-10-28、2008-11-01、2008-11-07 至 2008-11-12"
+    },
+    {
+      "year": "2009",
+      "variable": "SRAD",
+      "dates": "2009-02-03、2009-03-11、2009-03-24 至 2009-04-07"
+    },
+    {
+      "year": "2009",
+      "variable": "TMAX",
+      "dates": "2009-03-25 至 2009-04-07"
+    },
+    {
+      "year": "2009",
+      "variable": "TMIN",
+      "dates": "2009-03-25 至 2009-04-07"
+    },
+    {
+      "year": "2010",
+      "variable": "SRAD",
+      "dates": "2010-03-18、2010-08-10 至 2010-08-11"
+    },
+    {
+      "year": "2010",
+      "variable": "TMAX",
+      "dates": "2010-03-18、2010-08-10 至 2010-08-11"
+    },
+    {
+      "year": "2010",
+      "variable": "TMIN",
+      "dates": "2010-03-18、2010-08-10 至 2010-08-11"
+    },
+    {
+      "year": "2011",
+      "variable": "SRAD",
+      "dates": "2011-03-09、2011-04-20、2011-05-18 至 2011-06-03、2011-08-17 至 2011-09-04"
+    },
+    {
+      "year": "2011",
+      "variable": "TMAX",
+      "dates": "2011-03-09、2011-05-18 至 2011-06-03、2011-07-27、2011-08-17 至 2011-09-04"
+    },
+    {
+      "year": "2011",
+      "variable": "TMIN",
+      "dates": "2011-03-09、2011-05-18 至 2011-06-03、2011-07-27、2011-08-17 至 2011-09-04"
+    },
+    {
+      "year": "2012",
+      "variable": "SRAD",
+      "dates": "2012-06-03"
+    },
+    {
+      "year": "2012",
+      "variable": "TMAX",
+      "dates": "2012-06-03"
+    },
+    {
+      "year": "2012",
+      "variable": "TMIN",
+      "dates": "2012-06-03"
+    },
+    {
+      "year": "2013",
+      "variable": "SRAD",
+      "dates": "2013-01-02、2013-10-06"
+    }
+  ],
+  "rain_source_comparison_2005_2010": [
+    {
+      "year": 2005,
+      "calendar_days": 365,
+      "chinaflux_complete_days": 365,
+      "chinaflux_total_mm": 627.2,
+      "official_nonmissing_days": 365,
+      "official_nonmissing_total_mm": 678.4,
+      "paired_days": 365,
+      "paired_chinaflux_total_mm": 627.2,
+      "paired_official_total_mm": 678.4,
+      "paired_difference_official_minus_chinaflux_mm": 51.19999999999993,
+      "paired_relative_difference_percent": 8.163265306122437
+    },
+    {
+      "year": 2006,
+      "calendar_days": 365,
+      "chinaflux_complete_days": 365,
+      "chinaflux_total_mm": 380.2,
+      "official_nonmissing_days": 365,
+      "official_nonmissing_total_mm": 403.6,
+      "paired_days": 365,
+      "paired_chinaflux_total_mm": 380.2,
+      "paired_official_total_mm": 403.6,
+      "paired_difference_official_minus_chinaflux_mm": 23.400000000000034,
+      "paired_relative_difference_percent": 6.15465544450291
+    },
+    {
+      "year": 2007,
+      "calendar_days": 365,
+      "chinaflux_complete_days": 362,
+      "chinaflux_total_mm": 535.7,
+      "official_nonmissing_days": 365,
+      "official_nonmissing_total_mm": 571.7,
+      "paired_days": 362,
+      "paired_chinaflux_total_mm": 535.7,
+      "paired_official_total_mm": 571.7,
+      "paired_difference_official_minus_chinaflux_mm": 36.0,
+      "paired_relative_difference_percent": 6.720179204778787
+    },
+    {
+      "year": 2008,
+      "calendar_days": 366,
+      "chinaflux_complete_days": 363,
+      "chinaflux_total_mm": 477.9,
+      "official_nonmissing_days": 366,
+      "official_nonmissing_total_mm": 528.7,
+      "paired_days": 363,
+      "paired_chinaflux_total_mm": 477.9,
+      "paired_official_total_mm": 528.7,
+      "paired_difference_official_minus_chinaflux_mm": 50.80000000000007,
+      "paired_relative_difference_percent": 10.629838878426456
+    },
+    {
+      "year": 2009,
+      "calendar_days": 365,
+      "chinaflux_complete_days": 359,
+      "chinaflux_total_mm": 716.2,
+      "official_nonmissing_days": 365,
+      "official_nonmissing_total_mm": 818.6,
+      "paired_days": 359,
+      "paired_chinaflux_total_mm": 716.2,
+      "paired_official_total_mm": 785.4,
+      "paired_difference_official_minus_chinaflux_mm": 69.19999999999993,
+      "paired_relative_difference_percent": 9.662105557106937
+    },
+    {
+      "year": 2010,
+      "calendar_days": 365,
+      "chinaflux_complete_days": 339,
+      "chinaflux_total_mm": 151.8,
+      "official_nonmissing_days": 365,
+      "official_nonmissing_total_mm": 739.6,
+      "paired_days": 339,
+      "paired_chinaflux_total_mm": 151.8,
+      "paired_official_total_mm": 451.7,
+      "paired_difference_official_minus_chinaflux_mm": 299.9,
+      "paired_relative_difference_percent": 197.562582345191
+    }
+  ],
+  "gap_total_variable_days": 370,
+  "gapfill_proposed_count": 370,
+  "gapfill_accepted_count": 0,
+  "external_fetch_status": "cache_reused",
+  "external_fetch_error": null,
+  "external_validation": {
+    "source": "NASA POWER Daily API; gap dates only; LST",
+    "overlap_years": "2005-2013 only; no 2014+ values read",
+    "bias_correction_formula": "corrected = external_raw + mean(official - external_raw) on valid 2005-2013 overlap",
+    "rain_method": "No additive correction; use PRECTOTCORR raw values only on gaps",
+    "acceptance_limits_declared_in_code": {
+      "TMAX_corrected_MAE_max_C": 3.0,
+      "TMIN_corrected_MAE_max_C": 3.0,
+      "SRAD_corrected_MAE_max_MJ_m2_d": 4.0,
+      "temperature_minimum_pearson_r": 0.85,
+      "SRAD_minimum_pearson_r": 0.7,
+      "rain_event_agreement_minimum": 0.8,
+      "rain_median_monthly_ratio_range": [
+        0.5,
+        1.5
+      ],
+      "rain_median_annual_ratio_range": [
+        0.7,
+        1.3
+      ]
+    },
+    "metrics": {
+      "overlap_years": "2005-2013 train-only",
+      "temperature_srad": {
+        "TMAX": {
+          "raw": {
+            "n": 3180,
+            "bias_external_minus_official": 0.5639496855345911,
+            "mae": 1.736937106918239,
+            "rmse": 2.3832950078283686,
+            "pearson_r": 0.9808352851778611
+          },
+          "bias_correction_parameter_official_minus_external": -0.5639496855345911,
+          "corrected": {
+            "n": 3180,
+            "bias_external_minus_official": 1.4932150554471053e-16,
+            "mae": 1.7207975871207628,
+            "rmse": 2.315611333217442,
+            "pearson_r": 0.980835285177861
+          }
+        },
+        "TMIN": {
+          "raw": {
+            "n": 3180,
+            "bias_external_minus_official": -0.435437106918239,
+            "mae": 1.6622987421383646,
+            "rmse": 2.164075739208646,
+            "pearson_r": 0.9814282423359058
+          },
+          "bias_correction_parameter_official_minus_external": 0.435437106918239,
+          "corrected": {
+            "n": 3180,
+            "bias_external_minus_official": 2.9589363803315593e-16,
+            "mae": 1.6296259740516594,
+            "rmse": 2.119815636075487,
+            "pearson_r": 0.9814282423359058
+          }
+        },
+        "SRAD": {
+          "raw": {
+            "n": 3136,
+            "bias_external_minus_official": 0.0774607780612246,
+            "mae": 1.5611004464285712,
+            "rmse": 2.4831469983923626,
+            "pearson_r": 0.9363290736032395
+          },
+          "bias_correction_parameter_official_minus_external": -0.0774607780612246,
+          "corrected": {
+            "n": 3136,
+            "bias_external_minus_official": 5.819112198904241e-16,
+            "mae": 1.5617650620835066,
+            "rmse": 2.481938525323935,
+            "pearson_r": 0.9363290736032396
+          }
+        }
+      },
+      "rain": {
+        "n_paired_days": 3287,
+        "rain_event_agreement_days": 2366,
+        "rain_event_agreement_rate": 0.7198052935807727,
+        "daily_amount_errors": {
+          "n": 3287,
+          "bias_external_minus_official": 0.07767569212047461,
+          "mae": 1.5020748402798905,
+          "rmse": 6.195479106812074,
+          "pearson_r": 0.691338837983348
+        },
+        "event_amount_errors_on_official_wet_days": {
+          "n": 500,
+          "bias_external_minus_official": -2.20404,
+          "mae": 7.15996,
+          "rmse": 15.064525043956746,
+          "pearson_r": 0.6415354957672389
+        },
+        "monthly_total_ratios": [
+          {
+            "month": "2005-02",
+            "external_to_official_total_ratio": 0.9654054054054054,
+            "paired_days": 28
+          },
+          {
+            "month": "2005-03",
+            "external_to_official_total_ratio": 5.2,
+            "paired_days": 31
+          },
+          {
+            "month": "2005-04",
+            "external_to_official_total_ratio": 0.6451612903225806,
+            "paired_days": 30
+          },
+          {
+            "month": "2005-05",
+            "external_to_official_total_ratio": 1.3685,
+            "paired_days": 31
+          },
+          {
+            "month": "2005-06",
+            "external_to_official_total_ratio": 1.3548672566371682,
+            "paired_days": 30
+          },
+          {
+            "month": "2005-07",
+            "external_to_official_total_ratio": 0.9806379406827086,
+            "paired_days": 31
+          },
+          {
+            "month": "2005-08",
+            "external_to_official_total_ratio": 1.4251489868891538,
+            "paired_days": 31
+          },
+          {
+            "month": "2005-09",
+            "external_to_official_total_ratio": 0.7393621668851026,
+            "paired_days": 30
+          },
+          {
+            "month": "2005-10",
+            "external_to_official_total_ratio": 0.9765363128491621,
+            "paired_days": 31
+          },
+          {
+            "month": "2005-11",
+            "external_to_official_total_ratio": 0.8033333333333333,
+            "paired_days": 30
+          },
+          {
+            "month": "2005-12",
+            "external_to_official_total_ratio": 1.192,
+            "paired_days": 31
+          },
+          {
+            "month": "2006-02",
+            "external_to_official_total_ratio": 0.61875,
+            "paired_days": 28
+          },
+          {
+            "month": "2006-04",
+            "external_to_official_total_ratio": 0.7565217391304349,
+            "paired_days": 30
+          },
+          {
+            "month": "2006-05",
+            "external_to_official_total_ratio": 1.8666666666666667,
+            "paired_days": 31
+          },
+          {
+            "month": "2006-06",
+            "external_to_official_total_ratio": 1.0926401869158877,
+            "paired_days": 30
+          },
+          {
+            "month": "2006-07",
+            "external_to_official_total_ratio": 1.9240458015267172,
+            "paired_days": 31
+          },
+          {
+            "month": "2006-08",
+            "external_to_official_total_ratio": 1.094938539407086,
+            "paired_days": 31
+          },
+          {
+            "month": "2006-09",
+            "external_to_official_total_ratio": 1.2089552238805972,
+            "paired_days": 30
+          },
+          {
+            "month": "2006-11",
+            "external_to_official_total_ratio": 1.13375,
+            "paired_days": 30
+          },
+          {
+            "month": "2006-12",
+            "external_to_official_total_ratio": 2.1952380952380954,
+            "paired_days": 31
+          },
+          {
+            "month": "2007-02",
+            "external_to_official_total_ratio": 1.2,
+            "paired_days": 28
+          },
+          {
+            "month": "2007-03",
+            "external_to_official_total_ratio": 0.8176156583629894,
+            "paired_days": 31
+          },
+          {
+            "month": "2007-04",
+            "external_to_official_total_ratio": 0.4216981132075472,
+            "paired_days": 30
+          },
+          {
+            "month": "2007-05",
+            "external_to_official_total_ratio": 1.8446254071661239,
+            "paired_days": 31
+          },
+          {
+            "month": "2007-06",
+            "external_to_official_total_ratio": 1.2515535097813582,
+            "paired_days": 30
+          },
+          {
+            "month": "2007-07",
+            "external_to_official_total_ratio": 1.056644880174292,
+            "paired_days": 31
+          },
+          {
+            "month": "2007-08",
+            "external_to_official_total_ratio": 1.0030996309963098,
+            "paired_days": 31
+          },
+          {
+            "month": "2007-09",
+            "external_to_official_total_ratio": 1.2083150984682713,
+            "paired_days": 30
+          },
+          {
+            "month": "2007-10",
+            "external_to_official_total_ratio": 0.9122881355932203,
+            "paired_days": 31
+          },
+          {
+            "month": "2007-12",
+            "external_to_official_total_ratio": 2.610526315789474,
+            "paired_days": 31
+          },
+          {
+            "month": "2008-01",
+            "external_to_official_total_ratio": 0.8517241379310344,
+            "paired_days": 31
+          },
+          {
+            "month": "2008-02",
+            "external_to_official_total_ratio": 0.7650793650793652,
+            "paired_days": 29
+          },
+          {
+            "month": "2008-03",
+            "external_to_official_total_ratio": 0.5655737704918032,
+            "paired_days": 31
+          },
+          {
+            "month": "2008-04",
+            "external_to_official_total_ratio": 1.0778884462151395,
+            "paired_days": 30
+          },
+          {
+            "month": "2008-05",
+            "external_to_official_total_ratio": 1.1223853211009174,
+            "paired_days": 31
+          },
+          {
+            "month": "2008-06",
+            "external_to_official_total_ratio": 0.987661141804788,
+            "paired_days": 30
+          },
+          {
+            "month": "2008-07",
+            "external_to_official_total_ratio": 1.3231332357247438,
+            "paired_days": 31
+          },
+          {
+            "month": "2008-08",
+            "external_to_official_total_ratio": 1.1026239067055392,
+            "paired_days": 31
+          },
+          {
+            "month": "2008-09",
+            "external_to_official_total_ratio": 0.8084959816303101,
+            "paired_days": 30
+          },
+          {
+            "month": "2008-10",
+            "external_to_official_total_ratio": 1.7017094017094019,
+            "paired_days": 31
+          },
+          {
+            "month": "2008-12",
+            "external_to_official_total_ratio": 1.21,
+            "paired_days": 31
+          },
+          {
+            "month": "2009-02",
+            "external_to_official_total_ratio": 0.8907407407407407,
+            "paired_days": 28
+          },
+          {
+            "month": "2009-03",
+            "external_to_official_total_ratio": 0.7537848605577688,
+            "paired_days": 31
+          },
+          {
+            "month": "2009-04",
+            "external_to_official_total_ratio": 0.8430127041742287,
+            "paired_days": 30
+          },
+          {
+            "month": "2009-05",
+            "external_to_official_total_ratio": 0.80335339638865,
+            "paired_days": 31
+          },
+          {
+            "month": "2009-06",
+            "external_to_official_total_ratio": 0.6210252600297177,
+            "paired_days": 30
+          },
+          {
+            "month": "2009-07",
+            "external_to_official_total_ratio": 0.8985655737704918,
+            "paired_days": 31
+          },
+          {
+            "month": "2009-08",
+            "external_to_official_total_ratio": 0.7484402589758681,
+            "paired_days": 31
+          },
+          {
+            "month": "2009-09",
+            "external_to_official_total_ratio": 1.4047892720306514,
+            "paired_days": 30
+          },
+          {
+            "month": "2009-10",
+            "external_to_official_total_ratio": 0.6752941176470588,
+            "paired_days": 31
+          },
+          {
+            "month": "2009-11",
+            "external_to_official_total_ratio": 1.3460674157303372,
+            "paired_days": 30
+          },
+          {
+            "month": "2009-12",
+            "external_to_official_total_ratio": 2.25,
+            "paired_days": 31
+          },
+          {
+            "month": "2010-01",
+            "external_to_official_total_ratio": 1.5142857142857145,
+            "paired_days": 31
+          },
+          {
+            "month": "2010-02",
+            "external_to_official_total_ratio": 7.4043478260869575,
+            "paired_days": 28
+          },
+          {
+            "month": "2010-03",
+            "external_to_official_total_ratio": 0.8723577235772358,
+            "paired_days": 31
+          },
+          {
+            "month": "2010-04",
+            "external_to_official_total_ratio": 0.9592857142857143,
+            "paired_days": 30
+          },
+          {
+            "month": "2010-05",
+            "external_to_official_total_ratio": 1.336888888888889,
+            "paired_days": 31
+          },
+          {
+            "month": "2010-06",
+            "external_to_official_total_ratio": 1.7441935483870967,
+            "paired_days": 30
+          },
+          {
+            "month": "2010-07",
+            "external_to_official_total_ratio": 0.7187613843351549,
+            "paired_days": 31
+          },
+          {
+            "month": "2010-08",
+            "external_to_official_total_ratio": 0.9589299560609977,
+            "paired_days": 31
+          },
+          {
+            "month": "2010-09",
+            "external_to_official_total_ratio": 1.4778270509977824,
+            "paired_days": 30
+          },
+          {
+            "month": "2010-10",
+            "external_to_official_total_ratio": 1.6096774193548387,
+            "paired_days": 31
+          },
+          {
+            "month": "2011-01",
+            "external_to_official_total_ratio": 1.7,
+            "paired_days": 31
+          },
+          {
+            "month": "2011-02",
+            "external_to_official_total_ratio": 2.3949152542372887,
+            "paired_days": 28
+          },
+          {
+            "month": "2011-04",
+            "external_to_official_total_ratio": 1.0562091503267974,
+            "paired_days": 30
+          },
+          {
+            "month": "2011-05",
+            "external_to_official_total_ratio": 1.5787286063569685,
+            "paired_days": 31
+          },
+          {
+            "month": "2011-06",
+            "external_to_official_total_ratio": 0.4451697127937337,
+            "paired_days": 30
+          },
+          {
+            "month": "2011-07",
+            "external_to_official_total_ratio": 1.483725690890481,
+            "paired_days": 31
+          },
+          {
+            "month": "2011-08",
+            "external_to_official_total_ratio": 1.2231824417009602,
+            "paired_days": 31
+          },
+          {
+            "month": "2011-09",
+            "external_to_official_total_ratio": 1.441656050955414,
+            "paired_days": 30
+          },
+          {
+            "month": "2011-10",
+            "external_to_official_total_ratio": 1.3612244897959185,
+            "paired_days": 31
+          },
+          {
+            "month": "2011-11",
+            "external_to_official_total_ratio": 1.141491395793499,
+            "paired_days": 30
+          },
+          {
+            "month": "2011-12",
+            "external_to_official_total_ratio": 1.7173913043478264,
+            "paired_days": 31
+          },
+          {
+            "month": "2012-03",
+            "external_to_official_total_ratio": 0.8979310344827586,
+            "paired_days": 31
+          },
+          {
+            "month": "2012-04",
+            "external_to_official_total_ratio": 1.0822097378277153,
+            "paired_days": 30
+          },
+          {
+            "month": "2012-05",
+            "external_to_official_total_ratio": 2.2470588235294118,
+            "paired_days": 31
+          },
+          {
+            "month": "2012-06",
+            "external_to_official_total_ratio": 1.3490825688073393,
+            "paired_days": 30
+          },
+          {
+            "month": "2012-07",
+            "external_to_official_total_ratio": 1.6605947955390332,
+            "paired_days": 31
+          },
+          {
+            "month": "2012-08",
+            "external_to_official_total_ratio": 0.5313444709626094,
+            "paired_days": 31
+          },
+          {
+            "month": "2012-09",
+            "external_to_official_total_ratio": 2.6283653846153845,
+            "paired_days": 30
+          },
+          {
+            "month": "2012-10",
+            "external_to_official_total_ratio": 0.8701492537313432,
+            "paired_days": 31
+          },
+          {
+            "month": "2012-11",
+            "external_to_official_total_ratio": 1.5712230215827339,
+            "paired_days": 30
+          },
+          {
+            "month": "2012-12",
+            "external_to_official_total_ratio": 1.447252747252747,
+            "paired_days": 31
+          },
+          {
+            "month": "2013-01",
+            "external_to_official_total_ratio": 0.9438095238095239,
+            "paired_days": 31
+          },
+          {
+            "month": "2013-02",
+            "external_to_official_total_ratio": 0.6003571428571429,
+            "paired_days": 28
+          },
+          {
+            "month": "2013-03",
+            "external_to_official_total_ratio": 2.33,
+            "paired_days": 31
+          },
+          {
+            "month": "2013-04",
+            "external_to_official_total_ratio": 1.561165048543689,
+            "paired_days": 30
+          },
+          {
+            "month": "2013-05",
+            "external_to_official_total_ratio": 1.7503875968992249,
+            "paired_days": 31
+          },
+          {
+            "month": "2013-06",
+            "external_to_official_total_ratio": 1.1689059500959693,
+            "paired_days": 30
+          },
+          {
+            "month": "2013-07",
+            "external_to_official_total_ratio": 0.9631200205602672,
+            "paired_days": 31
+          },
+          {
+            "month": "2013-08",
+            "external_to_official_total_ratio": 0.7375819373634377,
+            "paired_days": 31
+          },
+          {
+            "month": "2013-10",
+            "external_to_official_total_ratio": 0.9668604651162791,
+            "paired_days": 31
+          },
+          {
+            "month": "2013-11",
+            "external_to_official_total_ratio": 1.2633540372670806,
+            "paired_days": 30
+          }
+        ],
+        "annual_total_ratios": [
+          {
+            "year": 2005,
+            "official_total_mm": 678.4,
+            "external_total_mm": 676.43,
+            "external_to_official_total_ratio": 0.997096108490566,
+            "paired_days": 365
+          },
+          {
+            "year": 2006,
+            "official_total_mm": 403.6,
+            "external_total_mm": 535.47,
+            "external_to_official_total_ratio": 1.3267343904856292,
+            "paired_days": 365
+          },
+          {
+            "year": 2007,
+            "official_total_mm": 571.7,
+            "external_total_mm": 618.5600000000001,
+            "external_to_official_total_ratio": 1.0819660661185937,
+            "paired_days": 365
+          },
+          {
+            "year": 2008,
+            "official_total_mm": 528.7,
+            "external_total_mm": 576.9399999999999,
+            "external_to_official_total_ratio": 1.091242670701721,
+            "paired_days": 366
+          },
+          {
+            "year": 2009,
+            "official_total_mm": 818.6,
+            "external_total_mm": 684.61,
+            "external_to_official_total_ratio": 0.8363181040801368,
+            "paired_days": 365
+          },
+          {
+            "year": 2010,
+            "official_total_mm": 739.6,
+            "external_total_mm": 731.77,
+            "external_to_official_total_ratio": 0.9894131963223364,
+            "paired_days": 365
+          },
+          {
+            "year": 2011,
+            "official_total_mm": 565.9,
+            "external_total_mm": 664.26,
+            "external_to_official_total_ratio": 1.173811627496024,
+            "paired_days": 365
+          },
+          {
+            "year": 2012,
+            "official_total_mm": 594.0,
+            "external_total_mm": 654.94,
+            "external_to_official_total_ratio": 1.1025925925925928,
+            "paired_days": 366
+          },
+          {
+            "year": 2013,
+            "official_total_mm": 701.3,
+            "external_total_mm": 714.14,
+            "external_to_official_total_ratio": 1.018308854983602,
+            "paired_days": 365
+          }
+        ],
+        "monthly_ratio_summary": {
+          "n": 93,
+          "mean": 1.3261416869682925,
+          "median": 1.13375,
+          "minimum": 0.4216981132075472,
+          "maximum": 7.4043478260869575
+        },
+        "annual_ratio_summary": {
+          "n": 9,
+          "mean": 1.0686092901412447,
+          "median": 1.0819660661185937,
+          "minimum": 0.8363181040801368,
+          "maximum": 1.3267343904856292
+        }
+      }
+    },
+    "gate_checks": {
+      "TMAX_coverage": true,
+      "TMAX_corrected_MAE": true,
+      "TMAX_pearson_r": true,
+      "TMIN_coverage": true,
+      "TMIN_corrected_MAE": true,
+      "TMIN_pearson_r": true,
+      "SRAD_coverage": true,
+      "SRAD_corrected_MAE": true,
+      "SRAD_pearson_r": true,
+      "RAIN_coverage": true,
+      "RAIN_event_agreement": false,
+      "RAIN_monthly_total_ratio": true,
+      "RAIN_annual_total_ratio": true
+    },
+    "accepted_for_gap_fill": false,
+    "caveat": "Overlap is a same-site product comparison, not independent validation; POWER is gridded/model-derived data and all filled rows remain labeled external estimates."
+  },
+  "external_metadata": {
+    "title": "NASA/POWER Source Native Resolution Daily Data",
+    "api_version": "v2.10.0",
+    "api_name": "POWER Daily API",
+    "time_standard": "LST",
+    "resolved_coordinates": [
+      116.57,
+      36.83,
+      37.0
+    ],
+    "parameters": {
+      "T2M_MAX": {
+        "units": "C",
+        "longname": "Temperature at 2 Meters Maximum"
+      },
+      "T2M_MIN": {
+        "units": "C",
+        "longname": "Temperature at 2 Meters Minimum"
+      },
+      "PRECTOTCORR": {
+        "units": "mm/day",
+        "longname": "Precipitation Corrected"
+      },
+      "ALLSKY_SFC_SW_DWN": {
+        "units": "MJ/m^2/day",
+        "longname": "All Sky Surface Shortwave Downward Irradiance"
+      }
+    },
+    "sources": [
+      "SYN1DEG",
+      "MERRA2",
+      "POWER"
+    ]
+  },
+  "candidate_created": false,
+  "candidate_qc": {
+    "passed": false,
+    "not_run": true,
+    "blocked_by": "external_overlap_validation",
+    "errors": [
+      "RAIN_event_agreement"
+    ]
+  },
+  "gap_filled_summary": [
+    {
+      "year": 2004,
+      "variable": "SRAD",
+      "gap_filled_days": 0,
+      "total_days": 366,
+      "gap_filled_fraction": 0.0
+    },
+    {
+      "year": 2004,
+      "variable": "TMAX",
+      "gap_filled_days": 0,
+      "total_days": 366,
+      "gap_filled_fraction": 0.0
+    },
+    {
+      "year": 2004,
+      "variable": "TMIN",
+      "gap_filled_days": 0,
+      "total_days": 366,
+      "gap_filled_fraction": 0.0
+    },
+    {
+      "year": 2004,
+      "variable": "RAIN",
+      "gap_filled_days": 0,
+      "total_days": 366,
+      "gap_filled_fraction": 0.0
+    },
+    {
+      "year": 2005,
+      "variable": "SRAD",
+      "gap_filled_days": 0,
+      "total_days": 365,
+      "gap_filled_fraction": 0.0
+    },
+    {
+      "year": 2005,
+      "variable": "TMAX",
+      "gap_filled_days": 0,
+      "total_days": 365,
+      "gap_filled_fraction": 0.0
+    },
+    {
+      "year": 2005,
+      "variable": "TMIN",
+      "gap_filled_days": 0,
+      "total_days": 365,
+      "gap_filled_fraction": 0.0
+    },
+    {
+      "year": 2005,
+      "variable": "RAIN",
+      "gap_filled_days": 0,
+      "total_days": 365,
+      "gap_filled_fraction": 0.0
+    },
+    {
+      "year": 2006,
+      "variable": "SRAD",
+      "gap_filled_days": 0,
+      "total_days": 365,
+      "gap_filled_fraction": 0.0
+    },
+    {
+      "year": 2006,
+      "variable": "TMAX",
+      "gap_filled_days": 0,
+      "total_days": 365,
+      "gap_filled_fraction": 0.0
+    },
+    {
+      "year": 2006,
+      "variable": "TMIN",
+      "gap_filled_days": 0,
+      "total_days": 365,
+      "gap_filled_fraction": 0.0
+    },
+    {
+      "year": 2006,
+      "variable": "RAIN",
+      "gap_filled_days": 0,
+      "total_days": 365,
+      "gap_filled_fraction": 0.0
+    },
+    {
+      "year": 2007,
+      "variable": "SRAD",
+      "gap_filled_days": 0,
+      "total_days": 365,
+      "gap_filled_fraction": 0.0
+    },
+    {
+      "year": 2007,
+      "variable": "TMAX",
+      "gap_filled_days": 0,
+      "total_days": 365,
+      "gap_filled_fraction": 0.0
+    },
+    {
+      "year": 2007,
+      "variable": "TMIN",
+      "gap_filled_days": 0,
+      "total_days": 365,
+      "gap_filled_fraction": 0.0
+    },
+    {
+      "year": 2007,
+      "variable": "RAIN",
+      "gap_filled_days": 0,
+      "total_days": 365,
+      "gap_filled_fraction": 0.0
+    },
+    {
+      "year": 2008,
+      "variable": "SRAD",
+      "gap_filled_days": 0,
+      "total_days": 366,
+      "gap_filled_fraction": 0.0
+    },
+    {
+      "year": 2008,
+      "variable": "TMAX",
+      "gap_filled_days": 0,
+      "total_days": 366,
+      "gap_filled_fraction": 0.0
+    },
+    {
+      "year": 2008,
+      "variable": "TMIN",
+      "gap_filled_days": 0,
+      "total_days": 366,
+      "gap_filled_fraction": 0.0
+    },
+    {
+      "year": 2008,
+      "variable": "RAIN",
+      "gap_filled_days": 0,
+      "total_days": 366,
+      "gap_filled_fraction": 0.0
+    },
+    {
+      "year": 2009,
+      "variable": "SRAD",
+      "gap_filled_days": 0,
+      "total_days": 365,
+      "gap_filled_fraction": 0.0
+    },
+    {
+      "year": 2009,
+      "variable": "TMAX",
+      "gap_filled_days": 0,
+      "total_days": 365,
+      "gap_filled_fraction": 0.0
+    },
+    {
+      "year": 2009,
+      "variable": "TMIN",
+      "gap_filled_days": 0,
+      "total_days": 365,
+      "gap_filled_fraction": 0.0
+    },
+    {
+      "year": 2009,
+      "variable": "RAIN",
+      "gap_filled_days": 0,
+      "total_days": 365,
+      "gap_filled_fraction": 0.0
+    },
+    {
+      "year": 2010,
+      "variable": "SRAD",
+      "gap_filled_days": 0,
+      "total_days": 365,
+      "gap_filled_fraction": 0.0
+    },
+    {
+      "year": 2010,
+      "variable": "TMAX",
+      "gap_filled_days": 0,
+      "total_days": 365,
+      "gap_filled_fraction": 0.0
+    },
+    {
+      "year": 2010,
+      "variable": "TMIN",
+      "gap_filled_days": 0,
+      "total_days": 365,
+      "gap_filled_fraction": 0.0
+    },
+    {
+      "year": 2010,
+      "variable": "RAIN",
+      "gap_filled_days": 0,
+      "total_days": 365,
+      "gap_filled_fraction": 0.0
+    },
+    {
+      "year": 2011,
+      "variable": "SRAD",
+      "gap_filled_days": 0,
+      "total_days": 365,
+      "gap_filled_fraction": 0.0
+    },
+    {
+      "year": 2011,
+      "variable": "TMAX",
+      "gap_filled_days": 0,
+      "total_days": 365,
+      "gap_filled_fraction": 0.0
+    },
+    {
+      "year": 2011,
+      "variable": "TMIN",
+      "gap_filled_days": 0,
+      "total_days": 365,
+      "gap_filled_fraction": 0.0
+    },
+    {
+      "year": 2011,
+      "variable": "RAIN",
+      "gap_filled_days": 0,
+      "total_days": 365,
+      "gap_filled_fraction": 0.0
+    },
+    {
+      "year": 2012,
+      "variable": "SRAD",
+      "gap_filled_days": 0,
+      "total_days": 366,
+      "gap_filled_fraction": 0.0
+    },
+    {
+      "year": 2012,
+      "variable": "TMAX",
+      "gap_filled_days": 0,
+      "total_days": 366,
+      "gap_filled_fraction": 0.0
+    },
+    {
+      "year": 2012,
+      "variable": "TMIN",
+      "gap_filled_days": 0,
+      "total_days": 366,
+      "gap_filled_fraction": 0.0
+    },
+    {
+      "year": 2012,
+      "variable": "RAIN",
+      "gap_filled_days": 0,
+      "total_days": 366,
+      "gap_filled_fraction": 0.0
+    },
+    {
+      "year": 2013,
+      "variable": "SRAD",
+      "gap_filled_days": 0,
+      "total_days": 365,
+      "gap_filled_fraction": 0.0
+    },
+    {
+      "year": 2013,
+      "variable": "TMAX",
+      "gap_filled_days": 0,
+      "total_days": 365,
+      "gap_filled_fraction": 0.0
+    },
+    {
+      "year": 2013,
+      "variable": "TMIN",
+      "gap_filled_days": 0,
+      "total_days": 365,
+      "gap_filled_fraction": 0.0
+    },
+    {
+      "year": 2013,
+      "variable": "RAIN",
+      "gap_filled_days": 0,
+      "total_days": 365,
+      "gap_filled_fraction": 0.0
+    }
+  ],
+  "annual_summary": [],
+  "cli": {
+    "status": "NOT_RUN",
+    "automatically_generated": false,
+    "note": "候选天气 QC 尚未通过，CLI 准备未启动。"
+  },
+  "source_inventory": [
+    {
+      "source": "ChinaFLUX 2003-2010 30min product",
+      "path": "data\\external\\yc_chinaflux\\raw\\YCA_M_30min.zip",
+      "sha256": "0ef898b6718c63cfa91a52cdb66cf8a0df53c0b245ee2a237e708281b39faee4",
+      "read_cell_years": "2004-2010; 2005-2010 only for source-total comparison"
+    },
+    {
+      "source": "Yucheng 2005-2022 official meteorology daily QC product",
+      "path": "data\\external\\yc_chinaflux\\raw\\禹城站2005-2022年大气环境要素观测数据集地面气象观测数据.xlsx",
+      "sha256": "9ed0e2347ad33b59262774d3cfc84b307444b8e59927ef2060a1281663cc589e",
+      "read_cell_years": "2005-2013 only"
+    },
+    {
+      "source": "Yucheng 2005-2022 official radiation daily QC product",
+      "path": "data\\external\\yc_chinaflux\\raw\\禹城站2005-2022年大气环境要素观测数据集辐射观测数据.xlsx",
+      "sha256": "203b10a343ad8dbc88f52df3ad906a650486b0a9237a3679510a95f2fccbe607",
+      "read_cell_years": "2005-2013 only"
+    }
+  ],
+  "candidate_sha256": null,
+  "external_raw_sha256": "acfc54ede019629bac238a5a256540f9c9d0d61401dd004b00c74792b9d627f5",
+  "leakage_audit_passed": true
+}

@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "max_source_weather_years_used_for_values_or_calibration": 2013,
+  "source_weather_years_used_for_values_or_calibration": [
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013
+  ],
+  "official_workbook_cell_values_read_through_year": 2013,
+  "first_post_cutoff_year_marker_read_to_stop_scan": 2014,
+  "post_cutoff_weather_cells_decoded_or_used": false,
+  "whole_file_hash_reads_cell_values": false,
+  "external_bias_calibration_years": "2005-2013 only",
+  "external_request_start": "2004-01-01",
+  "external_request_end": "2013-12-31",
+  "validation_weather_values_read": false,
+  "validation_years_used_for_metrics_or_correction": [],
+  "validation_remains_independent": true,
+  "assertion": "assert max(source_weather_years_used_for_values_or_calibration) <= 2013"
+}

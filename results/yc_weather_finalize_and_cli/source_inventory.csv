@@ -1,0 +1,4 @@
+﻿source,path,sha256,read_cell_years
+ChinaFLUX 2003-2010 30min product,data\external\yc_chinaflux\raw\YCA_M_30min.zip,0ef898b6718c63cfa91a52cdb66cf8a0df53c0b245ee2a237e708281b39faee4,2004-2010; 2005-2010 only for source-total comparison
+Yucheng 2005-2022 official meteorology daily QC product,data\external\yc_chinaflux\raw\禹城站2005-2022年大气环境要素观测数据集地面气象观测数据.xlsx,9ed0e2347ad33b59262774d3cfc84b307444b8e59927ef2060a1281663cc589e,2005-2013 only
+Yucheng 2005-2022 official radiation daily QC product,data\external\yc_chinaflux\raw\禹城站2005-2022年大气环境要素观测数据集辐射观测数据.xlsx,203b10a343ad8dbc88f52df3ad906a650486b0a9237a3679510a95f2fccbe607,2005-2013 only

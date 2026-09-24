@@ -1,0 +1,21 @@
+{
+  "task": "003_06_01_yc_weatherman_cli_generation",
+  "final_status": "BLOCKED_TOOL_PATH_ACCESS",
+  "candidate_freeze": "PASS_INPUT_FREEZE",
+  "candidate_sha256": "4B8FFE9E881D0A0743921B78B9C0E0EBFB1D2D645C5AA9737948B2B088ED7B34",
+  "weatherman_found": "UNKNOWN_NOT_INSPECTED",
+  "import_format_contract": "NOT_STARTED",
+  "station_metadata": "NOT_STARTED",
+  "import_package_created": false,
+  "cli_generated": false,
+  "ppo_runs": 0,
+  "presentation": {
+    "path": "docs/yc_weatherman_cli_generation.pptx",
+    "sha256": "38F5820887F99769DC962ADCDA89F23029C5C4624F3215C78DBF3485AC6CA9F7",
+    "slide_count": 3,
+    "structure_validation": "PASS",
+    "layout_warning_count": 0,
+    "native_powerpoint_rendering_verified": false
+  },
+  "next_minimal_action": "用户在本机只读确认 WeatherMan executable 路径、DSSAT 安装根目录及 About/version 信息，并把文本或截图复制到项目内供后续审计。"
+}

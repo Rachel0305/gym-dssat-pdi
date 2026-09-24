@@ -1,0 +1,15 @@
+{
+  "task": "003_06_01_yc_weatherman_cli_generation",
+  "site": "YC/YCA",
+  "candidate_path": "results/yc_weather_gapfill_finalize/yc_wgen_fitting_weather_2004_2013.csv",
+  "sha256": "4B8FFE9E881D0A0743921B78B9C0E0EBFB1D2D645C5AA9737948B2B088ED7B34",
+  "sha256_matches_required": true,
+  "row_count": 3653,
+  "days": 3653,
+  "start_date": "2004-01-01",
+  "end_date": "2013-12-31",
+  "variables": ["RAIN", "TMAX", "TMIN", "SRAD"],
+  "candidate_modified": false,
+  "validation_years_2014_2023_included": false,
+  "gate_status": "PASS_INPUT_FREEZE"
+}

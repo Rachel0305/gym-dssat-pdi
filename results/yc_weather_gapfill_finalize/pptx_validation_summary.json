@@ -1,0 +1,16 @@
+{
+  "path": "docs\\yc_weather_gapfill_finalize.pptx",
+  "slide_count": 6,
+  "expected_slide_count": 6,
+  "zip_package_integrity": true,
+  "all_slides_have_shapes": true,
+  "shapes_within_slide_bounds": true,
+  "out_of_bounds_shapes": [],
+  "visual_renderer_available": false,
+  "renderer_path": null,
+  "visual_rendered": false,
+  "final_status": "PASS_YC_WEATHER_CANDIDATE",
+  "sha256": "6d8e9dd215be304099130ce9743cdaa195964adce7dc5d5d2c144a7c25cee98e",
+  "backup_path": "results\\yc_weather_gapfill_finalize\\backups\\20260924T084845Z",
+  "validation_time_utc": "2026-09-24T08:48:45.219773+00:00"
+}

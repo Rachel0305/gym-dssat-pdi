@@ -1,0 +1,22 @@
+﻿source,path,sha256,weather_years_read
+ChinaFLUX daily 2004 product,data\external\yc_chinaflux\raw\YCA_M_daily.zip,0e38d3d23a36a0968fbcbf743951a66328af022fc891cb4358ea542641b74aee,2004 target date and daily PRCP cells only
+ChinaFLUX monthly 2004 product,data/external/yc_chinaflux/raw/YCA_M_monthly.zip,fde763a148526fec60e83ae13aa873894b1346bd60eb81d534e73e1430aedfd4,2004 monthly precipitation aggregate only
+ChinaFLUX annual 2004 product,data/external/yc_chinaflux/raw/YCA_M_yearly.zip,b4716cb4990b6b6b7a7dc4e5b92fbe0bbc68956ea4c1ebb317701ac04312ce6e,2004 annual precipitation aggregate only
+NOAA GHCN-Daily station inventory,https://www.ncei.noaa.gov/pub/data/ghcn/daily/ghcnd-stations.txt,14c6467fcce6cce8dc0786eba8bbceed51a2f1c1056b0e221b573157559fc824,station metadata only; no weather values
+NOAA GHCN-Daily station PRCP,https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/CHM00054823.dly,1e23a2c1061cd3a92803510f3c12f03b1e4c10a8cd4f66a5d5b2a76a360defb5,2004-10-16..2004-10-20 and 2005-01-01..2013-12-31 only
+NOAA GHCN-Daily station PRCP,https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/CHM00054725.dly,e8570e191925e09ae2f1bceeb97fcdcbe3f45ae28bba783268caaf6948fc513d,2004-10-16..2004-10-20 and 2005-01-01..2013-12-31 only
+NOAA GHCN-Daily station PRCP,https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/CHM00054618.dly,d8bb7293f303680a2a490fc0048c92cdd6550018a616f0f79ce52db08c6698bb,2004-10-16..2004-10-20 and 2005-01-01..2013-12-31 only
+NOAA GHCN-Daily station PRCP,https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/CHM00054916.dly,92613e8976dfc9a59ee8c0e38488b8d1c30e1134937780bfeeef83b77977c855,2004-10-16..2004-10-20 and 2005-01-01..2013-12-31 only
+NOAA GHCN-Daily station PRCP,https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/CHM00054616.dly,32b614d9185a84a760eea000c39731e0fb0b5e72217b77645c215dc072a4413f,2004-10-16..2004-10-20 and 2005-01-01..2013-12-31 only
+NOAA GHCN-Daily station PRCP,https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/CHM00054906.dly,2e3f3eb160b6d94bafbe7a81168db37f64a227e88390f571c9b349e911da86a6,2004-10-16..2004-10-20 and 2005-01-01..2013-12-31 only
+NOAA GHCN-Daily station PRCP,https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/CHM00053898.dly,97631170397386b191f9925e4e945cc95e190275ce7cbc4b42c4eebcb0cada29,2004-10-16..2004-10-20 and 2005-01-01..2013-12-31 only
+NOAA GHCN-Daily station PRCP,https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/CHM00054909.dly,683ecdcda86b37c802d0f3586a76828291d8b07ed8051dda6b7a9572c448ee3b,2004-10-16..2004-10-20 and 2005-01-01..2013-12-31 only
+NOAA GHCN-Daily station PRCP,https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/CHM00053698.dly,a59b64bef052a6442edba5669e18aadf5df726ec2a1be6c772fb3ace3320c880,2004-10-16..2004-10-20 and 2005-01-01..2013-12-31 only
+NOAA GHCN-Daily station PRCP,https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/CHM00054843.dly,ccbf7ef0412d0b0a80c2e4d9186e6a3412d325417a5ed1b84ac6574d6f6c3966,2004-10-16..2004-10-20 and 2005-01-01..2013-12-31 only
+NOAA GHCN-Daily station PRCP,https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/CHM00054527.dly,d94fa8376651e0bbbad3126f98a84de09115b537cefadb7ec25125e29562ed6f,2004-10-16..2004-10-20 and 2005-01-01..2013-12-31 only
+NOAA GHCN-Daily station PRCP,https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/CHM00058027.dly,02328419e9235cb7a541c3d4fda46a8544186bc9fc84dcd0739dcb1f1a86351f,2004-10-16..2004-10-20 and 2005-01-01..2013-12-31 only
+003_05 audited evidence,results\yc_weather_finalize_and_cli\external_gapfill_validation.json,3efb0d20d3630319500ca416770fa059c8b59932bb93a01253e12da6caf83731,reuse of already audited 2004-2013 evidence
+003_05 audited evidence,results\yc_weather_finalize_and_cli\external_gapfill_values.csv,3f98c756c7851106107c994a1927a9d21989abf95b035acc9788111a1dd7e9f7,reuse of already audited 2004-2013 evidence
+003_05 audited evidence,results\yc_weather_finalize_and_cli\gaps_before_external_fill.csv,af62974de78e80a37916138b0d5abd0ae5f9026dc7a88818b617d39d773fee65,reuse of already audited 2004-2013 evidence
+003_05 audited evidence,results\yc_weather_finalize_and_cli\leakage_audit.json,c130eab3a9070d08030954b27e50e242e7fc47a4c13a5b802ba69fb6dd4e5688,reuse of already audited 2004-2013 evidence
+003_05 audited evidence,results\yc_weather_finalize_and_cli\run_manifest.json,74c73acbc33b31188b4136835796c8cd900bb50ac24e06d93a005fc5e65ef24f,reuse of already audited 2004-2013 evidence

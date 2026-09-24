@@ -1,0 +1,5 @@
+﻿check,status,reason
+Gate A temperature mapping,NOT_RUN_CANDIDATE_NOT_BUILT,"Near-ground has slightly lower MAE in the 2005-2006 numeric comparison, but the comparison series has no documented installation height; the evidence cannot pair either ChinaFLUX column to 1.6 m or 2.9 m. No canonical TMAX/TMIN source is selected."
+Gate B precipitation completeness,NOT_RUN_CANDIDATE_NOT_BUILT,"The 1998-2006 product is monthly only; the 2005-2022 daily product lacks per-day observed/imputed provenance, and overlap precipitation totals differ by year. Five target dates fall in 2004, before the 2005 daily product begins."
+Gate C 2011-2013 completeness,NOT_RUN_CANDIDATE_NOT_BUILT,Daily TMAX/TMIN/SRAD contain unresolved missing dates and SRAD includes negative values.
+Final physical/date/provenance QC,NOT_RUN_CANDIDATE_NOT_BUILT,A canonical candidate cannot be assembled until all gates pass.

@@ -1,0 +1,178 @@
+{
+  "scope": "YC/YCA only",
+  "analysis_cutoff_year": 2013,
+  "validation_weather_values_read": false,
+  "products": [
+    {
+      "product": "ChinaFLUX 2003-2010 半小时气象",
+      "time_coverage": "2003-01-01..2010-12-31",
+      "resolution": "30 min",
+      "variables": "air temperature; precipitation; global solar radiation; humidity; wind; pressure; soil temperature/moisture; net radiation; PAR",
+      "units": {
+        "temperature": "degC",
+        "precipitation": "mm",
+        "solar_radiation": "W m-2 for 30min/daily mean; aggregate explicitly before daily MJ m-2"
+      },
+      "missing_codes": [
+        "-99999"
+      ],
+      "quality_status": "official product-level QA and gap-filled; row-level flag semantics not documented",
+      "sensor_heights": {
+        "temperature": "1.6 m and 2.9 m listed, field pairing unresolved",
+        "precipitation": "2.0 m",
+        "global_solar_radiation": "1.5 m"
+      },
+      "timestamp_definition": "calendar year/month/day/hour/minute; interval boundary convention not stated in available dictionary",
+      "documentation": "YCA_M_30min.pdf"
+    },
+    {
+      "product": "ChinaFLUX 2003-2010 日值气象",
+      "time_coverage": "2003-01-01..2010-12-31",
+      "resolution": "daily",
+      "variables": "air temperature; precipitation; global solar radiation; humidity; wind; pressure; soil temperature/moisture; net radiation; PAR",
+      "units": {
+        "temperature": "degC",
+        "precipitation": "mm",
+        "solar_radiation": "W m-2 for 30min/daily mean; aggregate explicitly before daily MJ m-2"
+      },
+      "missing_codes": [
+        "-99999"
+      ],
+      "quality_status": "official product-level QA and gap-filled; row-level flag semantics not documented",
+      "sensor_heights": {
+        "temperature": "1.6 m and 2.9 m listed, field pairing unresolved",
+        "precipitation": "2.0 m",
+        "global_solar_radiation": "1.5 m"
+      },
+      "timestamp_definition": "calendar year/month/day/hour/minute; interval boundary convention not stated in available dictionary",
+      "documentation": "YCA_M_DAILY.pdf"
+    },
+    {
+      "product": "ChinaFLUX 2003-2010 月值气象",
+      "time_coverage": "2003-01-01..2010-12-31",
+      "resolution": "monthly",
+      "variables": "air temperature; precipitation; global solar radiation; humidity; wind; pressure; soil temperature/moisture; net radiation; PAR",
+      "units": {
+        "temperature": "degC",
+        "precipitation": "mm",
+        "solar_radiation": "W m-2 for 30min/daily mean; aggregate explicitly before daily MJ m-2"
+      },
+      "missing_codes": [
+        "-99999"
+      ],
+      "quality_status": "official product-level QA and gap-filled; row-level flag semantics not documented",
+      "sensor_heights": {
+        "temperature": "1.6 m and 2.9 m listed, field pairing unresolved",
+        "precipitation": "2.0 m",
+        "global_solar_radiation": "1.5 m"
+      },
+      "timestamp_definition": "calendar year/month/day/hour/minute; interval boundary convention not stated in available dictionary",
+      "documentation": "YCA_M_MONTHLY.pdf"
+    },
+    {
+      "product": "ChinaFLUX 2003-2010 年值气象",
+      "time_coverage": "2003-01-01..2010-12-31",
+      "resolution": "yearly",
+      "variables": "air temperature; precipitation; global solar radiation; humidity; wind; pressure; soil temperature/moisture; net radiation; PAR",
+      "units": {
+        "temperature": "degC",
+        "precipitation": "mm",
+        "solar_radiation": "W m-2 for 30min/daily mean; aggregate explicitly before daily MJ m-2"
+      },
+      "missing_codes": [
+        "-99999"
+      ],
+      "quality_status": "official product-level QA and gap-filled; row-level flag semantics not documented",
+      "sensor_heights": {
+        "temperature": "1.6 m and 2.9 m listed, field pairing unresolved",
+        "precipitation": "2.0 m",
+        "global_solar_radiation": "1.5 m"
+      },
+      "timestamp_definition": "calendar year/month/day/hour/minute; interval boundary convention not stated in available dictionary",
+      "documentation": "YCA_M_YEARLY.pdf"
+    },
+    {
+      "product": "1998-2006 年山东禹城站气象和太阳辐射监测数据",
+      "time_coverage": "1998-01-01..2006-12-31",
+      "resolution": "monthly",
+      "variables": "air temperature; humidity; pressure; precipitation; wind; surface temperature; solar radiation; PAR; reflected/net radiation; soil heat flux",
+      "units": "not specified in product PDF text; workbook unit rows require an XLS-capable parser before numerical use",
+      "missing_codes": "not specified in product PDF text",
+      "sensor_heights": "not specified in product PDF text; related station PDF contains site/method descriptions but no verified mapping to ChinaFLUX exported temperature columns",
+      "quality_status": "digitized monthly statistical product; automated and manual observation summaries",
+      "daily_use": "not eligible for daily gap filling or daily WGEN weather",
+      "documentation": "1-产品说明_DP2011_YCA_QXSJ_QXJC.pdf"
+    },
+    {
+      "product": "禹城站 2005-2022 年大气环境要素观测数据集",
+      "time_coverage": "2005-01-01..2022-12-31 (analysis values clipped to 2013)",
+      "resolution": "daily",
+      "temperature_fields": {
+        "mean": "日平均空气温度, degC",
+        "maximum": "日最高空气温度, degC",
+        "minimum": "日最低空气温度, degC"
+      },
+      "precipitation": "日降水量, mm",
+      "radiation": "总辐射日总量, MJ m-2; net radiation and PAR are separate fields",
+      "missing_codes": [
+        "fullwidth hyphen U+FF0D observed in cells; not described in data dictionary"
+      ],
+      "sensor_heights": "temperature HMP45D listed, height not specified; total-radiation sensor CM11 listed, height not specified in this product table",
+      "quality_status": "hourly monitoring summarized daily; EcoFlow V1 basic QC, missing-value interpolation, daily aggregation; no per-cell observed/imputed flag in workbook",
+      "sensor_history": "Milos520 automatic weather station; updated to MAWS301 in May 2014",
+      "analysis_cutoff_year": 2013,
+      "documentation": "禹城站2005-2022年大气环境要素观测数据集说明文档.docx"
+    },
+    {
+      "product": "raw-source inventory",
+      "files": [
+        "1-产品说明_DP2011_YCA_QXSJ_QXJC.pdf",
+        "YCA_M_30min.pdf",
+        "YCA_M_30min.zip",
+        "YCA_M_DAILY.pdf",
+        "YCA_M_daily.zip",
+        "YCA_M_MONTHLY.pdf",
+        "YCA_M_monthly.zip",
+        "YCA_M_YEARLY.pdf",
+        "YCA_M_yearly.zip",
+        "实体数据及关联说明文档_DP2011_YCA_QXSJ_QXJC.zip",
+        "禹城站2005-2022年大气环境要素观测数据集地面气象观测数据.xlsx",
+        "禹城站2005-2022年大气环境要素观测数据集说明文档.docx",
+        "禹城站2005-2022年大气环境要素观测数据集辐射观测数据.xlsx"
+      ]
+    }
+  ],
+  "input_rows_policy": "Data rows after 2013 are not read; only file-level hashes and metadata are recorded for the 2005-2022 source.",
+  "input_row_count_by_dataset": {
+    "yucheng_met_through_2013": 3287,
+    "yucheng_radiation_through_2013": 3287,
+    "chinaflux_30min_daily_groups_2004_2010": 2557
+  },
+  "legacy_source_reference": {
+    "prior_gap_file": "results/yc_chinaflux_weather_reconciliation/unresolved_weather_gaps.csv",
+    "prior_gap_file_sha256": "f452162bf5cbac8e70af9a75817df2ce5fdc5a5e3cfae2e9a5bb0b879ade7dfc",
+    "prior_legacy_inventory": "results/yc_chinaflux_weather_reconciliation/legacy_source_inventory.json",
+    "prior_legacy_inventory_sha256": "73c4d35abe29538b4b8e037bade3d541b4c8e3c8d947d771c88a903fe8678c31",
+    "prior_legacy_observations": "results/yc_chinaflux_weather_reconciliation/legacy_source_observations_2004_2010.csv",
+    "prior_legacy_observations_sha256": "556c3a296d8de0a2b43475efa7fab8d5c2481df7131b248a61fd7fbd1e87d47c",
+    "inherited_original_source_hashes": {
+      "D32.xls": "fd885aff6690cc5d415a3a31a4d409bd032a9bc3502827f5161aa60fdaa983e8",
+      "T2.xls": "d95ceee849df1717f3f2c9e301048467372c3974623d68ce59b7dadffed54b01",
+      "HLLCYCFQ降雨数据.xls": "6e797937abdd021f061cf8a89711a6b24ee462c1d33ce361328dde5741e66430"
+    },
+    "reextracted_this_run": false
+  },
+  "training_weather_years": [
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013
+  ],
+  "validation_cutoff_assertion": "PASS: all weather rows admitted to analysis have year <= 2013."
+}

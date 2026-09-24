@@ -1,0 +1,252 @@
+Current-tree `rg` matches captured before authoring this task's report/PPT; scope: docs, results, src, prompt_02, prompts, references, scripts; text-file globs only, max file size 4 MiB.
+This raw match list includes prompt text and secondary artifacts. A match in a prompt is a search lead, not independent version evidence. Targeted DSSAT_auto_validation header hits and interpretation are in dssat_version_output_header_evidence.txt.
+
+scripts\audit_yc_wgen_cli_pilot.py:23:    / "run_CNYC0802_DSSAT480_IC0_null_2000_2023"
+scripts\audit_yc_wgen_cli_pilot.py:346:        "broad_null_run_evidence": "DSSAT_auto_validation/run_CNYC0802_DSSAT480_IC0_null_2000_2023",
+prompt_02\003_06_yc_train_only_cli_and_wgen_pilot.md:112:- DSSAT version
+prompt_02\003_06_yc_train_only_cli_and_wgen_pilot (1).md:112:- DSSAT version
+prompt_02\003_06_02_verify_dssat_runtime_version.md:14:identify actual DSSAT runtime/version   ← CURRENT TASK
+prompt_02\003_06_02_verify_dssat_runtime_version.md:66:DSSAT 4.8.0
+prompt_02\003_06_02_verify_dssat_runtime_version.md:196:dscsm048
+prompt_02\003_06_02_verify_dssat_runtime_version.md:197:dscsm048.exe
+prompt_02\003_06_02_verify_dssat_runtime_version.md:223:4.8.0
+prompt_02\003_06_02_verify_dssat_runtime_version.md:235:DSSAT runtime/version output
+prompt_02\003_06_02_verify_dssat_runtime_version.md:248:dscsm048
+prompt_02\003_06_02_verify_dssat_runtime_version.md:260:4.8.0
+prompt_02\003_06_02_verify_dssat_runtime_version.md:276:dssat_version: 4.8.0
+prompt_02\003_06_02_verify_dssat_runtime_version.md:567:5. DSSAT version evidence
+prompt_02\003_06_02_verify_dssat_runtime_version.md:601:DSSAT version evidence
+prompt_02\003_06_02_verify_dssat_runtime_version.md:716:4. 给出 DSSAT version 的证据等级；
+prompt_02\003_06_02_01_trace_dssat_version_history.md:1:# 003_06_02_01：追溯仓库历史中的 DSSAT 4.8.0 / 4.8.5 版本证据
+prompt_02\003_06_02_01_trace_dssat_version_history.md:25:* 当前 `gym_dssat_pdi` package version 与 DSSAT 本体版本必须严格区分。
+prompt_02\003_06_02_01_trace_dssat_version_history.md:29:> 主 Gym-DSSAT 环境长期使用的是 DSSAT 4.8.0；曾为了比较 DSSAT 4.8.0 与 DSSAT 4.8.5 的模拟结果差异，在另一台电脑上安装 DSSAT 4.8.x/4.8.5 环境进行过对照。
+prompt_02\003_06_02_01_trace_dssat_version_history.md:43:因此本子任务只追溯 repository 和 Git history 中已经存在的历史证据，寻找 DSSAT 4.8.0 / 4.8.5 的明确记录。
+prompt_02\003_06_02_01_trace_dssat_version_history.md:51:1. repository 当前文件中是否存在 DSSAT `4.8.0` 的明确版本记录？
+prompt_02\003_06_02_01_trace_dssat_version_history.md:52:2. 是否存在 DSSAT `4.8.5` 的明确版本记录？
+prompt_02\003_06_02_01_trace_dssat_version_history.md:55:   * DSSAT 4.8.0 vs 4.8.5；
+prompt_02\003_06_02_01_trace_dssat_version_history.md:56:   * 不同 DSSAT version simulation comparison；
+prompt_02\003_06_02_01_trace_dssat_version_history.md:59:4. 是否存在 DSSAT output header、log、script、path、README、prompt、commit message 等可以证明历史 DSSAT version 的证据？
+prompt_02\003_06_02_01_trace_dssat_version_history.md:112:4.8.0
+prompt_02\003_06_02_01_trace_dssat_version_history.md:113:4.8.5
+prompt_02\003_06_02_01_trace_dssat_version_history.md:116:DSSAT48
+prompt_02\003_06_02_01_trace_dssat_version_history.md:117:DSSAT480
+prompt_02\003_06_02_01_trace_dssat_version_history.md:118:DSSAT485
+prompt_02\003_06_02_01_trace_dssat_version_history.md:119:dscsm048
+prompt_02\003_06_02_01_trace_dssat_version_history.md:120:dscsm048.exe
+prompt_02\003_06_02_01_trace_dssat_version_history.md:122:DSSAT version
+prompt_02\003_06_02_01_trace_dssat_version_history.md:127:还应搜索与版本对照可能有关的：
+prompt_02\003_06_02_01_trace_dssat_version_history.md:130:4.8.0 vs 4.8.5
+prompt_02\003_06_02_01_trace_dssat_version_history.md:131:4.8 vs 4.8.5
+prompt_02\003_06_02_01_trace_dssat_version_history.md:132:version comparison
+prompt_02\003_06_02_01_trace_dssat_version_history.md:133:版本对照
+prompt_02\003_06_02_01_trace_dssat_version_history.md:134:版本比较
+prompt_02\003_06_02_01_trace_dssat_version_history.md:135:不同版本
+prompt_02\003_06_02_01_trace_dssat_version_history.md:136:另一台电脑
+prompt_02\003_06_02_01_trace_dssat_version_history.md:137:second computer
+prompt_02\003_06_02_01_trace_dssat_version_history.md:138:simulation difference
+prompt_02\003_06_02_01_trace_dssat_version_history.md:139:result difference
+prompt_02\003_06_02_01_trace_dssat_version_history.md:163:DSSAT 4.8.0
+prompt_02\003_06_02_01_trace_dssat_version_history.md:164:DSSAT 4.8.5
+prompt_02\003_06_02_01_trace_dssat_version_history.md:165:dscsm048
+prompt_02\003_06_02_01_trace_dssat_version_history.md:167:version comparison
+prompt_02\003_06_02_01_trace_dssat_version_history.md:195:DSSAT Version 4.8.0
+prompt_02\003_06_02_01_trace_dssat_version_history.md:196:DSSAT 4.8.0
+prompt_02\003_06_02_01_trace_dssat_version_history.md:197:Version 4.8.5
+prompt_02\003_06_02_01_trace_dssat_version_history.md:218:dscsm048
+prompt_02\003_06_02_01_trace_dssat_version_history.md:219:DSSAT480
+prompt_02\003_06_02_01_trace_dssat_version_history.md:220:DSSAT48
+prompt_02\003_06_02_01_trace_dssat_version_history.md:234:4.8.0
+prompt_02\003_06_02_01_trace_dssat_version_history.md:246:我们当时使用 DSSAT 4.8.0
+prompt_02\003_06_02_01_trace_dssat_version_history.md:260:DSSAT version
+prompt_02\003_06_02_01_trace_dssat_version_history.md:282:DSSAT 4.8.0
+prompt_02\003_06_02_01_trace_dssat_version_history.md:283:DSSAT 4.8.5
+prompt_02\003_06_02_01_trace_dssat_version_history.md:311:6. 与另一台电脑有关的说明；
+prompt_02\003_06_02_01_trace_dssat_version_history.md:312:7. 不同 DSSAT version 输出对比表；
+prompt_02\003_06_02_01_trace_dssat_version_history.md:322:4.8.0
+prompt_02\003_06_02_01_trace_dssat_version_history.md:323:4.8.5
+prompt_02\003_06_02_01_trace_dssat_version_history.md:330:# 九、如果找到历史 4.8.0 证据
+prompt_02\003_06_02_01_trace_dssat_version_history.md:335:DSSAT 4.8.0
+prompt_02\003_06_02_01_trace_dssat_version_history.md:353:historical Gym-DSSAT runtime used DSSAT 4.8.0
+prompt_02\003_06_02_01_trace_dssat_version_history.md:358:即使历史使用 4.8.0，也不能自动写成：
+prompt_02\003_06_02_01_trace_dssat_version_history.md:361:current active runtime = DSSAT 4.8.0
+prompt_02\003_06_02_01_trace_dssat_version_history.md:368:# 十、如果找到 4.8.5 对照记录
+prompt_02\003_06_02_01_trace_dssat_version_history.md:370:如果找到用户曾经使用 DSSAT 4.8.5 的证据，请回答：
+prompt_02\003_06_02_01_trace_dssat_version_history.md:406:14. 根据用户记忆直接宣布当前 runtime 是 DSSAT 4.8.0；
+prompt_02\003_06_02_01_trace_dssat_version_history.md:407:15. 根据 `dscsm048` 单独宣布完整版本为 4.8.0；
+prompt_02\003_06_02_01_trace_dssat_version_history.md:457:5. DSSAT 4.8.0 evidence
+prompt_02\003_06_02_01_trace_dssat_version_history.md:458:6. DSSAT 4.8.5 evidence
+prompt_02\003_06_02_01_trace_dssat_version_history.md:502:3. DSSAT 4.8.0 evidence
+prompt_02\003_06_02_01_trace_dssat_version_history.md:503:4. DSSAT 4.8.5 / version comparison evidence
+prompt_02\003_06_02_01_trace_dssat_version_history.md:522:chore: trace DSSAT version history
+prompt_02\003_06_02_01_trace_dssat_version_history.md:607:4. 单独判断 DSSAT 4.8.0 evidence；
+prompt_02\003_06_02_01_trace_dssat_version_history.md:608:5. 单独判断 DSSAT 4.8.5 evidence；
+prompt_02\003_06_02_01_trace_dssat_version_history.md:609:6. 检查是否存在历史 version comparison；
+prompt_02\003_06_01_yc_weatherman_cli_generation.md:129:C:\DSSAT48\
+prompt_02\003_06_01_yc_weatherman_cli_generation.md:190:- DSSAT version（若能查询）
+prompt_02\003_06_01_yc_weatherman_cli_generation.md:208:- DSSAT output/version evidence
+prompt_02\003_06_01_yc_weatherman_cli_generation.md:477:DSSAT version
+prompt_02\003_06_01_yc_weatherman_cli_generation.md:585:3. DSSAT path/version；
+prompt_02\003_06_01_yc_weatherman_cli_generation.md:618:4. DSSAT path/version。
+src\analyze_ufga_windows480_vs_pdi.py:259:        "Source: Windows DSSAT 4.8.0 PlantGro.OUT and Weather.OUT. Rainfall is shown once because all treatments use the same weather year.",
+src\analyze_ufga_windows480_vs_pdi.py:312:        ax.plot(sub["dap"], sub[wcol], color="#804126", linewidth=3.0, label="Windows DSSAT 4.8.0")
+src\analyze_ufga_windows480_vs_pdi.py:313:        ax.plot(sub["dap"], sub[pcol], color="#2E4780", linewidth=2.0, linestyle=(0, (4, 2)), marker="o", markersize=2.5, markevery=max(1, len(sub) // 18), label="PDI DSSAT 4.8.0 raw")
+src\analyze_ufga_windows480_vs_pdi.py:322:    fig.suptitle("UFGA official example run 1: Windows 4.8.0 vs PDI 4.8.0 raw outputs", fontsize=14, y=0.99)
+src\analyze_ufga_windows480_vs_pdi.py:396:        "# UFGA official example Windows DSSAT 4.8.0 and PDI/gym diagnostic",
+prompts\012_01_hla2010_dqn_discrete_action_probe.md:19:- PDI/gym-DSSAT 4.8.0 container environment
+prompts\011_11_hla2004_auto_fertilizer_rescue_newcul.md:12:- base input copied from the Windows DSSAT 4.8.0 IC=1 auto-irrigation run.
+prompts\011_11_hla2004_auto_fertilizer_rescue_newcul.md:19:DSSAT_auto_validation/HLA_2004/run_CNHL0408_DSSAT480_2004/CNHL0408.MZX
+prompts\010_14_hla2004_candidate_ic_strict_four_scenario_forward.md:52:- 模型：PDI/gym DSSAT 4.8.0；
+prompts\010_13_hla_candidate_ic_dssat_auto_management.md:53:- 模型：PDI/gym DSSAT 4.8.0；
+prompts\010_12_hla_initial_condition_baseline_scan.md:78:- 模型：PDI/gym DSSAT 4.8.0
+prompts\013_01_fq_yc_new_cultivar_forward_screening.md:54:1. FQ/YC 新参数和输入包是否能在 PDI/gym-DSSAT 4.8.0 中正常运行；
+prompts\012_15_hla2015_literature_aligned_dqn_probe.md:24:- 使用 PDI/gym-DSSAT 4.8.0
+prompts\012_02_hla2010_dqn_irrigation_fixed_n_marginal_scan.md:21:- 使用 PDI/gym-DSSAT 4.8.0 容器环境
+src\audit_dssat_management_event_chain_037_05.py:20:REQUIRED = ["fileX.MZX", "DSSAT48.INP", "MgmtEvent.OUT"]
+src\audit_dssat_management_event_chain_037_05.py:44:    """Return MP/MI/MF group ids for the first treatment selected in DSSAT48.INP."""
+src\audit_dssat_management_event_chain_037_05.py:126:    """Parse non-zero management events from DSSAT48.INP, the actual DSSAT input file."""
+src\audit_dssat_management_event_chain_037_05.py:208:    selected = parse_treatment_groups(path / "DSSAT48.INP")
+src\audit_dssat_management_event_chain_037_05.py:211:    row.update(parse_dssat48_inp_events(path / "DSSAT48.INP"))
+prompts\019_10_wue_nue_literature_definition_and_dssat_calculation.md:5:谨慎定义本项目的水分利用效率与氮素利用效率，并将定义落实到现有 DSSAT 4.8.0 `Summary.OUT` 的实际变量上，避免以后因术语混用返工。
+results\yc_wgen_cli_pilot\yc_cli_provenance.json:13:    "path": "DSSAT_auto_validation/run_CNYC0802_DSSAT480_IC0_null_2000_2023/pdi_smoke_test/input_used_by_pdi/CNYC.CLI",
+results\yc_wgen_cli_pilot\split_audit.json:65:  "broad_null_run_evidence": "DSSAT_auto_validation/run_CNYC0802_DSSAT480_IC0_null_2000_2023",
+results\yc_wgen_cli_pilot\logs\audit_run.json:40:    "path": "DSSAT_auto_validation/run_CNYC0802_DSSAT480_IC0_null_2000_2023/pdi_smoke_test/input_used_by_pdi/CNYC.CLI",
+results\yc_wgen_cli_pilot\003_06_02\gym_dssat_pdi_version.txt:1:YC DSSAT runtime audit: gym_dssat_pdi version
+prompts\021_16_sy2014_nitrogen_timing_deterministic_counterfactual.md:12:- 使用 PDI/DSSAT 4.8.0 原始环境做确定性前向模拟。
+results\yc_wgen_cli_pilot\003_06_02\dssat_version_evidence.txt:1:YC DSSAT runtime audit: DSSAT version evidence
+results\yc_wgen_cli_pilot\003_06_02\dssat_version_evidence.txt:7:No live DSSAT version output, simulation header, installation metadata, package metadata, image metadata, or runtime documentation was inspected. The configured wrapper path is not a version identifier. Executable names such as `dscsm048` were not observed in the current runtime and are not used to infer a version.
+results\yc_wgen_cli_pilot\003_06_02\dssat_version_evidence.txt:12:- DSSAT version/help output and simulation output headers
+prompts\021_18_sy2014_deterministic_upper_bound_oracle_search.md:13:- 使用 `021_14` 已验证的 SY2014 IC=2 输入和 PDI/DSSAT 4.8.0 环境。
+results\yc_wgen_cli_pilot\003_06_02\dssat_executable_info.txt:14:`run_dssat` is the configured Gym-DSSAT/PDI launcher, not a confirmed underlying DSSAT model executable. The actual executable filename and resolved absolute path behind this launcher are UNKNOWN_DUE_TO_ACCESS_RESTRICTION because the configured `/opt/dssat_pdi/` runtime was not accessible under AGENTS.md. No `dscsm048` name or path is inferred.
+results\yc_wgen_cli_pilot\003_06_01\weatherman_inventory.json:14:    "C:\\DSSAT48\\",
+results\yc_wgen_cli_pilot\003_06_01\experiment_summary.json:20:  "next_minimal_action": "用户在本机只读确认 WeatherMan executable 路径、DSSAT 安装根目录及 About/version 信息，并把文本或截图复制到项目内供后续审计。"
+results\yc_wgen_cli_pilot\003_06_01\build\slide-2.layout.json:727:      "text": "WeatherMan 是否存在、executable/version、GUI/CLI 能力；当前 DSSAT 路径与版本。",
+results\yc_wgen_cli_pilot\003_06_01\build\slide-2.layout.json:728:      "textPreview": "WeatherMan 是否存在、executable/version、GUI/CLI 能力；当前 DSSAT 路径与版本。",
+results\yc_wgen_cli_pilot\003_06_01\build\slide-2.layout.json:748:            "text": "WeatherMan 是否存在、executable/version、GUI/CLI 能力；当前 DSSAT 路径与版本。"
+results\yc_wgen_cli_pilot\003_06_01\build\slide-2.layout.json:755:          "text": "WeatherMan 是否存在、executable/version、GUI/CLI 能力；当前 DSSAT 路径与版本。",
+results\yc_wgen_cli_pilot\003_06_01\build\slide-2.layout.json:764:              "text": "WeatherMan 是否存在、executable/version、GUI/CLI 能力；当前 DSSAT 路径与版本。",
+results\yc_cli_generation_and_weather_qc\test_split_status.json:35:                                     "DSSAT_auto_validation/run_CNYC0802_DSSAT480_IC0_null_2000_2023"
+prompts\021_20_sy2014_minimal_dqfd_style_5k_ab_smoke.md:24:- PDI/DSSAT 4.8.0 和 021_14 同源输入；
+prompts\021_19_sy2014_oracle_demonstration_dqn_warmstart_smoke.md:11:- 同一 SY2014 IC=2 输入；PDI/DSSAT 4.8.0。
+results\yc_wgen_cli_pilot\003_06\toolchain_inventory.json:8:    "version_label": "DSSAT 4.8",
+results\yc_wgen_cli_pilot\003_06\toolchain_inventory.json:9:    "evidence": "旧运行目录名含 DSSAT480；不作为当前安装版本证据。"
+prompts\022_03_sy2014_fixed_grid_replay_prefill_dqn_seed1.md:17:- SY2014、IC=2、PDI/DSSAT 4.8.0；
+prompts\022_01_sy2014_fixed_official_stage_feasibility_search.md:9:- SY2014、IC=2、PDI/DSSAT 4.8.0；
+prompts\022_02_sy2014_stage_mc_dqn_seed1_short_probe.md:21:- SY2014、IC=2、PDI/DSSAT 4.8.0；
+prompts\022_05_sy2014_support_constrained_grid_replay_dqn_seed1.md:26:- SY2014、IC=2、PDI/DSSAT 4.8.0；
+prompts\022_10_sy2014_dap65_action1_vs_action7_controlled_dssat.md:22:- SY2014、IC=2、相同PDI/DSSAT4.8.0输入；
+src\calibrate_hla_cultivar_pdi_2007_2009_2011.py:1:"""Calibrate HLA maize cultivar parameters with PDI/gym-DSSAT 4.8.0.024.
+src\calibrate_hla_cultivar_pdi_2007_2009_2011.py:315:        "Purpose: Hailun cultivar calibration with PDI/gym-DSSAT 4.8.0.024, using 2007/2009/2011 observed management and observations.",
+results\yc_wgen_cli_pilot\003_06\cli_provenance.json:16:    "path": "DSSAT_auto_validation/run_CNYC0802_DSSAT480_IC0_null_2000_2023/pdi_smoke_test/input_used_by_pdi/CNYC.CLI",
+src\compare_hla_windows480_vs_gym_pdi_ic0_2004_2023.py:15:    / "run_CNHL0407_DSSAT480_IC0_null_2004_2023"
+src\compare_hla_windows480_vs_gym_pdi_ic0_2004_2023.py:206:            label="Windows DSSAT 4.8.0",
+src\compare_hla_windows480_vs_gym_pdi_ic0_2004_2023.py:217:            label="gym/PDI DSSAT 4.8.0",
+src\compare_hla_windows480_vs_gym_pdi_ic0_2004_2023.py:228:    fig.suptitle(f"HLA {year} IC=0 null: Windows DSSAT 4.8.0 vs gym/PDI DSSAT 4.8.0", fontsize=14, y=0.985)
+src\compare_hla_windows480_vs_gym_pdi_ic0_2004_2023.py:265:    fig.suptitle(f"HLA {year}: Windows 4.8.0 minus gym/PDI 4.8.0", fontsize=14, y=0.985)
+src\compare_hla_windows480_vs_gym_pdi_ic0_2004_2023.py:281:        label="Windows DSSAT 4.8.0 GWAD",
+src\compare_hla_windows480_vs_gym_pdi_ic0_2004_2023.py:290:        label="gym/PDI DSSAT 4.8.0 GRNWT",
+src\compare_hla_windows480_vs_gym_pdi_ic0_2004_2023.py:301:        label="Windows DSSAT 4.8.0 CWAD",
+src\compare_hla_windows480_vs_gym_pdi_ic0_2004_2023.py:310:        label="gym/PDI DSSAT 4.8.0 TOPWT",
+src\compare_hla_windows480_vs_gym_pdi_ic0_2004_2023.py:413:        "# HLA 2004-2023 Windows DSSAT 4.8.0 vs gym/PDI DSSAT 4.8.0 IC=0 null",
+src\compare_hla_windows480_vs_gym_pdi_ic0_2004_2023.py:415:        "This analysis replaces the previous Windows DSSAT 4.8.5 side with the newly provided Windows DSSAT 4.8.0 standalone output in `run_CNHL0407_DSSAT480_IC0_null_2004_2023`.",
+src\compare_hla_windows480_vs_gym_pdi_ic0_2004_2023.py:417:        "The gym/PDI daily series is reused from the prior IC=0 null HLA 2004-2023 diagnostic CSV because it is already a complete PDI/gym DSSAT 4.8.0 post-state series.",
+src\compare_hla_windows480_vs_gym_pdi_ic0_2004_2023.py:421:        "Main figures include rainfall from the Windows DSSAT 4.8.0 `Weather.OUT` file and daily trajectories for biomass, grain, water-stress index, and nitrogen-stress index.",
+src\compare_hla_windows480_vs_gym_pdi_ic0_2004_2023.py:424:    print(f"Wrote HLA 2004-2023 Windows 4.8.0 vs gym/PDI 4.8.0 analysis to {OUT_DIR}")
+src\compare_yc_windows480_vs_pdi_yearly_ic0.py:26:WINDOWS_RUN_DIR = PROJECT_ROOT / "DSSAT_auto_validation" / "run_CNYC0802_DSSAT480_IC0_null_2000_2023"
+src\compare_yc_windows480_vs_pdi_yearly_ic0.py:273:        ax.plot(sub["dap"], sub[wcol], color="#804126", linewidth=3.0, label="Windows DSSAT 4.8.0")
+src\compare_yc_windows480_vs_pdi_yearly_ic0.py:274:        ax.plot(sub["dap"], sub[pcol], color="#2E4780", linewidth=2.0, linestyle=(0, (4, 2)), marker="o", markersize=2.4, markevery=max(1, len(sub) // 18), label="PDI DSSAT 4.8.0 yearly")
+src\compare_yc_windows480_vs_pdi_yearly_ic0.py:284:    fig.suptitle(f"YC {year} IC=0 null: Windows DSSAT 4.8.0 vs PDI yearly run", y=0.995)
+src\compare_fqz_windows480_vs_pdi_yearly_ic0.py:26:WINDOWS_RUN_DIR = PROJECT_ROOT / "DSSAT_auto_validation" / "HLA_2004/run_CNFQ0802_DSSAT480_standalone/run_CNFQ0802_DSSAT480_standalone"
+src\compare_fqz_windows480_vs_pdi_yearly_ic0.py:280:        ax.plot(sub["dap"], sub[wcol], color="#804126", linewidth=3.0, label="Windows DSSAT 4.8.0")
+src\compare_fqz_windows480_vs_pdi_yearly_ic0.py:281:        ax.plot(sub["dap"], sub[pcol], color="#2E4780", linewidth=2.0, linestyle=(0, (4, 2)), marker="o", markersize=2.4, markevery=max(1, len(sub) // 18), label="PDI DSSAT 4.8.0 yearly")
+src\compare_fqz_windows480_vs_pdi_yearly_ic0.py:291:    fig.suptitle(f"FQZ {year} IC=0 null: Windows DSSAT 4.8.0 vs PDI yearly run", y=0.995)
+src\compare_hla_ic0_ic1_null_yearly.py:17:IC0_DIR = ROOT / "DSSAT_auto_validation" / "HLA_2004" / "run_CNHL0407_DSSAT480_IC0_null_2004_2023"
+src\compare_hla0408_0409_windows480_vs_pdi_ic1.py:27:    "CNHL0408_IC1_auto_irrig": PROJECT_ROOT / "DSSAT_auto_validation" / "HLA_2004" / "run_CNHL0408_DSSAT480_2004",
+src\compare_hla0408_0409_windows480_vs_pdi_ic1.py:28:    "CNHL0409_IC1_null": PROJECT_ROOT / "DSSAT_auto_validation" / "HLA_2004" / "run_CNHL0409_DSSAT480_2004",
+src\compare_hla0408_0409_windows480_vs_pdi_ic1.py:324:    ax_stress.set_title(f"{scenario}: Windows DSSAT 4.8.0 vs PDI/gym DSSAT 4.8.0")
+src\diagnose_pdi_field_coordinates_ic0_null.py:176:Purpose: run the PDI-generated `fileX.MZX` in Windows DSSAT 4.8.5 to test whether the 412 kg/ha yield follows the FILEX input or the PDI/DSSAT runtime.
+src\diagnose_pdi_field_coordinates_ic0_null.py:180:- If Windows DSSAT still gives approximately 248 kg/ha, the cause is more likely DSSAT version/runtime/PDI execution differences.
+src\finalize_sy2014_deterministic_oracle_search_021_18.py:119:- 输入：复用 `021_14` 的 SY2014 IC=2 PDI/DSSAT 4.8.0 输入。
+src\plot_hla0409_rain_irrig_fert_stress.py:12:RUN_DIR = PROJECT_ROOT / "DSSAT_auto_validation" / "HLA_2004" / "run_CNHL0409_DSSAT480_2004"
+src\plot_hla0409_rain_irrig_fert_stress.py:187:    ax_stress.set_title("HLA 2004 IC=1 null Windows DSSAT 4.8.0: rainfall, management events, and stress indices", fontsize=12)
+src\plot_hla0408_rain_irrig_fert_stress.py:12:RUN_DIR = PROJECT_ROOT / "DSSAT_auto_validation" / "HLA_2004" / "run_CNHL0408_DSSAT480_2004"
+src\plot_hla0408_rain_irrig_fert_stress.py:187:    ax_stress.set_title("HLA 2004 IC=1 Windows DSSAT 4.8.0: rainfall, management events, and stress indices", fontsize=12)
+src\plot_hla_rain_stress_yield.py:15:    / "run_CNHL0407_DSSAT480_IC0_null_2004_2023"
+results\yc_ppo_weather_augmentation\upstream_gate.json:22:      "path": "DSSAT_auto_validation/run_CNYC0802_DSSAT480_IC0_null_2000_2023/pdi_smoke_test/input_used_by_pdi/CNYC.CLI",
+src\plot_windows_vs_gym_high_contrast_all_years.py:44:            label="Windows DSSAT 4.8.5",
+src\plot_windows_vs_gym_high_contrast_all_years.py:52:            label="gym/PDI DSSAT 4.8.0",
+src\plot_yc_fqz_rain_stress_yield.py:18:        "run_dir": PROJECT_ROOT / "DSSAT_auto_validation" / "run_CNYC0802_DSSAT480_IC0_null_2000_2023",
+src\plot_yc_fqz_rain_stress_yield.py:21:        / "run_CNYC0802_DSSAT480_IC0_null_2000_2023"
+src\plot_yc_fqz_rain_stress_yield.py:31:        / "run_CNFQ0802_DSSAT480_standalone"
+src\plot_yc_fqz_rain_stress_yield.py:32:        / "run_CNFQ0802_DSSAT480_standalone",
+src\plot_yc_fqz_rain_stress_yield.py:36:        / "run_CNFQ0802_DSSAT480_standalone"
+src\plot_yc_fqz_rain_stress_yield.py:37:        / "run_CNFQ0802_DSSAT480_standalone"
+prompts\037_07_static_level1_four_baseline_rebuild.md:5:037_05 发现 034_00 的手工基线存在管理事件链路问题：`fileX.MZX` 中计划了多次灌溉/施肥，但 `DSSAT48.INP` 和 `MgmtEvent.OUT` 只执行了部分事件。037_06 用 linked-action 证明手工计划可以通过 step action 进入 DSSAT，但 recorded farmer 中存在单次灌溉超过动作通道上限的问题，不能用 linked-action 完整复现真实 recorded。
+prompts\037_07_static_level1_four_baseline_rebuild.md:25:- 可执行季节内 planned irrigation/fertilizer 事件数与 `DSSAT48.INP` 一致；
+prompts\037_07_static_level1_four_baseline_rebuild.md:26:- `DSSAT48.INP` 与 `MgmtEvent.OUT` 执行事件数一致；
+prompts\037_06_lc2019_linked_four_baseline_smoke.md:5:037_05 发现 034_00 的手工基线存在管理事件链路异常：部分 `official_extension_expert` / `recorded_farmer_template` 在 `fileX.MZX` 中计划了多次灌溉/施肥，但 `DSSAT48.INP` 与 `MgmtEvent.OUT` 只执行第一条或明显更少事件。
+prompts\037_05_dssat_management_event_chain_preflight.md:5:037_04 生成 LC2019 五情景图后发现异常：`fileX.MZX` 中 official expert 看起来有多条灌溉/施肥计划，但 DSSAT 实际运行使用的 `DSSAT48.INP` 和 `MgmtEvent.OUT` 只包含/执行了第一条。
+prompts\037_05_dssat_management_event_chain_preflight.md:20:2. `DSSAT48.INP` 中实际写入的灌溉/施肥事件；
+prompts\037_05_dssat_management_event_chain_preflight.md:26:- 若 `fileX.MZX` 计划事件数大于 `DSSAT48.INP` 实际事件数，标记为 `event_chain_issue`；
+prompts\037_05_dssat_management_event_chain_preflight.md:27:- 若 `DSSAT48.INP` 与 `MgmtEvent.OUT` 事件数不同，标记为 `event_chain_issue`；
+prompts\040_17_sya_lowIC_input_version_provenance_audit.md:35:- 若 040_13 与 040_16 的 IC 条件不一致，且 040_16 已经证明当前动作-DSSAT链路闭合，则判定为 `B_input_version_drift_confirmed`。
+docs\037_04_lc2019_baseline_warning.md:8:- 但 DSSAT 实际使用的 `DSSAT48.INP` 只包含第一条灌溉和第一条施肥；
+docs\037_04_lc2019_baseline_warning.md:15:下一步应优先审计并修正基线管理事件从 `fileX.MZX` 到 `DSSAT48.INP`/`MgmtEvent.OUT` 的实际生效链路，再重建五情景图。
+docs\037_07_static_level1_four_baseline_rebuild_record.md:10:旧 034_00 把 `@I IDATE` / `@F FDATE` 行首编号误写成事件序号。DSSAT 将该列解释为 management level，因此只会把 treatment 选中的 level 1 事件写入 `DSSAT48.INP`。本轮将同一情景内所有静态应用事件统一写为 level 1，以复现多次 recorded/expert 管理事件。
+docs\037_07_FQA_only_static_level1_baseline_result.md:66:1. FQ 的 corrected static baseline 链路已经可信：recorded/expert 的多次事件能进入 `DSSAT48.INP`、`MgmtEvent.OUT` 和 `Summary.OUT`。
+docs\037_05_dssat_management_event_chain_preflight_record.md:128:- `official_extension_expert` 与 `recorded_farmer_template` 中大量异常属于真正危险信号：`fileX.MZX` 里有多次手工灌溉/施肥计划，但 `DSSAT48.INP` 与 `MgmtEvent.OUT` 中只出现第一条或明显更少的事件。LC2019 official expert 是典型例子：计划灌溉 6 次、施氮 5 次，但实际输入/执行只有灌溉 1 次、施氮 1 次。
+docs\037_05_dssat_management_event_chain_preflight_record.md:129:- `dssat_auto` 的异常需要单独解释：自动管理事件可能由 DSSAT 运行时生成，因此 `DSSAT48.INP` 里没有预先写入的手工事件、`MgmtEvent.OUT` 中却出现自动灌溉，并不等同于“动作没有进入 DSSAT”。后续应为 auto 情景使用单独的自动管理审计规则。
+src\run_hla2004_auto_fertilizer_rescue_011_11.py:23:BASE_MZX = PROJECT_ROOT / "DSSAT_auto_validation" / "HLA_2004" / "run_CNHL0408_DSSAT480_2004" / "CNHL0408.MZX"
+src\run_hla2004_auto_fertilizer_rescue_011_11.py:301:        "Base input: Windows DSSAT480 `run_CNHL0408_DSSAT480_2004/CNHL0408.MZX` with updated cultivar copied from `cultivar_calibration_HLA2004_480/input_corrected_package/MZCER048.CUL`.",
+src\run_hla2004_ic1_field_coords_test.py:44:    # PDI 4.8.0 warns that it cannot transfer FIELD coordinates when they are -99.
+src\run_hla_candidate_ic_null_2004_2023.py:9:    - IC=0 null, Windows DSSAT 4.8.0 CNHL0407 output
+src\run_hla_candidate_ic_null_2004_2023.py:10:    - original IC=1 null, PDI/gym DSSAT 4.8.0 output
+src\run_hla_candidate_ic_null_2004_2023.py:42:IC0_DIR = PROJECT_ROOT / "DSSAT_auto_validation" / "HLA_2004" / "run_CNHL0407_DSSAT480_IC0_null_2004_2023"
+src\run_hla_ic1_pdi_yearly.py:27:TEMPLATE_MZX = PROJECT_ROOT / "DSSAT_auto_validation" / "HLA_2004" / "run_CNHL0407_DSSAT480_IC0_null_2004_2023" / "CNHL0407.MZX"
+src\run_hla_ic1_yearly_diagnostics.py:29:    "auto_irrig": PROJECT_ROOT / "DSSAT_auto_validation" / "HLA_2004" / "run_CNHL0408_DSSAT480_2004" / "CNHL0408.MZX",
+src\run_hla_ic1_yearly_diagnostics.py:30:    "null": PROJECT_ROOT / "DSSAT_auto_validation" / "HLA_2004" / "run_CNHL0409_DSSAT480_2004" / "CNHL0409.MZX",
+docs\2026-06-29_012_01_hla2010_dqn_discrete_action_probe_record.md:19:- PDI/gym-DSSAT 4.8.0 容器环境
+docs\2026-06-28_011_official_reward_restart_action_channel_record.md:547:- `DSSAT_auto_validation/HLA_2004/run_CNHL0408_DSSAT480_2004/CNHL0408.MZX`
+docs\2026-06-27_hla_initial_condition_baseline_scan.md:63:- 模型：PDI/gym DSSAT 4.8.0
+src\run_static_level1_four_baseline_rebuild_037_07.py:252:    row.update(parse_inp_events(snapshot / "DSSAT48.INP") if (snapshot / "DSSAT48.INP").exists() else {})
+src\run_static_level1_four_baseline_rebuild_037_07.py:284:        # by material code and may include post-harvest rows in DSSAT48.INP
+src\run_static_level1_four_baseline_rebuild_037_07.py:377:        "旧 034_00 把 `@I IDATE` / `@F FDATE` 行首编号误写成事件序号。DSSAT 将该列解释为 management level，因此只会把 treatment 选中的 level 1 事件写入 `DSSAT48.INP`。本轮将同一情景内所有静态应用事件统一写为 level 1，以复现多次 recorded/expert 管理事件。",
+docs\2026-06-27_hla_ic0_ic1_null_comparison.md:18:- 路径：`DSSAT_auto_validation/HLA_2004/run_CNHL0407_DSSAT480_IC0_null_2004_2023/`
+docs\2026-06-27_hla_ic0_ic1_null_comparison.md:19:- 模型/环境：Windows DSSAT 4.8.0
+docs\2026-06-27_hla_ic0_ic1_null_comparison.md:25:- 模型/环境：PDI/gym DSSAT 4.8.0
+docs\2026-06-27_hla_ic0_ic1_null_comparison.md:28:注意：此前已经验证过 Windows DSSAT 4.8.0 与 PDI/gym DSSAT 4.8.0 在相同输入下基本一致，因此本轮重点不是模型传输问题，而是 IC=0 与 IC=1 初始条件情景差异。
+docs\2026-06-27_gym_dssat_windows_dssat_validation_summary.md:11:2. **PDI/gym DSSAT 4.8.0 与 Windows DSSAT 4.8.0 在相同输入下基本一致**：HLA、FQZ、YC 的 IC=0 null 逐年对比中，`WSPD/NSTD` 差异为 0 或接近 0，`CWAD/GWAD` 只出现 0–2 kg/ha 量级差异。
+docs\2026-06-27_gym_dssat_windows_dssat_validation_summary.md:12:3. **HLA 2004 IC=1 的异常不是 gym 传输问题**：Windows DSSAT 4.8.0 与 PDI/gym DSSAT 4.8.0 对 `CNHL0408`（自动灌溉）和 `CNHL0409`（无灌溉无施肥）给出完全一致的日值、产量和胁迫结果。
+docs\2026-06-27_gym_dssat_windows_dssat_validation_summary.md:14:5. **HLA 2004 null 早熟零产是情景本身导致的**：IC=1 + 无灌溉 + 无施肥 + 生育期前段无雨时，Windows DSSAT 4.8.0 和 PDI/gym 都模拟出早熟、籽粒产量 0；自动灌溉后 WSPD 被压低并正常高产。
+docs\2026-06-27_gym_dssat_windows_dssat_validation_summary.md:32:  在相同 MZX、天气、土壤、品种和管理条件下，对比 Windows DSSAT 4.8.0 输出与 PDI/gym DSSAT 4.8.0 输出。
+docs\2026-06-27_gym_dssat_windows_dssat_validation_summary.md:41:| `CNHL0404.MZX` / `run_CNHL0404` | HLA 2004，IC=1，Windows/XBuild 可打开的单年文件 | 初步测试 IC=1 与 Windows DSSAT 输出 | Windows 4.8.5 可完整成熟，HWAM 约 2038 kg/ha | 说明 IC=1 输入在 Windows 4.8.5 下可运行 |
+docs\2026-06-27_gym_dssat_windows_dssat_validation_summary.md:42:| `CNHL0404` 的 gym/PDI IC=1 验证 | 同文件进入 PDI/gym | 检查 PDI/gym IC=1 是否一致 | PDI/gym 早熟、HWAM=0；后来发现与 Windows 4.8.0 null 结果一致 | 不能直接拿 Windows 4.8.5 和 PDI 4.8.0 混比 |
+docs\2026-06-27_gym_dssat_windows_dssat_validation_summary.md:43:| `CNHL0405.MZX` / `run_CNHL0405(_IC0_null)` | HLA 2000–2023，多年 Windows DSSAT 结果 | 检查多年 null 胁迫指数是否普遍异常 | 多年胁迫与降雨/生长过程有关，不是单年偶然 | 促成后续 HLA 多年 Windows 4.8.0 vs PDI 对比 |
+docs\2026-06-27_gym_dssat_windows_dssat_validation_summary.md:44:| `CNHL0406.MZX` / `run_CNHL0406_*` | HLA 2004 IC=0 null，Windows 4.8.0 与 PDI 4.8.0 对比 | 控制 DSSAT 版本，判断 PDI/gym 是否可信 | Windows 4.8.0 与 PDI/gym 基本一致 | 排除 gym/PDI 在 HLA 2004 IC=0 null 下的传输/模型差异 |
+docs\2026-06-27_gym_dssat_windows_dssat_validation_summary.md:45:| `CNHL0407.MZX` / `run_CNHL0407_DSSAT480_IC0_null_2004_2023` | HLA 2004–2023，Windows DSSAT 4.8.0，IC=0 null | 多年版本控制对比 | HLA 多年 Windows 4.8.0 与 PDI/gym IC=0 null 对比图和表生成 | IC=0 多年层面未发现 gym/PDI 系统性传输错误 |
+docs\2026-06-27_gym_dssat_windows_dssat_validation_summary.md:46:| `CNHL0408.MZX` / `run_CNHL0408_DSSAT480_2004` | HLA 2004，IC=1，自动灌溉 `IRRIG=A`，无实际施氮 | 检查自动灌溉是否能降低 WSPD，并与 PDI/gym 对比 | Windows 与 PDI/gym 完全一致；最终 GWAD=8492；灌溉总量 377.3 mm；WSPD 差异 0 | 自动灌溉有效，gym/PDI 与 Windows 4.8.0 一致 |
+docs\2026-06-27_gym_dssat_windows_dssat_validation_summary.md:47:| `CNHL0409.MZX` / `run_CNHL0409_DSSAT480_2004` | HLA 2004，IC=1，`IRRIG=N`，`FERTI=N` | 检查无灌溉无施肥的 IC=1 null 情景 | Windows 与 PDI/gym 完全一致；最终 GWAD=0；灌溉 0；WSPD 差异 0 | 早熟零产是 DSSAT 4.8.0 在该情景下的模拟结果，不是 gym 错误 |
+docs\2026-06-27_gym_dssat_windows_dssat_validation_summary.md:63:- 同一 MZX、同一天气、同一土壤、同一品种、同一 DSSAT 4.8.0 版本；
+docs\2026-06-27_gym_dssat_windows_dssat_validation_summary.md:94:- `DSSAT_auto_validation/HLA_2004/run_CNFQ0802_DSSAT480_standalone/run_CNFQ0802_DSSAT480_standalone/analysis_windows480_vs_pdi_yearly_ic0`
+docs\2026-06-27_gym_dssat_windows_dssat_validation_summary.md:110:- FQZ IC=0 null 下，Windows DSSAT 4.8.0 与 PDI/gym DSSAT 4.8.0 基本一致。
+docs\2026-06-27_gym_dssat_windows_dssat_validation_summary.md:116:- `DSSAT_auto_validation/run_CNYC0802_DSSAT480_IC0_null_2000_2023/analysis_windows480_vs_pdi_yearly_ic0`
+docs\2026-06-27_gym_dssat_windows_dssat_validation_summary.md:132:- YC IC=0 null 下，Windows DSSAT 4.8.0 与 PDI/gym DSSAT 4.8.0 基本一致。
+docs\2026-06-27_gym_dssat_windows_dssat_validation_summary.md:150:- Windows DSSAT 4.8.0 与 PDI/gym 4.8.0 胁迫指数基本一致。
+docs\2026-06-27_gym_dssat_windows_dssat_validation_summary.md:198:2. Windows DSSAT 4.8.0 与 PDI/gym DSSAT 4.8.0 在相同输入下基本一致；
+docs\2026-06-27_gym_dssat_windows_dssat_validation_summary.md:200:4. HLA 2004 null 早熟零产不是 gym 错误，而是该天气/管理/初始条件组合下 DSSAT 4.8.0 的模拟结果；
+docs\2026-06-30_012_15_hla2015_literature_aligned_dqn_record.md:12:- 模型接口：PDI/gym-DSSAT 4.8.0
+docs\2026-06-30_013_01_fq_yc_new_cultivar_forward_screening_record.md:5:本轮只做前向模拟，不训练 RL。目标是检查 FQ/YC 新品种参数和输入包是否能在 PDI/gym-DSSAT 4.8.0 中正常运行，并初步判断校准年份是否存在水氮管理优化空间。
+docs\2026-07-10_019_10_wue_nue_definition_and_dssat_calculation.md:82:特别注意：在当前 DSSAT 4.8.0 输出中，`YPEM` 与“种植至收获”的 `ETCP` 对应，而不是直接按表内 `ETCM` 复算。后续脚本已经固定使用该经过数值核验的口径。
+docs\2026-07-15_021_16_sy2014_nitrogen_timing_deterministic_counterfactual.md:13:- 模型：容器 `b2fd6726c8c1` 内 PDI/DSSAT 4.8.0。
+docs\2026-07-15_021_18_sy2014_deterministic_upper_bound_oracle_search.md:9:- 输入：复用 `021_14` 的 SY2014 IC=2 PDI/DSSAT 4.8.0 输入。
+docs\2026-07-15_021_19_sy2014_oracle_demonstration_dqn_warmstart_smoke.md:11:- 输入：SY2014 IC=2，PDI/DSSAT 4.8.0，复用021_14输入。
+docs\2026-07-15_022_02_sy2014_stage_mc_dqn_seed1_short_probe.md:5:本任务只验证 022_00 预注册的阶段型结构是否能在 SY2014（IC=2、PDI/DSSAT 4.8.0）中学到同时满足产量、水分生产率和氮肥偏生产力门槛的策略。没有修改 DSSAT 输入、IC、阶段点、动作档位、季节预算、奖励权重或判据；没有使用 demo、DQfD、PER、target bootstrap、1-step TD 或 5-step TD；没有追加 seed 或自动延长训练。
+docs\prompts\2026-06-28_hla_new_cultivar_candidate_year_screening_prompt.md:31:- 运行环境：Docker 容器内 PDI/gym-DSSAT，DSSAT 4.8.0 口径；
+docs\yc_cli_generation_and_weather_qc.md:73:- 不使用旧文件 `DSSAT_auto_validation/run_CNYC0802_DSSAT480_IC0_null_2000_2023/pdi_smoke_test/input_used_by_pdi/CNYC.CLI`：其 SHA256 为 `58dbe11fdb3af9d34cc25644d8fb965627403778eb92da31a8f91619bd100d51`，记录窗口含 2008–2014，无法证明只由 2004–2013 估计；关联运行又是 `random_weather=false`。
+docs\yc_dssat_runtime_version_audit.md:47:没有取得版本输出、模拟结果头、安装元数据、镜像元数据或 runtime 文档。没有根据 `DSSAT480`、`dscsm048` 等名字推断版本，也没有把用户记忆中的 `4.8.0` 当作证据。
+docs\yc_ppo_original_seed1_rng0_completion.md:28:结论需要区分两个层次：最小 base probe 本身没有复现 FPE；但完整 continuation 在同一 YCA 2011/dscsm048 路径再次复现了 FPE，并因此无法到达 100K。
+docs\yc_ppo_original_seed1_rng0_completion.md:77:1. YCA 2011 minimal infrastructure probe 是否复现 FPE？**NO**；三个 base probe 阶段均 PASS。但完整 RNG0 continuation 在相同 YCA 2011/dscsm048 路径**再次**复现 SIGFPE。
+docs\yc_train_only_cli_and_wgen_pilot.md:31:- 当前已安装 DSSAT 的版本、可执行文件路径、WeatherMan 版本/路径、WeatherMan CLI 或 GUI 能力，本轮均未能在项目范围内验证。历史目录名 `DSSAT480` 仅说明旧运行曾标记为 DSSAT 4.8，不作为当前版本证据。
+docs\yc_weatherman_cli_generation.md:37:上一轮项目记录中的 `gym_dssat_pdi 0.0.5` 和历史 `DSSAT480` 目录名不能证明当前本机安装版本。本轮没有据此推断兼容性。
+docs\yc_weatherman_cli_generation.md:41:本轮任务列出的只读探测范围包括 `C:\DSSAT48\`、`C:\DSSAT*`、`C:\Program Files\DSSAT*`、PATH、Windows shortcut/metadata、`/opt/`、`/usr/local/`、`/usr/bin/` 和项目外 Python/Gym runtime。`AGENTS.md` 明确禁止读取项目目录外的文件，因此这些位置均未检查。机器记录见 `results/yc_wgen_cli_pilot/003_06_01/weatherman_inventory.json`。
+docs\yc_weatherman_cli_generation.md:66:下一最小任务是把 WeatherMan executable 路径、DSSAT 安装根目录和 About/version 证据放到项目目录内，再按实际版本核验。所有新结果保存在 `results/yc_wgen_cli_pilot/003_06_01/`。本轮未 push。
+docs\yc_wgen_cli_pilot.md:48:DSSAT_auto_validation/run_CNYC0802_DSSAT480_IC0_null_2000_2023/pdi_smoke_test/input_used_by_pdi/CNYC.CLI

@@ -1,0 +1,25 @@
+Git-history audit: DSSAT version history
+Search date: 2026-09-24
+Scope: local repository refs and project paths only; no checkout, restore, or history rewrite.
+
+Queries performed:
+- `git log --all --full-history -S"4.8.5" --name-status -- docs src results prompts references scripts`
+- `git log --all --full-history -S"DSSAT 4.8.0" --name-status -- docs src results prompts references scripts`
+- `git log --all --full-history -S"DSSAT480" --name-status -- docs src results prompts references scripts`
+- `git log --all --full-history -S"dscsm048" --name-status -- docs src results prompts references scripts`
+- `git log --all -S"/opt/dssat_pdi/run_dssat" --name-status -- src/run_yc2014_station_level3_true_model_transfer_016_04.py src/ppo_safe_rendering.py references/dssat_pdi.py`
+- `git log --all --diff-filter=D --name-only -- docs src results prompts references scripts`, then filename filter for DSSAT/version/comparison terms.
+- Commit-message search for DSSAT, 4.8.0, 4.8.5, and version comparison.
+
+Relevant history:
+- `7bc4024b4e7e3d171e659e2dddbf6c8a16cc26b5` | 2026-06-27 | `docs: summarize gym dssat validation checks` | Added `docs/2026-06-27_gym_dssat_windows_dssat_validation_summary.md`, `src/diagnose_pdi_field_coordinates_ic0_null.py`, `src/plot_windows_vs_gym_high_contrast_all_years.py`, and comparison scripts. The content records Windows DSSAT 4.8.5 and PDI/Gym DSSAT 4.8.0 as distinct historical environments. Evidence level: `DIRECT_VERSION_EVIDENCE` for the dated experimental record; not a retained 4.8.5 output header.
+- `080c1dff7177e02cee60dcaced8f56d4e9ae5af5` | 2026-07-05 | `Backup YC2014 transfer and formal four-scenario artifacts` | Added `src/run_yc2014_station_level3_true_model_transfer_016_04.py`, which configures `run_dssat_location` as `/opt/dssat_pdi/run_dssat`. This is code/configuration evidence for the historical PDI route, not a current-runtime guarantee.
+- `e2c0a269c18c924b13817a383b7dc781b4e29fef` and `533b8ef842b6e8af838ad3fa773af7234ba02bf0` | 2026-06-06 | `Add PPO observed-year leave-one training framework` | Added `src/ppo_safe_rendering.py`, which configures `/opt/dssat_pdi/run_dssat`.
+- `dbcf68182674a555ea186402119ea8cf8363e9a5` | 2026-07-16 | `research: archive SY2014 DQN diagnostics through 022_20` | Added later records that refer to the PDI/DSSAT 4.8.0 environment. These are supporting historical documents, not current-runtime probes.
+
+Search interpretation:
+- The `4.8.5` pickaxe result for the dated comparison record is the 2026-06-27 add commit above; no later delete/rename of that evidence was found in the searched project paths.
+- `DSSAT480` also appears in run-directory identifiers and filenames. Those hits are not, by themselves, exact version proof.
+- `dscsm048` has no pre-audit Git-history evidence in the searched paths; its mention in the 2026-09-24 runtime-audit commit is a warning against inferring a version from that name.
+- The version-bearing `Summary.OUT`, sibling `env_args.json`, and Windows `DSSBatch.v48` inspected for this task are local project artifacts not tracked in Git. Git history therefore preserves their related scripts/reports, not those raw files.
+- No relevant deleted version/comparison file was identified by the deletion-path scan. No commit message explicitly records a 4.8.0-vs-4.8.5 benchmark; the evidence resides in committed report/script contents.

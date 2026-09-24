@@ -1,0 +1,63 @@
+{
+  "audit_date": "2026-09-24",
+  "search_scope": "Current project tree and local Git history only; no external paths or runtime probes",
+  "gym_dssat_pdi_version": {
+    "current_status": "UNKNOWN_DUE_TO_ACCESS_RESTRICTION",
+    "historical_record": "0.0.5 in results/yc_weather_audit/yc_weather_reset_diagnostic.json",
+    "requirements_declaration": "0.0.9 in requirements.txt",
+    "note": "Package version is distinct from DSSAT model version; neither old record nor dependency declaration identifies today's installed package."
+  },
+  "historical_dssat_4_8_0": {
+    "status": "CONFIRMED",
+    "version": "4.8.0.024",
+    "evidence_level": "DIRECT_VERSION_EVIDENCE",
+    "path": "DSSAT_auto_validation/yc2014_station_level3_true_model_transfer_016_04/runs/2014/seed0/null/pdi_tmp_snapshot_eval/Summary.OUT:1",
+    "matched_text": "DSSAT Cropping System Model Ver. 4.8.0.024 -stable JUL 02, 2026; 08:37:47",
+    "site_and_run": "YC/CNYC; weather year 2014; seed0; null; saved PDI temporary snapshot",
+    "runtime_link": {
+      "path": "DSSAT_auto_validation/yc2014_station_level3_true_model_transfer_016_04/runs/2014/seed0/null/env_args.json",
+      "field": "run_dssat_location",
+      "value": "/opt/dssat_pdi/run_dssat"
+    },
+    "continuity_to_current_runtime": "NOT_ESTABLISHED"
+  },
+  "historical_dssat_4_8_5": {
+    "status": "SUPPORTED",
+    "version": "4.8.5",
+    "evidence_level": "DIRECT_VERSION_EVIDENCE",
+    "record_path": "docs/2026-06-27_gym_dssat_windows_dssat_validation_summary.md:41-42",
+    "context": "Windows standalone DSSAT, HLA 2004 CNHL0404 IC=1; reported HWAM about 2038 kg/ha. The same summary contrasts PDI/Gym DSSAT 4.8.0 on the named input, reported early maturity and HWAM=0, and warns not to mix these versions as a controlled comparison.",
+    "raw_4_8_5_output_header_found": false
+  },
+  "version_comparison_record_found": {
+    "status": "SUPPORTED",
+    "context": "Historical Windows DSSAT 4.8.5 vs PDI/Gym DSSAT 4.8.0 records/scripts for HLA; later analysis replaces the Windows 4.8.5 series with 4.8.0 output. Not a clean isolated version A/B conclusion.",
+    "second_computer_independently_documented": false,
+    "note": "The second-computer detail appears only in the user recollection quoted by the task prompt."
+  },
+  "historical_gym_dssat_runtime_version": {
+    "status": "CONFIRMED",
+    "dssat_version": "4.8.0.024",
+    "evidence_level": "DIRECT_VERSION_EVIDENCE",
+    "relation_to_run_dssat": "Same historical run env_args.json records /opt/dssat_pdi/run_dssat; paired saved PDI snapshot contains the version-bearing Summary.OUT."
+  },
+  "current_active_runtime_version": {
+    "status": "UNKNOWN",
+    "dssat_version": null,
+    "reason": "Historical July outputs do not prove the active September 2026 runtime has remained unchanged; AGENTS.md limits inspection to the project directory."
+  },
+  "claim_support": {
+    "historical_main_Gym_DSSAT_used_4_8_0": "SUPPORTED_AND_DIRECTLY_CONFIRMED_FOR_SAVED_2026_07_02_RUN",
+    "Windows_DSSAT_4_8_5_experiment": "SUPPORTED_BY_DATED_EXPLICIT_EXPERIMENT_RECORD",
+    "4_8_5_was_on_another_computer": "USER_OR_DOCUMENT_RECOLLECTION_ONLY"
+  },
+  "prohibited_actions": {
+    "weather_candidate_modified": false,
+    "cli_generated": false,
+    "dssat_simulation_run": false,
+    "ppo_modified": false,
+    "other_sites_modified": false,
+    "git_push": false
+  },
+  "github_backup_status": "Pending explicit user approval"
+}

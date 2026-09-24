@@ -1,0 +1,28 @@
+Targeted current-tree evidence: DSSAT version headers and runtime linkage
+
+1) Direct DSSAT version output
+Path: DSSAT_auto_validation/yc2014_station_level3_true_model_transfer_016_04/runs/2014/seed0/null/pdi_tmp_snapshot_eval/Summary.OUT
+Line: 1
+Matched header: `*SUMMARY : fileX.MZ CNYC ... DSSAT Cropping System Model Ver. 4.8.0.024 -stable JUL 02, 2026; 08:37:47`
+Context: YC/CNYC, weather year 2014, seed 0, null case. This is a saved simulation output header, not a live query.
+Evidence level: `DIRECT_VERSION_EVIDENCE` for DSSAT 4.8.0.024 in this historical run.
+
+2) Same run's Gym-DSSAT/PDI launcher configuration
+Path: DSSAT_auto_validation/yc2014_station_level3_true_model_transfer_016_04/runs/2014/seed0/null/env_args.json
+Field: `run_dssat_location` = `/opt/dssat_pdi/run_dssat`
+The same JSON identifies a CNYC2014 FileX template, PDI evaluation mode, and log under the same task/run directory. The corresponding tracked runner source is `src/run_yc2014_station_level3_true_model_transfer_016_04.py`; it was added by commit `080c1dff7177e02cee60dcaced8f56d4e9ae5af5` dated 2026-07-05.
+Interpretation: a historical Gym-DSSAT/PDI run using the configured `/opt/dssat_pdi/run_dssat` launcher produced an output header reporting DSSAT 4.8.0.024. This does not establish that the launcher or runtime is unchanged today.
+
+3) Windows DSSAT 4.8.x installation clue
+Path: DSSAT_auto_validation/HLA_2004/run_CNHL0404/DSSBatch.v48
+Matched lines: directory `C:\DSSAT48\Maize`; command `C:\DSSAT48\DSCSM048.EXE MZCER048 B DSSBatch.v48`.
+Evidence level: `STRONG_INDIRECT_EVIDENCE` for a Windows DSSAT 4.8-family installation only. `DSSAT48` / `DSCSM048.EXE` do not identify 4.8.0 versus 4.8.5 by themselves.
+
+4) Explicit 4.8.5 experimental record
+Path: docs/2026-06-27_gym_dssat_windows_dssat_validation_summary.md, lines 41-42.
+Record: HLA 2004, `CNHL0404`, Windows DSSAT 4.8.5 reportedly reached maturity with HWAM about 2038 kg/ha; PDI/Gym DSSAT 4.8.0 on the same named input was recorded as early-maturing with HWAM=0. The record cautions against mixing these outputs as a controlled comparison.
+Evidence level: `DIRECT_VERSION_EVIDENCE` as a dated, explicit experimental record. A raw DSSAT 4.8.5 output header was not found in the inspected CNHL0404 folder.
+
+5) Planned diagnostic, not proof of completion
+Path: src/diagnose_pdi_field_coordinates_ic0_null.py, lines 176-180.
+The script describes a Windows DSSAT 4.8.5 rerun to distinguish FileX formatting from runtime differences. Its function prepares a rerun package and README; that text alone does not prove the manual Windows rerun was executed.

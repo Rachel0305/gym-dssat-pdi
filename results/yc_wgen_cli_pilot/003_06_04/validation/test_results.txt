@@ -1,0 +1,23 @@
+Command: python -m unittest tests/test_build_dssat_cli.py -v
+Result: PASS
+Tests run: 9
+Failures: 0
+Errors: 0
+
+Coverage:
+- frozen SHA256 acceptance and mismatch rejection
+- calendar-month partition and leap-day retention
+- positive-rain wet/dry classification
+- transition assignment across Dec 31 -> Jan 1
+- WGEN parameter estimates and independent cross-check
+- invalid TMAX/TMIN rejection
+- negative RAIN and SRAD rejection
+- deterministic byte-identical CLI output
+- 12-month completeness in both CLI tables
+
+Additional checks:
+- python -m py_compile scripts/build_dssat_cli.py tests/test_build_dssat_cli.py: PASS
+- JSON parse for cli_parameter_definitions.json: PASS
+- static CLI schema/numeric parse: PASS
+- independent parameter cross-check: 180 comparisons, PASS
+- DSSAT/WGEN/PPO execution: NOT RUN

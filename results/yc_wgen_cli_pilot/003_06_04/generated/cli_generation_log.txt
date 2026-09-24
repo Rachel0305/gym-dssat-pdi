@@ -1,0 +1,11 @@
+YC train-only CNYC.CLI generation
+input=results\yc_weather_gapfill_finalize\yc_wgen_fitting_weather_2004_2013.csv
+input_sha256=4B8FFE9E881D0A0743921B78B9C0E0EBFB1D2D645C5AA9737948B2B088ED7B34
+rows=3653 dates=2004-01-01..2013-12-31
+wet_rule=RAIN > 0.0 mm (positive precipitation; original WGEN PAR code)
+validation years used: none
+frozen input modified: no
+WGEN/DSSAT/PPO executed: no
+CLI sha256=5ABF5D7BB97EFAAE5E8361ABB4C773E1554B58116CBCA2213E75DCFF838285F0
+static schema QC: PASS
+independent parameter cross-check: PASS

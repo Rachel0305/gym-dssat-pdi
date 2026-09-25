@@ -8,6 +8,7 @@ import csv
 import hashlib
 import json
 import math
+import re
 import statistics
 import subprocess
 import sys
@@ -32,6 +33,18 @@ CLI_SECTIONS = (
     "*RANGE CHECK VALUES",
     "*FLAGGED DATA COUNT",
 )
+WGEN_PARAMETER_FIELDS = (
+    "SDMN", "SDSD", "SWMN", "SWSD", "XDMN", "XDSD", "XWMN", "XWSD",
+    "NAMN", "NASD", "ALPHA", "RTOT", "PDW", "RNUM",
+)
+WGEN_PARAMETER_PRECISION = {
+    "SDMN": 1, "SDSD": 1, "SWMN": 1, "SWSD": 1, "XDMN": 1, "XDSD": 1,
+    "XWMN": 1, "XWSD": 1, "NAMN": 1, "NASD": 1, "ALPHA": 3, "RTOT": 1,
+    "PDW": 3, "RNUM": 1,
+}
+WGEN_READ_FORMAT = "(I6,14(1X,F5.0))"
+WGEN_ROW_WIDTH = 6 + 14 * (1 + 5)
+_WGEN_NUMBER = re.compile(r"[+-]?(?:\d+(?:\.\d*)?|\.\d+)")
 
 
 @dataclass(frozen=True)
@@ -49,6 +62,94 @@ def sha256_file(path: Path) -> str:
         for block in iter(lambda: stream.read(1024 * 1024), b""):
             digest.update(block)
     return digest.hexdigest().upper()
+
+
+def format_wgen_parameter_values(month_token: str, value_tokens: Iterable[str]) -> str:
+    """Serialize one WGEN row as I6 followed by fourteen 1X,F5 fields."""
+    try:
+        month = int(month_token)
+    except ValueError as exc:
+        raise ValueError(f"WGEN MTH is not an integer: {month_token!r}") from exc
+    if not 1 <= month <= 12:
+        raise ValueError(f"WGEN MTH is outside 1..12: {month}")
+    values = list(value_tokens)
+    if len(values) != len(WGEN_PARAMETER_FIELDS):
+        raise ValueError(f"WGEN row must contain 14 statistical values, got {len(values)}")
+
+    fields = [f"{month:6d}"]
+    for name, token in zip(WGEN_PARAMETER_FIELDS, values):
+        if not _WGEN_NUMBER.fullmatch(token) or not math.isfinite(float(token)):
+            raise ValueError(f"WGEN {name} is not a finite decimal: {token!r}")
+        if len(token) > 5:
+            raise ValueError(f"WGEN {name} does not fit F5: {token!r}")
+        fields.append(" " + token.rjust(5))
+    return "".join(fields)
+
+
+def parse_wgen_parameter_row(line: str) -> dict[str, int | float]:
+    """Parse the fixed columns consumed by WGENIN's I6,14(1X,F5.0) READ."""
+    if len(line) != WGEN_ROW_WIDTH:
+        raise ValueError(f"WGEN row width must be {WGEN_ROW_WIDTH}, got {len(line)}")
+    month_text = line[:6].strip()
+    try:
+        month = int(month_text)
+    except ValueError as exc:
+        raise ValueError(f"WGEN I6 month is not an integer: {month_text!r}") from exc
+    if not 1 <= month <= 12:
+        raise ValueError(f"WGEN month outside 1..12: {month}")
+
+    parsed: dict[str, int | float] = {"MTH": month}
+    for index, name in enumerate(WGEN_PARAMETER_FIELDS):
+        separator = 6 + index * 6
+        if line[separator] != " ":
+            raise ValueError(f"WGEN {name} separator at column {separator + 1} is not blank")
+        token = line[separator + 1 : separator + 6].strip()
+        if not _WGEN_NUMBER.fullmatch(token):
+            raise ValueError(f"WGEN {name} is malformed in F5 columns: {token!r}")
+        value = float(token)
+        if not math.isfinite(value):
+            raise ValueError(f"WGEN {name} is not finite")
+        parsed[name] = value
+    return parsed
+
+
+def reformat_wgen_fixed_width(text: str) -> str:
+    """Re-serialize only WGEN month rows, retaining their numeric tokens."""
+    output: list[str] = []
+    in_wgen = False
+    section_count = 0
+    months: list[int] = []
+    for line in text.splitlines(keepends=True):
+        if line.endswith("\r\n"):
+            body, ending = line[:-2], "\r\n"
+        elif line.endswith(("\n", "\r")):
+            body, ending = line[:-1], line[-1:]
+        else:
+            body, ending = line, ""
+
+        if body.startswith("*WGEN PARAMETERS"):
+            section_count += 1
+            in_wgen = True
+            output.append(line)
+            continue
+        if in_wgen and body.startswith("*"):
+            in_wgen = False
+        if in_wgen and body.strip() and not body.lstrip().startswith("@"):
+            tokens = body.split()
+            if len(tokens) != 15:
+                raise ValueError(f"WGEN row must have 15 tokens, got {len(tokens)}")
+            try:
+                months.append(int(tokens[0]))
+            except ValueError as exc:
+                raise ValueError(f"WGEN MTH is malformed: {tokens[0]!r}") from exc
+            body = format_wgen_parameter_values(tokens[0], tokens[1:])
+            output.append(body + ending)
+            continue
+        output.append(line)
+
+    if section_count != 1 or months != list(range(1, 13)):
+        raise ValueError(f"Expected one WGEN section with months 1..12, got sections={section_count}, months={months}")
+    return "".join(output)
 
 
 def _number(row: dict[str, str], name: str, line_number: int) -> float:
@@ -388,13 +489,11 @@ def _cli_text(
         "@  MTH  SDMN  SDSD  SWMN  SWSD  XDMN  XDSD  XWMN  XWSD  NAMN  NASD ALPHA  RTOT   PDW  RNUM",
     ]
     for row in wgen:
-        lines.append(
-            f"{int(row['month']):6d}{float(row['SDMN']):6.1f}{float(row['SDSD']):6.1f}"
-            f"{float(row['SWMN']):6.1f}{float(row['SWSD']):6.1f}{float(row['XDMN']):7.1f}"
-            f"{float(row['XDSD']):6.1f}{float(row['XWMN']):7.1f}{float(row['XWSD']):6.1f}"
-            f"{float(row['NAMN']):7.1f}{float(row['NASD']):6.1f}{float(row['ALPHA']):6.3f}"
-            f"{float(row['RTOT']):6.1f}{float(row['PDW']):6.3f}{float(row['RNUM']):6.1f}"
-        )
+        value_tokens = [
+            f"{float(row[name]):.{WGEN_PARAMETER_PRECISION[name]}f}"
+            for name in WGEN_PARAMETER_FIELDS
+        ]
+        lines.append(format_wgen_parameter_values(str(int(row["month"])), value_tokens))
     lines += [
         "",
         "*RANGE CHECK VALUES",
@@ -432,6 +531,7 @@ def check_cli_schema(text: str) -> dict[str, object]:
     month_rows: dict[str, list[int]] = {"monthly_averages": [], "wgen_parameters": []}
     current = ""
     malformed = []
+    wgen_fixed_width_malformed = []
     for number, line in enumerate(lines, start=1):
         if line.startswith("*MONTHLY AVERAGES"):
             current = "monthly_averages"
@@ -459,6 +559,13 @@ def check_cli_schema(text: str) -> dict[str, object]:
                         raise ValueError("non-finite numeric value")
                 except ValueError as exc:
                     malformed.append({"line": number, "numeric_parse_error": str(exc)})
+            if current == "wgen_parameters":
+                try:
+                    fixed_values = parse_wgen_parameter_row(line)
+                    if fixed_values["MTH"] != month:
+                        raise ValueError("fixed-width MTH differs from tokenized MTH")
+                except ValueError as exc:
+                    wgen_fixed_width_malformed.append({"line": number, "error": str(exc)})
         if line.startswith(("MIN :", "MAX :", "RATE:")):
             try:
                 parsed = [float(token) for token in line.split(":", 1)[1].split()]
@@ -489,11 +596,16 @@ def check_cli_schema(text: str) -> dict[str, object]:
         "sections_missing": [section for section in CLI_SECTIONS if section not in found_sections],
         "monthly_averages_months": month_rows["monthly_averages"],
         "wgen_parameters_months": month_rows["wgen_parameters"],
+        "wgen_expected_read_format": WGEN_READ_FORMAT,
+        "wgen_statistical_field_count": len(WGEN_PARAMETER_FIELDS),
+        "wgen_total_column_count": 1 + len(WGEN_PARAMETER_FIELDS),
+        "wgen_expected_row_width": WGEN_ROW_WIDTH,
+        "wgen_fixed_width_malformed": wgen_fixed_width_malformed,
         "twelve_months_each": month_rows["monthly_averages"] == list(range(1, 13)) and month_rows["wgen_parameters"] == list(range(1, 13)),
         "station_identifier_present": "*CLIMATE:CNYC" in text and "  CNYC" in text,
         "numeric_rows_malformed": malformed,
         "nonfinite_tokens": nonfinite_tokens,
-        "passed": len(found_sections) == len(CLI_SECTIONS) and not malformed and not nonfinite_tokens and
+        "passed": len(found_sections) == len(CLI_SECTIONS) and not malformed and not wgen_fixed_width_malformed and not nonfinite_tokens and
                   month_rows["monthly_averages"] == list(range(1, 13)) and
                   month_rows["wgen_parameters"] == list(range(1, 13)) and "*CLIMATE:CNYC" in text,
         "range_values_status": "-99 sentinel: WeatherMan range-check thresholds are editable archive QC metadata, not WGEN parameters; no threshold was invented",

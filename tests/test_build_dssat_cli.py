@@ -78,6 +78,48 @@ class BuildDssatCliTests(unittest.TestCase):
         self.assertTrue(schema["passed"])
         self.assertEqual(schema["monthly_averages_months"], list(range(1, 13)))
         self.assertEqual(schema["wgen_parameters_months"], list(range(1, 13)))
+        self.assertEqual(schema["wgen_expected_read_format"], "(I6,14(1X,F5.0))")
+        self.assertEqual(schema["wgen_statistical_field_count"], 14)
+        self.assertEqual(schema["wgen_total_column_count"], 15)
+        self.assertEqual(schema["wgen_fixed_width_malformed"], [])
+
+    def test_wgen_fixed_width_repair_preserves_frozen_parameter_values(self) -> None:
+        candidate = ROOT / "results/yc_wgen_cli_pilot/003_06_04/generated/CNYC.CLI"
+        self.assertEqual(
+            cli.sha256_file(candidate),
+            "5ABF5D7BB97EFAAE5E8361ABB4C773E1554B58116CBCA2213E75DCFF838285F0",
+        )
+        original = candidate.read_text(encoding="ascii")
+        original_schema = cli.check_cli_schema(original)
+        self.assertFalse(original_schema["passed"])
+        self.assertEqual(len(original_schema["wgen_fixed_width_malformed"]), 12)
+        self.assertEqual(original_schema["wgen_fixed_width_malformed"][0]["error"], "WGEN row width must be 90, got 93")
+
+        fixed = cli.reformat_wgen_fixed_width(original)
+        fixed_schema = cli.check_cli_schema(fixed)
+        self.assertTrue(fixed_schema["passed"])
+        self.assertEqual(fixed_schema["wgen_fixed_width_malformed"], [])
+        original_lines = original.splitlines()
+        fixed_lines = fixed.splitlines()
+        changed_indices = [index for index, pair in enumerate(zip(original_lines, fixed_lines)) if pair[0] != pair[1]]
+        self.assertEqual(changed_indices, list(range(26, 38)))
+
+        fixed_rows = [fixed_lines[index] for index in changed_indices]
+        self.assertEqual([len(line) for line in fixed_rows], [90] * 12)
+        for original_index, fixed_line in zip(changed_indices, fixed_rows):
+            source_tokens = original_lines[original_index].split()
+            parsed = cli.parse_wgen_parameter_row(fixed_line)
+            self.assertEqual(parsed["MTH"], int(source_tokens[0]))
+            self.assertEqual(
+                [parsed[name] for name in cli.WGEN_PARAMETER_FIELDS],
+                [float(value) for value in source_tokens[1:]],
+            )
+
+    def test_wgen_formatter_rejects_numeric_width_overflow(self) -> None:
+        values = ["1.0"] * len(cli.WGEN_PARAMETER_FIELDS)
+        values[4] = "-100.0"
+        with self.assertRaisesRegex(ValueError, "does not fit F5"):
+            cli.format_wgen_parameter_values("1", values)
 
     def _read_single_row(self, day: str, srad: str, tmax: str, tmin: str, rain: str) -> None:
         with tempfile.TemporaryDirectory() as tmp:

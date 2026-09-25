@@ -1,0 +1,18 @@
+*RUN-TIME ERRORS OUTPUT FILE
+
+
+
+*DSSAT Cropping System Model Ver. 4.8.0.024 -stable  SEP 25, 2026 02:22:09
+
+*RUN   1        : Sim2008                            fileX.MZ    1
+
+ EXPERIMENT     : fileX.MZ    CNYC
+ DATA PATH      :
+ TREATMENT  1   : Sim2008
+  
+fileX.MZX   , Trt    1
+
+ Weather file not found.  Please check file name or create file.                 
+File: CNYC.CLI   Line:     0   Error key: MAKEFW
+
+Additional information may be available in WARNING.OUT file.

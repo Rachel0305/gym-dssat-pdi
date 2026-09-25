@@ -1,0 +1,34 @@
+{
+  "source_cli": "results\\yc_wgen_cli_pilot\\003_06_04\\generated\\CNYC.CLI",
+  "source_sha256": "5ABF5D7BB97EFAAE5E8361ABB4C773E1554B58116CBCA2213E75DCFF838285F0",
+  "fixed_cli": "results\\yc_wgen_cli_pilot\\003_06_05_01\\candidate\\CNYC_parsefix_01.CLI",
+  "fixed_sha256": "65CF134600A5881706A5D435E1A09B276ED92A21FA5ABE2E18AAF63AF1E3A929",
+  "changed_lines": [
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38
+  ],
+  "changed_fields": [
+    "XDMN",
+    "XWMN",
+    "NAMN"
+  ],
+  "parameter_values_changed": "NO",
+  "format_only_change": "YES",
+  "root_cause": "Three fields were serialized with width 7 instead of the WGENIN 1X,F5.0 six-column group, shifting subsequent columns and producing 93-character rows instead of 90.",
+  "evidence": [
+    "https://github.com/DSSAT/dssat-csm-os/blob/v4.8.0.24/Weather/WGEN.for#L408-L414",
+    "https://github.com/DSSAT/dssat-csm-os/blob/v4.8.5.0/Weather/WGEN.for#L412-L418",
+    "results\\yc_wgen_cli_pilot\\003_06_05_01\\diagnostics\\original_line27_layout.txt",
+    "results\\yc_wgen_cli_pilot\\003_06_05_01\\diagnostics\\wgen_row_schema_comparison.txt"
+  ]
+}

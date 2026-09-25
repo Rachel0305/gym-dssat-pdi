@@ -1,0 +1,9 @@
+Command:
+python -m pytest tests/test_build_dssat_cli.py tests/test_yc_wgen_seed_pilot.py -q
+
+Result:
+23 passed in 0.27s
+
+Compile check:
+python -m py_compile scripts/build_dssat_cli.py tests/test_build_dssat_cli.py results/yc_wgen_cli_pilot/003_06_05_01/reformat_candidate.py results/yc_wgen_cli_pilot/003_06_05_01/runtime/run_seed_101_smoke.py
+PASS

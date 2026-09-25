@@ -1,0 +1,22 @@
+{
+  "run_id": "seed_101_parsefix_01",
+  "station": "YC",
+  "weather_seed": 101,
+  "ppo_seed": "NOT_APPLICABLE",
+  "runtime_compatibility_status": "FAIL_CLI_LOOKUP",
+  "error": "Again: Resource temporarily unavailable; runtime_diagnostics=Note: The following floating-point exceptions are signalling: IEEE_DENORMAL\nSTOP 99\n\n Weather file not found.  Please check file name or create file.                 \nFile: CNYC.CLI   Line:     0   Error key: MAKEFW\n\nAdditional information may be available in WARNING.OUT file.\n \u0007\n\n Please press < ENTER > key to continue Client started\n\n*RUN-TIME ERRORS OUTPUT FILE\n\n\n\n*DSSAT Cropping System Model Ver. 4.8.0.024 -stable  SEP 25, 2026 02:22:09\n\n*RUN   1        : Sim2008                            fileX.MZ    1\n\n EXPERIMENT     : fileX.MZ    CNYC\n DATA PATH      :\n TREATMENT  1   : Sim2008\n  \nfileX.MZX   , Trt    1\n\n Weather file not found.  Please check file name or create file.                 \nFile: CNYC.CLI   Line:     0   Error key: MAKEFW\n\nAdditional information may be available in WARNING.OUT file.\n\n*WARNING DETAIL FILE\n\n******************************************************************************\n\n*DSSAT Cropping System Model Ver. 4.8.0.024 -stable  SEP 25, 2026 02:22:09\n\n*RUN   1        : Sim2008                            fileX.MZ    1\n\n EXPERIMENT     : fileX.MZ    CNYC\n DATA PATH      :\n TREATMENT  1   : Sim2008\n  \n\n MAKEFW  YEAR DOY =    0   0\n Weather file not found.                                                       \n   Neither CNYC.CLI     nor CNYC.WTH                                           \n   were found in weather or experiment directories.                            \n Simulation will end.                                                          \n\n MAKEFW  YEAR DOY =    0   0\n Weather file not found.  Please check file name or create file.               \n File: CNYC.CLI                                                                \n    Line:     0                                                                \n    Error key: MAKEFW                                                          \n Simulations terminated.                                                       \n",
+  "runtime_cli_sha256": null,
+  "runtime_working_directory": "/workspace/results/yc_wgen_cli_pilot/003_06_05_01/runtime/tmp/tmp_7h_ebuh",
+  "filex_wther": "W",
+  "pdi_rseed1_configured": true,
+  "runtime_snapshot_files": [
+    "results/yc_wgen_cli_pilot/003_06_05_01/runtime/seed_101_parsefix_01/runtime_snapshot/ERROR.OUT",
+    "results/yc_wgen_cli_pilot/003_06_05_01/runtime/seed_101_parsefix_01/runtime_snapshot/WARNING.OUT",
+    "results/yc_wgen_cli_pilot/003_06_05_01/runtime/seed_101_parsefix_01/runtime_snapshot/dssat-pdi.yml",
+    "results/yc_wgen_cli_pilot/003_06_05_01/runtime/seed_101_parsefix_01/runtime_snapshot/fileX.MZX"
+  ],
+  "runtime_log": "results/yc_wgen_cli_pilot/003_06_05_01/runtime/seed_101_parsefix_01/runtime_log.txt",
+  "peak_process_tree_rss_mb": 0.0,
+  "elapsed_seconds": 32.23,
+  "candidate_cli_sha256_after_run": "65CF134600A5881706A5D435E1A09B276ED92A21FA5ABE2E18AAF63AF1E3A929"
+}

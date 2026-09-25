@@ -1,0 +1,70 @@
+source_cli_path: results/yc_wgen_cli_pilot/003_06_05_01/candidate/CNYC_parsefix_01.CLI
+source_cli_sha256: 65CF134600A5881706A5D435E1A09B276ED92A21FA5ABE2E18AAF63AF1E3A929
+runtime_cli_basename: CNYC.CLI
+runtime_cli_sha256: None
+runtime_working_directory: /workspace/results/yc_wgen_cli_pilot/003_06_05_01/runtime/tmp/tmp_7h_ebuh
+filex_runtime_basename: fileX.MZX
+filex_wsta: CNYC0801
+filex_wther: W
+runtime_pdi_rseed1: 101
+weather_seed: 101
+ppo_seed: NOT_APPLICABLE
+runtime_log_path: results/yc_wgen_cli_pilot/003_06_05_01/runtime/seed_101_parsefix_01/runtime_log.txt
+runtime_snapshot_files: ['results/yc_wgen_cli_pilot/003_06_05_01/runtime/seed_101_parsefix_01/runtime_snapshot/ERROR.OUT', 'results/yc_wgen_cli_pilot/003_06_05_01/runtime/seed_101_parsefix_01/runtime_snapshot/WARNING.OUT', 'results/yc_wgen_cli_pilot/003_06_05_01/runtime/seed_101_parsefix_01/runtime_snapshot/dssat-pdi.yml', 'results/yc_wgen_cli_pilot/003_06_05_01/runtime/seed_101_parsefix_01/runtime_snapshot/fileX.MZX']
+compatibility_status: FAIL_CLI_LOOKUP
+error: Again: Resource temporarily unavailable; runtime_diagnostics=Note: The following floating-point exceptions are signalling: IEEE_DENORMAL
+STOP 99
+
+ Weather file not found.  Please check file name or create file.                 
+File: CNYC.CLI   Line:     0   Error key: MAKEFW
+
+Additional information may be available in WARNING.OUT file.
+ 
+
+ Please press < ENTER > key to continue Client started
+
+*RUN-TIME ERRORS OUTPUT FILE
+
+
+
+*DSSAT Cropping System Model Ver. 4.8.0.024 -stable  SEP 25, 2026 02:22:09
+
+*RUN   1        : Sim2008                            fileX.MZ    1
+
+ EXPERIMENT     : fileX.MZ    CNYC
+ DATA PATH      :
+ TREATMENT  1   : Sim2008
+  
+fileX.MZX   , Trt    1
+
+ Weather file not found.  Please check file name or create file.                 
+File: CNYC.CLI   Line:     0   Error key: MAKEFW
+
+Additional information may be available in WARNING.OUT file.
+
+*WARNING DETAIL FILE
+
+******************************************************************************
+
+*DSSAT Cropping System Model Ver. 4.8.0.024 -stable  SEP 25, 2026 02:22:09
+
+*RUN   1        : Sim2008                            fileX.MZ    1
+
+ EXPERIMENT     : fileX.MZ    CNYC
+ DATA PATH      :
+ TREATMENT  1   : Sim2008
+  
+
+ MAKEFW  YEAR DOY =    0   0
+ Weather file not found.                                                       
+   Neither CNYC.CLI     nor CNYC.WTH                                           
+   were found in weather or experiment directories.                            
+ Simulation will end.                                                          
+
+ MAKEFW  YEAR DOY =    0   0
+ Weather file not found.  Please check file name or create file.               
+ File: CNYC.CLI                                                                
+    Line:     0                                                                
+    Error key: MAKEFW                                                          
+ Simulations terminated.                                                       
+

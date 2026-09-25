@@ -1,0 +1,59 @@
+YC CNYC.CLI WGEN line 27 layout diagnosis
+source_cli=results\yc_wgen_cli_pilot\003_06_04\generated\CNYC.CLI
+source_sha256=5ABF5D7BB97EFAAE5E8361ABB4C773E1554B58116CBCA2213E75DCFF838285F0
+WGEN section begins at line 25; header line 26
+
+line 26 header raw='@  MTH  SDMN  SDSD  SWMN  SWSD  XDMN  XDSD  XWMN  XWSD  NAMN  NASD ALPHA  RTOT   PDW  RNUM'
+line 26 header length=90 visible=@··MTH··SDMN··SDSD··SWMN··SWSD··XDMN··XDSD··XWMN··XWSD··NAMN··NASD·ALPHA··RTOT···PDW··RNUM
+header token positions: @[0-0] | MTH[3-5] | SDMN[8-11] | SDSD[14-17] | SWMN[20-23] | SWSD[26-29] | XDMN[32-35] | XDSD[38-41] | XWMN[44-47] | XWSD[50-53] | NAMN[56-59] | NASD[62-65] | ALPHA[67-71] | RTOT[74-77] | PDW[81-83] | RNUM[86-89]
+
+line 27 raw='     1   7.6   3.2   5.0   2.8    3.3   3.6    1.9   4.0   -7.2   3.6 0.811   1.9 0.023   0.9'
+line 27 length=93 visible=·····1···7.6···3.2···5.0···2.8····3.3···3.6····1.9···4.0···-7.2···3.6·0.811···1.9·0.023···0.9
+tokenized fields: 1[5-5] | 7.6[9-11] | 3.2[15-17] | 5.0[21-23] | 2.8[27-29] | 3.3[34-36] | 3.6[40-42] | 1.9[47-49] | 4.0[53-55] | -7.2[59-62] | 3.6[66-68] | 0.811[70-74] | 1.9[78-80] | 0.023[82-86] | 0.9[90-92]
+parsed source tokens: MTH=1; SDMN=7.6, SDSD=3.2, SWMN=5.0, SWSD=2.8, XDMN=3.3, XDSD=3.6, XWMN=1.9, XWSD=4.0, NAMN=-7.2, NASD=3.6, ALPHA=0.811, RTOT=1.9, PDW=0.023, RNUM=0.9
+line 28 raw='     2  10.5   3.9   5.0   3.6    7.7   5.0    3.7   4.7   -3.6   4.4 0.890  10.4 0.086   3.0'
+line 28 length=93 visible=·····2··10.5···3.9···5.0···3.6····7.7···5.0····3.7···4.7···-3.6···4.4·0.890··10.4·0.086···3.0
+line 28 tokenized fields: 2[5-5] | 10.5[8-11] | 3.9[15-17] | 5.0[21-23] | 3.6[27-29] | 7.7[34-36] | 5.0[40-42] | 3.7[47-49] | 4.7[53-55] | -3.6[59-62] | 4.4[66-68] | 0.890[70-74] | 10.4[77-80] | 0.086[82-86] | 3.0[90-92]
+line 28 parsed source tokens: MTH=2; SDMN=10.5, SDSD=3.9, SWMN=5.0, SWSD=3.6, XDMN=7.7, XDSD=5.0, XWMN=3.7, XWSD=4.7, NAMN=-3.6, NASD=4.4, ALPHA=0.89, RTOT=10.4, PDW=0.086, RNUM=3.0
+fixed-format slices from original row (Fortran skips each separator column):
+line 27 fixed raw='     1   7.6   3.2   5.0   2.8   3.3   3.6   1.9   4.0  -7.2   3.6 0.811   1.9 0.023   0.9'
+line 27 fixed length=90 visible=·····1···7.6···3.2···5.0···2.8···3.3···3.6···1.9···4.0··-7.2···3.6·0.811···1.9·0.023···0.9
+
+WGENIN contract: (I6,14(1X,F5.0)); total width 6 + 14*(1+5) = 90 columns.
+MTH is one integer column group; the remaining 14 statistical values are REAL fields.
+
+Original row field slices under WGENIN's fixed positions:
+MTH I6 columns 1-6: '     1'
+original SDMN: slot cols 7-12='   7.6'; F5='  7.6'; token='7.6'; parsed=7.6; value_matches=True
+original SDSD: slot cols 13-18='   3.2'; F5='  3.2'; token='3.2'; parsed=3.2; value_matches=True
+original SWMN: slot cols 19-24='   5.0'; F5='  5.0'; token='5.0'; parsed=5.0; value_matches=True
+original SWSD: slot cols 25-30='   2.8'; F5='  2.8'; token='2.8'; parsed=2.8; value_matches=True
+original XDMN: slot cols 31-36='    3.'; F5='   3.'; token='3.3'; parsed=3.0; value_matches=False
+original XDSD: slot cols 37-42='3   3.'; F5='   3.'; token='3.6'; parsed=3.0; value_matches=False
+original XWMN: slot cols 43-48='6    1'; F5='    1'; token='1.9'; parsed=1.0; value_matches=False
+original XWSD: slot cols 49-54='.9   4'; F5='9   4'; token='4.0'; decimal-token parser failure; value_matches=False
+original NAMN: slot cols 55-60='.0   -'; F5='0   -'; token='-7.2'; decimal-token parser failure; value_matches=False
+original NASD: slot cols 61-66='7.2   '; F5='.2   '; token='3.6'; parsed=0.2; value_matches=False
+original ALPHA: slot cols 67-72='3.6 0.'; F5='.6 0.'; token='0.811'; decimal-token parser failure; value_matches=False
+original RTOT: slot cols 73-78='811   '; F5='11   '; token='1.9'; parsed=11.0; value_matches=False
+original PDW: slot cols 79-84='1.9 0.'; F5='.9 0.'; token='0.023'; decimal-token parser failure; value_matches=False
+original RNUM: slot cols 85-90='023   '; F5='23   '; token='0.9'; parsed=23.0; value_matches=False
+First F5 slice that fails decimal-token parsing: XDSD, after the XDMN width spill.
+This slice analysis follows the declared columns; runtime IOSTAT behavior is determined by the one-shot DSSAT smoke.
+
+Field schema from the first YC month row after format-only serialization:
+MTH: columns 1-6; value=1; rendering='     1'; format=I6; compatible=True
+SDMN: separator column 7; value columns 8-12; value=7.6; rendering='  7.6'; format=1X,F5.0; compatible=True
+SDSD: separator column 13; value columns 14-18; value=3.2; rendering='  3.2'; format=1X,F5.0; compatible=True
+SWMN: separator column 19; value columns 20-24; value=5.0; rendering='  5.0'; format=1X,F5.0; compatible=True
+SWSD: separator column 25; value columns 26-30; value=2.8; rendering='  2.8'; format=1X,F5.0; compatible=True
+XDMN: separator column 31; value columns 32-36; value=3.3; rendering='  3.3'; format=1X,F5.0; compatible=True
+XDSD: separator column 37; value columns 38-42; value=3.6; rendering='  3.6'; format=1X,F5.0; compatible=True
+XWMN: separator column 43; value columns 44-48; value=1.9; rendering='  1.9'; format=1X,F5.0; compatible=True
+XWSD: separator column 49; value columns 50-54; value=4.0; rendering='  4.0'; format=1X,F5.0; compatible=True
+NAMN: separator column 55; value columns 56-60; value=-7.2; rendering=' -7.2'; format=1X,F5.0; compatible=True
+NASD: separator column 61; value columns 62-66; value=3.6; rendering='  3.6'; format=1X,F5.0; compatible=True
+ALPHA: separator column 67; value columns 68-72; value=0.811; rendering='0.811'; format=1X,F5.0; compatible=True
+RTOT: separator column 73; value columns 74-78; value=1.9; rendering='  1.9'; format=1X,F5.0; compatible=True
+PDW: separator column 79; value columns 80-84; value=0.023; rendering='0.023'; format=1X,F5.0; compatible=True
+RNUM: separator column 85; value columns 86-90; value=0.9; rendering='  0.9'; format=1X,F5.0; compatible=True

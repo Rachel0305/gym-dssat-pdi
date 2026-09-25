@@ -1,0 +1,20 @@
+WGEN row schema comparison: YC candidate vs repository CNSY.CLI
+YC source: results\yc_wgen_cli_pilot\003_06_04\generated\CNYC.CLI (SHA256 5ABF5D7BB97EFAAE5E8361ABB4C773E1554B58116CBCA2213E75DCFF838285F0)
+CNSY structural reference: benchmark_results\026_05\ppo_runs\2012\seed0\transfer_frozen_ppo_seed0\input\CNSY.CLI
+CNSY numerical parameter values are intentionally omitted; only layout is compared.
+
+header_identical=True
+header=@  MTH  SDMN  SDSD  SWMN  SWSD  XDMN  XDSD  XWMN  XWSD  NAMN  NASD ALPHA  RTOT   PDW  RNUM
+YC first row: 15 tokens including MTH, 93 characters, decimals retained from candidate.
+CNSY first row: 15 tokens including MTH, 90 characters; values redacted.
+fixed candidate first row: 15 tokens including MTH, 90 characters.
+both DSSAT source versions read: (I6,14(1X,F5.0))
+column order: MTH, SDMN, SDSD, SWMN, SWSD, XDMN, XDSD, XWMN, XWSD, NAMN, NASD, ALPHA, RTOT, PDW, RNUM.
+decimal rendering: source READ accepts explicit decimal points inside each F5.0 input field; generator retains its existing 1- or 3-decimal token precision.
+
+Widths by field group:
+MTH: I6 (6 columns); 14 statistical values: each 1X + F5.0 (6 columns per value).
+YC source row width=93; CNSY reference row width=90; fixed YC candidate row width=90.
+Only the original YC row serialization is changed. No CNSY climate parameter values are copied.
+4.8.0.24 source: https://github.com/DSSAT/dssat-csm-os/blob/v4.8.0.24/Weather/WGEN.for#L408-L414
+4.8.5.0 source: https://github.com/DSSAT/dssat-csm-os/blob/v4.8.5.0/Weather/WGEN.for#L412-L418

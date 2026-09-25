@@ -1,0 +1,23 @@
+{
+  "task": "003_06_05_01_fix_wgenin_5010",
+  "station": "YC/CNYC",
+  "source_cli": "results/yc_wgen_cli_pilot/003_06_04/generated/CNYC.CLI",
+  "source_cli_sha256_before": "5ABF5D7BB97EFAAE5E8361ABB4C773E1554B58116CBCA2213E75DCFF838285F0",
+  "fixed_cli": "results/yc_wgen_cli_pilot/003_06_05_01/candidate/CNYC_parsefix_01.CLI",
+  "fixed_cli_sha256_before": "65CF134600A5881706A5D435E1A09B276ED92A21FA5ABE2E18AAF63AF1E3A929",
+  "runtime_input_cli": "results/yc_wgen_cli_pilot/003_06_05_01/candidate/runtime_input/CNYC.CLI",
+  "runtime_input_cli_basename": "CNYC.CLI",
+  "runtime_input_cli_sha256_before": "65CF134600A5881706A5D435E1A09B276ED92A21FA5ABE2E18AAF63AF1E3A929",
+  "filex_template_source": "results/yc_wgen_cli_pilot/003_06_05/configs/CNYC0801_wgen_template.jinja2",
+  "filex_template_sha256": "73209734283F28A8B02FA531A2DBCD4DBB4D5CA784F731882AE4D6AE260CCA58",
+  "train_weather_reference": "results/yc_weather_gapfill_finalize/yc_wgen_fitting_weather_2004_2013.csv",
+  "train_weather_sha256_before": "4B8FFE9E881D0A0743921B78B9C0E0EBFB1D2D645C5AA9737948B2B088ED7B34",
+  "weather_seed": 101,
+  "ppo_seed": "NOT_APPLICABLE",
+  "random_weather": true,
+  "wther": "W",
+  "wsta": "CNYC0801",
+  "selected_treatment": "YC/CNYC 2008 treatment 1",
+  "actions": "constant zero actions; no PPO/agent",
+  "run_limit": "one serial runtime run only"
+}

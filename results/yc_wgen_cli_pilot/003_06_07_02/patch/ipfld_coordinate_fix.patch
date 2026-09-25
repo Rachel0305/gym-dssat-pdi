@@ -1,0 +1,26 @@
+--- a/InputModule/ipexp.for
++++ b/InputModule/ipexp.for
+@@ -1181,3 +1181,3 @@
+       READ(CXCRD,'(F15.0)', IOSTAT=ERRNUM) XCRD
+-      IF(ERRNUM .EQ. 0) THEN
++      IF(ERRNUM .NE. 0) THEN
+          XCRD = -999.0
+@@ -1188,3 +1188,3 @@
+       READ(CYCRD,'(F15.0)', IOSTAT=ERRNUM) YCRD
+-      IF(ERRNUM .EQ. 0) THEN
++      IF(ERRNUM .NE. 0) THEN
+          YCRD = -99.0
+@@ -1195,3 +1195,3 @@
+       READ(CELEV,'(F9.0)', IOSTAT=ERRNUM)  ELEV
+-      IF(ERRNUM .EQ. 0) THEN
++      IF(ERRNUM .NE. 0) THEN
+         ELEV = -99.0
+@@ -1203,7 +1203,6 @@
+       IF(YCRD .GE. -90.0 .AND. YCRD .LE. 90.0 .AND.
+      &   XCRD .GE.-180.0 .AND. XCRD .LE. 180.0 .AND.
+      &   LEN_TRIM(CYCRD).GT. 0.0 .AND. LEN_TRIM(CXCRD).GT.0.0
+      &   .AND.
+-     &   (ABS(YCRD) .GT. 1.E-15 .OR. ABS(XCRD) .GT. 1.E-15).AND.
+-     &   ERRNUM .NE. 0)THEN
++     &   (ABS(YCRD) .GT. 1.E-15 .OR. ABS(XCRD) .GT. 1.E-15))THEN
+ !     Transfer data to the modules

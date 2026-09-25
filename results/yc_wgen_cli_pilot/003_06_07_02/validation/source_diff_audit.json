@@ -1,0 +1,56 @@
+{
+  "upstream_repository": "https://github.com/DSSAT/dssat-csm-os",
+  "upstream_tag": "v4.8.0.24",
+  "annotated_tag_object": "1a2bcfeb4b19e07769881df70c039d66d7e92609",
+  "peeled_source_commit": "caaa55c6bee21aa894b325b67dad7ccacb05295b",
+  "later_comparison_tag": "v4.8.5.0",
+  "later_comparison_commit": "0b91373806786b600d89ccfcfff78fa2f82cb26b",
+  "version_markers": {
+    "file": "upstream_source/v4.8.0.24/CMakeLists.txt",
+    "project": "DSSAT-CSM Fortran",
+    "major": 4,
+    "minor": 8,
+    "model": 0,
+    "build": 24,
+    "executable_name_pattern": "dscsm0${MAJOR}${MINOR}"
+  },
+  "source_excerpt_sha256": {
+    "v4.8.0.24/InputModule/ipexp.for": "FF2258AE95FA12765178A3F3B359D563B45AE22865506D16B288FB9117D9F4D4",
+    "v4.8.5.0/InputModule/ipexp.for": "89568BD6E8E89E68512EA63E20F17F2F640C7020BBE242DE9DB0CEE635786F9B",
+    "v4.8.0.24/CMakeLists.txt": "4031B0935891AC84166B658664E132B62075867EB3A494DAC37A08960D61E9CD",
+    "v4.8.0.24/CSM_Main/CSM.for": "A173EEDB3BF98D9FB152D3538A73B90B56723492A694E4A3B11B5AD3EB5CA0F6"
+  },
+  "confirmed_source_bug": true,
+  "runtime_causality_experiment_completed": false,
+  "bug_locations_in_local_source_snapshot": {
+    "XCRD_iostat_condition": 1182,
+    "YCRD_iostat_condition": 1189,
+    "ELEV_iostat_condition": 1196,
+    "coordinate_transfer_gate": "1203-1208"
+  },
+  "findings": [
+    "Each successful internal READ returns IOSTAT=0, but the v4.8.0.24 branches treat zero as failure and replace the parsed coordinate/elevation with a sentinel.",
+    "The transfer gate also requires ERRNUM to be nonzero even though ERRNUM contains the status of the immediately preceding elevation READ; a successful elevation read leaves it zero and blocks valid coordinates.",
+    "The v4.8.5.0 comparison source uses ERRNUM .NE. 0 for the three error branches and omits ERRNUM from the coordinate validity gate."
+  ],
+  "patch": {
+    "path": "results/yc_wgen_cli_pilot/003_06_07_02/patch/ipfld_coordinate_fix.patch",
+    "sha256": "134D07023B0F48CBAD55EC80AB4526E15A2A9E82CB1A6D815BB75756DEB8FD63",
+    "changed_source_file_count": 1,
+    "semantic_change_count": 4,
+    "changes": [
+      "CXCRD/XCRD read error test: .EQ. 0 to .NE. 0",
+      "CYCRD/YCRD read error test: .EQ. 0 to .NE. 0",
+      "CELEV/ELEV read error test: .EQ. 0 to .NE. 0",
+      "Remove the stale ERRNUM .NE. 0 restriction from coordinate transfer gate"
+    ],
+    "PMWD_PMALB_or_other_v4_8_5_changes_included": false,
+    "git_apply_check": "PASS",
+    "git_apply_check_target": "validation/patch_apply_check_final/InputModule/ipexp.for",
+    "git_apply_to_isolated_copy": "PASS"
+  },
+  "source_snapshot_scope": "Selected upstream files only; full DSSAT source was not fetched because the available environments lack the required build toolchain.",
+  "official_cmake_mentions_pdi_or_zmq": false,
+  "official_csm_main_mentions_pdi_or_zmq": false,
+  "gym_pdi_binary_compatibility_verified": false
+}

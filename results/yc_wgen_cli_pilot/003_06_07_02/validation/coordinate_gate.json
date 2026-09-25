@@ -1,0 +1,20 @@
+{
+  "status": "NOT_RUN_BLOCKED_AT_ISOLATED_BUILD",
+  "base_source_tag": "v4.8.0.24",
+  "patched_binary": null,
+  "expected_filex_coordinates": {
+    "XCRD_LONG": 116.57,
+    "YCRD_LAT": 36.83,
+    "ELEV": 22
+  },
+  "observed_dssat48_inp": null,
+  "observed_dssat48_inh": null,
+  "observed_summary_out": null,
+  "coordinate_read_warnings": "NOT_CHECKED",
+  "coordinate_transfer_warnings": "NOT_CHECKED",
+  "historical_control": "NOT_RUN",
+  "stop_reason": "No isolated Fortran/CMake build toolchain is available; official-source-to-Gym-PDI runtime compatibility is also unverified.",
+  "seeds_101_104": "NOT_RUN_BY_GATE_DESIGN",
+  "original_installed_binary_modified": false,
+  "installed_gym_dssat_package_modified": false
+}

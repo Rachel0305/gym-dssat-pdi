@@ -1,0 +1,6 @@
+{
+  "status": "NOT_RUN_BLOCKED_BEFORE_COORDINATE_GATE",
+  "previous_run_id": "historical_control_retry4",
+  "reason": "DSSAT48.INP *FIELDS coordinates are placeholders; no fix was integrated or verified.",
+  "crop_simulation_run": false
+}

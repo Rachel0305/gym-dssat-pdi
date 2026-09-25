@@ -1,0 +1,64 @@
+﻿stage,file_or_function,variable_name,expected_value,observed_value,status,evidence
+source FileX/template,DSSAT_auto_validation\multisite_new_cultivar_inputs_013\YC\CNYC0801.MZX,LAT,36.83,-99.0,SOURCE_PLACEHOLDER,原始 YC MZX 的坐标字段为 -99
+rendered isolated FileX,results\yc_wgen_cli_pilot\003_06_06\crop_smoke\historical_control_retry4\runtime_snapshot\fileX.MZX,LAT,36.83,36.83,PASS,上一轮 runtime_snapshot/fileX.MZX 固定列读取
+Gym-DSSAT/PDI parsed variables,installed gym_dssat_pdi source unavailable inside project,LAT,36.83,NOT_OBSERVED,UNOBSERVED,未修改/读取仓库外安装包；无 parser trace 可核实
+generated DSSAT48.INP *FIELDS,results\yc_wgen_cli_pilot\003_06_06\crop_smoke\historical_control_retry4\runtime_snapshot\DSSAT48.INP,LAT,36.83,-99.0,FAIL_PLACEHOLDER_RETAINED,*FIELDS coordinate record retains -999/-99/-99
+generated DSSAT48.INH *FIELDS,results\yc_wgen_cli_pilot\003_06_06\crop_smoke\historical_control_retry4\runtime_snapshot\DSSAT48.INH,LAT,36.83,-99.0,FAIL_PLACEHOLDER_RETAINED,companion INH coordinate record also retains -999/-99/-99
+runtime INFO/WARNING,results\yc_wgen_cli_pilot\003_06_06\crop_smoke\historical_control_retry4\runtime_snapshot\WARNING.OUT,LAT,36.83,read/transfer error; value set to zero,FAIL,read_errors=1; transfer_errors=3
+Summary.OUT runtime output,results\yc_wgen_cli_pilot\003_06_06\crop_smoke\historical_control_retry4\runtime_snapshot\Summary.OUT,LAT,36.83,,FAIL_EMPTY,Summary.OUT XLAT/LONG/ELEV columns are blank
+source FileX/template,DSSAT_auto_validation\multisite_new_cultivar_inputs_013\YC\CNYC0801.MZX,LONG,116.57,-99.0,SOURCE_PLACEHOLDER,原始 YC MZX 的坐标字段为 -99
+rendered isolated FileX,results\yc_wgen_cli_pilot\003_06_06\crop_smoke\historical_control_retry4\runtime_snapshot\fileX.MZX,LONG,116.57,116.57,PASS,上一轮 runtime_snapshot/fileX.MZX 固定列读取
+Gym-DSSAT/PDI parsed variables,installed gym_dssat_pdi source unavailable inside project,LONG,116.57,NOT_OBSERVED,UNOBSERVED,未修改/读取仓库外安装包；无 parser trace 可核实
+generated DSSAT48.INP *FIELDS,results\yc_wgen_cli_pilot\003_06_06\crop_smoke\historical_control_retry4\runtime_snapshot\DSSAT48.INP,LONG,116.57,-999.0,FAIL_PLACEHOLDER_RETAINED,*FIELDS coordinate record retains -999/-99/-99
+generated DSSAT48.INH *FIELDS,results\yc_wgen_cli_pilot\003_06_06\crop_smoke\historical_control_retry4\runtime_snapshot\DSSAT48.INH,LONG,116.57,-999.0,FAIL_PLACEHOLDER_RETAINED,companion INH coordinate record also retains -999/-99/-99
+runtime INFO/WARNING,results\yc_wgen_cli_pilot\003_06_06\crop_smoke\historical_control_retry4\runtime_snapshot\WARNING.OUT,LONG,116.57,read/transfer error; value set to zero,FAIL,read_errors=1; transfer_errors=3
+Summary.OUT runtime output,results\yc_wgen_cli_pilot\003_06_06\crop_smoke\historical_control_retry4\runtime_snapshot\Summary.OUT,LONG,116.57,,FAIL_EMPTY,Summary.OUT XLAT/LONG/ELEV columns are blank
+source FileX/template,DSSAT_auto_validation\multisite_new_cultivar_inputs_013\YC\CNYC0801.MZX,ELEV,22.0,-99.0,SOURCE_PLACEHOLDER,原始 YC MZX 的坐标字段为 -99
+rendered isolated FileX,results\yc_wgen_cli_pilot\003_06_06\crop_smoke\historical_control_retry4\runtime_snapshot\fileX.MZX,ELEV,22.0,22.0,PASS,上一轮 runtime_snapshot/fileX.MZX 固定列读取
+Gym-DSSAT/PDI parsed variables,installed gym_dssat_pdi source unavailable inside project,ELEV,22.0,NOT_OBSERVED,UNOBSERVED,未修改/读取仓库外安装包；无 parser trace 可核实
+generated DSSAT48.INP *FIELDS,results\yc_wgen_cli_pilot\003_06_06\crop_smoke\historical_control_retry4\runtime_snapshot\DSSAT48.INP,ELEV,22.0,-99.0,FAIL_PLACEHOLDER_RETAINED,*FIELDS coordinate record retains -999/-99/-99
+generated DSSAT48.INH *FIELDS,results\yc_wgen_cli_pilot\003_06_06\crop_smoke\historical_control_retry4\runtime_snapshot\DSSAT48.INH,ELEV,22.0,-99.0,FAIL_PLACEHOLDER_RETAINED,companion INH coordinate record also retains -999/-99/-99
+runtime INFO/WARNING,results\yc_wgen_cli_pilot\003_06_06\crop_smoke\historical_control_retry4\runtime_snapshot\WARNING.OUT,ELEV,22.0,read/transfer error; value set to zero,FAIL,read_errors=1; transfer_errors=3
+Summary.OUT runtime output,results\yc_wgen_cli_pilot\003_06_06\crop_smoke\historical_control_retry4\runtime_snapshot\Summary.OUT,ELEV,22.0,,FAIL_EMPTY,Summary.OUT XLAT/LONG/ELEV columns are blank
+source FileX/template,DSSAT_auto_validation\multisite_new_cultivar_inputs_013\YC\CNYC0801.MZX,LAT,36.83,-99.0,SOURCE_PLACEHOLDER,原始 YC MZX 的坐标字段为 -99
+rendered isolated FileX,results\yc_wgen_cli_pilot\003_06_06\crop_smoke\seed_101\runtime_snapshot\fileX.MZX,LAT,36.83,36.83,PASS,上一轮 runtime_snapshot/fileX.MZX 固定列读取
+Gym-DSSAT/PDI parsed variables,installed gym_dssat_pdi source unavailable inside project,LAT,36.83,NOT_OBSERVED,UNOBSERVED,未修改/读取仓库外安装包；无 parser trace 可核实
+generated DSSAT48.INP *FIELDS,results\yc_wgen_cli_pilot\003_06_06\crop_smoke\seed_101\runtime_snapshot\DSSAT48.INP,LAT,36.83,-99.0,FAIL_PLACEHOLDER_RETAINED,*FIELDS coordinate record retains -999/-99/-99
+generated DSSAT48.INH *FIELDS,results\yc_wgen_cli_pilot\003_06_06\crop_smoke\seed_101\runtime_snapshot\DSSAT48.INH,LAT,36.83,-99.0,FAIL_PLACEHOLDER_RETAINED,companion INH coordinate record also retains -999/-99/-99
+runtime INFO/WARNING,results\yc_wgen_cli_pilot\003_06_06\crop_smoke\seed_101\runtime_snapshot\WARNING.OUT,LAT,36.83,read/transfer error; value set to zero,FAIL,read_errors=1; transfer_errors=3
+Summary.OUT runtime output,results\yc_wgen_cli_pilot\003_06_06\crop_smoke\seed_101\runtime_snapshot\Summary.OUT,LAT,36.83,,FAIL_EMPTY,Summary.OUT XLAT/LONG/ELEV columns are blank
+source FileX/template,DSSAT_auto_validation\multisite_new_cultivar_inputs_013\YC\CNYC0801.MZX,LONG,116.57,-99.0,SOURCE_PLACEHOLDER,原始 YC MZX 的坐标字段为 -99
+rendered isolated FileX,results\yc_wgen_cli_pilot\003_06_06\crop_smoke\seed_101\runtime_snapshot\fileX.MZX,LONG,116.57,116.57,PASS,上一轮 runtime_snapshot/fileX.MZX 固定列读取
+Gym-DSSAT/PDI parsed variables,installed gym_dssat_pdi source unavailable inside project,LONG,116.57,NOT_OBSERVED,UNOBSERVED,未修改/读取仓库外安装包；无 parser trace 可核实
+generated DSSAT48.INP *FIELDS,results\yc_wgen_cli_pilot\003_06_06\crop_smoke\seed_101\runtime_snapshot\DSSAT48.INP,LONG,116.57,-999.0,FAIL_PLACEHOLDER_RETAINED,*FIELDS coordinate record retains -999/-99/-99
+generated DSSAT48.INH *FIELDS,results\yc_wgen_cli_pilot\003_06_06\crop_smoke\seed_101\runtime_snapshot\DSSAT48.INH,LONG,116.57,-999.0,FAIL_PLACEHOLDER_RETAINED,companion INH coordinate record also retains -999/-99/-99
+runtime INFO/WARNING,results\yc_wgen_cli_pilot\003_06_06\crop_smoke\seed_101\runtime_snapshot\WARNING.OUT,LONG,116.57,read/transfer error; value set to zero,FAIL,read_errors=1; transfer_errors=3
+Summary.OUT runtime output,results\yc_wgen_cli_pilot\003_06_06\crop_smoke\seed_101\runtime_snapshot\Summary.OUT,LONG,116.57,,FAIL_EMPTY,Summary.OUT XLAT/LONG/ELEV columns are blank
+source FileX/template,DSSAT_auto_validation\multisite_new_cultivar_inputs_013\YC\CNYC0801.MZX,ELEV,22.0,-99.0,SOURCE_PLACEHOLDER,原始 YC MZX 的坐标字段为 -99
+rendered isolated FileX,results\yc_wgen_cli_pilot\003_06_06\crop_smoke\seed_101\runtime_snapshot\fileX.MZX,ELEV,22.0,22.0,PASS,上一轮 runtime_snapshot/fileX.MZX 固定列读取
+Gym-DSSAT/PDI parsed variables,installed gym_dssat_pdi source unavailable inside project,ELEV,22.0,NOT_OBSERVED,UNOBSERVED,未修改/读取仓库外安装包；无 parser trace 可核实
+generated DSSAT48.INP *FIELDS,results\yc_wgen_cli_pilot\003_06_06\crop_smoke\seed_101\runtime_snapshot\DSSAT48.INP,ELEV,22.0,-99.0,FAIL_PLACEHOLDER_RETAINED,*FIELDS coordinate record retains -999/-99/-99
+generated DSSAT48.INH *FIELDS,results\yc_wgen_cli_pilot\003_06_06\crop_smoke\seed_101\runtime_snapshot\DSSAT48.INH,ELEV,22.0,-99.0,FAIL_PLACEHOLDER_RETAINED,companion INH coordinate record also retains -999/-99/-99
+runtime INFO/WARNING,results\yc_wgen_cli_pilot\003_06_06\crop_smoke\seed_101\runtime_snapshot\WARNING.OUT,ELEV,22.0,read/transfer error; value set to zero,FAIL,read_errors=1; transfer_errors=3
+Summary.OUT runtime output,results\yc_wgen_cli_pilot\003_06_06\crop_smoke\seed_101\runtime_snapshot\Summary.OUT,ELEV,22.0,,FAIL_EMPTY,Summary.OUT XLAT/LONG/ELEV columns are blank
+source FileX/template,DSSAT_auto_validation\multisite_new_cultivar_inputs_013\YC\CNYC0801.MZX,LAT,36.83,-99.0,SOURCE_PLACEHOLDER,原始 YC MZX 的坐标字段为 -99
+rendered isolated FileX,results\yc_wgen_cli_pilot\003_06_06\crop_smoke\seed_104\runtime_snapshot\fileX.MZX,LAT,36.83,36.83,PASS,上一轮 runtime_snapshot/fileX.MZX 固定列读取
+Gym-DSSAT/PDI parsed variables,installed gym_dssat_pdi source unavailable inside project,LAT,36.83,NOT_OBSERVED,UNOBSERVED,未修改/读取仓库外安装包；无 parser trace 可核实
+generated DSSAT48.INP *FIELDS,results\yc_wgen_cli_pilot\003_06_06\crop_smoke\seed_104\runtime_snapshot\DSSAT48.INP,LAT,36.83,-99.0,FAIL_PLACEHOLDER_RETAINED,*FIELDS coordinate record retains -999/-99/-99
+generated DSSAT48.INH *FIELDS,results\yc_wgen_cli_pilot\003_06_06\crop_smoke\seed_104\runtime_snapshot\DSSAT48.INH,LAT,36.83,-99.0,FAIL_PLACEHOLDER_RETAINED,companion INH coordinate record also retains -999/-99/-99
+runtime INFO/WARNING,results\yc_wgen_cli_pilot\003_06_06\crop_smoke\seed_104\runtime_snapshot\WARNING.OUT,LAT,36.83,read/transfer error; value set to zero,FAIL,read_errors=1; transfer_errors=3
+Summary.OUT runtime output,results\yc_wgen_cli_pilot\003_06_06\crop_smoke\seed_104\runtime_snapshot\Summary.OUT,LAT,36.83,,FAIL_EMPTY,Summary.OUT XLAT/LONG/ELEV columns are blank
+source FileX/template,DSSAT_auto_validation\multisite_new_cultivar_inputs_013\YC\CNYC0801.MZX,LONG,116.57,-99.0,SOURCE_PLACEHOLDER,原始 YC MZX 的坐标字段为 -99
+rendered isolated FileX,results\yc_wgen_cli_pilot\003_06_06\crop_smoke\seed_104\runtime_snapshot\fileX.MZX,LONG,116.57,116.57,PASS,上一轮 runtime_snapshot/fileX.MZX 固定列读取
+Gym-DSSAT/PDI parsed variables,installed gym_dssat_pdi source unavailable inside project,LONG,116.57,NOT_OBSERVED,UNOBSERVED,未修改/读取仓库外安装包；无 parser trace 可核实
+generated DSSAT48.INP *FIELDS,results\yc_wgen_cli_pilot\003_06_06\crop_smoke\seed_104\runtime_snapshot\DSSAT48.INP,LONG,116.57,-999.0,FAIL_PLACEHOLDER_RETAINED,*FIELDS coordinate record retains -999/-99/-99
+generated DSSAT48.INH *FIELDS,results\yc_wgen_cli_pilot\003_06_06\crop_smoke\seed_104\runtime_snapshot\DSSAT48.INH,LONG,116.57,-999.0,FAIL_PLACEHOLDER_RETAINED,companion INH coordinate record also retains -999/-99/-99
+runtime INFO/WARNING,results\yc_wgen_cli_pilot\003_06_06\crop_smoke\seed_104\runtime_snapshot\WARNING.OUT,LONG,116.57,read/transfer error; value set to zero,FAIL,read_errors=1; transfer_errors=3
+Summary.OUT runtime output,results\yc_wgen_cli_pilot\003_06_06\crop_smoke\seed_104\runtime_snapshot\Summary.OUT,LONG,116.57,,FAIL_EMPTY,Summary.OUT XLAT/LONG/ELEV columns are blank
+source FileX/template,DSSAT_auto_validation\multisite_new_cultivar_inputs_013\YC\CNYC0801.MZX,ELEV,22.0,-99.0,SOURCE_PLACEHOLDER,原始 YC MZX 的坐标字段为 -99
+rendered isolated FileX,results\yc_wgen_cli_pilot\003_06_06\crop_smoke\seed_104\runtime_snapshot\fileX.MZX,ELEV,22.0,22.0,PASS,上一轮 runtime_snapshot/fileX.MZX 固定列读取
+Gym-DSSAT/PDI parsed variables,installed gym_dssat_pdi source unavailable inside project,ELEV,22.0,NOT_OBSERVED,UNOBSERVED,未修改/读取仓库外安装包；无 parser trace 可核实
+generated DSSAT48.INP *FIELDS,results\yc_wgen_cli_pilot\003_06_06\crop_smoke\seed_104\runtime_snapshot\DSSAT48.INP,ELEV,22.0,-99.0,FAIL_PLACEHOLDER_RETAINED,*FIELDS coordinate record retains -999/-99/-99
+generated DSSAT48.INH *FIELDS,results\yc_wgen_cli_pilot\003_06_06\crop_smoke\seed_104\runtime_snapshot\DSSAT48.INH,ELEV,22.0,-99.0,FAIL_PLACEHOLDER_RETAINED,companion INH coordinate record also retains -999/-99/-99
+runtime INFO/WARNING,results\yc_wgen_cli_pilot\003_06_06\crop_smoke\seed_104\runtime_snapshot\WARNING.OUT,ELEV,22.0,read/transfer error; value set to zero,FAIL,read_errors=1; transfer_errors=3
+Summary.OUT runtime output,results\yc_wgen_cli_pilot\003_06_06\crop_smoke\seed_104\runtime_snapshot\Summary.OUT,ELEV,22.0,,FAIL_EMPTY,Summary.OUT XLAT/LONG/ELEV columns are blank

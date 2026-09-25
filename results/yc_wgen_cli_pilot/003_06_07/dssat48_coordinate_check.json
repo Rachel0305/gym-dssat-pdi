@@ -1,0 +1,170 @@
+{
+  "expected_lat": 36.83,
+  "expected_long": 116.57,
+  "expected_elev": 22.0,
+  "lat_expected": 36.83,
+  "lat_actual": -99.0,
+  "long_expected": 116.57,
+  "long_actual": -999.0,
+  "elev_expected": 22.0,
+  "elev_actual": -99.0,
+  "pass": false,
+  "probe_type": "read-only retained-evidence preflight; no crop simulation",
+  "parsed_internal_coordinates": null,
+  "rendered_filex_values": {
+    "LONG": 116.57,
+    "LAT": 36.83,
+    "ELEV": 22.0
+  },
+  "parsed_internal_values": {
+    "LAT": null,
+    "LONG": null,
+    "ELEV": null,
+    "status": "NOT_OBSERVED"
+  },
+  "dssat48_inp_values": {
+    "LONG": -999.0,
+    "LAT": -99.0,
+    "ELEV": -99.0
+  },
+  "runtime_coordinates": {
+    "LAT": 0.0,
+    "LONG": 0.0,
+    "ELEV": 0.0
+  },
+  "summary_out_coordinates": {
+    "LAT": null,
+    "LONG": null,
+    "ELEV": null
+  },
+  "per_run_evidence": {
+    "historical_control": {
+      "previous_run_id": "historical_control_retry4",
+      "rendered_filex_coordinates": {
+        "LONG": 116.57,
+        "LAT": 36.83,
+        "ELEV": 22.0
+      },
+      "parsed_internal_coordinates": null,
+      "dssat48_inp_field_coordinates": {
+        "LONG": -999.0,
+        "LAT": -99.0,
+        "ELEV": -99.0
+      },
+      "dssat48_inh_field_coordinates": {
+        "LONG": -999.0,
+        "LAT": -99.0,
+        "ELEV": -99.0
+      },
+      "runtime_coordinates": {
+        "LAT": 0.0,
+        "LONG": 0.0,
+        "ELEV": 0.0
+      },
+      "summary_out_coordinates": {
+        "LAT": null,
+        "LONG": null,
+        "ELEV": null
+      },
+      "coordinate_read_warning_counts": {
+        "LAT": 1,
+        "LONG": 1,
+        "ELEV": 1
+      },
+      "coordinate_transfer_warning_counts": {
+        "LAT": 3,
+        "LONG": 3,
+        "ELEV": 3
+      },
+      "noncoordinate_baseline_warning_events": 2,
+      "dssat48_inp_line": 34,
+      "warning_file": "results\\yc_wgen_cli_pilot\\003_06_06\\crop_smoke\\historical_control_retry4\\runtime_snapshot\\WARNING.OUT"
+    },
+    "seed_101": {
+      "previous_run_id": "seed_101",
+      "rendered_filex_coordinates": {
+        "LONG": 116.57,
+        "LAT": 36.83,
+        "ELEV": 22.0
+      },
+      "parsed_internal_coordinates": null,
+      "dssat48_inp_field_coordinates": {
+        "LONG": -999.0,
+        "LAT": -99.0,
+        "ELEV": -99.0
+      },
+      "dssat48_inh_field_coordinates": {
+        "LONG": -999.0,
+        "LAT": -99.0,
+        "ELEV": -99.0
+      },
+      "runtime_coordinates": {
+        "LAT": 0.0,
+        "LONG": 0.0,
+        "ELEV": 0.0
+      },
+      "summary_out_coordinates": {
+        "LAT": null,
+        "LONG": null,
+        "ELEV": null
+      },
+      "coordinate_read_warning_counts": {
+        "LAT": 1,
+        "LONG": 1,
+        "ELEV": 1
+      },
+      "coordinate_transfer_warning_counts": {
+        "LAT": 3,
+        "LONG": 3,
+        "ELEV": 3
+      },
+      "noncoordinate_baseline_warning_events": 2,
+      "dssat48_inp_line": 34,
+      "warning_file": "results\\yc_wgen_cli_pilot\\003_06_06\\crop_smoke\\seed_101\\runtime_snapshot\\WARNING.OUT"
+    },
+    "seed_104": {
+      "previous_run_id": "seed_104",
+      "rendered_filex_coordinates": {
+        "LONG": 116.57,
+        "LAT": 36.83,
+        "ELEV": 22.0
+      },
+      "parsed_internal_coordinates": null,
+      "dssat48_inp_field_coordinates": {
+        "LONG": -999.0,
+        "LAT": -99.0,
+        "ELEV": -99.0
+      },
+      "dssat48_inh_field_coordinates": {
+        "LONG": -999.0,
+        "LAT": -99.0,
+        "ELEV": -99.0
+      },
+      "runtime_coordinates": {
+        "LAT": 0.0,
+        "LONG": 0.0,
+        "ELEV": 0.0
+      },
+      "summary_out_coordinates": {
+        "LAT": null,
+        "LONG": null,
+        "ELEV": null
+      },
+      "coordinate_read_warning_counts": {
+        "LAT": 1,
+        "LONG": 1,
+        "ELEV": 1
+      },
+      "coordinate_transfer_warning_counts": {
+        "LAT": 3,
+        "LONG": 3,
+        "ELEV": 3
+      },
+      "noncoordinate_baseline_warning_events": 2,
+      "dssat48_inp_line": 34,
+      "warning_file": "results\\yc_wgen_cli_pilot\\003_06_06\\crop_smoke\\seed_104\\runtime_snapshot\\WARNING.OUT"
+    }
+  },
+  "root_cause_status": "PARTIALLY_LOCALIZED_SOURCE_LEVEL_UNRESOLVED",
+  "loss_boundary": "between correct rendered FileX and DSSAT48.INP *FIELDS coordinate record"
+}

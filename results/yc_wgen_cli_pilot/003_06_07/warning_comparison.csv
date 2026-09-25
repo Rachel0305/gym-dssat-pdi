@@ -1,0 +1,4 @@
+﻿run_id,before_coordinate_read_events,before_coordinate_transfer_events,before_coordinate_warning_events,before_noncoordinate_baseline_events,before_total_discrete_events,after_coordinate_warning_events,after_noncoordinate_baseline_events,after_total_discrete_events,after_status
+historical_control,3,9,12,2,14,,,,NOT_RUN_BLOCKED_BEFORE_INP_COORDINATE_GATE
+seed_101,3,9,12,2,14,,,,NOT_RUN_BLOCKED_BEFORE_INP_COORDINATE_GATE
+seed_104,3,9,12,2,14,,,,NOT_RUN_BLOCKED_BEFORE_INP_COORDINATE_GATE

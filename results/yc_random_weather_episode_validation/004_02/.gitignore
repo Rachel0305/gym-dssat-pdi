@@ -1,0 +1,6 @@
+/episodes/*/crop_smoke_status.json
+/episodes/*/daily_state.csv
+/episodes/*/runtime_log.txt
+/episodes/*/runtime_snapshot/
+/reproducibility/runs/
+/runtime_tmp/

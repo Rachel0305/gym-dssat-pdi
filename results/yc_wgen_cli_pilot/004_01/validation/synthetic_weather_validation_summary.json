@@ -1,0 +1,17 @@
+{
+  "synthetic_climate_status": "NOT_ASSESSED_BLOCKED_GENERATION_PATH",
+  "engineering_validity": "NOT_ASSESSED",
+  "climate_validity": "NOT_ASSESSED",
+  "synthetic_year_count": 0,
+  "fitting_observed_period": "2004-2013",
+  "independent_observed_period": "2014-2023",
+  "validation_data_used_for_fitting": false,
+  "synthetic_annual_rainfall_mean_mm": null,
+  "rainfall_structure_status": "NOT_RUN",
+  "temperature_status": "NOT_RUN",
+  "srad_status": "NOT_RUN",
+  "cross_correlation_status": "NOT_RUN",
+  "serial_correlation_status": "NOT_RUN",
+  "figures_created": 0,
+  "note": "No synthetic sequence was generated because an accessible, verified official full-year generator path was unavailable. No climate-validity claim is made."
+}

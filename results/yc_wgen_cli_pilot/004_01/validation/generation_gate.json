@@ -1,0 +1,12 @@
+{
+  "gate": "B_full_year_generation",
+  "status": "BLOCKED_GENERATION_PATH",
+  "attempted": false,
+  "reason": "No accessible, verified official full-year DSSAT WGEN generation entry point was found within the project boundary. DSSAT v4.8.0.24 WGEN.for is an internal crop-model daily subroutine; the existing YC seed pilot captures only crop-season fragments (116-120 days). WeatherMan availability/version was previously left unknown because AGENTS.md forbids inspecting outside-project paths.",
+  "crop_season_fragment_used_as_full_year": false,
+  "custom_wgen_generator_written_or_used": false,
+  "runtime_modified": false,
+  "weather_seed_range": null,
+  "synthetic_year_count": 0,
+  "next_gate": "Provide an approved, project-accessible official WeatherMan/WGEN full-year generation path and version evidence; run one full-calendar-year smoke before any ensemble generation."
+}

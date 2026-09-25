@@ -1,0 +1,30 @@
+{
+  "parameter_method_status": "PASS_WITH_NOTE",
+  "parameters_checked": 14,
+  "parameter_month_values_crosschecked": 168,
+  "raw_values_exactly_matching": 168,
+  "cli_serialized_values_explained_by_rounding": 168,
+  "raw_mismatch_count": 0,
+  "unexplained_cli_difference_count": 0,
+  "raw_mismatches": [],
+  "unexplained_cli_differences": [],
+  "fitting_weather": "results/yc_weather_gapfill_finalize/yc_wgen_fitting_weather_2004_2013.csv",
+  "fitting_period": "2004-01-01/2013-12-31",
+  "fitting_days": 3653,
+  "fitting_weather_sha256": "4B8FFE9E881D0A0743921B78B9C0E0EBFB1D2D645C5AA9737948B2B088ED7B34",
+  "frozen_cli_sha256": "65CF134600A5881706A5D435E1A09B276ED92A21FA5ABE2E18AAF63AF1E3A929",
+  "wet_day_rule": "RAIN > 0.0 mm; unchanged",
+  "positive_rain_days": 587,
+  "positive_rain_below_0_254_mm_days": 48,
+  "reference_threshold_note": "Richardson & Wright (1984) prose states >=0.01 inch; WGEN PAR Appendix D code counts RAIN>0.00. Fitting retained the code-aligned rule and did not use validation data.",
+  "runtime_alpha_effective_range": [
+    0.01,
+    0.998
+  ],
+  "fitted_alpha_range": [
+    0.5017348454890204,
+    0.998
+  ],
+  "validation_data_used_for_fitting": false,
+  "cli_or_input_modified": false
+}

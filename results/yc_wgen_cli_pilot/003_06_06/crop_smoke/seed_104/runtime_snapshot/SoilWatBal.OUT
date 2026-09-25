@@ -1,0 +1,32 @@
+*WATER BALANCE OUTPUT FILE
+
+*DSSAT Cropping System Model Ver. 4.8.0.024 -stable  SEP 25, 2026 04:14:10
+
+*RUN   1        : Sim2008                   MZCER048 fileX.MZ    1
+ MODEL          : MZCER048 - Maize
+ EXPERIMENT     : fileX.MZ    CNYC
+ DATA PATH      :
+ TREATMENT  1   : Sim2008                   MZCER048
+  
+
+!     WATER BALANCE PARAMETERS
+!     ========================                 --mm--
+
+!     Soil H20 (start) on Year/day 2008/153    270.00
+!     Soil H20 (final) on Year/day 2008/268    183.02
+!     Effective Irrigation                     120.00
+!     Precipitation                            290.10
+!     Water added with new mulch                 0.00
+!     Drainage                                  71.43
+!     Tiledrain flow                             0.00
+!     Runoff                                    54.03
+!     Mulch evaporation                          0.00
+!     Soil Evaporation                         124.87
+!     Transpiration                            246.75
+!     Potential ET                             514.92
+
+!     Initial mulch water content                0.00
+!     Final mulch water content                  0.00
+
+!     Final Balance                            -0.001
+

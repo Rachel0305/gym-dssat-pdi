@@ -1,0 +1,4 @@
+﻿run_id,weather_seed,planting_date,emergence_date,anthesis_date,anthesis_dap,maturity_date,maturity_dap,harvest_date,season_length_dap_days,phenology_checks_pass
+historical_control_retry4,,2008-06-18,2008-06-23,2008-08-14,57,2008-10-01,105,2008-10-01,105,True
+seed_101,101,2008-06-18,2008-06-23,2008-08-14,57,2008-09-28,102,2008-09-28,102,True
+seed_104,104,2008-06-18,2008-06-26,2008-08-11,54,2008-09-24,98,2008-09-24,98,True

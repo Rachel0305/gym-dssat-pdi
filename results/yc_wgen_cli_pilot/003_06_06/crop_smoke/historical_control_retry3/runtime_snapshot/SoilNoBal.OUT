@@ -1,0 +1,29 @@
+*SOIL ORGANIC N BALANCE
+
+*DSSAT Cropping System Model Ver. 4.8.0.024 -stable  SEP 25, 2026 04:10:07
+
+*RUN   1        : Sim2008                   MZCER048 fileX.MZ    1
+ MODEL          : MZCER048 - Maize
+ EXPERIMENT     : fileX.MZ    CNYC
+ DATA PATH      :
+ TREATMENT  1   : Sim2008                   MZCER048
+  
+
+
+!                                        INITIAL Year/Doy      FINAL Year/Doy
+!                                                2008/153            2008/275
+!SOIL N BALANCE                                 -----------kg N/ha-----------
+
+!   Soil Humus N                                  6507.33             6464.17
+!   Soil Litter N                                    8.90                2.69
+!   N in Surface Residue                             0.00                0.00
+
+!   Added to / Removed from Soil:
+!   N in Harvest Residues from Previous Crop         0.00
+!   N from Organic Applications                      0.00
+!   N from senesced plant matter                     2.39
+!   N immobilized                                    0.32
+!   N mineralized                                                       52.07
+
+!   Total N balance                               6518.93             6518.93
+!   Balance                                                             0.000

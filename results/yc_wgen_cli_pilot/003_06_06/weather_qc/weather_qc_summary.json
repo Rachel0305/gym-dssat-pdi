@@ -1,0 +1,305 @@
+{
+  "status": "PASS_WITH_NOTES",
+  "scope": "YC only; WGEN seeds 101-105; frozen 2004-2013 training weather only; no validation weather used",
+  "corrected_cli_sha256": "65CF134600A5881706A5D435E1A09B276ED92A21FA5ABE2E18AAF63AF1E3A929",
+  "corrected_cli_hash_verified": true,
+  "frozen_train_weather_sha256": "4B8FFE9E881D0A0743921B78B9C0E0EBFB1D2D645C5AA9737948B2B088ED7B34",
+  "frozen_train_weather_hash_verified": true,
+  "historical_train_years": [
+    2004,
+    2013
+  ],
+  "common_window_start": "2008-06-01",
+  "common_window_end": "2008-09-24",
+  "common_window_days": 116,
+  "leap_day_handling": "Common window starts in June; no leap day in window. Match exact month/day for each 2004-2013 historical year.",
+  "wet_day_definition": "RAIN > 0.0 mm",
+  "physical_issue_count": 0,
+  "physical_issues": [],
+  "unique_seed_sequences": 5,
+  "seed_sequence_hashes": {
+    "101": "d4dc2d04c3adbfe123ef837cd004dd0f07abb7dd690ca08a57513b5665d1fe62",
+    "102": "78c4940b2a160194695e654165ebf624c984c3708a300806569e8750a5c9d736",
+    "103": "7e5706d8cb6e4a5b4eaab1740a943a891c3d9dbdda3c7d74de80a8465df2c5d2",
+    "104": "9fd6ef41a3171bb9480f8b45c848fe81f1a09ab4769931b4f2a6d3df775a5490",
+    "105": "1a8800394c853596c0a02073074faf9e1d1bd3c78290407cab9e5ee247be8353"
+  },
+  "historical_distribution_overlap_counts": {
+    "rain_total_mm": {
+      "within_historical_annual_min_max": 5,
+      "seed_count": 5,
+      "historical_min": 289.69999999999993,
+      "historical_max": 682.5999999999999
+    },
+    "wet_days": {
+      "within_historical_annual_min_max": 4,
+      "seed_count": 5,
+      "historical_min": 23,
+      "historical_max": 45
+    },
+    "longest_dry_spell_days": {
+      "within_historical_annual_min_max": 5,
+      "seed_count": 5,
+      "historical_min": 7,
+      "historical_max": 42
+    },
+    "mean_tmax_c": {
+      "within_historical_annual_min_max": 4,
+      "seed_count": 5,
+      "historical_min": 28.972068965517245,
+      "historical_max": 31.65258620689655
+    },
+    "mean_tmin_c": {
+      "within_historical_annual_min_max": 5,
+      "seed_count": 5,
+      "historical_min": 19.336206896551722,
+      "historical_max": 21.199137931034482
+    },
+    "mean_srad_mj_m2_d": {
+      "within_historical_annual_min_max": 5,
+      "seed_count": 5,
+      "historical_min": 15.865530595751231,
+      "historical_max": 17.40237068965517
+    }
+  },
+  "systematic_bias_detected": "NO_OBVIOUS_SHARED_CENTRAL_TENDENCY_SHIFT; see descriptive warm-tail and dry-seed notes",
+  "interpretive_notes": [
+    "1/5 seeds exceed the highest 2004-2013 annual count of days above pooled train TMAX P90 (24 days); descriptive warm-tail note, not an acceptance threshold.",
+    "Seed 104 has 22 wet days, one below the 2004-2013 same-window minimum (23); its common-window rain total remains within the historical annual min-max."
+  ],
+  "train_hot_day_diagnostic": {
+    "pooled_train_tmax_p90_c": 35.4,
+    "historical_max_annual_exceedance_days": 24,
+    "wgen_exceedance_days_by_seed": {
+      "101": 15,
+      "102": 11,
+      "103": 17,
+      "104": 29,
+      "105": 17
+    },
+    "seeds_above_historical_max_annual_exceedance_days": 1,
+    "use": "descriptive only; not used for WGEN fitting or acceptance-threshold tuning"
+  },
+  "common_window_rainfall_by_seed": {
+    "101": {
+      "window_days": 116,
+      "wet_days": 36,
+      "wet_day_fraction": 0.3103448275862069,
+      "rain_total_mm": 507.734089143508,
+      "mean_rain_on_wet_day_mm": 14.103724698430778,
+      "median_rain_on_wet_day_mm": 8.863548755644999,
+      "p90_daily_rain_mm": 17.496902465799998,
+      "p95_daily_rain_mm": 26.653186798125,
+      "max_daily_rain_mm": 56.6392974854,
+      "longest_dry_spell_days": 14,
+      "longest_wet_spell_days": 5
+    },
+    "102": {
+      "window_days": 116,
+      "wet_days": 35,
+      "wet_day_fraction": 0.3017241379310345,
+      "rain_total_mm": 509.51317215703904,
+      "mean_rain_on_wet_day_mm": 14.557519204486828,
+      "median_rain_on_wet_day_mm": 8.24557781219,
+      "p90_daily_rain_mm": 17.5668373108,
+      "p95_daily_rain_mm": 30.599497318250002,
+      "max_daily_rain_mm": 62.7053184509,
+      "longest_dry_spell_days": 21,
+      "longest_wet_spell_days": 6
+    },
+    "103": {
+      "window_days": 116,
+      "wet_days": 37,
+      "wet_day_fraction": 0.31896551724137934,
+      "rain_total_mm": 466.44015163920005,
+      "mean_rain_on_wet_day_mm": 12.606490584843243,
+      "median_rain_on_wet_day_mm": 4.65891075134,
+      "p90_daily_rain_mm": 14.31508255005,
+      "p95_daily_rain_mm": 24.050432682049998,
+      "max_daily_rain_mm": 73.8980407715,
+      "longest_dry_spell_days": 12,
+      "longest_wet_spell_days": 7
+    },
+    "104": {
+      "window_days": 116,
+      "wet_days": 22,
+      "wet_day_fraction": 0.1896551724137931,
+      "rain_total_mm": 290.09667986639795,
+      "mean_rain_on_wet_day_mm": 13.18621272119991,
+      "median_rain_on_wet_day_mm": 9.866016387944999,
+      "p90_daily_rain_mm": 8.28292751312,
+      "p95_daily_rain_mm": 16.286799430875,
+      "max_daily_rain_mm": 51.0497360229,
+      "longest_dry_spell_days": 19,
+      "longest_wet_spell_days": 5
+    },
+    "105": {
+      "window_days": 116,
+      "wet_days": 30,
+      "wet_day_fraction": 0.25862068965517243,
+      "rain_total_mm": 483.08233547961896,
+      "mean_rain_on_wet_day_mm": 16.1027445159873,
+      "median_rain_on_wet_day_mm": 6.439371347425,
+      "p90_daily_rain_mm": 10.5467090607,
+      "p95_daily_rain_mm": 19.604876518250002,
+      "max_daily_rain_mm": 97.3187637329,
+      "longest_dry_spell_days": 12,
+      "longest_wet_spell_days": 7
+    }
+  },
+  "common_window_rainfall_by_historical_year": {
+    "2004": {
+      "window_days": 116,
+      "wet_days": 45,
+      "wet_day_fraction": 0.3879310344827586,
+      "rain_total_mm": 652.1000000000001,
+      "mean_rain_on_wet_day_mm": 14.491111111111111,
+      "median_rain_on_wet_day_mm": 7.1000000000000005,
+      "p90_daily_rain_mm": 18.7,
+      "p95_daily_rain_mm": 26.700000000000003,
+      "max_daily_rain_mm": 89.6,
+      "longest_dry_spell_days": 10,
+      "longest_wet_spell_days": 5
+    },
+    "2005": {
+      "window_days": 116,
+      "wet_days": 28,
+      "wet_day_fraction": 0.2413793103448276,
+      "rain_total_mm": 545.2000000000002,
+      "mean_rain_on_wet_day_mm": 19.47142857142857,
+      "median_rain_on_wet_day_mm": 8.2,
+      "p90_daily_rain_mm": 11.850000000000001,
+      "p95_daily_rain_mm": 29.6,
+      "max_daily_rain_mm": 97.8,
+      "longest_dry_spell_days": 22,
+      "longest_wet_spell_days": 5
+    },
+    "2006": {
+      "window_days": 116,
+      "wet_days": 26,
+      "wet_day_fraction": 0.22413793103448276,
+      "rain_total_mm": 289.69999999999993,
+      "mean_rain_on_wet_day_mm": 11.142307692307693,
+      "median_rain_on_wet_day_mm": 7.85,
+      "p90_daily_rain_mm": 9.55,
+      "p95_daily_rain_mm": 17.049999999999997,
+      "max_daily_rain_mm": 43.2,
+      "longest_dry_spell_days": 18,
+      "longest_wet_spell_days": 5
+    },
+    "2007": {
+      "window_days": 116,
+      "wet_days": 30,
+      "wet_day_fraction": 0.25862068965517243,
+      "rain_total_mm": 362.8,
+      "mean_rain_on_wet_day_mm": 12.093333333333334,
+      "median_rain_on_wet_day_mm": 3.6,
+      "p90_daily_rain_mm": 5.9,
+      "p95_daily_rain_mm": 20.700000000000003,
+      "max_daily_rain_mm": 80.8,
+      "longest_dry_spell_days": 18,
+      "longest_wet_spell_days": 3
+    },
+    "2008": {
+      "window_days": 116,
+      "wet_days": 32,
+      "wet_day_fraction": 0.27586206896551724,
+      "rain_total_mm": 374.00000000000006,
+      "mean_rain_on_wet_day_mm": 11.6875,
+      "median_rain_on_wet_day_mm": 4.5,
+      "p90_daily_rain_mm": 7.25,
+      "p95_daily_rain_mm": 23.35,
+      "max_daily_rain_mm": 62.9,
+      "longest_dry_spell_days": 9,
+      "longest_wet_spell_days": 5
+    },
+    "2009": {
+      "window_days": 116,
+      "wet_days": 39,
+      "wet_day_fraction": 0.33620689655172414,
+      "rain_total_mm": 551.9000000000001,
+      "mean_rain_on_wet_day_mm": 14.15128205128205,
+      "median_rain_on_wet_day_mm": 2.3,
+      "p90_daily_rain_mm": 8.8,
+      "p95_daily_rain_mm": 32.15,
+      "max_daily_rain_mm": 92.3,
+      "longest_dry_spell_days": 7,
+      "longest_wet_spell_days": 3
+    },
+    "2010": {
+      "window_days": 116,
+      "wet_days": 35,
+      "wet_day_fraction": 0.3017241379310345,
+      "rain_total_mm": 682.5999999999999,
+      "mean_rain_on_wet_day_mm": 19.502857142857142,
+      "median_rain_on_wet_day_mm": 7.6,
+      "p90_daily_rain_mm": 12.55,
+      "p95_daily_rain_mm": 22.675000000000004,
+      "max_daily_rain_mm": 160.0,
+      "longest_dry_spell_days": 16,
+      "longest_wet_spell_days": 5
+    },
+    "2011": {
+      "window_days": 116,
+      "wet_days": 28,
+      "wet_day_fraction": 0.2413793103448276,
+      "rain_total_mm": 427.40000000000003,
+      "mean_rain_on_wet_day_mm": 15.264285714285714,
+      "median_rain_on_wet_day_mm": 8.35,
+      "p90_daily_rain_mm": 11.8,
+      "p95_daily_rain_mm": 28.475,
+      "max_daily_rain_mm": 77.6,
+      "longest_dry_spell_days": 21,
+      "longest_wet_spell_days": 5
+    },
+    "2012": {
+      "window_days": 116,
+      "wet_days": 23,
+      "wet_day_fraction": 0.19827586206896552,
+      "rain_total_mm": 470.59999999999997,
+      "mean_rain_on_wet_day_mm": 20.460869565217394,
+      "median_rain_on_wet_day_mm": 7.5,
+      "p90_daily_rain_mm": 5.949999999999999,
+      "p95_daily_rain_mm": 26.95,
+      "max_daily_rain_mm": 106.8,
+      "longest_dry_spell_days": 14,
+      "longest_wet_spell_days": 3
+    },
+    "2013": {
+      "window_days": 116,
+      "wet_days": 24,
+      "wet_day_fraction": 0.20689655172413793,
+      "rain_total_mm": 578.5,
+      "mean_rain_on_wet_day_mm": 24.104166666666668,
+      "median_rain_on_wet_day_mm": 17.1,
+      "p90_daily_rain_mm": 17.1,
+      "p95_daily_rain_mm": 38.375,
+      "max_daily_rain_mm": 84.2,
+      "longest_dry_spell_days": 42,
+      "longest_wet_spell_days": 4
+    }
+  },
+  "train_p90_tmax_c": 35.4,
+  "train_p05_tmin_c": 13.118999999999998,
+  "historical_2008_wth": {
+    "wth_file": "my_data/CNYC0801.WTH",
+    "sha256": "39B814537927E012B7EB04A238F88DE9DF8C92C011FDB9854F0B7A121E3B7003",
+    "start_date": "2008-01-01",
+    "end_date": "2008-12-31",
+    "rows": 366,
+    "historical_2008_same_window_present": true
+  },
+  "full_period_cumulative_totals_comparable": false,
+  "validation_weather_used_for_fitting": false,
+  "wgen_refit": false,
+  "wet_day_definition_changed": false,
+  "figures": [
+    "results/yc_wgen_cli_pilot/003_06_06/weather_qc/figures/common_window_rain_total.png",
+    "results/yc_wgen_cli_pilot/003_06_06/weather_qc/figures/longest_dry_spell.png",
+    "results/yc_wgen_cli_pilot/003_06_06/weather_qc/figures/monthly_rainfall.png",
+    "results/yc_wgen_cli_pilot/003_06_06/weather_qc/figures/srad_distribution.png",
+    "results/yc_wgen_cli_pilot/003_06_06/weather_qc/figures/tmax_distribution.png",
+    "results/yc_wgen_cli_pilot/003_06_06/weather_qc/figures/tmin_distribution.png",
+    "results/yc_wgen_cli_pilot/003_06_06/weather_qc/figures/wet_day_counts.png"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "scope": "YC 2008 treatment 1 only; random weather seeds 101 and 104 plus one historical 2008 measured-weather control",
+  "source_filex": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013/YC/CNYC0801.MZX",
+  "source_filex_sha256": "793EB12137B05F1A5F4730EB21A3281AF65CDBBF58A2698338AE630224A5406B",
+  "isolated_filex_template": "results/yc_wgen_cli_pilot/003_06_06/crop_smoke/configs/CNYC0801_crop_template_v2.jinja2",
+  "isolated_filex_template_sha256": "92FA9FF8FC99DD922EBA79CF40BB033823B15292CDAD9BB4AA877346B11A6FB8",
+  "template_change": "Only treatment 1 retained, WTHER rendered by wrapper, and FileX XCRD/YCRD/ELEV replaced in their original fixed-width column positions using existing YC station metadata; PHOTO L left unchanged.",
+  "coordinate_source": "my_data/CNYC0801.WTH station header and task-provided YC metadata",
+  "station_metadata": {
+    "latitude": 36.83,
+    "longitude": 116.57,
+    "elevation_m": 22.0
+  },
+  "cultivar_file": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013/YC/MZCER048.CUL",
+  "cultivar_sha256": "7810190A042B2FE3C53C54D43BF8080AE02DD3D1EDFEC202BF572E130761403C",
+  "cultivar_code": "MZ/ZD0985",
+  "soil_file": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013/YC/SOIL.SOL",
+  "soil_sha256": "3C303D68DDA19BA6F40573A3BBA5464E40230DDD60C6C746F0EA6BBFEEE9E644",
+  "soil_profile": "YC99001200",
+  "soil_missing_fields_left_unchanged": [
+    "SLCF/STONES",
+    "SADC/ADCOEF"
+  ],
+  "corrected_cli_sha256": "65CF134600A5881706A5D435E1A09B276ED92A21FA5ABE2E18AAF63AF1E3A929",
+  "train_weather_sha256": "4B8FFE9E881D0A0743921B78B9C0E0EBFB1D2D645C5AA9737948B2B088ED7B34",
+  "historical_weather_file": "my_data/CNYC0801.WTH",
+  "historical_weather_sha256": "39B814537927E012B7EB04A238F88DE9DF8C92C011FDB9854F0B7A121E3B7003",
+  "historical_control_mode": "random_weather=False; WTHER=M; byte-identical historical WTH copied as auxiliary input",
+  "random_weather_mode": "random_weather=True; WTHER=W; corrected CLI hash checked at runtime",
+  "management": "YC CNYC 2008 treatment 1; unchanged source management; constant zero Gym action as in WGEN pilot",
+  "runtime": "DSSAT 4.8.0.024 via existing project Docker environment",
+  "run_order": [
+    "historical_control_retry2"
+  ],
+  "validation_weather_used": false,
+  "wet_day_definition_changed": false,
+  "wgen_refit": false,
+  "ppo_training": false,
+  "other_sites_modified": false
+}

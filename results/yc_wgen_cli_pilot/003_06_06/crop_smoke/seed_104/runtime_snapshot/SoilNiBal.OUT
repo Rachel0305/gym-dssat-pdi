@@ -1,0 +1,39 @@
+*SOIL INORGANIC N BALANCE
+
+*DSSAT Cropping System Model Ver. 4.8.0.024 -stable  SEP 25, 2026 04:14:10
+
+*RUN   1        : Sim2008                   MZCER048 fileX.MZ    1
+ MODEL          : MZCER048 - Maize
+ EXPERIMENT     : fileX.MZ    CNYC
+ DATA PATH      :
+ TREATMENT  1   : Sim2008                   MZCER048
+  
+
+
+!SOIL INORGANIC N BALANCE                         Initial               Final
+!                                                Year/Doy            Year/Doy
+!                                                2008/153            2008/268
+!                                               (kg[N]/ha)          (kg[N]/ha)
+! Soil N state variables:
+!   Soil NO3                                        85.71               43.18
+!   Soil NH4                                        51.96                0.37
+!   Soil Urea                                        0.00                0.00
+!   Soil N gases                                     0.00               12.90
+!   Unreleased fert N                                                    0.00
+
+! N additions:
+!   Fertilizer N                                   303.00
+!   Mineralized N                                   54.62
+
+! N subtractions:
+!   N immobilized                                                        0.31
+!   N leached                                                           32.36
+!   N loss to tile drainage                                              0.00
+!   N Uptake From Soil                                                 204.51
+!   NH3 loss                                                           177.15
+!   N2O loss                                                             1.24
+!   N2 loss                                                             22.88
+!   NO loss                                                              0.39
+
+!   Total N balance                                495.29              495.29
+!   Balance                                                             0.000

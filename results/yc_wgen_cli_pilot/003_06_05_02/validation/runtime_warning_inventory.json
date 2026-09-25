@@ -1,0 +1,102 @@
+{
+  "warning_file_present_runs": [
+    "seed_101_run_a",
+    "seed_101_run_b",
+    "seed_102",
+    "seed_103",
+    "seed_104",
+    "seed_105"
+  ],
+  "unique_warning_lines": {
+    "Photosynthesis method (PHOTO in FILEX) has been changed": {
+      "run_ids": [
+        "seed_101_run_a",
+        "seed_101_run_b",
+        "seed_102",
+        "seed_103",
+        "seed_104",
+        "seed_105"
+      ],
+      "count": 6
+    },
+    "Error reading latitude from experimental file": {
+      "run_ids": [
+        "seed_101_run_a",
+        "seed_101_run_b",
+        "seed_102",
+        "seed_103",
+        "seed_104",
+        "seed_105"
+      ],
+      "count": 6
+    },
+    "Error reading longitude from experimental file": {
+      "run_ids": [
+        "seed_101_run_a",
+        "seed_101_run_b",
+        "seed_102",
+        "seed_103",
+        "seed_104",
+        "seed_105"
+      ],
+      "count": 6
+    },
+    "Error reading elevation from experimental file": {
+      "run_ids": [
+        "seed_101_run_a",
+        "seed_101_run_b",
+        "seed_102",
+        "seed_103",
+        "seed_104",
+        "seed_105"
+      ],
+      "count": 6
+    },
+    "Error transferring variable: CYCRDin FIELD": {
+      "run_ids": [
+        "seed_101_run_a",
+        "seed_101_run_b",
+        "seed_102",
+        "seed_103",
+        "seed_104",
+        "seed_105"
+      ],
+      "count": 18
+    },
+    "Value not saved! Errors may result.": {
+      "run_ids": [
+        "seed_101_run_a",
+        "seed_101_run_b",
+        "seed_102",
+        "seed_103",
+        "seed_104",
+        "seed_105"
+      ],
+      "count": 36
+    },
+    "Error transferring variable: CXCRDin FIELD": {
+      "run_ids": [
+        "seed_101_run_a",
+        "seed_101_run_b",
+        "seed_102",
+        "seed_103",
+        "seed_104",
+        "seed_105"
+      ],
+      "count": 18
+    },
+    "Error transferring variable: CELEVin FIELD": {
+      "run_ids": [
+        "seed_101_run_a",
+        "seed_101_run_b",
+        "seed_102",
+        "seed_103",
+        "seed_104",
+        "seed_105"
+      ],
+      "count": 18
+    }
+  },
+  "warnings_are_nonfatal_for_this_wgen_gate": true,
+  "follow_up": "在后续单季 crop-output smoke 前检查缺失的纬度/经度/海拔字段与 DSSAT cultivar-input transfer 警告对农艺输出的影响。"
+}

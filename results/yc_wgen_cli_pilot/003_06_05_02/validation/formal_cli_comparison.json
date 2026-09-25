@@ -1,0 +1,20 @@
+{
+  "formal_cli": "results\\yc_wgen_cli_pilot\\003_06_05_02\\final\\CNYC.CLI",
+  "formal_sha256": "65CF134600A5881706A5D435E1A09B276ED92A21FA5ABE2E18AAF63AF1E3A929",
+  "parsefix_candidate": "results\\yc_wgen_cli_pilot\\003_06_05_01\\candidate\\CNYC_parsefix_01.CLI",
+  "parsefix_sha256": "65CF134600A5881706A5D435E1A09B276ED92A21FA5ABE2E18AAF63AF1E3A929",
+  "formal_cli_matches_parsefix_candidate": true,
+  "wgen_month_count_formal": 12,
+  "wgen_month_count_parsefix": 12,
+  "wgen_parameter_values_identical": true,
+  "wgen_serialization_equivalent": true,
+  "schema_status": "PASS",
+  "differences_by_text_line": [],
+  "difference_explanation": "No byte or line differences; formal generation reproduces the parse-fixed candidate exactly.",
+  "frozen_weather_sha256": "4B8FFE9E881D0A0743921B78B9C0E0EBFB1D2D645C5AA9737948B2B088ED7B34",
+  "frozen_weather_row_count": 3653,
+  "frozen_weather_date_range": [
+    "2004-01-01",
+    "2013-12-31"
+  ]
+}

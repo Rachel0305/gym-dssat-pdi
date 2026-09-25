@@ -1,0 +1,49 @@
+{
+  "seed": 101,
+  "run_a": "seed_101_run_a",
+  "run_b": "seed_101_run_b",
+  "run_a_hash": "D9CD9926AE4382BA24783E498A928ED25F5EA92F1C60D1B3C7034448AAE5C29D",
+  "run_b_hash": "D9CD9926AE4382BA24783E498A928ED25F5EA92F1C60D1B3C7034448AAE5C29D",
+  "identical": true,
+  "row_count_run_a": 120,
+  "row_count_run_b": 120,
+  "variables_compared": [
+    "DATE",
+    "DOY",
+    "RAIN",
+    "SRAD",
+    "TMAX",
+    "TMIN"
+  ],
+  "first_difference_if_any": null,
+  "sequence_comparison": {
+    "identical_full_sequence_including_date_doy_and_weather": true,
+    "left_row_count": 120,
+    "right_row_count": 120,
+    "common_date_count": 120,
+    "left_only_dates": [],
+    "right_only_dates": [],
+    "field_differences": {
+      "RAIN": {
+        "differing_rows_on_common_dates": 0,
+        "compared_common_dates": 120,
+        "first_difference": null
+      },
+      "SRAD": {
+        "differing_rows_on_common_dates": 0,
+        "compared_common_dates": 120,
+        "first_difference": null
+      },
+      "TMAX": {
+        "differing_rows_on_common_dates": 0,
+        "compared_common_dates": 120,
+        "first_difference": null
+      },
+      "TMIN": {
+        "differing_rows_on_common_dates": 0,
+        "compared_common_dates": 120,
+        "first_difference": null
+      }
+    }
+  }
+}

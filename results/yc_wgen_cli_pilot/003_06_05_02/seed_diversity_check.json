@@ -1,0 +1,653 @@
+{
+  "weather_sequence_hashes": {
+    "seed_101_run_a": "D9CD9926AE4382BA24783E498A928ED25F5EA92F1C60D1B3C7034448AAE5C29D",
+    "seed_102": "240C34531DC83727D010317BC006BD44DE267418896AD237085A03F103C4AA43",
+    "seed_103": "DC5C2EAA31F9930CAB3EC3312AF9AF95315D8ACC57A4AA1BD5BD15CB248E20C2",
+    "seed_104": "7E6D92914D38E0C6B4C9A90F9FA4438F8DFA51AFC7963AA64F147A29FEE74E67",
+    "seed_105": "94E881EBFFFFA8224F5E1BF386E5589C74CAB3CB3EF8A9B52F422C3B569B3405"
+  },
+  "pairwise_comparisons": [
+    {
+      "left_run": "seed_101_run_a",
+      "right_run": "seed_102",
+      "left_seed": 101,
+      "right_seed": 102,
+      "left_hash": "D9CD9926AE4382BA24783E498A928ED25F5EA92F1C60D1B3C7034448AAE5C29D",
+      "right_hash": "240C34531DC83727D010317BC006BD44DE267418896AD237085A03F103C4AA43",
+      "identical": false,
+      "different_rows_by_field": {
+        "RAIN": 56,
+        "SRAD": 117,
+        "TMAX": 117,
+        "TMIN": 117
+      },
+      "comparison": {
+        "identical_full_sequence_including_date_doy_and_weather": false,
+        "left_row_count": 120,
+        "right_row_count": 117,
+        "common_date_count": 117,
+        "left_only_dates": [
+          "2008-09-26",
+          "2008-09-27",
+          "2008-09-28"
+        ],
+        "right_only_dates": [],
+        "field_differences": {
+          "RAIN": {
+            "differing_rows_on_common_dates": 56,
+            "compared_common_dates": 117,
+            "first_difference": {
+              "date": "2008-06-02",
+              "left": 0.0,
+              "right": 0.385543853045
+            }
+          },
+          "SRAD": {
+            "differing_rows_on_common_dates": 117,
+            "compared_common_dates": 117,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 25.8682746887,
+              "right": 27.6479911804
+            }
+          },
+          "TMAX": {
+            "differing_rows_on_common_dates": 117,
+            "compared_common_dates": 117,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 33.5752410889,
+              "right": 33.5724639893
+            }
+          },
+          "TMIN": {
+            "differing_rows_on_common_dates": 117,
+            "compared_common_dates": 117,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 21.3598651886,
+              "right": 21.2871665955
+            }
+          }
+        }
+      }
+    },
+    {
+      "left_run": "seed_101_run_a",
+      "right_run": "seed_103",
+      "left_seed": 101,
+      "right_seed": 103,
+      "left_hash": "D9CD9926AE4382BA24783E498A928ED25F5EA92F1C60D1B3C7034448AAE5C29D",
+      "right_hash": "DC5C2EAA31F9930CAB3EC3312AF9AF95315D8ACC57A4AA1BD5BD15CB248E20C2",
+      "identical": false,
+      "different_rows_by_field": {
+        "RAIN": 60,
+        "SRAD": 117,
+        "TMAX": 117,
+        "TMIN": 117
+      },
+      "comparison": {
+        "identical_full_sequence_including_date_doy_and_weather": false,
+        "left_row_count": 120,
+        "right_row_count": 117,
+        "common_date_count": 117,
+        "left_only_dates": [
+          "2008-09-26",
+          "2008-09-27",
+          "2008-09-28"
+        ],
+        "right_only_dates": [],
+        "field_differences": {
+          "RAIN": {
+            "differing_rows_on_common_dates": 60,
+            "compared_common_dates": 117,
+            "first_difference": {
+              "date": "2008-06-03",
+              "left": 0.0,
+              "right": 0.145937934518
+            }
+          },
+          "SRAD": {
+            "differing_rows_on_common_dates": 117,
+            "compared_common_dates": 117,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 25.8682746887,
+              "right": 28.6107177734
+            }
+          },
+          "TMAX": {
+            "differing_rows_on_common_dates": 117,
+            "compared_common_dates": 117,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 33.5752410889,
+              "right": 33.5696792603
+            }
+          },
+          "TMIN": {
+            "differing_rows_on_common_dates": 117,
+            "compared_common_dates": 117,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 21.3598651886,
+              "right": 21.2128639221
+            }
+          }
+        }
+      }
+    },
+    {
+      "left_run": "seed_101_run_a",
+      "right_run": "seed_104",
+      "left_seed": 101,
+      "right_seed": 104,
+      "left_hash": "D9CD9926AE4382BA24783E498A928ED25F5EA92F1C60D1B3C7034448AAE5C29D",
+      "right_hash": "7E6D92914D38E0C6B4C9A90F9FA4438F8DFA51AFC7963AA64F147A29FEE74E67",
+      "identical": false,
+      "different_rows_by_field": {
+        "RAIN": 50,
+        "SRAD": 116,
+        "TMAX": 116,
+        "TMIN": 116
+      },
+      "comparison": {
+        "identical_full_sequence_including_date_doy_and_weather": false,
+        "left_row_count": 120,
+        "right_row_count": 116,
+        "common_date_count": 116,
+        "left_only_dates": [
+          "2008-09-25",
+          "2008-09-26",
+          "2008-09-27",
+          "2008-09-28"
+        ],
+        "right_only_dates": [],
+        "field_differences": {
+          "RAIN": {
+            "differing_rows_on_common_dates": 50,
+            "compared_common_dates": 116,
+            "first_difference": {
+              "date": "2008-06-09",
+              "left": 0.18056152761,
+              "right": 0.0
+            }
+          },
+          "SRAD": {
+            "differing_rows_on_common_dates": 116,
+            "compared_common_dates": 116,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 25.8682746887,
+              "right": 28.7064990997
+            }
+          },
+          "TMAX": {
+            "differing_rows_on_common_dates": 116,
+            "compared_common_dates": 116,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 33.5752410889,
+              "right": 33.5668907166
+            }
+          },
+          "TMIN": {
+            "differing_rows_on_common_dates": 116,
+            "compared_common_dates": 116,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 21.3598651886,
+              "right": 21.137008667
+            }
+          }
+        }
+      }
+    },
+    {
+      "left_run": "seed_101_run_a",
+      "right_run": "seed_105",
+      "left_seed": 101,
+      "right_seed": 105,
+      "left_hash": "D9CD9926AE4382BA24783E498A928ED25F5EA92F1C60D1B3C7034448AAE5C29D",
+      "right_hash": "94E881EBFFFFA8224F5E1BF386E5589C74CAB3CB3EF8A9B52F422C3B569B3405",
+      "identical": false,
+      "different_rows_by_field": {
+        "RAIN": 58,
+        "SRAD": 118,
+        "TMAX": 118,
+        "TMIN": 118
+      },
+      "comparison": {
+        "identical_full_sequence_including_date_doy_and_weather": false,
+        "left_row_count": 120,
+        "right_row_count": 118,
+        "common_date_count": 118,
+        "left_only_dates": [
+          "2008-09-27",
+          "2008-09-28"
+        ],
+        "right_only_dates": [],
+        "field_differences": {
+          "RAIN": {
+            "differing_rows_on_common_dates": 58,
+            "compared_common_dates": 118,
+            "first_difference": {
+              "date": "2008-06-04",
+              "left": 0.0,
+              "right": 11.320889473
+            }
+          },
+          "SRAD": {
+            "differing_rows_on_common_dates": 118,
+            "compared_common_dates": 118,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 25.8682746887,
+              "right": 27.9710922241
+            }
+          },
+          "TMAX": {
+            "differing_rows_on_common_dates": 118,
+            "compared_common_dates": 118,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 33.5752410889,
+              "right": 33.5640983582
+            }
+          },
+          "TMIN": {
+            "differing_rows_on_common_dates": 118,
+            "compared_common_dates": 118,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 21.3598651886,
+              "right": 21.0596542358
+            }
+          }
+        }
+      }
+    },
+    {
+      "left_run": "seed_102",
+      "right_run": "seed_103",
+      "left_seed": 102,
+      "right_seed": 103,
+      "left_hash": "240C34531DC83727D010317BC006BD44DE267418896AD237085A03F103C4AA43",
+      "right_hash": "DC5C2EAA31F9930CAB3EC3312AF9AF95315D8ACC57A4AA1BD5BD15CB248E20C2",
+      "identical": false,
+      "different_rows_by_field": {
+        "RAIN": 61,
+        "SRAD": 117,
+        "TMAX": 117,
+        "TMIN": 117
+      },
+      "comparison": {
+        "identical_full_sequence_including_date_doy_and_weather": false,
+        "left_row_count": 117,
+        "right_row_count": 117,
+        "common_date_count": 117,
+        "left_only_dates": [],
+        "right_only_dates": [],
+        "field_differences": {
+          "RAIN": {
+            "differing_rows_on_common_dates": 61,
+            "compared_common_dates": 117,
+            "first_difference": {
+              "date": "2008-06-02",
+              "left": 0.385543853045,
+              "right": 0.0
+            }
+          },
+          "SRAD": {
+            "differing_rows_on_common_dates": 117,
+            "compared_common_dates": 117,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 27.6479911804,
+              "right": 28.6107177734
+            }
+          },
+          "TMAX": {
+            "differing_rows_on_common_dates": 117,
+            "compared_common_dates": 117,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 33.5724639893,
+              "right": 33.5696792603
+            }
+          },
+          "TMIN": {
+            "differing_rows_on_common_dates": 117,
+            "compared_common_dates": 117,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 21.2871665955,
+              "right": 21.2128639221
+            }
+          }
+        }
+      }
+    },
+    {
+      "left_run": "seed_102",
+      "right_run": "seed_104",
+      "left_seed": 102,
+      "right_seed": 104,
+      "left_hash": "240C34531DC83727D010317BC006BD44DE267418896AD237085A03F103C4AA43",
+      "right_hash": "7E6D92914D38E0C6B4C9A90F9FA4438F8DFA51AFC7963AA64F147A29FEE74E67",
+      "identical": false,
+      "different_rows_by_field": {
+        "RAIN": 51,
+        "SRAD": 115,
+        "TMAX": 116,
+        "TMIN": 116
+      },
+      "comparison": {
+        "identical_full_sequence_including_date_doy_and_weather": false,
+        "left_row_count": 117,
+        "right_row_count": 116,
+        "common_date_count": 116,
+        "left_only_dates": [
+          "2008-09-25"
+        ],
+        "right_only_dates": [],
+        "field_differences": {
+          "RAIN": {
+            "differing_rows_on_common_dates": 51,
+            "compared_common_dates": 116,
+            "first_difference": {
+              "date": "2008-06-02",
+              "left": 0.385543853045,
+              "right": 0.0
+            }
+          },
+          "SRAD": {
+            "differing_rows_on_common_dates": 115,
+            "compared_common_dates": 116,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 27.6479911804,
+              "right": 28.7064990997
+            }
+          },
+          "TMAX": {
+            "differing_rows_on_common_dates": 116,
+            "compared_common_dates": 116,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 33.5724639893,
+              "right": 33.5668907166
+            }
+          },
+          "TMIN": {
+            "differing_rows_on_common_dates": 116,
+            "compared_common_dates": 116,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 21.2871665955,
+              "right": 21.137008667
+            }
+          }
+        }
+      }
+    },
+    {
+      "left_run": "seed_102",
+      "right_run": "seed_105",
+      "left_seed": 102,
+      "right_seed": 105,
+      "left_hash": "240C34531DC83727D010317BC006BD44DE267418896AD237085A03F103C4AA43",
+      "right_hash": "94E881EBFFFFA8224F5E1BF386E5589C74CAB3CB3EF8A9B52F422C3B569B3405",
+      "identical": false,
+      "different_rows_by_field": {
+        "RAIN": 56,
+        "SRAD": 117,
+        "TMAX": 117,
+        "TMIN": 117
+      },
+      "comparison": {
+        "identical_full_sequence_including_date_doy_and_weather": false,
+        "left_row_count": 117,
+        "right_row_count": 118,
+        "common_date_count": 117,
+        "left_only_dates": [],
+        "right_only_dates": [
+          "2008-09-26"
+        ],
+        "field_differences": {
+          "RAIN": {
+            "differing_rows_on_common_dates": 56,
+            "compared_common_dates": 117,
+            "first_difference": {
+              "date": "2008-06-02",
+              "left": 0.385543853045,
+              "right": 0.0
+            }
+          },
+          "SRAD": {
+            "differing_rows_on_common_dates": 117,
+            "compared_common_dates": 117,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 27.6479911804,
+              "right": 27.9710922241
+            }
+          },
+          "TMAX": {
+            "differing_rows_on_common_dates": 117,
+            "compared_common_dates": 117,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 33.5724639893,
+              "right": 33.5640983582
+            }
+          },
+          "TMIN": {
+            "differing_rows_on_common_dates": 117,
+            "compared_common_dates": 117,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 21.2871665955,
+              "right": 21.0596542358
+            }
+          }
+        }
+      }
+    },
+    {
+      "left_run": "seed_103",
+      "right_run": "seed_104",
+      "left_seed": 103,
+      "right_seed": 104,
+      "left_hash": "DC5C2EAA31F9930CAB3EC3312AF9AF95315D8ACC57A4AA1BD5BD15CB248E20C2",
+      "right_hash": "7E6D92914D38E0C6B4C9A90F9FA4438F8DFA51AFC7963AA64F147A29FEE74E67",
+      "identical": false,
+      "different_rows_by_field": {
+        "RAIN": 51,
+        "SRAD": 114,
+        "TMAX": 116,
+        "TMIN": 116
+      },
+      "comparison": {
+        "identical_full_sequence_including_date_doy_and_weather": false,
+        "left_row_count": 117,
+        "right_row_count": 116,
+        "common_date_count": 116,
+        "left_only_dates": [
+          "2008-09-25"
+        ],
+        "right_only_dates": [],
+        "field_differences": {
+          "RAIN": {
+            "differing_rows_on_common_dates": 51,
+            "compared_common_dates": 116,
+            "first_difference": {
+              "date": "2008-06-03",
+              "left": 0.145937934518,
+              "right": 0.0
+            }
+          },
+          "SRAD": {
+            "differing_rows_on_common_dates": 114,
+            "compared_common_dates": 116,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 28.6107177734,
+              "right": 28.7064990997
+            }
+          },
+          "TMAX": {
+            "differing_rows_on_common_dates": 116,
+            "compared_common_dates": 116,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 33.5696792603,
+              "right": 33.5668907166
+            }
+          },
+          "TMIN": {
+            "differing_rows_on_common_dates": 116,
+            "compared_common_dates": 116,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 21.2128639221,
+              "right": 21.137008667
+            }
+          }
+        }
+      }
+    },
+    {
+      "left_run": "seed_103",
+      "right_run": "seed_105",
+      "left_seed": 103,
+      "right_seed": 105,
+      "left_hash": "DC5C2EAA31F9930CAB3EC3312AF9AF95315D8ACC57A4AA1BD5BD15CB248E20C2",
+      "right_hash": "94E881EBFFFFA8224F5E1BF386E5589C74CAB3CB3EF8A9B52F422C3B569B3405",
+      "identical": false,
+      "different_rows_by_field": {
+        "RAIN": 58,
+        "SRAD": 116,
+        "TMAX": 117,
+        "TMIN": 117
+      },
+      "comparison": {
+        "identical_full_sequence_including_date_doy_and_weather": false,
+        "left_row_count": 117,
+        "right_row_count": 118,
+        "common_date_count": 117,
+        "left_only_dates": [],
+        "right_only_dates": [
+          "2008-09-26"
+        ],
+        "field_differences": {
+          "RAIN": {
+            "differing_rows_on_common_dates": 58,
+            "compared_common_dates": 117,
+            "first_difference": {
+              "date": "2008-06-03",
+              "left": 0.145937934518,
+              "right": 0.0
+            }
+          },
+          "SRAD": {
+            "differing_rows_on_common_dates": 116,
+            "compared_common_dates": 117,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 28.6107177734,
+              "right": 27.9710922241
+            }
+          },
+          "TMAX": {
+            "differing_rows_on_common_dates": 117,
+            "compared_common_dates": 117,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 33.5696792603,
+              "right": 33.5640983582
+            }
+          },
+          "TMIN": {
+            "differing_rows_on_common_dates": 117,
+            "compared_common_dates": 117,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 21.2128639221,
+              "right": 21.0596542358
+            }
+          }
+        }
+      }
+    },
+    {
+      "left_run": "seed_104",
+      "right_run": "seed_105",
+      "left_seed": 104,
+      "right_seed": 105,
+      "left_hash": "7E6D92914D38E0C6B4C9A90F9FA4438F8DFA51AFC7963AA64F147A29FEE74E67",
+      "right_hash": "94E881EBFFFFA8224F5E1BF386E5589C74CAB3CB3EF8A9B52F422C3B569B3405",
+      "identical": false,
+      "different_rows_by_field": {
+        "RAIN": 45,
+        "SRAD": 116,
+        "TMAX": 116,
+        "TMIN": 116
+      },
+      "comparison": {
+        "identical_full_sequence_including_date_doy_and_weather": false,
+        "left_row_count": 116,
+        "right_row_count": 118,
+        "common_date_count": 116,
+        "left_only_dates": [],
+        "right_only_dates": [
+          "2008-09-25",
+          "2008-09-26"
+        ],
+        "field_differences": {
+          "RAIN": {
+            "differing_rows_on_common_dates": 45,
+            "compared_common_dates": 116,
+            "first_difference": {
+              "date": "2008-06-04",
+              "left": 0.0,
+              "right": 11.320889473
+            }
+          },
+          "SRAD": {
+            "differing_rows_on_common_dates": 116,
+            "compared_common_dates": 116,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 28.7064990997,
+              "right": 27.9710922241
+            }
+          },
+          "TMAX": {
+            "differing_rows_on_common_dates": 116,
+            "compared_common_dates": 116,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 33.5668907166,
+              "right": 33.5640983582
+            }
+          },
+          "TMIN": {
+            "differing_rows_on_common_dates": 116,
+            "compared_common_dates": 116,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 21.137008667,
+              "right": 21.0596542358
+            }
+          }
+        }
+      }
+    }
+  ],
+  "distinct_weather_sequences": 5,
+  "all_five_seeds_present": true,
+  "different_seeds_distinct": true,
+  "not_all_seeds_identical": true,
+  "interpretation": "Pairwise variable difference counts use shared DATE values; date-set/row-count differences are reported separately."
+}

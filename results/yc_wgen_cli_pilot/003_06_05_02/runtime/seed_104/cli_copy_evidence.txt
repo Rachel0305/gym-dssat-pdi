@@ -1,0 +1,15 @@
+source_cli_path: results/yc_wgen_cli_pilot/003_06_05_02/final/CNYC.CLI
+source_cli_sha256: 65CF134600A5881706A5D435E1A09B276ED92A21FA5ABE2E18AAF63AF1E3A929
+runtime_cli_basename: CNYC.CLI
+runtime_cli_sha256: 65CF134600A5881706A5D435E1A09B276ED92A21FA5ABE2E18AAF63AF1E3A929
+runtime_working_directory: /workspace/results/yc_wgen_cli_pilot/003_06_05_02/runtime/tmp/tmpgahh4s7h
+filex_runtime_basename: fileX.MZX
+filex_wsta: CNYC0801
+filex_wther: W
+runtime_pdi_rseed1: 104
+weather_seed: 104
+ppo_seed: NOT_APPLICABLE
+runtime_log_path: results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_104/runtime_log.txt
+runtime_snapshot_files: ['results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_104/runtime_snapshot/CNYC.CLI', 'results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_104/runtime_snapshot/DSSAT48.INH', 'results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_104/runtime_snapshot/DSSAT48.INP', 'results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_104/runtime_snapshot/INFO.OUT', 'results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_104/runtime_snapshot/RunList.OUT', 'results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_104/runtime_snapshot/WARNING.OUT', 'results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_104/runtime_snapshot/dssat-pdi.yml', 'results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_104/runtime_snapshot/fileX.MZX']
+compatibility_status: PASS
+error: None

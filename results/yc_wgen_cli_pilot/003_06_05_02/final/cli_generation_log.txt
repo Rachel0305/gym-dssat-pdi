@@ -1,0 +1,11 @@
+YC train-only CNYC.CLI generation
+input=C:\Users\DELL\gym_workspace\gym_dssat_pdi_bingo\gym-dssat-pdi\results\yc_weather_gapfill_finalize\yc_wgen_fitting_weather_2004_2013.csv
+input_sha256=4B8FFE9E881D0A0743921B78B9C0E0EBFB1D2D645C5AA9737948B2B088ED7B34
+rows=3653 dates=2004-01-01..2013-12-31
+wet_rule=RAIN > 0.0 mm (positive precipitation; original WGEN PAR code)
+validation years used: none
+frozen input modified: no
+WGEN/DSSAT/PPO executed: no
+CLI sha256=65CF134600A5881706A5D435E1A09B276ED92A21FA5ABE2E18AAF63AF1E3A929
+static schema QC: PASS
+independent parameter cross-check: PASS

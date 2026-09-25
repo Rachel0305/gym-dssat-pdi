@@ -1,0 +1,52 @@
+{
+  "sections_present": [
+    "*CLIMATE",
+    "*MONTHLY AVERAGES",
+    "*WGEN PARAMETERS",
+    "*RANGE CHECK VALUES",
+    "*FLAGGED DATA COUNT"
+  ],
+  "sections_missing": [],
+  "monthly_averages_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "wgen_parameters_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "wgen_expected_read_format": "(I6,14(1X,F5.0))",
+  "wgen_statistical_field_count": 14,
+  "wgen_total_column_count": 15,
+  "wgen_expected_row_width": 90,
+  "wgen_fixed_width_malformed": [],
+  "twelve_months_each": true,
+  "station_identifier_present": true,
+  "numeric_rows_malformed": [],
+  "nonfinite_tokens": [],
+  "passed": true,
+  "range_values_status": "-99 sentinel: WeatherMan range-check thresholds are editable archive QC metadata, not WGEN parameters; no threshold was invented",
+  "flagged_count_status": "ABOVE/BELOW/RATE marked -99 (not evaluated without station range thresholds); no zero flags are fabricated",
+  "formal_cli_status": "CORRECTED_CLI_READY_FOR_SEED_PILOT",
+  "formal_cli_sha256": "65CF134600A5881706A5D435E1A09B276ED92A21FA5ABE2E18AAF63AF1E3A929"
+}

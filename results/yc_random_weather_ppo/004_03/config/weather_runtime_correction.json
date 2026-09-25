@@ -1,0 +1,42 @@
+{
+  "correction_id": "004_03_wgen_filex_mode_fix_v1",
+  "root_cause": "The canonical rendered YC FileX had WTHER=M. Setting Gym-DSSAT random_weather=true and injecting rseed1 did not enable WGEN while FileX remained in measured-weather mode.",
+  "scope": "Task-local runtime template copy only; canonical inputs, installed runtime, DSSAT binary, CNYC.CLI, PPO, reward, action, observation, and constraints are unchanged.",
+  "wgen_filex_mode": "W",
+  "template_strategy": "Copy each generated YC FileX template into results/yc_random_weather_ppo/004_03/runtime_templates and set every treatment METHODS.WTHER field to W without editing its source template.",
+  "weather_seed_strategy": "Inject the scheduled weather seed before PDI runtime launch, then set the sequence adapter before every episode reset. Reuse the environment process only after the same-year smoke proved distinct daily weather sequences.",
+  "weather_diversity_evidence": "Hash DSSAT daily state RAIN, SRAD, TMAX, and TMIN via the existing 003_06_05_02 weather capture helpers; do not hash the measured input WTH file as a proxy for generated weather.",
+  "verified_smoke": {
+    "attempt": "wther_w_cached_process_probe_01",
+    "status": "PASS",
+    "requested_timesteps": 432,
+    "actual_timesteps": 432,
+    "same_year_context": 2008,
+    "ppo_seed": 0,
+    "actual_rseed1_sequence": [1070, 1065, 1053, 1009],
+    "unique_daily_weather_hashes": 4,
+    "filex_wther": "W",
+    "peak_process_tree_rss_mb": 433.64,
+    "elapsed_seconds": 5.455
+  },
+  "formal_training_authorized_by_smoke": true,
+  "formal_training_qc": {
+    "status": "PASS",
+    "models_completed": 6,
+    "actual_timesteps_each": 100080,
+    "same_weather_sequence_across_three_wgen_ppo_seeds": true,
+    "unique_daily_weather_hashes_per_wgen_run": 170,
+    "repeated_year_seed_pairs_with_multiple_runtime_realizations": 7,
+    "training_evaluation_wgen_seed_overlap": []
+  },
+  "formal_evaluation": {
+    "status": "PASS",
+    "heldout_wgen_episodes": 120,
+    "observed_comparison_episodes": 60,
+    "deterministic_actions": true,
+    "reward_decomposition_max_abs_error": 0.0,
+    "pilot_decision": "MIXED_SIGNAL",
+    "larger_experiment_recommendation": "NEEDS_DIAGNOSIS"
+  },
+  "prior_attempts": "The earlier six-model run used WTHER=M and is retained as unverified history; its metrics are excluded from the corrected analysis."
+}

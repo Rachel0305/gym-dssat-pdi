@@ -1,0 +1,24 @@
+{
+  "actual_training_steps": 432,
+  "at_least_two_weather_seeds_reached_pdi": true,
+  "checkpoint_exists": true,
+  "checkpoint_loadable": true,
+  "completed_episodes": 4,
+  "distinct_weather_files_per_seed": true,
+  "episode_log_exists": true,
+  "filex_wther_is_wgen": true,
+  "manifest_exists": true,
+  "passed": true,
+  "ppo_reset_seed_separate_from_weather_seed": true,
+  "ppo_seed_is_zero": true,
+  "reward_decomposition_consistent": true,
+  "run_completed": true,
+  "same_year_context_for_weather_diversity_check": true,
+  "weather_seed_sequence": [
+    1070,
+    1065,
+    1053,
+    1009
+  ],
+  "weather_seed_uses_training_pool": true
+}

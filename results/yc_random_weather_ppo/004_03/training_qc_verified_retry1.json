@@ -1,0 +1,83 @@
+{
+  "actual_timesteps_values": [
+    100080
+  ],
+  "episode_count_variation_is_trajectory_dependent": false,
+  "evidence_path": "results/yc_random_weather_ppo/004_03/training_qc_verified_retry1.json",
+  "issues": [],
+  "passed": true,
+  "repeated_seed_year_pairs_with_multiple_runtime_realizations": 7,
+  "run_count": 6,
+  "runs": [
+    {
+      "actual_timesteps": 100080,
+      "checkpoints_present": true,
+      "episodes": 940,
+      "max_process_tree_rss_mb": 927.78515625,
+      "ppo_seed": 0,
+      "requested_timesteps": 100000,
+      "run_status": "completed",
+      "training_regime": "HISTORICAL_WEATHER"
+    },
+    {
+      "actual_timesteps": 100080,
+      "checkpoints_present": true,
+      "episodes": 942,
+      "max_process_tree_rss_mb": 985.8359375,
+      "ppo_seed": 1,
+      "requested_timesteps": 100000,
+      "run_status": "completed",
+      "training_regime": "HISTORICAL_WEATHER"
+    },
+    {
+      "actual_timesteps": 100080,
+      "checkpoints_present": true,
+      "episodes": 940,
+      "max_process_tree_rss_mb": 994.890625,
+      "ppo_seed": 2,
+      "requested_timesteps": 100000,
+      "run_status": "completed",
+      "training_regime": "HISTORICAL_WEATHER"
+    },
+    {
+      "actual_timesteps": 100080,
+      "checkpoints_present": true,
+      "episodes": 962,
+      "max_process_tree_rss_mb": 1030.8125,
+      "ppo_seed": 0,
+      "requested_timesteps": 100000,
+      "run_status": "completed",
+      "training_regime": "RANDOM_WEATHER_WGEN"
+    },
+    {
+      "actual_timesteps": 100080,
+      "checkpoints_present": true,
+      "episodes": 962,
+      "max_process_tree_rss_mb": 1046.07421875,
+      "ppo_seed": 1,
+      "requested_timesteps": 100000,
+      "run_status": "completed",
+      "training_regime": "RANDOM_WEATHER_WGEN"
+    },
+    {
+      "actual_timesteps": 100080,
+      "checkpoints_present": true,
+      "episodes": 962,
+      "max_process_tree_rss_mb": 1055.90234375,
+      "ppo_seed": 2,
+      "requested_timesteps": 100000,
+      "run_status": "completed",
+      "training_regime": "RANDOM_WEATHER_WGEN"
+    }
+  ],
+  "same_actual_timestep_count": true,
+  "same_effective_config_across_all_runs": true,
+  "train_eval_wgen_seed_intersection": [],
+  "unique_daily_weather_hashes_per_wgen_run": {
+    "RANDOM_WEATHER_WGEN/seed0": 170,
+    "RANDOM_WEATHER_WGEN/seed1": 170,
+    "RANDOM_WEATHER_WGEN/seed2": 170
+  },
+  "wgen_daily_weather_sequence_equal_across_ppo_seeds": true,
+  "wgen_schedule_common_prefix_rows": 962
+}

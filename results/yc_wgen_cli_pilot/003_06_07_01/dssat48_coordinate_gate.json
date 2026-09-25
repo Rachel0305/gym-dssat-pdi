@@ -1,0 +1,52 @@
+{
+  "status": "FAIL",
+  "gate_type": "pre-DSSAT generated-input coordinate gate",
+  "expected": {
+    "LAT": 36.83,
+    "LONG": 116.57,
+    "ELEV": 22.0
+  },
+  "checks": {
+    "yc_filex_coordinate_values": {
+      "status": "PASS",
+      "actual": {
+        "LAT": 36.83,
+        "LONG": 116.57,
+        "ELEV": 22.0
+      }
+    },
+    "actual_python_jinja_probe": {
+      "status": "PASS",
+      "rendered_output_matches_historical_filex_sha256": "3587215024992d0c87ce725cd0752bcda51497d1f9cd84907a6493a5797576fb"
+    },
+    "native_parser_coordinates": {
+      "status": "FAIL_NOT_OBSERVED",
+      "actual": null
+    },
+    "DSSAT48_INP_field_coordinates": {
+      "status": "FAIL",
+      "actual": {
+        "LONG_XCRD": -999.0,
+        "LAT_YCRD": -99.0,
+        "ELEV": -99.0
+      },
+      "evidence": "previous runtime artifact; field row retains placeholders"
+    },
+    "DSSAT48_INH_field_coordinates": {
+      "status": "FAIL",
+      "actual": {
+        "LONG_XCRD": -999.0,
+        "LAT_YCRD": -99.0,
+        "ELEV": -99.0
+      },
+      "evidence": "previous runtime artifact; field row retains placeholders"
+    }
+  },
+  "runtime_started_in_this_task": false,
+  "historical_control_coordinate_gate": "FAIL_PREVIOUS_RUNTIME_INP_PLACEHOLDERS",
+  "seed_101_coordinate_gate": "FAIL_PREVIOUS_RUNTIME_INP_PLACEHOLDERS",
+  "seed_104_coordinate_gate": "FAIL_PREVIOUS_RUNTIME_INP_PLACEHOLDERS",
+  "reason_stopped_before_runtime": "The actual native parser/INP renderer is inside dscsm048; starting the normal DssatPdi constructor launches DSSAT, and the pre-run gate is already failed by retained INP/INH evidence. No safe repo-side pre-INP hook exists in the installed Python package.",
+  "crop_runs_authorized_by_gate": false,
+  "ppo_ready": false
+}

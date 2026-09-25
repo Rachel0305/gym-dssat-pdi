@@ -1,0 +1,97 @@
+{
+  "task_id": "003_06_07_01",
+  "expected": {
+    "LAT": 36.83,
+    "LONG": 116.57,
+    "ELEV": 22.0
+  },
+  "rendered_filex": {
+    "path": "results/yc_wgen_cli_pilot/003_06_06/crop_smoke/historical_control_retry4/runtime_snapshot/fileX.MZX",
+    "sha256": "3587215024992d0c87ce725cd0752bcda51497d1f9cd84907a6493a5797576fb",
+    "coordinate_header_line": 22,
+    "coordinate_record_line": 23,
+    "record": " 1       116.57000        36.83000      22.0               -99   -99   -99   -99   -99   -99",
+    "parsed_values": {
+      "XCRD": 116.57,
+      "YCRD": 36.83,
+      "ELEV": 22.0,
+      "mapped_LONG": 116.57,
+      "mapped_LAT": 36.83
+    },
+    "status": "PASS"
+  },
+  "actual_installed_python_renderer_probe": {
+    "method": "gym_dssat_pdi.envs.dssat_pdi.DssatPdi._make_fileX_template",
+    "method_called_without_DssatPdi___init__": true,
+    "jinja_context_keys": ["wther", "ferti", "irrig", "plant"],
+    "coordinate_values_supplied_as_context": false,
+    "rendered_filex_sha256": "3587215024992d0c87ce725cd0752bcda51497d1f9cd84907a6493a5797576fb",
+    "matches_previous_historical_runtime_filex_byte_for_byte": true,
+    "dssat_started": false,
+    "status": "PASS"
+  },
+  "parser_input": {
+    "value": "the rendered fileX.MZX record above",
+    "status": "OBSERVED"
+  },
+  "parser_output": {
+    "XCRD": null,
+    "YCRD": null,
+    "ELEV": null,
+    "status": "NOT_OBSERVED",
+    "reason": "native parser memory is not exposed by the Python package; probing DssatPdi.__init__ launches run_dssat"
+  },
+  "environment_object_state": {
+    "coordinate_attributes_exposed_by_python_class": false,
+    "full_environment_constructor_called": false,
+    "status": "NOT_EXPOSED_BY_PYTHON_RUNTIME"
+  },
+  "renderer_input": {
+    "native_FIELD_CXCRD": null,
+    "native_FIELD_CYCRD": null,
+    "native_FIELD_CELEV": null,
+    "status": "NOT_OBSERVED",
+    "upstream_analog_only": {
+      "source": "DSSAT official public develop InputModule/ipexp.for, IPFLD; not the verified source for installed 4.8.0.024 binary",
+      "mapping": {
+        "CXCRD": "XCRD / longitude direction",
+        "CYCRD": "YCRD / latitude direction",
+        "CELEV": "ELEV"
+      }
+    }
+  },
+  "dssat48_inp": {
+    "path": "results/yc_wgen_cli_pilot/003_06_06/crop_smoke/historical_control_retry4/runtime_snapshot/DSSAT48.INP",
+    "field_coordinate_values": {
+      "LONG_XCRD": -999.0,
+      "LAT_YCRD": -99.0,
+      "ELEV": -99.0
+    },
+    "soil_site_metadata_contains_36_830_and_116_570_elsewhere": true,
+    "status": "FAIL"
+  },
+  "dssat48_inh": {
+    "field_coordinate_values": {
+      "LONG_XCRD": -999.0,
+      "LAT_YCRD": -99.0,
+      "ELEV": -99.0
+    },
+    "status": "FAIL"
+  },
+  "runtime_coordinates": {
+    "Summary_OUT_XLAT_LONG_ELEV": null,
+    "PDI_transfer_warning_reports_values_defaulted_to_zero": true,
+    "status": "FAIL_NOT_VERIFIABLE_AS_STATION_COORDINATES"
+  },
+  "native_warning_evidence": {
+    "path": "results/yc_wgen_cli_pilot/003_06_06/crop_smoke/historical_control_retry4/runtime_snapshot/WARNING.OUT",
+    "events_per_run": {
+      "latitude_read_error": 1,
+      "longitude_read_error": 1,
+      "elevation_read_error": 1,
+      "CYCRDin_transfer": 3,
+      "CXCRDin_transfer": 3,
+      "CELEVin_transfer": 3
+    }
+  }
+}

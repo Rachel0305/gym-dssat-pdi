@@ -1,0 +1,52 @@
+{
+  "purpose": "minimal local-only snapshot of files imported/used by the current runtime wrapper",
+  "staging_policy": "DO_NOT_STAGE_OR_COMMIT",
+  "files": [
+    {
+      "original_runtime_path": "/opt/gym_dssat_pdi/lib/python3.10/site-packages/gym_dssat_pdi/envs/dssat_pdi.py",
+      "copied_path": "runtime_source_snapshot/gym_dssat_pdi/envs/dssat_pdi.py",
+      "sha256": "960784a95fbf3d68027b659d441cc91f744713417d5d1deda58c989ef78a2058",
+      "reason": "actual imported class; FileX render/write and native process launch sequence"
+    },
+    {
+      "original_runtime_path": "/opt/gym_dssat_pdi/lib/python3.10/site-packages/gym_dssat_pdi/envs/utils/utils.py",
+      "copied_path": "runtime_source_snapshot/gym_dssat_pdi/envs/utils/utils.py",
+      "sha256": "dd0ff04804248348700a7dc5f114224394e0e9d9c2ad3393ba98fd637d3b4bad",
+      "reason": "actual Jinja fill and FileX template loading helpers"
+    },
+    {
+      "original_runtime_path": "/opt/gym_dssat_pdi/lib/python3.10/site-packages/gym_dssat_pdi/envs/configs/maize/UFGA8201.jinja2",
+      "copied_path": "runtime_source_snapshot/gym_dssat_pdi/envs/configs/maize/UFGA8201.jinja2",
+      "sha256": "867c8fb5f66960d06597a3c645f34371aa1d33ef75bacde152e20b606567543c",
+      "reason": "installed default maize FileX template for context comparison"
+    },
+    {
+      "original_runtime_path": "/opt/gym_dssat_pdi/lib/python3.10/site-packages/gym_dssat_pdi/envs/configs/maize/env_config.yml",
+      "copied_path": "runtime_source_snapshot/gym_dssat_pdi/envs/configs/maize/env_config.yml",
+      "sha256": "e8e6879be1aa0282511f4dce19348e4830bab6529df55321327062de48887f24",
+      "reason": "actual maize observation/action/context configuration checked for coordinate mapping"
+    },
+    {
+      "original_runtime_path": "/opt/gym_dssat_pdi/lib/python3.10/site-packages/gym_dssat_pdi/envs/configs/maize/dssat_pdi.jinja2",
+      "copied_path": "runtime_source_snapshot/gym_dssat_pdi/envs/configs/maize/dssat_pdi.jinja2",
+      "sha256": "bf2a81bbf58b1057e7c3963433aee6ac98716eb8f6d75f907a185f55a3be4d20",
+      "reason": "actual PDI configuration template checked for field-coordinate renderer keys"
+    },
+    {
+      "original_runtime_path": "/opt/dssat_pdi/run_dssat",
+      "copied_path": "runtime_source_snapshot/dssat_pdi/run_dssat",
+      "sha256": "4f32d85a2d5df405785328c6c56209d3abffc784a0890f30380ca50bf881eb07",
+      "reason": "29-byte launcher confirms the native executable delegation target"
+    }
+  ],
+  "excluded": [
+    {
+      "runtime_path": "/opt/dssat_pdi/dscsm048",
+      "reason": "10.63 MB native binary; not source, not copied, read-only SHA256 recorded in runtime_source_inventory.json"
+    },
+    {
+      "runtime_path": "/opt/gym_dssat_pdi/ and /opt/dssat_pdi/ remaining contents",
+      "reason": "not needed for minimal trace; no package-wide copy"
+    }
+  ]
+}

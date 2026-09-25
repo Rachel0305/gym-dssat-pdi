@@ -78,7 +78,8 @@ def render_filex_coordinates(text: str, coordinates: dict[str, float]) -> str:
         row = row[:start] + value.rjust(width) + row[end:]
     lines[row_index] = row
     rendered = "\n".join(lines) + "\n"
-    if parse_filex_coordinates(rendered) != {"LONG": 116.57, "LAT": 36.83, "ELEV": 22.0}:
+    expected_roundtrip = {name: float(value) for name, value in formats.items()}
+    if parse_filex_coordinates(rendered) != expected_roundtrip:
         raise ValueError("Rendered FileX coordinate round-trip failed")
     return rendered
 

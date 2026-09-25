@@ -25,6 +25,13 @@ def test_filex_fixed_width_coordinate_rendering_preserves_record_key_and_roundtr
     assert parse_filex_coordinates(rendered) == {"LONG": 116.57, "LAT": 36.83, "ELEV": 22.0}
 
 
+def test_filex_coordinate_renderer_uses_non_yc_station_values_without_hardcoding():
+    source = SOURCE_FILEX.read_text(encoding="utf-8", errors="replace")
+    non_yc = {"LONG": 103.21456, "LAT": 28.97654, "ELEV": 814.6}
+    rendered = render_filex_coordinates(source, non_yc)
+    assert parse_filex_coordinates(rendered) == non_yc
+
+
 def test_coordinate_gate_requires_all_three_expected_runtime_values():
     assert coordinate_gate({"LAT": 36.83, "LONG": 116.57, "ELEV": 22.0})
     assert not coordinate_gate({"LAT": 36.83, "LONG": 116.57, "ELEV": None})
@@ -47,6 +54,15 @@ def test_dssat48_inp_gate_reads_field_record_not_soil_site_metadata():
 def test_dssat48_inp_field_row_accepts_expected_values_after_substitution_in_fixture():
     corrected_fixture = "*FIELDS\n CNYC2008 CNYC.CLI\n 116.57000 36.83000 22.00 1.0\n*INITIAL CONDITIONS\n"
     assert coordinate_gate(parse_dssat_field_coordinates(corrected_fixture))
+
+
+def test_dssat48_field_coordinate_parser_accepts_non_yc_station_values():
+    non_yc_fixture = "*FIELDS\n@L XCRD YCRD ELEV\n 1 103.21456 28.97654 814.60\n*INITIAL CONDITIONS\n"
+    assert parse_dssat_field_coordinates(non_yc_fixture) == {
+        "LONG": 103.21456,
+        "LAT": 28.97654,
+        "ELEV": 814.6,
+    }
 
 
 def test_dssat48_inh_companion_field_record_also_retains_placeholders():

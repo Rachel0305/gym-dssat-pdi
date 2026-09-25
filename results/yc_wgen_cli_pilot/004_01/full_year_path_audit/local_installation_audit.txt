@@ -1,0 +1,33 @@
+YC full-year WGEN local installation audit
+Audit date: 2026-09-25 (Asia/Shanghai)
+
+Scope:
+- Project directory only, in compliance with the project AGENTS.md boundary.
+- Project-local filename discovery searched opt/ and local_packages/ for WeatherMan, WGEN, and executable names. No matching candidate was found there.
+- Earlier project records were reviewed: results/yc_wgen_cli_pilot/003_06_02/runtime_environment.txt, weatherman_wgen_capability.txt, and 003_06_03/weatherman_generation_path.txt.
+- No Windows DSSAT installation directory, host PATH, registry, external drive, or live Docker/container path was inspected. No executable was launched and no help flag was attempted.
+
+Findings:
+weatherman_found: UNKNOWN
+weatherman_path: UNKNOWN (outside-project install paths not inspected; no project-local match)
+weatherman_version: UNKNOWN
+weatherman_file_hash: UNKNOWN
+weatherman_gui_only: UNKNOWN (official legacy guide describes menu-based UI; current build interface not verified)
+weatherman_command_line_or_batch: UNKNOWN (no current official batch/CLI contract or local executable verified)
+weatherman_seed_control: YES_DOCUMENTED_LEGACY; current local capability UNKNOWN
+weatherman_full_year_generation: YES_DOCUMENTED_LEGACY; current local capability UNKNOWN
+weatherman_export: YES_DOCUMENTED_LEGACY for generated archive/daily weather; exact current WTH/CSV export behavior UNKNOWN
+direct_CNYC_CLI_compatibility_with_WeatherMan: UNKNOWN
+standalone_official_WGEN_utility_found: NO_PROJECT_LOCAL_MATCH; global/current installation state UNKNOWN
+
+Runtime record:
+- Project history identifies an intended architecture using Docker container nifty_taussig, but the live container and underlying DSSAT executable were not checked.
+- The task brief names DSSAT 4.8.0.024 and gym-dssat-pdi==0.0.5 as the target. Those are task inputs, not a live binary version verification in this audit.
+- The official source snapshot metadata records DSSAT CSM v4.8.0.24. It is source provenance, not runtime provenance.
+
+Frozen inputs were verified read-only:
+- results/yc_wgen_cli_pilot/003_06_05_02/final/CNYC.CLI SHA256: 65CF134600A5881706A5D435E1A09B276ED92A21FA5ABE2E18AAF63AF1E3A929 (matches task brief)
+- results/yc_weather_gapfill_finalize/yc_wgen_fitting_weather_2004_2013.csv SHA256: 4B8FFE9E881D0A0743921B78B9C0E0EBFB1D2D645C5AA9737948B2B088ED7B34 (matches task brief)
+
+Interpretation:
+UNKNOWN means not inspected or not verified; it does not mean absent. The official older WeatherMan manual documents a manual full-year generation workflow and seed repeatability, but the automation interface and exact CNYC.CLI/current-version compatibility remain unverified. No environmental or runtime changes were made.

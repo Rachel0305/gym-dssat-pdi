@@ -1,0 +1,2 @@
+﻿model_id,evaluation_weather_type,path,rows,episodes,sha256,weather_daily_path,weather_daily_rows,weather_hash_reconciles,status
+W0,heldout_wgen,results/yc_random_weather_ppo/004_04/smoke/weather_capture_v3/W0_heldout_wgen_seed1081_steps.csv,106,1,F0236F81FD121AA8B53BDEF6EF9554F59BFE0D89596CE9ABD01170984E5D7AF3,results/yc_random_weather_ppo/004_04/smoke/weather_capture_v3/W0_heldout_wgen_seed1081_weather_daily.csv,212,True,completed

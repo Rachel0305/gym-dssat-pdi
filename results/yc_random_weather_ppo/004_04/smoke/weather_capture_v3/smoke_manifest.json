@@ -1,0 +1,32 @@
+{
+  "checks": {
+    "WTHER_W": true,
+    "episode_days": true,
+    "fertilizer": true,
+    "irrigation": true,
+    "reward": true,
+    "runtime_weather_hash": true,
+    "yield": true
+  },
+  "evaluation": "heldout WGEN seed 1081",
+  "model_id": "W0",
+  "passed": true,
+  "reference_004_03": {
+    "episode_days": 106,
+    "fertilizer": 40.0,
+    "filex_wther": "W",
+    "irrigation": 45.0,
+    "reward": 0.7669183313632012,
+    "runtime_weather_sha256": "307173E05AFF3FD56CD9DEA18999ABBE7962B94AF661C98948916D8A26A465C7",
+    "yield": 6164.9945068359375
+  },
+  "replay": {
+    "episode_days": 106,
+    "episode_return": 0.7669183313632012,
+    "filex_wther": "W",
+    "runtime_weather_sha256": "307173E05AFF3FD56CD9DEA18999ABBE7962B94AF661C98948916D8A26A465C7",
+    "total_fertilizer": 40.0,
+    "total_irrigation": 45.0,
+    "yield": 6164.9945068359375
+  }
+}

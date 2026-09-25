@@ -1,0 +1,13 @@
+﻿model_id,evaluation_weather_type,step_rows,rain_present,weather_sources,weather_coverage_fraction
+H0,heldout_wgen,2059,1850,DSSAT_runtime_weather_state_capture,0.8984944147644488
+H0,observed_weather,1016,1016,observed_cleaned_YCA,1.0
+H1,heldout_wgen,2059,1850,DSSAT_runtime_weather_state_capture,0.8984944147644488
+H1,observed_weather,1002,1002,observed_cleaned_YCA,1.0
+H2,heldout_wgen,2059,1850,DSSAT_runtime_weather_state_capture,0.8984944147644488
+H2,observed_weather,1016,1016,observed_cleaned_YCA,1.0
+W0,heldout_wgen,2059,1850,DSSAT_runtime_weather_state_capture,0.8984944147644488
+W0,observed_weather,1002,1002,observed_cleaned_YCA,1.0
+W1,heldout_wgen,2059,1850,DSSAT_runtime_weather_state_capture,0.8984944147644488
+W1,observed_weather,1016,1016,observed_cleaned_YCA,1.0
+W2,heldout_wgen,2059,1850,DSSAT_runtime_weather_state_capture,0.8984944147644488
+W2,observed_weather,1002,1002,observed_cleaned_YCA,1.0

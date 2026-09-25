@@ -1,0 +1,288 @@
+{
+  "H1_W0_paired_episode_metrics_equal": true,
+  "H1_W0_policy_similarity_class": "IDENTICAL_POLICY_BEHAVIOR",
+  "H1_W0_same_state_action_agreement": 1.0,
+  "H1_W0_trajectory_action_agreement": 1.0,
+  "action_profile": [
+    {
+      "any_management_event_probability": 0.009713453132588635,
+      "evaluation_weather_type": "heldout_wgen",
+      "fertilizer_action_probability": 0.009713453132588635,
+      "irrigation_action_probability": 0.009713453132588635,
+      "noop_fraction": 0.9902865468674114
+    },
+    {
+      "any_management_event_probability": 0.00998003992015968,
+      "evaluation_weather_type": "observed_weather",
+      "fertilizer_action_probability": 0.00998003992015968,
+      "irrigation_action_probability": 0.00998003992015968,
+      "noop_fraction": 0.9900199600798403
+    }
+  ],
+  "empirical_behavior_archetypes": [
+    {
+      "fertilizer_probability": 0.05853658536585366,
+      "irrigation_probability": 0.12195121951219512,
+      "labels": [
+        "高灌溉高氮"
+      ],
+      "mean_fertilizer_events": 6.0,
+      "mean_irrigation_events": 12.5,
+      "mean_season_fertilizer": 240.0,
+      "mean_season_irrigation": 217.5,
+      "model_id": "H0",
+      "noop_fraction": 0.8292682926829268
+    },
+    {
+      "fertilizer_probability": 0.009800718719372754,
+      "irrigation_probability": 0.009800718719372754,
+      "labels": [
+        "低季节投入",
+        "高no-op频率"
+      ],
+      "mean_fertilizer_events": 1.0,
+      "mean_irrigation_events": 1.0,
+      "mean_season_fertilizer": 40.0,
+      "mean_season_irrigation": 45.0,
+      "model_id": "H1",
+      "noop_fraction": 0.9901992812806273
+    },
+    {
+      "fertilizer_probability": 0.00975609756097561,
+      "irrigation_probability": 0.04878048780487805,
+      "labels": [
+        "中等/混合投入",
+        "高no-op频率"
+      ],
+      "mean_fertilizer_events": 1.0,
+      "mean_irrigation_events": 5.0,
+      "mean_season_fertilizer": 80.0,
+      "mean_season_irrigation": 105.0,
+      "model_id": "H2",
+      "noop_fraction": 0.9512195121951219
+    },
+    {
+      "fertilizer_probability": 0.009800718719372754,
+      "irrigation_probability": 0.009800718719372754,
+      "labels": [
+        "低季节投入",
+        "高no-op频率"
+      ],
+      "mean_fertilizer_events": 1.0,
+      "mean_irrigation_events": 1.0,
+      "mean_season_fertilizer": 40.0,
+      "mean_season_irrigation": 45.0,
+      "model_id": "W0",
+      "noop_fraction": 0.9901992812806273
+    },
+    {
+      "fertilizer_probability": 0.00975609756097561,
+      "irrigation_probability": 0.00975609756097561,
+      "labels": [
+        "低灌溉高氮",
+        "高no-op频率"
+      ],
+      "mean_fertilizer_events": 1.0,
+      "mean_irrigation_events": 1.0,
+      "mean_season_fertilizer": 120.0,
+      "mean_season_irrigation": 45.0,
+      "model_id": "W1",
+      "noop_fraction": 0.9902439024390244
+    },
+    {
+      "fertilizer_probability": 0.027768703038222802,
+      "irrigation_probability": 0.019601437438745508,
+      "labels": [
+        "低灌溉高氮",
+        "高no-op频率"
+      ],
+      "mean_fertilizer_events": 2.8333333333333335,
+      "mean_irrigation_events": 2.0,
+      "mean_season_fertilizer": 193.33333333333334,
+      "mean_season_irrigation": 75.0,
+      "model_id": "W2",
+      "noop_fraction": 0.9722312969617772
+    }
+  ],
+  "performance": [
+    {
+      "evaluation_weather_type": "heldout_wgen",
+      "mean_fertilizer": 240.0,
+      "mean_fertilizer_events": 6.0,
+      "mean_first_fertilizer_dap": 0.0,
+      "mean_first_irrigation_dap": 0.0,
+      "mean_irrigation": 219.0,
+      "mean_irrigation_events": 12.6,
+      "mean_return": 0.5863099862549305,
+      "mean_yield": 7210.4869384765625,
+      "model_id": "H0"
+    },
+    {
+      "evaluation_weather_type": "observed_weather",
+      "mean_fertilizer": 240.0,
+      "mean_fertilizer_events": 6.0,
+      "mean_first_fertilizer_dap": 0.0,
+      "mean_first_irrigation_dap": 0.0,
+      "mean_irrigation": 214.5,
+      "mean_irrigation_events": 12.3,
+      "mean_return": 0.7483049275755882,
+      "mean_yield": 8202.040100097656,
+      "model_id": "H0"
+    },
+    {
+      "evaluation_weather_type": "heldout_wgen",
+      "mean_fertilizer": 40.0,
+      "mean_fertilizer_events": 1.0,
+      "mean_first_fertilizer_dap": 0.0,
+      "mean_first_irrigation_dap": 0.0,
+      "mean_irrigation": 45.0,
+      "mean_irrigation_events": 1.0,
+      "mean_return": 0.9771063928877115,
+      "mean_yield": 6626.577697753906,
+      "model_id": "H1"
+    },
+    {
+      "evaluation_weather_type": "observed_weather",
+      "mean_fertilizer": 40.0,
+      "mean_fertilizer_events": 1.0,
+      "mean_first_fertilizer_dap": 0.0,
+      "mean_first_irrigation_dap": 0.0,
+      "mean_irrigation": 45.0,
+      "mean_irrigation_events": 1.0,
+      "mean_return": 0.3313317699432677,
+      "mean_yield": 5348.288055419922,
+      "model_id": "H1"
+    },
+    {
+      "evaluation_weather_type": "heldout_wgen",
+      "mean_fertilizer": 80.0,
+      "mean_fertilizer_events": 1.0,
+      "mean_first_fertilizer_dap": 0.0,
+      "mean_first_irrigation_dap": 0.0,
+      "mean_irrigation": 106.5,
+      "mean_irrigation_events": 5.1,
+      "mean_return": 0.9282064930551053,
+      "mean_yield": 7119.284149169922,
+      "model_id": "H2"
+    },
+    {
+      "evaluation_weather_type": "observed_weather",
+      "mean_fertilizer": 80.0,
+      "mean_fertilizer_events": 1.0,
+      "mean_first_fertilizer_dap": 0.0,
+      "mean_first_irrigation_dap": 0.0,
+      "mean_irrigation": 102.0,
+      "mean_irrigation_events": 4.8,
+      "mean_return": 0.6847141689293686,
+      "mean_yield": 6871.320526123047,
+      "model_id": "H2"
+    },
+    {
+      "evaluation_weather_type": "heldout_wgen",
+      "mean_fertilizer": 40.0,
+      "mean_fertilizer_events": 1.0,
+      "mean_first_fertilizer_dap": 0.0,
+      "mean_first_irrigation_dap": 0.0,
+      "mean_irrigation": 45.0,
+      "mean_irrigation_events": 1.0,
+      "mean_return": 0.9771063928877115,
+      "mean_yield": 6626.577697753906,
+      "model_id": "W0"
+    },
+    {
+      "evaluation_weather_type": "observed_weather",
+      "mean_fertilizer": 40.0,
+      "mean_fertilizer_events": 1.0,
+      "mean_first_fertilizer_dap": 0.0,
+      "mean_first_irrigation_dap": 0.0,
+      "mean_irrigation": 45.0,
+      "mean_irrigation_events": 1.0,
+      "mean_return": 0.3313317699432677,
+      "mean_yield": 5348.288055419922,
+      "model_id": "W0"
+    },
+    {
+      "evaluation_weather_type": "heldout_wgen",
+      "mean_fertilizer": 120.0,
+      "mean_fertilizer_events": 1.0,
+      "mean_first_fertilizer_dap": 0.0,
+      "mean_first_irrigation_dap": 0.0,
+      "mean_irrigation": 45.0,
+      "mean_irrigation_events": 1.0,
+      "mean_return": 0.9387490773835779,
+      "mean_yield": 7186.099700927734,
+      "model_id": "W1"
+    },
+    {
+      "evaluation_weather_type": "observed_weather",
+      "mean_fertilizer": 120.0,
+      "mean_fertilizer_events": 1.0,
+      "mean_first_fertilizer_dap": 0.0,
+      "mean_first_irrigation_dap": 0.0,
+      "mean_irrigation": 45.0,
+      "mean_irrigation_events": 1.0,
+      "mean_return": 0.35133251746940675,
+      "mean_yield": 6303.987060546875,
+      "model_id": "W1"
+    },
+    {
+      "evaluation_weather_type": "heldout_wgen",
+      "mean_fertilizer": 196.0,
+      "mean_fertilizer_events": 2.9,
+      "mean_first_fertilizer_dap": 0.0,
+      "mean_first_irrigation_dap": 0.0,
+      "mean_irrigation": 75.0,
+      "mean_irrigation_events": 2.0,
+      "mean_return": 0.8061326646790505,
+      "mean_yield": 7206.341125488281,
+      "model_id": "W2"
+    },
+    {
+      "evaluation_weather_type": "observed_weather",
+      "mean_fertilizer": 188.0,
+      "mean_fertilizer_events": 2.7,
+      "mean_first_fertilizer_dap": 0.0,
+      "mean_first_irrigation_dap": 0.0,
+      "mean_irrigation": 75.0,
+      "mean_irrigation_events": 2.0,
+      "mean_return": 0.4227572169266944,
+      "mean_yield": 6821.757293701172,
+      "model_id": "W2"
+    }
+  ],
+  "reward_components": [
+    {
+      "episodes": 20,
+      "evaluation_weather_type": "heldout_wgen",
+      "max_episode_reconciliation_abs_error": 0.0,
+      "mean_fertilizer": 40.0,
+      "mean_irrigation": 45.0,
+      "mean_return": 0.9771063928877116,
+      "mean_sum_nitrogen_cost_contribution_scaled": 0.0632,
+      "mean_sum_stress_relief_contribution_scaled": 0.067500002682209,
+      "mean_sum_swfac_guardrail_penalty_scaled": 0.0246928860396146,
+      "mean_sum_water_cost_contribution_scaled": 0.0495,
+      "mean_sum_yield_contribution_scaled": 1.0469992762451172,
+      "mean_yield": 6626.577697753906,
+      "model_id": "W0",
+      "reconstruction_status": "EXACT_RUNTIME_REWARD_SUM"
+    },
+    {
+      "episodes": 10,
+      "evaluation_weather_type": "observed_weather",
+      "max_episode_reconciliation_abs_error": 0.0,
+      "mean_fertilizer": 40.0,
+      "mean_irrigation": 45.0,
+      "mean_return": 0.3313317699432677,
+      "mean_sum_nitrogen_cost_contribution_scaled": 0.0632,
+      "mean_sum_stress_relief_contribution_scaled": 0.067500002682209,
+      "mean_sum_swfac_guardrail_penalty_scaled": 0.4684977454952889,
+      "mean_sum_water_cost_contribution_scaled": 0.0495,
+      "mean_sum_yield_contribution_scaled": 0.8450295127563476,
+      "mean_yield": 5348.288055419922,
+      "model_id": "W0",
+      "reconstruction_status": "EXACT_RUNTIME_REWARD_SUM"
+    }
+  ],
+  "scope": "Single seed profile; not an estimate of policy-archetype probability."
+}

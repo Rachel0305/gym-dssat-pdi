@@ -1,0 +1,26 @@
+{
+  "all_checkpoints_training_verified": true,
+  "all_probe_masks_identical_across_models": true,
+  "all_six_models_all_probe_states": true,
+  "all_wgen_runtime_hashes_reconcile_and_match_across_models": true,
+  "canonical_per_step_reward_reconstruction_max_abs_error": 1.3877787807814457e-17,
+  "episode_reward_reconciliation_max_abs_error": 0.0,
+  "episodes": 180,
+  "evaluation_sets_identical_for_all_models": true,
+  "models": [
+    "H0",
+    "H1",
+    "H2",
+    "W0",
+    "W1",
+    "W2"
+  ],
+  "passed": true,
+  "predicted_actions_obey_saved_masks": true,
+  "probe_action_rows": 3600,
+  "probe_states": 600,
+  "probe_states_frozen_before_predictions": true,
+  "step_action_totals_reconcile": true,
+  "step_rows": 18408,
+  "training_call_executed": false
+}

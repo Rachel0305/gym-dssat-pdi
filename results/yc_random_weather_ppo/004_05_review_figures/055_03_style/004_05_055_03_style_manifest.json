@@ -1,0 +1,43 @@
+{
+  "style_script": "src/055_yca_lowIC_site_transfer/run_055_03_yca_lowIC_five_scenario_figures.py",
+  "input_episode": "results\\yc_random_weather_ppo\\004_05\\all_evaluation_episode_level_0_7.csv",
+  "input_step": "results\\yc_random_weather_ppo\\004_05\\evaluation_step_level_all_models.csv",
+  "observed_episodes": 160,
+  "observed_step_rows": 16130,
+  "complete_daily_state_seeds": [
+    0,
+    1,
+    2
+  ],
+  "all_seed_daily_fields": [
+    "swfac",
+    "nstres",
+    "irrigation_action_mm",
+    "fertilizer_action_kgN_ha",
+    "instant_reward"
+  ],
+  "years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "reward_mean_difference_by_year": {
+    "2014.0": 0.039366080967411704,
+    "2015.0": -0.1494329693328215,
+    "2016.0": -0.10604479274190955,
+    "2017.0": -0.06488747253417966,
+    "2018.0": 0.015052850509285877,
+    "2019.0": -0.07065732382282587,
+    "2020.0": -0.06788870720058679,
+    "2021.0": -0.0692324154663086,
+    "2022.0": -0.06425087738037102,
+    "2023.0": -0.1294741561225056
+  }
+}

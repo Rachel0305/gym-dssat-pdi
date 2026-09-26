@@ -1,0 +1,29 @@
+{
+  "style_source_figure_daily": "benchmark_results\\055_03_yca_lowIC_055_00_yca_lowIC_expanded_action_maskableppo_auto_nstd050_minimal_five_scenario_figures_ckpt100000\\figures\\055_03_yca2014_five_scenario_daily.png",
+  "style_source_figure_metrics": "benchmark_results\\055_03_yca_lowIC_055_00_yca_lowIC_expanded_action_maskableppo_auto_nstd050_minimal_five_scenario_figures_ckpt100000\\figures\\055_03_yca_five_scenario_metrics.png",
+  "style_source_figure_management": "benchmark_results\\055_03_yca_lowIC_055_00_yca_lowIC_expanded_action_maskableppo_auto_nstd050_minimal_five_scenario_figures_ckpt100000\\figures\\055_03_yca_five_scenario_management.png",
+  "style_source_script": "src/055_yca_lowIC_site_transfer/run_055_03_yca_lowIC_five_scenario_figures.py",
+  "baseline_daily_source": "benchmark_results\\055_03_yca_lowIC_055_00_yca_lowIC_expanded_action_maskableppo_auto_nstd050_minimal_five_scenario_figures_ckpt100000\\tables\\055_03_yca_five_scenario_daily.csv",
+  "baseline_summary_source": "benchmark_results\\055_03_yca_lowIC_055_00_yca_lowIC_expanded_action_maskableppo_auto_nstd050_minimal_five_scenario_figures_ckpt100000\\tables\\055_03_yca_five_scenario_season_summary.csv",
+  "ppo_episode_source": "results\\yc_random_weather_ppo\\004_05\\all_evaluation_episode_level_0_7.csv",
+  "ppo_step_source": "results\\yc_random_weather_ppo\\004_05\\evaluation_step_level_all_models.csv",
+  "scenario_count": 5,
+  "years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "new_ppo_seed_count_per_year": 8,
+  "complete_new_ppo_soil_water_grain_biomass_daily_seed_count": 3,
+  "new_ppo_wp_et": "unavailable: no matching ETCP replay in 004_05 formal outputs",
+  "new_ppo_daily_unified_reward": "0.158*yield - 1.1*irrigation - 1.58*nitrogen; matched to 055_03 formula",
+  "max_weather_field_absolute_difference": 0.041791044776118724,
+  "push_status": "not_pushed"
+}

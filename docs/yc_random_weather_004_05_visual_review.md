@@ -1,6 +1,6 @@
 # YC 004_05 weather augmentation 视觉审查
 
-> **样式来源更正：**用户指定的系列是 `055_03_yca_lowIC_..._figures_ckpt100000/figures`，不是下文使用的 222 系列。下文保留为旧版实验记录；本次有效的重制图及结论请见 [055_03 样式重制图报告](yc_random_weather_004_05_visual_review_055_03_style.md)。修改前副本在 `backups/yc_random_weather_004_05_visual_review_before_055_03_style_20260926.md`。
+> **样式与对照范围已更正：**本次有效结果是新 Random-weather PPO 对 Null、Recorded template、DSSAT auto、Official expert 四基准的五情景图，详见[五情景对照报告](yc_random_weather_004_05_five_scenario_055_03_review.md)。下文与[双 PPO 报告](yc_random_weather_004_05_visual_review_055_03_style.md)保留为先前尝试记录。修改前副本保存在 `backups/`。
 
 ## 样式来源
 

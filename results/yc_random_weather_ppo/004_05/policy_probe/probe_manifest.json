@@ -1,0 +1,13 @@
+{
+  "action_masks_obeyed": true,
+  "action_rows": 6000,
+  "deterministic_actions": true,
+  "dssat_stepped": false,
+  "new_model_count": 10,
+  "output": "results/yc_random_weather_ppo/004_05/policy_probe/policy_probe_actions_new_models.csv",
+  "passed": true,
+  "probe_seed": 404006,
+  "probe_states": 600,
+  "probe_states_sha256": "DB1B7725C2124D19B457FEF5D56673C793054B58E85AC3441573EE3AD7277E1B",
+  "probe_states_source": "results/yc_random_weather_ppo/004_04/policy_similarity/policy_probe_states.csv"
+}

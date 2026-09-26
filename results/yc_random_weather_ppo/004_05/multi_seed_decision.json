@@ -1,0 +1,100 @@
+{
+  "CNYC_CLI_modified": "NO",
+  "PPO_algorithm_modified": "NO",
+  "WGEN_refit": "NO",
+  "archetype_counts_historical": {
+    "AMBIGUOUS": 1,
+    "HIGH_INPUT": 1,
+    "MODERATE_MIXED": 1,
+    "OTHER_NEW": 3,
+    "VERY_LOW_INPUT": 2
+  },
+  "archetype_counts_random_weather": {
+    "AMBIGUOUS": 3,
+    "HIGH_INPUT": 0,
+    "MODERATE_MIXED": 0,
+    "OTHER_NEW": 2,
+    "VERY_LOW_INPUT": 3
+  },
+  "archetype_distribution_descriptive_rule": "CLEAR_SHIFT if TVD>=0.25 and >=3 paired switches and one direction is >=60% of switches; NO_CLEAR_SHIFT if TVD<0.125, max count difference<=1 and <=2 switches; otherwise POSSIBLE_SHIFT. Descriptive only, no p-value claim.",
+  "archetype_distribution_finding": "POSSIBLE_SHIFT",
+  "archetype_frequency_total_variation_distance": 0.375,
+  "canonical_config_identical": "YES",
+  "dominant_transition_count": 1,
+  "dominant_transition_share_among_switches": 0.14285714285714285,
+  "existing_models_reused": 6,
+  "fixed_policy_probe_states": 600,
+  "git_commit": "pending local commit",
+  "git_push": "NO",
+  "github_backup_status": "No push performed; external backup not checked.",
+  "heldout_mean_yield_historical": 7026.150396347046,
+  "heldout_mean_yield_random": 6747.169055938721,
+  "heldout_wgen_mean_reward_historical": 0.8768672395936921,
+  "heldout_wgen_mean_reward_random": 0.829076469793655,
+  "heldout_wgen_seeds": "1081-1100",
+  "historical_models_total": 8,
+  "max_archetype_count_difference": 2,
+  "new_models_trained": 10,
+  "observed_comparison": "2014-2023",
+  "observed_mean_reward_historical": 0.5238680860079659,
+  "observed_mean_reward_random": 0.4571231076954847,
+  "observed_mean_yield_historical": 6575.695510864258,
+  "observed_mean_yield_random": 6328.507784843445,
+  "paired_seed_archetype_transitions": [
+    {
+      "changed": true,
+      "transition": "HIGH_INPUT -> VERY_LOW_INPUT"
+    },
+    {
+      "changed": true,
+      "transition": "VERY_LOW_INPUT -> AMBIGUOUS"
+    },
+    {
+      "changed": true,
+      "transition": "MODERATE_MIXED -> AMBIGUOUS"
+    },
+    {
+      "changed": true,
+      "transition": "OTHER_NEW -> VERY_LOW_INPUT"
+    },
+    {
+      "changed": true,
+      "transition": "VERY_LOW_INPUT -> OTHER_NEW"
+    },
+    {
+      "changed": false,
+      "transition": "OTHER_NEW -> OTHER_NEW"
+    },
+    {
+      "changed": true,
+      "transition": "OTHER_NEW -> AMBIGUOUS"
+    },
+    {
+      "changed": true,
+      "transition": "AMBIGUOUS -> VERY_LOW_INPUT"
+    }
+  ],
+  "paired_seed_performance_finding": "NO_POSITIVE_SIGNAL",
+  "paired_seed_switch_count": 7,
+  "ppo_seeds_final": "0-7",
+  "ppt_created": "NO",
+  "probe_state_hash_match_004_04": "YES",
+  "random_weather_models_total": 8,
+  "recommended_next_step": "建议暂不扩大 seed 数；只有预设性能成功条件出现可复现信号后，再讨论扩大验证，不改变本次冻结设置。",
+  "report_md": "docs/yc_random_weather_multi_seed_archetype_experiment.md",
+  "results_directory": "results/yc_random_weather_ppo/004_05/",
+  "reward_component_reconstruction_max_abs_error": 2.220446049250313e-16,
+  "reward_component_reconstruction_method": "canonical episode formula from final yield, seasonal irrigation/fertilizer, summed captured SWFAC penalty; stress relief is the exact reward-identity residual",
+  "reward_modified": "NO",
+  "runtime_modified": "NO",
+  "scientific_question": "Does random-weather training change policy-archetype frequency and increase paired-seed success probability?",
+  "seed_cherry_picking": "NO",
+  "success_count": 0,
+  "success_fraction": 0.0,
+  "tests_status": "PASS",
+  "train_eval_weather_overlap": "NONE",
+  "training_weather_seed_pool": "1001-1080",
+  "weather_augmentation_interpretation": "在当前 YC 配置和 8 个配对 seed 下，archetype 频率仅显示可能的行为分布变化（POSSIBLE_SHIFT）；预注册性能 paired success 为 0/8，因此不支持性能改善。该结果不外推为普遍提升。",
+  "weather_augmentation_only_change": "YES",
+  "weather_augmentation_usefulness": "PARTIALLY_SUPPORTED"
+}

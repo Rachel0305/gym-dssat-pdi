@@ -1,0 +1,72 @@
+{
+  "source_episode_rows": 480,
+  "observed_rows": 160,
+  "heldout_rows": 320,
+  "observed_seed_year_pairs": 80,
+  "paired_summary_reconciled": true,
+  "figure_count": 13,
+  "figures": [
+    {
+      "path": "results/yc_random_weather_ppo/004_05_review_figures/figureA_by_year_yield.png",
+      "sha256": "51F6F3C8E49CC459600A07153AC460F0F4342363C3ACCE2BA51475001EAD05B1"
+    },
+    {
+      "path": "results/yc_random_weather_ppo/004_05_review_figures/figureA_by_year_irrigation.png",
+      "sha256": "1DAFE613B17E50B381B5AB7C909DE411602B8775F5D792CC65CB9025B51D1A85"
+    },
+    {
+      "path": "results/yc_random_weather_ppo/004_05_review_figures/figureA_by_year_nitrogen.png",
+      "sha256": "EC51EB84E1C509CD78C5A438979CC29CFD851A648084F8F3CB3B597AE4B0B06A"
+    },
+    {
+      "path": "results/yc_random_weather_ppo/004_05_review_figures/figureA_by_year_reward.png",
+      "sha256": "6B3798314AD59FCF6DF6C5835D906AC67110EED6BD8AFF2B7F9E44E86B9B5FCC"
+    },
+    {
+      "path": "results/yc_random_weather_ppo/004_05_review_figures/figureA_by_year_stability.png",
+      "sha256": "0697C4222E91BCF2CFBFF7A4502E2E53AD70EA0F467DE1B9746DBCC373895320"
+    },
+    {
+      "path": "results/yc_random_weather_ppo/004_05_review_figures/figureB_by_year_yield_difference.png",
+      "sha256": "2B87C6C540EE7C56331F04CD960426F3A030E1BCEF0AC6C94D4757E49FE16813"
+    },
+    {
+      "path": "results/yc_random_weather_ppo/004_05_review_figures/figureB_by_year_irrigation_difference.png",
+      "sha256": "22DAEC2FAAA037AEC864A5B5854AC0953910820B39298782373CAB7C857F345C"
+    },
+    {
+      "path": "results/yc_random_weather_ppo/004_05_review_figures/figureB_by_year_nitrogen_difference.png",
+      "sha256": "5EC855C6C65C285B031CF4DB01BAC34BF406FECB78C4AB0ECC73C7A9FBDA4602"
+    },
+    {
+      "path": "results/yc_random_weather_ppo/004_05_review_figures/figureB_by_year_reward_difference.png",
+      "sha256": "6251CCAB348A46C5B537BF989DA26D440B8A67CCB802053011F77590C143D9BC"
+    },
+    {
+      "path": "results/yc_random_weather_ppo/004_05_review_figures/figureB_by_year_paired_difference.png",
+      "sha256": "9396234BBC112D0B2419EA85149818E9DA2EE82237F4F11DFD449F488B6493E0"
+    },
+    {
+      "path": "results/yc_random_weather_ppo/004_05_review_figures/figureC_seed_robustness.png",
+      "sha256": "BC8ECDA9988A393F3E2146AEBB4AA21D1E992275D9466AAAA24D3988AF526CF8"
+    },
+    {
+      "path": "results/yc_random_weather_ppo/004_05_review_figures/figureC_seed_robustness_heldout_wgen.png",
+      "sha256": "146BAFB18AC9A59E8F98198B5DC14A7AAB93EC333E0E8D5CE4C8DF87CEA595B0"
+    },
+    {
+      "path": "results/yc_random_weather_ppo/004_05_review_figures/figureD_management_strategy_profile.png",
+      "sha256": "4772623B3CC3AD525F408E67B148E2C031C6F81854137D3378850580C6B90F23"
+    }
+  ],
+  "input_sha256": {
+    "results/yc_random_weather_ppo/004_05/all_evaluation_episode_level_0_7.csv": "13D790CF3B54859B92AF181F4E998A93D485E965A2292FDEB9DEEA8A5AC79791",
+    "results/yc_random_weather_ppo/004_05/paired_seed_performance_comparison.csv": "24624C8052D711A75B4C717FD7C3FFC916FFEC6C531178EB2A15D3CF802A6EFA",
+    "results/yc_random_weather_ppo/004_05/policy_archetype_assignment.csv": "7651A1718D7835933AD8D25ED7157A7EB1BB5D06AFF7A10077B3AA09030187D7",
+    "results/yc_random_weather_ppo/004_05/evaluation_qc.json": "C767C7CF43E4E33419207CDD01461E65F58F90FB8A63A335778532A7A49BCAE2",
+    "experiments/222_yc_v1_three_seed_confirmation/scripts/compile_confirmation.py": "0847059EC281CEB07283CB777CB951ACB45B8AC55D7F91100FB2DBC05F64D9F6"
+  },
+  "report": "docs/yc_random_weather_004_05_visual_review.md",
+  "reward_component_used_for_plots": "episode total reward only; no unrecorded step components",
+  "new_training_or_dssat_evaluation": false
+}

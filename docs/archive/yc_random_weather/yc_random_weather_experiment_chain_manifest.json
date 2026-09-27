@@ -1,0 +1,1508 @@
+{
+  "schema": "yc_random_weather_archive_v1",
+  "files": [
+    {
+      "stage": "archival_contract",
+      "artifact_type": "metadata",
+      "status": "FORMAL",
+      "path": ".gitattributes",
+      "sha256": "E962F381D86E30688A99A73F37BA62C72286935A2F350DEA2EEE7D7158B12D33",
+      "size_bytes": 853,
+      "note": "Path-scoped Git byte preservation for frozen weather assets"
+    },
+    {
+      "stage": "motivation",
+      "artifact_type": "prompt",
+      "status": "DIAGNOSTIC",
+      "path": "prompt_02/004_yc_ppo_weather_augmentation_experiment.md",
+      "sha256": "DB0C9C63E1F7B939F4986A759FD2982AC150952FDBB447780B3CB3D4E41B2A36",
+      "size_bytes": 16523,
+      "note": "Initial weather-augmentation design; later 004_05 is the formal experiment"
+    },
+    {
+      "stage": "motivation",
+      "artifact_type": "prompt",
+      "status": "FORMAL",
+      "path": "prompt_02/004_05_yc_weather_augmentation_multi_seed_archetype_experiment.md",
+      "sha256": "78B15371BE559513E7366974DDBB9FA118DA80AC0B44E87C56479472FFBC97C7",
+      "size_bytes": 16614,
+      "note": "Final controlled paired-seed question"
+    },
+    {
+      "stage": "fitting_cli",
+      "artifact_type": "input",
+      "status": "FORMAL",
+      "path": "results/yc_weather_gapfill_finalize/yc_wgen_fitting_weather_2004_2013.csv",
+      "sha256": "4B8FFE9E881D0A0743921B78B9C0E0EBFB1D2D645C5AA9737948B2B088ED7B34",
+      "size_bytes": 1046053,
+      "note": "Frozen 2004-2013 fitting weather"
+    },
+    {
+      "stage": "fitting_cli",
+      "artifact_type": "input",
+      "status": "FORMAL",
+      "path": "results/yc_wgen_cli_pilot/003_06_05_02/final/CNYC.CLI",
+      "sha256": "65CF134600A5881706A5D435E1A09B276ED92A21FA5ABE2E18AAF63AF1E3A929",
+      "size_bytes": 3598,
+      "note": "Frozen YC WGEN CLI"
+    },
+    {
+      "stage": "fitting_cli",
+      "artifact_type": "source",
+      "status": "FORMAL",
+      "path": "scripts/build_dssat_cli.py",
+      "sha256": "1A338E725497D4A077E06BF0DA397C7BFF9ADA47A492FF53869960F5D2412426",
+      "size_bytes": 35852,
+      "note": "CLI generation code"
+    },
+    {
+      "stage": "fitting_cli",
+      "artifact_type": "source",
+      "status": "DIAGNOSTIC",
+      "path": "scripts/audit_yc_wgen_parameters_004_01.py",
+      "sha256": "FD573F27A0564DA0AAC3A94E7369F8C44341CBE5453EC8FBBB870C61BF6CE797",
+      "size_bytes": 15953,
+      "note": "168-value parameter audit"
+    },
+    {
+      "stage": "fitting_cli",
+      "artifact_type": "metadata",
+      "status": "FORMAL",
+      "path": "results/yc_wgen_cli_pilot/003_06_05_02/final/final_cli_metadata.json",
+      "sha256": "A67AF4362FDD6557F3E0FF4BC0A94C8AAD3348EC956F85FD23FC3641E2166B65",
+      "size_bytes": 3003,
+      "note": "CLI generation provenance"
+    },
+    {
+      "stage": "fitting_cli",
+      "artifact_type": "metadata",
+      "status": "DIAGNOSTIC",
+      "path": "results/yc_wgen_cli_pilot/004_01/parameter_audit/parameter_method_summary.json",
+      "sha256": "1C0B2A8989172773A9E3BCC67FB3593FA863CC7CEA0281ED43E3FEFA6C1AADEA",
+      "size_bytes": 1254,
+      "note": "168 monthly values independently checked"
+    },
+    {
+      "stage": "fitting_cli",
+      "artifact_type": "report",
+      "status": "DIAGNOSTIC",
+      "path": "docs/yc_wgen_parameter_audit_and_synthetic_weather_validation.md",
+      "sha256": "B347AAC0EEBCDB5AFDE6E07361466F2CDEBF23209C8F255DFB4C349E474D53FD",
+      "size_bytes": 13961,
+      "note": "Parameter method valid; full-year generation blocked"
+    },
+    {
+      "stage": "wgen_qc",
+      "artifact_type": "prompt",
+      "status": "DIAGNOSTIC",
+      "path": "prompt_02/003_06_06_yc_wgen_weather_qc_and_dssat_smoke.md",
+      "sha256": "8B6421090DFAF2D9F3521050CBCF74DA92C21A133055E5763F81364CBDB61B56",
+      "size_bytes": 18213,
+      "note": "Earlier WGEN/QC pilot"
+    },
+    {
+      "stage": "wgen_qc",
+      "artifact_type": "prompt",
+      "status": "FORMAL",
+      "path": "prompt_02/004_02_yc_random_weather_episode_ensemble_validation.md",
+      "sha256": "B62871D009D81C45ECD8523B93F0A80BE09B34A5C88E0F02C7107FD3250230F8",
+      "size_bytes": 12882,
+      "note": "100-episode validation"
+    },
+    {
+      "stage": "wgen_qc",
+      "artifact_type": "source",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_episode_validation/004_02/run_episode_ensemble.py",
+      "sha256": "506D07329630C96BACC89E5695E8F4A06D75ECA927D9D56CCF59ED7EA0EC2922",
+      "size_bytes": 7780,
+      "note": "Episode-level weather generator"
+    },
+    {
+      "stage": "wgen_qc",
+      "artifact_type": "source",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_episode_validation/004_02/analyze_episode_ensemble.py",
+      "sha256": "F804A669203B9442A80ED474DF9FC7E3D150A179A45B65889999958F315E41FD",
+      "size_bytes": 52057,
+      "note": "Ensemble QC analysis"
+    },
+    {
+      "stage": "wgen_qc",
+      "artifact_type": "metadata",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_episode_validation/004_02/summary.json",
+      "sha256": "C7533D792A7F1430BE094A7408549B8D8F3AEFFD2948C44E677CB1D1D0F09C3D",
+      "size_bytes": 4094,
+      "note": "100/100 generation pass; five repeats match"
+    },
+    {
+      "stage": "wgen_qc",
+      "artifact_type": "metadata",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_episode_validation/004_02/weather_seed_reproducibility.csv",
+      "sha256": "CA2B6182BDF2FAA3C80F181ABC1EBDC48FBDE3174C6C8C2630F3D98C96FE369B",
+      "size_bytes": 1000,
+      "note": "Five repeated seeds"
+    },
+    {
+      "stage": "wgen_qc",
+      "artifact_type": "metadata",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_episode_validation/004_02/weather_seed_diversity.csv",
+      "sha256": "7F65A88E6CE70864B986815FE0416D581CBF83DCCC0F53D4C058E47CFF6F6BA8",
+      "size_bytes": 8185,
+      "note": "100 unique sequences"
+    },
+    {
+      "stage": "wgen_qc",
+      "artifact_type": "metadata",
+      "status": "DIAGNOSTIC",
+      "path": "results/yc_wgen_cli_pilot/003_06_06/weather_qc/weather_qc_summary.json",
+      "sha256": "EE74DDA33F330742ECC5091CB72F6164FC05391AF4DCEB746F10BD24D9156766",
+      "size_bytes": 11039,
+      "note": "Early weather QC"
+    },
+    {
+      "stage": "wgen_qc",
+      "artifact_type": "report",
+      "status": "FORMAL",
+      "path": "docs/yc_random_weather_episode_ensemble_validation.md",
+      "sha256": "01281092ECD146E1F69C1FB004DEAC85DEBD7DC6C54CF7DD8B1DC159290436A2",
+      "size_bytes": 8265,
+      "note": "100 episode validation report"
+    },
+    {
+      "stage": "ppo_004_05",
+      "artifact_type": "prompt",
+      "status": "FORMAL",
+      "path": "prompt_02/004_03_yc_random_weather_ppo_controlled_pilot.md",
+      "sha256": "D0454FB34061D9A5ED9E30784BCBAFD4B98E80FCF1ED5EF00EFBCE02FB6FD51C",
+      "size_bytes": 18052,
+      "note": "Controlled pilot"
+    },
+    {
+      "stage": "ppo_004_05",
+      "artifact_type": "source",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_03/run_controlled_pilot.py",
+      "sha256": "042B36B84B1BFE2C2085068CAE987B4EFBC8E575F6820ECE2D277EDB88CA9136",
+      "size_bytes": 102122,
+      "note": "WGEN FileX/runtime setup"
+    },
+    {
+      "stage": "ppo_004_05",
+      "artifact_type": "source",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_05/run_yc_weather_augmentation_multi_seed_archetype_004_05.py",
+      "sha256": "A4D85AF8EA7795D9C591C157F0571B1741CCBA5C7379445D1FB75171CCA03CCE",
+      "size_bytes": 108386,
+      "note": "8-seed experiment runner"
+    },
+    {
+      "stage": "ppo_004_05",
+      "artifact_type": "metadata",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_05/config/training_weather_schedule_random.csv",
+      "sha256": "DC3151464B33CAEED0EE08F9FB71D622143E4F0B8C0357858611405ED0A5954A",
+      "size_bytes": 2289166,
+      "note": "100000 selections, each weather seed 1250 times"
+    },
+    {
+      "stage": "ppo_004_05",
+      "artifact_type": "metadata",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_05/multi_seed_decision.json",
+      "sha256": "D88D3B993B341C0576D280F631BE067B30CC3D19A46959C17E33F5D1C584BA2A",
+      "size_bytes": 4027,
+      "note": "NO_POSITIVE_SIGNAL; paired success 0/8"
+    },
+    {
+      "stage": "ppo_004_05",
+      "artifact_type": "metadata",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_05/all_evaluation_episode_level_0_7.csv",
+      "sha256": "13D790CF3B54859B92AF181F4E998A93D485E965A2292FDEB9DEEA8A5AC79791",
+      "size_bytes": 244920,
+      "note": "Observed and held-out episode summaries"
+    },
+    {
+      "stage": "ppo_004_05",
+      "artifact_type": "metadata",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_05/paired_seed_performance_comparison.csv",
+      "sha256": "24624C8052D711A75B4C717FD7C3FFC916FFEC6C531178EB2A15D3CF802A6EFA",
+      "size_bytes": 5749,
+      "note": "Paired PPO results"
+    },
+    {
+      "stage": "ppo_004_05",
+      "artifact_type": "metadata",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_05/new_training_run_manifest.csv",
+      "sha256": "608AD54EFCE039C7F13208928984E7BC86839825BCECBAE9824FCFF1437BC015",
+      "size_bytes": 5796,
+      "note": "Training run manifest"
+    },
+    {
+      "stage": "ppo_004_05",
+      "artifact_type": "report",
+      "status": "FORMAL",
+      "path": "docs/yc_random_weather_multi_seed_archetype_experiment.md",
+      "sha256": "73E5165DFC55B775E993246D55051DB5693BD087078E53654032020AB5C38B8A",
+      "size_bytes": 17122,
+      "note": "Formal eight-seed conclusion"
+    },
+    {
+      "stage": "weather_audit",
+      "artifact_type": "source",
+      "status": "DIAGNOSTIC",
+      "path": "src/audit_yc_wgen_weather_domain_coverage.py",
+      "sha256": "92FF59D268845041826EC27F00F214B67CA7792699CD06CCC73C0AF16774FBBE",
+      "size_bytes": 10181,
+      "note": "First weather archive inventory"
+    },
+    {
+      "stage": "weather_audit",
+      "artifact_type": "report",
+      "status": "DIAGNOSTIC",
+      "path": "docs/yc_random_weather_weather_domain_coverage_audit.md",
+      "sha256": "2D57690A9292957029DECCEF0A00CD333F68B60E68CAAADE80447ADF4C4F3182",
+      "size_bytes": 3914,
+      "note": "Weather pool expansion DEFER"
+    },
+    {
+      "stage": "weather_audit",
+      "artifact_type": "prompt",
+      "status": "DIAGNOSTIC",
+      "path": "prompt_02/004_16_yc_wgen_weather_reconstruction_and_coverage.md",
+      "sha256": "C2C68B0E0276936D179618285F28857051ABB6137AB94E2F75DC9FAF452DA940",
+      "size_bytes": 1769,
+      "note": "Provenance gate specification"
+    },
+    {
+      "stage": "weather_audit",
+      "artifact_type": "source",
+      "status": "DIAGNOSTIC",
+      "path": "src/run_004_16_yc_wgen_weather_reconstruction_and_coverage.py",
+      "sha256": "4C592432CBE58FF72163A94E558239602A0730CD921CE1ACACB32F941CC78C93",
+      "size_bytes": 25139,
+      "note": "Read-only gate runner"
+    },
+    {
+      "stage": "weather_audit",
+      "artifact_type": "metadata",
+      "status": "DIAGNOSTIC",
+      "path": "results/yc_random_weather_ppo/004_16_yc_wgen_weather_reconstruction/decision.json",
+      "sha256": "ED3456C41C00E4AF454C270682DB0D7AC3A0E2603DC1A69E95A214E6490D4E82",
+      "size_bytes": 1216,
+      "note": "FAILED means no materialization; not WGEN failure"
+    },
+    {
+      "stage": "weather_audit",
+      "artifact_type": "report",
+      "status": "DIAGNOSTIC",
+      "path": "docs/yc_random_weather_004_16_wgen_weather_reconstruction_and_coverage.md",
+      "sha256": "A84AD1C2F67312BCEA45981BE88569829644511215E55F00209C5635613810D5",
+      "size_bytes": 7068,
+      "note": "No formal coverage conclusion"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "prompt",
+      "status": "DIAGNOSTIC",
+      "path": "prompt_02/004_17_yc_runtime_wgen_capture_and_weather_recovery.md",
+      "sha256": "A9975E406CF97AC03CD36D5FF84F2D4B5550F5996060FCC47A613EBE0E602B05",
+      "size_bytes": 3301,
+      "note": "Runtime recovery gate"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "source",
+      "status": "DIAGNOSTIC",
+      "path": "src/run_004_17_yc_runtime_wgen_capture_and_weather_recovery.py",
+      "sha256": "3964AF2FFD59D471D33E56A1D3D6E7ECE372CC4B94B591948EC0CC81C8013DE0",
+      "size_bytes": 78624,
+      "note": "Runtime capture and verification"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "source",
+      "status": "FORMAL",
+      "path": "src/archive_runtime_weather.py",
+      "sha256": "A3320D6F1FAE1632BE543C7B70C6F23C650513FC7DBA0D062F34D973FD0C2CEE",
+      "size_bytes": 5977,
+      "note": "Future episode archive helper"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "metadata",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/weather_archive_manifest_verified.csv",
+      "sha256": "1B70A4B337041425E319C728EFDA2D0F71DDDBB2DE96BD02A390CEAE097B6411",
+      "size_bytes": 61568,
+      "note": "Authoritative 100-row mapping; two provisional"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "metadata",
+      "status": "DIAGNOSTIC",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/hash_verification_context_replay_reconciled.csv",
+      "sha256": "1A74D9E8AF1FAAC0205C7309B60036F41267E6A4ADEAD982F06A3F86D799DE3D",
+      "size_bytes": 54996,
+      "note": "Historical matching ledger"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "metadata",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/provenance/final_archive_integrity.csv",
+      "sha256": "748736DED0043A25C22E26A634EBE2CBD746923AA115F2CF0048BF30CD9F8D5A",
+      "size_bytes": 28335,
+      "note": "100/100 file hashes"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "metadata",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/provenance/final_archive_integrity.json",
+      "sha256": "56418BC8A9D37D0B38CAF25EA8198E99ED5BA56CF492254CD5A5193BE4F041A4",
+      "size_bytes": 3285,
+      "note": "Independent integrity conclusion"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "metadata",
+      "status": "DIAGNOSTIC",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/decision.json",
+      "sha256": "47590F63E70DAC404851214D17E6BAD5C9AE173EFC9030AB010D622F1769BC0E",
+      "size_bytes": 3797,
+      "note": "PARTIALLY_VERIFIED; coverage insufficient"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "report",
+      "status": "DIAGNOSTIC",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/provenance/runtime_weather_generation_chain.md",
+      "sha256": "EF4F62AF9F1E3D7507A6748814D01D6311B6B1D2FC909EA69C4A00EC775A515A",
+      "size_bytes": 3854,
+      "note": "Runtime hash is PDI state-derived, no raw WTH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "report",
+      "status": "DIAGNOSTIC",
+      "path": "docs/yc_random_weather_004_17_runtime_weather_recovery_and_coverage.md",
+      "sha256": "A9FC92DF7442EA78D20135E890938EDAFDD4A388CA104B009C5ADB2882F058F9",
+      "size_bytes": 4531,
+      "note": "98 exact + 2 provisional"
+    },
+    {
+      "stage": "reporting_004_18A",
+      "artifact_type": "prompt",
+      "status": "DIAGNOSTIC",
+      "path": "prompt_02/004_18A_yc_weather_summary_for_reporting.md",
+      "sha256": "069DA6E7C9BDC3B045BB6B644F20A24758C13EB0906E5B72A4FA5FB60C38122B",
+      "size_bytes": 1733,
+      "note": "Descriptive reporting scope"
+    },
+    {
+      "stage": "reporting_004_18A",
+      "artifact_type": "source",
+      "status": "DIAGNOSTIC",
+      "path": "src/run_004_18A_yc_weather_summary_for_reporting.py",
+      "sha256": "D6217A32E650C72B3DD396B5B50C562BAA6DCAD7C821009C87EE2B28EED245B6",
+      "size_bytes": 27949,
+      "note": "Reproducible summary and figures"
+    },
+    {
+      "stage": "reporting_004_18A",
+      "artifact_type": "report",
+      "status": "DIAGNOSTIC",
+      "path": "docs/yc_random_weather_004_18A_weather_summary_for_reporting.md",
+      "sha256": "312EEB8DD143F3ABEDF6AB68E859E677CF4234C24FAD78C9E2A566F8AF587C73",
+      "size_bytes": 4837,
+      "note": "Sensitivity changes identified"
+    },
+    {
+      "stage": "reporting_004_18A",
+      "artifact_type": "report",
+      "status": "DIAGNOSTIC",
+      "path": "docs/yc_random_weather_weather_summary_for_presentation.md",
+      "sha256": "930A89188FC48FA44961E8828BF2DDCFF071EF8469CFF7ACB4479F9A0A3ADD6C",
+      "size_bytes": 1616,
+      "note": "Chinese group-meeting summary"
+    },
+    {
+      "stage": "archival_contract",
+      "artifact_type": "report",
+      "status": "FORMAL",
+      "path": "docs/random_weather_archival_contract.md",
+      "sha256": "E1438A44D0614A60211F2830967A2C73865EBC080E80B58AAB69F5DEC52059E4",
+      "size_bytes": 1947,
+      "note": "Future YC/HL/FQ/LC/SY weather archive contract"
+    },
+    {
+      "stage": "archival_contract",
+      "artifact_type": "source",
+      "status": "DIAGNOSTIC",
+      "path": "src/run_004_18B_yc_random_weather_chain_archive.py",
+      "sha256": "D51550CA4585872D8CE03012F94C1A0B2BC384E249C6AB29E3BDC579A48D74D6",
+      "size_bytes": 11508,
+      "note": "Rebuilds this index"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1001_ctx_2013_172C3081679AA1A9.csv",
+      "sha256": "172C3081679AA1A91058E980A434EA225E5D21ACC7CD03334A5851CA55093E23",
+      "size_bytes": 6220,
+      "note": "seed=1001; set=training; context=2013; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1052_ctx_2004_B09EBAB9173F97C9.csv",
+      "sha256": "B09EBAB9173F97C92204819091DF52EC9D2305692177EACF065A3466AC2E3844",
+      "size_bytes": 12335,
+      "note": "seed=1052; set=training; context=2004; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1056_ctx_2004_B4F246726646E862.csv",
+      "sha256": "B4F246726646E862CA3540DC02C5A60EC4078798EBED1A9EDD74FB7FDB93E76C",
+      "size_bytes": 6438,
+      "note": "seed=1056; set=training; context=2004; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1040_ctx_2004_50D86236179D7444.csv",
+      "sha256": "50D86236179D7444FBCB42ECCC250D88D42EBD42D9FAF7D4358A578C595688E4",
+      "size_bytes": 6684,
+      "note": "seed=1040; set=training; context=2004; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1080_ctx_2004_CDA9746DC8F7DC65.csv",
+      "sha256": "CDA9746DC8F7DC659BF984C6D15F12E2BDC1C6DF66593EB33C6621ABC46A686B",
+      "size_bytes": 6013,
+      "note": "seed=1080; set=training; context=2004; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1041_ctx_2004_671DF355C90FB7BE.csv",
+      "sha256": "671DF355C90FB7BE8E60D119E83B80FC0B8310381800DBA7727B77F498F64C65",
+      "size_bytes": 6027,
+      "note": "seed=1041; set=training; context=2004; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1002_ctx_2004_D7CD8512C8F0918A.csv",
+      "sha256": "D7CD8512C8F0918A08BDA18071DF04A65A41D83A5805E8E926BA13DCF6C05516",
+      "size_bytes": 6769,
+      "note": "seed=1002; set=training; context=2004; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1028_ctx_2004_3C9782F7746AA149.csv",
+      "sha256": "3C9782F7746AA149F3FB8EEE7DC12E161ED7023B364FF846096444B893F9F0C9",
+      "size_bytes": 6534,
+      "note": "seed=1028; set=training; context=2004; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1017_ctx_2004_BA4A69565E742A15.csv",
+      "sha256": "BA4A69565E742A15CE380B152C54231583EE4D44751FC2E9B488B16DF4B8925A",
+      "size_bytes": 6475,
+      "note": "seed=1017; set=training; context=2004; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1050_ctx_2005_8E13DF6F0EF37D06.csv",
+      "sha256": "8E13DF6F0EF37D0626BB30F793825CD2EE503940E4F532C5D89EA193D448396F",
+      "size_bytes": 11378,
+      "note": "seed=1050; set=training; context=2005; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1071_ctx_2005_AB66E3E1C8917FB7.csv",
+      "sha256": "AB66E3E1C8917FB79663065E9112BACA92EF817B7BDE7833C426EAC3DAFD1EC9",
+      "size_bytes": 5844,
+      "note": "seed=1071; set=training; context=2005; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1011_ctx_2005_F3E1531F4AF8F2E0.csv",
+      "sha256": "F3E1531F4AF8F2E0DE21FCD67245427257AC1819FBBA2A3EF4AE3DD5A20E30BA",
+      "size_bytes": 6371,
+      "note": "seed=1011; set=training; context=2005; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1025_ctx_2005_FB653EB80C8974CE.csv",
+      "sha256": "FB653EB80C8974CEEB49E8383132ADBDFF439048C3B5093F808043587DB7F31C",
+      "size_bytes": 6181,
+      "note": "seed=1025; set=training; context=2005; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1021_ctx_2005_8EB4AD3234A76FFB.csv",
+      "sha256": "8EB4AD3234A76FFB9E336F7263596EA8A07307E6536E07BAA88334A2FE26466E",
+      "size_bytes": 6897,
+      "note": "seed=1021; set=training; context=2005; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1010_ctx_2005_C446C3233C3F963F.csv",
+      "sha256": "C446C3233C3F963FC2DB8A7CC86EBD36BE6282B51C433124F298F7E7D93F6CB6",
+      "size_bytes": 6499,
+      "note": "seed=1010; set=training; context=2005; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1061_ctx_2005_076B543B78071D46.csv",
+      "sha256": "076B543B78071D4603258D2A48A837D6B0F9F6B543B712E150FDDEF128264128",
+      "size_bytes": 6466,
+      "note": "seed=1061; set=training; context=2005; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1069_ctx_2005_233DCB626B18A446.csv",
+      "sha256": "233DCB626B18A4463CADFC37A5A07FB8FD2328281DD6279B136714282629B8A7",
+      "size_bytes": 6311,
+      "note": "seed=1069; set=training; context=2005; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1065_ctx_2006_768DE5F513C782CF.csv",
+      "sha256": "768DE5F513C782CF84B45116D9A5A439F9ED3ABC14D16DA8D2870D63D348B7AA",
+      "size_bytes": 12225,
+      "note": "seed=1065; set=training; context=2006; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1059_ctx_2006_F9DC4F135990C922.csv",
+      "sha256": "F9DC4F135990C922DBEA605EA4F08C8E837BCF472A287D6CB6BA150FB0A4BB68",
+      "size_bytes": 6104,
+      "note": "seed=1059; set=training; context=2006; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1007_ctx_2006_9CE20F32AB4DAA05.csv",
+      "sha256": "9CE20F32AB4DAA057E30BC75A0EE4F86631F07198233FF70E7340D86F66FB50B",
+      "size_bytes": 5835,
+      "note": "seed=1007; set=training; context=2006; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1048_ctx_2006_DC43FB484C5E188F.csv",
+      "sha256": "DC43FB484C5E188F443083D95FEE2E679F9980D1C709CCEF60634A52C552DB3B",
+      "size_bytes": 6233,
+      "note": "seed=1048; set=training; context=2006; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1045_ctx_2006_F15E21E1FDC1848A.csv",
+      "sha256": "F15E21E1FDC1848AC1FA5E1168F27F521892754E6C18A8CD93607100A29FD0E5",
+      "size_bytes": 7183,
+      "note": "seed=1045; set=training; context=2006; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1033_ctx_2006_CB7034256D5D884B.csv",
+      "sha256": "CB7034256D5D884B34A7C3C582B74B6F545B939FDB3940DE895E373A14368C19",
+      "size_bytes": 6940,
+      "note": "seed=1033; set=training; context=2006; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1020_ctx_2006_4ED76694FF497BD6.csv",
+      "sha256": "4ED76694FF497BD6C42450ACE559E5B648B62ACE53B175395AFCEF54176BDCEC",
+      "size_bytes": 5852,
+      "note": "seed=1020; set=training; context=2006; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1047_ctx_2006_132280BB60B724CC.csv",
+      "sha256": "132280BB60B724CCBFB7F23F759681F5C4FC9DEA0001111381931B3CC6BBE5AF",
+      "size_bytes": 6092,
+      "note": "seed=1047; set=training; context=2006; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1066_ctx_2007_1245FBF7CAC3E6F3.csv",
+      "sha256": "1245FBF7CAC3E6F3FF7643F46578A042913D0021B36FB93610DB195CDCEDA084",
+      "size_bytes": 12186,
+      "note": "seed=1066; set=training; context=2007; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1031_ctx_2007_292D9E41565E2966.csv",
+      "sha256": "292D9E41565E29668313EF05F1EC16BB98D75E32E9D1F15F8AC951FE71E708F9",
+      "size_bytes": 6090,
+      "note": "seed=1031; set=training; context=2007; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1075_ctx_2007_84F87B90E2C20879.csv",
+      "sha256": "84F87B90E2C2087937B23903D663A31962DAAF9720E9657A51FF93BCFC5A4884",
+      "size_bytes": 6065,
+      "note": "seed=1075; set=training; context=2007; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1039_ctx_2007_F3466E2609A31B1C.csv",
+      "sha256": "F3466E2609A31B1C837E2195CF1FBB17F9333302065CF6AB40BEF57214E56DF0",
+      "size_bytes": 6225,
+      "note": "seed=1039; set=training; context=2007; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1027_ctx_2007_F7EAAE7D46CBCCB4.csv",
+      "sha256": "F7EAAE7D46CBCCB44C8928D0201451D0A9B72E6F0C0755E167CA3E53A62C05A1",
+      "size_bytes": 6758,
+      "note": "seed=1027; set=training; context=2007; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1060_ctx_2007_B2E75B96E5AF7473.csv",
+      "sha256": "B2E75B96E5AF747379C60B51851FB9D5962234C24F99A96C53DFA5B4D948D377",
+      "size_bytes": 6696,
+      "note": "seed=1060; set=training; context=2007; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1016_ctx_2007_20FF08E23F05E351.csv",
+      "sha256": "20FF08E23F05E351ADB14949E5F073CD1340A92F6025B839749FFFC00D64F981",
+      "size_bytes": 6484,
+      "note": "seed=1016; set=training; context=2007; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1074_ctx_2007_21F7896F7B6FD278.csv",
+      "sha256": "21F7896F7B6FD278DC8E78D2AA49F993338282B8A74434ECFB6A7182FA42660B",
+      "size_bytes": 6349,
+      "note": "seed=1074; set=training; context=2007; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1064_ctx_2008_CC0504B1210883D3.csv",
+      "sha256": "CC0504B1210883D348CF09B469CE1B5E6F570693D1FD48A8606932BF89BF8F4B",
+      "size_bytes": 11968,
+      "note": "seed=1064; set=training; context=2008; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1032_ctx_2008_C62A09F8721F09AA.csv",
+      "sha256": "C62A09F8721F09AAA0E1C2B16FA463D159412B9DF25A3E2ED189716260E65C7F",
+      "size_bytes": 5825,
+      "note": "seed=1032; set=training; context=2008; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1054_ctx_2008_EBCE624109B9FEB5.csv",
+      "sha256": "EBCE624109B9FEB55B72BF9A2182DA0F269B43A126D897FF1F943D6174C8BF4A",
+      "size_bytes": 6165,
+      "note": "seed=1054; set=training; context=2008; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1015_ctx_2008_9699046963F28E8B.csv",
+      "sha256": "9699046963F28E8B162AED9A05CFFD403D52CB009EB5BD664DE03432A43DAD7C",
+      "size_bytes": 5997,
+      "note": "seed=1015; set=training; context=2008; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1012_ctx_2008_FBF22A0712A4A62F.csv",
+      "sha256": "FBF22A0712A4A62F0EC9B34F78C09B72780879A73540291B95973698BCBAE2A6",
+      "size_bytes": 5848,
+      "note": "seed=1012; set=training; context=2008; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1037_ctx_2008_42FEF4F1AF9B99ED.csv",
+      "sha256": "42FEF4F1AF9B99ED78E8DEB1E71506C5C1AFDF6044A26A4D6A17C1118CE48BDD",
+      "size_bytes": 6173,
+      "note": "seed=1037; set=training; context=2008; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1073_ctx_2008_E33B2BBF98F9B1E7.csv",
+      "sha256": "E33B2BBF98F9B1E75AA8F2FA511FA82EADFEDCCDE7027372D7767B8C47BAD8F9",
+      "size_bytes": 6217,
+      "note": "seed=1073; set=training; context=2008; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1006_ctx_2008_B50043C05295D6AD.csv",
+      "sha256": "B50043C05295D6AD15C763B23000C5F27EB22B52A123B988CD6A51967523AC4D",
+      "size_bytes": 6259,
+      "note": "seed=1006; set=training; context=2008; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1053_ctx_2009_3F04A34518A054CF.csv",
+      "sha256": "3F04A34518A054CFAC77C92FAD6F19DC44857360679E3B4B8B11579ABFB5B3DB",
+      "size_bytes": 11859,
+      "note": "seed=1053; set=training; context=2009; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "PROVISIONAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1036_ctx_2009_A4F8F4F5BF14BDCD.csv",
+      "sha256": "A4F8F4F5BF14BDCD40D2DE9E1FAE09C8DC6311C0E4E202D0170EF3163BE3E00B",
+      "size_bytes": 6027,
+      "note": "seed=1036; set=training; context=2009; historical=MISMATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1079_ctx_2009_0A9F060BBE7F9190.csv",
+      "sha256": "0A9F060BBE7F91908378E0F8A41A369F2FC72C3D69057E23C5F03119E21166F6",
+      "size_bytes": 6965,
+      "note": "seed=1079; set=training; context=2009; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1035_ctx_2009_91A4CE2DECA6ECB4.csv",
+      "sha256": "91A4CE2DECA6ECB426E5F1D1273AB018712E2035F49225ED436EF5FA11EF366E",
+      "size_bytes": 6786,
+      "note": "seed=1035; set=training; context=2009; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1051_ctx_2009_C4CD57A01F4DC862.csv",
+      "sha256": "C4CD57A01F4DC862ADA8EEA1830D2EC5637BD6E3375AD96539372B3425552B97",
+      "size_bytes": 6543,
+      "note": "seed=1051; set=training; context=2009; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1046_ctx_2009_E574A7F04684B146.csv",
+      "sha256": "E574A7F04684B14652C049A114AEBD0D6C027EECCF264D4C2E7A45EFB3C05651",
+      "size_bytes": 6245,
+      "note": "seed=1046; set=training; context=2009; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1024_ctx_2009_154F041B2EC044F6.csv",
+      "sha256": "154F041B2EC044F6B28A2847C7DDD709E77F88EC41FB7D9980A775C5E31AF654",
+      "size_bytes": 6358,
+      "note": "seed=1024; set=training; context=2009; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1062_ctx_2009_7DD6E874ED626D57.csv",
+      "sha256": "7DD6E874ED626D575076AB0FDB700E7997F9CDE63642A4BDA14573FAC74B385F",
+      "size_bytes": 6150,
+      "note": "seed=1062; set=training; context=2009; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1009_ctx_2010_67704901AE46E04C.csv",
+      "sha256": "67704901AE46E04C70FD3060394FE2EB4892CD64B2D7BC4CFD06FB5AC955C316",
+      "size_bytes": 13267,
+      "note": "seed=1009; set=training; context=2010; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1038_ctx_2010_4C737343ED1A0536.csv",
+      "sha256": "4C737343ED1A05362876826171FFB6715BD07AAA957DA2CA25B32681DEF45E0E",
+      "size_bytes": 5828,
+      "note": "seed=1038; set=training; context=2010; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1018_ctx_2010_B086CE0865214D26.csv",
+      "sha256": "B086CE0865214D263A5CF2FD0756A1AD775B0D17C87EF6ED5026C0863392F43C",
+      "size_bytes": 6367,
+      "note": "seed=1018; set=training; context=2010; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1004_ctx_2010_52822EAC35381B78.csv",
+      "sha256": "52822EAC35381B78B7B199FDB68B836DD68B4403B5177F25225BD29C8A638FD0",
+      "size_bytes": 6372,
+      "note": "seed=1004; set=training; context=2010; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1023_ctx_2010_D702D29666A1E417.csv",
+      "sha256": "D702D29666A1E417AA71D0F12DAAFBCD67AF82EF01CA0ACB02DBF3F0D30697A7",
+      "size_bytes": 6163,
+      "note": "seed=1023; set=training; context=2010; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1008_ctx_2010_9E5DB6C5BFD314DB.csv",
+      "sha256": "9E5DB6C5BFD314DB05557A3082936B1876349B82D1A58868ED4DEDA74CC1308F",
+      "size_bytes": 6295,
+      "note": "seed=1008; set=training; context=2010; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1049_ctx_2010_FD03762C0C9C3024.csv",
+      "sha256": "FD03762C0C9C3024F0F1EC162FB6E36B51D1ABDAE1215F2E58158B3398BBAD03",
+      "size_bytes": 6261,
+      "note": "seed=1049; set=training; context=2010; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1057_ctx_2010_36AFC26A2AFC66A9.csv",
+      "sha256": "36AFC26A2AFC66A9DEAEFDC40D5AD8AEA2ECBE6956313E4A7E700E406F816651",
+      "size_bytes": 6495,
+      "note": "seed=1057; set=training; context=2010; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1013_ctx_2011_BF488911BA138E22.csv",
+      "sha256": "BF488911BA138E229F3D8D804CE7782EFBB66991548B27E488B7BD44E7A7029E",
+      "size_bytes": 12854,
+      "note": "seed=1013; set=training; context=2011; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1077_ctx_2011_8A81E4C5467ABDE7.csv",
+      "sha256": "8A81E4C5467ABDE7CAE517ECFA1798D65109C071F458A7D6D837937117F90AA7",
+      "size_bytes": 6571,
+      "note": "seed=1077; set=training; context=2011; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1005_ctx_2011_4A64BBFD25F020D5.csv",
+      "sha256": "4A64BBFD25F020D51BEB6C19F73DD1F4CD464A2D0D0F556AB68ACF11E557D2BD",
+      "size_bytes": 6115,
+      "note": "seed=1005; set=training; context=2011; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1034_ctx_2011_28827ED0D4026E11.csv",
+      "sha256": "28827ED0D4026E11AE1FC3549A4B36D2A9C2037B1F873342FA454F802354065B",
+      "size_bytes": 6117,
+      "note": "seed=1034; set=training; context=2011; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1014_ctx_2011_87362925F63B3C86.csv",
+      "sha256": "87362925F63B3C86448B37C33207AB4CDFC6DC7E171C32ABD1DED293E603E5AE",
+      "size_bytes": 6934,
+      "note": "seed=1014; set=training; context=2011; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1044_ctx_2011_9F12685EEEA2611D.csv",
+      "sha256": "9F12685EEEA2611D34D339B17D858029B1F39D425E256295F92894CB3F52BA00",
+      "size_bytes": 6185,
+      "note": "seed=1044; set=training; context=2011; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "PROVISIONAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1003_ctx_2011_3B4F17895958422B.csv",
+      "sha256": "3B4F17895958422B960857DEFCA494A262DC511B713F50992DCD77EE881DAE6C",
+      "size_bytes": 6571,
+      "note": "seed=1003; set=training; context=2011; historical=MISMATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1078_ctx_2011_8AF7FEAE2B6549F0.csv",
+      "sha256": "8AF7FEAE2B6549F0188B9F2A0B90CCA3D5C798F143588D03072455AD4FF9CF1A",
+      "size_bytes": 6283,
+      "note": "seed=1078; set=training; context=2011; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1070_ctx_2012_369115E1D2AB8349.csv",
+      "sha256": "369115E1D2AB834927BD6F8BF809D19B07D307CBF27CF206B6EFA7AC13B28549",
+      "size_bytes": 12073,
+      "note": "seed=1070; set=training; context=2012; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1022_ctx_2012_83CB177E3857F405.csv",
+      "sha256": "83CB177E3857F4053CCA061D001890CE2B0BD3FDFC35ABD352859BA60A042D48",
+      "size_bytes": 5945,
+      "note": "seed=1022; set=training; context=2012; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1068_ctx_2012_4D509EADD12D6415.csv",
+      "sha256": "4D509EADD12D6415F1AE300D3BF1E68152C949DE02CD983D5794CFDC7AA25C6E",
+      "size_bytes": 6183,
+      "note": "seed=1068; set=training; context=2012; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1067_ctx_2012_D000525BDD1C81D6.csv",
+      "sha256": "D000525BDD1C81D618A85570769312D51E264294183E0ADB5655A8FF4E5F0E94",
+      "size_bytes": 6205,
+      "note": "seed=1067; set=training; context=2012; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1055_ctx_2012_F54360ADCD8FF8FF.csv",
+      "sha256": "F54360ADCD8FF8FF91818C687D074902FDDF9DB33E8AA0391ACC02D6E55888B6",
+      "size_bytes": 6481,
+      "note": "seed=1055; set=training; context=2012; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1030_ctx_2012_387A1B82146CD6B1.csv",
+      "sha256": "387A1B82146CD6B1F783A9635D15F4E87F799FFCDFEBC4BB87232C17DBEDF368",
+      "size_bytes": 7331,
+      "note": "seed=1030; set=training; context=2012; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1019_ctx_2012_8C0E5F1C0B2081E9.csv",
+      "sha256": "8C0E5F1C0B2081E9A18E5CA66BC0C25B77F3BADA81DD466C8B8A085E8236D65E",
+      "size_bytes": 7085,
+      "note": "seed=1019; set=training; context=2012; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1029_ctx_2012_7ED883B7FCF53BDA.csv",
+      "sha256": "7ED883B7FCF53BDAF0FAD527D6BF94B2D9ABBBC10E484D99410B48685169F121",
+      "size_bytes": 5723,
+      "note": "seed=1029; set=training; context=2012; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1026_ctx_2013_EB2517CBF38221F3.csv",
+      "sha256": "EB2517CBF38221F31FB3D1A2073110C64ACAFA89246B97598B23D69AA3097D21",
+      "size_bytes": 12726,
+      "note": "seed=1026; set=training; context=2013; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1043_ctx_2013_DA4BBBC19DBA4E1E.csv",
+      "sha256": "DA4BBBC19DBA4E1E74E750BBD30E9AB451CB97F96489536DD296CD3A9B6A7C9F",
+      "size_bytes": 6488,
+      "note": "seed=1043; set=training; context=2013; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1042_ctx_2013_F951FB847479D946.csv",
+      "sha256": "F951FB847479D946ADC4142318B39968571A8BB4CFF7AA81DE02D4AF02048892",
+      "size_bytes": 6220,
+      "note": "seed=1042; set=training; context=2013; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1072_ctx_2013_AA1C0CEC20F015C4.csv",
+      "sha256": "AA1C0CEC20F015C4833CAF5F7F6568826B6C8FD9B51C864BEC39930520C0E0C6",
+      "size_bytes": 6495,
+      "note": "seed=1072; set=training; context=2013; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1063_ctx_2013_C0DEB2B260AE8EA8.csv",
+      "sha256": "C0DEB2B260AE8EA8E0789463874338A53C170904EADCE9C1BAE5D437B1F531FB",
+      "size_bytes": 6675,
+      "note": "seed=1063; set=training; context=2013; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1076_ctx_2013_AF1439FABCD970A1.csv",
+      "sha256": "AF1439FABCD970A1B982174C4E58986078CAA8673003766AFA4622BFED22DCFB",
+      "size_bytes": 6648,
+      "note": "seed=1076; set=training; context=2013; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1058_ctx_2013_016F3CE47A67E1F9.csv",
+      "sha256": "016F3CE47A67E1F9436783A8F16437C922161764CA9F46CBA982400A21FE1EB7",
+      "size_bytes": 6138,
+      "note": "seed=1058; set=training; context=2013; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/heldout/seed_1081_ctx_2008_6941C029313E7346.csv",
+      "sha256": "6941C029313E7346113863EE79C4AEBC24FF54113EC59D616365EBDB5482A947",
+      "size_bytes": 12595,
+      "note": "seed=1081; set=heldout; context=2008; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/heldout/seed_1082_ctx_2008_165B296A14D11352.csv",
+      "sha256": "165B296A14D113529881D5EFAC1A812EBDC374F1732060AE55EA04E6CA9CA47A",
+      "size_bytes": 5927,
+      "note": "seed=1082; set=heldout; context=2008; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/heldout/seed_1083_ctx_2008_0380968E7EBC9A50.csv",
+      "sha256": "0380968E7EBC9A5038E25AF006549437530ED5D540F06ED219D479B170A40789",
+      "size_bytes": 6420,
+      "note": "seed=1083; set=heldout; context=2008; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/heldout/seed_1084_ctx_2008_8C2D3053258CBA75.csv",
+      "sha256": "8C2D3053258CBA75C342F4225AB262187924801901AF86A0E4F299619F708315",
+      "size_bytes": 6097,
+      "note": "seed=1084; set=heldout; context=2008; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/heldout/seed_1085_ctx_2008_ABA6691DBE193F07.csv",
+      "sha256": "ABA6691DBE193F07C276A4EE41F1198C9D3A67FD1F3A850739EB6BFCDE44E075",
+      "size_bytes": 6032,
+      "note": "seed=1085; set=heldout; context=2008; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/heldout/seed_1086_ctx_2008_C4712661C03939EB.csv",
+      "sha256": "C4712661C03939EB18F8486602F78C7B94476E928382AED5DC8F64E436493C6C",
+      "size_bytes": 5888,
+      "note": "seed=1086; set=heldout; context=2008; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/heldout/seed_1087_ctx_2008_E3C553AA0C3403D3.csv",
+      "sha256": "E3C553AA0C3403D3F36495BCD79AE560D85BF36E827FB9658FC43EB0ABB48D44",
+      "size_bytes": 6002,
+      "note": "seed=1087; set=heldout; context=2008; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/heldout/seed_1088_ctx_2008_1B0D1D7AC11AA272.csv",
+      "sha256": "1B0D1D7AC11AA272FEE02ECB3787D4D13EAB2027F3FD48BA05E62A02394D56D8",
+      "size_bytes": 6266,
+      "note": "seed=1088; set=heldout; context=2008; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/heldout/seed_1089_ctx_2008_50053C31F2EDA961.csv",
+      "sha256": "50053C31F2EDA9614A8D0F6BAFE2623B73B1C1D5889F230C4D8E02EE7ECD4AF2",
+      "size_bytes": 6804,
+      "note": "seed=1089; set=heldout; context=2008; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/heldout/seed_1090_ctx_2008_A2030BCAEE4C55CB.csv",
+      "sha256": "A2030BCAEE4C55CB01A35F830394AAA83E37840BC8FBBB799792B5837F566B5D",
+      "size_bytes": 6195,
+      "note": "seed=1090; set=heldout; context=2008; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/heldout/seed_1091_ctx_2008_450F85AF7DAE6588.csv",
+      "sha256": "450F85AF7DAE6588554B6302DDAC009706AB608A7A833B62680CBA39B1BD1C98",
+      "size_bytes": 6573,
+      "note": "seed=1091; set=heldout; context=2008; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/heldout/seed_1092_ctx_2008_106B544826FEABC9.csv",
+      "sha256": "106B544826FEABC97F03AB36847EF84C856E5777D6A25EFCA1FA8CD44A4361AB",
+      "size_bytes": 6266,
+      "note": "seed=1092; set=heldout; context=2008; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/heldout/seed_1093_ctx_2008_C070A6419DA182F0.csv",
+      "sha256": "C070A6419DA182F0ADF2AD1B15BB92AAA7C51C236EAD27FC39C138978E6E4FB1",
+      "size_bytes": 6582,
+      "note": "seed=1093; set=heldout; context=2008; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/heldout/seed_1094_ctx_2008_F1B09C12E9B2F700.csv",
+      "sha256": "F1B09C12E9B2F7005BC88AC2A5B4446524ADC34DDFE890CAF433B9439E764535",
+      "size_bytes": 6906,
+      "note": "seed=1094; set=heldout; context=2008; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/heldout/seed_1095_ctx_2008_82A172991F8CEE1F.csv",
+      "sha256": "82A172991F8CEE1F6EF3E1FA7C861BB804488ADD13A26A04CD71595825D148E7",
+      "size_bytes": 6092,
+      "note": "seed=1095; set=heldout; context=2008; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/heldout/seed_1096_ctx_2008_E2A3839C5FA71BEC.csv",
+      "sha256": "E2A3839C5FA71BEC2A935A99B38DE6750EEDD6753E62C4792DE1BD8F3BF36DAC",
+      "size_bytes": 5957,
+      "note": "seed=1096; set=heldout; context=2008; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/heldout/seed_1097_ctx_2008_B154580A791797E4.csv",
+      "sha256": "B154580A791797E486A9931C9C99CD68F933B6FB51A8A22CB2E69F4530D81AE1",
+      "size_bytes": 6462,
+      "note": "seed=1097; set=heldout; context=2008; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/heldout/seed_1098_ctx_2008_045F3EEA05D28495.csv",
+      "sha256": "045F3EEA05D28495C087C0E82CE150AA27600E2A7FCB1B404C2F6E2C221D89BB",
+      "size_bytes": 6546,
+      "note": "seed=1098; set=heldout; context=2008; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/heldout/seed_1099_ctx_2008_CE3E61CFE2F4E4D2.csv",
+      "sha256": "CE3E61CFE2F4E4D2DBD1FFA0F34407DCCA11C3599580B2CEA42C165CBF77597B",
+      "size_bytes": 6515,
+      "note": "seed=1099; set=heldout; context=2008; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "recovery_004_17",
+      "artifact_type": "canonical_weather",
+      "status": "FORMAL",
+      "path": "results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/heldout/seed_1100_ctx_2008_18B78E15D489E61A.csv",
+      "sha256": "18B78E15D489E61A47CFC1ECDCA86361E6CDC6AC2199BB1B0D48CF993C17F1C3",
+      "size_bytes": 6057,
+      "note": "seed=1100; set=heldout; context=2008; historical=EXACT_MATCH"
+    },
+    {
+      "stage": "reporting_004_18A",
+      "artifact_type": "table",
+      "status": "DIAGNOSTIC",
+      "path": "results/yc_random_weather_ppo/004_18A_yc_weather_summary_for_reporting/full80_vs_exact78_sensitivity.csv",
+      "sha256": "3B06318359798D9885CFD5ED28778805115161487DD46B613FFC72C386496C12",
+      "size_bytes": 28920,
+      "note": "Descriptive only"
+    },
+    {
+      "stage": "reporting_004_18A",
+      "artifact_type": "table",
+      "status": "DIAGNOSTIC",
+      "path": "results/yc_random_weather_ppo/004_18A_yc_weather_summary_for_reporting/observed_training_percentiles.csv",
+      "sha256": "8EE87C16D7B20A181BEE5A8D7CCFE6CE51FDF19697932F9AB645CA2E82EBF2D7",
+      "size_bytes": 93084,
+      "note": "Descriptive only"
+    },
+    {
+      "stage": "reporting_004_18A",
+      "artifact_type": "table",
+      "status": "DIAGNOSTIC",
+      "path": "results/yc_random_weather_ppo/004_18A_yc_weather_summary_for_reporting/observed_weather_2014_2023.csv",
+      "sha256": "EC55C215D672D2C06738922ADADFC956BACAF7EB9EE5061CEFB1618F96F49756",
+      "size_bytes": 2228,
+      "note": "Descriptive only"
+    },
+    {
+      "stage": "reporting_004_18A",
+      "artifact_type": "table",
+      "status": "DIAGNOSTIC",
+      "path": "results/yc_random_weather_ppo/004_18A_yc_weather_summary_for_reporting/season_alignment_qc.csv",
+      "sha256": "2E0B53365DFA68E7ECD7FD4094CCEA54D8488F9EAA18E86C136E33F5F017781F",
+      "size_bytes": 25068,
+      "note": "Descriptive only"
+    },
+    {
+      "stage": "reporting_004_18A",
+      "artifact_type": "table",
+      "status": "DIAGNOSTIC",
+      "path": "results/yc_random_weather_ppo/004_18A_yc_weather_summary_for_reporting/weather_realization_summary.csv",
+      "sha256": "B2B1B124DC3393DE900C11C79F1A03872FC6B12362E52F7A9AE57E19EA226ED4",
+      "size_bytes": 33404,
+      "note": "Descriptive only"
+    },
+    {
+      "stage": "reporting_004_18A",
+      "artifact_type": "table",
+      "status": "DIAGNOSTIC",
+      "path": "results/yc_random_weather_ppo/004_18A_yc_weather_summary_for_reporting/weather_stage_summary.csv",
+      "sha256": "2BB0BF505FBE4534B04646E5E43AB5578C8AB14571C7C10B7819A9F106403EE5",
+      "size_bytes": 135744,
+      "note": "Descriptive only"
+    },
+    {
+      "stage": "reporting_004_18A",
+      "artifact_type": "table",
+      "status": "DIAGNOSTIC",
+      "path": "results/yc_random_weather_ppo/004_18A_yc_weather_summary_for_reporting/weather_summary_for_presentation.csv",
+      "sha256": "7A35A6B1CEE21BE030E0CD90357306AD18B8976BE7E3CFCBC14EFF4DC6AE88FD",
+      "size_bytes": 1450,
+      "note": "Descriptive only"
+    },
+    {
+      "stage": "reporting_004_18A",
+      "artifact_type": "metadata",
+      "status": "DIAGNOSTIC",
+      "path": "results/yc_random_weather_ppo/004_18A_yc_weather_summary_for_reporting/summary_status.json",
+      "sha256": "845E7E61960EDF88185A9E1D525C4A17D31F04CE035AAF221A5D59553FA79B60",
+      "size_bytes": 312,
+      "note": "Coverage verdict pending"
+    },
+    {
+      "stage": "reporting_004_18A",
+      "artifact_type": "figure",
+      "status": "DIAGNOSTIC",
+      "path": "results/yc_random_weather_ppo/004_18A_yc_weather_summary_for_reporting/figures/figure1_dataset_overview.png",
+      "sha256": "B2B3E9B3CBBC9CDC2E4B6FEC3D33709785BB70B3E975F123E5A068E211B753B9",
+      "size_bytes": 33397,
+      "note": "Group-meeting figure"
+    },
+    {
+      "stage": "reporting_004_18A",
+      "artifact_type": "figure",
+      "status": "DIAGNOSTIC",
+      "path": "results/yc_random_weather_ppo/004_18A_yc_weather_summary_for_reporting/figures/figure2_seasonal_rainfall.png",
+      "sha256": "02849A69BF8C92680F602FA02ADDDB927D91F48B0B445EE93A1EC8F42A1397B5",
+      "size_bytes": 65062,
+      "note": "Group-meeting figure"
+    },
+    {
+      "stage": "reporting_004_18A",
+      "artifact_type": "figure",
+      "status": "DIAGNOSTIC",
+      "path": "results/yc_random_weather_ppo/004_18A_yc_weather_summary_for_reporting/figures/figure3_rainfall_extremes.png",
+      "sha256": "70D4F1B4AF552460ECB25FC6DDE874787A7ED4FBBAB5C2C0ACE775B85497447D",
+      "size_bytes": 101895,
+      "note": "Group-meeting figure"
+    },
+    {
+      "stage": "reporting_004_18A",
+      "artifact_type": "figure",
+      "status": "DIAGNOSTIC",
+      "path": "results/yc_random_weather_ppo/004_18A_yc_weather_summary_for_reporting/figures/figure4_temperature_exposure.png",
+      "sha256": "EF8CFC80C606B3419E1DE58D7986B7B680A05328B874D52DD7F768115D991F2E",
+      "size_bytes": 101797,
+      "note": "Group-meeting figure"
+    },
+    {
+      "stage": "reporting_004_18A",
+      "artifact_type": "figure",
+      "status": "DIAGNOSTIC",
+      "path": "results/yc_random_weather_ppo/004_18A_yc_weather_summary_for_reporting/figures/figure5_srad_distribution.png",
+      "sha256": "A026B8BFE09B422832890A213084DA8D1FA3580F123AF215F809CA6C2B5CE71B",
+      "size_bytes": 45095,
+      "note": "Group-meeting figure"
+    },
+    {
+      "stage": "reporting_004_18A",
+      "artifact_type": "figure",
+      "status": "DIAGNOSTIC",
+      "path": "results/yc_random_weather_ppo/004_18A_yc_weather_summary_for_reporting/figures/figure6_stage_rainfall.png",
+      "sha256": "E9965A68DBC109BDD1DC7C8DC93FCFB5065FADEA138D82F34D6FBE18FD4F69B1",
+      "size_bytes": 57919,
+      "note": "Group-meeting figure"
+    },
+    {
+      "stage": "reporting_004_18A",
+      "artifact_type": "figure",
+      "status": "DIAGNOSTIC",
+      "path": "results/yc_random_weather_ppo/004_18A_yc_weather_summary_for_reporting/figures/figure7_stage_temperature.png",
+      "sha256": "D742018931E7B6FB9DB0AB6F0398CA7F34C41BBDC8D5D6CB605A166D7EEE17AC",
+      "size_bytes": 113019,
+      "note": "Group-meeting figure"
+    },
+    {
+      "stage": "reporting_004_18A",
+      "artifact_type": "figure",
+      "status": "DIAGNOSTIC",
+      "path": "results/yc_random_weather_ppo/004_18A_yc_weather_summary_for_reporting/figures/figure8_observed_percentile_heatmap.png",
+      "sha256": "82125FD6FA277050383E2D60FD9B1CB2768C20F7A3036D58664D261AB0D9DC9A",
+      "size_bytes": 143102,
+      "note": "Group-meeting figure"
+    },
+    {
+      "stage": "reporting_004_18A",
+      "artifact_type": "figure",
+      "status": "DIAGNOSTIC",
+      "path": "results/yc_random_weather_ppo/004_18A_yc_weather_summary_for_reporting/figures/figure9_seed5_key_year_weather.png",
+      "sha256": "D2AE90622683287E05896A9A6DC55CBF56214FE53AAD2934AD1EEC047C977E0B",
+      "size_bytes": 85508,
+      "note": "Group-meeting figure"
+    }
+  ]
+}

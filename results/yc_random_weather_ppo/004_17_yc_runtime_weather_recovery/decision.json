@@ -1,0 +1,85 @@
+{
+  "authoritative_hash_ledger": "hash_verification_context_replay_reconciled.csv",
+  "batch_count": 100,
+  "batch_exact_count": 98,
+  "coverage": {
+    "coverage_status": "INSUFFICIENT",
+    "reason": "Two training weather seed/context pairs did not match historical hashes; daily historical weather snapshots are unavailable for canonical row-level comparison.",
+    "unverified_rows": [
+      {
+        "crop_year": "2009",
+        "daily_rows": "100",
+        "generated_runtime_hash": "AFCE25700AD1CEF9DC397A4770C17E23DE0F0FF5D186CE8E0B50A6A1D277DD3D",
+        "historical_hashes": "5FE6CE48C76ACC3DF2DA32DEEF6050C91B1684DA6D69864ED083BC694E22B0B4",
+        "verification_status": "MISMATCH",
+        "weather_seed": "1036"
+      },
+      {
+        "crop_year": "2011",
+        "daily_rows": "108",
+        "generated_runtime_hash": "EC8FA734477ED789D8EDD11331C76563CD5F42D3BC52131B7850270556FC1BDB",
+        "historical_hashes": "5593D99D25DE5DC0E33935F2239558DCF96BB710F07007F2D46C670005D2ABE9",
+        "verification_status": "MISMATCH",
+        "weather_seed": "1003"
+      }
+    ]
+  },
+  "crop_simulation_outputs_used": false,
+  "historical_hash_reconciliation": {
+    "counts_by_set_and_status": {
+      "heldout": {
+        "EXACT_MATCH": 20
+      },
+      "training": {
+        "EXACT_MATCH": 78,
+        "MISMATCH": 2
+      }
+    },
+    "coverage_reason": "Two training weather seed/context pairs did not match historical hashes; daily historical weather snapshots are unavailable for canonical row-level comparison.",
+    "formal_coverage_run": false,
+    "heldout_model_seed_used_for_reference": 5,
+    "historical_heldout_source": "results/yc_random_weather_ppo/004_05/all_evaluation_episode_level_0_7.csv",
+    "historical_training_sources": "all available 004_05 random_weather PPO training_episode_summary.csv files",
+    "next_weather_action": "INSUFFICIENT",
+    "observed_training_coverage": "INSUFFICIENT",
+    "reconciled_ledger": "hash_verification_context_replay_reconciled.csv",
+    "source_ledger": "hash_verification_context_replay_complete.csv",
+    "unresolved_rows": [
+      {
+        "crop_year": "2009",
+        "daily_rows": "100",
+        "generated_runtime_hash": "AFCE25700AD1CEF9DC397A4770C17E23DE0F0FF5D186CE8E0B50A6A1D277DD3D",
+        "historical_hashes": "5FE6CE48C76ACC3DF2DA32DEEF6050C91B1684DA6D69864ED083BC694E22B0B4",
+        "verification_status": "MISMATCH",
+        "weather_seed": "1036"
+      },
+      {
+        "crop_year": "2011",
+        "daily_rows": "108",
+        "generated_runtime_hash": "EC8FA734477ED789D8EDD11331C76563CD5F42D3BC52131B7850270556FC1BDB",
+        "historical_hashes": "5593D99D25DE5DC0E33935F2239558DCF96BB710F07007F2D46C670005D2ABE9",
+        "verification_status": "MISMATCH",
+        "weather_seed": "1003"
+      }
+    ],
+    "verified_archive_manifest": "weather_archive_manifest_verified.csv",
+    "weather_recovery_status": "PARTIALLY_VERIFIED",
+    "weather_tail_gap": "INSUFFICIENT"
+  },
+  "historical_wth_note": "Historical runtime snapshot had no emitted WTH; actual daily state series is the weather evidence. Static rendered source WTH is excluded.",
+  "next_weather_action": "INSUFFICIENT",
+  "observed_training_coverage": "INSUFFICIENT",
+  "raw_wth_emitted": "NOT_EMITTED_OR_NOT_CHANGED_FROM_INPUT",
+  "side_effect_classification": "NON_SCIENTIFIC_RUNTIME_SIDE_EFFECT",
+  "smoke_context": {
+    "crop_year": 2013,
+    "rseed1": 1001,
+    "schedule_episode": 26,
+    "weather_seed": 1001
+  },
+  "smoke_generated_hash": "13C121A6DFED924FAB7C38EC53DDCC6FB37A39B0B1D2578DDBE42D445D53FEF1",
+  "smoke_historical_hash": "13C121A6DFED924FAB7C38EC53DDCC6FB37A39B0B1D2578DDBE42D445D53FEF1",
+  "smoke_status": "EXACT_MATCH",
+  "weather_recovery_status": "PARTIALLY_VERIFIED",
+  "weather_tail_gap": "INSUFFICIENT"
+}

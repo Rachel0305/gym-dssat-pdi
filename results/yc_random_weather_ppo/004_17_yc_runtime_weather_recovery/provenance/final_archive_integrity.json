@@ -1,0 +1,73 @@
+{
+  "all_referenced_files_exist_and_hash_match": true,
+  "archive_manifest_episode_rows_including_retained_attempts": 137,
+  "canonical_files_hash_ok": 100,
+  "canonical_files_referenced": 100,
+  "canonical_files_total_in_archive_including_retained_attempts": 134,
+  "check_type": "independent_process_read_only_archive_hash_check",
+  "checked_at_utc": "2026-09-27T02:10:29.624859+00:00",
+  "container_root": "/workspace",
+  "formal_climate_coverage_run": false,
+  "historical_verification_by_set": {
+    "heldout": {
+      "EXACT_MATCH": 20
+    },
+    "training": {
+      "EXACT_MATCH": 78,
+      "MISMATCH": 2
+    }
+  },
+  "host_root": "C:\\Users\\DELL\\gym_workspace\\gym_dssat_pdi_bingo\\gym-dssat-pdi",
+  "ledger_rows": 100,
+  "non_scientific_runtime_crop_outputs_used": false,
+  "raw_wth_files_emitted_and_archived": 0,
+  "unresolved_historical_matches": [
+    {
+      "archive_weather_id": "seed_1036_ctx_2009_A4F8F4F5BF14BDCD",
+      "canonical_csv_path": "canonical_weather/training/seed_1036_ctx_2009_A4F8F4F5BF14BDCD.csv",
+      "canonical_series_sha256": "A4F8F4F5BF14BDCD40D2DE9E1FAE09C8DC6311C0E4E202D0170EF3163BE3E00B",
+      "cli_sha256": "65CF134600A5881706A5D435E1A09B276ED92A21FA5ABE2E18AAF63AF1E3A929",
+      "crop_year": "2009",
+      "episode_id": "training_context_replay_seed_1036_ctx_2009_ep_20",
+      "generated_runtime_hash": "AFCE25700AD1CEF9DC397A4770C17E23DE0F0FF5D186CE8E0B50A6A1D277DD3D",
+      "generator_version": "DSSAT runtime WTHER=W; exact generator build not separately exposed",
+      "hash_match_status": "MISMATCH",
+      "historical_runtime_hash": "5FE6CE48C76ACC3DF2DA32DEEF6050C91B1684DA6D69864ED083BC694E22B0B4",
+      "raw_wth_path": "",
+      "raw_wth_sha256": "",
+      "raw_wth_status": "NOT_EMITTED_OR_NOT_CHANGED_FROM_INPUT",
+      "rseed1": "1036",
+      "runtime_version": "0.0.5",
+      "season_start": "2009-06-18",
+      "set": "training",
+      "source_runtime_path": "/opt/dssat_pdi/run_dssat",
+      "station": "YCA",
+      "verification_level": "MISMATCH",
+      "weather_seed": "1036"
+    },
+    {
+      "archive_weather_id": "seed_1003_ctx_2011_3B4F17895958422B",
+      "canonical_csv_path": "canonical_weather/training/seed_1003_ctx_2011_3B4F17895958422B.csv",
+      "canonical_series_sha256": "3B4F17895958422B960857DEFCA494A262DC511B713F50992DCD77EE881DAE6C",
+      "cli_sha256": "65CF134600A5881706A5D435E1A09B276ED92A21FA5ABE2E18AAF63AF1E3A929",
+      "crop_year": "2011",
+      "episode_id": "training_context_replay_seed_1003_ctx_2011_ep_62",
+      "generated_runtime_hash": "EC8FA734477ED789D8EDD11331C76563CD5F42D3BC52131B7850270556FC1BDB",
+      "generator_version": "DSSAT runtime WTHER=W; exact generator build not separately exposed",
+      "hash_match_status": "MISMATCH",
+      "historical_runtime_hash": "5593D99D25DE5DC0E33935F2239558DCF96BB710F07007F2D46C670005D2ABE9",
+      "raw_wth_path": "",
+      "raw_wth_sha256": "",
+      "raw_wth_status": "NOT_EMITTED_OR_NOT_CHANGED_FROM_INPUT",
+      "rseed1": "1003",
+      "runtime_version": "0.0.5",
+      "season_start": "2011-06-18",
+      "set": "training",
+      "source_runtime_path": "/opt/dssat_pdi/run_dssat",
+      "station": "YCA",
+      "verification_level": "MISMATCH",
+      "weather_seed": "1003"
+    }
+  ],
+  "verified_manifest_rows": 100
+}

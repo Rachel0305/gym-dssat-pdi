@@ -1,0 +1,12 @@
+{
+  "artifact_status": "COMPLETE",
+  "historical_exact": 98,
+  "provisional_seeds": [
+    1003,
+    1036
+  ],
+  "sensitivity_verdict": "SENSITIVITY_CHANGES_IDENTIFIED",
+  "sensitivity_changed_rows": 6,
+  "formal_climate_coverage_verdict": "PENDING",
+  "season_window": "last DAP=0 through final DAP"
+}

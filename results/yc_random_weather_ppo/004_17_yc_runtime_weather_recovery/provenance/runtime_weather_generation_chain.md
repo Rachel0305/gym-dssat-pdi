@@ -1,0 +1,19 @@
+# 004_05 runtime weather generation chain (source audit)
+
+| Stage | Verified source | Location | Status / evidence |
+|---|---|---|---|
+| 004_05 runner | `results/yc_random_weather_ppo/004_05/run_yc_weather_augmentation_multi_seed_archetype_004_05.py` | imports `004_03/run_controlled_pilot.py`; training uses `ScheduledEpisodeEnv` | VERIFIED: no model training path is invoked by this recovery runner. |
+| Schedule / context | `results/yc_random_weather_ppo/004_05/config/training_weather_schedule_random.csv` | `episode_index`, `historical_year_context`, `weather_seed` | VERIFIED: seed1001 appears at episode 26 with context 2013; that exact pair is the smoke target. |
+| FileX WGEN mode | `results/yc_random_weather_ppo/004_03/run_controlled_pilot.py` | `set_wgen_filex_mode` (around line 395), `make_weather_env` (around line 434) | VERIFIED: task-local FileX method field is set to `W`; frozen `CNYC.CLI` is appended to runtime auxiliary files. |
+| RSEED1 assignment | same pilot file; runtime wrapper snapshot `results/yc_wgen_cli_pilot/003_06_07_01/runtime_source_snapshot/gym_dssat_pdi/envs/dssat_pdi.py` | `make_weather_env`; `_get_sockets_` launch hook; `DssatPdi.reset` | VERIFIED: `_rseed1` is set before DSSAT client launch; reset sends seed over PDI socket. Seed1001 is recorded in historical episode rows. |
+| Runtime invocation | historical `gym_dssat_pdi.envs.dssat_pdi.DssatPdi` source snapshot | `_write_pdi_yaml`, `_launch_client`, `_get_sockets_`, `_make_tmp_folder` | VERIFIED: runtime runs `/opt/dssat_pdi/run_dssat C fileX.MZX 1` from a temporary working directory. Runtime version is captured at smoke. |
+| WTH creation | `results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_105/wgen_status.json` and `runtime/runtime_snapshot/` | `_snapshot_runtime_files` in `scripts/run_yc_wgen_seed_pilot.py` scans `.WTH` and DSSAT files | VERIFIED LIMIT: historical pilot captured 118 daily weather states and snapshot-listed files, but no `.WTH`; its runtime directory only exposed runtime states, not a raw WGEN WTH. 004_05 rendered-input WTHs are copied observed source files and are not WGEN realizations. |
+| Daily weather capture | `results/yc_random_weather_ppo/004_03/run_controlled_pilot.py` | `make_weather_env` wraps `_get_state`; `_runtime_weather_hash` around lines 639–646 | VERIFIED: captures `RAIN/SRAD/TMAX/TMIN` from daily DSSAT PDI state. |
+| `runtime_weather_sha256` | `scripts/run_yc_wgen_seed_pilot.py` | `daily_weather_from_states` (around line 129), `canonical_weather_bytes` (around line 210); caller at 004_03 lines 639–646 and record at ~684 | VERIFIED: SHA256 of canonical state-derived CSV fields `DATE,DOY,RAIN,SRAD,TMAX,TMIN`, sorted by date/DOY, numeric `.12g`, UTF-8 with LF and trailing newline. It is not a raw WTH byte hash. The historical fallback date is 2008-06-01 plus state index when state date/DOY is absent. |
+| DSSAT consumption / cleanup | runtime snapshot `dssat_pdi.py` | `cwd=_tmp_folder`; `close()` calls `_close_tmp_folder()`; default `shutil.rmtree` | VERIFIED: runtime files are temporary and removed on close. The new runner relocates temp folders under 004_17 and archives any changed/new WTH before close. |
+
+## Historical anchor
+
+Frozen CLI SHA256: `65CF134600A5881706A5D435E1A09B276ED92A21FA5ABE2E18AAF63AF1E3A929`. Frozen fitting-weather CSV SHA256: `4B8FFE9E881D0A0743921B78B9C0E0EBFB1D2D645C5AA9737948B2B088ED7B34`. Historical seed1001/context2013 episode rows in PPO seeds 3–7 share canonical runtime hash `13C121A6DFED924FAB7C38EC53DDCC6FB37A39B0B1D2578DDBE42D445D53FEF1`; this is the smoke verification target.
+
+`crop-year context` identifies the 004_05 schedule input used to build the runtime FileX/planting context. It is not inferred from the weather-seed number. Runtime crop outputs are incidental side effects and are excluded from weather and performance claims.

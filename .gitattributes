@@ -1,0 +1,12 @@
+# Preserve byte-level SHA256 identities of archived YC weather inputs and tables.
+results/yc_weather_gapfill_finalize/yc_wgen_fitting_weather_2004_2013.csv -text
+results/yc_wgen_cli_pilot/003_06_05_02/final/CNYC.CLI -text
+results/yc_wgen_cli_pilot/004_01/parameter_audit/parameter_method_summary.json -text
+results/yc_random_weather_episode_validation/004_02/*.csv -text
+results/yc_random_weather_ppo/004_05/*.csv -text
+results/yc_random_weather_ppo/004_05/config/*.csv -text
+results/yc_random_weather_ppo/004_16_yc_wgen_weather_reconstruction/decision.json -text
+results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/** -text
+results/yc_random_weather_ppo/004_18A_yc_weather_summary_for_reporting/** -text
+docs/yc_random_weather_004_18A_weather_summary_for_reporting.md -text
+docs/yc_random_weather_weather_summary_for_presentation.md -text

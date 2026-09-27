@@ -1,0 +1,22 @@
+{
+  "task": "004_16",
+  "weather_reconstruction_status": "FAILED",
+  "observed_training_coverage": "INSUFFICIENT",
+  "tail_gap_type": "INSUFFICIENT",
+  "weather_pool_expansion_recommendation": "INSUFFICIENT_EVIDENCE",
+  "formal_coverage_analysis_performed": false,
+  "observed_wth_descriptive_metrics_available": true,
+  "wgen_materialization_attempted": false,
+  "reason": "Provenance/materialization gate failed before generation; no WGEN distribution was reconstructed or compared.",
+  "next_required_evidence": [
+    "A verified WeatherMan or standalone WGEN build/version and a seed-controlled export API that uses the frozen CNYC.CLI.",
+    "A project-approved exact generation context, including crop-year/calendar handling and the initial/continuing RNG state semantics.",
+    "A definition of runtime_weather_sha256 specifying the hashed bytes or canonical daily-series payload, or an archived raw WTH mapped to the runtime hash.",
+    "A weather-only execution route that does not invoke DSSAT crop simulation."
+  ],
+  "ppo_training_or_evaluation": false,
+  "dssat_crop_simulation": false,
+  "canonical_or_historical_files_modified": false,
+  "git_commit": null,
+  "git_push": null
+}

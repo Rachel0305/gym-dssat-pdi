@@ -1,0 +1,30 @@
+{
+  "SYA": {
+    "train_days": 3287,
+    "rain_positive_days": 621,
+    "flagged_nonrain_cells": 462,
+    "flagged_days": 160,
+    "flagged_fraction_of_three_weather_channels": 0.04685123212655917,
+    "maximum_one_year_flagged_cells": 424,
+    "maximum_one_year_flagged_cells_year": 2005,
+    "longest_flagged_day_run": 139,
+    "minimum_wet_days_in_any_calendar_month": 22,
+    "minimum_dry_days_in_any_calendar_month": 180,
+    "maximum_conditional_sd_relative_change_if_flagged_excluded": 0.08219711148966395,
+    "maximum_abs_full_vs_train_month_mean_difference_at_flagged_months": 2.1324159579286404
+  },
+  "LCA": {
+    "train_days": 3287,
+    "rain_positive_days": 627,
+    "flagged_nonrain_cells": 22,
+    "flagged_days": 17,
+    "flagged_fraction_of_three_weather_channels": 0.002231011053645675,
+    "maximum_one_year_flagged_cells": 16,
+    "maximum_one_year_flagged_cells_year": 2010,
+    "longest_flagged_day_run": 10,
+    "minimum_wet_days_in_any_calendar_month": 4,
+    "minimum_dry_days_in_any_calendar_month": 159,
+    "maximum_conditional_sd_relative_change_if_flagged_excluded": 0.018701957093209366,
+    "maximum_abs_full_vs_train_month_mean_difference_at_flagged_months": 1.8437878787878785
+  }
+}

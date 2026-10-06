@@ -1,0 +1,179 @@
+{
+  "site": "SYA",
+  "train_years": "2005-2013",
+  "validation_years": "2014-2023",
+  "validation_data_used_for_fill": false,
+  "donor_method": "train-only cleaned observed rows; original missing positions excluded separately per variable",
+  "candidate_precision": "0.1; unrounded sensitivity also computed",
+  "days": 3287,
+  "fill_cells": 462,
+  "annual_fill_cells": {
+    "2005": 424,
+    "2007": 33,
+    "2008": 5
+  },
+  "fill_difference_by_variable": {
+    "SRAD": {
+      "cells": 160,
+      "max_absolute": {
+        "date": "2005-02-01",
+        "year": 2005,
+        "month": 2,
+        "variable": "SRAD",
+        "wet": false,
+        "donor_count": 214,
+        "historical_mean_unrounded": 11.797238422,
+        "current_wth_value": 11.8,
+        "train_only_mean_unrounded": 10.615911214953272,
+        "candidate_value_0p1": 10.6,
+        "signed_difference": -1.200000000000001,
+        "absolute_difference": 1.200000000000001,
+        "relative_difference": 0.10169491525423738
+      },
+      "max_relative": {
+        "date": "2005-02-01",
+        "year": 2005,
+        "month": 2,
+        "variable": "SRAD",
+        "wet": false,
+        "donor_count": 214,
+        "historical_mean_unrounded": 11.797238422,
+        "current_wth_value": 11.8,
+        "train_only_mean_unrounded": 10.615911214953272,
+        "candidate_value_0p1": 10.6,
+        "signed_difference": -1.200000000000001,
+        "absolute_difference": 1.200000000000001,
+        "relative_difference": 0.10169491525423738
+      }
+    },
+    "TMAX": {
+      "cells": 151,
+      "max_absolute": {
+        "date": "2005-03-01",
+        "year": 2005,
+        "month": 3,
+        "variable": "TMAX",
+        "wet": false,
+        "donor_count": 248,
+        "historical_mean_unrounded": 8.32152886115,
+        "current_wth_value": 8.3,
+        "train_only_mean_unrounded": 6.189112903225807,
+        "candidate_value_0p1": 6.2,
+        "signed_difference": -2.1000000000000005,
+        "absolute_difference": 2.1000000000000005,
+        "relative_difference": 0.2530120481927711
+      },
+      "max_relative": {
+        "date": "2005-02-01",
+        "year": 2005,
+        "month": 2,
+        "variable": "TMAX",
+        "wet": false,
+        "donor_count": 216,
+        "historical_mean_unrounded": 0.815635738832,
+        "current_wth_value": 0.8,
+        "train_only_mean_unrounded": -0.3962962962962963,
+        "candidate_value_0p1": -0.4,
+        "signed_difference": -1.2000000000000002,
+        "absolute_difference": 1.2000000000000002,
+        "relative_difference": 1.5000000000000002
+      }
+    },
+    "TMIN": {
+      "cells": 151,
+      "max_absolute": {
+        "date": "2005-01-01",
+        "year": 2005,
+        "month": 1,
+        "variable": "TMIN",
+        "wet": false,
+        "donor_count": 248,
+        "historical_mean_unrounded": -17.3328725038,
+        "current_wth_value": -17.3,
+        "train_only_mean_unrounded": -18.732258064516127,
+        "candidate_value_0p1": -18.7,
+        "signed_difference": -1.3999999999999986,
+        "absolute_difference": 1.3999999999999986,
+        "relative_difference": 0.0809248554913294
+      },
+      "max_relative": {
+        "date": "2005-03-01",
+        "year": 2005,
+        "month": 3,
+        "variable": "TMIN",
+        "wet": false,
+        "donor_count": 248,
+        "historical_mean_unrounded": -3.22605304212,
+        "current_wth_value": -3.2,
+        "train_only_mean_unrounded": -4.052822580645161,
+        "candidate_value_0p1": -4.1,
+        "signed_difference": -0.8999999999999995,
+        "absolute_difference": 0.8999999999999995,
+        "relative_difference": 0.28124999999999983
+      }
+    }
+  },
+  "candidate_qc_violations": [],
+  "observed_wth_cleaned_rounding_mismatches": [
+    {
+      "date": "2006-08-28",
+      "variable": "SRAD"
+    },
+    {
+      "date": "2011-01-19",
+      "variable": "SRAD"
+    }
+  ],
+  "cli_parameters_compared": 168,
+  "max_cli_absolute_difference": {
+    "month": 3,
+    "parameter": "XDMN",
+    "current_wth": 6.5688524590163935,
+    "train_only_candidate": 6.302049180327869,
+    "candidate_unrounded": 6.3006659836065575,
+    "absolute_difference": 0.26680327868852416,
+    "signed_difference": -0.26680327868852416,
+    "relative_difference": 0.04061642126279005,
+    "cli_rounded_current": "6.6",
+    "cli_rounded_candidate": "6.3"
+  },
+  "max_cli_sd_relative_difference": {
+    "month": 2,
+    "parameter": "SWSD",
+    "current_wth": 3.6686202724671997,
+    "train_only_candidate": 3.525015067385733,
+    "candidate_unrounded": 3.5267357268952875,
+    "absolute_difference": 0.1436052050814669,
+    "signed_difference": -0.1436052050814669,
+    "relative_difference": 0.03914419983970986,
+    "cli_rounded_current": "3.7",
+    "cli_rounded_candidate": "3.5"
+  },
+  "rain_parameters_identical": true,
+  "independent_parameter_checks_passed": true,
+  "decision": "A",
+  "gate": "CONDITIONAL_READY_FOR_SYA_CLI_PARAMETER_AUDIT",
+  "decision_scope": "A/B sensitivity only; not proof that monthly-mean imputation preserves observed variability",
+  "wth_modified": false,
+  "WGEN_run": false,
+  "synthetic_weather_generated": false,
+  "DSSAT_run": false,
+  "PPO_run": false,
+  "input_sha256": {
+    "DSSAT_auto_validation\\multisite_new_cultivar_inputs_013\\SY\\CNSY0501.WTH": "695c79ce7ef9f38dc75ba5d0b296b9a51e95307c76d52e154a2bf067c5ee6323",
+    "DSSAT_auto_validation\\multisite_new_cultivar_inputs_013\\SY\\CNSY0601.WTH": "ce83173495668656a7dcb18787dfc55014a223867ae0801e07923f77184cbdd9",
+    "DSSAT_auto_validation\\multisite_new_cultivar_inputs_013\\SY\\CNSY0701.WTH": "208701ba7ce795b0b26120f71487f5ad0c4f14295dceeb4e603b555f6c67e4d6",
+    "DSSAT_auto_validation\\multisite_new_cultivar_inputs_013\\SY\\CNSY0801.WTH": "aef5aa9b05f524491904e677b66d2b749d4e4c828ae52321c40e2482e30e4124",
+    "DSSAT_auto_validation\\multisite_new_cultivar_inputs_013\\SY\\CNSY0901.WTH": "535245a6c5603d808d9ef5c1398611833f43a1dd16a2b529ac1638b65b2e4141",
+    "DSSAT_auto_validation\\multisite_new_cultivar_inputs_013\\SY\\CNSY1001.WTH": "2ed23f417a85d1441974e043077be895370de22ea4ca288c5778fc8f36a1dc4e",
+    "DSSAT_auto_validation\\multisite_new_cultivar_inputs_013\\SY\\CNSY1101.WTH": "29d6b5394a42b071d9e300a2066f1833b1021674b0130fefe3c77c0a8cdcfd5e",
+    "DSSAT_auto_validation\\multisite_new_cultivar_inputs_013\\SY\\CNSY1201.WTH": "4e2489653b7a72f75ce255602b2a58953e40e6424b4f27e8cf64d900361e7c68",
+    "DSSAT_auto_validation\\multisite_new_cultivar_inputs_013\\SY\\CNSY1301.WTH": "f177dd5dc12d9755061406d7eba901f91b8f26b4a9f37d312f2e37d8fa43df7b",
+    "results\\sy_lc_random_weather_015\\nonrain_provenance_resolution_484.csv": "c097d79660c64a501d2567cc1ae47fe112a0819d73a2f955c647a0b3a8cf5a41",
+    "results\\sy_lc_random_weather_015\\weather_gap_details.csv": "8bfaf8e247fe514996fc92f29a1b33e465ff6ad9a7ea7b65db96a86fab13782c",
+    "weather_clean\\SYA_weather_cleaned.csv": "06c30da28211f60307a2aa078feee56462c2c3f7800d5f45df00bb001701ba8a",
+    "scripts\\build_dssat_cli.py": "1a338e725497d4a077e06bf0da397c7bff9ada47a492ff53869960f5d2412426",
+    "results\\sy_lc_random_weather_015\\wgen_readiness_review\\methodology_gate.json": "1568d0b65318dec86af36a68dc427ca066e3c79547f07fa6469d8c4d16dccee7"
+  },
+  "input_sha256_unchanged": true
+}

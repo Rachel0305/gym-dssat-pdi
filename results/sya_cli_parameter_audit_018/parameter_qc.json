@@ -1,0 +1,78 @@
+{
+  "site": "SYA",
+  "years": "2005-2013",
+  "source": "results\\sya_train_only_fill_sensitivity\\candidate_weather_2005_2013.csv",
+  "source_sha256": "9d5b6634c57cdcd2ab93555b86fb7293335e1bc7666cc8cd3b7cf92765a392ba",
+  "input_sha256": {
+    "results\\sya_train_only_fill_sensitivity\\candidate_weather_2005_2013.csv": "9d5b6634c57cdcd2ab93555b86fb7293335e1bc7666cc8cd3b7cf92765a392ba",
+    "results\\sya_train_only_fill_sensitivity\\sensitivity_summary.json": "483ba9e29656d19246b8b946c7e841d3c815cdda6a1a5e06cb3999c42095ad0c",
+    "results\\sya_train_only_fill_sensitivity\\cli_parameter_comparison.csv": "d58747614dd0104c5b655241b46d129ce3b64b0fa2d655cec56cd98162b43cc9",
+    "results\\sy_lc_random_weather_015\\wgen_readiness_review\\methodology_gate.json": "1568d0b65318dec86af36a68dc427ca066e3c79547f07fa6469d8c4d16dccee7",
+    "scripts\\build_dssat_cli.py": "1a338e725497d4a077e06bf0da397c7bff9ada47a492ff53869960f5d2412426"
+  },
+  "input_sha256_unchanged": true,
+  "weather_days": 3287,
+  "parameter_count": 168,
+  "wet_rule": "RAIN > 0.0",
+  "monthly_complete": true,
+  "section_counts": {
+    "*CLIMATE": 1,
+    "*MONTHLY AVERAGES": 1,
+    "*WGEN PARAMETERS": 1,
+    "*RANGE CHECK VALUES": 1,
+    "*FLAGGED DATA COUNT": 1
+  },
+  "fixed_width_row_count": 12,
+  "fixed_width_expected": "(I6,14(1X,F5.0))",
+  "serialization_errors": [],
+  "physical_errors": [],
+  "cli_start_year": 2005,
+  "cli_duration_years": 9,
+  "independent_crosscheck_passed": true,
+  "matches_017_parameter_comparison": true,
+  "january_to_may_2005_filled_cells": {
+    "1": 93,
+    "2": 84,
+    "3": 93,
+    "4": 90,
+    "5": 59
+  },
+  "largest_january_to_may_change": {
+    "month": "3",
+    "parameter": "XDMN",
+    "current_wth": "6.5688524590163935",
+    "train_only_candidate": "6.302049180327869",
+    "candidate_unrounded": "6.3006659836065575",
+    "absolute_difference": "0.26680327868852416",
+    "signed_difference": "-0.26680327868852416",
+    "relative_difference": "0.04061642126279005",
+    "cli_rounded_current": "6.6",
+    "cli_rounded_candidate": "6.3"
+  },
+  "largest_january_to_may_sd_relative_change": {
+    "month": "2",
+    "parameter": "SWSD",
+    "current_wth": "3.6686202724671997",
+    "train_only_candidate": "3.525015067385733",
+    "candidate_unrounded": "3.5267357268952875",
+    "absolute_difference": "0.1436052050814669",
+    "signed_difference": "-0.1436052050814669",
+    "relative_difference": "0.03914419983970986",
+    "cli_rounded_current": "3.7",
+    "cli_rounded_candidate": "3.5"
+  },
+  "rain_gamma_changed_from_017_baseline": false,
+  "alpha_clamped_months": [
+    3,
+    4,
+    6,
+    9,
+    10,
+    11
+  ],
+  "gate": "READY_FOR_WGEN_REVIEW",
+  "WGEN_run": false,
+  "synthetic_weather_generated": false,
+  "DSSAT_run": false,
+  "PPO_run": false
+}

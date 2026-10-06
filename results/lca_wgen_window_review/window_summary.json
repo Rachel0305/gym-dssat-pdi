@@ -1,0 +1,71 @@
+[
+  {
+    "window": "2005-2013",
+    "available": true,
+    "days": 3287,
+    "january_wet_days": 4,
+    "january_wet_years": 2,
+    "january_alpha": 0.998,
+    "january_raw_alpha": 1.2367341311867632,
+    "january_loo_alpha_range": 0.0,
+    "january_loo_raw_alpha_range": 0.0,
+    "january_max_single_year_wet": 2,
+    "january_max_single_year_wet_fraction": 0.5,
+    "clamped_months": [
+      1,
+      2,
+      12
+    ],
+    "min_monthly_wet_days": 4,
+    "gate": "BLOCKED_BY_JANUARY_GAMMA_SAMPLE"
+  },
+  {
+    "window": "2001-2013",
+    "available": true,
+    "days": 4748,
+    "january_wet_days": 12,
+    "january_wet_years": 4,
+    "january_alpha": 0.998,
+    "january_raw_alpha": 1.4761946260709018,
+    "january_loo_alpha_range": 0.0,
+    "january_loo_raw_alpha_range": 0.43238291332318624,
+    "january_max_single_year_wet": 7,
+    "january_max_single_year_wet_fraction": 0.5833333333333334,
+    "clamped_months": [
+      1,
+      12
+    ],
+    "min_monthly_wet_days": 12,
+    "gate": "BLOCKED_BY_JANUARY_GAMMA_SAMPLE"
+  },
+  {
+    "window": "2000-2013",
+    "available": true,
+    "days": 5114,
+    "january_wet_days": 26,
+    "january_wet_years": 5,
+    "january_alpha": 0.998,
+    "january_raw_alpha": 1.397683596884071,
+    "january_loo_alpha_range": 0.0,
+    "january_loo_raw_alpha_range": 0.21949212043509858,
+    "january_max_single_year_wet": 14,
+    "january_max_single_year_wet_fraction": 0.5384615384615384,
+    "clamped_months": [
+      1
+    ],
+    "min_monthly_wet_days": 25,
+    "gate": "BLOCKED_BY_JANUARY_GAMMA_SAMPLE"
+  },
+  {
+    "window": "1995-2013",
+    "available": false,
+    "missing_or_invalid_years": [
+      1995,
+      1996,
+      1997,
+      1998,
+      1999
+    ],
+    "gate": "UNAVAILABLE"
+  }
+]

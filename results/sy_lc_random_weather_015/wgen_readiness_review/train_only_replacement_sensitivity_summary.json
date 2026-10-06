@@ -1,0 +1,34 @@
+{
+  "SYA": {
+    "max_abs_monthly_group_mean_change": {
+      "month": 3,
+      "variable": "TMAX",
+      "group": "dry",
+      "replaced_cells": 31,
+      "absolute_mean_change": 0.268186475409836
+    },
+    "max_rel_monthly_group_sd_change": {
+      "month": 2,
+      "variable": "SRAD",
+      "group": "wet",
+      "replaced_cells": 2,
+      "relative_sd_change": 0.03867517895944386
+    }
+  },
+  "LCA": {
+    "max_abs_monthly_group_mean_change": {
+      "month": 4,
+      "variable": "TMAX",
+      "group": "dry",
+      "replaced_cells": 7,
+      "absolute_mean_change": 0.03561913081458812
+    },
+    "max_rel_monthly_group_sd_change": {
+      "month": 9,
+      "variable": "TMAX",
+      "group": "wet",
+      "replaced_cells": 1,
+      "relative_sd_change": 0.0016646068120330156
+    }
+  }
+}

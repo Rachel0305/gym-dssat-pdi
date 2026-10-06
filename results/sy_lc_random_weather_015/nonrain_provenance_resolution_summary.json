@@ -1,0 +1,65 @@
+{
+  "scope": "484 non-RAIN provenance entries; read-only source trace",
+  "sites": {
+    "SYA": {
+      "entry_count": 462,
+      "classification_counts": {
+        "确认旧均值填补": 462
+      },
+      "variable_counts": {
+        "SRAD": 160,
+        "TMAX": 151,
+        "TMIN": 151
+      },
+      "training_year_final_vs_old_generated_wth_differences": {
+        "2005": 0,
+        "2006": 1,
+        "2007": 0,
+        "2008": 0,
+        "2009": 0,
+        "2010": 0,
+        "2011": 1,
+        "2012": 0,
+        "2013": 0
+      },
+      "final_vs_originIC_wth_sha256_same_every_training_year": true,
+      "mean_matches_cleaned_exactly": 462,
+      "mean_matches_final_wth_at_0p1": 462,
+      "old_generated_wth_matches_final": 462
+    },
+    "LCA": {
+      "entry_count": 22,
+      "classification_counts": {
+        "无法确定": 22
+      },
+      "variable_counts": {
+        "SRAD": 13,
+        "TMAX": 8,
+        "TMIN": 1
+      },
+      "training_year_final_vs_old_generated_wth_differences": {
+        "2005": 259,
+        "2006": 59,
+        "2007": 234,
+        "2008": 121,
+        "2009": 89,
+        "2010": 113,
+        "2011": 109,
+        "2012": 71,
+        "2013": 61
+      },
+      "final_vs_originIC_wth_sha256_same_every_training_year": true,
+      "mean_matches_cleaned_exactly": 22,
+      "mean_matches_final_wth_at_0p1": 22,
+      "old_generated_wth_matches_final": 22
+    }
+  },
+  "externally_downloaded_SYA_LCA_source_files_found": 0,
+  "external_download_to_final_wth_daily_variable_links_proven": 0,
+  "original_xls_blank_to_external_download_to_final_wth_chain": "NOT_ESTABLISHED",
+  "gate": {
+    "SYA": "BLOCKED_BY_DATA_PROVENANCE",
+    "LCA": "BLOCKED_BY_DATA_PROVENANCE"
+  },
+  "classification_rule": "SYA old-mean value identified by exact mean reconstruction and full-year WTH/cleaned agreement; LCA same numerical evidence remains source-undetermined because later supplementation lacks cell-level import record"
+}

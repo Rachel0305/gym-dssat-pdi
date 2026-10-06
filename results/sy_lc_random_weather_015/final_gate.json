@@ -1,0 +1,29 @@
+{
+  "SYA_weather_ready": "BLOCKED_BY_DATA_PROVENANCE",
+  "LCA_weather_ready": "BLOCKED_BY_DATA_PROVENANCE",
+  "need_gap_fill": "UNDETERMINED_PENDING_NONRAIN_SOURCE_REVIEW",
+  "next_step": "仅核实剩余训练期SRAD/TMAX/TMIN来源或既有填补依据；RAIN空白=0，LCA 1113处cleaned/WTH差异不再作为阻塞。核实后复审来源门槛。",
+  "resolved_blockers": [
+    "RAIN blank fields are zero rainfall, not missing data",
+    "LCA 1113 cleaned CSV versus final WTH differences reflect historical supplementary weather data"
+  ],
+  "remaining_blockers": {
+    "SYA": {
+      "nonrain_original_gap_cells_matching_cleaned_and_final_wth": 462,
+      "variables": {
+        "SRAD": 160,
+        "TMAX": 151,
+        "TMIN": 151
+      }
+    },
+    "LCA": {
+      "nonrain_original_gap_cells_matching_cleaned_and_final_wth": 22,
+      "variables": {
+        "SRAD": 13,
+        "TMAX": 8,
+        "TMIN": 1
+      }
+    }
+  },
+  "scope": "provenance audit revision only; WTH QC unchanged"
+}

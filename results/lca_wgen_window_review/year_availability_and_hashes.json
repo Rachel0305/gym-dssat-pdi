@@ -1,0 +1,78 @@
+{
+  "1995": {
+    "status": "FILE_ABSENT",
+    "sha256": null
+  },
+  "1996": {
+    "status": "FILE_ABSENT",
+    "sha256": null
+  },
+  "1997": {
+    "status": "FILE_ABSENT",
+    "sha256": null
+  },
+  "1998": {
+    "status": "INVALID:Missing/nonfinite weather: 1998-01-18",
+    "sha256": "4be633bc5268656af6cc0274d4949215d866b623aade9bae1c19beb6c8916035"
+  },
+  "1999": {
+    "status": "INVALID:Missing WTH columns: C:\\Users\\DELL\\gym_workspace\\gym_dssat_pdi_bingo\\gym-dssat-pdi\\DSSAT_auto_validation\\multisite_new_cultivar_inputs_013_lowIC_manual\\LC\\CNLC9901.WTH",
+    "sha256": "d190499ef7792499a7bba45e7c0a050ea210bb01e1bd5a5858ba0a48c4486cca"
+  },
+  "2000": {
+    "status": "COMPLETE_QC_PASS",
+    "sha256": "ccb4e295b927d8d7c2f236bb83ea285b7d2b6fc726b6c40788452e2240a4d4d0"
+  },
+  "2001": {
+    "status": "COMPLETE_QC_PASS",
+    "sha256": "62af90a066dc99f71579edb2a37ae9bc5653692081bddfb7c7c692c464abdffa"
+  },
+  "2002": {
+    "status": "COMPLETE_QC_PASS",
+    "sha256": "4bbf57967ed21b7d089bd6ebd85a7be4cd5ba98b8beb0876786b1061f58c833c"
+  },
+  "2003": {
+    "status": "COMPLETE_QC_PASS",
+    "sha256": "b75e3c9634f6480fa81e73e589519ea7318d77f36d26c49b40aeb58da3be2f00"
+  },
+  "2004": {
+    "status": "COMPLETE_QC_PASS",
+    "sha256": "763a8da3f46fb866d6cdc2e7c0d4a1aaa1a8478cac44d8a13768b3d6b3204518"
+  },
+  "2005": {
+    "status": "COMPLETE_QC_PASS",
+    "sha256": "01ce6a0acd6123e6d0dc4a7476c05f518e7066ad3a37636d86c8fa32d5472de5"
+  },
+  "2006": {
+    "status": "COMPLETE_QC_PASS",
+    "sha256": "8fdca965cc25238d29b4da551757f8872807b92c23e0a9fe8a704693cdeae20e"
+  },
+  "2007": {
+    "status": "COMPLETE_QC_PASS",
+    "sha256": "320db0c1de12d01ce46326739b197eca4437477f451d10169626f105876a521d"
+  },
+  "2008": {
+    "status": "COMPLETE_QC_PASS",
+    "sha256": "470122bb0dc9802de3757cb1be880924fd8aa1072429bd0f7ee562fbdf2e013b"
+  },
+  "2009": {
+    "status": "COMPLETE_QC_PASS",
+    "sha256": "948f77a463c70750b1f0472a7713f2b6a98782da23279f120a40f7c440253c4a"
+  },
+  "2010": {
+    "status": "COMPLETE_QC_PASS",
+    "sha256": "7952d17ef1fd596c7ab4678edb5b943eafe0b999093b025bcfe9b5149e3e189b"
+  },
+  "2011": {
+    "status": "COMPLETE_QC_PASS",
+    "sha256": "390c3027c52296542c487fb564a86933368d2e6f6bc1ceb94ac15c8c474f7e1d"
+  },
+  "2012": {
+    "status": "COMPLETE_QC_PASS",
+    "sha256": "80d345d7a3050cd5934dc3174662be0de641433def97aeeb95234e0d38726cbe"
+  },
+  "2013": {
+    "status": "COMPLETE_QC_PASS",
+    "sha256": "e566eee7011a68a2fad6050bfca737b4d080694037216dd5055e12a08a58c52e"
+  }
+}

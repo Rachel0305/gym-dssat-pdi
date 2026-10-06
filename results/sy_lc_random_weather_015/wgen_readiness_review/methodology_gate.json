@@ -1,0 +1,34 @@
+{
+  "review": "SYA_LCA_WGEN_INPUT_METHODOLOGY_015",
+  "review_date": "2026-10-06",
+  "fit_years": "2005-2013",
+  "validation_years_excluded_from_parameter_fit": "2014-2023",
+  "decision_basis": "quality-controlled, documented imputation may be acceptable; raw-observation-only is not a requirement",
+  "SYA": {
+    "decision": "BLOCKED_FOR_FORMAL_WGEN_FIT",
+    "complete_daily_WTH": true,
+    "documented_monthly_mean_fill_cells": 462,
+    "maximum_consecutive_affected_days": 139,
+    "reason": "Imputation is concentrated in 2005 and derives from full-period monthly means including validation years; wet/dry conditional variability needs a frozen sensitivity review before formal parameter fitting.",
+    "next_stage": "Review train-only imputation and monthly conditional-moment sensitivity without modifying source WTH."
+  },
+  "LCA": {
+    "decision": "CONDITIONAL_READY_FOR_CLI_PARAMETER_AUDIT",
+    "complete_daily_WTH": true,
+    "uncertain_nonrain_cells_matching_old_fill": 22,
+    "historical_supplementation_context_accepted": true,
+    "reason": "Residual flagged cells are sparse and static monthly-moment sensitivity is small; retain their provenance uncertainty and full-period-fill caveat.",
+    "conditions": [
+      "Fit only 2005-2013 WTH; freeze input hashes and RAIN>0 wet-day convention.",
+      "Audit 14 parameters for all 12 months and the month with four wet days.",
+      "Do not infer synthetic-weather validity from this input review."
+    ],
+    "next_stage": "Separate CLI parameter calculation and audit task; WGEN generation remains pending."
+  },
+  "CLI_generated": false,
+  "WGEN_run": false,
+  "synthetic_weather_generated": false,
+  "DSSAT_run": false,
+  "PPO_run": false,
+  "previous_provenance_gate_preserved": "results/sy_lc_random_weather_015/final_gate.json"
+}

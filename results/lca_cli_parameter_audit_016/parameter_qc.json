@@ -1,0 +1,56 @@
+{
+  "site": "LCA",
+  "period": "2005-2013",
+  "days": 3287,
+  "wet_rule": "RAIN > 0.0",
+  "fitting_code": "scripts/build_dssat_cli.py:fit_monthly_statistics",
+  "wth_sha256_before_after_equal": true,
+  "wth_sha256": {
+    "DSSAT_auto_validation\\multisite_new_cultivar_inputs_013_lowIC_manual\\LC\\CNLC0501.WTH": "01ce6a0acd6123e6d0dc4a7476c05f518e7066ad3a37636d86c8fa32d5472de5",
+    "DSSAT_auto_validation\\multisite_new_cultivar_inputs_013_lowIC_manual\\LC\\CNLC0601.WTH": "8fdca965cc25238d29b4da551757f8872807b92c23e0a9fe8a704693cdeae20e",
+    "DSSAT_auto_validation\\multisite_new_cultivar_inputs_013_lowIC_manual\\LC\\CNLC0701.WTH": "320db0c1de12d01ce46326739b197eca4437477f451d10169626f105876a521d",
+    "DSSAT_auto_validation\\multisite_new_cultivar_inputs_013_lowIC_manual\\LC\\CNLC0801.WTH": "470122bb0dc9802de3757cb1be880924fd8aa1072429bd0f7ee562fbdf2e013b",
+    "DSSAT_auto_validation\\multisite_new_cultivar_inputs_013_lowIC_manual\\LC\\CNLC0901.WTH": "948f77a463c70750b1f0472a7713f2b6a98782da23279f120a40f7c440253c4a",
+    "DSSAT_auto_validation\\multisite_new_cultivar_inputs_013_lowIC_manual\\LC\\CNLC1001.WTH": "7952d17ef1fd596c7ab4678edb5b943eafe0b999093b025bcfe9b5149e3e189b",
+    "DSSAT_auto_validation\\multisite_new_cultivar_inputs_013_lowIC_manual\\LC\\CNLC1101.WTH": "390c3027c52296542c487fb564a86933368d2e6f6bc1ceb94ac15c8c474f7e1d",
+    "DSSAT_auto_validation\\multisite_new_cultivar_inputs_013_lowIC_manual\\LC\\CNLC1201.WTH": "80d345d7a3050cd5934dc3174662be0de641433def97aeeb95234e0d38726cbe",
+    "DSSAT_auto_validation\\multisite_new_cultivar_inputs_013_lowIC_manual\\LC\\CNLC1301.WTH": "e566eee7011a68a2fad6050bfca737b4d080694037216dd5055e12a08a58c52e"
+  },
+  "parameter_count": 168,
+  "all_months_complete": true,
+  "physical_errors": [],
+  "serialization_errors": [],
+  "january": {
+    "wet_days": 4,
+    "rain_mm": [
+      0.2,
+      0.4,
+      1.8,
+      0.2
+    ],
+    "alpha": 0.998,
+    "alpha_leave_one_out": [
+      0.998,
+      0.998,
+      0.998,
+      0.998
+    ],
+    "alpha_leave_one_out_spread": 0.0
+  },
+  "alpha_clamped_months": [
+    1,
+    2,
+    12
+  ],
+  "flagged_cells": 22,
+  "max_flag_impact": {
+    "month": 4,
+    "parameter": "XDMN",
+    "original": 19.479253112033195,
+    "replacement": 19.44597762807062,
+    "absolute_delta": 0.0332754839625764,
+    "relative_delta": 0.0017082525583088535
+  },
+  "gate": "BLOCKED_BY_JANUARY_GAMMA_SAMPLE",
+  "wgen_executed": false
+}

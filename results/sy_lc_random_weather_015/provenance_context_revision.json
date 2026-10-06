@@ -1,0 +1,14 @@
+{
+  "revision": "015 provenance context rev1",
+  "historical_context_lca": "Historical supplementary weather data were incorporated into the final WTH after downloading source files; cleaned CSV comparison differences reflect this historical supplementation process.",
+  "historical_context_authority": "current user clarification",
+  "rain_blank_semantics": "Blank RAIN in the original XLS denotes zero rainfall (0 mm), not missing weather data.",
+  "rain_evidence": "weather_clean/data_check_report.md:57 records earlier user confirmation and 67681 blanks interpreted as zero across sites",
+  "lca_cleaned_wth_difference_count": 1113,
+  "lca_difference_disposition": "historical supplementation context; not a provenance blocker",
+  "remaining_nonrain_source_gap_count": {
+    "LCA": 22,
+    "SYA": 462
+  },
+  "caution": "Matched cleaned/WTH values at original nonrain blanks do not independently prove a downloaded observation replaced historical imputation."
+}

@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "weather_year_rows": 38,
+  "raw_source_variable_year_rows": 152,
+  "raw_missing_counts_match_historical_log_checks": 114,
+  "input_sha256_unchanged_files": 50,
+  "detail_rows": 13101,
+  "cleaned_csv_vs_wth_cells_compared": 55512,
+  "cleaned_csv_vs_wth_mismatches_beyond_rounding": 1113,
+  "rounding_tolerance": 0.050001,
+  "resource_snapshot_working_set_mb": 132.1,
+  "simulator_or_training_run": false,
+  "git_push": false,
+  "exploration_errors": [
+    "Unbounded file search produced excessive output; subsequent searches scoped",
+    "PowerShell wildcard path to rg failed; corrected with -g",
+    "Guessed weather_preprocess_report.md and run_lc_free_timing_stress_aware_ppo_dqn_smoke_032_00.py were absent; actual sources found",
+    "Tool stdout Chinese decoding artifacts; UTF-8 artifact files verified separately"
+  ],
+  "provenance_revision": {
+    "rain_blank_semantics": "confirmed zero rainfall; excluded from missing weather",
+    "lca_1113_differences": "historical supplementary weather context; excluded from blocker",
+    "remaining_nonrain_source_gaps": {
+      "LCA": 22,
+      "SYA": 462
+    },
+    "gate": "both sites remain BLOCKED_BY_DATA_PROVENANCE for remaining nonrain source gaps"
+  }
+}

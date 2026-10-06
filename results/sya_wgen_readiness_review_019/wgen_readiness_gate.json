@@ -1,0 +1,51 @@
+{
+  "site": "SYA",
+  "training_years": "2005-2013",
+  "decision": "BLOCKED_BY_WEATHER_STATISTICS",
+  "input_sha256": {
+    "results\\sya_train_only_fill_sensitivity\\candidate_weather_2005_2013.csv": "9d5b6634c57cdcd2ab93555b86fb7293335e1bc7666cc8cd3b7cf92765a392ba",
+    "results\\sya_train_only_fill_sensitivity\\fill_difference.csv": "9da291a361c63608a7d1851924941a1217d04710f39998aa0ab3322be4f82bf0",
+    "results\\sya_cli_parameter_audit_018\\CNSY_2005_2013_train_only_candidate.CLI": "110420f7df757ce6dde0b6c8c6010ec55c408b158e9010871ccb717f2342c591",
+    "results\\sya_cli_parameter_audit_018\\parameter_qc.json": "5c4c4468473fd960be2fe09fe2bd2ea86b19a9b7f47b15665332d7322b62a505",
+    "DSSAT_auto_validation\\multisite_new_cultivar_inputs_013\\SY\\CNSY0501.WTH": "695c79ce7ef9f38dc75ba5d0b296b9a51e95307c76d52e154a2bf067c5ee6323",
+    "DSSAT_auto_validation\\multisite_new_cultivar_inputs_013\\SY\\CNSY0601.WTH": "ce83173495668656a7dcb18787dfc55014a223867ae0801e07923f77184cbdd9",
+    "DSSAT_auto_validation\\multisite_new_cultivar_inputs_013\\SY\\CNSY0701.WTH": "208701ba7ce795b0b26120f71487f5ad0c4f14295dceeb4e603b555f6c67e4d6",
+    "DSSAT_auto_validation\\multisite_new_cultivar_inputs_013\\SY\\CNSY0801.WTH": "aef5aa9b05f524491904e677b66d2b749d4e4c828ae52321c40e2482e30e4124",
+    "DSSAT_auto_validation\\multisite_new_cultivar_inputs_013\\SY\\CNSY0901.WTH": "535245a6c5603d808d9ef5c1398611833f43a1dd16a2b529ac1638b65b2e4141",
+    "DSSAT_auto_validation\\multisite_new_cultivar_inputs_013\\SY\\CNSY1001.WTH": "2ed23f417a85d1441974e043077be895370de22ea4ca288c5778fc8f36a1dc4e",
+    "DSSAT_auto_validation\\multisite_new_cultivar_inputs_013\\SY\\CNSY1101.WTH": "29d6b5394a42b071d9e300a2066f1833b1021674b0130fefe3c77c0a8cdcfd5e",
+    "DSSAT_auto_validation\\multisite_new_cultivar_inputs_013\\SY\\CNSY1201.WTH": "4e2489653b7a72f75ce255602b2a58953e40e6424b4f27e8cf64d900361e7c68",
+    "DSSAT_auto_validation\\multisite_new_cultivar_inputs_013\\SY\\CNSY1301.WTH": "f177dd5dc12d9755061406d7eba901f91b8f26b4a9f37d312f2e37d8fa43df7b"
+  },
+  "input_sha256_unchanged": true,
+  "weather_days": 3287,
+  "filled_cells": 462,
+  "filled_2005_cells": 424,
+  "longest_consecutive_fill_days": 139,
+  "zero_sd_2005_month_variable_count": 12,
+  "zero_sd_2005_january_april_count": 12,
+  "alpha_clamped_months": [
+    3,
+    4,
+    6,
+    9,
+    10,
+    11
+  ],
+  "cli_sections": {
+    "*CLIMATE": 1,
+    "*MONTHLY AVERAGES": 1,
+    "*WGEN PARAMETERS": 1,
+    "*RANGE CHECK VALUES": 1,
+    "*FLAGGED DATA COUNT": 1
+  },
+  "cli_wgen_parameter_rows": 12,
+  "cli_parameter_count": 168,
+  "min_monthly_wet_days": 22,
+  "blocker": "2005 January-April SRAD/TMAX/TMIN are constant for complete months due to mean fill; 139-day affected run suppresses within-year daily variability",
+  "exclusion_of_2005_is_diagnostic_only": true,
+  "WGEN_run": false,
+  "synthetic_weather_generated": false,
+  "DSSAT_run": false,
+  "PPO_run": false
+}

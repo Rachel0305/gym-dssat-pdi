@@ -1,0 +1,30 @@
+{
+  "scope": "current_weather_augmentation_experiment",
+  "freeze_type": "temporary",
+  "status": "TEMPORARILY_FROZEN_FOR_CURRENT_WEATHER_AUGMENTATION_EXPERIMENT",
+  "historical_weather_ppo_results": {
+    "SYA": "TEMPORARILY_FROZEN_ACCEPTED_FOR_CURRENT_EXPERIMENT",
+    "LCA": "TEMPORARILY_FROZEN_ACCEPTED_FOR_CURRENT_EXPERIMENT"
+  },
+  "weather_augmentation": {
+    "SYA": {
+      "status": "EXCLUDED_FROM_WGEN_FOR_CURRENT_EXPERIMENT",
+      "reason": "BLOCKED_BY_WEATHER_STATISTICS",
+      "reopen_allowed": true
+    },
+    "LCA": {
+      "status": "EXCLUDED_FROM_WGEN_FOR_CURRENT_EXPERIMENT",
+      "reason": "BLOCKED_BY_JANUARY_GAMMA_SAMPLE",
+      "reopen_allowed": true
+    }
+  },
+  "WGEN_run": false,
+  "synthetic_weather_generated": false,
+  "DSSAT_run": false,
+  "PPO_run": false,
+  "historical_ppo_revalidated_in_closeout": false,
+  "evidence": {
+    "SYA": "results/sya_wgen_readiness_review_019/wgen_readiness_gate.json",
+    "LCA": "results/lca_wgen_window_review/window_summary.json"
+  }
+}

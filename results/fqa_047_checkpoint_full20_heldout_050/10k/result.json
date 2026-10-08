@@ -1,0 +1,11 @@
+{
+  "status": "PASS_CHECKPOINT_FULL20_INPUT",
+  "checkpoint": "10k",
+  "checkpoint_sha256": "42E192C336FA72D60A38FC11F69A4EFC658D80F105E21F2768BE138AE0FB8709",
+  "episodes_expected": 20,
+  "episodes": 20,
+  "trace_rows": 2077,
+  "weather_days": 2077,
+  "peak_rss_mb": 423.25,
+  "elapsed_seconds": 20.68
+}

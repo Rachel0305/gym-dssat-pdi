@@ -1,0 +1,291 @@
+{
+  "status": "PASS_CHECKPOINT_FULL20_PAIRED_ARCHIVE_ONLY",
+  "checks": {
+    "5k_checkpoint_hash": true,
+    "5k_runner_closure": true,
+    "5k_schedule": true,
+    "5k_resource_limits": true,
+    "5k_source_hashes": true,
+    "5k_weather_hash_dates_physical_trace": true,
+    "5k_runtime_wgen_seed_cli": true,
+    "5k_endpoint_and_action_closure": true,
+    "10k_checkpoint_hash": true,
+    "10k_runner_closure": true,
+    "10k_schedule": true,
+    "10k_resource_limits": true,
+    "10k_source_hashes": true,
+    "10k_weather_hash_dates_physical_trace": true,
+    "10k_runtime_wgen_seed_cli": true,
+    "10k_endpoint_and_action_closure": true,
+    "same_seed_same_weather_hash_5k_10k": true,
+    "seed_1081_1100_match_048_049_weather": true,
+    "paired_schedule_exact_20": true,
+    "resources_all_below_limits": true
+  },
+  "paired_seed_count": 20,
+  "checkpoint_summaries": {
+    "5k": {
+      "yield_kg_ha": {
+        "n": 20,
+        "mean": 6411.463592529297,
+        "median": 6346.624755859375,
+        "population_sd": 786.8998647204445,
+        "min": 5264.0240478515625,
+        "max": 8394.429321289062
+      },
+      "irrigation_mm_wrapper": {
+        "n": 20,
+        "mean": 112.5,
+        "median": 105.0,
+        "population_sd": 8.874119674649425,
+        "min": 105.0,
+        "max": 135.0
+      },
+      "nitrogen_kg_ha_wrapper": {
+        "n": 20,
+        "mean": 240.0,
+        "median": 240.0,
+        "population_sd": 0.0,
+        "min": 240.0,
+        "max": 240.0
+      },
+      "pfp_n_wrapper_basis": {
+        "n": 20,
+        "mean": 26.714431635538737,
+        "median": 26.44426981608073,
+        "population_sd": 3.278749436335186,
+        "min": 21.933433532714844,
+        "max": 34.97678883870443
+      },
+      "episode_return": {
+        "n": 20,
+        "mean": 0.5843546423565745,
+        "median": 0.6052775316095351,
+        "population_sd": 0.196254980075605,
+        "min": -0.06933173343300836,
+        "max": 0.9666198381280899
+      },
+      "distinct_policy_action_indices": {
+        "n": 20,
+        "mean": 5.25,
+        "median": 5.0,
+        "population_sd": 0.4330127018922193,
+        "min": 5.0,
+        "max": 6.0
+      },
+      "positive_irrigation_days": {
+        "n": 20,
+        "mean": 5.5,
+        "median": 5.0,
+        "population_sd": 0.5916079783099616,
+        "min": 5.0,
+        "max": 7.0
+      },
+      "positive_nitrogen_days": {
+        "n": 20,
+        "mean": 4.0,
+        "median": 4.0,
+        "population_sd": 0.0,
+        "min": 4.0,
+        "max": 4.0
+      },
+      "total_policy_action_counts": {
+        "0": 1962,
+        "1": 5,
+        "4": 30,
+        "5": 40,
+        "7": 20,
+        "12": 5,
+        "13": 15
+      },
+      "episodes_containing_action": {
+        "0": 20,
+        "1": 5,
+        "4": 20,
+        "5": 20,
+        "7": 20,
+        "12": 5,
+        "13": 15
+      }
+    },
+    "10k": {
+      "yield_kg_ha": {
+        "n": 20,
+        "mean": 6349.602493286133,
+        "median": 6298.787841796875,
+        "population_sd": 814.9054016943379,
+        "min": 5048.070373535156,
+        "max": 8387.454223632812
+      },
+      "irrigation_mm_wrapper": {
+        "n": 20,
+        "mean": 110.25,
+        "median": 105.0,
+        "population_sd": 7.1545440106270926,
+        "min": 105.0,
+        "max": 120.0
+      },
+      "nitrogen_kg_ha_wrapper": {
+        "n": 20,
+        "mean": 240.0,
+        "median": 240.0,
+        "population_sd": 0.0,
+        "min": 240.0,
+        "max": 240.0
+      },
+      "pfp_n_wrapper_basis": {
+        "n": 20,
+        "mean": 26.456677055358888,
+        "median": 26.244949340820312,
+        "population_sd": 3.395439173726408,
+        "min": 21.033626556396484,
+        "max": 34.94772593180338
+      },
+      "episode_return": {
+        "n": 20,
+        "mean": 0.6072230332182048,
+        "median": 0.6272584843683242,
+        "population_sd": 0.21624477554005841,
+        "min": -0.17650243224978435,
+        "max": 0.9655177726984021
+      },
+      "distinct_policy_action_indices": {
+        "n": 20,
+        "mean": 5.35,
+        "median": 5.0,
+        "population_sd": 0.47696960070847283,
+        "min": 5.0,
+        "max": 6.0
+      },
+      "positive_irrigation_days": {
+        "n": 20,
+        "mean": 3.35,
+        "median": 3.0,
+        "population_sd": 0.47696960070847283,
+        "min": 3.0,
+        "max": 4.0
+      },
+      "positive_nitrogen_days": {
+        "n": 20,
+        "mean": 4.0,
+        "median": 4.0,
+        "population_sd": 0.0,
+        "min": 4.0,
+        "max": 4.0
+      },
+      "total_policy_action_counts": {
+        "0": 1950,
+        "1": 20,
+        "2": 40,
+        "4": 7,
+        "8": 40,
+        "13": 20
+      },
+      "episodes_containing_action": {
+        "0": 20,
+        "1": 20,
+        "2": 20,
+        "4": 7,
+        "8": 20,
+        "13": 20
+      }
+    }
+  },
+  "paired_delta_summaries_10k_minus_5k": {
+    "yield_kg_ha": {
+      "n": 20,
+      "mean": -61.86109924316406,
+      "median": -16.43951416015625,
+      "population_sd": 122.42340446398295,
+      "min": -487.91748046875,
+      "max": 68.1396484375
+    },
+    "irrigation_mm_wrapper": {
+      "n": 20,
+      "mean": -2.25,
+      "median": 0.0,
+      "population_sd": 7.1545440106270926,
+      "min": -15.0,
+      "max": 15.0
+    },
+    "nitrogen_kg_ha_wrapper": {
+      "n": 20,
+      "mean": 0.0,
+      "median": 0.0,
+      "population_sd": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "pfp_n_wrapper_basis": {
+      "n": 20,
+      "mean": -0.25775458017985053,
+      "median": -0.0684979756673183,
+      "population_sd": 0.5100975185999289,
+      "min": -2.032989501953125,
+      "max": 0.28391520182291785
+    },
+    "episode_return": {
+      "n": 20,
+      "mean": 0.02286839086163038,
+      "median": 9.580871582026695e-05,
+      "population_sd": 0.07300131185351212,
+      "min": -0.10717069881677599,
+      "max": 0.1497828176927566
+    },
+    "distinct_policy_action_indices": {
+      "n": 20,
+      "mean": 0.1,
+      "median": 0.0,
+      "population_sd": 0.5385164807134504,
+      "min": -1.0,
+      "max": 1.0
+    },
+    "positive_irrigation_days": {
+      "n": 20,
+      "mean": -2.15,
+      "median": -2.0,
+      "population_sd": 0.47696960070847283,
+      "min": -3.0,
+      "max": -1.0
+    },
+    "positive_nitrogen_days": {
+      "n": 20,
+      "mean": 0.0,
+      "median": 0.0,
+      "population_sd": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    }
+  },
+  "yield_direction_counts": {
+    "yield_10k_higher": 4,
+    "yield_10k_lower": 16,
+    "yield_equal": 0
+  },
+  "paired_results_csv": "results/fqa_047_checkpoint_full20_heldout_050/paired_checkpoint_full20.csv",
+  "interpretation": "Deterministic policies differ between the same-run 5K and 10K checkpoints, but the 10K yield direction across 20 heldout 2007 WGEN realizations is descriptive and is not evidence of convergence or generalization. A full 20-seed run does not by itself prove that 10K is too short or justify starting 100K.",
+  "limitations": [
+    "one historical year (2007) and 20 synthetic WGEN heldout realizations",
+    "no paired classical management control in this diagnostic",
+    "wrapper cumulative irrigation and nitrogen were not reconciled against Summary.OUT",
+    "PFP_N uses wrapper cumulative nitrogen",
+    "no ETCP replay; WP_ET and NUE are unavailable",
+    "descriptive paired summaries only; no significance or convergence claim"
+  ],
+  "resource_usage": {
+    "5k": {
+      "peak_rss_mb": 423.35,
+      "elapsed_seconds": 20.4,
+      "episodes": 20,
+      "trace_rows": 2077,
+      "weather_days": 2077
+    },
+    "10k": {
+      "peak_rss_mb": 423.25,
+      "elapsed_seconds": 20.68,
+      "episodes": 20,
+      "trace_rows": 2077,
+      "weather_days": 2077
+    }
+  }
+}

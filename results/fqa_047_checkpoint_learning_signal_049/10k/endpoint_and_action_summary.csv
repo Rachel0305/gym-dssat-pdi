@@ -1,0 +1,3 @@
+checkpoint,episode_index,year,weather_seed,weather_sha256,days,yield_kg_ha,irrigation_mm_wrapper,nitrogen_kg_ha_wrapper,pfp_n_wrapper_basis,episode_return,distinct_policy_action_indices,action_index_counts_json,positive_irrigation_days,positive_nitrogen_days
+10k,1,2007,1081,BFA3F248944916D3258E97FFE234AAA582E9E7D957757D89E51254C8840BC2B2,103,6926.119384765625,120.0,240.0,28.85883076985677,0.7181268681573867,6,"{""0"": 96, ""1"": 1, ""13"": 1, ""2"": 2, ""4"": 1, ""8"": 2}",4,4
+10k,2,2007,1100,D142B32B3903A97A2F8E7BBCF99D9710E77E28DA5B8A23A4054F9F6CC96F1D4B,101,6137.26318359375,120.0,240.0,25.571929931640625,0.5934875883722304,6,"{""0"": 94, ""1"": 1, ""13"": 1, ""2"": 2, ""4"": 1, ""8"": 2}",4,4

@@ -1,0 +1,109 @@
+{
+  "canonical": {
+    "canonical_preflight": {
+      "task": "051_00_fqa_originIC_expanded_action_maskableppo",
+      "station_code": "FQA",
+      "site": "FQ",
+      "input_profile": "originIC",
+      "resolved_input_root": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013",
+      "source_mzx": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013/FQ/CNFQ0801.MZX",
+      "config_train_years": [
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013
+      ],
+      "config_validation_years": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "engine_train_years": [
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013
+      ],
+      "engine_validation_years": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "reference_run": "046_10_sya_originIC_expanded_action_maskableppo",
+      "observation_contract": {
+        "base": "046_02_raw_observation",
+        "normalization_enabled": false,
+        "weather_forecast_enabled": false
+      },
+      "irrigation_levels_mm": [
+        0.0,
+        15.0,
+        30.0,
+        45.0
+      ],
+      "nitrogen_levels_kg_ha": [
+        0.0,
+        40.0,
+        80.0,
+        120.0
+      ],
+      "combined_action_count": 16,
+      "issues": [],
+      "next_step_allowed": true
+    },
+    "planting_date": "2007-06-11",
+    "input_sha256": {
+      "configs/051_00_fqa_originIC_expanded_action_maskableppo.json": "FE968319D1F1276B21491BC66165D2814C242B2F0F1048C941F810BE8BCF8AAC",
+      "prompt_02/044_fqa_wgen_ppo_2k_episode_archive_smoke.md": "563FA4CC8AA462E6F7ECF9E4D7BCAD343B75D68DD7C81878B9F69F61474953A2",
+      "results/fqa_weather_resume_041/CNFQ.CLI": "7EE3037E05A6850182FB3CECDDED631F26C88FF713E3C279F07F3F000E881FD6",
+      "results/fqa_wgen_ppo_smoke_044/run_smoke.py": "D55DCDF58F517AF277737B090479FED52FE19CAE40659586CF360F438E891946",
+      "src/run_sya_lowIC_binary_timing_maskableppo_042_10.py": "8EC856B4CADBB01A26DE8FB87E681393F43916244C124F86A21368910679A16C",
+      "results/yc_random_weather_ppo/004_03/run_controlled_pilot.py": "042B36B84B1BFE2C2085068CAE987B4EFBC8E575F6820ECE2D277EDB88CA9136"
+    },
+    "ppo_seed": 0,
+    "year": 2007,
+    "weather_seed_pool": [
+      1001,
+      1080
+    ],
+    "heldout_pool_excluded": [
+      1081,
+      1100
+    ],
+    "rss_limit_mb": 1536
+  },
+  "checkpoint": "results/fqa_multiyear_wgen_ppo_047/attempt_01/models/checkpoint_10000.zip",
+  "checkpoint_sha256": "42E192C336FA72D60A38FC11F69A4EFC658D80F105E21F2768BE138AE0FB8709",
+  "prompt_sha256": "99AC861B6242108D86BCADB69745AC1D19366D49073E735442C8E2C333ACD8FE",
+  "source_048_sha256": "9D393DAD585DF6F62230A497D102AA70FDBFE11E3F805442D521C719E99BE344",
+  "frozen_contract_keys": [
+    "ppo",
+    "reward",
+    "discrete_actions",
+    "action_safety"
+  ]
+}

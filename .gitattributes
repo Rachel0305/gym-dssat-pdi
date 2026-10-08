@@ -53,3 +53,11 @@ docs/fqa_wgen_048_file_manifest.csv -text
 scripts/fqa_wgen_048_archive_manifest.py -text
 results/fqa_wgen_10k_heldout_diagnostic_048/* -text
 results/fqa_wgen_10k_heldout_diagnostic_048/** -text
+
+# Preserve exact bytes for the FQA 049 checkpoint diagnostic archive.
+prompt_02/049_*.md -text
+docs/fqa_wgen_049_file_manifest.csv -text
+docs/fqa_047_checkpoint_learning_signal_049_record.md -text
+scripts/fqa_wgen_049_archive_manifest.py -text
+results/fqa_047_checkpoint_learning_signal_049/* -text
+results/fqa_047_checkpoint_learning_signal_049/** -text

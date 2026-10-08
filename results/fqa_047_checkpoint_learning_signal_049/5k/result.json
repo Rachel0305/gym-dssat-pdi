@@ -1,0 +1,10 @@
+{
+  "status": "PASS_CHECKPOINT_DIAGNOSTIC_INPUT",
+  "checkpoint": "5k",
+  "checkpoint_sha256": "75C7930879F1A49350577B6F241B00EB9E7E76FCBC1CD0724F9E4C7FE5C7EC1D",
+  "episodes": 2,
+  "trace_rows": 204,
+  "weather_days": 204,
+  "peak_rss_mb": 421.57,
+  "elapsed_seconds": 6.2
+}

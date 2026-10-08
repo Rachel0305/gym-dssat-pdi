@@ -35,3 +35,13 @@ results/fqa_wgen_multiyear_heldout_gate_045/* -text
 results/fqa_wgen_multiyear_heldout_gate_045/** -text
 results/fqa_wgen_full_pool_qc_046/* -text
 results/fqa_wgen_full_pool_qc_046/** -text
+
+# Preserve exact bytes for the FQA 047 PPO weather archive.
+prompt_02/047_*.md -text
+docs/fqa_wgen_multiyear_ppo_047_10k_record.md -text
+docs/fqa_wgen_archive_latest.md -text
+docs/fqa_wgen_047_file_manifest.csv -text
+scripts/build_fqa_wgen_047_archive_manifest.py -text
+scripts/verify_fqa_wgen_047_archive.py -text
+results/fqa_multiyear_wgen_ppo_047/* -text
+results/fqa_multiyear_wgen_ppo_047/** -text

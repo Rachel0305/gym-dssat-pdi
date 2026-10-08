@@ -1,0 +1,33 @@
+{
+  "status": "PASS_10K_ARCHIVE_ONLY",
+  "checks": {
+    "run_status": true,
+    "frozen_ppo_reward_action_safety": true,
+    "first_80_schedule_frozen": true,
+    "all_years_and_train_pool_only": true,
+    "manifest_schedule_closure": true,
+    "episode_status": true,
+    "step_weather_closure": true,
+    "all_realization_hashes_distinct": true,
+    "all_weather_files_hash_rows_dates_physical": true,
+    "all_runtime_evidence": true,
+    "rss_below_1536_mb": true,
+    "model_hash_and_checkpoint_files": true,
+    "source_046_qc_pass": true
+  },
+  "requested_steps": 10000,
+  "actual_steps": 10080,
+  "completed_episodes": 96,
+  "partial_episodes": 1,
+  "archived_weather_days": 10080,
+  "unique_weather_hashes": 97,
+  "peak_process_tree_rss_mb": 524.91,
+  "elapsed_seconds": 295.7,
+  "limits": [
+    "single PPO seed 0 and 10K steps only",
+    "no heldout policy evaluation or crop outcome comparison",
+    "not a 100K formal training result",
+    "actual formal training weather must be archived again",
+    "native FIELD coordinate warning remains unresolved"
+  ]
+}

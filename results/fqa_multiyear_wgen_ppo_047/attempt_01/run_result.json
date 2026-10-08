@@ -1,0 +1,34 @@
+{
+  "status": "PASS_10K_ARCHIVE_ONLY",
+  "requested_timesteps": 10000,
+  "ppo_seed": 0,
+  "training_years": [
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013
+  ],
+  "training_seed_pool": [
+    1001,
+    1080
+  ],
+  "heldout_seed_pool_excluded": [
+    1081,
+    1100
+  ],
+  "actual_timesteps": 10080,
+  "archived_weather_days": 10080,
+  "completed_episodes": 96,
+  "partial_episodes": 1,
+  "episode_archives": 97,
+  "unique_weather_hashes": 97,
+  "peak_process_tree_rss_mb": 524.91,
+  "model_path": "results/fqa_multiyear_wgen_ppo_047/attempt_01/models/fqa_multiyear_wgen_ppo_seed0_10k.zip",
+  "model_sha256": "011C2D6999A610E09FAC3FEAFDAB5A92D55A2E14195099445DC6C3A8903A9EE3",
+  "elapsed_seconds": 295.7
+}

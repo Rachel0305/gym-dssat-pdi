@@ -1,0 +1,6 @@
+﻿metric,metric_label,ppo_8seed_mean_of_10y_means,ppo_8seed_sd,ppo_8seed_min,ppo_8seed_max,null_10y_mean,recorded_farmer_template_10y_mean,dssat_auto_external_n_10y_mean,official_extension_expert_10y_mean,seeds_above_null,seeds_above_recorded_farmer_template,seeds_above_dssat_auto_external_n,seeds_above_official_extension_expert
+grain_yield_kg_ha,Yield (kg/ha),7234.25,86.59830087412635,7118.4,7350.2,6953.4,7201.7,7178.2,7311.9,8,3,7,3
+WP_ET_kg_m3,WP_ET (kg/m³),2.14,0.08183083596228086,1.996,2.2,2.1450000000000005,2.1450000000000005,2.1250000000000004,2.0789999999999997,5,5,5,6
+PFP_N_kg_grain_per_kg_N,PFP_N (kg grain/kg N),79.04583333333333,55.24882577139685,33.86666666666667,197.74444444444444,,55.577777777777776,,33.15555555555556,0,5,0,8
+total_irrigation_mm,Irrigation (mm),110.625,90.57583641820341,45.0,222.0,0.0,75.0,34.7,212.9,8,3,8,3
+total_n_kg_ha,Nitrogen (kg/ha),145.0,82.63517065131184,40.0,240.0,0.0,144.0,0.0,241.7,8,3,8,0

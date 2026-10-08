@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/workspace/results/fqa_multiyear_wgen_ppo_052_8seed/summarize_cohort.py", line 200, in <module>
+    main()
+  File "/workspace/results/fqa_multiyear_wgen_ppo_052_8seed/summarize_cohort.py", line 151, in main
+    values = baseline.loc[baseline.scenario.eq(scenario)].set_index("year").reindex(YEARS)[metric]
+  File "/opt/gym_dssat_pdi/lib/python3.10/site-packages/pandas/core/frame.py", line 5400, in reindex
+    return super().reindex(
+  File "/opt/gym_dssat_pdi/lib/python3.10/site-packages/pandas/core/generic.py", line 5632, in reindex
+    return self._reindex_axes(
+  File "/opt/gym_dssat_pdi/lib/python3.10/site-packages/pandas/core/generic.py", line 5655, in _reindex_axes
+    new_index, indexer = ax.reindex(
+  File "/opt/gym_dssat_pdi/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 4436, in reindex
+    raise ValueError("cannot reindex on an axis with duplicate labels")
+ValueError: cannot reindex on an axis with duplicate labels

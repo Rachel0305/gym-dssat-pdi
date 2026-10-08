@@ -1,0 +1,47 @@
+{
+  "status": "PASS_100K_ARCHIVE_ONLY",
+  "mode": "formal_100k",
+  "requested_timesteps": 100000,
+  "ppo_seed": 5,
+  "training_years": [
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013
+  ],
+  "training_seed_pool": [
+    1001,
+    1080
+  ],
+  "heldout_seed_pool_excluded": [
+    1081,
+    1100
+  ],
+  "checkpoint_steps_requested": [
+    25000,
+    50000,
+    75000,
+    100000
+  ],
+  "actual_timesteps": 100080,
+  "archived_weather_days": 100080,
+  "completed_episodes": 955,
+  "partial_episodes": 1,
+  "episode_archives": 956,
+  "unique_weather_hashes": 553,
+  "checkpoint_steps_actual": {
+    "25000": 25000,
+    "50000": 50000,
+    "75000": 75000,
+    "100000": 100000
+  },
+  "peak_process_tree_rss_mb": 1433.43,
+  "model_path": "results/fqa_multiyear_wgen_ppo_052_8seed/seed_05/attempt_01/models/final_model_actual_100080.zip",
+  "model_sha256": "5900D41673BE6E41E88B0358F6F057DF0A2E34FA1A32F408C8B95CEF31B1AFC4",
+  "elapsed_seconds": 2835.45
+}

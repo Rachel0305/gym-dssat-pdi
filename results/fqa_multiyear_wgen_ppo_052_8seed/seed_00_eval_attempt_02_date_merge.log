@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/workspace/results/fqa_multiyear_wgen_ppo_052_8seed/evaluate_100k.py", line 337, in <module>
+    main()
+  File "/workspace/results/fqa_multiyear_wgen_ppo_052_8seed/evaluate_100k.py", line 297, in main
+    metrics, daily, actions, audit = build_seed_frames(args.seed, model, checkpoint, config, env_config)
+  File "/workspace/results/fqa_multiyear_wgen_ppo_052_8seed/evaluate_100k.py", line 200, in build_seed_frames
+    weather = baseline_daily.loc[
+  File "/opt/gym_dssat_pdi/lib/python3.10/site-packages/pandas/core/frame.py", line 10859, in merge
+    return merge(
+  File "/opt/gym_dssat_pdi/lib/python3.10/site-packages/pandas/core/reshape/merge.py", line 170, in merge
+    op = _MergeOperation(
+  File "/opt/gym_dssat_pdi/lib/python3.10/site-packages/pandas/core/reshape/merge.py", line 807, in __init__
+    self._maybe_coerce_merge_keys()
+  File "/opt/gym_dssat_pdi/lib/python3.10/site-packages/pandas/core/reshape/merge.py", line 1515, in _maybe_coerce_merge_keys
+    raise ValueError(msg)
+ValueError: You are trying to merge on object and datetime64[ns] columns for key 'date'. If you wish to proceed you should use pd.concat

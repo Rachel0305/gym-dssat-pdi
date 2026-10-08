@@ -1,0 +1,45 @@
+{
+  "status": "PASS_8SEED_TRAINING_EVALUATION_FIGURES",
+  "created_at": "2026-10-09",
+  "scope": {
+    "site": "FQA",
+    "ppo_seeds": [0, 1, 2, 3, 4, 5, 6, 7],
+    "training_years": [2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013],
+    "training_weather_seed_pool": [1001, 1080],
+    "heldout_weather_seed_pool_excluded": [1081, 1100],
+    "validation_years": [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023],
+    "exact_checkpoint_step": 100000
+  },
+  "checks": {
+    "all_8_training_archive_audits_pass": true,
+    "all_8_have_exact_25k_50k_75k_100k_checkpoints": true,
+    "all_8_actual_steps_equal_weather_days_100080": true,
+    "all_8_episode_archives_equal_956": true,
+    "all_8_weather_hash_sequences_identical": true,
+    "heldout_weather_seeds_excluded": true,
+    "all_8_validation_years_complete": true,
+    "all_80_validation_snapshots_have_summary_out_and_metadata": true,
+    "all_8_weather_alignments_match_frozen_baseline": true,
+    "all_8_have_exact_summary_out_etcp_metrics": true,
+    "all_8_five_scenario_tables_have_50_rows": true,
+    "all_8_seed_figure_sets_have_23_pngs": true,
+    "cohort_rows_equal_400": true,
+    "cohort_ppo_seed_year_rows_equal_80": true,
+    "cohort_summary_has_2_pngs_and_readme": true,
+    "results_and_failures_documented": true
+  },
+  "summary": {
+    "training_actual_timesteps_per_seed": 100080,
+    "training_days_archived_per_seed": 100080,
+    "episodes_per_seed": 956,
+    "complete_episodes_per_seed": 955,
+    "partial_episodes_per_seed": 1,
+    "unique_weather_hashes_per_seed": 553,
+    "max_peak_process_tree_rss_mib": 1433.77,
+    "validation_snapshots": 80,
+    "five_scenario_annual_rows": 400,
+    "seed_figures": 184,
+    "cohort_figures": 2
+  },
+  "interpretation_boundary": "Archive and figure PASS means the eight-seed results are comparable and traceable. It does not imply a stable management advantage; see docs/fqa_multiyear_wgen_ppo_052_8seed_record.md."
+}

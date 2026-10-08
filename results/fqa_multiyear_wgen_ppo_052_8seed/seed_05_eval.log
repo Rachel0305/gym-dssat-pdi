@@ -1,0 +1,31 @@
+DONE seed5 FQA2014: yield=8300.0, I=45.0, N=120.0, WP_ET=2.340
+DONE seed5 FQA2015: yield=8005.0, I=45.0, N=120.0, WP_ET=2.450
+DONE seed5 FQA2016: yield=7801.0, I=45.0, N=120.0, WP_ET=2.560
+DONE seed5 FQA2017: yield=7704.0, I=45.0, N=120.0, WP_ET=2.290
+DONE seed5 FQA2018: yield=0.0, I=45.0, N=120.0, WP_ET=0.000
+DONE seed5 FQA2019: yield=7859.0, I=45.0, N=120.0, WP_ET=2.740
+DONE seed5 FQA2020: yield=8962.0, I=45.0, N=120.0, WP_ET=2.510
+DONE seed5 FQA2021: yield=7463.0, I=45.0, N=120.0, WP_ET=2.400
+DONE seed5 FQA2022: yield=6687.0, I=45.0, N=120.0, WP_ET=2.060
+DONE seed5 FQA2023: yield=9099.0, I=45.0, N=120.0, WP_ET=2.650
+{
+  "seed": 5,
+  "model": "results/fqa_multiyear_wgen_ppo_052_8seed/seed_05/attempt_01/models/checkpoint_100000.zip",
+  "model_sha256": "3049499A53C6233EC0CF6476FD7386068DBEBA87BF5CEA66F309C17AFF53F7AF",
+  "validation_years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "weather_match_all_years": true,
+  "exact_etcp_rows": 10,
+  "figure_count": 23,
+  "output": "results/fqa_multiyear_wgen_ppo_052_8seed/055_03_five_scenario/FQ/best_seed_seed5"
+}

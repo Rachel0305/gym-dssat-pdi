@@ -1,0 +1,14 @@
+{
+  "episode_index": 20,
+  "runtime_dir": "results/fqa_wgen_full_pool_qc_046/heldout/temp/tmp7ram6dx8",
+  "runtime_filex_sha256": "6CEC514C34CBBC7D8119A59FF2DF0E1809CA873DC4FA030F6F6D8FD165119712",
+  "wther": "W",
+  "wsta_confirmed": true,
+  "runtime_cli_sha256": "7EE3037E05A6850182FB3CECDDED631F26C88FF713E3C279F07F3F000E881FD6",
+  "source_cli_sha256": "7EE3037E05A6850182FB3CECDDED631F26C88FF713E3C279F07F3F000E881FD6",
+  "pdi_config_sha256": "69FFFC4383D44799BCCF973439100983F608E68497C548FF71FD177B8FBB105F",
+  "yaml_bootstrap_seed": 1081,
+  "yaml_bootstrap_confirmed": true,
+  "runtime_rseed1": 1100,
+  "scheduled_seed": 1100
+}

@@ -1,0 +1,14 @@
+{
+  "episode_index": 50,
+  "runtime_dir": "results/fqa_wgen_full_pool_qc_046/train/temp/tmpkjgaft65",
+  "runtime_filex_sha256": "CDB8EC3A3EC92EE169FCE49EB45880DD11E838DF9C2DA59108D929F73C306B05",
+  "wther": "W",
+  "wsta_confirmed": true,
+  "runtime_cli_sha256": "7EE3037E05A6850182FB3CECDDED631F26C88FF713E3C279F07F3F000E881FD6",
+  "source_cli_sha256": "7EE3037E05A6850182FB3CECDDED631F26C88FF713E3C279F07F3F000E881FD6",
+  "pdi_config_sha256": "1EE3532AF3828EC6F76B7A5C7FFD5EECA54EB2C696493860662DFDB735765C3F",
+  "yaml_bootstrap_seed": 1045,
+  "yaml_bootstrap_confirmed": true,
+  "runtime_rseed1": 1045,
+  "scheduled_seed": 1045
+}

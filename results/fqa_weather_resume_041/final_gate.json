@@ -1,0 +1,397 @@
+{
+  "task": "041",
+  "site": "FQA",
+  "fit_start": "2005-01-01",
+  "fit_end": "2013-12-31",
+  "days": 3287,
+  "rain_rule": "D222 20-20 numeric unchanged; D222 blank -> 0 mm per user decision; converted zero is not observed zero",
+  "counts": {
+    "rain_blank_to_zero": 2892,
+    "SRAD_candidate": 94,
+    "rain_recorded": 395,
+    "TMAX_candidate": 83,
+    "TMIN_candidate": 83
+  },
+  "station_coordinates_from_wth": {
+    "latitude": 35.02,
+    "longitude": 114.542,
+    "elevation_m": 300.0
+  },
+  "input_manifest": {
+    "RAIN": {
+      "path": "data/external/人工大气观测降雨蒸发能见度日值.xls",
+      "bytes": 9414656,
+      "sha256": "f3ead8370c5986de5617e1c2fbc965378efb47ab8e86ff016e32483529e46b36"
+    },
+    "TMAX_TMIN": {
+      "path": "my_data/T2.xls",
+      "bytes": 9736192,
+      "sha256": "d95ceee849df1717f3f2c9e301048467372c3974623d68ce59b7dadffed54b01"
+    },
+    "SRAD": {
+      "path": "my_data/D32.xls",
+      "bytes": 16418816,
+      "sha256": "fd885aff6690cc5d415a3a31a4d409bd032a9bc3502827f5161aa60fdaa983e8"
+    },
+    "NASA_CANDIDATES": {
+      "path": "results/hl_fq_random_weather_8seed/source_audit/nasa_candidate_gapfill.csv",
+      "bytes": 48629,
+      "sha256": "2ec2a0cbb452b46867aa81ce6055bfda66b3b2513098b273cf82535bcded54ea"
+    },
+    "CLI_BUILDER": {
+      "path": "scripts/build_dssat_cli.py",
+      "bytes": 35852,
+      "sha256": "1a338e725497d4a077e06bf0da397c7bff9ada47a492ff53869960f5d2412426"
+    },
+    "STATION_WTH_HEADER": {
+      "path": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013_lowIC_manual/FQ/CNFQ0701.WTH",
+      "bytes": 12214,
+      "sha256": "e243f865d91d284a003cb379f9f4c9e70941287229e3e0a29d0f612ef4381ff7"
+    }
+  },
+  "output_sha256": {
+    "fitting_weather.csv": "21c85fa85457d344d5f1ea6b5455e2dfb012461cfd7f59ff6007e6c59e280ac8",
+    "daily_provenance.csv": "b291d3a67d71e37d0dc453dfbc2c0155c02303af1fe3dd381646f97476639ce3",
+    "annual_summary.csv": "b9375e061b1bd3a1ac66f37beaa66913d1cbbc5f599262ffe1edaa36d6eada1c",
+    "CNFQ.CLI": "7ee3037e05a6850182fb3cecdded631f26c88ff713e3c279f07f3f000e881fd6"
+  },
+  "FQA_FITTING_WEATHER": "PASS",
+  "FQA_STATIC_CLI": "PASS",
+  "FQA_RUNTIME_SMOKE": "NOT_RUN",
+  "FQA_WGEN_DISTRIBUTION_QC": "NOT_RUN",
+  "FQA_PPO": "NOT_RUN",
+  "monthly_parameter_crosscheck": {
+    "method": "independent statistics.mean/stdev two-pass calculation and separately recounted raw daily groups",
+    "months_checked": 12,
+    "checks_per_month": 15,
+    "passed": true,
+    "month_results": [
+      {
+        "month": 1,
+        "independent_statistics_checked": [
+          "SDMN",
+          "SDSD",
+          "SWMN",
+          "SWSD",
+          "XDMN",
+          "XDSD",
+          "XWMN",
+          "XWSD",
+          "NAMN",
+          "NASD",
+          "ALPHA",
+          "PDW",
+          "PWW_audit",
+          "RTOT",
+          "RNUM"
+        ],
+        "mismatches": [],
+        "wet_count_independent": 4,
+        "dry_count_independent": 275
+      },
+      {
+        "month": 2,
+        "independent_statistics_checked": [
+          "SDMN",
+          "SDSD",
+          "SWMN",
+          "SWSD",
+          "XDMN",
+          "XDSD",
+          "XWMN",
+          "XWSD",
+          "NAMN",
+          "NASD",
+          "ALPHA",
+          "PDW",
+          "PWW_audit",
+          "RTOT",
+          "RNUM"
+        ],
+        "mismatches": [],
+        "wet_count_independent": 12,
+        "dry_count_independent": 242
+      },
+      {
+        "month": 3,
+        "independent_statistics_checked": [
+          "SDMN",
+          "SDSD",
+          "SWMN",
+          "SWSD",
+          "XDMN",
+          "XDSD",
+          "XWMN",
+          "XWSD",
+          "NAMN",
+          "NASD",
+          "ALPHA",
+          "PDW",
+          "PWW_audit",
+          "RTOT",
+          "RNUM"
+        ],
+        "mismatches": [],
+        "wet_count_independent": 18,
+        "dry_count_independent": 261
+      },
+      {
+        "month": 4,
+        "independent_statistics_checked": [
+          "SDMN",
+          "SDSD",
+          "SWMN",
+          "SWSD",
+          "XDMN",
+          "XDSD",
+          "XWMN",
+          "XWSD",
+          "NAMN",
+          "NASD",
+          "ALPHA",
+          "PDW",
+          "PWW_audit",
+          "RTOT",
+          "RNUM"
+        ],
+        "mismatches": [],
+        "wet_count_independent": 21,
+        "dry_count_independent": 249
+      },
+      {
+        "month": 5,
+        "independent_statistics_checked": [
+          "SDMN",
+          "SDSD",
+          "SWMN",
+          "SWSD",
+          "XDMN",
+          "XDSD",
+          "XWMN",
+          "XWSD",
+          "NAMN",
+          "NASD",
+          "ALPHA",
+          "PDW",
+          "PWW_audit",
+          "RTOT",
+          "RNUM"
+        ],
+        "mismatches": [],
+        "wet_count_independent": 37,
+        "dry_count_independent": 242
+      },
+      {
+        "month": 6,
+        "independent_statistics_checked": [
+          "SDMN",
+          "SDSD",
+          "SWMN",
+          "SWSD",
+          "XDMN",
+          "XDSD",
+          "XWMN",
+          "XWSD",
+          "NAMN",
+          "NASD",
+          "ALPHA",
+          "PDW",
+          "PWW_audit",
+          "RTOT",
+          "RNUM"
+        ],
+        "mismatches": [],
+        "wet_count_independent": 38,
+        "dry_count_independent": 232
+      },
+      {
+        "month": 7,
+        "independent_statistics_checked": [
+          "SDMN",
+          "SDSD",
+          "SWMN",
+          "SWSD",
+          "XDMN",
+          "XDSD",
+          "XWMN",
+          "XWSD",
+          "NAMN",
+          "NASD",
+          "ALPHA",
+          "PDW",
+          "PWW_audit",
+          "RTOT",
+          "RNUM"
+        ],
+        "mismatches": [],
+        "wet_count_independent": 72,
+        "dry_count_independent": 207
+      },
+      {
+        "month": 8,
+        "independent_statistics_checked": [
+          "SDMN",
+          "SDSD",
+          "SWMN",
+          "SWSD",
+          "XDMN",
+          "XDSD",
+          "XWMN",
+          "XWSD",
+          "NAMN",
+          "NASD",
+          "ALPHA",
+          "PDW",
+          "PWW_audit",
+          "RTOT",
+          "RNUM"
+        ],
+        "mismatches": [],
+        "wet_count_independent": 62,
+        "dry_count_independent": 217
+      },
+      {
+        "month": 9,
+        "independent_statistics_checked": [
+          "SDMN",
+          "SDSD",
+          "SWMN",
+          "SWSD",
+          "XDMN",
+          "XDSD",
+          "XWMN",
+          "XWSD",
+          "NAMN",
+          "NASD",
+          "ALPHA",
+          "PDW",
+          "PWW_audit",
+          "RTOT",
+          "RNUM"
+        ],
+        "mismatches": [],
+        "wet_count_independent": 58,
+        "dry_count_independent": 212
+      },
+      {
+        "month": 10,
+        "independent_statistics_checked": [
+          "SDMN",
+          "SDSD",
+          "SWMN",
+          "SWSD",
+          "XDMN",
+          "XDSD",
+          "XWMN",
+          "XWSD",
+          "NAMN",
+          "NASD",
+          "ALPHA",
+          "PDW",
+          "PWW_audit",
+          "RTOT",
+          "RNUM"
+        ],
+        "mismatches": [],
+        "wet_count_independent": 30,
+        "dry_count_independent": 249
+      },
+      {
+        "month": 11,
+        "independent_statistics_checked": [
+          "SDMN",
+          "SDSD",
+          "SWMN",
+          "SWSD",
+          "XDMN",
+          "XDSD",
+          "XWMN",
+          "XWSD",
+          "NAMN",
+          "NASD",
+          "ALPHA",
+          "PDW",
+          "PWW_audit",
+          "RTOT",
+          "RNUM"
+        ],
+        "mismatches": [],
+        "wet_count_independent": 25,
+        "dry_count_independent": 245
+      },
+      {
+        "month": 12,
+        "independent_statistics_checked": [
+          "SDMN",
+          "SDSD",
+          "SWMN",
+          "SWSD",
+          "XDMN",
+          "XDSD",
+          "XWMN",
+          "XWSD",
+          "NAMN",
+          "NASD",
+          "ALPHA",
+          "PDW",
+          "PWW_audit",
+          "RTOT",
+          "RNUM"
+        ],
+        "mismatches": [],
+        "wet_count_independent": 7,
+        "dry_count_independent": 272
+      }
+    ]
+  },
+  "cli_schema": {
+    "sections_present": [
+      "*CLIMATE",
+      "*MONTHLY AVERAGES",
+      "*WGEN PARAMETERS",
+      "*RANGE CHECK VALUES",
+      "*FLAGGED DATA COUNT"
+    ],
+    "sections_missing": [],
+    "monthly_averages_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "wgen_parameters_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "wgen_expected_read_format": "(I6,14(1X,F5.0))",
+    "wgen_statistical_field_count": 14,
+    "wgen_total_column_count": 15,
+    "wgen_expected_row_width": 90,
+    "wgen_fixed_width_malformed": [],
+    "twelve_months_each": true,
+    "station_identifier_present": true,
+    "numeric_rows_malformed": [],
+    "nonfinite_tokens": [],
+    "passed": true,
+    "range_values_status": "-99 sentinel: WeatherMan range-check thresholds are editable archive QC metadata, not WGEN parameters; no threshold was invented",
+    "flagged_count_status": "ABOVE/BELOW/RATE marked -99 (not evaluated without station range thresholds); no zero flags are fabricated"
+  }
+}

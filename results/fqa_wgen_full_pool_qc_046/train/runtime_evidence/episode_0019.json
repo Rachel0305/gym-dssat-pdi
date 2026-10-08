@@ -1,0 +1,14 @@
+{
+  "episode_index": 19,
+  "runtime_dir": "results/fqa_wgen_full_pool_qc_046/train/temp/tmpk3jedo4d",
+  "runtime_filex_sha256": "6CEC514C34CBBC7D8119A59FF2DF0E1809CA873DC4FA030F6F6D8FD165119712",
+  "wther": "W",
+  "wsta_confirmed": true,
+  "runtime_cli_sha256": "7EE3037E05A6850182FB3CECDDED631F26C88FF713E3C279F07F3F000E881FD6",
+  "source_cli_sha256": "7EE3037E05A6850182FB3CECDDED631F26C88FF713E3C279F07F3F000E881FD6",
+  "pdi_config_sha256": "8C1A4222E54DFDF1517742EA1B6E0FA7B2D45B0363B72712F6DE52C552CD5F60",
+  "yaml_bootstrap_seed": 1056,
+  "yaml_bootstrap_confirmed": true,
+  "runtime_rseed1": 1056,
+  "scheduled_seed": 1056
+}

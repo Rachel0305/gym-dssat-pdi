@@ -1,0 +1,14 @@
+{
+  "episode_index": 36,
+  "runtime_dir": "results/fqa_wgen_full_pool_qc_046/train/temp/tmp_cx8wgtr",
+  "runtime_filex_sha256": "AB27875EC94507FF1A14D5E2DA0C3D7BC92D3E991BA72C9217F886F124DF39CB",
+  "wther": "W",
+  "wsta_confirmed": true,
+  "runtime_cli_sha256": "7EE3037E05A6850182FB3CECDDED631F26C88FF713E3C279F07F3F000E881FD6",
+  "source_cli_sha256": "7EE3037E05A6850182FB3CECDDED631F26C88FF713E3C279F07F3F000E881FD6",
+  "pdi_config_sha256": "859473AF5635094B194C9845649E70FD0B3027BB4AE3FF728AF8491F8D638A69",
+  "yaml_bootstrap_seed": 1039,
+  "yaml_bootstrap_confirmed": true,
+  "runtime_rseed1": 1039,
+  "scheduled_seed": 1039
+}

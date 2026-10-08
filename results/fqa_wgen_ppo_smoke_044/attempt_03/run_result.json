@@ -1,0 +1,12 @@
+{
+  "status": "PASS_SMOKE_ONLY",
+  "requested_steps": 2000,
+  "ppo_seed": 0,
+  "actual_steps": 2016,
+  "archived_days": 2016,
+  "episode_archives": 20,
+  "completed_episodes": 19,
+  "model_path": "results/fqa_wgen_ppo_smoke_044/attempt_03/models/fqa_ppo_seed0_2k.zip",
+  "model_sha256": "3388E95ADB19C6C39018BF8851ACB95953115D50FF5C87A60B1C46721D74295E",
+  "elapsed_seconds": 14.85
+}

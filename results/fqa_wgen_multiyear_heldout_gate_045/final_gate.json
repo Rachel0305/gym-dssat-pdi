@@ -1,0 +1,28 @@
+{
+  "status": "PASS_ARCHIVE_GATE_ONLY",
+  "checks": {
+    "split_runs_pass": true,
+    "full_plan_pool_sizes_and_separation": true,
+    "nine_training_years": true,
+    "actual_schedule_matches_plan": true,
+    "actual_pools_disjoint": true,
+    "episode_sequences": true,
+    "all_runtime_seeds_and_physical_screen": true,
+    "daily_weather_hash_and_row_reread": true,
+    "runtime_evidence_reread": true,
+    "days_closed": true,
+    "rss_below_limit": true,
+    "model_frozen_hash": true
+  },
+  "train_episodes": 9,
+  "heldout_episodes": 2,
+  "actual_weather_days": 1155,
+  "unique_realization_hashes": 11,
+  "peak_process_tree_rss_mb": 428.48,
+  "scope": "044 checkpoint deterministic inference for nine FQA training years and two heldout weather seeds; no PPO learning",
+  "limitations": [
+    "80/20 plan separation is checked, but only 9 train and 2 heldout realizations were run",
+    "full 80/20 weather climate distribution QA remains open",
+    "native FIELD coordinate warning remains unresolved; no crop outcome inference from this gate"
+  ]
+}

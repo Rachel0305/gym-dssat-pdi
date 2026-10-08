@@ -1,0 +1,18 @@
+{
+  "template": {
+    "path": "results/yc_random_weather_ppo/004_03/runtime_templates/RANDOM_WEATHER_WGEN_ppo_seed_0_2007/YCA_2007_rseed1_1066.jinja2",
+    "sha256": "510924FB547A89F89A8BE2EAA0B1F2B1BA9718E7991A359EC50BFEBD2AA1CF08"
+  },
+  "cli": {
+    "path": "results/yc_wgen_cli_pilot/003_06_05_02/final/CNYC.CLI",
+    "sha256": "65CF134600A5881706A5D435E1A09B276ED92A21FA5ABE2E18AAF63AF1E3A929"
+  },
+  "cultivar": {
+    "path": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013_lowIC_manual/YC/MZCER048.CUL",
+    "sha256": "7810190A042B2FE3C53C54D43BF8080AE02DD3D1EDFEC202BF572E130761403C"
+  },
+  "soil": {
+    "path": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013_lowIC_manual/YC/SOIL.SOL",
+    "sha256": "3C303D68DDA19BA6F40573A3BBA5464E40230DDD60C6C746F0EA6BBFEEE9E644"
+  }
+}

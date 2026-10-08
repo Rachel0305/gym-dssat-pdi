@@ -1,0 +1,137 @@
+{
+  "status": "PASS_INPUT_QC_ONLY",
+  "fitting_source": "041 D222 rain values unchanged; D222 blanks -> 0 mm modeling assumption; candidate overlays for missing T/SRAD",
+  "fitting_years": [
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013
+  ],
+  "generation_episode_counts": {
+    "train": 80,
+    "heldout": 20
+  },
+  "actual_weather_days": 10460,
+  "unique_realization_hashes": 100,
+  "common_window": {
+    "start_month_day": "06-11",
+    "end_month_day": "09-15",
+    "days": 97
+  },
+  "structural_checks": {
+    "generation_100_complete": true,
+    "train_heldout_seed_separation": true,
+    "all_weather_files_and_runtime_proofs_verified": true,
+    "all_100_realizations_distinct": true,
+    "fixed_window_at_least_90_days": true,
+    "rss_below_1536_mb": true
+  },
+  "climate_tests": {
+    "rain_total_mm_bias_le_2sd": true,
+    "wet_days_bias_le_2sd": true,
+    "tmax_mean_c_bias_le_2sd": true,
+    "tmin_mean_c_bias_le_2sd": true,
+    "srad_mean_mj_m2_day_bias_le_2sd": true,
+    "monthly_rain_profile_ge_0p5": true,
+    "tmax_daily_sd_ratio_0p35_2": true,
+    "tmin_daily_sd_ratio_0p35_2": true,
+    "srad_daily_sd_ratio_0p35_2": true,
+    "dependence_max_le_0p60": true
+  },
+  "diagnostics": {
+    "rain_total_mm": {
+      "fitting_mean": 521.7777777777778,
+      "fitting_interannual_sd": 306.1820364496331,
+      "train_mean": 511.7146653620718,
+      "heldout_mean": 502.1566920806513,
+      "synthetic_mean": 509.80307070578766,
+      "absolute_bias_in_fitting_sd": 0.03910976362573121,
+      "synthetic_p05": 206.22550670213965,
+      "synthetic_p95": 852.5060911024135
+    },
+    "wet_days": {
+      "fitting_mean": 20.555555555555557,
+      "fitting_interannual_sd": 5.126185499743233,
+      "train_mean": 21.1625,
+      "heldout_mean": 21.7,
+      "synthetic_mean": 21.27,
+      "absolute_bias_in_fitting_sd": 0.13937155502473106,
+      "synthetic_p05": 13.0,
+      "synthetic_p95": 30.049999999999997
+    },
+    "tmax_mean_c": {
+      "fitting_mean": 31.291551947522642,
+      "fitting_interannual_sd": 0.8416015386332701,
+      "train_mean": 32.00726115654398,
+      "heldout_mean": 31.953601137140772,
+      "synthetic_mean": 31.99652915266334,
+      "absolute_bias_in_fitting_sd": 0.8376614974891251,
+      "synthetic_p05": 30.86276669404392,
+      "synthetic_p95": 33.03411400588381
+    },
+    "tmin_mean_c": {
+      "fitting_mean": 20.82778446329259,
+      "fitting_interannual_sd": 0.7229781345416145,
+      "train_mean": 21.448265209763452,
+      "heldout_mean": 21.368918519168368,
+      "synthetic_mean": 21.432395871644434,
+      "absolute_bias_in_fitting_sd": 0.8362789681532781,
+      "synthetic_p05": 20.506838567974693,
+      "synthetic_p95": 22.35507051575809
+    },
+    "srad_mean_mj_m2_day": {
+      "fitting_mean": 16.386930726542776,
+      "fitting_interannual_sd": 1.1010772479295579,
+      "train_mean": 16.76048836191962,
+      "heldout_mean": 16.666654661758397,
+      "synthetic_mean": 16.74172162188738,
+      "absolute_bias_in_fitting_sd": 0.3222216207007678,
+      "synthetic_p05": 15.732192269549882,
+      "synthetic_p95": 17.760348868862312
+    },
+    "monthly_rain_profile_pearson": 0.9975986456221714,
+    "tmax_daily_sd_ratio": 0.9508904616586334,
+    "tmin_daily_sd_ratio": 0.9606015070220332,
+    "srad_daily_sd_ratio": 0.922627806308938,
+    "dependence_group_mean_absolute_differences": {
+      "corr_rain_srad": 0.05964152249392868,
+      "corr_rain_tmax": 0.03755776509122549,
+      "corr_rain_tmin": 0.04822555517473735,
+      "corr_tmax_tmin": 0.041613172598849724,
+      "lag1_wet": 0.01444575854667926,
+      "lag1_tmax": 0.06618554600584592
+    },
+    "dependence_max_difference": 0.06618554600584592,
+    "extremes_descriptive": {
+      "fit_max_daily_rain_mm": 240.0,
+      "synthetic_max_daily_rain_mm": 438.957214355,
+      "fit_mean_longest_dry_spell_days": 15.555555555555555,
+      "synthetic_mean_longest_dry_spell_days": 18.31,
+      "fit_mean_wet_intensity_mm": 26.609027291681308,
+      "synthetic_mean_wet_intensity_mm": 23.823193497258035,
+      "fit_tmax_p95_c": 36.9,
+      "synthetic_tmax_p95_c": 37.733512687655,
+      "fit_tmin_p05_c": 14.06,
+      "synthetic_tmin_p05_c": 15.45225372318
+    }
+  },
+  "peak_process_tree_rss_mb": 498.95,
+  "decision_rules": {
+    "rain_total_wet_days_mean_bias": "<=2 fitting interannual SD",
+    "monthly_rain_profile_pearson": ">=0.50",
+    "tmax_tmin_srad_mean_bias": "<=2 fitting interannual SD",
+    "tmax_tmin_srad_daily_sd_ratio": "0.35 to 2.0",
+    "dependence_group_mean_max_abs_difference": "<=0.60",
+    "interpretation": "heuristic descriptive screen, not hypothesis test; failed screen does not authorize source or seed changes"
+  },
+  "limits": [
+    "checkpoint used only for deterministic actions, no PPO learning or policy conclusion",
+    "fixed-window generation does not certify full-year weather",
+    "native FIELD coordinate warning remains unresolved"
+  ]
+}

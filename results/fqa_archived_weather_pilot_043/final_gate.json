@@ -1,0 +1,19 @@
+{
+  "task": "043",
+  "scope": "one YC control plus five FQA seeds and one repeated FQA seed; 2007 treatment 1; no PPO",
+  "all_realizations_archived": true,
+  "yc_control_native_coordinate_status": "MISSING_WITH_IPFLD_WARNINGS",
+  "fqa_native_coordinate_status": "MISSING_WITH_IPFLD_WARNINGS",
+  "yc_fqa_native_coordinate_behavior_same_in_this_smoke": true,
+  "coordinate_functional_impact": "UNRESOLVED",
+  "fqa_distinct_weather_hashes_across_5_seeds": 5,
+  "fqa_different_seed_diversity": "PASS_SMALL_PILOT",
+  "fqa_seed1001_repeat_exact": true,
+  "fqa_same_seed_reproducibility": "PASS_THIS_FRESH_PROCESS_CONTEXT",
+  "fqa_climate_distribution_qc": "NOT_ASSESSED_SMALL_N",
+  "fqa_weather_pool_80_20_created": false,
+  "fqa_ppo_executed": false,
+  "training_entrypoint_per_episode_archive_hook": "CONTRACT_DEFINED_NOT_INTEGRATED",
+  "ready_for_formal_ppo": false,
+  "manifest": "results/fqa_archived_weather_pilot_043/realization_manifest.csv"
+}

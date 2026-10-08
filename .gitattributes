@@ -10,3 +10,28 @@ results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/** -text
 results/yc_random_weather_ppo/004_18A_yc_weather_summary_for_reporting/** -text
 docs/yc_random_weather_004_18A_weather_summary_for_reporting.md -text
 docs/yc_random_weather_weather_summary_for_presentation.md -text
+
+# Preserve exact bytes for the curated FQA 041-046 weather archive.
+prompt_02/04[1-6]_*.md -text
+docs/fqa_weather_resume_041.md -text
+docs/fqa_runtime_wgen_smoke_042.md -text
+docs/fqa_yc_coordinate_and_weather_archive_043.md -text
+docs/fqa_wgen_ppo_smoke_044.md -text
+docs/fqa_wgen_multiyear_heldout_gate_045.md -text
+docs/fqa_wgen_full_pool_qc_046.md -text
+docs/fqa_wgen_041_046_archive_index.md -text
+docs/fqa_wgen_041_046_file_manifest.csv -text
+scripts/build_fqa_wgen_archive_manifest_041_046.py -text
+scripts/verify_fqa_wgen_archive_041_046.py -text
+results/fqa_weather_resume_041/* -text
+results/fqa_weather_resume_041/** -text
+results/fqa_runtime_wgen_smoke_042/* -text
+results/fqa_runtime_wgen_smoke_042/** -text
+results/fqa_archived_weather_pilot_043/* -text
+results/fqa_archived_weather_pilot_043/** -text
+results/fqa_wgen_ppo_smoke_044/* -text
+results/fqa_wgen_ppo_smoke_044/** -text
+results/fqa_wgen_multiyear_heldout_gate_045/* -text
+results/fqa_wgen_multiyear_heldout_gate_045/** -text
+results/fqa_wgen_full_pool_qc_046/* -text
+results/fqa_wgen_full_pool_qc_046/** -text

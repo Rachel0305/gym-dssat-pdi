@@ -1,0 +1,18 @@
+{
+  "template": {
+    "path": "results/fqa_runtime_wgen_smoke_042/inputs/fileX_after_W.jinja2",
+    "sha256": "9E7E8E4889BF191CE3C0204CCE19F2F0EB28C36D42B42BF8F1625E18B1623819"
+  },
+  "cli": {
+    "path": "results/fqa_weather_resume_041/CNFQ.CLI",
+    "sha256": "7EE3037E05A6850182FB3CECDDED631F26C88FF713E3C279F07F3F000E881FD6"
+  },
+  "cultivar": {
+    "path": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013_lowIC_manual/FQ/MZCER048.CUL",
+    "sha256": "7810190A042B2FE3C53C54D43BF8080AE02DD3D1EDFEC202BF572E130761403C"
+  },
+  "soil": {
+    "path": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013_lowIC_manual/FQ/SOIL.SOL",
+    "sha256": "3C303D68DDA19BA6F40573A3BBA5464E40230DDD60C6C746F0EA6BBFEEE9E644"
+  }
+}

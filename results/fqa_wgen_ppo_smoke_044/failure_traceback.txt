@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "/workspace/results/fqa_wgen_ppo_smoke_044/run_smoke.py", line 238, in main
+    model.learn(total_timesteps=STEPS, reset_num_timesteps=True, progress_bar=False, callback=callback.callback)
+  File "/home/gymusr/.local/lib/python3.10/site-packages/sb3_contrib/ppo_mask/ppo_mask.py", line 453, in learn
+    continue_training = self.collect_rollouts(self.env, callback, self.rollout_buffer, self.n_steps, use_masking)
+  File "/home/gymusr/.local/lib/python3.10/site-packages/sb3_contrib/ppo_mask/ppo_mask.py", line 233, in collect_rollouts
+    new_obs, rewards, dones, infos = env.step(actions)
+  File "/opt/gym_dssat_pdi/lib/python3.10/site-packages/stable_baselines3/common/vec_env/base_vec_env.py", line 222, in step
+    return self.step_wait()
+  File "/opt/gym_dssat_pdi/lib/python3.10/site-packages/stable_baselines3/common/vec_env/dummy_vec_env.py", line 59, in step_wait
+    obs, self.buf_rews[env_idx], terminated, truncated, self.buf_infos[env_idx] = self.envs[env_idx].step(  # type: ignore[assignment]
+  File "/opt/gym_dssat_pdi/lib/python3.10/site-packages/stable_baselines3/common/monitor.py", line 94, in step
+    observation, reward, terminated, truncated, info = self.env.step(action)
+  File "/workspace/results/yc_random_weather_ppo/004_03/run_controlled_pilot.py", line 525, in step
+    return self.outer._step(action)
+  File "/workspace/results/fqa_wgen_ppo_smoke_044/run_smoke.py", line 202, in _step
+    self.archive_current("completed")
+  File "/workspace/results/fqa_wgen_ppo_smoke_044/run_smoke.py", line 174, in archive_current
+    raise RuntimeError(f"weather coverage mismatch episode={index} rows={len(weather)} steps={self.episode_days}")
+RuntimeError: weather coverage mismatch episode=1 rows=202 steps=101

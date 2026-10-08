@@ -1,0 +1,14 @@
+{
+  "episode_index": 5,
+  "runtime_dir": "results/fqa_wgen_full_pool_qc_046/train/temp/tmpqwp_lrp6",
+  "runtime_filex_sha256": "274C047CF347C0D84AEB029744307B2A5D5F8EAC72AB994DE969DF785274607B",
+  "wther": "W",
+  "wsta_confirmed": true,
+  "runtime_cli_sha256": "7EE3037E05A6850182FB3CECDDED631F26C88FF713E3C279F07F3F000E881FD6",
+  "source_cli_sha256": "7EE3037E05A6850182FB3CECDDED631F26C88FF713E3C279F07F3F000E881FD6",
+  "pdi_config_sha256": "FA79F8C03ADD3B8AA0D227779CF4BC59CF46F8FB45F345A7D22E40EBFEE58D44",
+  "yaml_bootstrap_seed": 1050,
+  "yaml_bootstrap_confirmed": true,
+  "runtime_rseed1": 1050,
+  "scheduled_seed": 1050
+}

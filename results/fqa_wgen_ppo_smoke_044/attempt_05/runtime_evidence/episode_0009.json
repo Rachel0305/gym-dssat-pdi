@@ -1,0 +1,14 @@
+{
+  "episode_index": 9,
+  "runtime_dir": "results/fqa_wgen_ppo_smoke_044/attempt_05/temp/tmpwmts1b2q",
+  "filex_sha256": "6CEC514C34CBBC7D8119A59FF2DF0E1809CA873DC4FA030F6F6D8FD165119712",
+  "filex_wther": "W",
+  "filex_wsta_confirmed": true,
+  "pdi_config_sha256": "C769EC176A090AC76FDB414A2117459C20408D0A2FD00590A0BFD89ABA3317A5",
+  "pdi_yaml_bootstrap_seed": 1070,
+  "pdi_yaml_bootstrap_seed_confirmed": true,
+  "pdi_runtime_rseed1": 1052,
+  "pdi_runtime_episode_seed_confirmed": true,
+  "runtime_cli_sha256": "7EE3037E05A6850182FB3CECDDED631F26C88FF713E3C279F07F3F000E881FD6",
+  "cli_source_match": true
+}

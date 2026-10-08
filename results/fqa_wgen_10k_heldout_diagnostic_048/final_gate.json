@@ -1,0 +1,55 @@
+{
+  "status": "PASS_PAIRED_DIAGNOSTIC_LIMITED",
+  "checks": {
+    "2k_frozen_model": true,
+    "2k_run_pass": true,
+    "2k_heldout_schedule": true,
+    "2k_source_hash": true,
+    "10k_frozen_model": true,
+    "10k_run_pass": true,
+    "10k_heldout_schedule": true,
+    "10k_source_hash": true,
+    "weather_hash_days_dates_physical": true,
+    "runtime_wgen_seed_cli": true,
+    "endpoint_pfp_n": true,
+    "resources_below_limit": true,
+    "same_realized_weather_pairs": true
+  },
+  "paired": [
+    {
+      "year": 2007,
+      "weather_seed": 1081,
+      "weather_sha256": "BFA3F248944916D3258E97FFE234AAA582E9E7D957757D89E51254C8840BC2B2",
+      "2k_yield_kg_ha": 7034.042358,
+      "10k_yield_kg_ha": 6861.590576,
+      "delta_10k_minus_2k_yield_kg_ha": -172.451782,
+      "2k_irrigation_mm": 225.0,
+      "10k_irrigation_mm": 135.0,
+      "delta_10k_minus_2k_irrigation_mm": -90.0,
+      "2k_nitrogen_kg_ha": 240.0,
+      "10k_nitrogen_kg_ha": 240.0,
+      "delta_10k_minus_2k_nitrogen_kg_ha": 0.0,
+      "2k_pfp_n_kg_kg": 29.30851,
+      "10k_pfp_n_kg_kg": 28.589961,
+      "delta_10k_minus_2k_pfp_n_kg_kg": -0.718549
+    },
+    {
+      "year": 2007,
+      "weather_seed": 1100,
+      "weather_sha256": "D142B32B3903A97A2F8E7BBCF99D9710E77E28DA5B8A23A4054F9F6CC96F1D4B",
+      "2k_yield_kg_ha": 6253.344727,
+      "10k_yield_kg_ha": 6124.555664,
+      "delta_10k_minus_2k_yield_kg_ha": -128.789062,
+      "2k_irrigation_mm": 210.0,
+      "10k_irrigation_mm": 135.0,
+      "delta_10k_minus_2k_irrigation_mm": -75.0,
+      "2k_nitrogen_kg_ha": 240.0,
+      "10k_nitrogen_kg_ha": 240.0,
+      "delta_10k_minus_2k_nitrogen_kg_ha": 0.0,
+      "2k_pfp_n_kg_kg": 26.055603,
+      "10k_pfp_n_kg_kg": 25.518982,
+      "delta_10k_minus_2k_pfp_n_kg_kg": -0.536621
+    }
+  ],
+  "interpretation": "Two 2007 heldout WGEN realizations only; no policy gain, generalization, WP_ET, or NUE claim; no authorization for 100K expansion."
+}

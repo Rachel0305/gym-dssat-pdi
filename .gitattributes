@@ -45,3 +45,11 @@ scripts/build_fqa_wgen_047_archive_manifest.py -text
 scripts/verify_fqa_wgen_047_archive.py -text
 results/fqa_multiyear_wgen_ppo_047/* -text
 results/fqa_multiyear_wgen_ppo_047/** -text
+
+# Preserve exact bytes for the FQA 048 heldout diagnostic archive.
+prompt_02/048_*.md -text
+docs/fqa_wgen_10k_heldout_048_record.md -text
+docs/fqa_wgen_048_file_manifest.csv -text
+scripts/fqa_wgen_048_archive_manifest.py -text
+results/fqa_wgen_10k_heldout_diagnostic_048/* -text
+results/fqa_wgen_10k_heldout_diagnostic_048/** -text

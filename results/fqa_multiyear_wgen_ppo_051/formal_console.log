@@ -1,0 +1,24 @@
+[progress] attempt_01 timesteps=5040 episodes=48 process_tree_rss_mb=507.5
+[progress] attempt_01 timesteps=10080 episodes=96 process_tree_rss_mb=556.7
+[progress] attempt_01 timesteps=15120 episodes=144 process_tree_rss_mb=606.3
+[progress] attempt_01 timesteps=20160 episodes=192 process_tree_rss_mb=654.1
+[checkpoint] attempt_01 requested=25000 actual=25000
+[progress] attempt_01 timesteps=25200 episodes=240 process_tree_rss_mb=703.3
+[progress] attempt_01 timesteps=30240 episodes=288 process_tree_rss_mb=751.6
+[progress] attempt_01 timesteps=35280 episodes=336 process_tree_rss_mb=799.9
+[progress] attempt_01 timesteps=40320 episodes=384 process_tree_rss_mb=849.0
+[progress] attempt_01 timesteps=45360 episodes=432 process_tree_rss_mb=897.9
+[checkpoint] attempt_01 requested=50000 actual=50000
+[progress] attempt_01 timesteps=50400 episodes=480 process_tree_rss_mb=947.3
+[progress] attempt_01 timesteps=55440 episodes=528 process_tree_rss_mb=996.6
+[progress] attempt_01 timesteps=60480 episodes=576 process_tree_rss_mb=1045.9
+[progress] attempt_01 timesteps=65520 episodes=625 process_tree_rss_mb=1094.9
+[progress] attempt_01 timesteps=70560 episodes=673 process_tree_rss_mb=1143.6
+[checkpoint] attempt_01 requested=75000 actual=75000
+[progress] attempt_01 timesteps=75600 episodes=721 process_tree_rss_mb=1192.3
+[progress] attempt_01 timesteps=80640 episodes=769 process_tree_rss_mb=1241.5
+[progress] attempt_01 timesteps=85680 episodes=817 process_tree_rss_mb=1291.0
+[progress] attempt_01 timesteps=90720 episodes=866 process_tree_rss_mb=1340.4
+[progress] attempt_01 timesteps=95760 episodes=913 process_tree_rss_mb=1389.3
+[checkpoint] attempt_01 requested=100000 actual=100000
+{"status": "PASS_100K_ARCHIVE_ONLY", "mode": "formal_100k", "requested_timesteps": 100000, "ppo_seed": 0, "training_years": [2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013], "training_seed_pool": [1001, 1080], "heldout_seed_pool_excluded": [1081, 1100], "checkpoint_steps_requested": [25000, 50000, 75000, 100000], "actual_timesteps": 100080, "archived_weather_days": 100080, "completed_episodes": 955, "partial_episodes": 1, "episode_archives": 956, "unique_weather_hashes": 553, "checkpoint_steps_actual": {"25000": 25000, "50000": 50000, "75000": 75000, "100000": 100000}, "peak_process_tree_rss_mb": 1431.64, "model_path": "results/fqa_multiyear_wgen_ppo_051/attempt_01/models/final_model_actual_100080.zip", "model_sha256": "1C8C28E960795EA5AECA9201723912C2045081EE94E0565214257773F9592E4E", "elapsed_seconds": 2831.17}

@@ -15,9 +15,11 @@ FILES = [
     ROOT / "scripts/fqa_wgen_048_archive_manifest.py",
     BASE / "run_eval.py",
     BASE / "audit_gate.py",
+    BASE / "plot_048_figures.py",
     BASE / "final_gate.json",
     BASE / "paired_endpoints.csv",
 ]
+FILES.extend(sorted((BASE / "figures").glob("*")))
 for label in ("2k", "10k"):
     directory = BASE / label
     FILES.extend(directory / name for name in (
@@ -39,6 +41,7 @@ def rows() -> list[dict]:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--verify", action="store_true")
+    parser.add_argument("--rebuild", action="store_true")
     verify = parser.parse_args().verify
     actual = rows()
     if verify:
@@ -49,7 +52,8 @@ def main() -> None:
         if not ok:
             raise SystemExit(2)
     else:
-        with OUT.open("x", encoding="utf-8", newline="") as stream:
+        mode = "w" if parser.parse_args().rebuild else "x"
+        with OUT.open(mode, encoding="utf-8", newline="") as stream:
             writer = csv.DictWriter(stream, fieldnames=["path", "bytes", "sha256"])
             writer.writeheader()
             writer.writerows(actual)

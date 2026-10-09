@@ -1,13 +1,14 @@
 """Create a GitHub-oriented SHA-256 manifest for the FQ eight-seed package.
 
-Model/checkpoint archives and DSSAT/SB3 runtime caches are excluded. Per-episode
-weather hashes are carried forward from the training manifests after the archive
-audit verified the saved daily files against those hashes.
+Compact model/checkpoint archives and exact validation Summary.OUT files are
+included. DSSAT/SB3 runtime caches are excluded. Per-episode weather hashes
+are carried forward from the audited training manifests.
 """
 from __future__ import annotations
 
 import csv
 import hashlib
+import json
 from pathlib import Path
 
 import pandas as pd
@@ -33,15 +34,20 @@ def rel(path: Path) -> str:
 def main() -> None:
     entries: dict[str, tuple[str, str]] = {}
 
-    def add_file(path: Path) -> None:
+    def add_file(path: Path) -> str:
         if not path.is_file():
             raise FileNotFoundError(path)
-        entries[rel(path)] = (sha256(path), "recomputed_file_sha256")
+        digest = sha256(path)
+        entries[rel(path)] = (digest, "recomputed_file_sha256")
+        return digest
 
     fixed = [
+        ROOT / ".gitattributes",
         ROOT / "prompt_02/052_fqa_wgen_ppo_100k_8seed_validation_figures.md",
         ROOT / "docs/fqa_multiyear_wgen_ppo_052_8seed_record.md",
+        ROOT / "docs/fqa_wgen_ppo_100k_8seed_freeze_2026-10-09.md",
         BASE / "final_gate.json",
+        BASE / "freeze_backup_2026-10-09.json",
         BASE / "seed_00_reuse.json",
         BASE / "run_seed_100k.py",
         BASE / "audit_seed.py",
@@ -65,6 +71,15 @@ def main() -> None:
             path = run / name
             if path.is_file():
                 add_file(path)
+        gate = json.loads((run / "audit_gate.json").read_text(encoding="utf-8"))
+        run_result = json.loads((run / "run_result.json").read_text(encoding="utf-8"))
+        for step in (25000, 50000, 75000, 100000):
+            path = run / "models" / f"checkpoint_{step}.zip"
+            if add_file(path) != gate["checkpoint_files"][str(step)]["sha256"]:
+                raise ValueError(f"Checkpoint hash mismatch: {path}")
+        final_model = run / "models/final_model_actual_100080.zip"
+        if add_file(final_model) != run_result["model_sha256"]:
+            raise ValueError(f"Final model hash mismatch: {final_model}")
         manifest = pd.read_csv(run / "episode_manifest.csv", keep_default_na=False)
         for row in manifest.itertuples(index=False):
             weather_path = str(row.weather_path)
@@ -72,6 +87,11 @@ def main() -> None:
             if len(weather_hash) != 64:
                 raise ValueError(f"Invalid weather SHA-256 in {run / 'episode_manifest.csv'}")
             entries[weather_path] = (weather_hash, "verified_episode_manifest_sha256")
+
+        for year in range(2014, 2024):
+            snapshot = BASE / f"validation/seed_{seed:02d}/snapshots/FQA/{year}/ppo_seed_{seed}"
+            add_file(snapshot / "Summary.OUT")
+            add_file(snapshot / "evaluation_metadata.json")
 
         seed_dir = FIGURES / f"best_seed_seed{seed}"
         add_file(seed_dir / "README.md")

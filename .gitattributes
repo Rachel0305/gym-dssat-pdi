@@ -78,3 +78,10 @@ docs/fqa_wgen_051_file_manifest.csv -text whitespace=cr-at-eol
 scripts/fqa_wgen_051_archive_manifest.py -text
 results/fqa_multiyear_wgen_ppo_051/* -text whitespace=cr-at-eol
 results/fqa_multiyear_wgen_ppo_051/** -text whitespace=cr-at-eol
+
+# Preserve exact bytes for the frozen FQA 052 eight-seed weather and results.
+prompt_02/052_*.md -text
+docs/fqa_multiyear_wgen_ppo_052_8seed_record.md -text
+docs/fqa_wgen_ppo_100k_8seed_freeze_2026-10-09.md -text
+results/fqa_multiyear_wgen_ppo_052_8seed/* -text whitespace=cr-at-eol
+results/fqa_multiyear_wgen_ppo_052_8seed/** -text whitespace=cr-at-eol

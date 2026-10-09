@@ -89,6 +89,7 @@ FQ 2018 的冻结基线四个情景及 PPO 八个 seed 的 grain yield 全部为
 - 验证 snapshots、Summary.OUT、daily trace：`results/fqa_multiyear_wgen_ppo_052_8seed/validation/`
 - 8×23 seed 图和 cohort 图表：`results/fqa_multiyear_wgen_ppo_052_8seed/055_03_five_scenario/FQ/`
 - 最终门槛：`results/fqa_multiyear_wgen_ppo_052_8seed/final_gate.json`
-- 代码/报告/表图及训练天气文件 SHA-256 清单：`results/fqa_multiyear_wgen_ppo_052_8seed/github_sha256_manifest.csv`，由 `generate_sha256_manifest.py` 生成；天气项沿用通过 archive audit 的 episode manifest 哈希，模型/checkpoint 与该清单排除。
+- 代码、报告、表图、训练天气、模型及验证 Summary.OUT 文件 SHA-256 清单：`results/fqa_multiyear_wgen_ppo_052_8seed/github_sha256_manifest.csv`，由 `generate_sha256_manifest.py` 生成；天气项沿用通过 archive audit 的 episode manifest 哈希。
+- 2026-10-09 冻结记录：`docs/fqa_wgen_ppo_100k_8seed_freeze_2026-10-09.md` 和 `results/fqa_multiyear_wgen_ppo_052_8seed/freeze_backup_2026-10-09.json`。
 
-模型和训练 checkpoint 仍保留在本地实验目录，不纳入 GitHub；临时 DSSAT/SB3 cache 也不纳入版本控制。逐 episode 天气 SHA-256 保存在各自 `episode_manifest.csv`。
+冻结备份纳入全部 40 个小型模型 ZIP，以及 80 个验证季的 `Summary.OUT` 和对应 metadata。完整 DSSAT runtime snapshots 与临时 cache 继续保留在本地，不纳入版本控制。逐 episode 天气 SHA-256 保存在各自 `episode_manifest.csv`。

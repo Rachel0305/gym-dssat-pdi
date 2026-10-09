@@ -1,0 +1,32 @@
+{
+  "status": "PASS_8SEED_TRAINING_EVALUATION_BACKUP_INVENTORY",
+  "training_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "validation_years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "actual_training_weather_csv_count": 5720,
+  "single_seed_figure_count": 184,
+  "validation_summary_out_count": 80,
+  "five_scenario_rows": 400,
+  "inventory_file_count_before_manifest": 12133,
+  "inventory_bytes_before_manifest": 118844923,
+  "cohort_table_sha256": "FCC3B83C51A5A6D012CFEF3E445CCB382A1055BAC09CEB5443021917F4863C27"
+}

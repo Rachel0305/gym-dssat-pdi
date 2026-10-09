@@ -85,3 +85,16 @@ docs/fqa_multiyear_wgen_ppo_052_8seed_record.md -text
 docs/fqa_wgen_ppo_100k_8seed_freeze_2026-10-09.md -text
 results/fqa_multiyear_wgen_ppo_052_8seed/* -text whitespace=cr-at-eol
 results/fqa_multiyear_wgen_ppo_052_8seed/** -text whitespace=cr-at-eol
+
+# Preserve exact bytes for the HLA 053 eight-seed weather and results.
+.gitattributes -text
+prompt_02/053_*.md -text
+docs/hla_wgen_training_053_record.md -text
+docs/hla_wgen_limited_candidates_053_record.md -text
+docs/hla_wgen_100k_8seed_freeze_2026-10-09.md -text
+src/hl_fq_8seed_cross_site/analyze_hl_fq_8seed.py -text
+src/hl_fq_8seed_cross_site/plot_hl_fq_five_scenario_05503_style.py -text
+results/hla_weather_enhancement_029/*.py -text
+results/hla_weather_enhancement_029/weather_fitting/gpcc_raw/* -text whitespace=cr-at-eol
+results/hla_wgen_8seed_053/* -text whitespace=cr-at-eol
+results/hla_wgen_8seed_053/** -text whitespace=cr-at-eol

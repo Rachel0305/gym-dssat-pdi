@@ -1,0 +1,18 @@
+﻿[progress] attempt_01 timesteps=5040 episodes=36 process_tree_rss_mb=509.7
+[progress] attempt_01 timesteps=10080 episodes=71 process_tree_rss_mb=558.4
+[progress] attempt_01 timesteps=15120 episodes=108 process_tree_rss_mb=604.6
+[progress] attempt_01 timesteps=20160 episodes=143 process_tree_rss_mb=651.6
+[checkpoint] attempt_01 requested=25000 actual=25000
+[progress] attempt_01 timesteps=25200 episodes=179 process_tree_rss_mb=701.0
+[progress] attempt_01 timesteps=30240 episodes=216 process_tree_rss_mb=748.3
+[progress] attempt_01 timesteps=35280 episodes=252 process_tree_rss_mb=796.7
+[progress] attempt_01 timesteps=40320 episodes=287 process_tree_rss_mb=844.0
+[progress] attempt_01 timesteps=45360 episodes=323 process_tree_rss_mb=892.4
+[checkpoint] attempt_01 requested=50000 actual=50000
+[progress] attempt_01 timesteps=50400 episodes=360 process_tree_rss_mb=941.7
+[progress] attempt_01 timesteps=55440 episodes=395 process_tree_rss_mb=990.4
+[progress] attempt_01 timesteps=60480 episodes=432 process_tree_rss_mb=1039.3
+[progress] attempt_01 timesteps=65520 episodes=467 process_tree_rss_mb=1087.6
+[progress] attempt_01 timesteps=70560 episodes=504 process_tree_rss_mb=1135.3
+[checkpoint] attempt_01 requested=75000 actual=75000
+[progress] attempt_01 timesteps=75600 episodes=540 process_tree_rss_mb=1183.8

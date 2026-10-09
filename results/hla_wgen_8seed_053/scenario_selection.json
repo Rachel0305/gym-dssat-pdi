@@ -1,0 +1,28 @@
+{
+  "task": "053_hla_wgen_scenario_selection",
+  "site": "HLA",
+  "selected_scenario": "GPCC_RAW",
+  "selection_status": "PRAGMATIC_EXPERIMENT_INPUT_NOT_STATION_OBSERVATION_RECOVERY",
+  "decision_rule": "Among raw gridded references, prefer lower paired-day RMSE against explicit D222 numeric days; do not use ratio-corrected variants because both products had higher paired-day MAE and RMSE after correction. Require limited runtime capture and physical screen to pass.",
+  "paired_day_comparison_330_days": {
+    "GPCC_RAW": {"mae_mm": 4.5139696969696965, "rmse_mm": 9.84613622111986},
+    "CPC_RAW": {"mae_mm": 4.350438181818182, "rmse_mm": 10.790833068354404},
+    "GPCC_BIASCORR": {"mae_mm": 5.192169298695067, "rmse_mm": 10.459459255477006},
+    "CPC_BIASCORR": {"mae_mm": 4.734511873223773, "rmse_mm": 11.067090437746137}
+  },
+  "missing_111_day_fill_totals_mm": {
+    "GPCC_RAW": 2.84,
+    "CPC_RAW": 2.9449,
+    "GPCC_BIASCORR": 2.946229100293182,
+    "CPC_BIASCORR": 3.0989347007420234,
+    "ENSEMBLE_BIASCORR": 3.0225819005176024
+  },
+  "selected_cli_sha256": "AF957CD7C28D427E6B1319CF95D37B1EA8963770795C70B826F71FF2CB08F29F",
+  "all_five_limited_runtime_candidates_pass": true,
+  "source_records": [
+    "results/hla_gridded_fill_sensitivity_024/diagnostic_summary.json",
+    "results/hla_wgen_8seed_053/limited_candidate_audit.json"
+  ],
+  "native_field_coordinate_limitation_unresolved": true,
+  "ready_for_100k": false
+}

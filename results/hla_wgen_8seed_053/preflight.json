@@ -1,0 +1,27 @@
+{
+  "task": "053_hla_wgen_8seed_resume",
+  "site": "HLA",
+  "status": "PREFLIGHT_COMPLETE_WEATHER_POOL_AND_RUNTIME_GATES_PENDING",
+  "historical_checkpoint_steps": 100000,
+  "historical_training_years": "2004-2013",
+  "historical_input_profile": "lowIC",
+  "five_cli_tracks_present": true,
+  "limited_candidate_tracks_selected_by_user": 5,
+  "wgen_candidate_count_from_029": 0,
+  "runtime_seasonal_smoke_from_032": "PASS_WEATHER_CAPTURE_FAIL_COORDINATE_GATE",
+  "native_coordinate_fix_validated": false,
+  "official_full_year_wgen_export_validated": false,
+  "formal_training_input_selected": false,
+  "new_ppo_smoke_executed": false,
+  "new_100k_training_executed": false,
+  "ready_for_100k": false,
+  "source_records": [
+    "results/hla_weather_enhancement_029/final_gate.json",
+    "results/hla_runtime_wgen_smoke_032/final_gate.json",
+    "results/hla_coordinate_audit_033/final_gate.json",
+    "results/native_coordinate_fix_034/final_gate.json",
+    "results/hla_coordinate_impact_037/final_gate.json",
+    "results/hla_heavy_rain_event_reaudit_039/final_gate.json",
+    "results/hl_fq_8seed_cross_site/analysis_v1/run_metadata.json"
+  ]
+}

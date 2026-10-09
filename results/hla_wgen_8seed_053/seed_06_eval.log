@@ -1,0 +1,31 @@
+DONE seed6 HLA2014: yield=7340.0, I=75.0, N=240.0, WP_ET=1.550
+DONE seed6 HLA2015: yield=4758.0, I=90.0, N=240.0, WP_ET=1.070
+DONE seed6 HLA2016: yield=5656.0, I=90.0, N=240.0, WP_ET=1.380
+DONE seed6 HLA2017: yield=4766.0, I=90.0, N=240.0, WP_ET=1.100
+DONE seed6 HLA2018: yield=6574.0, I=75.0, N=240.0, WP_ET=1.500
+DONE seed6 HLA2019: yield=5884.0, I=90.0, N=240.0, WP_ET=1.370
+DONE seed6 HLA2020: yield=7558.0, I=90.0, N=240.0, WP_ET=1.610
+DONE seed6 HLA2021: yield=5412.0, I=90.0, N=240.0, WP_ET=1.230
+DONE seed6 HLA2022: yield=6428.0, I=90.0, N=240.0, WP_ET=1.430
+DONE seed6 HLA2023: yield=6294.0, I=90.0, N=240.0, WP_ET=1.470
+{
+  "seed": 6,
+  "model": "results/hla_wgen_8seed_053/seed_06/attempt_01/models/checkpoint_100000.zip",
+  "model_sha256": "7A63618E0AB10AFFFA28E4F03861B4E138B51FC67227DEBCDB03802A4169FFAA",
+  "validation_years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "weather_match_all_years": true,
+  "exact_etcp_rows": 10,
+  "figure_count": 23,
+  "output": "results/hla_wgen_8seed_053/055_03_five_scenario/HL/best_seed_seed6"
+}

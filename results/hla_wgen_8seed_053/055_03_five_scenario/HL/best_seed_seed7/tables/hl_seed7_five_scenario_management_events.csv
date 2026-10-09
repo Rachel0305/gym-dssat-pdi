@@ -1,0 +1,208 @@
+﻿site,station_code,year,scenario,scenario_label,date,doy,dap,irrigation_executed_mm,nitrogen_executed_kg_ha
+HL,HLA,2014,recorded_farmer_template,Recorded template,2014-05-05,125,0.0,0.0,165.0
+HL,HLA,2014,recorded_farmer_template,Recorded template,2014-06-22,173,48.0,10.0,0.0
+HL,HLA,2014,recorded_farmer_template,Recorded template,2014-07-13,194,69.0,10.0,0.0
+HL,HLA,2014,recorded_farmer_template,Recorded template,2014-08-07,219,94.0,10.0,0.0
+HL,HLA,2014,dssat_auto_external_n,DSSAT auto + external N,2014-05-05,125,0.0,73.5,0.0
+HL,HLA,2014,dssat_auto_external_n,DSSAT auto + external N,2014-09-14,257,132.0,0.0,25.0
+HL,HLA,2014,dssat_auto_external_n,DSSAT auto + external N,2014-09-15,258,133.0,0.0,25.0
+HL,HLA,2014,dssat_auto_external_n,DSSAT auto + external N,2014-09-23,266,141.0,93.5,0.0
+HL,HLA,2014,official_extension_expert,Official expert,2014-05-05,125,0.0,37.5,112.0
+HL,HLA,2014,official_extension_expert,Official expert,2014-06-03,154,29.0,45.0,33.0
+HL,HLA,2014,official_extension_expert,Official expert,2014-06-23,174,49.0,50.0,67.0
+HL,HLA,2014,official_extension_expert,Official expert,2014-06-24,175,50.0,6.2,0.0
+HL,HLA,2014,official_extension_expert,Official expert,2014-07-08,189,64.0,50.0,26.0
+HL,HLA,2014,official_extension_expert,Official expert,2014-07-09,190,65.0,6.2,0.0
+HL,HLA,2014,official_extension_expert,Official expert,2014-07-28,209,84.0,41.2,33.0
+HL,HLA,2014,official_extension_expert,Official expert,2014-08-22,234,109.0,30.0,26.0
+HL,HLA,2015,recorded_farmer_template,Recorded template,2015-05-05,125,0.0,0.0,165.0
+HL,HLA,2015,recorded_farmer_template,Recorded template,2015-06-22,173,48.0,10.0,0.0
+HL,HLA,2015,recorded_farmer_template,Recorded template,2015-07-13,194,69.0,10.0,0.0
+HL,HLA,2015,recorded_farmer_template,Recorded template,2015-08-07,219,94.0,10.0,0.0
+HL,HLA,2015,dssat_auto_external_n,DSSAT auto + external N,2015-05-05,125,0.0,78.3,0.0
+HL,HLA,2015,dssat_auto_external_n,DSSAT auto + external N,2015-06-22,173,48.0,46.6,0.0
+HL,HLA,2015,dssat_auto_external_n,DSSAT auto + external N,2015-07-19,200,75.0,47.9,0.0
+HL,HLA,2015,dssat_auto_external_n,DSSAT auto + external N,2015-09-05,248,123.0,48.8,0.0
+HL,HLA,2015,dssat_auto_external_n,DSSAT auto + external N,2015-09-20,263,138.0,0.0,25.0
+HL,HLA,2015,dssat_auto_external_n,DSSAT auto + external N,2015-09-21,264,139.0,0.0,25.0
+HL,HLA,2015,dssat_auto_external_n,DSSAT auto + external N,2015-09-22,265,140.0,48.0,0.0
+HL,HLA,2015,official_extension_expert,Official expert,2015-05-05,125,0.0,37.5,112.0
+HL,HLA,2015,official_extension_expert,Official expert,2015-06-03,154,29.0,45.0,33.0
+HL,HLA,2015,official_extension_expert,Official expert,2015-06-23,174,49.0,50.0,67.0
+HL,HLA,2015,official_extension_expert,Official expert,2015-06-24,175,50.0,6.2,0.0
+HL,HLA,2015,official_extension_expert,Official expert,2015-07-08,189,64.0,50.0,26.0
+HL,HLA,2015,official_extension_expert,Official expert,2015-07-09,190,65.0,6.2,0.0
+HL,HLA,2015,official_extension_expert,Official expert,2015-07-28,209,84.0,41.2,33.0
+HL,HLA,2015,official_extension_expert,Official expert,2015-08-22,234,109.0,30.0,26.0
+HL,HLA,2016,recorded_farmer_template,Recorded template,2016-05-04,125,0.0,0.0,165.0
+HL,HLA,2016,recorded_farmer_template,Recorded template,2016-06-21,173,48.0,10.0,0.0
+HL,HLA,2016,recorded_farmer_template,Recorded template,2016-07-12,194,69.0,10.0,0.0
+HL,HLA,2016,recorded_farmer_template,Recorded template,2016-08-06,219,94.0,10.0,0.0
+HL,HLA,2016,dssat_auto_external_n,DSSAT auto + external N,2016-05-04,125,0.0,79.2,0.0
+HL,HLA,2016,dssat_auto_external_n,DSSAT auto + external N,2016-07-19,201,76.0,48.6,0.0
+HL,HLA,2016,dssat_auto_external_n,DSSAT auto + external N,2016-08-05,218,93.0,49.4,0.0
+HL,HLA,2016,dssat_auto_external_n,DSSAT auto + external N,2016-08-26,239,114.0,47.5,0.0
+HL,HLA,2016,dssat_auto_external_n,DSSAT auto + external N,2016-08-31,244,119.0,0.0,25.0
+HL,HLA,2016,dssat_auto_external_n,DSSAT auto + external N,2016-09-01,245,120.0,0.0,25.0
+HL,HLA,2016,official_extension_expert,Official expert,2016-05-04,125,0.0,37.5,112.0
+HL,HLA,2016,official_extension_expert,Official expert,2016-06-02,154,29.0,45.0,33.0
+HL,HLA,2016,official_extension_expert,Official expert,2016-06-22,174,49.0,50.0,67.0
+HL,HLA,2016,official_extension_expert,Official expert,2016-06-23,175,50.0,6.2,0.0
+HL,HLA,2016,official_extension_expert,Official expert,2016-07-07,189,64.0,50.0,26.0
+HL,HLA,2016,official_extension_expert,Official expert,2016-07-08,190,65.0,6.2,0.0
+HL,HLA,2016,official_extension_expert,Official expert,2016-07-27,209,84.0,41.2,33.0
+HL,HLA,2016,official_extension_expert,Official expert,2016-08-21,234,109.0,30.0,26.0
+HL,HLA,2017,recorded_farmer_template,Recorded template,2017-05-05,125,0.0,0.0,165.0
+HL,HLA,2017,recorded_farmer_template,Recorded template,2017-06-22,173,48.0,10.0,0.0
+HL,HLA,2017,recorded_farmer_template,Recorded template,2017-07-13,194,69.0,10.0,0.0
+HL,HLA,2017,recorded_farmer_template,Recorded template,2017-08-07,219,94.0,10.0,0.0
+HL,HLA,2017,dssat_auto_external_n,DSSAT auto + external N,2017-05-05,125,0.0,79.2,0.0
+HL,HLA,2017,dssat_auto_external_n,DSSAT auto + external N,2017-06-18,169,44.0,47.9,0.0
+HL,HLA,2017,dssat_auto_external_n,DSSAT auto + external N,2017-07-14,195,70.0,47.3,0.0
+HL,HLA,2017,dssat_auto_external_n,DSSAT auto + external N,2017-09-16,259,134.0,0.0,25.0
+HL,HLA,2017,dssat_auto_external_n,DSSAT auto + external N,2017-09-17,260,135.0,0.0,25.0
+HL,HLA,2017,official_extension_expert,Official expert,2017-05-05,125,0.0,37.5,112.0
+HL,HLA,2017,official_extension_expert,Official expert,2017-06-03,154,29.0,45.0,33.0
+HL,HLA,2017,official_extension_expert,Official expert,2017-06-23,174,49.0,50.0,67.0
+HL,HLA,2017,official_extension_expert,Official expert,2017-06-24,175,50.0,6.2,0.0
+HL,HLA,2017,official_extension_expert,Official expert,2017-07-08,189,64.0,50.0,26.0
+HL,HLA,2017,official_extension_expert,Official expert,2017-07-09,190,65.0,6.2,0.0
+HL,HLA,2017,official_extension_expert,Official expert,2017-07-28,209,84.0,41.2,33.0
+HL,HLA,2017,official_extension_expert,Official expert,2017-08-22,234,109.0,30.0,26.0
+HL,HLA,2018,recorded_farmer_template,Recorded template,2018-05-05,125,0.0,0.0,165.0
+HL,HLA,2018,recorded_farmer_template,Recorded template,2018-06-22,173,48.0,10.0,0.0
+HL,HLA,2018,recorded_farmer_template,Recorded template,2018-07-13,194,69.0,10.0,0.0
+HL,HLA,2018,recorded_farmer_template,Recorded template,2018-08-07,219,94.0,10.0,0.0
+HL,HLA,2018,dssat_auto_external_n,DSSAT auto + external N,2018-05-05,125,0.0,79.2,0.0
+HL,HLA,2018,dssat_auto_external_n,DSSAT auto + external N,2018-06-14,165,40.0,46.5,0.0
+HL,HLA,2018,dssat_auto_external_n,DSSAT auto + external N,2018-09-02,245,120.0,0.0,25.0
+HL,HLA,2018,dssat_auto_external_n,DSSAT auto + external N,2018-09-03,246,121.0,0.0,25.0
+HL,HLA,2018,official_extension_expert,Official expert,2018-05-05,125,0.0,37.5,112.0
+HL,HLA,2018,official_extension_expert,Official expert,2018-06-03,154,29.0,45.0,33.0
+HL,HLA,2018,official_extension_expert,Official expert,2018-06-23,174,49.0,50.0,67.0
+HL,HLA,2018,official_extension_expert,Official expert,2018-06-24,175,50.0,6.2,0.0
+HL,HLA,2018,official_extension_expert,Official expert,2018-07-08,189,64.0,50.0,26.0
+HL,HLA,2018,official_extension_expert,Official expert,2018-07-09,190,65.0,6.2,0.0
+HL,HLA,2018,official_extension_expert,Official expert,2018-07-28,209,84.0,41.2,33.0
+HL,HLA,2018,official_extension_expert,Official expert,2018-08-22,234,109.0,30.0,26.0
+HL,HLA,2019,recorded_farmer_template,Recorded template,2019-05-05,125,0.0,0.0,165.0
+HL,HLA,2019,recorded_farmer_template,Recorded template,2019-06-22,173,48.0,10.0,0.0
+HL,HLA,2019,recorded_farmer_template,Recorded template,2019-07-13,194,69.0,10.0,0.0
+HL,HLA,2019,recorded_farmer_template,Recorded template,2019-08-07,219,94.0,10.0,0.0
+HL,HLA,2019,dssat_auto_external_n,DSSAT auto + external N,2019-05-05,125,0.0,77.9,0.0
+HL,HLA,2019,dssat_auto_external_n,DSSAT auto + external N,2019-06-26,177,52.0,47.6,0.0
+HL,HLA,2019,dssat_auto_external_n,DSSAT auto + external N,2019-09-15,258,133.0,0.0,25.0
+HL,HLA,2019,dssat_auto_external_n,DSSAT auto + external N,2019-09-16,259,134.0,0.0,25.0
+HL,HLA,2019,official_extension_expert,Official expert,2019-05-05,125,0.0,37.5,112.0
+HL,HLA,2019,official_extension_expert,Official expert,2019-06-03,154,29.0,45.0,33.0
+HL,HLA,2019,official_extension_expert,Official expert,2019-06-23,174,49.0,50.0,67.0
+HL,HLA,2019,official_extension_expert,Official expert,2019-06-24,175,50.0,6.2,0.0
+HL,HLA,2019,official_extension_expert,Official expert,2019-07-08,189,64.0,50.0,26.0
+HL,HLA,2019,official_extension_expert,Official expert,2019-07-09,190,65.0,6.2,0.0
+HL,HLA,2019,official_extension_expert,Official expert,2019-07-28,209,84.0,41.2,33.0
+HL,HLA,2019,official_extension_expert,Official expert,2019-08-22,234,109.0,30.0,26.0
+HL,HLA,2020,recorded_farmer_template,Recorded template,2020-05-04,125,0.0,0.0,165.0
+HL,HLA,2020,recorded_farmer_template,Recorded template,2020-06-21,173,48.0,10.0,0.0
+HL,HLA,2020,recorded_farmer_template,Recorded template,2020-07-12,194,69.0,10.0,0.0
+HL,HLA,2020,recorded_farmer_template,Recorded template,2020-08-06,219,94.0,10.0,0.0
+HL,HLA,2020,dssat_auto_external_n,DSSAT auto + external N,2020-05-04,125,0.0,79.2,0.0
+HL,HLA,2020,dssat_auto_external_n,DSSAT auto + external N,2020-07-19,201,76.0,46.7,0.0
+HL,HLA,2020,dssat_auto_external_n,DSSAT auto + external N,2020-09-12,256,131.0,0.0,25.0
+HL,HLA,2020,dssat_auto_external_n,DSSAT auto + external N,2020-09-13,257,132.0,0.0,25.0
+HL,HLA,2020,official_extension_expert,Official expert,2020-05-04,125,0.0,37.5,112.0
+HL,HLA,2020,official_extension_expert,Official expert,2020-06-02,154,29.0,45.0,33.0
+HL,HLA,2020,official_extension_expert,Official expert,2020-06-22,174,49.0,50.0,67.0
+HL,HLA,2020,official_extension_expert,Official expert,2020-06-23,175,50.0,6.2,0.0
+HL,HLA,2020,official_extension_expert,Official expert,2020-07-07,189,64.0,50.0,26.0
+HL,HLA,2020,official_extension_expert,Official expert,2020-07-08,190,65.0,6.2,0.0
+HL,HLA,2020,official_extension_expert,Official expert,2020-07-27,209,84.0,41.2,33.0
+HL,HLA,2020,official_extension_expert,Official expert,2020-08-21,234,109.0,30.0,26.0
+HL,HLA,2021,recorded_farmer_template,Recorded template,2021-05-05,125,0.0,0.0,165.0
+HL,HLA,2021,recorded_farmer_template,Recorded template,2021-06-22,173,48.0,10.0,0.0
+HL,HLA,2021,recorded_farmer_template,Recorded template,2021-07-13,194,69.0,10.0,0.0
+HL,HLA,2021,recorded_farmer_template,Recorded template,2021-08-07,219,94.0,10.0,0.0
+HL,HLA,2021,dssat_auto_external_n,DSSAT auto + external N,2021-05-05,125,0.0,77.1,0.0
+HL,HLA,2021,official_extension_expert,Official expert,2021-05-05,125,0.0,37.5,112.0
+HL,HLA,2021,official_extension_expert,Official expert,2021-06-03,154,29.0,45.0,33.0
+HL,HLA,2021,official_extension_expert,Official expert,2021-06-23,174,49.0,50.0,67.0
+HL,HLA,2021,official_extension_expert,Official expert,2021-06-24,175,50.0,6.2,0.0
+HL,HLA,2021,official_extension_expert,Official expert,2021-07-08,189,64.0,50.0,26.0
+HL,HLA,2021,official_extension_expert,Official expert,2021-07-09,190,65.0,6.2,0.0
+HL,HLA,2021,official_extension_expert,Official expert,2021-07-28,209,84.0,41.2,33.0
+HL,HLA,2021,official_extension_expert,Official expert,2021-08-22,234,109.0,30.0,26.0
+HL,HLA,2022,recorded_farmer_template,Recorded template,2022-05-05,125,0.0,0.0,165.0
+HL,HLA,2022,recorded_farmer_template,Recorded template,2022-06-22,173,48.0,10.0,0.0
+HL,HLA,2022,recorded_farmer_template,Recorded template,2022-07-13,194,69.0,10.0,0.0
+HL,HLA,2022,recorded_farmer_template,Recorded template,2022-08-07,219,94.0,10.0,0.0
+HL,HLA,2022,dssat_auto_external_n,DSSAT auto + external N,2022-05-05,125,0.0,79.2,0.0
+HL,HLA,2022,dssat_auto_external_n,DSSAT auto + external N,2022-07-21,202,77.0,47.6,0.0
+HL,HLA,2022,dssat_auto_external_n,DSSAT auto + external N,2022-08-17,229,104.0,48.8,0.0
+HL,HLA,2022,dssat_auto_external_n,DSSAT auto + external N,2022-09-05,248,123.0,0.0,25.0
+HL,HLA,2022,dssat_auto_external_n,DSSAT auto + external N,2022-09-06,249,124.0,0.0,25.0
+HL,HLA,2022,dssat_auto_external_n,DSSAT auto + external N,2022-09-13,256,131.0,46.6,0.0
+HL,HLA,2022,dssat_auto_external_n,DSSAT auto + external N,2022-09-14,257,132.0,49.3,0.0
+HL,HLA,2022,official_extension_expert,Official expert,2022-05-05,125,0.0,37.5,112.0
+HL,HLA,2022,official_extension_expert,Official expert,2022-06-03,154,29.0,45.0,33.0
+HL,HLA,2022,official_extension_expert,Official expert,2022-06-23,174,49.0,50.0,67.0
+HL,HLA,2022,official_extension_expert,Official expert,2022-06-24,175,50.0,6.2,0.0
+HL,HLA,2022,official_extension_expert,Official expert,2022-07-08,189,64.0,50.0,26.0
+HL,HLA,2022,official_extension_expert,Official expert,2022-07-09,190,65.0,6.2,0.0
+HL,HLA,2022,official_extension_expert,Official expert,2022-07-28,209,84.0,41.2,33.0
+HL,HLA,2022,official_extension_expert,Official expert,2022-08-22,234,109.0,30.0,26.0
+HL,HLA,2023,recorded_farmer_template,Recorded template,2023-05-05,125,0.0,0.0,165.0
+HL,HLA,2023,recorded_farmer_template,Recorded template,2023-06-22,173,48.0,10.0,0.0
+HL,HLA,2023,recorded_farmer_template,Recorded template,2023-07-13,194,69.0,10.0,0.0
+HL,HLA,2023,recorded_farmer_template,Recorded template,2023-08-07,219,94.0,10.0,0.0
+HL,HLA,2023,dssat_auto_external_n,DSSAT auto + external N,2023-05-05,125,0.0,78.3,0.0
+HL,HLA,2023,dssat_auto_external_n,DSSAT auto + external N,2023-06-09,160,35.0,47.5,0.0
+HL,HLA,2023,dssat_auto_external_n,DSSAT auto + external N,2023-07-13,194,69.0,48.1,0.0
+HL,HLA,2023,dssat_auto_external_n,DSSAT auto + external N,2023-09-06,249,124.0,0.0,25.0
+HL,HLA,2023,dssat_auto_external_n,DSSAT auto + external N,2023-09-07,250,125.0,0.0,25.0
+HL,HLA,2023,official_extension_expert,Official expert,2023-05-05,125,0.0,37.5,112.0
+HL,HLA,2023,official_extension_expert,Official expert,2023-06-03,154,29.0,45.0,33.0
+HL,HLA,2023,official_extension_expert,Official expert,2023-06-23,174,49.0,50.0,67.0
+HL,HLA,2023,official_extension_expert,Official expert,2023-06-24,175,50.0,6.2,0.0
+HL,HLA,2023,official_extension_expert,Official expert,2023-07-08,189,64.0,50.0,26.0
+HL,HLA,2023,official_extension_expert,Official expert,2023-07-09,190,65.0,6.2,0.0
+HL,HLA,2023,official_extension_expert,Official expert,2023-07-28,209,84.0,41.2,33.0
+HL,HLA,2023,official_extension_expert,Official expert,2023-08-22,234,109.0,30.0,26.0
+HL,HLA,2014,ppo_seed_7,PPO seed 7,2014-05-01,121,0.0,45.0,0.0
+HL,HLA,2014,ppo_seed_7,PPO seed 7,2014-05-02,122,0.0,0.0,40.0
+HL,HLA,2014,ppo_seed_7,PPO seed 7,2014-05-13,133,8.0,15.0,80.0
+HL,HLA,2014,ppo_seed_7,PPO seed 7,2014-05-20,140,15.0,15.0,80.0
+HL,HLA,2015,ppo_seed_7,PPO seed 7,2015-05-01,121,0.0,45.0,0.0
+HL,HLA,2015,ppo_seed_7,PPO seed 7,2015-05-02,122,0.0,0.0,40.0
+HL,HLA,2015,ppo_seed_7,PPO seed 7,2015-05-13,133,8.0,15.0,80.0
+HL,HLA,2015,ppo_seed_7,PPO seed 7,2015-05-20,140,15.0,15.0,80.0
+HL,HLA,2016,ppo_seed_7,PPO seed 7,2016-04-30,121,0.0,45.0,0.0
+HL,HLA,2016,ppo_seed_7,PPO seed 7,2016-05-01,122,0.0,0.0,40.0
+HL,HLA,2016,ppo_seed_7,PPO seed 7,2016-05-12,133,8.0,15.0,80.0
+HL,HLA,2016,ppo_seed_7,PPO seed 7,2016-05-19,140,15.0,15.0,80.0
+HL,HLA,2017,ppo_seed_7,PPO seed 7,2017-05-01,121,0.0,45.0,0.0
+HL,HLA,2017,ppo_seed_7,PPO seed 7,2017-05-02,122,0.0,0.0,40.0
+HL,HLA,2017,ppo_seed_7,PPO seed 7,2017-05-13,133,8.0,15.0,80.0
+HL,HLA,2017,ppo_seed_7,PPO seed 7,2017-05-20,140,15.0,15.0,80.0
+HL,HLA,2018,ppo_seed_7,PPO seed 7,2018-05-01,121,0.0,45.0,0.0
+HL,HLA,2018,ppo_seed_7,PPO seed 7,2018-05-02,122,0.0,0.0,40.0
+HL,HLA,2018,ppo_seed_7,PPO seed 7,2018-05-13,133,8.0,15.0,80.0
+HL,HLA,2018,ppo_seed_7,PPO seed 7,2018-05-20,140,15.0,15.0,80.0
+HL,HLA,2019,ppo_seed_7,PPO seed 7,2019-05-01,121,0.0,45.0,0.0
+HL,HLA,2019,ppo_seed_7,PPO seed 7,2019-05-02,122,0.0,0.0,40.0
+HL,HLA,2019,ppo_seed_7,PPO seed 7,2019-05-13,133,8.0,15.0,80.0
+HL,HLA,2019,ppo_seed_7,PPO seed 7,2019-05-20,140,15.0,15.0,80.0
+HL,HLA,2020,ppo_seed_7,PPO seed 7,2020-04-30,121,0.0,45.0,0.0
+HL,HLA,2020,ppo_seed_7,PPO seed 7,2020-05-01,122,0.0,0.0,40.0
+HL,HLA,2020,ppo_seed_7,PPO seed 7,2020-05-12,133,8.0,15.0,80.0
+HL,HLA,2020,ppo_seed_7,PPO seed 7,2020-05-19,140,15.0,15.0,80.0
+HL,HLA,2021,ppo_seed_7,PPO seed 7,2021-05-01,121,0.0,45.0,0.0
+HL,HLA,2021,ppo_seed_7,PPO seed 7,2021-05-02,122,0.0,0.0,40.0
+HL,HLA,2021,ppo_seed_7,PPO seed 7,2021-05-13,133,8.0,15.0,80.0
+HL,HLA,2021,ppo_seed_7,PPO seed 7,2021-05-20,140,15.0,15.0,80.0
+HL,HLA,2022,ppo_seed_7,PPO seed 7,2022-05-01,121,0.0,45.0,0.0
+HL,HLA,2022,ppo_seed_7,PPO seed 7,2022-05-02,122,0.0,0.0,40.0
+HL,HLA,2022,ppo_seed_7,PPO seed 7,2022-05-13,133,8.0,15.0,80.0
+HL,HLA,2022,ppo_seed_7,PPO seed 7,2022-05-20,140,15.0,15.0,80.0
+HL,HLA,2023,ppo_seed_7,PPO seed 7,2023-05-01,121,0.0,45.0,0.0
+HL,HLA,2023,ppo_seed_7,PPO seed 7,2023-05-02,122,0.0,0.0,40.0
+HL,HLA,2023,ppo_seed_7,PPO seed 7,2023-05-13,133,8.0,15.0,80.0
+HL,HLA,2023,ppo_seed_7,PPO seed 7,2023-05-20,140,15.0,15.0,80.0

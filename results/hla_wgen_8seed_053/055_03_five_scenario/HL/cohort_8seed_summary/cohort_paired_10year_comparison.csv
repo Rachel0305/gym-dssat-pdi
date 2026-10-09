@@ -1,0 +1,21 @@
+﻿metric,metric_label,comparison,baseline_mean_10y,ppo_mean_across_seed_means,ppo_between_seed_sd_of_10y_means,mean_paired_delta_across_8_seeds,sd_paired_delta_across_8_seeds,seeds_above_baseline,seed_count,interpretation
+grain_yield_kg_ha,Yield (kg/ha),null,4653.4,6308.424999999999,579.4855618810285,1655.0250000000003,579.4855618810285,8,8,descriptive multi-seed comparison; no significance claim
+grain_yield_kg_ha,Yield (kg/ha),recorded_farmer_template,5482.4,6308.424999999999,579.4855618810285,826.0250000000003,579.4855618810285,8,8,descriptive multi-seed comparison; no significance claim
+grain_yield_kg_ha,Yield (kg/ha),dssat_auto_external_n,6060.7,6308.424999999999,579.4855618810285,247.72500000000014,579.4855618810285,5,8,descriptive multi-seed comparison; no significance claim
+grain_yield_kg_ha,Yield (kg/ha),official_extension_expert,6797.0,6308.424999999999,579.4855618810285,-488.57500000000005,579.4855618810285,4,8,descriptive multi-seed comparison; no significance claim
+WP_ET_kg_m3,WP_ET (kg/m³),null,1.173,1.3985,0.04896937818678118,0.22550000000000006,0.04896937818678118,8,8,descriptive multi-seed comparison; no significance claim
+WP_ET_kg_m3,WP_ET (kg/m³),recorded_farmer_template,1.341,1.3985,0.04896937818678118,0.057500000000000134,0.04896937818678118,7,8,descriptive multi-seed comparison; no significance claim
+WP_ET_kg_m3,WP_ET (kg/m³),dssat_auto_external_n,1.348,1.3985,0.04896937818678118,0.05050000000000002,0.04896937818678118,6,8,descriptive multi-seed comparison; no significance claim
+WP_ET_kg_m3,WP_ET (kg/m³),official_extension_expert,1.475,1.3985,0.04896937818678118,-0.07649999999999998,0.04896937818678118,0,8,descriptive multi-seed comparison; no significance claim
+PFP_N_kg_grain_per_kg_N,PFP_N (kg grain/kg N),null,,45.495,39.63039165662059,,,0,8,descriptive multi-seed comparison; no significance claim
+PFP_N_kg_grain_per_kg_N,PFP_N (kg grain/kg N),recorded_farmer_template,33.22,45.495,39.63039165662059,12.275,39.63039165662059,2,8,descriptive multi-seed comparison; no significance claim
+PFP_N_kg_grain_per_kg_N,PFP_N (kg grain/kg N),dssat_auto_external_n,123.72222222222223,45.495,39.63039165662059,-78.22722222222222,39.63039165662059,1,8,descriptive multi-seed comparison; no significance claim
+PFP_N_kg_grain_per_kg_N,PFP_N (kg grain/kg N),official_extension_expert,22.89,45.495,39.63039165662059,22.604999999999997,39.63039165662059,8,8,descriptive multi-seed comparison; no significance claim
+total_irrigation_mm,Irrigation (mm),null,0.0,154.6875,91.93434672168426,154.6875,91.93434672168426,8,8,descriptive multi-seed comparison; no significance claim
+total_irrigation_mm,Irrigation (mm),recorded_farmer_template,30.0,154.6875,91.93434672168426,124.6875,91.93434672168426,8,8,descriptive multi-seed comparison; no significance claim
+total_irrigation_mm,Irrigation (mm),dssat_auto_external_n,164.3,154.6875,91.93434672168426,-9.612500000000011,91.93434672168426,4,8,descriptive multi-seed comparison; no significance claim
+total_irrigation_mm,Irrigation (mm),official_extension_expert,266.0,154.6875,91.93434672168426,-111.3125,91.93434672168426,0,8,descriptive multi-seed comparison; no significance claim
+total_n_kg_ha,Nitrogen (kg/ha),null,0.0,191.5,73.64587079880505,191.5,73.64587079880505,8,8,descriptive multi-seed comparison; no significance claim
+total_n_kg_ha,Nitrogen (kg/ha),recorded_farmer_template,165.0,191.5,73.64587079880505,26.5,73.64587079880505,6,8,descriptive multi-seed comparison; no significance claim
+total_n_kg_ha,Nitrogen (kg/ha),dssat_auto_external_n,45.0,191.5,73.64587079880505,146.5,73.64587079880505,7,8,descriptive multi-seed comparison; no significance claim
+total_n_kg_ha,Nitrogen (kg/ha),official_extension_expert,297.0,191.5,73.64587079880505,-105.5,73.64587079880505,0,8,descriptive multi-seed comparison; no significance claim

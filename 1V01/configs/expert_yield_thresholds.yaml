@@ -1,0 +1,10 @@
+schema_version: 1
+thresholds:
+  SY:
+    2014:
+      yield_kg_ha: 11077.0
+      benchmark_scenario: official_extension_expert
+      source_csv: benchmark_results/021_18/021_18_baseline_metrics.csv
+      source_column: yield_kg_ha
+      note: "SY2014 official extension expert threshold; no default fallback is allowed."
+

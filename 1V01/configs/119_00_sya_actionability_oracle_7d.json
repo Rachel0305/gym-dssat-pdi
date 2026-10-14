@@ -1,0 +1,18 @@
+{
+  "task_id": "119_00",
+  "task_name": "sya_actionability_oracle_7d",
+  "reference_run": "118_00_sya_originIC_forecast_potential_shaping_smoke2k_rerun1",
+  "station_code": "SYA",
+  "site": "SY",
+  "input_profile": "originIC",
+  "seed": 0,
+  "reference_checkpoint": 2000,
+  "reference_daily_root": "benchmark_results/118_00_sya_originIC_forecast_potential_shaping_smoke2k_rerun1/daily_outputs/SYA",
+  "states": {"years": [2014, 2018, 2022], "target_daps": [15, 45, 75], "horizon_steps": 7, "continuation_policy": "replay_reference_actions_after_candidate"},
+  "actions": {"irrigation_levels_mm": [0.0, 15.0, 30.0, 45.0], "nitrogen_levels_kg_ha": [0.0, 40.0, 80.0, 120.0]},
+  "observation_contract": {"base": "046_02_raw_observation", "normalization_enabled": false, "weather_forecast_enabled": true, "weather_forecast_mode": "rolling_7d_compact_perfect_hindcast", "feature_names": ["rain_next7_norm", "tmax_mean_next7_norm", "dry_spell_next7_flag"]},
+  "forecast_features": {"enabled": true, "source": "historical_WTH_as_perfect_rolling_7d_forecast", "feature_names": ["rain_next7_norm", "tmax_mean_next7_norm", "dry_spell_next7_flag"], "raw_feature_names": ["rain_next7_mm", "tmax_mean_next7_c", "dry_spell_next7_flag"], "scales": {"rain_next7_mm": 120.0, "tmax_center_c": 30.0, "tmax_scale_c": 10.0, "dry_spell_next7_mm": 5.0, "heat_days_threshold_c": 32.0, "heat_days_min": 2.0}},
+  "scope": {"read_only": true, "training": false, "dssat_training": false, "five_scenario_replay": false, "external_n": false},
+  "output_root": "benchmark_results/119_00_sya_actionability_oracle_7d_rerun1",
+  "prompt": "prompts/2026-08-15_sy_actionability_oracle_7d.md"
+}

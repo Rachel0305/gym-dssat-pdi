@@ -1,0 +1,121 @@
+﻿year,scenario,ppo_seed,yield,irrigation,nitrogen,pfp_n,wp_et,common_reward_05503,canonical_reward,action_events,irrigation_event_count,fertilizer_event_count,is_ppo,yield_rank_all_candidates,irrigation_rank_all_candidates,nitrogen_rank_all_candidates,pfp_n_rank_all_candidates,wp_et_rank_all_candidates,common_reward_05503_rank_all_candidates,partial_pareto_all_candidates,wp_et_note
+2014,DSSAT auto + external N,,4644.0,202.0,0.0,,1.31,511.5519999999999,,,,,False,5.0,10.0,1.0,,3.0,5.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2014,Null,,2317.0,0.0,0.0,,1.08,366.086,,,,,False,8.0,1.0,1.0,,4.0,7.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2014,Official expert,,9518.0,229.0,245.0,38.84897959183674,2.6300000000000003,865.0640000000001,,,,,False,1.0,12.0,11.0,4.0,1.0,2.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2014,Recorded farmer,,8378.0,120.0,374.0,22.40106951871658,2.52,600.8039999999999,,,,,False,4.0,8.0,12.0,8.0,2.0,4.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2014,Random-weather PPO seed 0,0.0,1833.7445068359373,45.0,40.0,45.84361267089843,,177.0316320800781,-1.0318657187601916,1.0,1.0,1.0,True,10.0,2.0,4.0,1.0,,9.0,False,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2014,Random-weather PPO seed 1,1.0,3518.7255859375,45.0,120.0,29.322713216145832,,316.858642578125,-0.8853891806751472,1.0,1.0,1.0,True,7.0,2.0,6.0,7.0,,8.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2014,Random-weather PPO seed 2,2.0,2285.8517456054688,75.0,200.0,11.429258728027344,,-37.33542419433593,-1.0245743581412723,3.0,2.0,3.0,True,9.0,6.0,8.0,9.0,,12.0,False,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2014,Random-weather PPO seed 3,3.0,4202.572937011719,75.0,120.0,35.02144114176432,,391.9065240478516,-0.6300018080243468,4.0,2.0,3.0,True,6.0,6.0,6.0,6.0,,6.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2014,Random-weather PPO seed 4,4.0,9402.930297851562,225.0,240.0,39.17887624104818,,858.9629870605468,0.927866500313282,17.0,13.0,5.0,True,2.0,11.0,9.0,3.0,,3.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2014,Random-weather PPO seed 5,5.0,9253.173217773438,165.0,240.0,38.55488840738932,,901.3013684082032,0.9295548220801352,5.0,4.0,5.0,True,3.0,9.0,9.0,5.0,,1.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2014,Random-weather PPO seed 6,6.0,1190.2547454833984,45.0,0.0,,,138.56024978637694,-1.0861303128865365,1.0,1.0,0.0,True,12.0,2.0,1.0,,,11.0,False,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2014,Random-weather PPO seed 7,7.0,1833.7445068359373,45.0,40.0,45.84361267089843,,177.0316320800781,-1.031865718760193,1.0,1.0,1.0,True,10.0,2.0,4.0,1.0,,9.0,False,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2015,DSSAT auto + external N,,5020.0,196.0,0.0,,1.41,577.56,,,,,False,10.0,10.0,1.0,,3.0,10.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2015,Null,,3542.0,0.0,0.0,,1.35,559.636,,,,,False,12.0,1.0,1.0,,4.0,11.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2015,Official expert,,9089.0,229.0,245.0,37.09795918367347,2.66,797.2820000000002,,,,,False,1.0,12.0,11.0,8.0,2.0,7.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2015,Recorded farmer,,8942.0,120.0,374.0,23.90909090909091,2.72,689.9159999999999,,,,,False,4.0,8.0,12.0,9.0,1.0,9.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2015,Random-weather PPO seed 0,0.0,5869.664306640625,45.0,40.0,146.74160766601562,,814.7069604492187,0.0864933085611471,1.0,1.0,1.0,True,8.0,2.0,4.0,1.0,,4.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2015,Random-weather PPO seed 1,1.0,6446.78466796875,45.0,120.0,53.72320556640625,,779.4919775390625,0.101599940803052,1.0,1.0,1.0,True,7.0,2.0,6.0,4.0,,8.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2015,Random-weather PPO seed 2,2.0,7951.680908203125,75.0,200.0,39.75840454101562,,857.8655834960937,0.458368456857205,3.0,2.0,3.0,True,6.0,6.0,8.0,5.0,,3.0,False,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2015,Random-weather PPO seed 3,3.0,7991.868896484375,75.0,120.0,66.59890747070312,,990.6152856445311,0.6112711292600629,4.0,2.0,3.0,True,5.0,6.0,6.0,3.0,,1.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2015,Random-weather PPO seed 4,4.0,9088.693237304688,225.0,240.0,37.869555155436196,,809.3135314941405,0.8780579241871834,17.0,13.0,5.0,True,2.0,11.0,9.0,6.0,,6.0,False,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2015,Random-weather PPO seed 5,5.0,9088.693237304688,165.0,240.0,37.869555155436196,,875.3135314941405,0.9440579241871834,5.0,4.0,5.0,True,2.0,9.0,9.0,6.0,,2.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2015,Random-weather PPO seed 6,6.0,3704.718017578125,45.0,0.0,,,535.8454467773438,-0.1545232907265425,1.0,1.0,0.0,True,11.0,2.0,1.0,,,12.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2015,Random-weather PPO seed 7,7.0,5869.664306640625,45.0,40.0,146.74160766601562,,814.7069604492187,0.0864933085611463,1.0,1.0,1.0,True,8.0,2.0,4.0,1.0,,4.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2016,DSSAT auto + external N,,3780.0,175.0,0.0,,1.14,405.07,,,,,False,10.0,10.0,1.0,,3.0,10.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2016,Null,,2405.0,0.0,0.0,,0.99,379.99,,,,,False,12.0,1.0,1.0,,4.0,11.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2016,Official expert,,6507.0,199.0,245.0,26.559183673469388,1.98,422.326,,,,,False,2.0,11.0,11.0,8.0,2.0,8.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2016,Recorded farmer,,6508.0,120.0,374.0,17.40106951871658,1.99,305.34400000000005,,,,,False,1.0,8.0,12.0,9.0,1.0,12.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2016,Random-weather PPO seed 0,0.0,4513.653869628906,45.0,40.0,112.84134674072266,,600.4573114013672,-0.0423970077389468,1.0,1.0,1.0,True,8.0,2.0,4.0,1.0,,2.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2016,Random-weather PPO seed 1,1.0,4941.803283691406,45.0,120.0,41.18169403076172,,541.7049188232422,-0.1196797976577273,1.0,1.0,1.0,True,7.0,2.0,6.0,4.0,,4.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2016,Random-weather PPO seed 2,2.0,5648.870849609375,75.0,200.0,28.244354248046875,,494.0215942382813,0.1251416606575257,3.0,2.0,3.0,True,5.0,6.0,8.0,5.0,,5.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2016,Random-weather PPO seed 3,3.0,5608.153076171875,75.0,120.0,46.73460896809896,,613.9881860351562,0.2295890594160556,4.0,2.0,3.0,True,6.0,6.0,6.0,3.0,,1.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2016,Random-weather PPO seed 4,4.0,6502.60009765625,210.0,240.0,27.094167073567707,,417.2108154296875,0.4854905660748481,16.0,12.0,5.0,True,3.0,12.0,9.0,6.0,,9.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2016,Random-weather PPO seed 5,5.0,6496.6497802734375,165.0,240.0,27.069374084472656,,465.770665283203,0.5340504159283638,5.0,4.0,5.0,True,4.0,9.0,9.0,7.0,,6.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2016,Random-weather PPO seed 6,6.0,3023.617553710937,45.0,0.0,,,428.23157348632805,-0.1956306356847286,1.0,1.0,0.0,True,11.0,2.0,1.0,,,7.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2016,Random-weather PPO seed 7,7.0,4513.653869628906,45.0,40.0,112.84134674072266,,600.4573114013672,-0.0423970077389478,1.0,1.0,1.0,True,8.0,2.0,4.0,1.0,,2.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2017,DSSAT auto + external N,,4867.0,110.0,0.0,,1.4300000000000002,647.656,,,,,False,10.0,8.0,1.0,,4.0,9.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2017,Null,,4574.0,0.0,0.0,,1.46,722.692,,,,,False,12.0,1.0,1.0,,3.0,6.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2017,Official expert,,7820.0,199.0,245.0,31.918367346938776,2.3800000000000003,629.78,,,,,False,6.0,11.0,11.0,8.0,2.0,10.0,False,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2017,Recorded farmer,,7767.0,120.0,374.0,20.767379679144383,2.41,504.2659999999999,,,,,False,7.0,9.0,12.0,9.0,1.0,12.0,False,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2017,Random-weather PPO seed 0,0.0,7127.4072265625,45.0,40.0,178.1851806640625,,1013.4303417968749,1.080930344479084,1.0,1.0,1.0,True,8.0,2.0,4.0,1.0,,2.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2017,Random-weather PPO seed 1,1.0,7834.6807861328125,45.0,120.0,65.28900655110677,,998.7795642089844,1.0662795668911933,1.0,1.0,1.0,True,1.0,2.0,7.0,4.0,,4.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2017,Random-weather PPO seed 2,2.0,7834.414672851562,75.0,200.0,39.172073364257805,,839.3375183105468,0.9082335332989692,3.0,2.0,3.0,True,2.0,6.0,8.0,5.0,,5.0,False,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2017,Random-weather PPO seed 3,3.0,7828.095703125,75.0,80.0,97.8511962890625,,1027.93912109375,1.0957401510739326,3.0,2.0,2.0,True,3.0,6.0,6.0,3.0,,1.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2017,Random-weather PPO seed 4,4.0,7824.86083984375,210.0,240.0,32.60358683268229,,626.1280126953125,0.6950240276837348,16.0,12.0,5.0,True,5.0,12.0,9.0,7.0,,11.0,False,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2017,Random-weather PPO seed 5,5.0,7827.138061523437,165.0,240.0,32.61307525634765,,675.9878137207029,0.7448838287091255,5.0,4.0,5.0,True,4.0,10.0,9.0,6.0,,8.0,False,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2017,Random-weather PPO seed 6,6.0,4780.597534179688,45.0,0.0,,,705.8344104003908,0.7733344130825996,1.0,1.0,0.0,True,11.0,2.0,1.0,,,7.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2017,Random-weather PPO seed 7,7.0,7127.4072265625,45.0,40.0,178.1851806640625,,1013.4303417968749,1.080930344479084,1.0,1.0,1.0,True,8.0,2.0,4.0,1.0,,2.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2018,DSSAT auto + external N,,4709.0,156.0,0.0,,1.29,572.8620000000001,,,,,False,10.0,9.0,1.0,,3.0,10.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2018,Null,,2109.0,0.0,0.0,,0.67,333.222,,,,,False,12.0,1.0,1.0,,4.0,12.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2018,Official expert,,8327.0,199.0,245.0,33.987755102040815,2.35,709.886,,,,,False,2.0,12.0,11.0,8.0,2.0,5.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2018,Recorded farmer,,8328.0,120.0,374.0,22.267379679144383,2.3600000000000003,592.904,,,,,False,1.0,8.0,12.0,9.0,1.0,9.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2018,Random-weather PPO seed 0,0.0,5111.125183105469,45.0,40.0,127.77812957763672,,694.857778930664,0.6314005030035975,1.0,1.0,1.0,True,8.0,2.0,4.0,1.0,,6.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2018,Random-weather PPO seed 1,1.0,5359.786987304688,45.0,120.0,44.664891560872405,,607.7463439941407,0.52593748652339,1.0,1.0,1.0,True,7.0,2.0,6.0,4.0,,8.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2018,Random-weather PPO seed 2,2.0,8323.3935546875,75.0,200.0,41.6169677734375,,916.596181640625,0.9844145684933664,3.0,2.0,3.0,True,6.0,6.0,8.0,5.0,,2.0,False,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2018,Random-weather PPO seed 3,3.0,8323.44970703125,75.0,120.0,69.36208089192708,,1043.0050537109373,1.1105050563931465,4.0,2.0,3.0,True,5.0,6.0,6.0,3.0,,1.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2018,Random-weather PPO seed 4,4.0,8325.941772460938,195.0,240.0,34.69142405192057,,721.7988000488281,0.7896171869015693,15.0,11.0,5.0,True,3.0,11.0,9.0,6.0,,4.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2018,Random-weather PPO seed 5,5.0,8323.497924804688,165.0,240.0,34.68124135335287,,754.4126721191406,0.8222310589718818,5.0,4.0,5.0,True,4.0,10.0,9.0,7.0,,3.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2018,Random-weather PPO seed 6,6.0,3564.6408081054688,45.0,0.0,,,513.713247680664,0.4626151802182198,1.0,1.0,0.0,True,11.0,2.0,1.0,,,11.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2018,Random-weather PPO seed 7,7.0,5111.125183105469,45.0,40.0,127.77812957763672,,694.857778930664,0.6314005030035972,1.0,1.0,1.0,True,8.0,2.0,4.0,1.0,,6.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2019,DSSAT auto + external N,,4192.0,242.0,0.0,,1.16,395.696,,,,,False,5.0,12.0,1.0,,4.0,9.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2019,Null,,2967.0,0.0,0.0,,1.52,468.786,,,,,False,12.0,1.0,1.0,,3.0,6.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2019,Official expert,,7454.0,199.0,245.0,30.42448979591837,2.22,571.952,,,,,False,2.0,10.0,11.0,5.0,2.0,3.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2019,Recorded farmer,,6558.0,120.0,374.0,17.53475935828877,2.37,313.2439999999999,,,,,False,4.0,8.0,12.0,9.0,1.0,10.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2019,Random-weather PPO seed 0,0.0,3700.841369628906,45.0,40.0,92.52103424072264,,472.0329364013672,-0.6143573943528517,1.0,1.0,1.0,True,8.0,2.0,4.0,1.0,,4.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2019,Random-weather PPO seed 1,1.0,3483.0984497070312,45.0,120.0,29.02582041422526,,311.2295550537109,-0.817740462789236,1.0,1.0,1.0,True,10.0,2.0,7.0,7.0,,11.0,False,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2019,Random-weather PPO seed 2,2.0,4002.3724365234375,75.0,160.0,25.014827728271484,,297.07484497070317,-0.692927010689525,2.0,2.0,2.0,True,7.0,6.0,8.0,8.0,,12.0,False,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2019,Random-weather PPO seed 3,3.0,4101.358642578125,75.0,80.0,51.26698303222656,,439.11466552734373,-0.554319270282537,3.0,2.0,2.0,True,6.0,6.0,6.0,3.0,,8.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2019,Random-weather PPO seed 4,4.0,7606.583251953125,210.0,240.0,31.69409688313802,,591.6401538085938,0.6592736351323129,16.0,12.0,5.0,True,1.0,11.0,9.0,4.0,,1.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2019,Random-weather PPO seed 5,5.0,7224.700927734375,165.0,240.0,30.102920532226562,,580.8027465820312,0.450975889134407,5.0,4.0,5.0,True,3.0,9.0,9.0,6.0,,2.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2019,Random-weather PPO seed 6,6.0,3100.362548828125,45.0,0.0,,,440.35728271484373,-0.6454190116432311,1.0,1.0,0.0,True,11.0,2.0,1.0,,,7.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2019,Random-weather PPO seed 7,7.0,3700.841369628906,45.0,40.0,92.52103424072264,,472.0329364013672,-0.6143573943528535,1.0,1.0,1.0,True,8.0,2.0,4.0,1.0,,4.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2020,DSSAT auto + external N,,3704.0,110.0,0.0,,0.97,464.232,,,,,False,10.0,8.0,1.0,,3.0,9.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2020,Null,,3336.0,0.0,0.0,,0.97,527.088,,,,,False,12.0,1.0,1.0,,3.0,6.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2020,Official expert,,6518.0,229.0,245.0,26.60408163265306,1.7000000000000002,391.0640000000001,,,,,False,1.0,12.0,11.0,8.0,2.0,11.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2020,Recorded farmer,,6518.0,120.0,374.0,17.427807486631018,1.77,306.924,,,,,False,1.0,9.0,12.0,9.0,1.0,12.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2020,Random-weather PPO seed 0,0.0,5508.5101318359375,45.0,40.0,137.71275329589844,,757.644600830078,0.7376133283591274,1.0,1.0,1.0,True,8.0,2.0,4.0,1.0,,2.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2020,Random-weather PPO seed 1,1.0,6412.744140625,45.0,120.0,53.439534505208336,,774.1135742187499,0.7219142665386202,1.0,1.0,1.0,True,7.0,2.0,6.0,4.0,,1.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2020,Random-weather PPO seed 2,2.0,6517.174072265625,75.0,200.0,32.585870361328126,,631.2135034179687,0.7001077064251899,3.0,2.0,3.0,True,3.0,6.0,8.0,5.0,,5.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2020,Random-weather PPO seed 3,3.0,6517.173461914063,75.0,120.0,54.30977884928386,,757.6134069824219,0.8252319036984443,4.0,2.0,3.0,True,4.0,6.0,6.0,3.0,,4.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2020,Random-weather PPO seed 4,4.0,6516.019287109375,225.0,240.0,27.15008036295573,,402.8310473632812,0.4717252503705025,17.0,13.0,5.0,True,6.0,11.0,9.0,7.0,,10.0,False,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2020,Random-weather PPO seed 5,5.0,6516.712646484375,165.0,240.0,27.152969360351562,,468.9405981445311,0.5378348011517523,5.0,4.0,5.0,True,5.0,10.0,9.0,6.0,,8.0,False,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2020,Random-weather PPO seed 6,6.0,3591.7889404296875,45.0,0.0,,,518.0026525878907,0.5855026552700997,1.0,1.0,0.0,True,11.0,2.0,1.0,,,7.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2020,Random-weather PPO seed 7,7.0,5508.5101318359375,45.0,40.0,137.71275329589844,,757.644600830078,0.7376133283591271,1.0,1.0,1.0,True,8.0,2.0,4.0,1.0,,2.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2021,DSSAT auto + external N,,4626.0,58.0,0.0,,1.2800000000000002,667.328,,,,,False,10.0,6.0,1.0,,3.0,11.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2021,Null,,4341.0,0.0,0.0,,1.2400000000000002,685.878,,,,,False,12.0,1.0,1.0,,4.0,9.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2021,Official expert,,8641.0,229.0,245.0,35.26938775510204,2.3800000000000003,726.498,,,,,False,3.0,12.0,11.0,8.0,2.0,8.0,False,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2021,Recorded farmer,,8644.0,120.0,374.0,23.112299465240643,2.47,642.8319999999999,,,,,False,2.0,9.0,12.0,9.0,1.0,12.0,False,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2021,Random-weather PPO seed 0,0.0,7333.9605712890625,45.0,40.0,183.34901428222656,,1046.0657702636718,1.1135657729458808,1.0,1.0,1.0,True,8.0,2.0,4.0,1.0,,3.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2021,Random-weather PPO seed 1,1.0,8647.273559570312,45.0,120.0,72.06061299641927,,1127.1692224121093,1.1946692250943185,1.0,1.0,1.0,True,1.0,2.0,7.0,4.0,,1.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2021,Random-weather PPO seed 2,2.0,8639.058227539062,75.0,200.0,43.195291137695314,,966.4711999511719,1.0341127994275094,3.0,2.0,3.0,True,4.0,7.0,8.0,5.0,,5.0,False,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2021,Random-weather PPO seed 3,3.0,8316.02294921875,75.0,80.0,103.95028686523438,,1105.0316259765625,1.1725316286587717,3.0,2.0,2.0,True,7.0,7.0,6.0,3.0,,2.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2021,Random-weather PPO seed 4,4.0,8623.307495117188,225.0,240.0,35.93044789632162,,735.7825842285156,0.8034241837048532,17.0,13.0,5.0,True,6.0,11.0,9.0,7.0,,7.0,False,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2021,Random-weather PPO seed 5,5.0,8625.512084960938,165.0,240.0,35.93963368733724,,802.1309094238281,0.8697725089001656,5.0,4.0,5.0,True,5.0,10.0,9.0,6.0,,6.0,False,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2021,Random-weather PPO seed 6,6.0,4607.4853515625,45.0,0.0,,,678.482685546875,0.7459826882290841,1.0,1.0,0.0,True,11.0,2.0,1.0,,,10.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2021,Random-weather PPO seed 7,7.0,7333.9605712890625,45.0,40.0,183.34901428222656,,1046.0657702636718,1.1135657729458808,1.0,1.0,1.0,True,8.0,2.0,4.0,1.0,,3.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2022,DSSAT auto + external N,,4665.0,59.0,0.0,,1.26,672.2800000000001,,,,,False,10.0,6.0,1.0,,3.0,11.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2022,Null,,4433.0,0.0,0.0,,1.2300000000000002,700.414,,,,,False,12.0,1.0,1.0,,4.0,9.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2022,Official expert,,8564.0,199.0,245.0,34.95510204081633,2.25,747.3320000000001,,,,,False,3.0,11.0,11.0,8.0,2.0,7.0,False,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2022,Recorded farmer,,8547.0,120.0,374.0,22.852941176470587,2.27,627.5059999999999,,,,,False,5.0,9.0,12.0,9.0,1.0,12.0,False,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2022,Random-weather PPO seed 0,0.0,7255.919189453125,45.0,40.0,181.39797973632812,,1033.7352319335937,1.1012352346158027,1.0,1.0,1.0,True,8.0,2.0,4.0,1.0,,3.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2022,Random-weather PPO seed 1,1.0,8564.81689453125,45.0,120.0,71.37347412109375,,1114.1410693359376,1.1816410720181465,1.0,1.0,1.0,True,1.0,2.0,7.0,4.0,,2.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2022,Random-weather PPO seed 2,2.0,8564.083862304688,75.0,160.0,53.5255241394043,,1017.8252502441408,1.08532525292635,2.0,2.0,2.0,True,2.0,7.0,8.0,5.0,,5.0,False,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2022,Random-weather PPO seed 3,3.0,8379.246826171875,75.0,80.0,104.74058532714844,,1115.0209985351562,1.1825210012173653,3.0,2.0,2.0,True,7.0,7.0,6.0,3.0,,1.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2022,Random-weather PPO seed 4,4.0,8555.174560546875,210.0,240.0,35.64656066894531,,741.5175805664062,0.8090175832486153,16.0,12.0,5.0,True,4.0,12.0,9.0,6.0,,8.0,False,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2022,Random-weather PPO seed 5,5.0,8543.325805664062,165.0,240.0,35.597190856933594,,789.1454772949219,0.8566454799771309,5.0,4.0,5.0,True,6.0,10.0,9.0,7.0,,6.0,False,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2022,Random-weather PPO seed 6,6.0,4644.7113037109375,45.0,0.0,,,684.3643859863281,0.7518643886685371,1.0,1.0,0.0,True,11.0,2.0,1.0,,,10.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2022,Random-weather PPO seed 7,7.0,7255.919189453125,45.0,40.0,181.39797973632812,,1033.7352319335937,1.1012352346158027,1.0,1.0,1.0,True,8.0,2.0,4.0,1.0,,3.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2023,DSSAT auto + external N,,3964.0,157.0,0.0,,0.98,453.612,,,,,False,10.0,9.0,1.0,,3.0,12.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2023,Null,,2884.0,0.0,0.0,,0.8900000000000001,455.672,,,,,False,12.0,1.0,1.0,,4.0,11.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2023,Official expert,,9568.0,199.0,245.0,39.053061224489795,2.3800000000000003,905.964,,,,,False,3.0,11.0,11.0,8.0,2.0,5.0,False,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2023,Recorded farmer,,9538.0,120.0,374.0,25.502673796791445,2.5,784.0839999999998,,,,,False,4.0,8.0,12.0,9.0,1.0,7.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2023,Random-weather PPO seed 0,0.0,5228.05419921875,45.0,40.0,130.70135498046875,,713.3325634765624,0.250699328320027,1.0,1.0,1.0,True,8.0,2.0,4.0,1.0,,8.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2023,Random-weather PPO seed 1,1.0,7830.15625,45.0,120.0,65.25130208333333,,998.0646874999999,0.5440930579474572,1.0,1.0,1.0,True,6.0,2.0,7.0,4.0,,3.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2023,Random-weather PPO seed 2,2.0,8450.672607421875,75.0,160.0,52.81670379638672,,999.9062719726562,0.6493695600116258,2.0,2.0,2.0,True,5.0,6.0,8.0,5.0,,2.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2023,Random-weather PPO seed 3,3.0,7750.9930419921875,75.0,80.0,96.88741302490234,,1015.7569006347657,0.6797896872723102,3.0,2.0,2.0,True,7.0,6.0,6.0,3.0,,1.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2023,Random-weather PPO seed 4,4.0,9582.796020507812,210.0,240.0,39.92831675211588,,903.8817712402345,0.9715293550229074,16.0,12.0,5.0,True,2.0,12.0,9.0,7.0,,6.0,False,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2023,Random-weather PPO seed 5,5.0,9587.177734375,165.0,240.0,39.946573893229164,,954.0740820312499,1.0217216658139223,5.0,4.0,5.0,True,1.0,10.0,9.0,6.0,,4.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2023,Random-weather PPO seed 6,6.0,3314.8178100585938,45.0,0.0,,,474.24121398925786,0.0391066521078349,1.0,1.0,0.0,True,11.0,2.0,1.0,,,10.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay
+2023,Random-weather PPO seed 7,7.0,5228.05419921875,45.0,40.0,130.70135498046875,,713.3325634765624,0.2506993283200265,1.0,1.0,1.0,True,8.0,2.0,4.0,1.0,,8.0,True,PPO WP_ET unavailable: no exact seed-year ETCP replay

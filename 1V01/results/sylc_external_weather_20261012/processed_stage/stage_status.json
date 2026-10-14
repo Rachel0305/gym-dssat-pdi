@@ -1,0 +1,26 @@
+{
+  "SY": {
+    "stage": "CLI_CANDIDATE_SCHEMA_PASS",
+    "estimated_rsds_used": false,
+    "fit_start": 2005,
+    "fit_end": 2013,
+    "runtime_smoke": "NOT_STARTED"
+  },
+  "LC": {
+    "stage": "WINDOW_SENSITIVITY_AUDIT_ONLY",
+    "no_clamp_by_window": {
+      "2000": true,
+      "2001": false,
+      "2005": false
+    },
+    "fit_window_not_changed": true
+  },
+  "FQ_seed7": {
+    "stage": "PASS_100K_CHECKPOINT_AND_40_VALIDATION_ROWS",
+    "seed": 7,
+    "model_hashes_verified": true,
+    "daily_files_verified": true,
+    "WP_ET": "NOT_REPLAYED"
+  },
+  "training_queue_SY_LC": "NOT_STARTED"
+}

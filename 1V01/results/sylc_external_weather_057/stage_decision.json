@@ -1,0 +1,84 @@
+{
+  "status": "PASS_CALENDAR_CORRECT_BANK_AND_SAMPLING_AUDIT",
+  "sites": [
+    {
+      "site": "SY",
+      "source_calendars": 20,
+      "mapped_WTH_files": 90,
+      "sampling_plans": 8,
+      "steps": 100000,
+      "checkpoints": [
+        25000,
+        50000,
+        75000,
+        100000
+      ],
+      "train_years": [
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013
+      ],
+      "validation_years": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ]
+    },
+    {
+      "site": "LC",
+      "source_calendars": 20,
+      "mapped_WTH_files": 90,
+      "sampling_plans": 8,
+      "steps": 100000,
+      "checkpoints": [
+        25000,
+        50000,
+        75000,
+        100000
+      ],
+      "train_years": [
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013
+      ],
+      "validation_years": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ]
+    }
+  ],
+  "authoritative_calendar": "DSSAT Weather.OUT YEAR/DOY",
+  "previous_055_state_csv": "ONE_DAY_LATE_LABEL; retained; do not use for formal bank",
+  "rounding": "native Weather.OUT one decimal, matching WTH",
+  "weather_rng": "57000+PPOseed, shuffled cycles per calendar type",
+  "unused_initial_environment": "must not consume sampling plan",
+  "formal_allowed": false,
+  "next_gate": "2K smoke against this frozen bank, runtime and calendar checks, exact frozen-contract audit"
+}

@@ -1,0 +1,63 @@
+*MANAGEMENT OPERATIONS EVENT SUMMARY
+
+*DSSAT Cropping System Model Ver. 4.8.0.024 -stable  OCT 13, 2026 14:13:28
+!---------------------------------------------------------------------------------------------
+@RUN Date........  DOY    DAS    DAP  CR  Stage         Operation       Quantities
+!---------------------------------------------------------------------------------------------
+   1 APR 17, 2014  107      1      0  MZ  14 Start Sim 
+   1 APR 21, 2014  111      5      0  MZ                Planting       
+   1 APR 21, 2014  111      5      0  MZ  07 Sowing    
+   1 APR 22, 2014  112      6      1  MZ  08 Germinate 
+   1 APR 30, 2014  120     14      9  MZ  09 Emergence 
+   1 MAY 25, 2014  145     39     34  MZ  01 End Juveni
+   1 JUN  4, 2014  155     49     44  MZ  02 Floral Ini
+   1 JUL 19, 2014  200     94     89  MZ  03 75% Silkin
+   1 JUL 29, 2014  210    104     99  MZ  04 Beg Gr Fil
+   1 SEP  4, 2014  247    141    136  MZ  05 End Gr Fil
+   1 SEP  7, 2014  250    144    139  MZ  16 Harvest   
+   1 SEP  7, 2014  250    144    139  MZ                Harvest Yield    4361. kg/ha
+ 
+
+*DSSAT Cropping System Model Ver. 4.8.0.024 -stable  OCT 13, 2026 14:13:29
+!---------------------------------------------------------------------------------------------
+@RUN Date........  DOY    DAS    DAP  CR  Stage         Operation       Quantities
+!---------------------------------------------------------------------------------------------
+   1 APR 17, 2014  107      1      0  MZ  14 Start Sim 
+   1 APR 21, 2014  111      5      0  MZ                Planting       
+   1 APR 21, 2014  111      5      0  MZ  07 Sowing    
+   1 APR 22, 2014  112      6      1  MZ  08 Germinate 
+   1 APR 30, 2014  120     14      9  MZ  09 Emergence 
+   1 MAY 25, 2014  145     39     34  MZ  01 End Juveni
+   1 JUN  4, 2014  155     49     44  MZ  02 Floral Ini
+   1 JUL 19, 2014  200     94     89  MZ  03 75% Silkin
+   1 JUL 29, 2014  210    104     99  MZ  04 Beg Gr Fil
+   1 SEP  4, 2014  247    141    136  MZ  05 End Gr Fil
+   1 SEP  7, 2014  250    144    139  MZ  16 Harvest   
+   1 SEP  7, 2014  250    144    139  MZ                Harvest Yield    4361. kg/ha
+ 
+
+*DSSAT Cropping System Model Ver. 4.8.0.024 -stable  OCT 13, 2026 14:13:29
+!---------------------------------------------------------------------------------------------
+@RUN Date........  DOY    DAS    DAP  CR  Stage         Operation       Quantities
+!---------------------------------------------------------------------------------------------
+   1 APR 17, 2014  107      1      0  MZ  14 Start Sim 
+   1 APR 17, 2014  107      1      0  MZ                Fertilizer         80. kg[N]/ha 
+   1 APR 17, 2014  107      1      0  MZ                Irrigation        45.0 mm
+   1 APR 21, 2014  111      5      0  MZ                Planting       
+   1 APR 21, 2014  111      5      0  MZ  07 Sowing    
+   1 APR 22, 2014  112      6      1  MZ  08 Germinate 
+   1 APR 29, 2014  119     13      8  MZ                Irrigation        15.0 mm
+   1 APR 30, 2014  120     14      9  MZ  09 Emergence 
+   1 APR 30, 2014  120     14      9  MZ                Fertilizer         40. kg[N]/ha 
+   1 MAY  6, 2014  126     20     15  MZ                Irrigation        15.0 mm
+   1 MAY  7, 2014  127     21     16  MZ                Fertilizer         80. kg[N]/ha 
+   1 MAY 14, 2014  134     28     23  MZ                Fertilizer         40. kg[N]/ha 
+   1 MAY 22, 2014  142     36     31  MZ                Irrigation        15.0 mm
+   1 MAY 25, 2014  145     39     34  MZ  01 End Juveni
+   1 JUN  4, 2014  155     49     44  MZ  02 Floral Ini
+   1 JUL 19, 2014  200     94     89  MZ  03 75% Silkin
+   1 JUL 29, 2014  210    104     99  MZ  04 Beg Gr Fil
+   1 SEP  4, 2014  247    141    136  MZ  05 End Gr Fil
+   1 SEP  7, 2014  250    144    139  MZ  16 Harvest   
+   1 SEP  7, 2014  250    144    139  MZ                Harvest Yield    8121. kg/ha
+ 

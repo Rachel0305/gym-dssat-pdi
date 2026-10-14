@@ -1,0 +1,18 @@
+extends: ../benchmark_defaults.yaml
+site_config: ../sites/yca.yaml
+experiment:
+  experiment_id: 021_01_yc2014_ncost8_smoke
+  experiment_type: final_dqn_strategy_determination
+  description: YC2014 nitrogen-cost smoke under conservative nitrogen penalty
+  output_root: benchmark_results/021_01
+  dry_run: false
+algorithm:
+  total_timesteps: 5000
+reward:
+  type: local_null_terminal
+  irrigation_cost: 1.0
+  nitrogen_cost: 8.0
+  yield_gain_coefficient: 1.0
+  leaching_cost: 0.0
+evaluation:
+  seeds: [0]

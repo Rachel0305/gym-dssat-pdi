@@ -1,0 +1,5 @@
+﻿station_code,site,train_years,seed,checkpoint_step,run_status,model_path,model_sha256,notes
+SYA,SY,"2005,2006,2007,2008,2009,2010,2011,2012,2013",2,25000,ok,benchmark_results/059SYs2_frozen_weather_augmented_100k/models/SYA/SYA_half_split_stress_aware_maskableppo_seed2_ckpt25000.zip,ddff9866acc22ef8cf4b6dbc6d85b3deb5644fc0b9953990165bcbbdf20f6a42,
+SYA,SY,"2005,2006,2007,2008,2009,2010,2011,2012,2013",2,50000,ok,benchmark_results/059SYs2_frozen_weather_augmented_100k/models/SYA/SYA_half_split_stress_aware_maskableppo_seed2_ckpt50000.zip,b91cefe4b35c3412d462f87ea65234f5245cc9c5263f78d37ac6401efe4854a1,
+SYA,SY,"2005,2006,2007,2008,2009,2010,2011,2012,2013",2,75000,ok,benchmark_results/059SYs2_frozen_weather_augmented_100k/models/SYA/SYA_half_split_stress_aware_maskableppo_seed2_ckpt75000.zip,63be2a1d63a8cf4ae27dbd4da95f75d68c60abcb542c21e74a1513e652fc2af1,
+SYA,SY,"2005,2006,2007,2008,2009,2010,2011,2012,2013",2,100000,ok,benchmark_results/059SYs2_frozen_weather_augmented_100k/models/SYA/SYA_half_split_stress_aware_maskableppo_seed2_ckpt100000.zip,fc464ec05b58ffbe12c130f1c7da8b430311886f50d1e95008ae3a421e57def8,

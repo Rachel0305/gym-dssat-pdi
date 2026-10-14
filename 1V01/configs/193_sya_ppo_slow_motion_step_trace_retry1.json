@@ -1,0 +1,13 @@
+{
+  "task_id": "193",
+  "task_name": "sya_ppo_slow_motion_step_trace_retry1",
+  "base_config": "configs/191_sya_balanced_irrigation_gap1_100k_learning_curve.json",
+  "model_root": "benchmark_results/191_sya_balanced_irrigation_gap1_100k_learning_curve/models/SYA",
+  "checkpoint_steps": [1000, 2000, 5000, 10000, 50000, 100000],
+  "scenario_key": 2005,
+  "weather_variant": "original",
+  "seed": 0,
+  "deterministic": true,
+  "training_executed": false,
+  "output_dir": "benchmark_results/193_sya_ppo_slow_motion_step_trace_retry1"
+}

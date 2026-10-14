@@ -1,0 +1,56 @@
+{
+  "task_id": "059_00",
+  "task_name": "lca_lowIC_stress_response_reward_maskableppo",
+  "reference_run": "053_00_lca_lowIC_expanded_action_maskableppo",
+  "station_code": "LCA",
+  "site": "LC",
+  "input_profile": "lowIC",
+  "seed": 0,
+  "report_checkpoint": 100000,
+  "training": {
+    "total_timesteps": 100000,
+    "checkpoint_steps": [25000, 50000, 75000, 100000]
+  },
+  "actions": {
+    "irrigation_levels_mm": [0.0, 15.0, 30.0, 45.0],
+    "nitrogen_levels_kg_ha": [0.0, 40.0, 80.0, 120.0]
+  },
+  "observation_contract": {
+    "base": "046_02_raw_observation",
+    "normalization_enabled": false,
+    "weather_forecast_enabled": false
+  },
+  "stress_response_reward": {
+    "enabled": true,
+    "reward_scale": 0.001,
+    "water_stress_threshold": 0.05,
+    "nitrogen_stress_threshold": 0.05,
+    "water_response_start_dap": 31,
+    "water_response_end_dap": 150,
+    "nitrogen_response_start_dap": 31,
+    "nitrogen_response_end_dap": 90,
+    "water_response_bonus_unscaled": 25.0,
+    "nitrogen_response_bonus_unscaled": 60.0,
+    "missed_water_stress_penalty_unscaled": 35.0,
+    "missed_nitrogen_stress_penalty_unscaled": 80.0,
+    "low_stress_irrigation_penalty_per_mm_unscaled": 0.35,
+    "low_stress_nitrogen_penalty_per_kg_unscaled": 2.0,
+    "post_step_water_stress_penalty_coef_unscaled": 25.0,
+    "post_step_nitrogen_stress_penalty_coef_unscaled": 45.0,
+    "dap1_positive_action_penalty_unscaled": 20.0,
+    "note": "Reward-only stress-response shaping. No weather, no observation change, no action-grid change, and no DAP90 nitrogen safety override in this first branch."
+  },
+  "noninferiority_gate": {
+    "baseline_result": "053_03_lca_lowIC_053_00_lca_lowIC_expanded_action_maskableppo_auto_nstd030_minimal_five_scenario_figures_ckpt100000_auto_nstd030_minimal_run_auto_nstd030_minimal",
+    "selected_checkpoint_policy": "accept_only_if_yield_wp_et_pfp_n_are_not_lower_than_current_accepted_ppo",
+    "yield_tolerance_kg_ha": 25.0,
+    "wp_et_tolerance": 0.005,
+    "pfp_n_tolerance": 0.1
+  },
+  "scope": {
+    "train_years": [2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013],
+    "validation_years": [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023],
+    "reward_and_safety": "inherit_053_00_reward_and_safety_plus_local_stress_response_reward_only",
+    "purpose": "Test whether adding water and nitrogen stress-response reward shaping helps PPO learn stress-triggered management without using weather forecast features."
+  }
+}

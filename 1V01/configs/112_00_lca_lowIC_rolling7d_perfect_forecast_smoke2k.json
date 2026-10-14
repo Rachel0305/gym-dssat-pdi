@@ -1,0 +1,24 @@
+{
+  "task_id": "112_00",
+  "task_name": "lca_lowIC_rolling7d_perfect_forecast_smoke2k",
+  "reference_run": "053_03_lca_lowIC_053_00_lca_lowIC_expanded_action_maskableppo_auto_nstd050_minimal_five_scenario_figures_ckpt100000",
+  "station_code": "LCA",
+  "site": "LC",
+  "input_profile": "lowIC",
+  "seed": 0,
+  "report_checkpoint": 2000,
+  "training": {"total_timesteps": 2000, "checkpoint_steps": [1000, 2000]},
+  "actions": {"irrigation_levels_mm": [0.0, 15.0, 30.0, 45.0], "nitrogen_levels_kg_ha": [0.0, 40.0, 80.0, 120.0]},
+  "observation_contract": {"base": "046_02_raw_observation", "normalization_enabled": false, "weather_forecast_enabled": true, "weather_forecast_mode": "rolling_7d_perfect_hindcast", "weather_forecast_note": "At every decision date append normalized daily rain/srad/tmax/tmin for date+1 through date+7; no future window includes today."},
+  "forecast_features": {
+    "enabled": true,
+    "include_today_in_future_windows": false,
+    "source": "historical_WTH_as_perfect_rolling_7d_forecast",
+    "feature_names": ["rain_d1_norm", "srad_d1_norm", "tmax_d1_norm", "tmin_d1_norm", "rain_d2_norm", "srad_d2_norm", "tmax_d2_norm", "tmin_d2_norm", "rain_d3_norm", "srad_d3_norm", "tmax_d3_norm", "tmin_d3_norm", "rain_d4_norm", "srad_d4_norm", "tmax_d4_norm", "tmin_d4_norm", "rain_d5_norm", "srad_d5_norm", "tmax_d5_norm", "tmin_d5_norm", "rain_d6_norm", "srad_d6_norm", "tmax_d6_norm", "tmin_d6_norm", "rain_d7_norm", "srad_d7_norm", "tmax_d7_norm", "tmin_d7_norm"],
+    "raw_feature_names": ["rain_d1_mm", "srad_d1_mj_m2", "tmax_d1_c", "tmin_d1_c", "rain_d2_mm", "srad_d2_mj_m2", "tmax_d2_c", "tmin_d2_c", "rain_d3_mm", "srad_d3_mj_m2", "tmax_d3_c", "tmin_d3_c", "rain_d4_mm", "srad_d4_mj_m2", "tmax_d4_c", "tmin_d4_c", "rain_d5_mm", "srad_d5_mj_m2", "tmax_d5_c", "tmin_d5_c", "rain_d6_mm", "srad_d6_mj_m2", "tmax_d6_c", "tmin_d6_c", "rain_d7_mm", "srad_d7_mj_m2", "tmax_d7_c", "tmin_d7_c"],
+    "scales": {"rain_daily_mm": 30.0, "srad_daily_mj_m2": 30.0, "tmax_center_c": 30.0, "tmax_scale_c": 10.0, "tmin_center_c": 20.0, "tmin_scale_c": 10.0}
+  },
+  "scope": {"train_years": [2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013], "validation_years": [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023], "reward_and_safety": "inherit_053_03_unchanged", "external_n": false, "purpose": "Test whether a rolling perfect 7-day weather window improves the existing LC PPO under identical reward, action grid, safety and DSSAT automatic irrigation conditions."},
+  "execution_policy": {"smoke_only": true, "no_25k_100k": true, "forecast_swap_required_before_long_training": true},
+  "prompt": "prompts/2026-08-15_lc_rolling7d_perfect_forecast_smoke2k.md"
+}

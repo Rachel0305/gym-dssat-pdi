@@ -1,0 +1,17 @@
+{
+  "task_id": "105_00",
+  "task_name": "fqa_checkpoint_selection",
+  "reference_runs": [
+    "098_00_fqa_ncost25_early_checkpoint_replay_2k_5k_10k",
+    "089_00_fq2018_corrected_ten_year_paper_summary"
+  ],
+  "site": "FQ",
+  "mode": "read_only_selection",
+  "candidate_checkpoints": [2000, 5000, 10000],
+  "selection_rule": {
+    "primary": "earliest checkpoint with corrected/native five-scenario mean yield >= official mean and WP_ET >= official mean",
+    "guardrail": "report PFP_N separately; no cherry-picking by a single metric",
+    "cross_seed_requirement": "not met by seed=1 smoke; selected checkpoint remains exploratory"
+  },
+  "output_root": "benchmark_results/105_00_fqa_checkpoint_selection"
+}

@@ -1,0 +1,25 @@
+{
+  "created_utc": "2026-10-12T12:45:23.584141+00:00",
+  "station_code": "FQA",
+  "site": "FQ",
+  "mode": "formal",
+  "config_path": "results/fq_seed7_completion_20261012/fq_seed7.json",
+  "config_sha256": "c34aeec5476315ffe5bf55546a5878c3f934b92024fa417f6c832048826893f0",
+  "configured_seed": 7,
+  "engine_module": "run_five_site_half_split_stress_aware_maskableppo_batch_032_22.SEED",
+  "engine_seed_set_before_runner": 7,
+  "checkpoint_paths": [
+    "benchmark_results/20261012fq7_fq_seed7_historical_completion/models/FQA/FQA_half_split_stress_aware_maskableppo_seed7_ckpt100000.zip",
+    "benchmark_results/20261012fq7_fq_seed7_historical_completion/models/FQA/FQA_half_split_stress_aware_maskableppo_seed7_ckpt25000.zip",
+    "benchmark_results/20261012fq7_fq_seed7_historical_completion/models/FQA/FQA_half_split_stress_aware_maskableppo_seed7_ckpt50000.zip",
+    "benchmark_results/20261012fq7_fq_seed7_historical_completion/models/FQA/FQA_half_split_stress_aware_maskableppo_seed7_ckpt75000.zip"
+  ],
+  "checkpoint_sha256": {
+    "benchmark_results/20261012fq7_fq_seed7_historical_completion/models/FQA/FQA_half_split_stress_aware_maskableppo_seed7_ckpt100000.zip": "78d1e2d9ad5e54d8971ebf35947e3b61f241cd8fb7d50b058c984163b318ae96",
+    "benchmark_results/20261012fq7_fq_seed7_historical_completion/models/FQA/FQA_half_split_stress_aware_maskableppo_seed7_ckpt25000.zip": "26a66f23cb741182cb9f575d2af63be09a8f5bb1a8767c0ebce5ea9ebb76417c",
+    "benchmark_results/20261012fq7_fq_seed7_historical_completion/models/FQA/FQA_half_split_stress_aware_maskableppo_seed7_ckpt50000.zip": "b8c545e7e6e8b2c375ebb5edf2903643a44e4f439d6657cab5147ec075859037",
+    "benchmark_results/20261012fq7_fq_seed7_historical_completion/models/FQA/FQA_half_split_stress_aware_maskableppo_seed7_ckpt75000.zip": "23d89feb8c62adfd34dcbd610d7e509907d741632896f40ea447088b0db5dd67"
+  },
+  "seed_name_match": true,
+  "formal_100k_checkpoint_present": true
+}

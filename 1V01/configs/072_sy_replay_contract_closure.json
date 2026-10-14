@@ -1,0 +1,14 @@
+{
+  "task_id": "072_00",
+  "task_name": "sya_seed1_exact_replay_contract_audit",
+  "station_code": "SYA",
+  "input_profile": "originIC",
+  "seed": 1,
+  "checkpoint": 25000,
+  "year": 2014,
+  "ppo_run_dir": "benchmark_results/070_00_sya_originIC_seed1_maskableppo_100k",
+  "expected_summary": "benchmark_results/070_00_sya_originIC_seed1_maskableppo_100k/evaluation/070_00_checkpoint_validation_summary.csv",
+  "prompt": "prompts/2026-08-13_sy_replay_contract_closure.md",
+  "output_root": "benchmark_results/072_00_sya_seed1_exact_replay_contract_audit",
+  "endpoint_tolerance_kg_ha": 0.5
+}

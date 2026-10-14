@@ -1,0 +1,47 @@
+{
+  "data_conversion": "COMPLETE",
+  "runtime": "DOCKER_ENGINE_UNAVAILABLE",
+  "training": "NOT_STARTED",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "fit_years": [
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013
+  ],
+  "validation_years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "source_type": "neighbour_station; estimated radiation retained separately from measured radiation",
+  "next_gates": [
+    "radiation and precipitation code audit",
+    "station relocation audit",
+    "CLI parameter and weather generation audit",
+    "DSSAT smoke",
+    "PPO smoke"
+  ],
+  "FQ_seed7": "old smoke blocked by behavior gate, technical checks passed; new isolated cohort-completion attempt required"
+}

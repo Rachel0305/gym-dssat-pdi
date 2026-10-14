@@ -1,0 +1,15 @@
+{
+  "task_id": "127_00",
+  "task_name": "sya_forecast_checkpoint_collapse_diagnostic",
+  "source_run": "benchmark_results/126_00_sya_originIC_rolling7d_perfect_forecast_5k10k",
+  "station_code": "SYA",
+  "site": "SY",
+  "seed": 0,
+  "checkpoints": [2000, 5000, 10000],
+  "validation_years": [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023],
+  "actions": {"irrigation_levels_mm": [0.0, 15.0, 30.0, 45.0], "nitrogen_levels_kg_ha": [0.0, 40.0, 80.0, 120.0]},
+  "scope": {"read_only": true, "training": false, "dssat_rerun": false, "wp_et_policy": "report_missing_if_not_in_source"},
+  "diagnostics": ["action_entropy", "action_frequency", "cross_year_signature", "reward_components", "safety_overrides", "forecast_action_correlation"],
+  "output_root": "benchmark_results/127_00_sya_forecast_checkpoint_collapse_diagnostic",
+  "prompt": "prompts/2026-08-16_sya_forecast_checkpoint_collapse_diagnostic.md"
+}

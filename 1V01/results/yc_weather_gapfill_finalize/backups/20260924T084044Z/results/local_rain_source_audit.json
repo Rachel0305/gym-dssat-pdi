@@ -1,0 +1,146 @@
+{
+  "source": "data\\external\\yc_chinaflux\\raw\\YCA_M_daily.zip",
+  "sha256": "0e38d3d23a36a0968fbcbf743951a66328af022fc891cb4358ea542641b74aee",
+  "member": "日尺度/2004年禹城气象日统计数据.xlsx",
+  "year": 2004,
+  "daily_rows": 366,
+  "valid_daily_rain_days": 361,
+  "target_days": [
+    {
+      "date": "2004-10-16",
+      "raw_rain_value": -99999,
+      "usable_daily_value": false
+    },
+    {
+      "date": "2004-10-17",
+      "raw_rain_value": -99999,
+      "usable_daily_value": false
+    },
+    {
+      "date": "2004-10-18",
+      "raw_rain_value": -99999,
+      "usable_daily_value": false
+    },
+    {
+      "date": "2004-10-19",
+      "raw_rain_value": -99999,
+      "usable_daily_value": false
+    },
+    {
+      "date": "2004-10-20",
+      "raw_rain_value": -99999,
+      "usable_daily_value": false
+    }
+  ],
+  "target_complete": false,
+  "decision": "本地逐日产品五天均为缺失码，不能用于恢复；不拆分月/年总量。",
+  "chinaflux_monthly_rain_2004": {
+    "source": "data\\external\\yc_chinaflux\\raw\\YCA_M_monthly.zip",
+    "sha256": "fde763a148526fec60e83ae13aa873894b1346bd60eb81d534e73e1430aedfd4",
+    "year_read": 2004,
+    "member": "月尺度/2004年禹城气象月统计数据.xlsx",
+    "aggregation": "monthly",
+    "values": [
+      {
+        "month": 1,
+        "precipitation_mm": 0.1,
+        "valid": true
+      },
+      {
+        "month": 2,
+        "precipitation_mm": 10.600000000000003,
+        "valid": true
+      },
+      {
+        "month": 3,
+        "precipitation_mm": 55.699999999999996,
+        "valid": true
+      },
+      {
+        "month": 4,
+        "precipitation_mm": 52.400000000000006,
+        "valid": true
+      },
+      {
+        "month": 5,
+        "precipitation_mm": 46.80000000000002,
+        "valid": true
+      },
+      {
+        "month": 6,
+        "precipitation_mm": 216.6,
+        "valid": true
+      },
+      {
+        "month": 7,
+        "precipitation_mm": 202.79999999999998,
+        "valid": true
+      },
+      {
+        "month": 8,
+        "precipitation_mm": 205.29999999999995,
+        "valid": true
+      },
+      {
+        "month": 9,
+        "precipitation_mm": 37.0,
+        "valid": true
+      },
+      {
+        "month": 10,
+        "precipitation_mm": 9.100000000000001,
+        "valid": true
+      },
+      {
+        "month": 11,
+        "precipitation_mm": 7.5,
+        "valid": true
+      },
+      {
+        "month": 12,
+        "precipitation_mm": 2.3000000000000007,
+        "valid": true
+      }
+    ]
+  },
+  "chinaflux_annual_rain_2004": {
+    "source": "data\\external\\yc_chinaflux\\raw\\YCA_M_yearly.zip",
+    "sha256": "b4716cb4990b6b6b7a7dc4e5b92fbe0bbc68956ea4c1ebb317701ac04312ce6e",
+    "year_read": 2004,
+    "member": "年尺度/2004年禹城气象年统计数据.xlsx",
+    "aggregation": "annual",
+    "values": [
+      {
+        "precipitation_mm": 846.2,
+        "valid": true
+      }
+    ],
+    "annual_precipitation_mm": 846.2
+  },
+  "monthly_source_audit": [
+    {
+      "archive_member": "实体数据/5-禹城站自动观测降水.xls",
+      "title": "自动观测气象要素－降水月总量（mm）",
+      "rows": 26,
+      "temporal_grain": "monthly aggregate",
+      "years_present": [
+        2005,
+        2006
+      ],
+      "daily_values_for_2004_target": false,
+      "decision": "月统计不能还原指定逐日事件。"
+    },
+    {
+      "archive_member": "实体数据/9-禹城站人工观测气象要素记录表.xls",
+      "title": "人工观测气象要素记录表(1)月统计",
+      "rows": 26,
+      "temporal_grain": "monthly aggregate",
+      "years_present": [
+        2005,
+        2006
+      ],
+      "daily_values_for_2004_target": false,
+      "decision": "月统计不能还原指定逐日事件。"
+    }
+  ]
+}

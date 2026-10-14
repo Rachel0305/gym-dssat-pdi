@@ -1,0 +1,8 @@
+task_id: "031_30"
+description: "Compare 031_27 SYA frozen MaskablePPO candidates with 031_29 completed generated baseline envelope."
+candidate_summary_csv: "benchmark_results/031_27_sy_all_year_frozen_maskableppo_transfer/evaluation/031_27_sy_all_year_candidate_summary.csv"
+baseline_summary_csv: "benchmark_results/031_29_sy_auto_and_recorded_template_completion/evaluation/031_29_sy_baseline_summary.csv"
+output_root: "benchmark_results/031_30_sy_ppo_vs_completed_baselines"
+expected_candidate_rows: 57
+expected_baseline_rows: 114
+status: "pre_registered"

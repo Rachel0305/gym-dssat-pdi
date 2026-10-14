@@ -1,0 +1,24 @@
+{
+  "task_id": "089_00_fq2018_corrected_ten_year_paper_summary",
+  "station_code": "FQA",
+  "site": "FQ",
+  "years": [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023],
+  "checkpoint_step": 100000,
+  "paper_scenarios": [
+    "null",
+    "recorded_farmer_template",
+    "dssat_auto",
+    "official_extension_expert",
+    "ppo"
+  ],
+  "inputs": {
+    "baseline_051_02": "benchmark_results/051_02_fqa_originIC_four_baselines_static_level1/evaluation/051_02_baseline_summary.csv",
+    "season_051_03": "benchmark_results/051_03_fqa_originIC_051_00_fqa_originIC_expanded_action_maskableppo_auto_nstd050_minimal_five_scenario_figures_ckpt100000/tables/051_03_fqa_five_scenario_season_summary.csv",
+    "corrected_baseline_088": "benchmark_results/088_00_fq2018_input_quality_correction_run_corrected2018/evaluation/051_02_baseline_summary.csv",
+    "corrected_ppo_088": "benchmark_results/088_00_fq2018_input_quality_correction/ppo_replay_corrected2018_rerun2/088_00_ppo_corrected2018_summary.csv",
+    "correction_manifest_088": "benchmark_results/088_00_fq2018_input_quality_correction/088_00_correction_manifest.json"
+  },
+  "output_root": "benchmark_results/089_00_fq2018_corrected_ten_year_paper_summary",
+  "strict_tolerance": 1e-9,
+  "dry_run": false
+}

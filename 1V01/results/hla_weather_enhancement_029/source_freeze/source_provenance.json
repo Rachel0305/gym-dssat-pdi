@@ -1,0 +1,83 @@
+{
+  "task": "029",
+  "site": "HLA",
+  "scope": "2004-01-01/2013-12-31",
+  "expected_days": 3653,
+  "source_status": "FIVE_GRIDDED_REFERENCE_SENSITIVITY_SCENARIOS; NO_FORMAL_SINGLE_RAIN_SOURCE_SELECTED",
+  "scenario_selection": "User chose five isolated limited-candidate tracks in this task",
+  "rainfall_source_hierarchy": "014 selected HLA D222 / GHCN 50756 / approved secondary GHCN on 3542 dates; five 024 gridded references fill the remaining 111 dates separately",
+  "resolved_source_counts_before_111_fills": {
+    "NOAA_GHCN_DAILY": 2507,
+    "HLA_LOCAL_D222_CHAIN": 962,
+    "NOAA_GHCN_DAILY_SECONDARY": 73
+  },
+  "unresolved_014_dates": 111,
+  "nonrain_rule": "weather_clean HLA SRAD/TMAX/TMIN plus 008 screened 92-date overlays as frozen in 024",
+  "missing_treatment": "Five scenario-specific 024 gridded reference values on 111 dates; no interpolation/replacement elsewhere; outputs remain sensitivity inputs",
+  "d222_blank_semantics": "Official D222 export blank code not documented; do not equate every blank with zero outside explicit source hierarchy",
+  "date_anchor": "D222 20:00-to-20:00 ending-date convention supported generally; CERN export anchor inferred, not formally documented",
+  "2013_climate_sanity": "SUSPICIOUS per 014/024; five scenarios add only about 2.84-3.10 mm to 2013 111 target days",
+  "sha256_inputs": [
+    {
+      "path": "data/external/人工大气观测降雨蒸发能见度日值.xls",
+      "bytes": 9414656,
+      "sha256": "f3ead8370c5986de5617e1c2fbc965378efb47ab8e86ff016e32483529e46b36"
+    },
+    {
+      "path": "results/hla_random_weather_8seed/014_isd50756_recovery/daily_source_selection_after_014.csv",
+      "bytes": 866641,
+      "sha256": "698611be3a833b128569dd02be9c05bf508c011c1a10f871405147d84fdcf084"
+    },
+    {
+      "path": "results/hl_fq_random_weather_8seed/source_audit/nasa_candidate_gapfill.csv",
+      "bytes": 48629,
+      "sha256": "2ec2a0cbb452b46867aa81ce6055bfda66b3b2513098b273cf82535bcded54ea"
+    },
+    {
+      "path": "weather_clean/HLA_weather_cleaned.csv",
+      "bytes": 524312,
+      "sha256": "7dd3212559ba5d4e9626bbdf8a52f1fdcc03fba6b3785197c01acb361e301867"
+    },
+    {
+      "path": "results/hla_gridded_fill_sensitivity_024/input_provenance.json",
+      "bytes": 3159,
+      "sha256": "60a8c07fd36f5121e2a8909c440243f1c3e6a550e741ce0c5f187defd85b0321"
+    },
+    {
+      "path": "results/hla_gridded_fill_sensitivity_024/candidate_integrity_check.json",
+      "bytes": 3774,
+      "sha256": "ec759ddc1d3ecde76efb7da91ade26287c38578f7daceb1597f632c6bd2511d7"
+    },
+    {
+      "path": "scripts/build_dssat_cli.py",
+      "bytes": 35852,
+      "sha256": "1a338e725497d4a077e06bf0da397c7bff9ada47a492ff53869960f5d2412426"
+    },
+    {
+      "path": "results/hla_gridded_fill_sensitivity_024/hla_candidate_gpcc_raw_2004_2013.csv",
+      "bytes": 347903,
+      "sha256": "f6ead926bff0fe1615622d2ee24230cbc41b36e17b6c9f4972789d15d231e2e5"
+    },
+    {
+      "path": "results/hla_gridded_fill_sensitivity_024/hla_candidate_cpc_raw_2004_2013.csv",
+      "bytes": 347797,
+      "sha256": "af6160f1e7b23dd3afa71cd3423b5475aa3f393bc2cbcb835e54d537ed1fe541"
+    },
+    {
+      "path": "results/hla_gridded_fill_sensitivity_024/hla_candidate_gpcc_biascorr_2004_2013.csv",
+      "bytes": 348605,
+      "sha256": "5f3f31a5aa88d991e03d318b100c293440b5b1c933b9b4c3184424bfcbc0551e"
+    },
+    {
+      "path": "results/hla_gridded_fill_sensitivity_024/hla_candidate_cpc_biascorr_2004_2013.csv",
+      "bytes": 348415,
+      "sha256": "45ccc74339667cccf261e5c9ccaed2f42b63509c02ece01899202bbe80dcb01c"
+    },
+    {
+      "path": "results/hla_gridded_fill_sensitivity_024/hla_candidate_ensemble_biascorr_2004_2013.csv",
+      "bytes": 349068,
+      "sha256": "8272def94025a05b62ab584fe20baec10529c38adc3b5ebef59941ecacb3da20"
+    }
+  ],
+  "created_at_utc": "2026-10-07T13:52:27.351553+00:00"
+}

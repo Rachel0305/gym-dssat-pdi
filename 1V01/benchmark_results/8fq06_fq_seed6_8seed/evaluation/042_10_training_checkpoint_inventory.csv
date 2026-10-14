@@ -1,0 +1,5 @@
+﻿station_code,site,train_years,seed,checkpoint_step,run_status,model_path,model_sha256,notes
+FQA,FQ,"2005,2006,2007,2008,2009,2010,2011,2012,2013",6,25000,ok,benchmark_results/8fq06_fq_seed6_8seed/models/FQA/FQA_half_split_stress_aware_maskableppo_seed6_ckpt25000.zip,822e0044f914906dcf733a8cb920ea0087d239ef1670874102cf60b68e7f6e73,
+FQA,FQ,"2005,2006,2007,2008,2009,2010,2011,2012,2013",6,50000,ok,benchmark_results/8fq06_fq_seed6_8seed/models/FQA/FQA_half_split_stress_aware_maskableppo_seed6_ckpt50000.zip,b836db8b191598119e4e120d1c91c1bd69d704a326fdcdcf0484affa2e7b0ba1,
+FQA,FQ,"2005,2006,2007,2008,2009,2010,2011,2012,2013",6,75000,ok,benchmark_results/8fq06_fq_seed6_8seed/models/FQA/FQA_half_split_stress_aware_maskableppo_seed6_ckpt75000.zip,045582ffe6a520f11d741162805d153b59d84ad4a976d2711392b3b46c6eff85,
+FQA,FQ,"2005,2006,2007,2008,2009,2010,2011,2012,2013",6,100000,ok,benchmark_results/8fq06_fq_seed6_8seed/models/FQA/FQA_half_split_stress_aware_maskableppo_seed6_ckpt100000.zip,1b7afdc64f5b9d806a3f0bb0f8aaeb2315331e4eda464281e4ad4c625ad01542,

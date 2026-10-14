@@ -1,0 +1,38 @@
+{
+  "task_id": "182",
+  "task_name": "sya_fullseason_ppo_action_ablation",
+  "source_task": "177_sya_dense_yield_credit_smoke2k",
+  "physical_gate_task": "167_sya_weather_v2_fixed_format_gate",
+  "mode": "read_only_fullseason_fixed_schedule_ablation",
+  "station_code": "SYA",
+  "site": "SY",
+  "source_year": 2005,
+  "seed": 0,
+  "checkpoint_step": 2000,
+  "scenario_manifest": "benchmark_results/166_sya_weather_scenario_bank_v2_fixed_format/163_sya_weather_scenario_manifest.csv",
+  "input_root": "DSSAT_auto_validation/sya_weather_scenario_bank_166_fixed_format",
+  "scenario_keys": {
+    "2005": "original",
+    "2006": "early_dry",
+    "2007": "mid_dry",
+    "2008": "late_dry",
+    "2009": "early_wet",
+    "2010": "mid_wet"
+  },
+  "treatments": {
+    "full_ppo": [],
+    "drop_dap97": [97],
+    "drop_dap104": [104],
+    "drop_dap97_dap104": [97, 104]
+  },
+  "target_ablation_daps": [97, 104],
+  "replacement_action_index": 0,
+  "closed_loop_compensation": false,
+  "training_executed": false,
+  "weather_changed": false,
+  "reward_changed": false,
+  "observation_changed": false,
+  "action_mask_changed": false,
+  "action_grid_changed": false,
+  "interpretation_guardrail": "This isolates the full-season contribution of actual PPO irrigation events under a fixed future PPO action schedule. It does not test whether PPO would compensate later if a deleted irrigation were absent."
+}

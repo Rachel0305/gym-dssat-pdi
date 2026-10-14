@@ -1,0 +1,17 @@
+{
+  "task_id": "168",
+  "task_name": "sya_weather_aug_pilot_smoke2k_v2",
+  "source_task": "166_sya_weather_scenario_bank_v2_fixed_format",
+  "physical_gate_task": "167_sya_weather_v2_fixed_format_gate",
+  "station_code": "SYA",
+  "site": "SY",
+  "source_year": 2005,
+  "total_timesteps": 2000,
+  "checkpoint_steps": [1000, 2000],
+  "seed": 0,
+  "scenario_manifest": "benchmark_results/166_sya_weather_scenario_bank_v2_fixed_format/163_sya_weather_scenario_manifest.csv",
+  "input_root": "DSSAT_auto_validation/sya_weather_scenario_bank_166_fixed_format",
+  "validation_executed": false,
+  "weather_only_change": true,
+  "cultivar_soil_management_parameter_perturbation": false
+}

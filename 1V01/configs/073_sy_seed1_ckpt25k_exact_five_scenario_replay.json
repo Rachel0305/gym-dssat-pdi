@@ -1,0 +1,19 @@
+{
+  "task_id": "073_00",
+  "task_name": "sya_seed1_ckpt25k_exact_five_scenario_replay",
+  "container": "nifty_taussig",
+  "python": "/opt/gym_dssat_pdi/bin/python",
+  "station_code": "SYA",
+  "site": "SY",
+  "input_profile": "originIC",
+  "seed": 1,
+  "checkpoint": 25000,
+  "validation_years": [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023],
+  "ppo_run_dir": "benchmark_results/070_00_sya_originIC_seed1_maskableppo_100k",
+  "saved_summary": "benchmark_results/070_00_sya_originIC_seed1_maskableppo_100k/evaluation/070_00_checkpoint_validation_summary.csv",
+  "baseline_root": "benchmark_results/046_03_sya_originIC_four_baselines",
+  "external_auto_root": "benchmark_results/046_04_sya_originIC_external_auto_n_rule_nstd050_minimal_run_auto_nstd050_minimal",
+  "output_root": "benchmark_results/073_00_sya_seed1_ckpt25k_exact_five_scenario_replay",
+  "endpoint_tolerance_kg_ha": 0.5,
+  "contract": "032_22 raw 16-action direct evaluator; no 042_10/040_36 wrapper; no forecast"
+}

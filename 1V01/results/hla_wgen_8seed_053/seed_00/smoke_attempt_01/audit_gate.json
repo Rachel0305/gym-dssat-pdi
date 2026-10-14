@@ -1,0 +1,34 @@
+{
+  "status": "PASS_432_STEP_SMOKE_ARCHIVE_ONLY",
+  "mode": "smoke",
+  "ppo_seed": 0,
+  "checks": {
+    "source_hashes": true,
+    "frozen_contract": true,
+    "budget_and_status": true,
+    "heldout_excluded_and_train_seeds": true,
+    "first_80_schedule_matches_045": true,
+    "run_schedule_and_episode_closure": true,
+    "daily_weather_hash_dates_and_physical": true,
+    "runtime_wgen_cli_and_seed": true,
+    "resources_within_limits": true,
+    "all_checkpoint_files_and_steps": true,
+    "final_model_hash": true,
+    "completed_episode_summary_closure": true
+  },
+  "requested_timesteps": 432,
+  "actual_timesteps": 432,
+  "episode_archives": 3,
+  "completed_episodes": 2,
+  "partial_episodes": 1,
+  "archived_weather_days": 432,
+  "unique_weather_hashes": 3,
+  "checkpoint_files": {
+    "432": {
+      "exists": true,
+      "sha256": "ADF22071F62316871A3319BA56B63D49D06366F2358E882E905A619DE2BC310B"
+    }
+  },
+  "peak_process_tree_rss_mb": 431.84,
+  "elapsed_seconds": 11.55
+}

@@ -1,0 +1,8 @@
+{
+  "case": "sy2014_ic1_icdat14100_single",
+  "description": "2014 IC=1 ICDAT=14100",
+  "experiment_number": 2,
+  "patch_2014_ic": 1,
+  "icdat_override": 14100,
+  "input_root": "/workspace/DSSAT_auto_validation/multisite_new_cultivar_inputs_013/SY"
+}

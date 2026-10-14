@@ -1,0 +1,28 @@
+{
+  "checkpoint_steps_actual": {
+    "25000": 25000,
+    "50000": 50000,
+    "75000": 75000,
+    "100000": 100000
+  },
+  "checkpoint_steps_requested": [
+    25000,
+    50000,
+    75000,
+    100000
+  ],
+  "completed_training_episodes": 940,
+  "elapsed_seconds": 594.624,
+  "error": null,
+  "max_process_tree_rss_mb": 927.03515625,
+  "memory_stop_threshold_mb": 6000,
+  "model_dir": "results/yc_random_weather_ppo/004_05/training/historical/ppo_seed_3/models",
+  "model_final": "results/yc_random_weather_ppo/004_05/training/historical/ppo_seed_3/models/checkpoint_100000.zip",
+  "ppo_seed": 3,
+  "run_status": "completed",
+  "total_timesteps_actual": 100080,
+  "total_timesteps_requested": 100000,
+  "training_regime": "HISTORICAL_WEATHER",
+  "training_weather_schedule_id": "historical_years_64003_v1",
+  "training_weather_source": "observed_historical"
+}

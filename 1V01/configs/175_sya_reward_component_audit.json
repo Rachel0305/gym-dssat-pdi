@@ -1,0 +1,15 @@
+{
+  "task_id": 175,
+  "name": "sya_reward_component_audit",
+  "mode": "read_only",
+  "source_experiments": [
+    "benchmark_results/172_sya_weather_aug_rain_observation_smoke2k",
+    "benchmark_results/174_sya_weather_aug_rain_obs_no_swfac_guardrail_smoke2k"
+  ],
+  "daily_glob": "daily_outputs/SYA/*_daily.csv",
+  "checkpoint_steps": [1000, 2000],
+  "run_training": false,
+  "modify_environment": false,
+  "modify_reward": false,
+  "pair_key": ["weather_variant", "checkpoint_step"]
+}

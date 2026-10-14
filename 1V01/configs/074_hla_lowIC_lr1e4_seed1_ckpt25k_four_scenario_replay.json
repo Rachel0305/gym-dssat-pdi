@@ -1,0 +1,20 @@
+{
+  "task_id": "074_00",
+  "task_name": "hla_lowIC_lr1e4_seed1_ckpt25000_four_scenario_replay",
+  "station_code": "HLA",
+  "site": "HL",
+  "input_profile": "lowIC",
+  "seed": 1,
+  "checkpoint": 25000,
+  "ppo_run_dir": "benchmark_results/073_00_hla_lowIC_lr1e4_seed1_rescue25k",
+  "saved_summary": "benchmark_results/073_00_hla_lowIC_lr1e4_seed1_rescue25k/evaluation/073_checkpoint_validation_summary.csv",
+  "baseline_root": "benchmark_results/034_00_multisite_input_ic1_four_baseline_rebuild",
+  "output_root": "benchmark_results/074_00_hla_lowIC_lr1e4_seed1_ckpt25000_four_scenario_replay",
+  "validation_years": [2014,2015,2016,2017,2018,2019,2020,2021,2022,2023],
+  "endpoint_tolerance_kg_ha": 0.5,
+  "actions": {"irrigation_levels_mm": [0.0,15.0,30.0,45.0], "nitrogen_levels_kg_ha": [0.0,40.0,80.0,120.0]},
+  "observation_contract": {"base": "046_02_raw_observation", "normalization_enabled": false, "weather_forecast_enabled": false},
+  "ppo": {"learning_rate": 0.0001, "gamma": 1.0, "gae_lambda": 1.0, "n_steps": 144, "batch_size": 144, "n_epochs": 5, "ent_coef": 0.01, "net_arch": [64,64]},
+  "main_scenarios": ["recorded_farmer_template", "official_extension_expert", "dssat_auto", "rl_candidate"],
+  "excluded_scenarios": ["dssat_auto_external_n"]
+}

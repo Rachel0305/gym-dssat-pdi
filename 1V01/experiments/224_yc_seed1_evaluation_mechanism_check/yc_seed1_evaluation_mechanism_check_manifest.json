@@ -1,0 +1,39 @@
+{
+  "status": "completed_read_only",
+  "task": "yc_seed1_evaluation_mechanism_check",
+  "shared_states": 1002,
+  "probability_rows": 32064,
+  "methods": [
+    "Original seed1 @100K",
+    "Augmented seed1 @100K"
+  ],
+  "source_daily_root": "benchmark_results/222YCA_O1_yc_v1_original_seed1/daily_outputs/YCA",
+  "source_daily_sha256": {
+    "2014": "2d92a82e9bd3554a377ffc84caf50c0cd88e7de6e8e9fbc4e916e439cc899221",
+    "2015": "16a177feae9c02afccbeae09cf46ccdcac709a2e4bd5cccfd6926a84b303b65c",
+    "2016": "85a502b4d768306d93bce129eca8ce81181c1f35f85edfe207d5ec8387694ec7",
+    "2017": "3d9ec7a2f885d7ac92f7f12b1c3fa0d4f3fd83e7f7434d853f577a30f1f44289",
+    "2018": "10ca1d5831d47c46212d34913d0832188261f3d09b977eb1b7dd44a2120b36c8",
+    "2019": "f6be575bdfb83b8bd55ae3d72610628623671ea715aa4bc7f1f38d657df3b1df",
+    "2020": "c4fb86d98f9197a9add7606212735a7527329888f4359aebf3795b65c16b9d4d",
+    "2021": "7a0cd11c22ea3d55e8fa376d9410cc6dc956ad41f968936508c51d4643bf2f34",
+    "2022": "93db8c5e5c9b905b1b2c662e3024f36e76d697c429c63c58d1fef1aad9bd2261",
+    "2023": "f5151997450f180dbc2da01ba4e025764cb6e1f86c8f7e67a404c9d0401dac67"
+  },
+  "model_sha256": {
+    "Original": "8dbd9ba2bef0330384d682dc03825eb775bfa2b596043c60ce5fe58fff8fe797",
+    "Augmented": "d84636ff143cbfd10fa3f2166be925fec9f0a14eb7c4dd5d9e570c8bbbe483a3"
+  },
+  "output_files": [
+    "docs/yc_seed1_evaluation_mechanism_check.md",
+    "results/yc_seed1_policy_probability_comparison.csv",
+    "results/yc_seed1_policy_state_comparison_summary.csv",
+    "results/yc_seed1_mask_audit.csv",
+    "results/yc_seed1_action_grid_mapping.csv",
+    "results/yc_seed1_augmented_internal_phase_summary.csv",
+    "results/yc_seed1_evaluation_mechanism_integrity_checks.csv",
+    "experiments/224_yc_seed1_evaluation_mechanism_check/scripts/run_check.py",
+    "experiments/224_yc_seed1_evaluation_mechanism_check/run_log.md"
+  ],
+  "all_integrity_checks_passed": true
+}

@@ -1,0 +1,65 @@
+{
+  "task_id": "061_00",
+  "task_name": "lca_lowIC_weather_augmentation_smoke_maskableppo",
+  "reference_run": "053_00_lca_lowIC_expanded_action_maskableppo",
+  "station_code": "LCA",
+  "site": "LC",
+  "input_profile": "lowIC",
+  "seed": 0,
+  "training": {
+    "total_timesteps": 5000,
+    "checkpoint_steps": [1000, 2500, 5000]
+  },
+  "actions": {
+    "irrigation_levels_mm": [0.0, 15.0, 30.0, 45.0],
+    "nitrogen_levels_kg_ha": [0.0, 40.0, 80.0, 120.0]
+  },
+  "weather_augmentation": {
+    "enabled": true,
+    "source_input_root": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013_lowIC_manual",
+    "augmented_input_root": "DSSAT_auto_validation/lca_lowIC_weather_augmented_061_00",
+    "train_years": [2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013],
+    "validation_years_original_only": [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023],
+    "variants": [
+      {
+        "name": "original",
+        "pseudo_year_offset": 0,
+        "rain_multiplier": 1.0,
+        "window": "none"
+      },
+      {
+        "name": "early_dry",
+        "pseudo_year_offset": 30,
+        "rain_multiplier": 0.5,
+        "window": "dap_1_30"
+      },
+      {
+        "name": "mid_dry",
+        "pseudo_year_offset": 50,
+        "rain_multiplier": 0.5,
+        "window": "dap_31_60"
+      },
+      {
+        "name": "early_wet",
+        "pseudo_year_offset": 70,
+        "rain_multiplier": 1.5,
+        "window": "dap_1_30"
+      }
+    ],
+    "temperature_delta_c": 0.0,
+    "first_smoke_policy": "rainfall-only perturbation; do not alter temperature in the first smoke"
+  },
+  "observation_contract": {
+    "base": "046_02_raw_observation",
+    "normalization_enabled": false,
+    "weather_forecast_enabled": false
+  },
+  "scope": {
+    "purpose": "Weather-augmentation smoke for LC: expand training weather worlds so fixed DAP templates become less stable; validate only on original 2014-2023 years and audit action sensitivity.",
+    "validation_policy": "original_10_years_plus_action_weather_sensitivity_only"
+  },
+  "literature_basis": {
+    "rain_multiplier_choice": "Use 0.5 and 1.5 as a C3MP/AgMIP-style sensitivity range for precipitation perturbation smoke; keep temperature unchanged for controlled first test.",
+    "rl_rationale": "Domain/weather randomization increases environment diversity so policy learning cannot rely solely on memorized year templates."
+  }
+}

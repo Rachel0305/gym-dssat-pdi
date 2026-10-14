@@ -1,0 +1,19 @@
+task_id: "031_29"
+description: "SYA all-year DSSAT-auto repair and recorded-template transfer completion."
+source_env_config: "benchmark_results/031_27_sy_all_year_frozen_maskableppo_transfer/configs/031_27_resolved_env_config.yaml"
+existing_baseline_csv: "benchmark_results/028_02_four_baseline_envelope_readiness/028_02_baseline_metrics_recomputed.csv"
+output_root: "benchmark_results/031_29_sy_auto_and_recorded_template_completion"
+station_code: "SYA"
+station_label_for_existing: "SY"
+seed: 0
+max_steps: 420
+scenarios_to_generate:
+  - "null"
+  - "dssat_auto"
+  - "official_extension_expert"
+  - "recorded_farmer_template_2012"
+  - "recorded_farmer_template_2014"
+  - "recorded_farmer_template_2015"
+recorded_farmer_policy: "template_transfer_from_2012_2014_2015_not_real_recorded"
+expert_region: "northeast_greatwall_spring_maize"
+status: "pre_registered"

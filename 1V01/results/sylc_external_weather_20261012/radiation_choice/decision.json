@@ -1,0 +1,8 @@
+{
+  "user_confirmed_above_30000": "missing",
+  "rsds_required": false,
+  "SY": "Original SRAD not adequate unchanged for WGEN; neighbour measured rsds0 covers all 160 flagged dates. Check bias before gap-only replacement.",
+  "LC": "13 provenance flags; original SRAD usable as candidate with train-only gap treatment and sensitivity review. No need to replace whole radiation series with estimated rsds.",
+  "candidate_injection": "NOT_DONE",
+  "FQ_seed7": "fresh isolated smoke running, then technical-gated formal; behavior outcome retained"
+}

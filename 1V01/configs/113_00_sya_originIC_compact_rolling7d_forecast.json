@@ -1,0 +1,24 @@
+{
+  "task_id": "113_00",
+  "task_name": "sya_originIC_compact_rolling7d_forecast",
+  "reference_run": "046_06_sya_originIC_046_10_sya_originIC_expanded_action_maskableppo_nstd050_minimal_auto_nstd050_minimal_five_scenario_daily_ckpt100000_auto_nstd050_minimal_run_auto_nstd050_minimal",
+  "station_code": "SYA",
+  "site": "SY",
+  "input_profile": "originIC",
+  "seed": 0,
+  "report_checkpoint": 2000,
+  "training": {"total_timesteps": 2000, "checkpoint_steps": [1000, 2000]},
+  "actions": {"irrigation_levels_mm": [0.0, 15.0, 30.0, 45.0], "nitrogen_levels_kg_ha": [0.0, 40.0, 80.0, 120.0]},
+  "observation_contract": {"base": "046_02_raw_observation", "normalization_enabled": false, "weather_forecast_enabled": true, "weather_forecast_mode": "rolling_7d_compact_perfect_hindcast", "weather_forecast_note": "At every decision date append normalized rain_next7, tmax_mean_next7 and dry_spell_next7 computed from date+1 through date+7."},
+  "forecast_features": {
+    "enabled": true,
+    "include_today_in_future_windows": false,
+    "source": "historical_WTH_as_perfect_rolling_7d_forecast",
+    "feature_names": ["rain_next7_norm", "tmax_mean_next7_norm", "dry_spell_next7_flag"],
+    "raw_feature_names": ["rain_next7_mm", "tmax_mean_next7_c", "dry_spell_next7_flag"],
+    "scales": {"rain_next7_mm": 120.0, "tmax_center_c": 30.0, "tmax_scale_c": 10.0, "dry_spell_next7_mm": 5.0, "heat_days_threshold_c": 32.0, "heat_days_min": 2.0}
+  },
+  "scope": {"train_years": [2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013], "validation_years": [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023], "reward_and_safety": "inherit_046_02_unchanged", "external_n": false, "purpose": "Test whether a compact rolling 7-day weather representation makes SY PPO responsive without changing reward or PPO."},
+  "execution_policy": {"smoke_only": true, "no_25k_100k": true, "forecast_swap_required_before_long_training": true},
+  "prompt": "prompts/2026-08-15_sy_compact_rolling7d_forecast_smoke2k.md"
+}

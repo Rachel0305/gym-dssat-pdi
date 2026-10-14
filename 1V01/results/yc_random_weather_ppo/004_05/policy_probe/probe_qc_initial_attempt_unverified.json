@@ -1,0 +1,11 @@
+{
+  "status": "UNVERIFIED_VALIDATION_STOP",
+  "model_id": "H3",
+  "fixed_probe_states": 600,
+  "dssat_stepped": false,
+  "predicted_actions_obeyed_saved_masks": true,
+  "failure": "Initial lookup table used only action indices already observed in 004_04 probe predictions; valid canonical action index 6 was absent from that subset.",
+  "prediction_output_written": false,
+  "correction": "Use the frozen canonical 4x4 irrigation-nitrogen action grid for all 16 action indices and cross-check every previously observed 004_04 mapping.",
+  "seed_or_model_changed": false
+}

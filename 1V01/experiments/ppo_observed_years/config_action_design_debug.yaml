@@ -1,0 +1,144 @@
+seed: 0
+
+training:
+  total_timesteps: 5000
+  hla_pilot_station: HLA
+  hla_train_year: 2011
+  hla_eval_years: [2011, 2007, 2009]
+  extension_sites: [SYA, LCA]
+  best_train_years:
+    HLA: 2011
+    SYA: 2012
+    LCA: 2010
+  cv_types:
+    HLA: observed_year_leave_one
+    SYA: observed_year_leave_one
+    LCA: observed_year_leave_one
+
+reward:
+  version: P6_high_economic_pressure
+
+action_designs:
+  - name: baseline_daily_action_current
+    type: baseline
+  - name: A7_decision_interval_7d
+    type: decision_interval
+    decision_interval_days: 7
+  - name: A10_decision_interval_10d
+    type: decision_interval
+    decision_interval_days: 10
+  - name: A15_decision_interval_15d
+    type: decision_interval
+    decision_interval_days: 15
+  - name: B_window_gated_default
+    type: phenology_window
+  - name: A10_plus_B_window_gated
+    type: decision_interval_plus_window
+    decision_interval_days: 10
+
+phenology_windows:
+  fertilization_windows: [[1, 7], [25, 40], [55, 70]]
+  irrigation_windows: [[20, 35], [45, 65], [70, 95]]
+
+cap:
+  cap_name: cap_high
+  season_irrigation_cap: 300.0
+  season_n_cap: 450.0
+
+debug:
+  enabled: false
+  ppo_overrides:
+    learning_rate: 0.0003
+    gamma: 0.99
+    n_steps: 128
+    batch_size: 64
+    ent_coef: 0.0
+    clip_range: 0.2
+
+ppo:
+  total_timesteps_full: 5000
+  learning_rate: null
+  gamma: null
+  n_steps: null
+  batch_size: null
+  ent_coef: null
+  clip_range: null
+
+paths:
+  output_root: Leave_One_experiments/action_design_debug
+  weather_dir: weather_clean_qc
+  wth_dir: Leave_One_experiments/wth_generated_qc
+  my_data_dir: my_data
+  cultivar_file: my_data/MZCER048.CUL
+
+safety:
+  run_pretrain_smoke_check: true
+  do_not_overwrite_raw_inputs: true
+  batch_training_disabled_by_default: false
+
+action_safety:
+  enabled: true
+  daily_irrigation_max: 40.0
+  daily_n_max: 80.0
+  season_irrigation_soft_limit: 300.0
+  season_n_soft_limit: 450.0
+  min_days_between_irrigation: 7
+  min_days_between_fertilization: 10
+  fertilization_allowed_dap_range: [1, 90]
+  irrigation_allowed_dap_range: [1, 120]
+
+quality_gates:
+  require_run_status_ok: true
+  require_episode_completed: true
+  require_daily_csv: true
+  cap_tolerance: 0.000001
+
+runtime:
+  max_steps: 260
+  episode_timeout_seconds: 300
+  mode: all
+
+observed_years:
+  HLA:
+    - year: 2007
+      label: observed_low_rain_year
+      planting_date: "2007-05-05"
+      harvest_window_rain_mm: 345.6
+    - year: 2011
+      label: observed_mid_rain_year
+      planting_date: "2011-05-05"
+      harvest_window_rain_mm: 479.2
+    - year: 2009
+      label: observed_high_rain_year
+      planting_date: "2009-05-02"
+      harvest_window_rain_mm: 489.5
+  SYA:
+    - year: 2014
+      label: observed_low_rain_year
+      planting_date: "2014-04-21"
+      harvest_window_rain_mm: 331.8
+    - year: 2015
+      label: observed_mid_rain_year
+      planting_date: "2015-04-18"
+      harvest_window_rain_mm: 424.1
+    - year: 2012
+      label: observed_high_rain_year
+      planting_date: "2012-04-28"
+      harvest_window_rain_mm: 649.4
+  LCA:
+    - year: 2010
+      label: observed_low_rain_year
+      planting_date: "2010-06-06"
+      harvest_window_rain_mm: 288.5
+    - year: 2011
+      label: observed_mid_rain_year
+      planting_date: "2011-06-15"
+      harvest_window_rain_mm: 300.9
+    - year: 2008
+      label: observed_intermediate_rain_year_3
+      planting_date: "2008-06-19"
+      harvest_window_rain_mm: 357.1
+    - year: 2009
+      label: observed_high_rain_year
+      planting_date: "2009-06-14"
+      harvest_window_rain_mm: 417.1

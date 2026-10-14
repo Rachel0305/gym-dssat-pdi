@@ -1,0 +1,605 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/qtp20a",
+    "id": "qtp20a",
+    "slide": 7,
+    "layoutId": "d4d79df3-4062-4b2b-9d13-bb5b6607aaf3",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "33c7bf8d-2c0d-4384-a962-35b12accb378",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Arial"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "d4d79df3-4062-4b2b-9d13-bb5b6607aaf3",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "33c7bf8d-2c0d-4384-a962-35b12accb378",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "33c7bf8d-2c0d-4384-a962-35b12accb378",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/etcze1gf",
+      "id": "1",
+      "bbox": [
+        72,
+        34,
+        1136,
+        64
+      ],
+      "geometry": "rect",
+      "text": "Pilot 判定与下一阶段",
+      "textPreview": "Pilot 判定与下一阶段",
+      "resolvedFontSize": 40,
+      "resolvedTextStyle": {
+        "fontSize": 40,
+        "typeface": "Arial",
+        "color": "#222B2A",
+        "bold": true,
+        "alignment": "left",
+        "autoFit": "none",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Pilot 判定与下一阶段"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Pilot 判定与下一阶段",
+          "resolvedTextStyle": {
+            "fontSize": 40,
+            "typeface": "Arial",
+            "color": "#222B2A",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Pilot 判定与下一阶段",
+              "fontSize": 40,
+              "typeface": "Arial",
+              "color": "#222B2A",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/1w3ypwfq",
+      "id": "2",
+      "bbox": [
+        72,
+        674,
+        1136,
+        20
+      ],
+      "geometry": "rect",
+      "text": "YC  |  WGEN seed pilot  |  07",
+      "textPreview": "YC  |  WGEN seed pilot  |  07",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "fontSize": 14,
+        "typeface": "Arial",
+        "color": "#52605C",
+        "alignment": "left",
+        "autoFit": "none",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "YC  |  WGEN seed pilot  |  07"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "YC  |  WGEN seed pilot  |  07",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Arial",
+            "color": "#52605C"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "YC  |  WGEN seed pilot  |  07",
+              "fontSize": 14,
+              "typeface": "Arial",
+              "color": "#52605C"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/0vuhgbyl",
+      "id": "3",
+      "bbox": [
+        72,
+        112,
+        1136,
+        2
+      ],
+      "geometry": "rect",
+      "fillColor": "#356B54",
+      "lineColor": "#356B54",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/rq1gjmho",
+      "id": "4",
+      "bbox": [
+        72,
+        154,
+        860,
+        55
+      ],
+      "geometry": "rect",
+      "text": "WGEN_SEED_PILOT_PASS",
+      "textPreview": "WGEN_SEED_PILOT_PASS",
+      "resolvedFontSize": 38,
+      "resolvedTextStyle": {
+        "fontSize": 38,
+        "typeface": "Arial",
+        "color": "#356B54",
+        "bold": true,
+        "alignment": "left",
+        "autoFit": "none",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "WGEN_SEED_PILOT_PASS"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "WGEN_SEED_PILOT_PASS",
+          "resolvedTextStyle": {
+            "fontSize": 38,
+            "typeface": "Arial",
+            "color": "#356B54",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "WGEN_SEED_PILOT_PASS",
+              "fontSize": 38,
+              "typeface": "Arial",
+              "color": "#356B54",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/qpszahg3",
+      "id": "5",
+      "bbox": [
+        72,
+        236,
+        1090,
+        39
+      ],
+      "geometry": "rect",
+      "text": "Gate A 通过：正式 CLI schema 正确，并与 parsefix 数值/字节一致。",
+      "textPreview": "Gate A 通过：正式 CLI schema 正确，并与 parsefix 数值/字节一致。",
+      "resolvedFontSize": 23,
+      "resolvedTextStyle": {
+        "fontSize": 23,
+        "typeface": "Arial",
+        "color": "#222B2A",
+        "alignment": "left",
+        "autoFit": "none",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Gate A 通过：正式 CLI schema 正确，并与 parsefix 数值/字节一致。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Gate A 通过：正式 CLI schema 正确，并与 parsefix 数值/字节一致。",
+          "resolvedTextStyle": {
+            "fontSize": 23,
+            "typeface": "Arial",
+            "color": "#222B2A"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Gate A 通过：正式 CLI schema 正确，并与 parsefix 数值/字节一致。",
+              "fontSize": 23,
+              "typeface": "Arial",
+              "color": "#222B2A"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ds3ylwzu",
+      "id": "6",
+      "bbox": [
+        72,
+        294,
+        1090,
+        58
+      ],
+      "geometry": "rect",
+      "text": "Gate B 通过：6/6 runtime PASS；101 重现；5/5 序列不同；天气 QC PASS。",
+      "textPreview": "Gate B 通过：6/6 runtime PASS；101 重现；5/5 序列不同；天气 QC PASS。",
+      "resolvedFontSize": 23,
+      "resolvedTextStyle": {
+        "fontSize": 23,
+        "typeface": "Arial",
+        "color": "#222B2A",
+        "alignment": "left",
+        "autoFit": "none",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Gate B 通过：6/6 runtime PASS；101 重现；5/5 序列不同；天气 QC PASS。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Gate B 通过：6/6 runtime PASS；101 重现；5/5 序列不同；天气 QC PASS。",
+          "resolvedTextStyle": {
+            "fontSize": 23,
+            "typeface": "Arial",
+            "color": "#222B2A"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Gate B 通过：6/6 runtime PASS；101 重现；5/5 序列不同；天气 QC PASS。",
+              "fontSize": 23,
+              "typeface": "Arial",
+              "color": "#222B2A"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/sruhcry9",
+      "id": "7",
+      "bbox": [
+        72,
+        402,
+        220,
+        35
+      ],
+      "geometry": "rect",
+      "text": "下一步",
+      "textPreview": "下一步",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "fontSize": 22,
+        "typeface": "Arial",
+        "color": "#3E7184",
+        "bold": true,
+        "alignment": "left",
+        "autoFit": "none",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "下一步"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "下一步",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "typeface": "Arial",
+            "color": "#3E7184",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "下一步",
+              "fontSize": 22,
+              "typeface": "Arial",
+              "color": "#3E7184",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/bm5gvqx8",
+      "id": "8",
+      "bbox": [
+        72,
+        445,
+        1030,
+        42
+      ],
+      "geometry": "rect",
+      "text": "003_06_06_yc_wgen_weather_qc_and_dssat_smoke",
+      "textPreview": "003_06_06_yc_wgen_weather_qc_and_dssat_smoke",
+      "resolvedFontSize": 27,
+      "resolvedTextStyle": {
+        "fontSize": 27,
+        "typeface": "Arial",
+        "color": "#222B2A",
+        "bold": true,
+        "alignment": "left",
+        "autoFit": "none",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "003_06_06_yc_wgen_weather_qc_and_dssat_smoke"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "003_06_06_yc_wgen_weather_qc_and_dssat_smoke",
+          "resolvedTextStyle": {
+            "fontSize": 27,
+            "typeface": "Arial",
+            "color": "#222B2A",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "003_06_06_yc_wgen_weather_qc_and_dssat_smoke",
+              "fontSize": 27,
+              "typeface": "Arial",
+              "color": "#222B2A",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/alwzmlgn",
+      "id": "9",
+      "bbox": [
+        72,
+        512,
+        1090,
+        68
+      ],
+      "geometry": "rect",
+      "text": "先处理或解释 runtime 元数据警告，再检查作物生长、产量及水氮状态。\n本轮结果不等于 crop-output 验证通过，也不授权 PPO 长训。",
+      "textPreview": "先处理或解释 runtime 元数据警告，再检查作物生长、产量及水氮状态。 | 本轮结果不等于 crop-output 验证通过，也不授权 PPO 长训。",
+      "resolvedFontSize": 21,
+      "resolvedTextStyle": {
+        "fontSize": 21,
+        "typeface": "Arial",
+        "color": "#B9543D",
+        "alignment": "left",
+        "autoFit": "none",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "先处理或解释 runtime 元数据警告，再检查作物生长、产量及水氮状态。"
+          },
+          {
+            "index": 2,
+            "text": "本轮结果不等于 crop-output 验证通过，也不授权 PPO 长训。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "先处理或解释 runtime 元数据警告，再检查作物生长、产量及水氮状态。",
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "typeface": "Arial",
+            "color": "#B9543D"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "先处理或解释 runtime 元数据警告，再检查作物生长、产量及水氮状态。",
+              "fontSize": 21,
+              "typeface": "Arial",
+              "color": "#B9543D"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "本轮结果不等于 crop-output 验证通过，也不授权 PPO 长训。",
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "typeface": "Arial",
+            "color": "#B9543D"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "本轮结果不等于 crop-output 验证通过，也不授权 PPO 长训。",
+              "fontSize": 21,
+              "typeface": "Arial",
+              "color": "#B9543D"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

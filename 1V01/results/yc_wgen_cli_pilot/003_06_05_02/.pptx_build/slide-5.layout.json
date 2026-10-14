@@ -1,0 +1,1175 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/mdw87g",
+    "id": "mdw87g",
+    "slide": 5,
+    "layoutId": "d4d79df3-4062-4b2b-9d13-bb5b6607aaf3",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "33c7bf8d-2c0d-4384-a962-35b12accb378",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Arial"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "d4d79df3-4062-4b2b-9d13-bb5b6607aaf3",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "33c7bf8d-2c0d-4384-a962-35b12accb378",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "33c7bf8d-2c0d-4384-a962-35b12accb378",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/y18bulk3",
+      "id": "1",
+      "bbox": [
+        72,
+        34,
+        1136,
+        64
+      ],
+      "geometry": "rect",
+      "text": "Seed 101–105：五条不同天气序列",
+      "textPreview": "Seed 101–105：五条不同天气序列",
+      "resolvedFontSize": 40,
+      "resolvedTextStyle": {
+        "fontSize": 40,
+        "typeface": "Arial",
+        "color": "#222B2A",
+        "bold": true,
+        "alignment": "left",
+        "autoFit": "none",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Seed 101–105：五条不同天气序列"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Seed 101–105：五条不同天气序列",
+          "resolvedTextStyle": {
+            "fontSize": 40,
+            "typeface": "Arial",
+            "color": "#222B2A",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Seed 101–105：五条不同天气序列",
+              "fontSize": 40,
+              "typeface": "Arial",
+              "color": "#222B2A",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/l4zu5g3u",
+      "id": "2",
+      "bbox": [
+        72,
+        674,
+        1136,
+        20
+      ],
+      "geometry": "rect",
+      "text": "YC  |  WGEN seed pilot  |  05",
+      "textPreview": "YC  |  WGEN seed pilot  |  05",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "fontSize": 14,
+        "typeface": "Arial",
+        "color": "#52605C",
+        "alignment": "left",
+        "autoFit": "none",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "YC  |  WGEN seed pilot  |  05"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "YC  |  WGEN seed pilot  |  05",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Arial",
+            "color": "#52605C"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "YC  |  WGEN seed pilot  |  05",
+              "fontSize": 14,
+              "typeface": "Arial",
+              "color": "#52605C"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/k3qdwv29",
+      "id": "3",
+      "bbox": [
+        72,
+        112,
+        1136,
+        2
+      ],
+      "geometry": "rect",
+      "fillColor": "#356B54",
+      "lineColor": "#356B54",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "table",
+      "scope": "slide",
+      "aid": "tb/2tgny5sz",
+      "id": "4",
+      "bbox": [
+        72,
+        150,
+        1136,
+        360
+      ],
+      "text": "Seed | 捕获日数 | 序列 hash 前缀 | 不同 seed\n101 | 120 | D9CD9926AE43 | 是\n102 | 117 | 240C34531DC8 | 是\n103 | 117 | DC5C2EAA31F9 | 是\n104 | 116 | 7E6D92914D38 | 是\n105 | 118 | 94E881EBFFFF | 是",
+      "textPreview": "Seed | 捕获日数 | 序列 hash 前缀 | 不同 seed | 101 | 120 | D9CD9926AE43 | 是 | 102 | 117 | 240C34531DC8 | 是 | 103 | 117 | DC5C2EAA31F9 | 是 | 104 | 1...",
+      "rows": 6,
+      "cols": 4,
+      "cells": [
+        {
+          "index": 1,
+          "row": 1,
+          "column": 1,
+          "bbox": [
+            72,
+            150,
+            284,
+            60
+          ],
+          "text": "Seed",
+          "textPreview": "Seed",
+          "fillColor": "#222B2A",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Seed",
+              "resolvedTextStyle": {
+                "fontSize": 19,
+                "typeface": "Arial",
+                "color": "#FFFFFF",
+                "bold": true
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Seed",
+                  "fontSize": 19,
+                  "typeface": "Arial",
+                  "color": "#FFFFFF",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "row": 1,
+          "column": 2,
+          "bbox": [
+            356,
+            150,
+            284,
+            60
+          ],
+          "text": "捕获日数",
+          "textPreview": "捕获日数",
+          "fillColor": "#222B2A",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "捕获日数",
+              "resolvedTextStyle": {
+                "fontSize": 19,
+                "typeface": "Arial",
+                "color": "#FFFFFF",
+                "bold": true
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "捕获日数",
+                  "fontSize": 19,
+                  "typeface": "Arial",
+                  "color": "#FFFFFF",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "row": 1,
+          "column": 3,
+          "bbox": [
+            640,
+            150,
+            284,
+            60
+          ],
+          "text": "序列 hash 前缀",
+          "textPreview": "序列 hash 前缀",
+          "fillColor": "#222B2A",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "序列 hash 前缀",
+              "resolvedTextStyle": {
+                "fontSize": 19,
+                "typeface": "Arial",
+                "color": "#FFFFFF",
+                "bold": true
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "序列 hash 前缀",
+                  "fontSize": 19,
+                  "typeface": "Arial",
+                  "color": "#FFFFFF",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "row": 1,
+          "column": 4,
+          "bbox": [
+            924,
+            150,
+            284,
+            60
+          ],
+          "text": "不同 seed",
+          "textPreview": "不同 seed",
+          "fillColor": "#222B2A",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "不同 seed",
+              "resolvedTextStyle": {
+                "fontSize": 19,
+                "typeface": "Arial",
+                "color": "#FFFFFF",
+                "bold": true
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "不同 seed",
+                  "fontSize": 19,
+                  "typeface": "Arial",
+                  "color": "#FFFFFF",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "row": 2,
+          "column": 1,
+          "bbox": [
+            72,
+            210,
+            284,
+            60
+          ],
+          "text": "101",
+          "textPreview": "101",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "101",
+              "resolvedTextStyle": {
+                "fontSize": 19,
+                "typeface": "Arial",
+                "color": "#222B2A"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "101",
+                  "fontSize": 19,
+                  "typeface": "Arial",
+                  "color": "#222B2A"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "row": 2,
+          "column": 2,
+          "bbox": [
+            356,
+            210,
+            284,
+            60
+          ],
+          "text": "120",
+          "textPreview": "120",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "120",
+              "resolvedTextStyle": {
+                "fontSize": 19,
+                "typeface": "Arial",
+                "color": "#222B2A"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "120",
+                  "fontSize": 19,
+                  "typeface": "Arial",
+                  "color": "#222B2A"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "row": 2,
+          "column": 3,
+          "bbox": [
+            640,
+            210,
+            284,
+            60
+          ],
+          "text": "D9CD9926AE43",
+          "textPreview": "D9CD9926AE43",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "D9CD9926AE43",
+              "resolvedTextStyle": {
+                "fontSize": 19,
+                "typeface": "Arial",
+                "color": "#222B2A"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "D9CD9926AE43",
+                  "fontSize": 19,
+                  "typeface": "Arial",
+                  "color": "#222B2A"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "row": 2,
+          "column": 4,
+          "bbox": [
+            924,
+            210,
+            284,
+            60
+          ],
+          "text": "是",
+          "textPreview": "是",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "是",
+              "resolvedTextStyle": {
+                "fontSize": 19,
+                "typeface": "Arial",
+                "color": "#222B2A"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "是",
+                  "fontSize": 19,
+                  "typeface": "Arial",
+                  "color": "#222B2A"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 9,
+          "row": 3,
+          "column": 1,
+          "bbox": [
+            72,
+            270,
+            284,
+            60
+          ],
+          "text": "102",
+          "textPreview": "102",
+          "fillColor": "#F5F7F5",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "102",
+              "resolvedTextStyle": {
+                "fontSize": 19,
+                "typeface": "Arial",
+                "color": "#222B2A"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "102",
+                  "fontSize": 19,
+                  "typeface": "Arial",
+                  "color": "#222B2A"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "row": 3,
+          "column": 2,
+          "bbox": [
+            356,
+            270,
+            284,
+            60
+          ],
+          "text": "117",
+          "textPreview": "117",
+          "fillColor": "#F5F7F5",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "117",
+              "resolvedTextStyle": {
+                "fontSize": 19,
+                "typeface": "Arial",
+                "color": "#222B2A"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "117",
+                  "fontSize": 19,
+                  "typeface": "Arial",
+                  "color": "#222B2A"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 11,
+          "row": 3,
+          "column": 3,
+          "bbox": [
+            640,
+            270,
+            284,
+            60
+          ],
+          "text": "240C34531DC8",
+          "textPreview": "240C34531DC8",
+          "fillColor": "#F5F7F5",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "240C34531DC8",
+              "resolvedTextStyle": {
+                "fontSize": 19,
+                "typeface": "Arial",
+                "color": "#222B2A"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "240C34531DC8",
+                  "fontSize": 19,
+                  "typeface": "Arial",
+                  "color": "#222B2A"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 12,
+          "row": 3,
+          "column": 4,
+          "bbox": [
+            924,
+            270,
+            284,
+            60
+          ],
+          "text": "是",
+          "textPreview": "是",
+          "fillColor": "#F5F7F5",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "是",
+              "resolvedTextStyle": {
+                "fontSize": 19,
+                "typeface": "Arial",
+                "color": "#222B2A"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "是",
+                  "fontSize": 19,
+                  "typeface": "Arial",
+                  "color": "#222B2A"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 13,
+          "row": 4,
+          "column": 1,
+          "bbox": [
+            72,
+            330,
+            284,
+            60
+          ],
+          "text": "103",
+          "textPreview": "103",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "103",
+              "resolvedTextStyle": {
+                "fontSize": 19,
+                "typeface": "Arial",
+                "color": "#222B2A"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "103",
+                  "fontSize": 19,
+                  "typeface": "Arial",
+                  "color": "#222B2A"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 14,
+          "row": 4,
+          "column": 2,
+          "bbox": [
+            356,
+            330,
+            284,
+            60
+          ],
+          "text": "117",
+          "textPreview": "117",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "117",
+              "resolvedTextStyle": {
+                "fontSize": 19,
+                "typeface": "Arial",
+                "color": "#222B2A"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "117",
+                  "fontSize": 19,
+                  "typeface": "Arial",
+                  "color": "#222B2A"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 15,
+          "row": 4,
+          "column": 3,
+          "bbox": [
+            640,
+            330,
+            284,
+            60
+          ],
+          "text": "DC5C2EAA31F9",
+          "textPreview": "DC5C2EAA31F9",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "DC5C2EAA31F9",
+              "resolvedTextStyle": {
+                "fontSize": 19,
+                "typeface": "Arial",
+                "color": "#222B2A"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "DC5C2EAA31F9",
+                  "fontSize": 19,
+                  "typeface": "Arial",
+                  "color": "#222B2A"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 16,
+          "row": 4,
+          "column": 4,
+          "bbox": [
+            924,
+            330,
+            284,
+            60
+          ],
+          "text": "是",
+          "textPreview": "是",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "是",
+              "resolvedTextStyle": {
+                "fontSize": 19,
+                "typeface": "Arial",
+                "color": "#222B2A"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "是",
+                  "fontSize": 19,
+                  "typeface": "Arial",
+                  "color": "#222B2A"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 17,
+          "row": 5,
+          "column": 1,
+          "bbox": [
+            72,
+            390,
+            284,
+            60
+          ],
+          "text": "104",
+          "textPreview": "104",
+          "fillColor": "#F5F7F5",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "104",
+              "resolvedTextStyle": {
+                "fontSize": 19,
+                "typeface": "Arial",
+                "color": "#222B2A"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "104",
+                  "fontSize": 19,
+                  "typeface": "Arial",
+                  "color": "#222B2A"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 18,
+          "row": 5,
+          "column": 2,
+          "bbox": [
+            356,
+            390,
+            284,
+            60
+          ],
+          "text": "116",
+          "textPreview": "116",
+          "fillColor": "#F5F7F5",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "116",
+              "resolvedTextStyle": {
+                "fontSize": 19,
+                "typeface": "Arial",
+                "color": "#222B2A"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "116",
+                  "fontSize": 19,
+                  "typeface": "Arial",
+                  "color": "#222B2A"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 19,
+          "row": 5,
+          "column": 3,
+          "bbox": [
+            640,
+            390,
+            284,
+            60
+          ],
+          "text": "7E6D92914D38",
+          "textPreview": "7E6D92914D38",
+          "fillColor": "#F5F7F5",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "7E6D92914D38",
+              "resolvedTextStyle": {
+                "fontSize": 19,
+                "typeface": "Arial",
+                "color": "#222B2A"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "7E6D92914D38",
+                  "fontSize": 19,
+                  "typeface": "Arial",
+                  "color": "#222B2A"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 20,
+          "row": 5,
+          "column": 4,
+          "bbox": [
+            924,
+            390,
+            284,
+            60
+          ],
+          "text": "是",
+          "textPreview": "是",
+          "fillColor": "#F5F7F5",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "是",
+              "resolvedTextStyle": {
+                "fontSize": 19,
+                "typeface": "Arial",
+                "color": "#222B2A"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "是",
+                  "fontSize": 19,
+                  "typeface": "Arial",
+                  "color": "#222B2A"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 21,
+          "row": 6,
+          "column": 1,
+          "bbox": [
+            72,
+            450,
+            284,
+            60
+          ],
+          "text": "105",
+          "textPreview": "105",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "105",
+              "resolvedTextStyle": {
+                "fontSize": 19,
+                "typeface": "Arial",
+                "color": "#222B2A"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "105",
+                  "fontSize": 19,
+                  "typeface": "Arial",
+                  "color": "#222B2A"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 22,
+          "row": 6,
+          "column": 2,
+          "bbox": [
+            356,
+            450,
+            284,
+            60
+          ],
+          "text": "118",
+          "textPreview": "118",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "118",
+              "resolvedTextStyle": {
+                "fontSize": 19,
+                "typeface": "Arial",
+                "color": "#222B2A"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "118",
+                  "fontSize": 19,
+                  "typeface": "Arial",
+                  "color": "#222B2A"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 23,
+          "row": 6,
+          "column": 3,
+          "bbox": [
+            640,
+            450,
+            284,
+            60
+          ],
+          "text": "94E881EBFFFF",
+          "textPreview": "94E881EBFFFF",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "94E881EBFFFF",
+              "resolvedTextStyle": {
+                "fontSize": 19,
+                "typeface": "Arial",
+                "color": "#222B2A"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "94E881EBFFFF",
+                  "fontSize": 19,
+                  "typeface": "Arial",
+                  "color": "#222B2A"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 24,
+          "row": 6,
+          "column": 4,
+          "bbox": [
+            924,
+            450,
+            284,
+            60
+          ],
+          "text": "是",
+          "textPreview": "是",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "是",
+              "resolvedTextStyle": {
+                "fontSize": 19,
+                "typeface": "Arial",
+                "color": "#222B2A"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "是",
+                  "fontSize": 19,
+                  "typeface": "Arial",
+                  "color": "#222B2A"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/axobq147",
+      "id": "5",
+      "bbox": [
+        72,
+        556,
+        510,
+        42
+      ],
+      "geometry": "rect",
+      "text": "10 / 10 pairwise 比较不同",
+      "textPreview": "10 / 10 pairwise 比较不同",
+      "resolvedFontSize": 27,
+      "resolvedTextStyle": {
+        "fontSize": 27,
+        "typeface": "Arial",
+        "color": "#356B54",
+        "bold": true,
+        "alignment": "left",
+        "autoFit": "none",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "10 / 10 pairwise 比较不同"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "10 / 10 pairwise 比较不同",
+          "resolvedTextStyle": {
+            "fontSize": 27,
+            "typeface": "Arial",
+            "color": "#356B54",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "10 / 10 pairwise 比较不同",
+              "fontSize": 27,
+              "typeface": "Arial",
+              "color": "#356B54",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/x0fu1g3y",
+      "id": "6",
+      "bbox": [
+        72,
+        610,
+        1100,
+        34
+      ],
+      "geometry": "rect",
+      "text": "逐变量差异按共同日期计数；不同运行的末日随 DSSAT 单季终止日而变化。",
+      "textPreview": "逐变量差异按共同日期计数；不同运行的末日随 DSSAT 单季终止日而变化。",
+      "resolvedFontSize": 19,
+      "resolvedTextStyle": {
+        "fontSize": 19,
+        "typeface": "Arial",
+        "color": "#52605C",
+        "alignment": "left",
+        "autoFit": "none",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "逐变量差异按共同日期计数；不同运行的末日随 DSSAT 单季终止日而变化。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "逐变量差异按共同日期计数；不同运行的末日随 DSSAT 单季终止日而变化。",
+          "resolvedTextStyle": {
+            "fontSize": 19,
+            "typeface": "Arial",
+            "color": "#52605C"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "逐变量差异按共同日期计数；不同运行的末日随 DSSAT 单季终止日而变化。",
+              "fontSize": 19,
+              "typeface": "Arial",
+              "color": "#52605C"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

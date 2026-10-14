@@ -1,0 +1,95 @@
+{
+  "checked_runs": [
+    {
+      "episodes": 20,
+      "evaluation_weather_type": "heldout_wgen",
+      "ppo_seed": 0,
+      "status": "passed",
+      "training_regime": "HISTORICAL_WEATHER"
+    },
+    {
+      "episodes": 10,
+      "evaluation_weather_type": "observed_weather",
+      "ppo_seed": 0,
+      "status": "passed",
+      "training_regime": "HISTORICAL_WEATHER"
+    },
+    {
+      "episodes": 20,
+      "evaluation_weather_type": "heldout_wgen",
+      "ppo_seed": 1,
+      "status": "passed",
+      "training_regime": "HISTORICAL_WEATHER"
+    },
+    {
+      "episodes": 10,
+      "evaluation_weather_type": "observed_weather",
+      "ppo_seed": 1,
+      "status": "passed",
+      "training_regime": "HISTORICAL_WEATHER"
+    },
+    {
+      "episodes": 20,
+      "evaluation_weather_type": "heldout_wgen",
+      "ppo_seed": 2,
+      "status": "passed",
+      "training_regime": "HISTORICAL_WEATHER"
+    },
+    {
+      "episodes": 10,
+      "evaluation_weather_type": "observed_weather",
+      "ppo_seed": 2,
+      "status": "passed",
+      "training_regime": "HISTORICAL_WEATHER"
+    },
+    {
+      "episodes": 20,
+      "evaluation_weather_type": "heldout_wgen",
+      "ppo_seed": 0,
+      "status": "passed",
+      "training_regime": "RANDOM_WEATHER_WGEN"
+    },
+    {
+      "episodes": 10,
+      "evaluation_weather_type": "observed_weather",
+      "ppo_seed": 0,
+      "status": "passed",
+      "training_regime": "RANDOM_WEATHER_WGEN"
+    },
+    {
+      "episodes": 20,
+      "evaluation_weather_type": "heldout_wgen",
+      "ppo_seed": 1,
+      "status": "passed",
+      "training_regime": "RANDOM_WEATHER_WGEN"
+    },
+    {
+      "episodes": 10,
+      "evaluation_weather_type": "observed_weather",
+      "ppo_seed": 1,
+      "status": "passed",
+      "training_regime": "RANDOM_WEATHER_WGEN"
+    },
+    {
+      "episodes": 20,
+      "evaluation_weather_type": "heldout_wgen",
+      "ppo_seed": 2,
+      "status": "passed",
+      "training_regime": "RANDOM_WEATHER_WGEN"
+    },
+    {
+      "episodes": 10,
+      "evaluation_weather_type": "observed_weather",
+      "ppo_seed": 2,
+      "status": "passed",
+      "training_regime": "RANDOM_WEATHER_WGEN"
+    }
+  ],
+  "expected_episode_rows": {
+    "heldout_wgen": 120,
+    "observed_weather": 60
+  },
+  "issues": [],
+  "passed": true,
+  "training_eval_weather_seed_intersection": []
+}

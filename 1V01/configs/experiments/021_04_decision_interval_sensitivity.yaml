@@ -1,0 +1,14 @@
+# Planned only. Current frozen semantics use one shared water/nitrogen interval.
+extends: ../benchmark_defaults.yaml
+site_config: ../sites/hla.yaml
+experiment:
+  experiment_id: 021_04_decision_interval_sensitivity
+  experiment_type: decision_interval_sensitivity
+  description: Shared decision-interval sweep; inherits benchmark_defaults.yaml
+  dry_run: true
+  user_confirmation_required: [constraints.candidate_intervals, site.train_years, evaluation.seeds]
+constraints:
+  min_interval_days: 7
+  candidate_intervals: [7]
+example_command: python -m benchmark.benchmark_runner --config configs/experiments/021_04_decision_interval_sensitivity.yaml --dry-run
+

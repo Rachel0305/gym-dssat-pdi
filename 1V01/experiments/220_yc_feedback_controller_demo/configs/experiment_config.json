@@ -1,0 +1,41 @@
+{
+  "experiment_id": "220",
+  "station": "YCA",
+  "site": "YC",
+  "year": 2019,
+  "input_profile": "lowIC_manual",
+  "input_root": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013_lowIC_manual",
+  "reference_yield_kg_ha": 7453.509521484375,
+  "yield_constraint_fraction": 0.97,
+  "basal_n_kg_ha": 96.0,
+  "preseason_irrigation_mm": 0.0,
+  "fixed_windows": {
+    "n_start_dap": 7,
+    "n_stop_dap": 90,
+    "irrigation_start_dap": 7,
+    "irrigation_stop_dap": 90
+  },
+  "parameter_space": {
+    "n_threshold": [0.02, 0.30],
+    "n_dose": [10, 20, 30, 40, 50, 60],
+    "n_min_interval_days": [3, 14],
+    "n_season_budget": [100, 150, 200, 250, 300],
+    "water_threshold": [0.10, 0.98],
+    "irrigation_dose": [5, 10, 15, 20, 25, 30, 35, 40, 45, 50],
+    "irrigation_min_interval_days": [3, 14],
+    "irrigation_season_budget": [60, 90, 120, 150, 180, 240]
+  },
+  "optimizer": {
+    "name": "NSGA-II",
+    "population": 32,
+    "generations": 20,
+    "seed": 1,
+    "pymoo_available": false,
+    "operator_note": "continuous thresholds, integer intervals, and categorical dose/budget genes use separate sampling/crossover/mutation operators; no continuous-rounding shortcut"
+  },
+  "runtime": {
+    "max_steps": 260,
+    "episode_timeout_seconds": 300,
+    "serial_only": true
+  }
+}

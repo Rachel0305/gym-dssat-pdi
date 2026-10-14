@@ -1,0 +1,22 @@
+{
+  "checkpoint_steps_actual": {
+    "432": 432
+  },
+  "checkpoint_steps_requested": [
+    432
+  ],
+  "completed_training_episodes": 4,
+  "elapsed_seconds": 11.826,
+  "error": null,
+  "max_process_tree_rss_mb": 436.26953125,
+  "memory_stop_threshold_mb": 6000,
+  "model_dir": "results/yc_random_weather_ppo/004_03/smoke/wther_w_daily_capture_smoke_01/models",
+  "model_final": "results/yc_random_weather_ppo/004_03/smoke/wther_w_daily_capture_smoke_01/models/checkpoint_432.zip",
+  "ppo_seed": 0,
+  "run_status": "completed",
+  "total_timesteps_actual": 432,
+  "total_timesteps_requested": 432,
+  "training_regime": "RANDOM_WEATHER_WGEN",
+  "training_weather_schedule_id": "wgen_rseed1_64004_v1",
+  "training_weather_source": "WGEN_random"
+}

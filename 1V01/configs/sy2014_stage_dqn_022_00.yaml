@@ -1,0 +1,42 @@
+experiment_id: 022_00_sy2014_stage_based_dqn_preregistered_design
+status: design_only
+station: SY
+year: 2014
+stage_source: official_extension_expert_fixed_dap_018_02_table1_northeast_spring_maize
+source_stage_daps: [0, 30, 50, 65, 85, 110]
+executable_stage_daps: [1, 30, 50, 65, 85, 110]
+dssat_phenology_interpretation:
+  emergence: 9
+  end_juvenile: 34
+  floral_initiation: 44
+  silking_75pct: 89
+  begin_grain_fill: 99
+  end_grain_fill: 136
+  maturity: 139
+oracle_audit_only_daps: [22, 29, 42, 56, 79]
+action_table:
+  irrigation_mm: [0, 15, 30]
+  nitrogen_kg_ha: [0, 50, 100]
+budgets:
+  irrigation_mm: 120
+  nitrogen_kg_ha: 300
+late_stage_nitrogen_mask:
+  from_dap: 90
+  valid_action_indices_at_dap110: [0, 1, 2]
+reward:
+  null_yield_kg_ha: 5408
+  expert_gate_yield_kg_ha: 11077
+  water_cost: 1
+  nitrogen_cost: 5
+  feasibility_bonus: 1620
+q_target:
+  type: terminal_complete_monte_carlo_return
+  gamma: 1.0
+  one_step_td_enabled: false
+  five_step_td_enabled: false
+  target_network_bootstrap_enabled: false
+training:
+  enabled_in_022_00: false
+dssat:
+  enabled_in_022_00: false
+

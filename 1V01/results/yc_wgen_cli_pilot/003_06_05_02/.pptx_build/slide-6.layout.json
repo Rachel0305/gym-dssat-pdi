@@ -1,0 +1,669 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/7woklt",
+    "id": "7woklt",
+    "slide": 6,
+    "layoutId": "d4d79df3-4062-4b2b-9d13-bb5b6607aaf3",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "33c7bf8d-2c0d-4384-a962-35b12accb378",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Arial"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "d4d79df3-4062-4b2b-9d13-bb5b6607aaf3",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "33c7bf8d-2c0d-4384-a962-35b12accb378",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "33c7bf8d-2c0d-4384-a962-35b12accb378",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2dovalkn",
+      "id": "1",
+      "bbox": [
+        72,
+        34,
+        1136,
+        64
+      ],
+      "geometry": "rect",
+      "text": "Simulation-period 天气 QC",
+      "textPreview": "Simulation-period 天气 QC",
+      "resolvedFontSize": 40,
+      "resolvedTextStyle": {
+        "fontSize": 40,
+        "typeface": "Arial",
+        "color": "#222B2A",
+        "bold": true,
+        "alignment": "left",
+        "autoFit": "none",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Simulation-period 天气 QC"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Simulation-period 天气 QC",
+          "resolvedTextStyle": {
+            "fontSize": 40,
+            "typeface": "Arial",
+            "color": "#222B2A",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Simulation-period 天气 QC",
+              "fontSize": 40,
+              "typeface": "Arial",
+              "color": "#222B2A",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/pgfu50jy",
+      "id": "2",
+      "bbox": [
+        72,
+        674,
+        1136,
+        20
+      ],
+      "geometry": "rect",
+      "text": "YC  |  WGEN seed pilot  |  06",
+      "textPreview": "YC  |  WGEN seed pilot  |  06",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "fontSize": 14,
+        "typeface": "Arial",
+        "color": "#52605C",
+        "alignment": "left",
+        "autoFit": "none",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "YC  |  WGEN seed pilot  |  06"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "YC  |  WGEN seed pilot  |  06",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Arial",
+            "color": "#52605C"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "YC  |  WGEN seed pilot  |  06",
+              "fontSize": 14,
+              "typeface": "Arial",
+              "color": "#52605C"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/of6dcv2t",
+      "id": "3",
+      "bbox": [
+        72,
+        112,
+        1136,
+        2
+      ],
+      "geometry": "rect",
+      "fillColor": "#356B54",
+      "lineColor": "#356B54",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/bihc7q14",
+      "id": "4",
+      "bbox": [
+        72,
+        145,
+        600,
+        42
+      ],
+      "geometry": "rect",
+      "text": "六条序列全部 PASS",
+      "textPreview": "六条序列全部 PASS",
+      "resolvedFontSize": 27,
+      "resolvedTextStyle": {
+        "fontSize": 27,
+        "typeface": "Arial",
+        "color": "#356B54",
+        "bold": true,
+        "alignment": "left",
+        "autoFit": "none",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "六条序列全部 PASS"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "六条序列全部 PASS",
+          "resolvedTextStyle": {
+            "fontSize": 27,
+            "typeface": "Arial",
+            "color": "#356B54",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "六条序列全部 PASS",
+              "fontSize": 27,
+              "typeface": "Arial",
+              "color": "#356B54",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/qh8velkj",
+      "id": "5",
+      "bbox": [
+        72,
+        202,
+        520,
+        95
+      ],
+      "geometry": "rect",
+      "text": "日期连续 · DOY 对齐 · 无重复日 · 数值有限\nRAIN ≥ 0 · SRAD ≥ 0 · TMAX ≥ TMIN · 非全零降雨",
+      "textPreview": "日期连续 · DOY 对齐 · 无重复日 · 数值有限 | RAIN ≥ 0 · SRAD ≥ 0 · TMAX ≥ TMIN · 非全零降雨",
+      "resolvedFontSize": 21,
+      "resolvedTextStyle": {
+        "fontSize": 21,
+        "typeface": "Arial",
+        "color": "#222B2A",
+        "alignment": "left",
+        "autoFit": "none",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "日期连续 · DOY 对齐 · 无重复日 · 数值有限"
+          },
+          {
+            "index": 2,
+            "text": "RAIN ≥ 0 · SRAD ≥ 0 · TMAX ≥ TMIN · 非全零降雨"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "日期连续 · DOY 对齐 · 无重复日 · 数值有限",
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "typeface": "Arial",
+            "color": "#222B2A"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "日期连续 · DOY 对齐 · 无重复日 · 数值有限",
+              "fontSize": 21,
+              "typeface": "Arial",
+              "color": "#222B2A"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "RAIN ≥ 0 · SRAD ≥ 0 · TMAX ≥ TMIN · 非全零降雨",
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "typeface": "Arial",
+            "color": "#222B2A"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "RAIN ≥ 0 · SRAD ≥ 0 · TMAX ≥ TMIN · 非全零降雨",
+              "fontSize": 21,
+              "typeface": "Arial",
+              "color": "#222B2A"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/d4zu90ja",
+      "id": "6",
+      "bbox": [
+        650,
+        145,
+        460,
+        34
+      ],
+      "geometry": "rect",
+      "text": "累计降雨量（mm）",
+      "textPreview": "累计降雨量（mm）",
+      "resolvedFontSize": 21,
+      "resolvedTextStyle": {
+        "fontSize": 21,
+        "typeface": "Arial",
+        "color": "#52605C",
+        "bold": true,
+        "alignment": "left",
+        "autoFit": "none",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "累计降雨量（mm）"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "累计降雨量（mm）",
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "typeface": "Arial",
+            "color": "#52605C",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "累计降雨量（mm）",
+              "fontSize": 21,
+              "typeface": "Arial",
+              "color": "#52605C",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "chart",
+      "scope": "slide",
+      "aid": "ch/o3ap47qh",
+      "id": "7",
+      "bbox": [
+        612,
+        190,
+        575,
+        360
+      ],
+      "chartType": "bar"
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/z6hcba1g",
+      "id": "8",
+      "bbox": [
+        72,
+        360,
+        480,
+        118
+      ],
+      "geometry": "rect",
+      "text": "雨日 22–37 日  ·  最大日雨量 51.05–97.32 mm\n均值 Tmax 30.61–32.11°C  ·  均值 Tmin 19.98–21.08°C\n均值 SRAD 16.01–17.03 MJ/m²/d",
+      "textPreview": "雨日 22–37 日  ·  最大日雨量 51.05–97.32 mm | 均值 Tmax 30.61–32.11°C  ·  均值 Tmin 19.98–21.08°C | 均值 SRAD 16.01–17.03 MJ/m²/d",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "fontSize": 20,
+        "typeface": "Arial",
+        "color": "#222B2A",
+        "alignment": "left",
+        "autoFit": "none",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 4,
+        "lines": [
+          {
+            "index": 1,
+            "text": "雨日 22–37 日  ·  最大日雨量 51.05–97.32 mm"
+          },
+          {
+            "index": 2,
+            "text": "均值 Tmax 30.61–32.11°C  ·  均值 Tmin"
+          },
+          {
+            "index": 3,
+            "text": "19.98–21.08°C"
+          },
+          {
+            "index": 4,
+            "text": "均值 SRAD 16.01–17.03 MJ/m²/d"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "雨日 22–37 日  ·  最大日雨量 51.05–97.32 mm",
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "Arial",
+            "color": "#222B2A"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "雨日 22–37 日  ·  最大日雨量 51.05–97.32 mm",
+              "fontSize": 20,
+              "typeface": "Arial",
+              "color": "#222B2A"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "均值 Tmax 30.61–32.11°C  ·  均值 Tmin 19.98–21.08°C",
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "Arial",
+            "color": "#222B2A"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "均值 Tmax 30.61–32.11°C  ·  均值 Tmin 19.98–21.08°C",
+              "fontSize": 20,
+              "typeface": "Arial",
+              "color": "#222B2A"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "均值 SRAD 16.01–17.03 MJ/m²/d",
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "Arial",
+            "color": "#222B2A"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "均值 SRAD 16.01–17.03 MJ/m²/d",
+              "fontSize": 20,
+              "typeface": "Arial",
+              "color": "#222B2A"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/y58vi5kv",
+      "id": "9",
+      "bbox": [
+        72,
+        548,
+        505,
+        34
+      ],
+      "geometry": "rect",
+      "text": "2004–2013 仅作描述性气候参考；不用于调参。",
+      "textPreview": "2004–2013 仅作描述性气候参考；不用于调参。",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "Arial",
+        "color": "#52605C",
+        "alignment": "left",
+        "autoFit": "none",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "2004–2013 仅作描述性气候参考；不用于调参。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "2004–2013 仅作描述性气候参考；不用于调参。",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "typeface": "Arial",
+            "color": "#52605C"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "2004–2013 仅作描述性气候参考；不用于调参。",
+              "fontSize": 18,
+              "typeface": "Arial",
+              "color": "#52605C"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/obadwvap",
+      "id": "10",
+      "bbox": [
+        72,
+        602,
+        1110,
+        42
+      ],
+      "geometry": "rect",
+      "text": "WARNING.OUT 的站点元数据 / cultivar 字段提示须在 crop-output smoke 评估。",
+      "textPreview": "WARNING.OUT 的站点元数据 / cultivar 字段提示须在 crop-output smoke 评估。",
+      "resolvedFontSize": 19,
+      "resolvedTextStyle": {
+        "fontSize": 19,
+        "typeface": "Arial",
+        "color": "#B9543D",
+        "bold": true,
+        "alignment": "left",
+        "autoFit": "none",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "WARNING.OUT 的站点元数据 / cultivar 字段提示须在 crop-output smoke 评估。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "WARNING.OUT 的站点元数据 / cultivar 字段提示须在 crop-output smoke 评估。",
+          "resolvedTextStyle": {
+            "fontSize": 19,
+            "typeface": "Arial",
+            "color": "#B9543D",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "WARNING.OUT 的站点元数据 / cultivar 字段提示须在 crop-output smoke 评估。",
+              "fontSize": 19,
+              "typeface": "Arial",
+              "color": "#B9543D",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

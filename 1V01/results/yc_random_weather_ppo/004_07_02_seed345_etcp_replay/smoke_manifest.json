@@ -1,0 +1,11 @@
+{
+  "completed_utc": "2026-09-26T07:35:55.353693+00:00",
+  "error": "FileNotFoundError('Missing frozen/replayed input file: /workspace/results/yc_random_weather_ppo/004_05/evaluation/runs/observed_weather/random_weather/ppo_seed_5/rendered_inputs/YCA/2019/eval_observed_weather_RANDOM_WEATHER_WGEN_5_2019/CNYC1901.WTH or /workspace/results/yc_random_weather_ppo/004_07_02_seed345_etcp_replay/evaluation/runs/observed_weather/random_weather/ppo_seed_5/rendered_inputs/YCA/2019/eval_observed_weather_RANDOM_WEATHER_WGEN_5_2019/CNYC1901.WTH')",
+  "passed": false,
+  "rss_limit_mb": 4096.0,
+  "seed": 5,
+  "started_utc": "2026-09-26T07:35:45.667497+00:00",
+  "status": "failed",
+  "traceback": "Traceback (most recent call last):\n  File \"/workspace/src/run_004_07_02_yc_seed345_etcp_replay.py\", line 550, in run_smoke\n    row = run_one(pilot, helper, 5, SMOKE_YEAR, \"smoke\")\n  File \"/workspace/src/run_004_07_02_yc_seed345_etcp_replay.py\", line 276, in run_one\n    input_provenance = check_rendered_inputs(seed, year)\n  File \"/workspace/src/run_004_07_02_yc_seed345_etcp_replay.py\", line 206, in check_rendered_inputs\n    raise FileNotFoundError(f\"Missing frozen/replayed input file: {old_file} or {new_file}\")\nFileNotFoundError: Missing frozen/replayed input file: /workspace/results/yc_random_weather_ppo/004_05/evaluation/runs/observed_weather/random_weather/ppo_seed_5/rendered_inputs/YCA/2019/eval_observed_weather_RANDOM_WEATHER_WGEN_5_2019/CNYC1901.WTH or /workspace/results/yc_random_weather_ppo/004_07_02_seed345_etcp_replay/evaluation/runs/observed_weather/random_weather/ppo_seed_5/rendered_inputs/YCA/2019/eval_observed_weather_RANDOM_WEATHER_WGEN_5_2019/CNYC1901.WTH\n",
+  "year": 2019
+}

@@ -1,0 +1,40 @@
+{
+  "larger_experiment_recommendation": "NO",
+  "n_heldout_wgen_rows": 120,
+  "n_observed_rows": 60,
+  "observed_2014_2023_direction_by_ppo_seed": {
+    "0": "equal",
+    "1": "equal",
+    "2": "equal"
+  },
+  "operational_go_checks": {
+    "observed_comparison_not_worse_for_all_3_seeds": true,
+    "pooled_mean_fertilizer_not_up_more_than_5pct": true,
+    "pooled_mean_reward_difference_positive": false,
+    "pooled_mean_yield_not_down_more_than_2pct": true,
+    "pooled_p10_reward_not_down_more_than_5pct": true,
+    "positive_mean_reward_at_least_2_of_3_ppo_seeds": false
+  },
+  "pilot_decision": "NO_SIGNAL",
+  "pooled_heldout_wgen": {
+    "historical_mean_fertilizer": 120.0,
+    "historical_mean_reward": 0.7561969778052967,
+    "historical_mean_yield": 6452.5417073567705,
+    "historical_p10_reward": 0.5345313759732246,
+    "mean_fertilizer_difference_pct": 0.0,
+    "mean_reward_difference_pct": 0.0,
+    "mean_yield_difference_pct": 0.0,
+    "p10_reward_difference_pct": 0.0,
+    "random_weather_mean_fertilizer": 120.0,
+    "random_weather_mean_reward": 0.7561969778052967,
+    "random_weather_mean_yield": 6452.5417073567705,
+    "random_weather_p10_reward": 0.5345313759732246
+  },
+  "ppo_seed_reward_direction": {
+    "0": "equal",
+    "1": "equal",
+    "2": "equal"
+  },
+  "ppo_seeds_with_positive_reward_change": 0,
+  "statistical_claim_limit": "Descriptive pilot only; no p<0.05 success claim."
+}

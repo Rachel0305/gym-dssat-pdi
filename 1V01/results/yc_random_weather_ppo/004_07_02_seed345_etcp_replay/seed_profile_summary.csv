@@ -1,0 +1,4 @@
+﻿seed,years,mean_yield_kg_ha,mean_irrigation_mm,mean_nitrogen_kg_ha,mean_etcp_mm,mean_wp_et_kg_m3,mean_pfp_n_kg_kg,mean_common_reward,mean_canonical_reward,mean_management_events,mean_action_days_nonzero,yield_best_vs_four_baselines_years,nondominated_among_five_years,common_reward_best_vs_four_baselines_pairs,wp_et_best_vs_four_baselines_pairs,pfp_n_best_vs_four_baselines_pairs
+3,10,6901.893524169922,75.0,100.0,335.82,2.033,72.68,849.9991768188477,0.5722858538683205,4.5,3.5,1,10,35,21,19
+4,10,8202.890686035156,214.5,240.0,368.6,2.224,34.17,680.9067283935547,0.749102621263981,17.3,16.3,3,10,31,23,20
+5,10,8148.688049316406,165.0,240.0,362.27,2.249,33.96,726.792711791992,0.7711728394854068,9.0,5.0,2,10,38,22,18

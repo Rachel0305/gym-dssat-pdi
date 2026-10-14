@@ -1,0 +1,33 @@
+{
+  "deterministic_actions": true,
+  "episodes_completed": 20,
+  "episodes_expected": 20,
+  "evaluation_type": "heldout_wgen",
+  "evaluation_weather_seeds": [
+    1081,
+    1082,
+    1083,
+    1084,
+    1085,
+    1086,
+    1087,
+    1088,
+    1089,
+    1090,
+    1091,
+    1092,
+    1093,
+    1094,
+    1095,
+    1096,
+    1097,
+    1098,
+    1099,
+    1100
+  ],
+  "evaluation_years": [],
+  "model_path": "results/yc_random_weather_ppo/004_05/training/random_weather/ppo_seed_6/models/checkpoint_100000.zip",
+  "ppo_seed": 6,
+  "runtime_seed_role": "independent evaluation environment initialization only",
+  "training_regime": "RANDOM_WEATHER_WGEN"
+}

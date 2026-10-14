@@ -1,0 +1,22 @@
+{
+  "task_id": "090_00_fq_action_grid_counterfactual_audit",
+  "station_code": "FQA",
+  "site": "FQ",
+  "seed": 0,
+  "years": [2014, 2016, 2018, 2020, 2022],
+  "irrigation_totals_mm": [150, 210, 240],
+  "nitrogen_totals_kg_ha": [80, 120, 160, 240],
+  "yield_floor_ratio_vs_ppo": 0.98,
+  "low_n_threshold_kg_ha": 160,
+  "inputs": {
+    "original_root": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013",
+    "corrected_root_088": "benchmark_results/088_00_fq2018_input_quality_correction/corrected_input",
+    "correction_manifest_088": "benchmark_results/088_00_fq2018_input_quality_correction/088_00_correction_manifest.json",
+    "ppo_paper_summary_089": "benchmark_results/089_00_fq2018_corrected_ten_year_paper_summary/tables/089_00_fqa_native_auto_corrected_season_summary_10y.csv",
+    "base_env_config": "experiments/ppo_observed_years/config_032_00_free_timing_stress_aware_ppo_dqn_smoke.yaml",
+    "split_years": "benchmark_results/033_04_multisite_input_enabled_five_site_half_split_maskableppo_rerun/configs/033_04_available_weather_half_split_years.csv"
+  },
+  "output_root": "benchmark_results/090_00_fq_action_grid_counterfactual_audit",
+  "external_n_allowed": false,
+  "training_allowed": false
+}

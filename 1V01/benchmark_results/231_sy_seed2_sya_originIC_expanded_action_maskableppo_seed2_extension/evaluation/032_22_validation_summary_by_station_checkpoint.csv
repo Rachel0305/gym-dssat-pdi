@@ -1,0 +1,5 @@
+﻿station_code,site,checkpoint_step,validation_years,mean_final_grnwt,mean_total_irrigation,mean_total_n,mean_PFP_N,max_nstres,max_swfac,mean_early_reserve_penalty_unscaled,any_metric_win_four_count,mean_gap_yield_vs_four_max,mean_gap_pfp_n_vs_four_max
+SYA,SY,25000,10,10002.072326660156,228.0,240.0,41.67530136108398,0.01815509796142578,0.0,,0,,
+SYA,SY,50000,10,9123.153930664062,60.0,160.0,57.01971206665039,0.14983892440795898,1.0,,0,,
+SYA,SY,75000,10,8838.497741699219,45.0,120.0,73.65414784749349,0.5028216242790222,1.0,,0,,
+SYA,SY,100000,10,8838.497741699219,45.0,120.0,73.65414784749349,0.5028216242790222,1.0,,0,,

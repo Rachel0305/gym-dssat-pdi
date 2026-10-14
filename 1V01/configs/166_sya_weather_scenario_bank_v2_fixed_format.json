@@ -1,0 +1,28 @@
+{
+  "task_id": "166",
+  "task_name": "sya_weather_scenario_bank_v2_fixed_format",
+  "station_code": "SYA",
+  "site": "SY",
+  "weather_prefix": "CNSY",
+  "source_input_root": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013",
+  "target_input_root": "DSSAT_auto_validation/sya_weather_scenario_bank_166_fixed_format",
+  "manifest_output_root": "benchmark_results/166_sya_weather_scenario_bank_v2_fixed_format",
+  "phenology_csv": "data/observed_phenology_dates_standardized.csv",
+  "source_year": 2005,
+  "variants": [
+    {"name": "original", "rain_multiplier": 1.0, "window": "none"},
+    {"name": "early_dry", "rain_multiplier": 0.5, "window": "dap_1_30"},
+    {"name": "mid_dry", "rain_multiplier": 0.5, "window": "dap_31_60"},
+    {"name": "late_dry", "rain_multiplier": 0.5, "window": "dap_61_90"},
+    {"name": "early_wet", "rain_multiplier": 1.5, "window": "dap_1_30"},
+    {"name": "mid_wet", "rain_multiplier": 1.5, "window": "dap_31_60"}
+  ],
+  "constraints": {
+    "simulation_year_is_source_year": true,
+    "weather_dates_keep_source_year": true,
+    "only_rain_changes": true,
+    "dssat_daily_record_width": "DATE7_plus_four_fields_width6",
+    "static_inputs_copied_without_modification": true,
+    "source_input_root_modified": false
+  }
+}

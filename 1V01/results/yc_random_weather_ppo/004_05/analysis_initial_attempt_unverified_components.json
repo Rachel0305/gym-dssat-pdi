@@ -1,0 +1,127 @@
+{
+  "correction": "Reconstruct aggregate components from the frozen canonical episode formula and captured SWFAC penalty; derive stress relief as the reward identity residual. New-model step-level component columns are marked unavailable. Evaluation QC was rerun separately before this archive and now includes the component check.",
+  "files": [
+    {
+      "archive": "backups/yc_random_weather_004_05_initial_unverified_components/results/yc_random_weather_ppo/004_05/all_evaluation_episode_level_0_7.csv",
+      "sha256": "812A8D3B11D808FC79B9C541EEEE133C322B62CED910D686BF0D46DDFC1383C8",
+      "source": "results/yc_random_weather_ppo/004_05/all_evaluation_episode_level_0_7.csv"
+    },
+    {
+      "archive": "backups/yc_random_weather_004_05_initial_unverified_components/results/yc_random_weather_ppo/004_05/all_model_manifest_0_7.csv",
+      "sha256": "917C08CDCB9FDE510884C811A4D81BCCC803FD473F956F85A63A66F4ED4AF304",
+      "source": "results/yc_random_weather_ppo/004_05/all_model_manifest_0_7.csv"
+    },
+    {
+      "archive": "backups/yc_random_weather_004_05_initial_unverified_components/results/yc_random_weather_ppo/004_05/all_model_performance_summary_0_7.csv",
+      "sha256": "282035D06FEECD39D556ED28C5F38370C537B73ADCE72AAEC5AEFD5DB32C1611",
+      "source": "results/yc_random_weather_ppo/004_05/all_model_performance_summary_0_7.csv"
+    },
+    {
+      "archive": "backups/yc_random_weather_004_05_initial_unverified_components/results/yc_random_weather_ppo/004_05/archetype_frequency_by_regime.csv",
+      "sha256": "A354BC52D19D2B531B7C7B8438742BCEF7A05721F4F933A4F25CDADADA2E5429",
+      "source": "results/yc_random_weather_ppo/004_05/archetype_frequency_by_regime.csv"
+    },
+    {
+      "archive": "backups/yc_random_weather_004_05_initial_unverified_components/results/yc_random_weather_ppo/004_05/archetype_performance_summary.csv",
+      "sha256": "37A3D13B6CC14957350B3037FE944293792A5D634F655BDEAE0EE636B66FFDFE",
+      "source": "results/yc_random_weather_ppo/004_05/archetype_performance_summary.csv"
+    },
+    {
+      "archive": "backups/yc_random_weather_004_05_initial_unverified_components/results/yc_random_weather_ppo/004_05/evaluation_step_level_all_models.csv",
+      "sha256": "2DA10CDC51D6E5C0960320966BCEAF02EE5BF6E085A4817BF6C65915E9340830",
+      "source": "results/yc_random_weather_ppo/004_05/evaluation_step_level_all_models.csv"
+    },
+    {
+      "archive": "backups/yc_random_weather_004_05_initial_unverified_components/results/yc_random_weather_ppo/004_05/experiment_log.md",
+      "sha256": "76773D6D656E331149D095DA9F7B3A3EC0D8A7DEC0F2EFADD2A8F22FC1B7A5C7",
+      "source": "results/yc_random_weather_ppo/004_05/experiment_log.md"
+    },
+    {
+      "archive": "backups/yc_random_weather_004_05_initial_unverified_components/results/yc_random_weather_ppo/004_05/multi_seed_decision.json",
+      "sha256": "6B3759B8AC4C8DA6D7994A70BC3AB3636B8468C87B65714E0992BA727342B4C6",
+      "source": "results/yc_random_weather_ppo/004_05/multi_seed_decision.json"
+    },
+    {
+      "archive": "backups/yc_random_weather_004_05_initial_unverified_components/results/yc_random_weather_ppo/004_05/paired_seed_archetype_transition.csv",
+      "sha256": "544C7744A3342BB711BAF48DB9E865AD2CE386BD1DE5355327F2D2EDAEBADE97",
+      "source": "results/yc_random_weather_ppo/004_05/paired_seed_archetype_transition.csv"
+    },
+    {
+      "archive": "backups/yc_random_weather_004_05_initial_unverified_components/results/yc_random_weather_ppo/004_05/paired_seed_performance_comparison.csv",
+      "sha256": "24624C8052D711A75B4C717FD7C3FFC916FFEC6C531178EB2A15D3CF802A6EFA",
+      "source": "results/yc_random_weather_ppo/004_05/paired_seed_performance_comparison.csv"
+    },
+    {
+      "archive": "backups/yc_random_weather_004_05_initial_unverified_components/results/yc_random_weather_ppo/004_05/paired_seed_success_criterion.csv",
+      "sha256": "1C789BBF3533983DB127DAAC1ED5E0DE5DBFDDF1DF947F055042F2DEC739C666",
+      "source": "results/yc_random_weather_ppo/004_05/paired_seed_success_criterion.csv"
+    },
+    {
+      "archive": "backups/yc_random_weather_004_05_initial_unverified_components/results/yc_random_weather_ppo/004_05/policy_archetype_assignment.csv",
+      "sha256": "7651A1718D7835933AD8D25ED7157A7EB1BB5D06AFF7A10077B3AA09030187D7",
+      "source": "results/yc_random_weather_ppo/004_05/policy_archetype_assignment.csv"
+    },
+    {
+      "archive": "backups/yc_random_weather_004_05_initial_unverified_components/results/yc_random_weather_ppo/004_05/prototype_similarity.csv",
+      "sha256": "8763C54534A8AE991D071882E0A15CC4C773A58A298CD85720342DB328EB1F95",
+      "source": "results/yc_random_weather_ppo/004_05/prototype_similarity.csv"
+    },
+    {
+      "archive": "backups/yc_random_weather_004_05_initial_unverified_components/results/yc_random_weather_ppo/004_05/archetype_analysis/rollout_behavior_by_model_domain.csv",
+      "sha256": "A96B4BFE2F9CF5C8BD56E9007B811667203D83FD9257D66FE97B79AA292A9968",
+      "source": "results/yc_random_weather_ppo/004_05/archetype_analysis/rollout_behavior_by_model_domain.csv"
+    },
+    {
+      "archive": "backups/yc_random_weather_004_05_initial_unverified_components/results/yc_random_weather_ppo/004_05/archetype_analysis/management_timing_distribution.csv",
+      "sha256": "27D1965C430D17A7A5AA785043278AE1D135506290B965ED9F6B32A44426CECD",
+      "source": "results/yc_random_weather_ppo/004_05/archetype_analysis/management_timing_distribution.csv"
+    },
+    {
+      "archive": "backups/yc_random_weather_004_05_initial_unverified_components/docs/yc_random_weather_multi_seed_archetype_experiment.md",
+      "sha256": "74D5BA99D667623EF3A437FFDCEA04980DE999793D36434CF9D5A323A03BCA28",
+      "source": "docs/yc_random_weather_multi_seed_archetype_experiment.md"
+    },
+    {
+      "archive": "backups/yc_random_weather_004_05_initial_unverified_components/results/yc_random_weather_ppo/004_05/figures/01_archetype_counts.png",
+      "sha256": "88DB39794655E688BF9064B5BECFEC31D9EDE7A4ACC6002FD68BF6245878AE3A",
+      "source": "results/yc_random_weather_ppo/004_05/figures/01_archetype_counts.png"
+    },
+    {
+      "archive": "backups/yc_random_weather_004_05_initial_unverified_components/results/yc_random_weather_ppo/004_05/figures/02_paired_archetype_transitions.png",
+      "sha256": "8266CCD44E9BB94FECD2A90AC0946A7513607901615FF1D52B32C379873A5101",
+      "source": "results/yc_random_weather_ppo/004_05/figures/02_paired_archetype_transitions.png"
+    },
+    {
+      "archive": "backups/yc_random_weather_004_05_initial_unverified_components/results/yc_random_weather_ppo/004_05/figures/03_heldout_wgen_paired_reward.png",
+      "sha256": "10630A18A2875526396C125F255418AA008A8E0DFD36B283AABC5ABF892C91C9",
+      "source": "results/yc_random_weather_ppo/004_05/figures/03_heldout_wgen_paired_reward.png"
+    },
+    {
+      "archive": "backups/yc_random_weather_004_05_initial_unverified_components/results/yc_random_weather_ppo/004_05/figures/04_observed_weather_paired_reward.png",
+      "sha256": "863BC7DF4FBF6353F69A5B74D4EF000698AB5E4E3F7A6D7A43A9D5F0711E81D6",
+      "source": "results/yc_random_weather_ppo/004_05/figures/04_observed_weather_paired_reward.png"
+    },
+    {
+      "archive": "backups/yc_random_weather_004_05_initial_unverified_components/results/yc_random_weather_ppo/004_05/figures/05_seed_reward_differences.png",
+      "sha256": "EB2A5DF778EB00CF1D33C8F9A9CA6BBA93B9465248BDCD86674E4EE396A4A7E5",
+      "source": "results/yc_random_weather_ppo/004_05/figures/05_seed_reward_differences.png"
+    },
+    {
+      "archive": "backups/yc_random_weather_004_05_initial_unverified_components/results/yc_random_weather_ppo/004_05/figures/06_heldout_wgen_reward_by_archetype.png",
+      "sha256": "EB88D7BE628B489B29A7052F0E5893558F9C59E58FE9D39DCBD94DF3E5662234",
+      "source": "results/yc_random_weather_ppo/004_05/figures/06_heldout_wgen_reward_by_archetype.png"
+    },
+    {
+      "archive": "backups/yc_random_weather_004_05_initial_unverified_components/results/yc_random_weather_ppo/004_05/figures/07_observed_weather_reward_by_archetype.png",
+      "sha256": "E7EC5A58C6C5C5B659060AB338332F47F1B4530E893581BD63B3C95C0FCEA0BE",
+      "source": "results/yc_random_weather_ppo/004_05/figures/07_observed_weather_reward_by_archetype.png"
+    },
+    {
+      "archive": "backups/yc_random_weather_004_05_initial_unverified_components/results/yc_random_weather_ppo/004_05/figures/08_seasonal_irrigation_n_by_archetype.png",
+      "sha256": "127BA4079AF428B2612ED4172FFA429C5C6AFBC5FAF63BD37D9D9129839FBF48",
+      "source": "results/yc_random_weather_ppo/004_05/figures/08_seasonal_irrigation_n_by_archetype.png"
+    }
+  ],
+  "reason": "Initial new-model episode reward component columns were incorrectly populated from nonexistent step-info keys and appeared as zeros.",
+  "status": "preserved_before_corrected_analysis"
+}

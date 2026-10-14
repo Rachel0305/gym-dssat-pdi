@@ -1,0 +1,56 @@
+[
+  {
+    "episode_index": 1,
+    "historical_year": 2011,
+    "weather_seed": 1070,
+    "pool": "train"
+  },
+  {
+    "episode_index": 2,
+    "historical_year": 2007,
+    "weather_seed": 1065,
+    "pool": "train"
+  },
+  {
+    "episode_index": 3,
+    "historical_year": 2006,
+    "weather_seed": 1053,
+    "pool": "train"
+  },
+  {
+    "episode_index": 4,
+    "historical_year": 2012,
+    "weather_seed": 1009,
+    "pool": "train"
+  },
+  {
+    "episode_index": 5,
+    "historical_year": 2009,
+    "weather_seed": 1050,
+    "pool": "train"
+  },
+  {
+    "episode_index": 6,
+    "historical_year": 2013,
+    "weather_seed": 1064,
+    "pool": "train"
+  },
+  {
+    "episode_index": 7,
+    "historical_year": 2005,
+    "weather_seed": 1026,
+    "pool": "train"
+  },
+  {
+    "episode_index": 8,
+    "historical_year": 2010,
+    "weather_seed": 1013,
+    "pool": "train"
+  },
+  {
+    "episode_index": 9,
+    "historical_year": 2008,
+    "weather_seed": 1052,
+    "pool": "train"
+  }
+]

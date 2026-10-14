@@ -1,0 +1,18 @@
+{
+  "task_id": "179",
+  "task_name": "sya_rain_observation_scale_sensitivity_audit",
+  "source_task": "177_sya_dense_yield_credit_smoke2k",
+  "physical_gate_task": "167_sya_weather_v2_fixed_format_gate",
+  "mode": "read_only_inference_audit",
+  "station_code": "SYA",
+  "site": "SY",
+  "source_year": 2005,
+  "seed": 0,
+  "checkpoint_steps": [1000, 2000],
+  "scenario_manifest": "benchmark_results/166_sya_weather_scenario_bank_v2_fixed_format/163_sya_weather_scenario_manifest.csv",
+  "input_root": "DSSAT_auto_validation/sya_weather_scenario_bank_166_fixed_format",
+  "rain_sweep": [0, 1, 5, 10, 20, 30, 50, 100, 250, 500],
+  "training_executed": false,
+  "reward_changed": false,
+  "action_mask_changed": false
+}

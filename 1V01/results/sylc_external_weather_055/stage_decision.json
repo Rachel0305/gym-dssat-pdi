@@ -1,0 +1,10 @@
+{
+  "SY_full_year": true,
+  "LC_full_year": true,
+  "SY_leap": true,
+  "LC_leap": true,
+  "stage": "PASS_FULL_YEAR_ENGINEERING_AND_PHYSICAL_SCREEN_WITH_DISTRIBUTION_NOTES",
+  "next_step": "FIXED_WEATHER_SERIALIZATION_AND_DSSAT_INJECTION_SMOKE",
+  "PPO_smoke": "NOT_RUN",
+  "formal_training_allowed": false
+}

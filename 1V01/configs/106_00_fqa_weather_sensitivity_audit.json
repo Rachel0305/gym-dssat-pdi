@@ -1,0 +1,43 @@
+{
+  "task_id": "106_00",
+  "task_name": "fqa_weather_sensitivity_audit",
+  "station_code": "FQA",
+  "site": "FQ",
+  "mode": "read_only_model_facing_weather_audit",
+  "source_models": [
+    {
+      "label": "seed1_ckpt2000",
+      "seed": 1,
+      "checkpoint": 2000,
+      "model_path": "benchmark_results/102_00_fqa_originIC_ncost25_entropy002_smoke2k/models/FQA/FQA_half_split_stress_aware_maskableppo_seed1_ckpt2000.zip"
+    },
+    {
+      "label": "seed0_ckpt10000",
+      "seed": 0,
+      "checkpoint": 10000,
+      "model_path": "benchmark_results/097_00_fqa_originIC_reward_ncost25_checkpoint_onset_diagnostic/models/FQA/FQA_half_split_stress_aware_maskableppo_seed0_ckpt10000.zip"
+    }
+  ],
+  "validation_years": [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023],
+  "target_daps": [1, 8, 15, 32, 61, 82],
+  "weather_fields": ["rain", "srad", "tmax", "tmin"],
+  "observation_contract": {
+    "base": "046_02_raw_observation",
+    "normalization_enabled": false,
+    "weather_forecast_enabled": false,
+    "current_weather_append_test": "deferred_until_audit_gate"
+  },
+  "execution_policy": {
+    "training": false,
+    "five_scenario_replay": false,
+    "dssat_controlled_rerun": false,
+    "observation_variant_2k_allowed_only_if_gate": true
+  },
+  "gate": {
+    "min_weather_fields_with_crossyear_variation": 2,
+    "min_weather_varied_dap_groups": 3,
+    "min_nonforced_action_invariant_groups": 3
+  },
+  "output_root": "benchmark_results/106_00_fqa_weather_sensitivity_audit",
+  "prompt": "prompts/106_00_fq_weather_sensitivity_audit.md"
+}

@@ -1,0 +1,101 @@
+{
+  "runs": [
+    {
+      "site": "SY",
+      "tag": "seed1001_a",
+      "weather_seed": 1001,
+      "scope": "full_year_diagnostic",
+      "status": "PASS",
+      "steps": 365,
+      "rows": 365,
+      "physical_qc": {
+        "status": "PASS",
+        "row_count": 365,
+        "missing_by_field": {
+          "RAIN": 0,
+          "SRAD": 0,
+          "TMAX": 0,
+          "TMIN": 0
+        },
+        "all_zero_rainfall": false,
+        "issues": [],
+        "bounds_are_screening_checks_not_calibrated_extreme_value_tests": true
+      },
+      "cli_sha256": "e4fce2601338ba689e294af167bd35e236925a0e9b41c873e2741ce5972b7a0f",
+      "runtime_WTHER": "W",
+      "runtime_seed_verified": true,
+      "weather_sha256": "05f518f4f4bbd0dd0bc0538191ac5683a72b8e38a27d8c446610b510e1887f04",
+      "full_year_dates_complete": true,
+      "actual_start_date": "2005-01-01",
+      "actual_end_date": "2005-12-31",
+      "elapsed_seconds": 2.904483899999832,
+      "peak_tree_rss_mb": 127.90234375
+    },
+    {
+      "site": "SY",
+      "tag": "seed1001_b",
+      "weather_seed": 1001,
+      "scope": "full_year_diagnostic",
+      "status": "PASS",
+      "steps": 365,
+      "rows": 365,
+      "physical_qc": {
+        "status": "PASS",
+        "row_count": 365,
+        "missing_by_field": {
+          "RAIN": 0,
+          "SRAD": 0,
+          "TMAX": 0,
+          "TMIN": 0
+        },
+        "all_zero_rainfall": false,
+        "issues": [],
+        "bounds_are_screening_checks_not_calibrated_extreme_value_tests": true
+      },
+      "cli_sha256": "e4fce2601338ba689e294af167bd35e236925a0e9b41c873e2741ce5972b7a0f",
+      "runtime_WTHER": "W",
+      "runtime_seed_verified": true,
+      "weather_sha256": "05f518f4f4bbd0dd0bc0538191ac5683a72b8e38a27d8c446610b510e1887f04",
+      "full_year_dates_complete": true,
+      "actual_start_date": "2005-01-01",
+      "actual_end_date": "2005-12-31",
+      "elapsed_seconds": 2.910281897999994,
+      "peak_tree_rss_mb": 131.2421875
+    },
+    {
+      "site": "SY",
+      "tag": "seed1002",
+      "weather_seed": 1002,
+      "scope": "full_year_diagnostic",
+      "status": "PASS",
+      "steps": 365,
+      "rows": 365,
+      "physical_qc": {
+        "status": "PASS",
+        "row_count": 365,
+        "missing_by_field": {
+          "RAIN": 0,
+          "SRAD": 0,
+          "TMAX": 0,
+          "TMIN": 0
+        },
+        "all_zero_rainfall": false,
+        "issues": [],
+        "bounds_are_screening_checks_not_calibrated_extreme_value_tests": true
+      },
+      "cli_sha256": "e4fce2601338ba689e294af167bd35e236925a0e9b41c873e2741ce5972b7a0f",
+      "runtime_WTHER": "W",
+      "runtime_seed_verified": true,
+      "weather_sha256": "90998e635ae498ec7f046b33ecfccc0dd633bcaf9adcc967027519965b0bac58",
+      "full_year_dates_complete": true,
+      "actual_start_date": "2005-01-01",
+      "actual_end_date": "2005-12-31",
+      "elapsed_seconds": 3.0489295269999275,
+      "peak_tree_rss_mb": 133.265625
+    }
+  ],
+  "full_year_path_pass": true,
+  "formal_training_allowed": false,
+  "PPO_smoke": "NOT_RUN",
+  "ensemble_quality": "NOT_RUN"
+}

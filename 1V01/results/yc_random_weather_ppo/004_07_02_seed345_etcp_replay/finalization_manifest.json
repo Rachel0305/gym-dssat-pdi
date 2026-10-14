@@ -1,0 +1,15 @@
+{
+  "audited_episodes": 30,
+  "completed_utc": "2026-09-26T07:44:22.833855+00:00",
+  "outputs": [
+    "results/yc_random_weather_ppo/004_07_02_seed345_etcp_replay/seed_year_pareto_status.csv",
+    "results/yc_random_weather_ppo/004_07_02_seed345_etcp_replay/provenance.json",
+    "docs/yc_random_weather_004_07_02_seed345_wp_et_replay.md"
+  ],
+  "pairwise_comparisons": 120,
+  "passed": true,
+  "peak_rss_mb": 445.88671875,
+  "replayed_again": false,
+  "source_formal_manifest_sha256": "4C4AB0E74425AC731F87662B3E01C0366C853B0E8239C60B500A28437D38FE2D",
+  "status": "passed"
+}

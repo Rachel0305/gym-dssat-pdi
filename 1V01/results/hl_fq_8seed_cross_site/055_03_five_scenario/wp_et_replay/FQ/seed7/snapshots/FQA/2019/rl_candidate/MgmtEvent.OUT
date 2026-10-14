@@ -1,0 +1,69 @@
+*MANAGEMENT OPERATIONS EVENT SUMMARY
+
+*DSSAT Cropping System Model Ver. 4.8.0.024 -stable  OCT 12, 2026 12:52:49
+!---------------------------------------------------------------------------------------------
+@RUN Date........  DOY    DAS    DAP  CR  Stage         Operation       Quantities
+!---------------------------------------------------------------------------------------------
+   1 JUN  7, 2019  158      1      0  MZ  14 Start Sim 
+   1 JUN 11, 2019  162      5      0  MZ                Planting       
+   1 JUN 11, 2019  162      5      0  MZ  07 Sowing    
+   1 JUN 12, 2019  163      6      1  MZ  08 Germinate 
+   1 JUN 22, 2019  173     16     11  MZ  09 Emergence 
+   1 JUN 29, 2019  180     23     18  MZ  01 End Juveni
+   1 JUL  8, 2019  189     32     27  MZ  02 Floral Ini
+   1 AUG 13, 2019  225     68     63  MZ  03 75% Silkin
+   1 AUG 22, 2019  234     77     72  MZ  04 Beg Gr Fil
+   1 SEP 24, 2019  267    110    105  MZ  05 End Gr Fil
+   1 SEP 27, 2019  270    113    108  MZ  16 Harvest   
+   1 SEP 27, 2019  270    113    108  MZ                Harvest Yield    7014. kg/ha
+ 
+
+*DSSAT Cropping System Model Ver. 4.8.0.024 -stable  OCT 12, 2026 12:52:50
+!---------------------------------------------------------------------------------------------
+@RUN Date........  DOY    DAS    DAP  CR  Stage         Operation       Quantities
+!---------------------------------------------------------------------------------------------
+   1 JUN  7, 2019  158      1      0  MZ  14 Start Sim 
+   1 JUN 11, 2019  162      5      0  MZ                Planting       
+   1 JUN 11, 2019  162      5      0  MZ  07 Sowing    
+   1 JUN 12, 2019  163      6      1  MZ  08 Germinate 
+   1 JUN 22, 2019  173     16     11  MZ  09 Emergence 
+   1 JUN 29, 2019  180     23     18  MZ  01 End Juveni
+   1 JUL  8, 2019  189     32     27  MZ  02 Floral Ini
+   1 AUG 13, 2019  225     68     63  MZ  03 75% Silkin
+   1 AUG 22, 2019  234     77     72  MZ  04 Beg Gr Fil
+   1 SEP 24, 2019  267    110    105  MZ  05 End Gr Fil
+   1 SEP 27, 2019  270    113    108  MZ  16 Harvest   
+   1 SEP 27, 2019  270    113    108  MZ                Harvest Yield    7014. kg/ha
+ 
+
+*DSSAT Cropping System Model Ver. 4.8.0.024 -stable  OCT 12, 2026 12:52:50
+!---------------------------------------------------------------------------------------------
+@RUN Date........  DOY    DAS    DAP  CR  Stage         Operation       Quantities
+!---------------------------------------------------------------------------------------------
+   1 JUN  7, 2019  158      1      0  MZ  14 Start Sim 
+   1 JUN  7, 2019  158      1      0  MZ                Fertilizer        120. kg[N]/ha 
+   1 JUN  7, 2019  158      1      0  MZ                Irrigation        45.0 mm
+   1 JUN 11, 2019  162      5      0  MZ                Planting       
+   1 JUN 11, 2019  162      5      0  MZ  07 Sowing    
+   1 JUN 12, 2019  163      6      1  MZ  08 Germinate 
+   1 JUN 22, 2019  173     16     11  MZ  09 Emergence 
+   1 JUN 29, 2019  180     23     18  MZ  01 End Juveni
+   1 JUL  8, 2019  189     32     27  MZ  02 Floral Ini
+   1 JUL 22, 2019  203     46     41  MZ                Fertilizer         40. kg[N]/ha 
+   1 JUL 22, 2019  203     46     41  MZ                Irrigation        15.0 mm
+   1 JUL 29, 2019  210     53     48  MZ                Irrigation        15.0 mm
+   1 AUG  5, 2019  217     60     55  MZ                Irrigation        15.0 mm
+   1 AUG 12, 2019  224     67     62  MZ                Irrigation        15.0 mm
+   1 AUG 13, 2019  225     68     63  MZ  03 75% Silkin
+   1 AUG 19, 2019  231     74     69  MZ                Irrigation        15.0 mm
+   1 AUG 22, 2019  234     77     72  MZ  04 Beg Gr Fil
+   1 AUG 23, 2019  235     78     73  MZ                Fertilizer         80. kg[N]/ha 
+   1 AUG 26, 2019  238     81     76  MZ                Irrigation        15.0 mm
+   1 SEP  2, 2019  245     88     83  MZ                Irrigation        15.0 mm
+   1 SEP  9, 2019  252     95     90  MZ                Irrigation        15.0 mm
+   1 SEP 16, 2019  259    102     97  MZ                Irrigation        15.0 mm
+   1 SEP 23, 2019  266    109    104  MZ                Irrigation        15.0 mm
+   1 SEP 24, 2019  267    110    105  MZ  05 End Gr Fil
+   1 SEP 27, 2019  270    113    108  MZ  16 Harvest   
+   1 SEP 27, 2019  270    113    108  MZ                Harvest Yield    8826. kg/ha
+ 

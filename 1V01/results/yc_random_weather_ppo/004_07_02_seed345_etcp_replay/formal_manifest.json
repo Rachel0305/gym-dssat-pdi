@@ -1,0 +1,33 @@
+{
+  "completed_utc": "2026-09-26T07:41:43.110131+00:00",
+  "episodes_completed": 30,
+  "error": "NameError(\"name 'pareto' is not defined\")",
+  "new_episode_count_expected": 29,
+  "passed": false,
+  "reused_smoke_seed_year": [
+    5,
+    2019
+  ],
+  "rss_limit_mb": 4096.0,
+  "seeds": [
+    5,
+    3,
+    4
+  ],
+  "smoke_evidence": "smoke_reconciliation.json",
+  "started_utc": "2026-09-26T07:39:53.745536+00:00",
+  "status": "failed",
+  "traceback": "Traceback (most recent call last):\n  File \"/workspace/src/run_004_07_02_yc_seed345_etcp_replay.py\", line 727, in run_formal\n    pareto.drop_duplicates([\"seed\", \"year\"]).to_csv(TASK_ROOT / \"seed_year_pareto_status.csv\", index=False, encoding=\"utf-8-sig\", lineterminator=\"\\n\")\nNameError: name 'pareto' is not defined\n",
+  "years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ]
+}

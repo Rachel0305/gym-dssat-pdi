@@ -1,0 +1,22 @@
+{
+  "status": "PASS_FULL_YEAR_ENGINEERING_AND_PHYSICAL_SCREEN",
+  "independent_weather_seeds": [
+    1001,
+    1002,
+    1003,
+    1004,
+    1005,
+    1006,
+    1007,
+    1008,
+    1009,
+    1010
+  ],
+  "days_per_seed": 365,
+  "generated_days": 3650,
+  "fit_days": 5114,
+  "climate_representativeness": "DESCRIPTIVE_REVIEW_REQUIRED; ten samples do not establish distributional equivalence",
+  "PPO_smoke_allowed": false,
+  "formal_training_allowed": false,
+  "crop_management_output_use": "DIAGNOSTIC_ONLY"
+}

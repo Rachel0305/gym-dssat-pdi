@@ -1,0 +1,35 @@
+{
+  "task_id": "077_00",
+  "task_name": "yca_lowIC_late_lr_decay_collapse_wp_et",
+  "reference_run": "046_10_sya_originIC_expanded_action_maskableppo",
+  "station_code": "YCA",
+  "site": "YC",
+  "input_profile": "lowIC",
+  "seed": 0,
+  "report_checkpoint": 25000,
+  "training": {
+    "total_timesteps": 25000,
+    "checkpoint_steps": [5000, 10000, 25000]
+  },
+  "actions": {
+    "irrigation_levels_mm": [0.0, 15.0, 30.0, 45.0],
+    "nitrogen_levels_kg_ha": [0.0, 40.0, 80.0, 120.0]
+  },
+  "observation_contract": {
+    "base": "046_02_raw_observation",
+    "normalization_enabled": false,
+    "weather_forecast_enabled": false
+  },
+  "scope": {
+    "train_years": [2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013],
+    "validation_years": [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023],
+    "reward_and_safety": "inherit_042_15_via_046_02_unchanged",
+    "purpose": "Test whether late learning-rate decay reduces YC late-checkpoint collapse and improves WP_ET without changing the policy problem."
+  },
+  "optimization": {
+    "intervention": "learning_rate_schedule_only",
+    "schedule": "constant_3e-4_through_10k_then_linear_to_1e-4_at_25k",
+    "unchanged": ["seed", "action_grid", "raw_observation", "reward", "safety", "train_validation_split", "no_weather_forecast", "native_dssat_automatic_irrigation"],
+    "external_n_control": false
+  }
+}

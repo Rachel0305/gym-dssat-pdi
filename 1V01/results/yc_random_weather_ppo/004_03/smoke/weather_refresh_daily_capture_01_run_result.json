@@ -1,0 +1,44 @@
+{
+  "checkpoint_steps_actual": {
+    "432": 432
+  },
+  "checkpoint_steps_requested": [
+    432
+  ],
+  "completed_training_episodes": 3,
+  "elapsed_seconds": 11.001,
+  "error": null,
+  "max_process_tree_rss_mb": 434.0546875,
+  "memory_stop_threshold_mb": 6000,
+  "model_dir": "results/yc_random_weather_ppo/004_03/smoke/weather_refresh_daily_capture_01/models",
+  "model_final": "results/yc_random_weather_ppo/004_03/smoke/weather_refresh_daily_capture_01/models/checkpoint_432.zip",
+  "ppo_seed": 0,
+  "run_status": "completed",
+  "smoke_gate": {
+    "actual_training_steps": 432,
+    "at_least_two_weather_seeds_reached_pdi": true,
+    "checkpoint_exists": true,
+    "checkpoint_loadable": true,
+    "completed_episodes": 3,
+    "distinct_weather_files_per_seed": false,
+    "episode_log_exists": true,
+    "manifest_exists": true,
+    "passed": false,
+    "ppo_reset_seed_separate_from_weather_seed": true,
+    "ppo_seed_is_zero": true,
+    "reward_decomposition_consistent": true,
+    "run_completed": true,
+    "same_year_context_for_weather_diversity_check": true,
+    "weather_seed_sequence": [
+      1070,
+      1065,
+      1053
+    ],
+    "weather_seed_uses_training_pool": true
+  },
+  "total_timesteps_actual": 432,
+  "total_timesteps_requested": 432,
+  "training_regime": "RANDOM_WEATHER_WGEN",
+  "training_weather_schedule_id": "wgen_rseed1_64004_v1",
+  "training_weather_source": "WGEN_random"
+}

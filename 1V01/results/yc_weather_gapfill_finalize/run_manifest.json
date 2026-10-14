@@ -1,0 +1,357 @@
+{
+  "run_time_utc": "2026-09-24T08:48:37.358652+00:00",
+  "git_start": {
+    "branch": "codex/sya-forecast-freeze-2026-08-16",
+    "head": "03111a4341206839e715755266c87f93755c11a2",
+    "tracked_worktree_status": [
+      "M configs/068_effective_hla_seed1_smoke.yaml",
+      " M configs/068_effective_yca_seed1_smoke.yaml",
+      " M \"proposal_materials/\\346\\235\\234\\351\\233\\250\\347\\247\\213-\\345\\215\\232\\345\\243\\253\\345\\274\\200\\351\\242\\230\\347\\255\\224\\350\\276\\251\\350\\256\\262\\347\\250\\277-20\\345\\210\\206\\351\\222\\237.md\"",
+      " M src/054_hla_lowIC_site_transfer/run_054_02_hla_lowIC_five_scenario_figures.py",
+      " M src/mask_aware_dqn_029.py"
+    ],
+    "preexisting_untracked_files_observed": true,
+    "note": "Only task-specific paths are eligible for staging; pre-existing tracked and untracked files are excluded."
+  },
+  "previous_source_files": {
+    "external_gapfill_validation.json": {
+      "path": "results\\yc_weather_finalize_and_cli\\external_gapfill_validation.json",
+      "sha256": "3efb0d20d3630319500ca416770fa059c8b59932bb93a01253e12da6caf83731"
+    },
+    "external_gapfill_values.csv": {
+      "path": "results\\yc_weather_finalize_and_cli\\external_gapfill_values.csv",
+      "sha256": "3f98c756c7851106107c994a1927a9d21989abf95b035acc9788111a1dd7e9f7"
+    },
+    "gaps_before_external_fill.csv": {
+      "path": "results\\yc_weather_finalize_and_cli\\gaps_before_external_fill.csv",
+      "sha256": "af62974de78e80a37916138b0d5abd0ae5f9026dc7a88818b617d39d773fee65"
+    },
+    "leakage_audit.json": {
+      "path": "results\\yc_weather_finalize_and_cli\\leakage_audit.json",
+      "sha256": "c130eab3a9070d08030954b27e50e242e7fc47a4c13a5b802ba69fb6dd4e5688"
+    },
+    "run_manifest.json": {
+      "path": "results\\yc_weather_finalize_and_cli\\run_manifest.json",
+      "sha256": "74c73acbc33b31188b4136835796c8cd900bb50ac24e06d93a005fc5e65ef24f"
+    }
+  },
+  "local_chinaflux_daily": {
+    "source": "data\\external\\yc_chinaflux\\raw\\YCA_M_daily.zip",
+    "sha256": "0e38d3d23a36a0968fbcbf743951a66328af022fc891cb4358ea542641b74aee",
+    "member": "日尺度/2004年禹城气象日统计数据.xlsx",
+    "year": 2004,
+    "daily_rows": 366,
+    "valid_daily_rain_days": 361,
+    "target_days": [
+      {
+        "date": "2004-10-16",
+        "raw_rain_value": -99999,
+        "usable_daily_value": false
+      },
+      {
+        "date": "2004-10-17",
+        "raw_rain_value": -99999,
+        "usable_daily_value": false
+      },
+      {
+        "date": "2004-10-18",
+        "raw_rain_value": -99999,
+        "usable_daily_value": false
+      },
+      {
+        "date": "2004-10-19",
+        "raw_rain_value": -99999,
+        "usable_daily_value": false
+      },
+      {
+        "date": "2004-10-20",
+        "raw_rain_value": -99999,
+        "usable_daily_value": false
+      }
+    ],
+    "target_complete": false,
+    "decision": "本地逐日产品五天均为缺失码，不能用于恢复；不拆分月/年总量。",
+    "chinaflux_monthly_rain_2004": {
+      "source": "data\\external\\yc_chinaflux\\raw\\YCA_M_monthly.zip",
+      "sha256": "fde763a148526fec60e83ae13aa873894b1346bd60eb81d534e73e1430aedfd4",
+      "year_read": 2004,
+      "member": "月尺度/2004年禹城气象月统计数据.xlsx",
+      "aggregation": "monthly",
+      "values": [
+        {
+          "month": 1,
+          "precipitation_mm": 0.1,
+          "valid": true
+        },
+        {
+          "month": 2,
+          "precipitation_mm": 10.600000000000003,
+          "valid": true
+        },
+        {
+          "month": 3,
+          "precipitation_mm": 55.699999999999996,
+          "valid": true
+        },
+        {
+          "month": 4,
+          "precipitation_mm": 52.400000000000006,
+          "valid": true
+        },
+        {
+          "month": 5,
+          "precipitation_mm": 46.80000000000002,
+          "valid": true
+        },
+        {
+          "month": 6,
+          "precipitation_mm": 216.6,
+          "valid": true
+        },
+        {
+          "month": 7,
+          "precipitation_mm": 202.79999999999998,
+          "valid": true
+        },
+        {
+          "month": 8,
+          "precipitation_mm": 205.29999999999995,
+          "valid": true
+        },
+        {
+          "month": 9,
+          "precipitation_mm": 37.0,
+          "valid": true
+        },
+        {
+          "month": 10,
+          "precipitation_mm": 9.100000000000001,
+          "valid": true
+        },
+        {
+          "month": 11,
+          "precipitation_mm": 7.5,
+          "valid": true
+        },
+        {
+          "month": 12,
+          "precipitation_mm": 2.3000000000000007,
+          "valid": true
+        }
+      ]
+    },
+    "chinaflux_annual_rain_2004": {
+      "source": "data\\external\\yc_chinaflux\\raw\\YCA_M_yearly.zip",
+      "sha256": "b4716cb4990b6b6b7a7dc4e5b92fbe0bbc68956ea4c1ebb317701ac04312ce6e",
+      "year_read": 2004,
+      "member": "年尺度/2004年禹城气象年统计数据.xlsx",
+      "aggregation": "annual",
+      "values": [
+        {
+          "precipitation_mm": 846.2,
+          "valid": true
+        }
+      ],
+      "annual_precipitation_mm": 846.2
+    },
+    "monthly_source_audit": [
+      {
+        "archive_member": "实体数据/5-禹城站自动观测降水.xls",
+        "title": "自动观测气象要素－降水月总量（mm）",
+        "rows": 26,
+        "temporal_grain": "monthly aggregate",
+        "years_present": [
+          2005,
+          2006
+        ],
+        "daily_values_for_2004_target": false,
+        "decision": "月统计不能还原指定逐日事件。"
+      },
+      {
+        "archive_member": "实体数据/9-禹城站人工观测气象要素记录表.xls",
+        "title": "人工观测气象要素记录表(1)月统计",
+        "rows": 26,
+        "temporal_grain": "monthly aggregate",
+        "years_present": [
+          2005,
+          2006
+        ],
+        "daily_values_for_2004_target": false,
+        "decision": "月统计不能还原指定逐日事件。"
+      }
+    ]
+  },
+  "ghcn_station_inventory": {
+    "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/ghcnd-stations.txt",
+    "retrieved_at_utc": "2026-09-24T08:27:02.515786+00:00",
+    "last_modified": "Thu, 17 Sep 2026 13:40:26 GMT",
+    "etag": "\"ade0ba-65baded2d0f55\"",
+    "bytes_hashed": 11395258,
+    "sha256": "14c6467fcce6cce8dc0786eba8bbceed51a2f1c1056b0e221b573157559fc824",
+    "search_radius_km": 300.0,
+    "candidate_count": 12,
+    "reused_local_scoped_observation_cache": true
+  },
+  "ghcn_station_files": [
+    {
+      "station_id": "CHM00054823",
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/CHM00054823.dly",
+      "retrieved_at_utc": "2026-09-24T08:27:11.544089+00:00",
+      "last_modified": "Wed, 23 Sep 2026 11:32:00 GMT",
+      "etag": "\"ecf9a-65c24d4e7501a\"",
+      "bytes_read": 970650,
+      "sha256": "1e23a2c1061cd3a92803510f3c12f03b1e4c10a8cd4f66a5d5b2a76a360defb5",
+      "parsed_weather_periods": "2004-10-16..2004-10-20 and 2005-01-01..2013-12-31 only",
+      "post_2013_rows_hashed_but_values_not_parsed": true,
+      "duplicate_daily_records": 0
+    },
+    {
+      "station_id": "CHM00054725",
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/CHM00054725.dly",
+      "retrieved_at_utc": "2026-09-24T08:27:19.930516+00:00",
+      "last_modified": "Wed, 23 Sep 2026 11:32:00 GMT",
+      "etag": "\"f0348-65c24d4e2c409\"",
+      "bytes_read": 983880,
+      "sha256": "e8570e191925e09ae2f1bceeb97fcdcbe3f45ae28bba783268caaf6948fc513d",
+      "parsed_weather_periods": "2004-10-16..2004-10-20 and 2005-01-01..2013-12-31 only",
+      "post_2013_rows_hashed_but_values_not_parsed": true,
+      "duplicate_daily_records": 0
+    },
+    {
+      "station_id": "CHM00054618",
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/CHM00054618.dly",
+      "retrieved_at_utc": "2026-09-24T08:27:24.981956+00:00",
+      "last_modified": "Wed, 23 Sep 2026 11:32:00 GMT",
+      "etag": "\"5bf4a-65c24d4de2858\"",
+      "bytes_read": 376650,
+      "sha256": "d8bb7293f303680a2a490fc0048c92cdd6550018a616f0f79ce52db08c6698bb",
+      "parsed_weather_periods": "2004-10-16..2004-10-20 and 2005-01-01..2013-12-31 only",
+      "post_2013_rows_hashed_but_values_not_parsed": true,
+      "duplicate_daily_records": 0
+    },
+    {
+      "station_id": "CHM00054916",
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/CHM00054916.dly",
+      "retrieved_at_utc": "2026-09-24T08:27:35.787646+00:00",
+      "last_modified": "Wed, 23 Sep 2026 11:32:01 GMT",
+      "etag": "\"f0672-65c24d4ef4b14\"",
+      "bytes_read": 984690,
+      "sha256": "92613e8976dfc9a59ee8c0e38488b8d1c30e1134937780bfeeef83b77977c855",
+      "parsed_weather_periods": "2004-10-16..2004-10-20 and 2005-01-01..2013-12-31 only",
+      "post_2013_rows_hashed_but_values_not_parsed": true,
+      "duplicate_daily_records": 0
+    },
+    {
+      "station_id": "CHM00054616",
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/CHM00054616.dly",
+      "retrieved_at_utc": "2026-09-24T08:27:41.390179+00:00",
+      "last_modified": "Tue, 15 Sep 2026 00:12:33 GMT",
+      "etag": "\"7c84e-65b7a68397e40\"",
+      "bytes_read": 510030,
+      "sha256": "32b614d9185a84a760eea000c39731e0fb0b5e72217b77645c215dc072a4413f",
+      "parsed_weather_periods": "2004-10-16..2004-10-20 and 2005-01-01..2013-12-31 only",
+      "post_2013_rows_hashed_but_values_not_parsed": true,
+      "duplicate_daily_records": 0
+    },
+    {
+      "station_id": "CHM00054906",
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/CHM00054906.dly",
+      "retrieved_at_utc": "2026-09-24T08:27:46.183621+00:00",
+      "last_modified": "Tue, 15 Sep 2026 00:12:35 GMT",
+      "etag": "\"7b228-65b7a685802c0\"",
+      "bytes_read": 504360,
+      "sha256": "2e3f3eb160b6d94bafbe7a81168db37f64a227e88390f571c9b349e911da86a6",
+      "parsed_weather_periods": "2004-10-16..2004-10-20 and 2005-01-01..2013-12-31 only",
+      "post_2013_rows_hashed_but_values_not_parsed": true,
+      "duplicate_daily_records": 0
+    },
+    {
+      "station_id": "CHM00053898",
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/CHM00053898.dly",
+      "retrieved_at_utc": "2026-09-24T08:27:52.574107+00:00",
+      "last_modified": "Wed, 23 Sep 2026 11:31:55 GMT",
+      "etag": "\"ef8bc-65c24d49d568a\"",
+      "bytes_read": 981180,
+      "sha256": "97631170397386b191f9925e4e945cc95e190275ce7cbc4b42c4eebcb0cada29",
+      "parsed_weather_periods": "2004-10-16..2004-10-20 and 2005-01-01..2013-12-31 only",
+      "post_2013_rows_hashed_but_values_not_parsed": true,
+      "duplicate_daily_records": 0
+    },
+    {
+      "station_id": "CHM00054909",
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/CHM00054909.dly",
+      "retrieved_at_utc": "2026-09-24T08:28:00.912372+00:00",
+      "last_modified": "Wed, 23 Sep 2026 11:32:01 GMT",
+      "etag": "\"5fa5a-65c24d4ecf56b\"",
+      "bytes_read": 391770,
+      "sha256": "683ecdcda86b37c802d0f3586a76828291d8b07ed8051dda6b7a9572c448ee3b",
+      "parsed_weather_periods": "2004-10-16..2004-10-20 and 2005-01-01..2013-12-31 only",
+      "post_2013_rows_hashed_but_values_not_parsed": true,
+      "duplicate_daily_records": 0
+    },
+    {
+      "station_id": "CHM00053698",
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/CHM00053698.dly",
+      "retrieved_at_utc": "2026-09-24T08:28:08.807729+00:00",
+      "last_modified": "Wed, 23 Sep 2026 11:31:55 GMT",
+      "etag": "\"e22a2-65c24d491eca8\"",
+      "bytes_read": 926370,
+      "sha256": "a59b64bef052a6442edba5669e18aadf5df726ec2a1be6c772fb3ace3320c880",
+      "parsed_weather_periods": "2004-10-16..2004-10-20 and 2005-01-01..2013-12-31 only",
+      "post_2013_rows_hashed_but_values_not_parsed": true,
+      "duplicate_daily_records": 0
+    },
+    {
+      "station_id": "CHM00054843",
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/CHM00054843.dly",
+      "retrieved_at_utc": "2026-09-24T08:28:17.142237+00:00",
+      "last_modified": "Wed, 23 Sep 2026 11:32:00 GMT",
+      "etag": "\"eb42e-65c24d4e99df3\"",
+      "bytes_read": 963630,
+      "sha256": "ccbf7ef0412d0b0a80c2e4d9186e6a3412d325417a5ed1b84ac6574d6f6c3966",
+      "parsed_weather_periods": "2004-10-16..2004-10-20 and 2005-01-01..2013-12-31 only",
+      "post_2013_rows_hashed_but_values_not_parsed": true,
+      "duplicate_daily_records": 0
+    },
+    {
+      "station_id": "CHM00054527",
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/CHM00054527.dly",
+      "retrieved_at_utc": "2026-09-24T08:28:25.071718+00:00",
+      "last_modified": "Wed, 23 Sep 2026 11:31:59 GMT",
+      "etag": "\"e6406-65c24d4dac13f\"",
+      "bytes_read": 943110,
+      "sha256": "d94fa8376651e0bbbad3126f98a84de09115b537cefadb7ec25125e29562ed6f",
+      "parsed_weather_periods": "2004-10-16..2004-10-20 and 2005-01-01..2013-12-31 only",
+      "post_2013_rows_hashed_but_values_not_parsed": true,
+      "duplicate_daily_records": 0
+    },
+    {
+      "station_id": "CHM00058027",
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/CHM00058027.dly",
+      "retrieved_at_utc": "2026-09-24T08:28:33.312598+00:00",
+      "last_modified": "Wed, 23 Sep 2026 11:32:09 GMT",
+      "etag": "\"db600-65c24d5707d68\"",
+      "bytes_read": 898560,
+      "sha256": "02328419e9235cb7a541c3d4fda46a8544186bc9fc84dcd0739dcb1f1a86351f",
+      "parsed_weather_periods": "2004-10-16..2004-10-20 and 2005-01-01..2013-12-31 only",
+      "post_2013_rows_hashed_but_values_not_parsed": true,
+      "duplicate_daily_records": 0
+    }
+  ],
+  "scoped_observation_csv_sha256": "04a7ae712167c0398c0ece08d843ef8e5747e86d4b184b69b950d244e984b751",
+  "official_rain_overlap_years": "2005-2013 only",
+  "official_rain_overlap_paired_reference_days": 3287,
+  "weather_years_used_for_station_metric_calculation": [
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013
+  ],
+  "nasa_calibration_years": "2005-2013 only, reused from previous audit",
+  "no_station_full_history_file_saved": true
+}

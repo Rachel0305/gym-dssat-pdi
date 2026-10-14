@@ -1,0 +1,402 @@
+{
+  "canonical_pilot_preflight": {
+    "004_02_weather_qc": {
+      "full_year_wgen_validation": "DEFERRED / OPTIONAL ADDITIONAL VALIDATION",
+      "ready": "YES",
+      "status": "PASS_WITH_NOTES",
+      "temperature_note": "synthetic TMIN mean approximately fitting observed +0.58 C"
+    },
+    "action_grid": {
+      "binary_timing_source": "042_10 collapses dose choices to fixed I45/N80 so PPO first learns timing; reward and safety masks are inherited from 040_36.",
+      "coarse_action_source": "040_33 removes 15 mm and 40 kg/ha fragmented action levels; reward unchanged from 040_28",
+      "irrigation_levels": [
+        0.0,
+        15.0,
+        30.0,
+        45.0
+      ],
+      "nitrogen_levels": [
+        0.0,
+        40.0,
+        80.0,
+        120.0
+      ]
+    },
+    "action_safety": {
+      "daily_irrigation_max": 45.0,
+      "daily_n_max": 120.0,
+      "enabled": true,
+      "fertilization_allowed_dap_range": [
+        1,
+        90
+      ],
+      "irrigation_allowed_dap_range": [
+        1,
+        120
+      ],
+      "late_irrigation_reserve_mask": {
+        "dap_end": 90,
+        "enabled": true,
+        "pre_late_cum_irrigation_cap_mm": 195.0,
+        "reason": "reserve at least one 45 mm irrigation opportunity after DAP90; do not force an exact irrigation day",
+        "reserved_for_after_dap90_mm": 45.0
+      },
+      "min_days_between_fertilization": 7,
+      "min_days_between_irrigation": 7,
+      "season_irrigation_soft_limit": 240.0,
+      "season_n_soft_limit": 250.0
+    },
+    "canonical_formal_result": "benchmark_results/055_00_yca_lowIC_expanded_action_maskableppo/055_00_formal_result.json",
+    "canonical_formal_task_config": "configs/055_00_yca_lowIC_expanded_action_maskableppo.json",
+    "canonical_source_config": "benchmark_results/055_00_yca_lowIC_expanded_action_maskableppo/configs/config_032_00_free_timing_stress_aware_ppo_dqn_smoke.yaml",
+    "canonical_source_yaml": "benchmark_results/055_00_yca_lowIC_expanded_action_maskableppo/configs/config_032_00_free_timing_stress_aware_ppo_dqn_smoke.yaml",
+    "checkpoint_steps": [
+      25000,
+      50000,
+      75000,
+      100000
+    ],
+    "effective_reward_wrapper": "LateIrrigationReserveMaskWrapper -> I240SwfacGuardrailWrapper -> stress-aware reward wrapper",
+    "effective_training_engine": "src/run_five_site_half_split_stress_aware_maskableppo_batch_032_22.py",
+    "fitting_weather": {
+      "path": "results/yc_weather_gapfill_finalize/yc_wgen_fitting_weather_2004_2013.csv",
+      "period": "2004-2013",
+      "sha256": "4B8FFE9E881D0A0743921B78B9C0E0EBFB1D2D645C5AA9737948B2B088ED7B34"
+    },
+    "frozen_cli": {
+      "path": "results/yc_wgen_cli_pilot/003_06_05_02/final/CNYC.CLI",
+      "sha256": "65CF134600A5881706A5D435E1A09B276ED92A21FA5ABE2E18AAF63AF1E3A929"
+    },
+    "input_root": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013_lowIC_manual",
+    "issues": [],
+    "normalization": {
+      "forecast_features": false,
+      "observation_normalization": false,
+      "vecnormalize": false
+    },
+    "observed_years_actual": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "old_prompt_reward_formula": {
+      "formula": "0.06 * final_grnwt - 0.04 * cumfert",
+      "status": "SUPERSEDED / NOT_APPLICABLE"
+    },
+    "passed": true,
+    "policy": {
+      "activation": "Tanh (SB3 MlpPolicy default)",
+      "class": "MaskablePPO",
+      "net_arch": [
+        64,
+        64
+      ],
+      "policy_name": "MlpPolicy",
+      "vf_coef": 0.5,
+      "vf_coef_source": "MaskablePPO default; not passed by canonical ppo_kwargs"
+    },
+    "ppo": {
+      "batch_size": 144,
+      "clip_range": 0.2,
+      "ent_coef": 0.01,
+      "gae_lambda": 1.0,
+      "gamma": 1.0,
+      "learning_rate": 0.0003,
+      "n_epochs": 5,
+      "n_steps": 144,
+      "net_arch": [
+        64,
+        64
+      ]
+    },
+    "reward": {
+      "nitrogen_cost": 1.58,
+      "nitrogen_stress_relief_coef": 5.0,
+      "reward_scale": 0.001,
+      "reward_type": "harvest_yield_minus_water_nitrogen_cost_plus_stress_relief_scaled_0p001",
+      "swfac_guardrail_process_penalty": {
+        "coef": 50.0,
+        "enabled": true,
+        "formula": "coef * max(0, swfac_after_step - threshold) * reward_scale",
+        "threshold": 0.05
+      },
+      "water_cost": 1.1,
+      "water_stress_relief_coef": 10.0,
+      "yield_coef": 0.158
+    },
+    "run_config": {
+      "action_safety": {
+        "daily_irrigation_max": 45.0,
+        "daily_n_max": 120.0,
+        "enabled": true,
+        "fertilization_allowed_dap_range": [
+          1,
+          90
+        ],
+        "irrigation_allowed_dap_range": [
+          1,
+          120
+        ],
+        "late_irrigation_reserve_mask": {
+          "dap_end": 90,
+          "enabled": true,
+          "pre_late_cum_irrigation_cap_mm": 195.0,
+          "reason": "reserve at least one 45 mm irrigation opportunity after DAP90; do not force an exact irrigation day",
+          "reserved_for_after_dap90_mm": 45.0
+        },
+        "min_days_between_fertilization": 7,
+        "min_days_between_irrigation": 7,
+        "season_irrigation_soft_limit": 240.0,
+        "season_n_soft_limit": 250.0
+      },
+      "algorithm": "PPO_DQN",
+      "discrete_actions": {
+        "binary_timing_source": "042_10 collapses dose choices to fixed I45/N80 so PPO first learns timing; reward and safety masks are inherited from 040_36.",
+        "coarse_action_source": "040_33 removes 15 mm and 40 kg/ha fragmented action levels; reward unchanged from 040_28",
+        "irrigation_levels": [
+          0.0,
+          15.0,
+          30.0,
+          45.0
+        ],
+        "nitrogen_levels": [
+          0.0,
+          40.0,
+          80.0,
+          120.0
+        ]
+      },
+      "dqn": {
+        "batch_size": 1024,
+        "buffer_size": 100000,
+        "exploration_final_eps": 0.0,
+        "exploration_fraction": 1.0,
+        "exploration_initial_eps": 1.0,
+        "gamma": 0.99,
+        "gradient_steps": 1,
+        "learning_rate": 1e-05,
+        "learning_starts": 1024,
+        "max_grad_norm": 10.0,
+        "net_arch": [
+          256,
+          256,
+          256
+        ],
+        "target_update_interval": 120,
+        "train_freq": 4,
+        "weight_decay": 0.001
+      },
+      "mode": "water_nitrogen",
+      "paths": {
+        "base_env_config": "experiments/ppo_observed_years/config_all_year_weather_calibration_validation.yaml",
+        "cultivar_file": "my_data/MZCER048.CUL",
+        "my_data_dir": "my_data",
+        "output_root": "results/yc_random_weather_ppo/004_03",
+        "scenario_pool_csv": "Leave_One_experiments/all_year_weather_calibration_validation/scenario_pool/all_year_weather_scenario_pool.csv",
+        "weather_clean_csv": "weather_clean_qc/all_sites_weather_cleaned_qc.csv",
+        "weather_inventory_csv": "Leave_One_experiments/all_year_weather_calibration_validation/weather_inventory/weather_year_inventory.csv",
+        "wth_dir": "Leave_One_experiments/wth_generated_qc"
+      },
+      "ppo": {
+        "batch_size": 144,
+        "clip_range": 0.2,
+        "ent_coef": 0.01,
+        "gae_lambda": 1.0,
+        "gamma": 1.0,
+        "learning_rate": 0.0003,
+        "n_epochs": 5,
+        "n_steps": 144,
+        "net_arch": [
+          64,
+          64
+        ]
+      },
+      "reward": {
+        "nitrogen_cost": 1.58,
+        "nitrogen_stress_relief_coef": 5.0,
+        "reward_scale": 0.001,
+        "reward_type": "harvest_yield_minus_water_nitrogen_cost_plus_stress_relief_scaled_0p001",
+        "swfac_guardrail_process_penalty": {
+          "coef": 50.0,
+          "enabled": true,
+          "formula": "coef * max(0, swfac_after_step - threshold) * reward_scale",
+          "threshold": 0.05
+        },
+        "water_cost": 1.1,
+        "water_stress_relief_coef": 10.0,
+        "yield_coef": 0.158
+      },
+      "runtime": {
+        "episode_timeout_seconds": 300,
+        "max_steps": 260,
+        "mode": "all",
+        "smoke_station": "SYA",
+        "smoke_year": 2010
+      },
+      "seed": 0,
+      "total_timesteps": 100000
+    },
+    "runtime": {
+      "docker_container": "nifty_taussig",
+      "dssat_binary": "/opt/dssat_pdi/run_dssat",
+      "gym_dssat_pdi_version": "0.0.5",
+      "sb3_contrib_version": "2.8.0",
+      "stable_baselines3_version": "2.8.0",
+      "torch_version": "2.12.0+cpu"
+    },
+    "seed_plan": {
+      "evaluation_runtime_seed": 66004,
+      "heldout_wgen_seed_pool": [
+        1081,
+        1100
+      ],
+      "historical_weather_schedule_seed": 64003,
+      "ppo_seeds": [
+        0,
+        1,
+        2
+      ],
+      "random_weather_schedule_seed": 64004,
+      "runtime_bootstrap_seed": 66003,
+      "seed_roles_are_disjoint": true,
+      "training_wgen_seed_pool": [
+        1001,
+        1080
+      ]
+    },
+    "total_timesteps": 100000,
+    "training_budget_provenance": {
+      "authority": "055_00 formal task config and completed formal result",
+      "effective_pilot_total_timesteps": 100000,
+      "formal_result_budget_evidence": "action_gate.final_checkpoint",
+      "formal_result_total_timesteps": 100000,
+      "formal_task_config_total_timesteps": 100000,
+      "source_yaml_declared_total_timesteps": 5000,
+      "source_yaml_role": "032_00 smoke/base template; its 5000-step value is not the 055_00 formal budget"
+    },
+    "training_script": "src/055_yca_lowIC_site_transfer/run_055_00_yca_lowIC_expanded_action_maskableppo.py",
+    "training_years_actual": [
+      2004,
+      2005,
+      2006,
+      2007,
+      2008,
+      2009,
+      2010,
+      2011,
+      2012,
+      2013
+    ]
+  },
+  "heldout_wgen_seeds": [
+    1081,
+    1082,
+    1083,
+    1084,
+    1085,
+    1086,
+    1087,
+    1088,
+    1089,
+    1090,
+    1091,
+    1092,
+    1093,
+    1094,
+    1095,
+    1096,
+    1097,
+    1098,
+    1099,
+    1100
+  ],
+  "issues": [],
+  "memory_guard_mb": 4000,
+  "models": [
+    {
+      "model_id": "H0",
+      "model_path": "results/yc_random_weather_ppo/004_03/training_verified/historical/ppo_seed_0/models/checkpoint_100000.zip",
+      "model_sha256": "644258E923BC1E0F8808E9D2C08EAF4F8EE3AF16D9140E31BB84B87A6A270390",
+      "ppo_seed": 0,
+      "total_timesteps_actual": 100080,
+      "training_regime": "HISTORICAL_WEATHER",
+      "training_status": "completed",
+      "verified_manifest": "results/yc_random_weather_ppo/004_03/training_verified/historical/ppo_seed_0/run_manifest.json"
+    },
+    {
+      "model_id": "H1",
+      "model_path": "results/yc_random_weather_ppo/004_03/training_verified/historical/ppo_seed_1/models/checkpoint_100000.zip",
+      "model_sha256": "F4638ADB9AB20D084DAD62C3AADEA567CE83DDA8016C8DE10CEEC539EB8A84B0",
+      "ppo_seed": 1,
+      "total_timesteps_actual": 100080,
+      "training_regime": "HISTORICAL_WEATHER",
+      "training_status": "completed",
+      "verified_manifest": "results/yc_random_weather_ppo/004_03/training_verified/historical/ppo_seed_1/run_manifest.json"
+    },
+    {
+      "model_id": "H2",
+      "model_path": "results/yc_random_weather_ppo/004_03/training_verified/historical/ppo_seed_2/models/checkpoint_100000.zip",
+      "model_sha256": "D7EE11659391F59B920D233696E3E489E0C84044315BCD648A547D24CB118669",
+      "ppo_seed": 2,
+      "total_timesteps_actual": 100080,
+      "training_regime": "HISTORICAL_WEATHER",
+      "training_status": "completed",
+      "verified_manifest": "results/yc_random_weather_ppo/004_03/training_verified/historical/ppo_seed_2/run_manifest.json"
+    },
+    {
+      "model_id": "W0",
+      "model_path": "results/yc_random_weather_ppo/004_03/training_verified/random_weather/ppo_seed_0/models/checkpoint_100000.zip",
+      "model_sha256": "3C05F51B0C9F71BE4B74A62683323F191DBCB47D1F9188558B887F2F69655BA2",
+      "ppo_seed": 0,
+      "total_timesteps_actual": 100080,
+      "training_regime": "RANDOM_WEATHER_WGEN",
+      "training_status": "completed",
+      "verified_manifest": "results/yc_random_weather_ppo/004_03/training_verified/random_weather/ppo_seed_0/run_manifest.json"
+    },
+    {
+      "model_id": "W1",
+      "model_path": "results/yc_random_weather_ppo/004_03/training_verified/random_weather/ppo_seed_1/models/checkpoint_100000.zip",
+      "model_sha256": "B1113599D99A118D613F5E9C9E70E9A0037B410D41634921670C5D1856AA13A8",
+      "ppo_seed": 1,
+      "total_timesteps_actual": 100080,
+      "training_regime": "RANDOM_WEATHER_WGEN",
+      "training_status": "completed",
+      "verified_manifest": "results/yc_random_weather_ppo/004_03/training_verified/random_weather/ppo_seed_1/run_manifest.json"
+    },
+    {
+      "model_id": "W2",
+      "model_path": "results/yc_random_weather_ppo/004_03/training_verified/random_weather/ppo_seed_2/models/checkpoint_100000.zip",
+      "model_sha256": "3136F3690690BFF34E801F9371355521785ABCB537D1D9F8B25BEE7EC09C27FC",
+      "ppo_seed": 2,
+      "total_timesteps_actual": 100080,
+      "training_regime": "RANDOM_WEATHER_WGEN",
+      "training_status": "completed",
+      "verified_manifest": "results/yc_random_weather_ppo/004_03/training_verified/random_weather/ppo_seed_2/run_manifest.json"
+    }
+  ],
+  "observed_years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "old_reward_formula": {
+    "formula": "0.06 * final_grnwt - 0.04 * cumfert",
+    "status": "SUPERSEDED / NOT_APPLICABLE"
+  },
+  "passed": true,
+  "training_run_performed": false
+}

@@ -1,0 +1,2 @@
+site,regime,seed,checkpoint,yield_kg_ha,irrigation_mm,nitrogen_kg_ha,WP_ET,PFP_N,irrigation_events_per_year,small_15mm_fraction,distinct_action_schedules,best_conventional_yield,expert_irrigation,expert_nitrogen,expert_irrigation_events_per_year,anchor_seed,anchor_regime,yield_resource_route,operation_gate,temporal_gate,anchor_materiality_gate,provisional_pass,failure_reasons
+FQ,historical,7,100000,7343.3551025390625,187.5,232.0,2.124,30.597312927246094,10.5,0.9047619047619048,10,7311.9,212.9,241.7,5.5,4,wgen,top_yield,False,True,True,False,operations

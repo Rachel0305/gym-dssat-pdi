@@ -1,0 +1,20 @@
+extends: ../benchmark_defaults.yaml
+site_config: ../sites/sya.yaml
+experiment:
+  experiment_id: 021_04_sy2014_ic2_dqn_seed12_smoke
+  experiment_type: sy2014_ic2_dqn_multiseed_validation
+  description: SY2014 confirmed IC2 frozen-DQN seed1/2 5K smoke
+  output_root: benchmark_results/021_04
+  dry_run: false
+algorithm:
+  total_timesteps: 5000
+  checkpoint_interval: 5000
+reward:
+  type: local_null_terminal
+  irrigation_cost: 1.0
+  nitrogen_cost: 5.0
+  yield_gain_coefficient: 1.0
+  leaching_cost: 0.0
+evaluation:
+  seeds: [1, 2]
+

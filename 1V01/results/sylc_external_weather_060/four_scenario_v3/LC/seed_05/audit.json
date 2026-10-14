@@ -1,0 +1,8 @@
+{
+  "site": "LC",
+  "seed": 5,
+  "rows": 40,
+  "figures": 5,
+  "replay_endpoint_and_ETCP_pass": true,
+  "source": "results/sylc_external_weather_060/five_scenario_archive/LC/seed_05/tables/053_03_lca_five_scenario_season_summary.csv"
+}

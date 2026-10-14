@@ -1,0 +1,29 @@
+{
+  "window": [
+    2000,
+    2013
+  ],
+  "ppo_training_years_unchanged": [
+    2005,
+    2013
+  ],
+  "validation_excluded": [
+    2014,
+    2023
+  ],
+  "days": 5114,
+  "physical_qc": true,
+  "parameter_crosscheck": true,
+  "cli_schema": true,
+  "raw_gap_counts": {
+    "SRAD": 18,
+    "TMAX": 9,
+    "TMIN": 2
+  },
+  "rain_fallback_days": 423,
+  "zero_variability_year_months": [],
+  "january_stable": true,
+  "estimated_rsds_used": false,
+  "mixed_source_caveat": "Raw XLS gap mask is conservative; later downloaded WTH supplements lack independent per-cell provenance",
+  "status": "CANDIDATE_AUDIT_ONLY_RUNTIME_NOT_RUN"
+}

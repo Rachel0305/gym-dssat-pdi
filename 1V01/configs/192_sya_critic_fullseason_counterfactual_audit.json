@@ -1,0 +1,28 @@
+{
+  "task_id": "192",
+  "task_name": "sya_critic_fullseason_counterfactual_audit",
+  "training_executed": false,
+  "station_code": "SYA",
+  "seed": 0,
+  "physical_gate_task": "167_sya_weather_v2_fixed_format_gate",
+  "scenario_manifest": "benchmark_results/166_sya_weather_scenario_bank_v2_fixed_format/163_sya_weather_scenario_manifest.csv",
+  "scenario_order": ["original", "early_dry", "mid_dry", "late_dry", "early_wet", "mid_wet"],
+  "checkpoint_steps": [50000, 100000],
+  "model_root": "benchmark_results/191_sya_balanced_irrigation_gap1_100k_learning_curve/models/SYA",
+  "target_daps": [2, 31, 61, 91],
+  "candidate_action_indices": [0, 4, 8, 12],
+  "candidate_action_labels": {
+    "0": "I0/N0",
+    "4": "I15/N0",
+    "8": "I30/N0",
+    "12": "I45/N0"
+  },
+  "action_safety_override": {
+    "min_days_between_irrigation": 1,
+    "min_days_between_fertilization": 7,
+    "season_irrigation_cap_mm": 240,
+    "other_mask_rules_unchanged": true
+  },
+  "continuation_policy": "same_frozen_checkpoint_deterministic",
+  "overwrite_existing_output": false
+}

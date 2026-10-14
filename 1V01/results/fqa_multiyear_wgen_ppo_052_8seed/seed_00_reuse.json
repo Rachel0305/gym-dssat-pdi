@@ -1,0 +1,14 @@
+{
+  "ppo_seed": 0,
+  "source_run": "results/fqa_multiyear_wgen_ppo_051/attempt_01",
+  "audit_status": "PASS_100K_ARCHIVE_ONLY",
+  "exact_checkpoint_step": 100000,
+  "checkpoint_path": "results/fqa_multiyear_wgen_ppo_051/attempt_01/models/checkpoint_100000.zip",
+  "checkpoint_sha256": "F449A1753A083A9CBF6938236B92755CAABED87EBC3AEABA27FDFB58B8C09207",
+  "weather_manifest_path": "results/fqa_multiyear_wgen_ppo_051/attempt_01/episode_manifest.csv",
+  "weather_archive_path": "results/fqa_multiyear_wgen_ppo_051/attempt_01/weather_daily/",
+  "actual_timesteps": 100080,
+  "archived_weather_days": 100080,
+  "episode_archives": 956,
+  "reused_without_retraining": true
+}

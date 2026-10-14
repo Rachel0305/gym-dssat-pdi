@@ -1,0 +1,135 @@
+{
+  "canonical_reward_components_reconcile": true,
+  "expected_all_evaluation_episodes": 480,
+  "issues": [],
+  "new_evaluation_episodes": 300,
+  "new_heldout_runtime_weather_hashes_match_across_models": true,
+  "new_model_domain_runs": 20,
+  "passed": true,
+  "reused_existing_evaluation_episodes": 180,
+  "reward_component_reconstruction_max_abs_error": 2.220446049250313e-16,
+  "reward_component_reconstruction_method": "canonical episode formula from final yield, seasonal irrigation/fertilizer, summed captured SWFAC penalty; stress relief is the exact reward-identity residual",
+  "runs": [
+    {
+      "evaluation_weather_type": "heldout_wgen",
+      "ppo_seed": 3,
+      "status": "reused",
+      "training_regime": "HISTORICAL_WEATHER"
+    },
+    {
+      "evaluation_weather_type": "observed_weather",
+      "ppo_seed": 3,
+      "status": "reused",
+      "training_regime": "HISTORICAL_WEATHER"
+    },
+    {
+      "evaluation_weather_type": "heldout_wgen",
+      "ppo_seed": 4,
+      "status": "reused",
+      "training_regime": "HISTORICAL_WEATHER"
+    },
+    {
+      "evaluation_weather_type": "observed_weather",
+      "ppo_seed": 4,
+      "status": "reused",
+      "training_regime": "HISTORICAL_WEATHER"
+    },
+    {
+      "evaluation_weather_type": "heldout_wgen",
+      "ppo_seed": 5,
+      "status": "reused",
+      "training_regime": "HISTORICAL_WEATHER"
+    },
+    {
+      "evaluation_weather_type": "observed_weather",
+      "ppo_seed": 5,
+      "status": "reused",
+      "training_regime": "HISTORICAL_WEATHER"
+    },
+    {
+      "evaluation_weather_type": "heldout_wgen",
+      "ppo_seed": 6,
+      "status": "reused",
+      "training_regime": "HISTORICAL_WEATHER"
+    },
+    {
+      "evaluation_weather_type": "observed_weather",
+      "ppo_seed": 6,
+      "status": "reused",
+      "training_regime": "HISTORICAL_WEATHER"
+    },
+    {
+      "evaluation_weather_type": "heldout_wgen",
+      "ppo_seed": 7,
+      "status": "reused",
+      "training_regime": "HISTORICAL_WEATHER"
+    },
+    {
+      "evaluation_weather_type": "observed_weather",
+      "ppo_seed": 7,
+      "status": "reused",
+      "training_regime": "HISTORICAL_WEATHER"
+    },
+    {
+      "evaluation_weather_type": "heldout_wgen",
+      "ppo_seed": 3,
+      "status": "reused",
+      "training_regime": "RANDOM_WEATHER_WGEN"
+    },
+    {
+      "evaluation_weather_type": "observed_weather",
+      "ppo_seed": 3,
+      "status": "reused",
+      "training_regime": "RANDOM_WEATHER_WGEN"
+    },
+    {
+      "evaluation_weather_type": "heldout_wgen",
+      "ppo_seed": 4,
+      "status": "reused",
+      "training_regime": "RANDOM_WEATHER_WGEN"
+    },
+    {
+      "evaluation_weather_type": "observed_weather",
+      "ppo_seed": 4,
+      "status": "reused",
+      "training_regime": "RANDOM_WEATHER_WGEN"
+    },
+    {
+      "evaluation_weather_type": "heldout_wgen",
+      "ppo_seed": 5,
+      "status": "reused",
+      "training_regime": "RANDOM_WEATHER_WGEN"
+    },
+    {
+      "evaluation_weather_type": "observed_weather",
+      "ppo_seed": 5,
+      "status": "reused",
+      "training_regime": "RANDOM_WEATHER_WGEN"
+    },
+    {
+      "evaluation_weather_type": "heldout_wgen",
+      "ppo_seed": 6,
+      "status": "reused",
+      "training_regime": "RANDOM_WEATHER_WGEN"
+    },
+    {
+      "evaluation_weather_type": "observed_weather",
+      "ppo_seed": 6,
+      "status": "reused",
+      "training_regime": "RANDOM_WEATHER_WGEN"
+    },
+    {
+      "evaluation_weather_type": "heldout_wgen",
+      "ppo_seed": 7,
+      "status": "reused",
+      "training_regime": "RANDOM_WEATHER_WGEN"
+    },
+    {
+      "evaluation_weather_type": "observed_weather",
+      "ppo_seed": 7,
+      "status": "reused",
+      "training_regime": "RANDOM_WEATHER_WGEN"
+    }
+  ],
+  "train_eval_weather_seed_intersection": []
+}

@@ -1,0 +1,20 @@
+{
+  "task": "072_hl_yc_checkpoint_dap_aware_audit",
+  "sites": {
+    "HL": {"station_code": "HLA", "roots": [
+      {"label": "seed0_baseline", "seed": 0, "root": "benchmark_results/054_00_hla_lowIC_expanded_action_maskableppo"},
+      {"label": "seed0_lr1e4", "seed": 0, "root": "benchmark_results/064_01_hla_lowIC_lr1e4_rescue25k"},
+      {"label": "seed1_baseline", "seed": 1, "root": "benchmark_results/068_00_hla_lowIC_seed1_baseline_maskableppo_smoke2k"},
+      {"label": "seed1_lr1e4", "seed": 1, "root": "benchmark_results/072_00_hla_lowIC_lr1e4_seed1_maskableppo_smoke2k"}
+    ]},
+    "YC": {"station_code": "YCA", "roots": [
+      {"label": "seed0_baseline", "seed": 0, "root": "benchmark_results/055_00_yca_lowIC_expanded_action_maskableppo"},
+      {"label": "seed0_lr1e4", "seed": 0, "root": "benchmark_results/065_01_yca_lowIC_lr1e4_rescue25k_maskableppo_smoke2k"},
+      {"label": "seed0_ent002", "seed": 0, "root": "benchmark_results/066_01_yca_lowIC_ent002_rescue25k_maskableppo_smoke2k"},
+      {"label": "seed1_lr1e4", "seed": 1, "root": "benchmark_results/068_01_yca_lowIC_lr1e4_seed1_maskableppo_smoke2k"},
+      {"label": "seed1_baseline", "seed": 1, "root": "benchmark_results/072_01_yca_lowIC_baseline_seed1_maskableppo_smoke2k"}
+    ]}
+  },
+  "validation_years": [2014,2015,2016,2017,2018,2019,2020,2021,2022,2023],
+  "output_root": "benchmark_results/072_02_hl_yc_checkpoint_dap_aware_audit"
+}

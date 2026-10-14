@@ -1,0 +1,101 @@
+{
+  "runs": [
+    {
+      "site": "LC",
+      "tag": "attempt003_seed1001_a",
+      "weather_seed": 1001,
+      "scope": "full_year_diagnostic",
+      "status": "PASS",
+      "steps": 365,
+      "rows": 365,
+      "physical_qc": {
+        "status": "PASS",
+        "row_count": 365,
+        "missing_by_field": {
+          "RAIN": 0,
+          "SRAD": 0,
+          "TMAX": 0,
+          "TMIN": 0
+        },
+        "all_zero_rainfall": false,
+        "issues": [],
+        "bounds_are_screening_checks_not_calibrated_extreme_value_tests": true
+      },
+      "cli_sha256": "6f73f8ea7fbe04b0ce042e2d632ec32d7648f1a72c59a79bb3dd8c1b60c2face",
+      "runtime_WTHER": "W",
+      "runtime_seed_verified": true,
+      "weather_sha256": "a5716d864fb5b0a7c187311d6f9dfe355bad2f9cf768c1647f71892dcae85533",
+      "full_year_dates_complete": true,
+      "actual_start_date": "2005-01-01",
+      "actual_end_date": "2005-12-31",
+      "elapsed_seconds": 3.062896121000449,
+      "peak_tree_rss_mb": 128.1015625
+    },
+    {
+      "site": "LC",
+      "tag": "attempt003_seed1001_b",
+      "weather_seed": 1001,
+      "scope": "full_year_diagnostic",
+      "status": "PASS",
+      "steps": 365,
+      "rows": 365,
+      "physical_qc": {
+        "status": "PASS",
+        "row_count": 365,
+        "missing_by_field": {
+          "RAIN": 0,
+          "SRAD": 0,
+          "TMAX": 0,
+          "TMIN": 0
+        },
+        "all_zero_rainfall": false,
+        "issues": [],
+        "bounds_are_screening_checks_not_calibrated_extreme_value_tests": true
+      },
+      "cli_sha256": "6f73f8ea7fbe04b0ce042e2d632ec32d7648f1a72c59a79bb3dd8c1b60c2face",
+      "runtime_WTHER": "W",
+      "runtime_seed_verified": true,
+      "weather_sha256": "a5716d864fb5b0a7c187311d6f9dfe355bad2f9cf768c1647f71892dcae85533",
+      "full_year_dates_complete": true,
+      "actual_start_date": "2005-01-01",
+      "actual_end_date": "2005-12-31",
+      "elapsed_seconds": 3.1072405959994285,
+      "peak_tree_rss_mb": 132.125
+    },
+    {
+      "site": "LC",
+      "tag": "attempt003_seed1002",
+      "weather_seed": 1002,
+      "scope": "full_year_diagnostic",
+      "status": "PASS",
+      "steps": 365,
+      "rows": 365,
+      "physical_qc": {
+        "status": "PASS",
+        "row_count": 365,
+        "missing_by_field": {
+          "RAIN": 0,
+          "SRAD": 0,
+          "TMAX": 0,
+          "TMIN": 0
+        },
+        "all_zero_rainfall": false,
+        "issues": [],
+        "bounds_are_screening_checks_not_calibrated_extreme_value_tests": true
+      },
+      "cli_sha256": "6f73f8ea7fbe04b0ce042e2d632ec32d7648f1a72c59a79bb3dd8c1b60c2face",
+      "runtime_WTHER": "W",
+      "runtime_seed_verified": true,
+      "weather_sha256": "77e071fc3154494c5efddfca399a8335d35ea65a2cd1bc35b68df410c7cc0050",
+      "full_year_dates_complete": true,
+      "actual_start_date": "2005-01-01",
+      "actual_end_date": "2005-12-31",
+      "elapsed_seconds": 3.2581689519993233,
+      "peak_tree_rss_mb": 133.98828125
+    }
+  ],
+  "full_year_path_pass": true,
+  "ensemble_quality": "NOT_RUN",
+  "PPO_smoke": "NOT_RUN",
+  "formal_training_allowed": false
+}

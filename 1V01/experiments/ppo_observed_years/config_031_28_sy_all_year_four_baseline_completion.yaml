@@ -1,0 +1,16 @@
+task_id: "031_28"
+description: "SYA 2005-2023 generated null/official-expert baseline completion for 031_27 frozen MaskablePPO transfer; DSSAT-auto is documented as unavailable for the all-year rendered template after smoke."
+source_env_config: "benchmark_results/031_27_sy_all_year_frozen_maskableppo_transfer/configs/031_27_resolved_env_config.yaml"
+existing_baseline_csv: "benchmark_results/028_02_four_baseline_envelope_readiness/028_02_baseline_metrics_recomputed.csv"
+output_root: "benchmark_results/031_28_sy_all_year_four_baseline_completion"
+station_code: "SYA"
+station_label_for_existing: "SY"
+seed: 0
+max_steps: 420
+scenarios_to_generate:
+  - "null"
+  - "official_extension_expert"
+dssat_auto_policy: "blocked_after_smoke_fortran_irrig_auto_management_error_in_all_year_rendered_template"
+recorded_farmer_policy: "reuse_existing_only_else_mark_unavailable"
+expert_region: "northeast_greatwall_spring_maize"
+status: "pre_registered"

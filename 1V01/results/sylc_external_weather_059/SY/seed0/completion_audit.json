@@ -1,0 +1,11 @@
+{
+  "site": "SY",
+  "seed": 0,
+  "models": 4,
+  "validation_rows": 40,
+  "historical_WTH_hashes": 40,
+  "sampling_episodes": 728,
+  "files_backed_up": 845,
+  "all_archive_sha256_verified": true,
+  "archive_sha256": "4754a7599e2679636e17d0c2c0e3f92af29f544adafe1d2668926b2ebdbc91ff"
+}

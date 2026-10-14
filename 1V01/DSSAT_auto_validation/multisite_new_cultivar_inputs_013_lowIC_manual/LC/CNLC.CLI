@@ -1,0 +1,9 @@
+*CLIMATE : CNLC
+
+@ INSI      LAT     LONG  ELEV   TAV   AMP  SRAY  TMXY  TMNY  RAIY
+  CNLC   37.890  114.694    50 -99.0 -99.0 -99.0 -99.0 -99.0   -99
+@START  DURN  ANGA  ANGB REFHT WNDHT SOURCE
+  1998  1912  0.25  0.50 -99.0 -99.0 Calculated_from_daily_data
+@ GSST  GSDU
+     1   365
+

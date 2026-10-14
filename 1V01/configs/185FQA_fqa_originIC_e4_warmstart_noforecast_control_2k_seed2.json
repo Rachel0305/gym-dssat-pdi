@@ -1,0 +1,19 @@
+{
+  "task_id": "185FQA",
+  "task_name": "fqa_originIC_e4_warmstart_noforecast_control_2k_seed2",
+  "reference_run": "180FQA_fqa_originIC_dual_branch_noforecast_control_2k_seed2",
+  "station_code": "FQA",
+  "site": "FQ",
+  "input_profile": "originIC",
+  "seed": 2,
+  "source_checkpoint": "benchmark_results/180FQA_fqa_originIC_dual_branch_noforecast_control_2k_seed2_smoke2k/models/FQA/FQA_half_split_stress_aware_maskableppo_seed2_ckpt2000.zip",
+  "source_checkpoint_step": 2000,
+  "training": {"source_exposure_timesteps": 2000, "adaptation_timesteps": 2000, "checkpoint_steps": [2000]},
+  "actions": {"irrigation_levels_mm": [0, 15, 30, 45], "nitrogen_levels_kg_ha": [0, 40, 80, 120]},
+  "observation_contract": {"base": "046_02_raw_observation", "normalization_enabled": false, "weather_forecast_enabled": false, "weather_forecast_mode": "matched_architecture_zero_weather_control"},
+  "forecast_features": {"enabled": false, "source": "none_zero_control", "feature_names": ["rain_next1_norm", "rain_next3_norm", "rain_next7_norm", "rain_max_next7_norm", "rain_days_next7_norm", "first_rain_lead_norm", "tmax_mean_next7_norm", "tmax_max_next7_norm", "tmin_mean_next7_norm", "srad_mean_next7_norm", "valid_days_next7_norm", "dry_spell_next7_flag"], "raw_feature_names": ["rain_next1_mm", "rain_next3_mm", "rain_next7_mm", "rain_max_next7_mm", "rain_days_next7", "first_rain_lead_days", "tmax_mean_next7_c", "tmax_max_next7_c", "tmin_mean_next7_c", "srad_mean_next7_mj_m2", "valid_days_next7", "dry_spell_next7_flag"]},
+  "policy_architecture": {"name": "dual_branch_base_weather_layernorm", "base_observation_dim": 23, "weather_observation_dim": 12, "base_latent_dim": 64, "weather_latent_dim": 32, "combined_features_dim": 96, "branch_activation": "Tanh", "branch_normalization": "LayerNorm", "downstream_net_arch": [64, 64]},
+  "scope": {"train_years": [2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013], "validation_years": [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023], "reward_and_safety": "inherit_042_15_via_046_02_unchanged", "external_n": false, "native_dssat_automatic_irrigation": false},
+  "changed_factor": "paired_no_forecast_adaptation_control",
+  "prompt": "prompts/2026-08-17_fq_e4_warmstart_weather_residual_seed2_2k.md"
+}

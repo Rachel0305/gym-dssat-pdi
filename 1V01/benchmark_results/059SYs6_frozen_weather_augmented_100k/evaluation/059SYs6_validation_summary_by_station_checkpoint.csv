@@ -1,0 +1,5 @@
+﻿station_code,site,checkpoint_step,validation_years,mean_final_grnwt,mean_total_irrigation,mean_total_n,mean_PFP_N,max_nstres,max_swfac,mean_early_reserve_penalty_unscaled,any_metric_win_four_count,mean_gap_yield_vs_four_max,mean_gap_pfp_n_vs_four_max,mean_binary_irrigation_event_count,mean_binary_nitrogen_event_count,non_binary_irrigation_amount_count,non_binary_nitrogen_amount_count,mean_irrigation_dap1_30,mean_irrigation_dap31_60,mean_irrigation_dap61_90,mean_irrigation_dap91_plus,mean_nitrogen_dap1_30,mean_nitrogen_dap31_60,mean_nitrogen_dap61_90
+SYA,SY,25000,10,10000.979614257812,235.5,200.0,50.00489807128906,0.4793434739112854,0.0,,0,,,9.7,3.0,10,10,75.0,75.0,45.0,40.5,200.0,0.0,0.0
+SYA,SY,50000,10,7453.0106201171875,72.0,40.0,186.32526550292968,0.6553766429424286,0.982574202120304,,0,,,1.9,1.0,9,10,45.0,0.0,0.0,27.0,40.0,0.0,0.0
+SYA,SY,75000,10,7362.768249511719,45.0,40.0,184.06920623779297,0.666832447052002,1.0,,0,,,1.0,1.0,0,10,45.0,0.0,0.0,0.0,40.0,0.0,0.0
+SYA,SY,100000,10,7362.768249511719,45.0,40.0,184.06920623779297,0.666832447052002,1.0,,0,,,1.0,1.0,0,10,45.0,0.0,0.0,0.0,40.0,0.0,0.0

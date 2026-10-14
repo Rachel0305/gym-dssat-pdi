@@ -1,0 +1,17 @@
+{
+  "task_id": "093_00",
+  "task_name": "fq_input_checkpoint_diagnostic",
+  "station_code": "FQA",
+  "site": "FQ",
+  "seed": 0,
+  "checkpoint_steps": [25000, 50000, 75000, 100000],
+  "target_year": 2018,
+  "ppo_root": "benchmark_results/051_00_fqa_originIC_expanded_action_maskableppo",
+  "original_input_root": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013",
+  "corrected_input_root": "benchmark_results/088_00_fq2018_input_quality_correction/corrected_input",
+  "existing_validation_summary": "benchmark_results/051_00_fqa_originIC_expanded_action_maskableppo/evaluation/051_00_checkpoint_validation_summary.csv",
+  "output_root": "benchmark_results/093_00_fq_input_checkpoint_diagnostic",
+  "training_allowed": false,
+  "external_n_allowed": false,
+  "weather_forecast_allowed": false
+}

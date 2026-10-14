@@ -1,0 +1,34 @@
+{
+  "task_id": "174",
+  "task_name": "sya_weather_aug_rain_obs_no_swfac_guardrail_smoke2k",
+  "source_task": "172_sya_weather_aug_rain_observation_smoke2k",
+  "physical_gate_task": "167_sya_weather_v2_fixed_format_gate",
+  "station_code": "SYA",
+  "site": "SY",
+  "source_year": 2005,
+  "total_timesteps": 2000,
+  "checkpoint_steps": [1000, 2000],
+  "seed": 0,
+  "scenario_manifest": "benchmark_results/166_sya_weather_scenario_bank_v2_fixed_format/163_sya_weather_scenario_manifest.csv",
+  "input_root": "DSSAT_auto_validation/sya_weather_scenario_bank_166_fixed_format",
+  "weather_only_change": true,
+  "direct_rain_observation": true,
+  "reward_changed": true,
+  "reward_only_change": "disable SWFAC guardrail process penalty; all other reward terms unchanged",
+  "swfac_guardrail_enabled": false,
+  "action_mask_changed": false,
+  "action_grid_changed": false,
+  "cultivar_soil_management_parameter_perturbation": false,
+  "ppo_overrides": {
+    "ent_coef": 0.02
+  },
+  "fixed_ppo_parameters": {
+    "learning_rate": 0.0003,
+    "gamma": 1.0,
+    "gae_lambda": 1.0,
+    "n_steps": 144,
+    "batch_size": 144,
+    "n_epochs": 5,
+    "clip_range": 0.2
+  }
+}

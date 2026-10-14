@@ -1,0 +1,1697 @@
+{
+  "frozen_weather_sha256": "4B8FFE9E881D0A0743921B78B9C0E0EBFB1D2D645C5AA9737948B2B088ED7B34",
+  "frozen_weather_hash_verified": true,
+  "frozen_weather_row_count": 3653,
+  "frozen_weather_date_range": [
+    "2004-01-01",
+    "2013-12-31"
+  ],
+  "old_broken_cli_preserved": true,
+  "old_broken_cli_sha256": "5ABF5D7BB97EFAAE5E8361ABB4C773E1554B58116CBCA2213E75DCFF838285F0",
+  "formal_corrected_cli": "results\\yc_wgen_cli_pilot\\003_06_05_02\\final\\CNYC.CLI",
+  "formal_corrected_cli_sha256": "65CF134600A5881706A5D435E1A09B276ED92A21FA5ABE2E18AAF63AF1E3A929",
+  "matches_parsefix_candidate": true,
+  "formal_cli_status": "CORRECTED_CLI_READY",
+  "runtime_version": [
+    "DSSAT 4.8.0.024"
+  ],
+  "seeds_run": {
+    "seed_101_run_a": "PASS",
+    "seed_101_run_b": "PASS",
+    "seed_102": "PASS",
+    "seed_103": "PASS",
+    "seed_104": "PASS",
+    "seed_105": "PASS"
+  },
+  "repeated_seed": 101,
+  "same_seed_reproducible": "YES",
+  "seed_101_run_a_hash": "D9CD9926AE4382BA24783E498A928ED25F5EA92F1C60D1B3C7034448AAE5C29D",
+  "seed_101_run_b_hash": "D9CD9926AE4382BA24783E498A928ED25F5EA92F1C60D1B3C7034448AAE5C29D",
+  "different_seeds_distinct": "YES",
+  "distinct_weather_sequences": 5,
+  "weather_seed_interface": "weather_seed explicitly injected via instance._rseed1; verified as RSEED1 in runtime PDI config; Gym seed=None",
+  "seed_coupling_status": "SEPARATE: PPO seed NOT_APPLICABLE; Gym-DSSAT seed=None; each weather_seed explicitly injected as instance._rseed1 and confirmed in runtime dssat-pdi.yml rseed1_.",
+  "physical_sanity_status": "PASS",
+  "weather_summary_path": "results\\yc_wgen_cli_pilot\\003_06_05_02\\weather_summary_by_seed.csv",
+  "runtime_errors": [],
+  "runtime_warnings": {
+    "warning_file_present_runs": [
+      "seed_101_run_a",
+      "seed_101_run_b",
+      "seed_102",
+      "seed_103",
+      "seed_104",
+      "seed_105"
+    ],
+    "unique_warning_lines": {
+      "Photosynthesis method (PHOTO in FILEX) has been changed": {
+        "run_ids": [
+          "seed_101_run_a",
+          "seed_101_run_b",
+          "seed_102",
+          "seed_103",
+          "seed_104",
+          "seed_105"
+        ],
+        "count": 6
+      },
+      "Error reading latitude from experimental file": {
+        "run_ids": [
+          "seed_101_run_a",
+          "seed_101_run_b",
+          "seed_102",
+          "seed_103",
+          "seed_104",
+          "seed_105"
+        ],
+        "count": 6
+      },
+      "Error reading longitude from experimental file": {
+        "run_ids": [
+          "seed_101_run_a",
+          "seed_101_run_b",
+          "seed_102",
+          "seed_103",
+          "seed_104",
+          "seed_105"
+        ],
+        "count": 6
+      },
+      "Error reading elevation from experimental file": {
+        "run_ids": [
+          "seed_101_run_a",
+          "seed_101_run_b",
+          "seed_102",
+          "seed_103",
+          "seed_104",
+          "seed_105"
+        ],
+        "count": 6
+      },
+      "Error transferring variable: CYCRDin FIELD": {
+        "run_ids": [
+          "seed_101_run_a",
+          "seed_101_run_b",
+          "seed_102",
+          "seed_103",
+          "seed_104",
+          "seed_105"
+        ],
+        "count": 18
+      },
+      "Value not saved! Errors may result.": {
+        "run_ids": [
+          "seed_101_run_a",
+          "seed_101_run_b",
+          "seed_102",
+          "seed_103",
+          "seed_104",
+          "seed_105"
+        ],
+        "count": 36
+      },
+      "Error transferring variable: CXCRDin FIELD": {
+        "run_ids": [
+          "seed_101_run_a",
+          "seed_101_run_b",
+          "seed_102",
+          "seed_103",
+          "seed_104",
+          "seed_105"
+        ],
+        "count": 18
+      },
+      "Error transferring variable: CELEVin FIELD": {
+        "run_ids": [
+          "seed_101_run_a",
+          "seed_101_run_b",
+          "seed_102",
+          "seed_103",
+          "seed_104",
+          "seed_105"
+        ],
+        "count": 18
+      }
+    },
+    "warnings_are_nonfatal_for_this_wgen_gate": true,
+    "follow_up": "在后续单季 crop-output smoke 前检查缺失的纬度/经度/海拔字段与 DSSAT cultivar-input transfer 警告对农艺输出的影响。"
+  },
+  "wgen_seed_pilot_status": "WGEN_SEED_PILOT_PASS",
+  "validation_data_used_for_fitting": "NO",
+  "weather_candidate_modified": "NO",
+  "wet_day_definition_changed": "NO",
+  "ppo_training_run": "NO",
+  "other_sites_modified": "NO",
+  "recommended_next_step": "003_06_06_yc_wgen_weather_qc_and_dssat_smoke",
+  "report_md": "docs/yc_corrected_cli_and_full_seed_pilot.md",
+  "report_pptx": "docs/yc_corrected_cli_and_full_seed_pilot.pptx",
+  "results_directory": "results\\yc_wgen_cli_pilot\\003_06_05_02",
+  "peak_process_tree_rss_mb": 131.54,
+  "runtime_error_count": 0,
+  "runtime_warning_count": 6,
+  "run_details": {
+    "seed_101_run_a": {
+      "run_id": "seed_101_run_a",
+      "station": "YC",
+      "weather_seed": 101,
+      "ppo_seed": "NOT_APPLICABLE",
+      "seed_interface": "pilot weather_seed explicitly injected into Gym-DSSAT PDI rseed1 before runtime launch",
+      "steps": 120,
+      "runtime_compatibility_status": "PASS",
+      "filex_wther": "W",
+      "runtime_cli_path": "/workspace/results/yc_wgen_cli_pilot/003_06_05_02/runtime/tmp/tmpl89padmk/CNYC.CLI",
+      "runtime_cli_sha256": "65CF134600A5881706A5D435E1A09B276ED92A21FA5ABE2E18AAF63AF1E3A929",
+      "runtime_working_directory": "/workspace/results/yc_wgen_cli_pilot/003_06_05_02/runtime/tmp/tmpl89padmk",
+      "weather_capture_method": "runtime_daily_state",
+      "weather_capture_status": "CAPTURED",
+      "weather_path": "results/yc_wgen_cli_pilot/003_06_05_02/generated_weather/seed_101_run_a.csv",
+      "weather_sha256": "D9CD9926AE4382BA24783E498A928ED25F5EA92F1C60D1B3C7034448AAE5C29D",
+      "weather_row_count": 120,
+      "weather_summary": {
+        "window_type": "simulation-season statistics",
+        "row_count": 120,
+        "start_date": "2008-06-01",
+        "end_date": "2008-09-28",
+        "rain_n": 120,
+        "mean_rain": 4.231117409529234,
+        "min_rain": 0.0,
+        "max_rain": 56.6392974854,
+        "srad_n": 120,
+        "mean_srad": 16.43523601293217,
+        "min_srad": 5.51173067093,
+        "max_srad": 32.7590408325,
+        "tmax_n": 120,
+        "mean_tmax": 30.666804774598333,
+        "min_tmax": 18.7998771667,
+        "max_tmax": 40.2348365784,
+        "tmin_n": 120,
+        "mean_tmin": 20.148849447564682,
+        "min_tmin": 6.10097503662,
+        "max_tmin": 27.8459835052,
+        "season_rainfall_mm": 507.734089143508,
+        "rainy_days_gt_0mm": 36,
+        "maximum_daily_rainfall_mm": 56.6392974854,
+        "longest_dry_spell_days": 18
+      },
+      "physical_sanity": {
+        "status": "PASS",
+        "row_count": 120,
+        "missing_by_field": {
+          "RAIN": 0,
+          "SRAD": 0,
+          "TMAX": 0,
+          "TMIN": 0
+        },
+        "all_zero_rainfall": false,
+        "issues": [],
+        "bounds_are_screening_checks_not_calibrated_extreme_value_tests": true
+      },
+      "runtime_snapshot_files": [
+        "results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_101_run_a/runtime_snapshot/CNYC.CLI",
+        "results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_101_run_a/runtime_snapshot/DSSAT48.INH",
+        "results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_101_run_a/runtime_snapshot/DSSAT48.INP",
+        "results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_101_run_a/runtime_snapshot/INFO.OUT",
+        "results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_101_run_a/runtime_snapshot/RunList.OUT",
+        "results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_101_run_a/runtime_snapshot/WARNING.OUT",
+        "results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_101_run_a/runtime_snapshot/dssat-pdi.yml",
+        "results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_101_run_a/runtime_snapshot/fileX.MZX"
+      ],
+      "runtime_log": "results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_101_run_a/runtime_log.txt",
+      "peak_process_tree_rss_mb": 125.95,
+      "elapsed_seconds": 2.962,
+      "runtime_state_keys": [
+        "cleach",
+        "cnox",
+        "cumsumfert",
+        "dap",
+        "dlayr",
+        "dtt",
+        "dul",
+        "eo",
+        "eop",
+        "eos",
+        "ep",
+        "es",
+        "grnwt",
+        "istage",
+        "ll",
+        "nstres",
+        "pcngrn",
+        "pltpop",
+        "rain",
+        "rtdep",
+        "runoff",
+        "sat",
+        "srad",
+        "sw",
+        "swfac",
+        "tleachd",
+        "tmax",
+        "tmin",
+        "tnoxd",
+        "topwt",
+        "totaml",
+        "totir",
+        "trnu",
+        "vstage",
+        "wtdep",
+        "wtnup",
+        "xlai",
+        "yrdoy"
+      ],
+      "candidate_cli_sha256_after_run": "65CF134600A5881706A5D435E1A09B276ED92A21FA5ABE2E18AAF63AF1E3A929"
+    },
+    "seed_101_run_b": {
+      "run_id": "seed_101_run_b",
+      "station": "YC",
+      "weather_seed": 101,
+      "ppo_seed": "NOT_APPLICABLE",
+      "seed_interface": "pilot weather_seed explicitly injected into Gym-DSSAT PDI rseed1 before runtime launch",
+      "steps": 120,
+      "runtime_compatibility_status": "PASS",
+      "filex_wther": "W",
+      "runtime_cli_path": "/workspace/results/yc_wgen_cli_pilot/003_06_05_02/runtime/tmp/tmpcearqitd/CNYC.CLI",
+      "runtime_cli_sha256": "65CF134600A5881706A5D435E1A09B276ED92A21FA5ABE2E18AAF63AF1E3A929",
+      "runtime_working_directory": "/workspace/results/yc_wgen_cli_pilot/003_06_05_02/runtime/tmp/tmpcearqitd",
+      "weather_capture_method": "runtime_daily_state",
+      "weather_capture_status": "CAPTURED",
+      "weather_path": "results/yc_wgen_cli_pilot/003_06_05_02/generated_weather/seed_101_run_b.csv",
+      "weather_sha256": "D9CD9926AE4382BA24783E498A928ED25F5EA92F1C60D1B3C7034448AAE5C29D",
+      "weather_row_count": 120,
+      "weather_summary": {
+        "window_type": "simulation-season statistics",
+        "row_count": 120,
+        "start_date": "2008-06-01",
+        "end_date": "2008-09-28",
+        "rain_n": 120,
+        "mean_rain": 4.231117409529234,
+        "min_rain": 0.0,
+        "max_rain": 56.6392974854,
+        "srad_n": 120,
+        "mean_srad": 16.43523601293217,
+        "min_srad": 5.51173067093,
+        "max_srad": 32.7590408325,
+        "tmax_n": 120,
+        "mean_tmax": 30.666804774598333,
+        "min_tmax": 18.7998771667,
+        "max_tmax": 40.2348365784,
+        "tmin_n": 120,
+        "mean_tmin": 20.148849447564682,
+        "min_tmin": 6.10097503662,
+        "max_tmin": 27.8459835052,
+        "season_rainfall_mm": 507.734089143508,
+        "rainy_days_gt_0mm": 36,
+        "maximum_daily_rainfall_mm": 56.6392974854,
+        "longest_dry_spell_days": 18
+      },
+      "physical_sanity": {
+        "status": "PASS",
+        "row_count": 120,
+        "missing_by_field": {
+          "RAIN": 0,
+          "SRAD": 0,
+          "TMAX": 0,
+          "TMIN": 0
+        },
+        "all_zero_rainfall": false,
+        "issues": [],
+        "bounds_are_screening_checks_not_calibrated_extreme_value_tests": true
+      },
+      "runtime_snapshot_files": [
+        "results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_101_run_b/runtime_snapshot/CNYC.CLI",
+        "results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_101_run_b/runtime_snapshot/DSSAT48.INH",
+        "results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_101_run_b/runtime_snapshot/DSSAT48.INP",
+        "results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_101_run_b/runtime_snapshot/INFO.OUT",
+        "results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_101_run_b/runtime_snapshot/RunList.OUT",
+        "results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_101_run_b/runtime_snapshot/WARNING.OUT",
+        "results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_101_run_b/runtime_snapshot/dssat-pdi.yml",
+        "results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_101_run_b/runtime_snapshot/fileX.MZX"
+      ],
+      "runtime_log": "results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_101_run_b/runtime_log.txt",
+      "peak_process_tree_rss_mb": 127.7,
+      "elapsed_seconds": 1.423,
+      "runtime_state_keys": [
+        "cleach",
+        "cnox",
+        "cumsumfert",
+        "dap",
+        "dlayr",
+        "dtt",
+        "dul",
+        "eo",
+        "eop",
+        "eos",
+        "ep",
+        "es",
+        "grnwt",
+        "istage",
+        "ll",
+        "nstres",
+        "pcngrn",
+        "pltpop",
+        "rain",
+        "rtdep",
+        "runoff",
+        "sat",
+        "srad",
+        "sw",
+        "swfac",
+        "tleachd",
+        "tmax",
+        "tmin",
+        "tnoxd",
+        "topwt",
+        "totaml",
+        "totir",
+        "trnu",
+        "vstage",
+        "wtdep",
+        "wtnup",
+        "xlai",
+        "yrdoy"
+      ],
+      "candidate_cli_sha256_after_run": "65CF134600A5881706A5D435E1A09B276ED92A21FA5ABE2E18AAF63AF1E3A929"
+    },
+    "seed_102": {
+      "run_id": "seed_102",
+      "station": "YC",
+      "weather_seed": 102,
+      "ppo_seed": "NOT_APPLICABLE",
+      "seed_interface": "pilot weather_seed explicitly injected into Gym-DSSAT PDI rseed1 before runtime launch",
+      "steps": 117,
+      "runtime_compatibility_status": "PASS",
+      "filex_wther": "W",
+      "runtime_cli_path": "/workspace/results/yc_wgen_cli_pilot/003_06_05_02/runtime/tmp/tmp5ykca1rs/CNYC.CLI",
+      "runtime_cli_sha256": "65CF134600A5881706A5D435E1A09B276ED92A21FA5ABE2E18AAF63AF1E3A929",
+      "runtime_working_directory": "/workspace/results/yc_wgen_cli_pilot/003_06_05_02/runtime/tmp/tmp5ykca1rs",
+      "weather_capture_method": "runtime_daily_state",
+      "weather_capture_status": "CAPTURED",
+      "weather_path": "results/yc_wgen_cli_pilot/003_06_05_02/generated_weather/seed_102.csv",
+      "weather_sha256": "240C34531DC83727D010317BC006BD44DE267418896AD237085A03F103C4AA43",
+      "weather_row_count": 117,
+      "weather_summary": {
+        "window_type": "simulation-season statistics",
+        "row_count": 117,
+        "start_date": "2008-06-01",
+        "end_date": "2008-09-25",
+        "rain_n": 117,
+        "mean_rain": 4.35481343723965,
+        "min_rain": 0.0,
+        "max_rain": 62.7053184509,
+        "srad_n": 117,
+        "mean_srad": 16.944868544229998,
+        "min_srad": 5.44756793976,
+        "max_srad": 31.4299602509,
+        "tmax_n": 117,
+        "mean_tmax": 30.613471055641032,
+        "min_tmax": 22.1166954041,
+        "max_tmax": 40.9713821411,
+        "tmin_n": 117,
+        "mean_tmin": 19.98063910720889,
+        "min_tmin": 9.78544425964,
+        "max_tmin": 28.110118866,
+        "season_rainfall_mm": 509.51317215703904,
+        "rainy_days_gt_0mm": 35,
+        "maximum_daily_rainfall_mm": 62.7053184509,
+        "longest_dry_spell_days": 21
+      },
+      "physical_sanity": {
+        "status": "PASS",
+        "row_count": 117,
+        "missing_by_field": {
+          "RAIN": 0,
+          "SRAD": 0,
+          "TMAX": 0,
+          "TMIN": 0
+        },
+        "all_zero_rainfall": false,
+        "issues": [],
+        "bounds_are_screening_checks_not_calibrated_extreme_value_tests": true
+      },
+      "runtime_snapshot_files": [
+        "results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_102/runtime_snapshot/CNYC.CLI",
+        "results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_102/runtime_snapshot/DSSAT48.INH",
+        "results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_102/runtime_snapshot/DSSAT48.INP",
+        "results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_102/runtime_snapshot/INFO.OUT",
+        "results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_102/runtime_snapshot/RunList.OUT",
+        "results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_102/runtime_snapshot/WARNING.OUT",
+        "results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_102/runtime_snapshot/dssat-pdi.yml",
+        "results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_102/runtime_snapshot/fileX.MZX"
+      ],
+      "runtime_log": "results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_102/runtime_log.txt",
+      "peak_process_tree_rss_mb": 127.79,
+      "elapsed_seconds": 1.476,
+      "runtime_state_keys": [
+        "cleach",
+        "cnox",
+        "cumsumfert",
+        "dap",
+        "dlayr",
+        "dtt",
+        "dul",
+        "eo",
+        "eop",
+        "eos",
+        "ep",
+        "es",
+        "grnwt",
+        "istage",
+        "ll",
+        "nstres",
+        "pcngrn",
+        "pltpop",
+        "rain",
+        "rtdep",
+        "runoff",
+        "sat",
+        "srad",
+        "sw",
+        "swfac",
+        "tleachd",
+        "tmax",
+        "tmin",
+        "tnoxd",
+        "topwt",
+        "totaml",
+        "totir",
+        "trnu",
+        "vstage",
+        "wtdep",
+        "wtnup",
+        "xlai",
+        "yrdoy"
+      ],
+      "candidate_cli_sha256_after_run": "65CF134600A5881706A5D435E1A09B276ED92A21FA5ABE2E18AAF63AF1E3A929"
+    },
+    "seed_103": {
+      "run_id": "seed_103",
+      "station": "YC",
+      "weather_seed": 103,
+      "ppo_seed": "NOT_APPLICABLE",
+      "seed_interface": "pilot weather_seed explicitly injected into Gym-DSSAT PDI rseed1 before runtime launch",
+      "steps": 117,
+      "runtime_compatibility_status": "PASS",
+      "filex_wther": "W",
+      "runtime_cli_path": "/workspace/results/yc_wgen_cli_pilot/003_06_05_02/runtime/tmp/tmpzxni_14g/CNYC.CLI",
+      "runtime_cli_sha256": "65CF134600A5881706A5D435E1A09B276ED92A21FA5ABE2E18AAF63AF1E3A929",
+      "runtime_working_directory": "/workspace/results/yc_wgen_cli_pilot/003_06_05_02/runtime/tmp/tmpzxni_14g",
+      "weather_capture_method": "runtime_daily_state",
+      "weather_capture_status": "CAPTURED",
+      "weather_path": "results/yc_wgen_cli_pilot/003_06_05_02/generated_weather/seed_103.csv",
+      "weather_sha256": "DC5C2EAA31F9930CAB3EC3312AF9AF95315D8ACC57A4AA1BD5BD15CB248E20C2",
+      "weather_row_count": 117,
+      "weather_summary": {
+        "window_type": "simulation-season statistics",
+        "row_count": 117,
+        "start_date": "2008-06-01",
+        "end_date": "2008-09-25",
+        "rain_n": 117,
+        "mean_rain": 3.986667962728206,
+        "min_rain": 0.0,
+        "max_rain": 73.8980407715,
+        "srad_n": 117,
+        "mean_srad": 16.005202081468376,
+        "min_srad": 4.7446269989,
+        "max_srad": 31.5855331421,
+        "tmax_n": 117,
+        "mean_tmax": 31.31614707881881,
+        "min_tmax": 21.9109153748,
+        "max_tmax": 41.7001571655,
+        "tmin_n": 117,
+        "mean_tmin": 20.743331925480348,
+        "min_tmin": 12.8497810364,
+        "max_tmin": 27.4866828918,
+        "season_rainfall_mm": 466.44015163920005,
+        "rainy_days_gt_0mm": 37,
+        "maximum_daily_rainfall_mm": 73.8980407715,
+        "longest_dry_spell_days": 12
+      },
+      "physical_sanity": {
+        "status": "PASS",
+        "row_count": 117,
+        "missing_by_field": {
+          "RAIN": 0,
+          "SRAD": 0,
+          "TMAX": 0,
+          "TMIN": 0
+        },
+        "all_zero_rainfall": false,
+        "issues": [],
+        "bounds_are_screening_checks_not_calibrated_extreme_value_tests": true
+      },
+      "runtime_snapshot_files": [
+        "results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_103/runtime_snapshot/CNYC.CLI",
+        "results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_103/runtime_snapshot/DSSAT48.INH",
+        "results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_103/runtime_snapshot/DSSAT48.INP",
+        "results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_103/runtime_snapshot/INFO.OUT",
+        "results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_103/runtime_snapshot/RunList.OUT",
+        "results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_103/runtime_snapshot/WARNING.OUT",
+        "results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_103/runtime_snapshot/dssat-pdi.yml",
+        "results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_103/runtime_snapshot/fileX.MZX"
+      ],
+      "runtime_log": "results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_103/runtime_log.txt",
+      "peak_process_tree_rss_mb": 129.62,
+      "elapsed_seconds": 1.427,
+      "runtime_state_keys": [
+        "cleach",
+        "cnox",
+        "cumsumfert",
+        "dap",
+        "dlayr",
+        "dtt",
+        "dul",
+        "eo",
+        "eop",
+        "eos",
+        "ep",
+        "es",
+        "grnwt",
+        "istage",
+        "ll",
+        "nstres",
+        "pcngrn",
+        "pltpop",
+        "rain",
+        "rtdep",
+        "runoff",
+        "sat",
+        "srad",
+        "sw",
+        "swfac",
+        "tleachd",
+        "tmax",
+        "tmin",
+        "tnoxd",
+        "topwt",
+        "totaml",
+        "totir",
+        "trnu",
+        "vstage",
+        "wtdep",
+        "wtnup",
+        "xlai",
+        "yrdoy"
+      ],
+      "candidate_cli_sha256_after_run": "65CF134600A5881706A5D435E1A09B276ED92A21FA5ABE2E18AAF63AF1E3A929"
+    },
+    "seed_104": {
+      "run_id": "seed_104",
+      "station": "YC",
+      "weather_seed": 104,
+      "ppo_seed": "NOT_APPLICABLE",
+      "seed_interface": "pilot weather_seed explicitly injected into Gym-DSSAT PDI rseed1 before runtime launch",
+      "steps": 116,
+      "runtime_compatibility_status": "PASS",
+      "filex_wther": "W",
+      "runtime_cli_path": "/workspace/results/yc_wgen_cli_pilot/003_06_05_02/runtime/tmp/tmpgahh4s7h/CNYC.CLI",
+      "runtime_cli_sha256": "65CF134600A5881706A5D435E1A09B276ED92A21FA5ABE2E18AAF63AF1E3A929",
+      "runtime_working_directory": "/workspace/results/yc_wgen_cli_pilot/003_06_05_02/runtime/tmp/tmpgahh4s7h",
+      "weather_capture_method": "runtime_daily_state",
+      "weather_capture_status": "CAPTURED",
+      "weather_path": "results/yc_wgen_cli_pilot/003_06_05_02/generated_weather/seed_104.csv",
+      "weather_sha256": "7E6D92914D38E0C6B4C9A90F9FA4438F8DFA51AFC7963AA64F147A29FEE74E67",
+      "weather_row_count": 116,
+      "weather_summary": {
+        "window_type": "simulation-season statistics",
+        "row_count": 116,
+        "start_date": "2008-06-01",
+        "end_date": "2008-09-24",
+        "rain_n": 116,
+        "mean_rain": 2.50083344712412,
+        "min_rain": 0.0,
+        "max_rain": 51.0497360229,
+        "srad_n": 116,
+        "mean_srad": 16.44860297647,
+        "min_srad": 4.7446269989,
+        "max_srad": 31.2892093658,
+        "tmax_n": 116,
+        "mean_tmax": 32.105434598593106,
+        "min_tmax": 17.8860569,
+        "max_tmax": 41.5606994629,
+        "tmin_n": 116,
+        "mean_tmin": 21.07796807946724,
+        "min_tmin": 11.2212400436,
+        "max_tmin": 29.2758255005,
+        "season_rainfall_mm": 290.09667986639795,
+        "rainy_days_gt_0mm": 22,
+        "maximum_daily_rainfall_mm": 51.0497360229,
+        "longest_dry_spell_days": 19
+      },
+      "physical_sanity": {
+        "status": "PASS",
+        "row_count": 116,
+        "missing_by_field": {
+          "RAIN": 0,
+          "SRAD": 0,
+          "TMAX": 0,
+          "TMIN": 0
+        },
+        "all_zero_rainfall": false,
+        "issues": [],
+        "bounds_are_screening_checks_not_calibrated_extreme_value_tests": true
+      },
+      "runtime_snapshot_files": [
+        "results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_104/runtime_snapshot/CNYC.CLI",
+        "results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_104/runtime_snapshot/DSSAT48.INH",
+        "results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_104/runtime_snapshot/DSSAT48.INP",
+        "results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_104/runtime_snapshot/INFO.OUT",
+        "results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_104/runtime_snapshot/RunList.OUT",
+        "results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_104/runtime_snapshot/WARNING.OUT",
+        "results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_104/runtime_snapshot/dssat-pdi.yml",
+        "results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_104/runtime_snapshot/fileX.MZX"
+      ],
+      "runtime_log": "results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_104/runtime_log.txt",
+      "peak_process_tree_rss_mb": 130.6,
+      "elapsed_seconds": 1.599,
+      "runtime_state_keys": [
+        "cleach",
+        "cnox",
+        "cumsumfert",
+        "dap",
+        "dlayr",
+        "dtt",
+        "dul",
+        "eo",
+        "eop",
+        "eos",
+        "ep",
+        "es",
+        "grnwt",
+        "istage",
+        "ll",
+        "nstres",
+        "pcngrn",
+        "pltpop",
+        "rain",
+        "rtdep",
+        "runoff",
+        "sat",
+        "srad",
+        "sw",
+        "swfac",
+        "tleachd",
+        "tmax",
+        "tmin",
+        "tnoxd",
+        "topwt",
+        "totaml",
+        "totir",
+        "trnu",
+        "vstage",
+        "wtdep",
+        "wtnup",
+        "xlai",
+        "yrdoy"
+      ],
+      "candidate_cli_sha256_after_run": "65CF134600A5881706A5D435E1A09B276ED92A21FA5ABE2E18AAF63AF1E3A929"
+    },
+    "seed_105": {
+      "run_id": "seed_105",
+      "station": "YC",
+      "weather_seed": 105,
+      "ppo_seed": "NOT_APPLICABLE",
+      "seed_interface": "pilot weather_seed explicitly injected into Gym-DSSAT PDI rseed1 before runtime launch",
+      "steps": 118,
+      "runtime_compatibility_status": "PASS",
+      "filex_wther": "W",
+      "runtime_cli_path": "/workspace/results/yc_wgen_cli_pilot/003_06_05_02/runtime/tmp/tmp1n7r9ib2/CNYC.CLI",
+      "runtime_cli_sha256": "65CF134600A5881706A5D435E1A09B276ED92A21FA5ABE2E18AAF63AF1E3A929",
+      "runtime_working_directory": "/workspace/results/yc_wgen_cli_pilot/003_06_05_02/runtime/tmp/tmp1n7r9ib2",
+      "weather_capture_method": "runtime_daily_state",
+      "weather_capture_status": "CAPTURED",
+      "weather_path": "results/yc_wgen_cli_pilot/003_06_05_02/generated_weather/seed_105.csv",
+      "weather_sha256": "94E881EBFFFFA8224F5E1BF386E5589C74CAB3CB3EF8A9B52F422C3B569B3405",
+      "weather_row_count": 118,
+      "weather_summary": {
+        "window_type": "simulation-season statistics",
+        "row_count": 118,
+        "start_date": "2008-06-01",
+        "end_date": "2008-09-26",
+        "rain_n": 118,
+        "mean_rain": 4.093918097284907,
+        "min_rain": 0.0,
+        "max_rain": 97.3187637329,
+        "srad_n": 118,
+        "mean_srad": 17.028252310672368,
+        "min_srad": 4.89220237732,
+        "max_srad": 32.2544708252,
+        "tmax_n": 118,
+        "mean_tmax": 30.866653749500838,
+        "min_tmax": 20.9837589264,
+        "max_tmax": 40.9824790955,
+        "tmin_n": 118,
+        "mean_tmin": 20.341342303713137,
+        "min_tmin": 8.27594947815,
+        "max_tmin": 26.9600410461,
+        "season_rainfall_mm": 483.08233547961896,
+        "rainy_days_gt_0mm": 30,
+        "maximum_daily_rainfall_mm": 97.3187637329,
+        "longest_dry_spell_days": 12
+      },
+      "physical_sanity": {
+        "status": "PASS",
+        "row_count": 118,
+        "missing_by_field": {
+          "RAIN": 0,
+          "SRAD": 0,
+          "TMAX": 0,
+          "TMIN": 0
+        },
+        "all_zero_rainfall": false,
+        "issues": [],
+        "bounds_are_screening_checks_not_calibrated_extreme_value_tests": true
+      },
+      "runtime_snapshot_files": [
+        "results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_105/runtime_snapshot/CNYC.CLI",
+        "results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_105/runtime_snapshot/DSSAT48.INH",
+        "results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_105/runtime_snapshot/DSSAT48.INP",
+        "results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_105/runtime_snapshot/INFO.OUT",
+        "results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_105/runtime_snapshot/RunList.OUT",
+        "results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_105/runtime_snapshot/WARNING.OUT",
+        "results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_105/runtime_snapshot/dssat-pdi.yml",
+        "results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_105/runtime_snapshot/fileX.MZX"
+      ],
+      "runtime_log": "results/yc_wgen_cli_pilot/003_06_05_02/runtime/seed_105/runtime_log.txt",
+      "peak_process_tree_rss_mb": 131.54,
+      "elapsed_seconds": 1.448,
+      "runtime_state_keys": [
+        "cleach",
+        "cnox",
+        "cumsumfert",
+        "dap",
+        "dlayr",
+        "dtt",
+        "dul",
+        "eo",
+        "eop",
+        "eos",
+        "ep",
+        "es",
+        "grnwt",
+        "istage",
+        "ll",
+        "nstres",
+        "pcngrn",
+        "pltpop",
+        "rain",
+        "rtdep",
+        "runoff",
+        "sat",
+        "srad",
+        "sw",
+        "swfac",
+        "tleachd",
+        "tmax",
+        "tmin",
+        "tnoxd",
+        "topwt",
+        "totaml",
+        "totir",
+        "trnu",
+        "vstage",
+        "wtdep",
+        "wtnup",
+        "xlai",
+        "yrdoy"
+      ],
+      "candidate_cli_sha256_after_run": "65CF134600A5881706A5D435E1A09B276ED92A21FA5ABE2E18AAF63AF1E3A929"
+    }
+  },
+  "pairwise_seed_diversity": [
+    {
+      "left_run": "seed_101_run_a",
+      "right_run": "seed_102",
+      "left_seed": 101,
+      "right_seed": 102,
+      "left_hash": "D9CD9926AE4382BA24783E498A928ED25F5EA92F1C60D1B3C7034448AAE5C29D",
+      "right_hash": "240C34531DC83727D010317BC006BD44DE267418896AD237085A03F103C4AA43",
+      "identical": false,
+      "different_rows_by_field": {
+        "RAIN": 56,
+        "SRAD": 117,
+        "TMAX": 117,
+        "TMIN": 117
+      },
+      "comparison": {
+        "identical_full_sequence_including_date_doy_and_weather": false,
+        "left_row_count": 120,
+        "right_row_count": 117,
+        "common_date_count": 117,
+        "left_only_dates": [
+          "2008-09-26",
+          "2008-09-27",
+          "2008-09-28"
+        ],
+        "right_only_dates": [],
+        "field_differences": {
+          "RAIN": {
+            "differing_rows_on_common_dates": 56,
+            "compared_common_dates": 117,
+            "first_difference": {
+              "date": "2008-06-02",
+              "left": 0.0,
+              "right": 0.385543853045
+            }
+          },
+          "SRAD": {
+            "differing_rows_on_common_dates": 117,
+            "compared_common_dates": 117,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 25.8682746887,
+              "right": 27.6479911804
+            }
+          },
+          "TMAX": {
+            "differing_rows_on_common_dates": 117,
+            "compared_common_dates": 117,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 33.5752410889,
+              "right": 33.5724639893
+            }
+          },
+          "TMIN": {
+            "differing_rows_on_common_dates": 117,
+            "compared_common_dates": 117,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 21.3598651886,
+              "right": 21.2871665955
+            }
+          }
+        }
+      }
+    },
+    {
+      "left_run": "seed_101_run_a",
+      "right_run": "seed_103",
+      "left_seed": 101,
+      "right_seed": 103,
+      "left_hash": "D9CD9926AE4382BA24783E498A928ED25F5EA92F1C60D1B3C7034448AAE5C29D",
+      "right_hash": "DC5C2EAA31F9930CAB3EC3312AF9AF95315D8ACC57A4AA1BD5BD15CB248E20C2",
+      "identical": false,
+      "different_rows_by_field": {
+        "RAIN": 60,
+        "SRAD": 117,
+        "TMAX": 117,
+        "TMIN": 117
+      },
+      "comparison": {
+        "identical_full_sequence_including_date_doy_and_weather": false,
+        "left_row_count": 120,
+        "right_row_count": 117,
+        "common_date_count": 117,
+        "left_only_dates": [
+          "2008-09-26",
+          "2008-09-27",
+          "2008-09-28"
+        ],
+        "right_only_dates": [],
+        "field_differences": {
+          "RAIN": {
+            "differing_rows_on_common_dates": 60,
+            "compared_common_dates": 117,
+            "first_difference": {
+              "date": "2008-06-03",
+              "left": 0.0,
+              "right": 0.145937934518
+            }
+          },
+          "SRAD": {
+            "differing_rows_on_common_dates": 117,
+            "compared_common_dates": 117,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 25.8682746887,
+              "right": 28.6107177734
+            }
+          },
+          "TMAX": {
+            "differing_rows_on_common_dates": 117,
+            "compared_common_dates": 117,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 33.5752410889,
+              "right": 33.5696792603
+            }
+          },
+          "TMIN": {
+            "differing_rows_on_common_dates": 117,
+            "compared_common_dates": 117,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 21.3598651886,
+              "right": 21.2128639221
+            }
+          }
+        }
+      }
+    },
+    {
+      "left_run": "seed_101_run_a",
+      "right_run": "seed_104",
+      "left_seed": 101,
+      "right_seed": 104,
+      "left_hash": "D9CD9926AE4382BA24783E498A928ED25F5EA92F1C60D1B3C7034448AAE5C29D",
+      "right_hash": "7E6D92914D38E0C6B4C9A90F9FA4438F8DFA51AFC7963AA64F147A29FEE74E67",
+      "identical": false,
+      "different_rows_by_field": {
+        "RAIN": 50,
+        "SRAD": 116,
+        "TMAX": 116,
+        "TMIN": 116
+      },
+      "comparison": {
+        "identical_full_sequence_including_date_doy_and_weather": false,
+        "left_row_count": 120,
+        "right_row_count": 116,
+        "common_date_count": 116,
+        "left_only_dates": [
+          "2008-09-25",
+          "2008-09-26",
+          "2008-09-27",
+          "2008-09-28"
+        ],
+        "right_only_dates": [],
+        "field_differences": {
+          "RAIN": {
+            "differing_rows_on_common_dates": 50,
+            "compared_common_dates": 116,
+            "first_difference": {
+              "date": "2008-06-09",
+              "left": 0.18056152761,
+              "right": 0.0
+            }
+          },
+          "SRAD": {
+            "differing_rows_on_common_dates": 116,
+            "compared_common_dates": 116,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 25.8682746887,
+              "right": 28.7064990997
+            }
+          },
+          "TMAX": {
+            "differing_rows_on_common_dates": 116,
+            "compared_common_dates": 116,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 33.5752410889,
+              "right": 33.5668907166
+            }
+          },
+          "TMIN": {
+            "differing_rows_on_common_dates": 116,
+            "compared_common_dates": 116,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 21.3598651886,
+              "right": 21.137008667
+            }
+          }
+        }
+      }
+    },
+    {
+      "left_run": "seed_101_run_a",
+      "right_run": "seed_105",
+      "left_seed": 101,
+      "right_seed": 105,
+      "left_hash": "D9CD9926AE4382BA24783E498A928ED25F5EA92F1C60D1B3C7034448AAE5C29D",
+      "right_hash": "94E881EBFFFFA8224F5E1BF386E5589C74CAB3CB3EF8A9B52F422C3B569B3405",
+      "identical": false,
+      "different_rows_by_field": {
+        "RAIN": 58,
+        "SRAD": 118,
+        "TMAX": 118,
+        "TMIN": 118
+      },
+      "comparison": {
+        "identical_full_sequence_including_date_doy_and_weather": false,
+        "left_row_count": 120,
+        "right_row_count": 118,
+        "common_date_count": 118,
+        "left_only_dates": [
+          "2008-09-27",
+          "2008-09-28"
+        ],
+        "right_only_dates": [],
+        "field_differences": {
+          "RAIN": {
+            "differing_rows_on_common_dates": 58,
+            "compared_common_dates": 118,
+            "first_difference": {
+              "date": "2008-06-04",
+              "left": 0.0,
+              "right": 11.320889473
+            }
+          },
+          "SRAD": {
+            "differing_rows_on_common_dates": 118,
+            "compared_common_dates": 118,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 25.8682746887,
+              "right": 27.9710922241
+            }
+          },
+          "TMAX": {
+            "differing_rows_on_common_dates": 118,
+            "compared_common_dates": 118,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 33.5752410889,
+              "right": 33.5640983582
+            }
+          },
+          "TMIN": {
+            "differing_rows_on_common_dates": 118,
+            "compared_common_dates": 118,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 21.3598651886,
+              "right": 21.0596542358
+            }
+          }
+        }
+      }
+    },
+    {
+      "left_run": "seed_102",
+      "right_run": "seed_103",
+      "left_seed": 102,
+      "right_seed": 103,
+      "left_hash": "240C34531DC83727D010317BC006BD44DE267418896AD237085A03F103C4AA43",
+      "right_hash": "DC5C2EAA31F9930CAB3EC3312AF9AF95315D8ACC57A4AA1BD5BD15CB248E20C2",
+      "identical": false,
+      "different_rows_by_field": {
+        "RAIN": 61,
+        "SRAD": 117,
+        "TMAX": 117,
+        "TMIN": 117
+      },
+      "comparison": {
+        "identical_full_sequence_including_date_doy_and_weather": false,
+        "left_row_count": 117,
+        "right_row_count": 117,
+        "common_date_count": 117,
+        "left_only_dates": [],
+        "right_only_dates": [],
+        "field_differences": {
+          "RAIN": {
+            "differing_rows_on_common_dates": 61,
+            "compared_common_dates": 117,
+            "first_difference": {
+              "date": "2008-06-02",
+              "left": 0.385543853045,
+              "right": 0.0
+            }
+          },
+          "SRAD": {
+            "differing_rows_on_common_dates": 117,
+            "compared_common_dates": 117,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 27.6479911804,
+              "right": 28.6107177734
+            }
+          },
+          "TMAX": {
+            "differing_rows_on_common_dates": 117,
+            "compared_common_dates": 117,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 33.5724639893,
+              "right": 33.5696792603
+            }
+          },
+          "TMIN": {
+            "differing_rows_on_common_dates": 117,
+            "compared_common_dates": 117,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 21.2871665955,
+              "right": 21.2128639221
+            }
+          }
+        }
+      }
+    },
+    {
+      "left_run": "seed_102",
+      "right_run": "seed_104",
+      "left_seed": 102,
+      "right_seed": 104,
+      "left_hash": "240C34531DC83727D010317BC006BD44DE267418896AD237085A03F103C4AA43",
+      "right_hash": "7E6D92914D38E0C6B4C9A90F9FA4438F8DFA51AFC7963AA64F147A29FEE74E67",
+      "identical": false,
+      "different_rows_by_field": {
+        "RAIN": 51,
+        "SRAD": 115,
+        "TMAX": 116,
+        "TMIN": 116
+      },
+      "comparison": {
+        "identical_full_sequence_including_date_doy_and_weather": false,
+        "left_row_count": 117,
+        "right_row_count": 116,
+        "common_date_count": 116,
+        "left_only_dates": [
+          "2008-09-25"
+        ],
+        "right_only_dates": [],
+        "field_differences": {
+          "RAIN": {
+            "differing_rows_on_common_dates": 51,
+            "compared_common_dates": 116,
+            "first_difference": {
+              "date": "2008-06-02",
+              "left": 0.385543853045,
+              "right": 0.0
+            }
+          },
+          "SRAD": {
+            "differing_rows_on_common_dates": 115,
+            "compared_common_dates": 116,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 27.6479911804,
+              "right": 28.7064990997
+            }
+          },
+          "TMAX": {
+            "differing_rows_on_common_dates": 116,
+            "compared_common_dates": 116,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 33.5724639893,
+              "right": 33.5668907166
+            }
+          },
+          "TMIN": {
+            "differing_rows_on_common_dates": 116,
+            "compared_common_dates": 116,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 21.2871665955,
+              "right": 21.137008667
+            }
+          }
+        }
+      }
+    },
+    {
+      "left_run": "seed_102",
+      "right_run": "seed_105",
+      "left_seed": 102,
+      "right_seed": 105,
+      "left_hash": "240C34531DC83727D010317BC006BD44DE267418896AD237085A03F103C4AA43",
+      "right_hash": "94E881EBFFFFA8224F5E1BF386E5589C74CAB3CB3EF8A9B52F422C3B569B3405",
+      "identical": false,
+      "different_rows_by_field": {
+        "RAIN": 56,
+        "SRAD": 117,
+        "TMAX": 117,
+        "TMIN": 117
+      },
+      "comparison": {
+        "identical_full_sequence_including_date_doy_and_weather": false,
+        "left_row_count": 117,
+        "right_row_count": 118,
+        "common_date_count": 117,
+        "left_only_dates": [],
+        "right_only_dates": [
+          "2008-09-26"
+        ],
+        "field_differences": {
+          "RAIN": {
+            "differing_rows_on_common_dates": 56,
+            "compared_common_dates": 117,
+            "first_difference": {
+              "date": "2008-06-02",
+              "left": 0.385543853045,
+              "right": 0.0
+            }
+          },
+          "SRAD": {
+            "differing_rows_on_common_dates": 117,
+            "compared_common_dates": 117,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 27.6479911804,
+              "right": 27.9710922241
+            }
+          },
+          "TMAX": {
+            "differing_rows_on_common_dates": 117,
+            "compared_common_dates": 117,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 33.5724639893,
+              "right": 33.5640983582
+            }
+          },
+          "TMIN": {
+            "differing_rows_on_common_dates": 117,
+            "compared_common_dates": 117,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 21.2871665955,
+              "right": 21.0596542358
+            }
+          }
+        }
+      }
+    },
+    {
+      "left_run": "seed_103",
+      "right_run": "seed_104",
+      "left_seed": 103,
+      "right_seed": 104,
+      "left_hash": "DC5C2EAA31F9930CAB3EC3312AF9AF95315D8ACC57A4AA1BD5BD15CB248E20C2",
+      "right_hash": "7E6D92914D38E0C6B4C9A90F9FA4438F8DFA51AFC7963AA64F147A29FEE74E67",
+      "identical": false,
+      "different_rows_by_field": {
+        "RAIN": 51,
+        "SRAD": 114,
+        "TMAX": 116,
+        "TMIN": 116
+      },
+      "comparison": {
+        "identical_full_sequence_including_date_doy_and_weather": false,
+        "left_row_count": 117,
+        "right_row_count": 116,
+        "common_date_count": 116,
+        "left_only_dates": [
+          "2008-09-25"
+        ],
+        "right_only_dates": [],
+        "field_differences": {
+          "RAIN": {
+            "differing_rows_on_common_dates": 51,
+            "compared_common_dates": 116,
+            "first_difference": {
+              "date": "2008-06-03",
+              "left": 0.145937934518,
+              "right": 0.0
+            }
+          },
+          "SRAD": {
+            "differing_rows_on_common_dates": 114,
+            "compared_common_dates": 116,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 28.6107177734,
+              "right": 28.7064990997
+            }
+          },
+          "TMAX": {
+            "differing_rows_on_common_dates": 116,
+            "compared_common_dates": 116,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 33.5696792603,
+              "right": 33.5668907166
+            }
+          },
+          "TMIN": {
+            "differing_rows_on_common_dates": 116,
+            "compared_common_dates": 116,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 21.2128639221,
+              "right": 21.137008667
+            }
+          }
+        }
+      }
+    },
+    {
+      "left_run": "seed_103",
+      "right_run": "seed_105",
+      "left_seed": 103,
+      "right_seed": 105,
+      "left_hash": "DC5C2EAA31F9930CAB3EC3312AF9AF95315D8ACC57A4AA1BD5BD15CB248E20C2",
+      "right_hash": "94E881EBFFFFA8224F5E1BF386E5589C74CAB3CB3EF8A9B52F422C3B569B3405",
+      "identical": false,
+      "different_rows_by_field": {
+        "RAIN": 58,
+        "SRAD": 116,
+        "TMAX": 117,
+        "TMIN": 117
+      },
+      "comparison": {
+        "identical_full_sequence_including_date_doy_and_weather": false,
+        "left_row_count": 117,
+        "right_row_count": 118,
+        "common_date_count": 117,
+        "left_only_dates": [],
+        "right_only_dates": [
+          "2008-09-26"
+        ],
+        "field_differences": {
+          "RAIN": {
+            "differing_rows_on_common_dates": 58,
+            "compared_common_dates": 117,
+            "first_difference": {
+              "date": "2008-06-03",
+              "left": 0.145937934518,
+              "right": 0.0
+            }
+          },
+          "SRAD": {
+            "differing_rows_on_common_dates": 116,
+            "compared_common_dates": 117,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 28.6107177734,
+              "right": 27.9710922241
+            }
+          },
+          "TMAX": {
+            "differing_rows_on_common_dates": 117,
+            "compared_common_dates": 117,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 33.5696792603,
+              "right": 33.5640983582
+            }
+          },
+          "TMIN": {
+            "differing_rows_on_common_dates": 117,
+            "compared_common_dates": 117,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 21.2128639221,
+              "right": 21.0596542358
+            }
+          }
+        }
+      }
+    },
+    {
+      "left_run": "seed_104",
+      "right_run": "seed_105",
+      "left_seed": 104,
+      "right_seed": 105,
+      "left_hash": "7E6D92914D38E0C6B4C9A90F9FA4438F8DFA51AFC7963AA64F147A29FEE74E67",
+      "right_hash": "94E881EBFFFFA8224F5E1BF386E5589C74CAB3CB3EF8A9B52F422C3B569B3405",
+      "identical": false,
+      "different_rows_by_field": {
+        "RAIN": 45,
+        "SRAD": 116,
+        "TMAX": 116,
+        "TMIN": 116
+      },
+      "comparison": {
+        "identical_full_sequence_including_date_doy_and_weather": false,
+        "left_row_count": 116,
+        "right_row_count": 118,
+        "common_date_count": 116,
+        "left_only_dates": [],
+        "right_only_dates": [
+          "2008-09-25",
+          "2008-09-26"
+        ],
+        "field_differences": {
+          "RAIN": {
+            "differing_rows_on_common_dates": 45,
+            "compared_common_dates": 116,
+            "first_difference": {
+              "date": "2008-06-04",
+              "left": 0.0,
+              "right": 11.320889473
+            }
+          },
+          "SRAD": {
+            "differing_rows_on_common_dates": 116,
+            "compared_common_dates": 116,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 28.7064990997,
+              "right": 27.9710922241
+            }
+          },
+          "TMAX": {
+            "differing_rows_on_common_dates": 116,
+            "compared_common_dates": 116,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 33.5668907166,
+              "right": 33.5640983582
+            }
+          },
+          "TMIN": {
+            "differing_rows_on_common_dates": 116,
+            "compared_common_dates": 116,
+            "first_difference": {
+              "date": "2008-06-01",
+              "left": 21.137008667,
+              "right": 21.0596542358
+            }
+          }
+        }
+      }
+    }
+  ],
+  "per_seed_weather_summary": [
+    {
+      "run_id": "seed_101_run_a",
+      "weather_seed": 101,
+      "weather_sha256": "D9CD9926AE4382BA24783E498A928ED25F5EA92F1C60D1B3C7034448AAE5C29D",
+      "window_type": "simulation-period statistics",
+      "row_count": 120,
+      "start_date": "2008-06-01",
+      "end_date": "2008-09-28",
+      "rain_total_mm": 507.734089143508,
+      "rainy_days_gt_0mm": 36,
+      "max_daily_rain_mm": 56.6392974854,
+      "longest_dry_spell_days": 18,
+      "mean_tmax": 30.666804774598333,
+      "min_tmax": 18.7998771667,
+      "max_tmax": 40.2348365784,
+      "mean_tmin": 20.148849447564665,
+      "min_tmin": 6.10097503662,
+      "max_tmin": 27.8459835052,
+      "mean_srad": 16.43523601293217,
+      "min_srad": 5.51173067093,
+      "max_srad": 32.7590408325
+    },
+    {
+      "run_id": "seed_101_run_b",
+      "weather_seed": 101,
+      "weather_sha256": "D9CD9926AE4382BA24783E498A928ED25F5EA92F1C60D1B3C7034448AAE5C29D",
+      "window_type": "simulation-period statistics",
+      "row_count": 120,
+      "start_date": "2008-06-01",
+      "end_date": "2008-09-28",
+      "rain_total_mm": 507.734089143508,
+      "rainy_days_gt_0mm": 36,
+      "max_daily_rain_mm": 56.6392974854,
+      "longest_dry_spell_days": 18,
+      "mean_tmax": 30.666804774598333,
+      "min_tmax": 18.7998771667,
+      "max_tmax": 40.2348365784,
+      "mean_tmin": 20.148849447564665,
+      "min_tmin": 6.10097503662,
+      "max_tmin": 27.8459835052,
+      "mean_srad": 16.43523601293217,
+      "min_srad": 5.51173067093,
+      "max_srad": 32.7590408325
+    },
+    {
+      "run_id": "seed_102",
+      "weather_seed": 102,
+      "weather_sha256": "240C34531DC83727D010317BC006BD44DE267418896AD237085A03F103C4AA43",
+      "window_type": "simulation-period statistics",
+      "row_count": 117,
+      "start_date": "2008-06-01",
+      "end_date": "2008-09-25",
+      "rain_total_mm": 509.513172157039,
+      "rainy_days_gt_0mm": 35,
+      "max_daily_rain_mm": 62.7053184509,
+      "longest_dry_spell_days": 21,
+      "mean_tmax": 30.613471055641025,
+      "min_tmax": 22.1166954041,
+      "max_tmax": 40.9713821411,
+      "mean_tmin": 19.980639107208887,
+      "min_tmin": 9.78544425964,
+      "max_tmin": 28.110118866,
+      "mean_srad": 16.94486854423,
+      "min_srad": 5.44756793976,
+      "max_srad": 31.4299602509
+    },
+    {
+      "run_id": "seed_103",
+      "weather_seed": 103,
+      "weather_sha256": "DC5C2EAA31F9930CAB3EC3312AF9AF95315D8ACC57A4AA1BD5BD15CB248E20C2",
+      "window_type": "simulation-period statistics",
+      "row_count": 117,
+      "start_date": "2008-06-01",
+      "end_date": "2008-09-25",
+      "rain_total_mm": 466.4401516392,
+      "rainy_days_gt_0mm": 37,
+      "max_daily_rain_mm": 73.8980407715,
+      "longest_dry_spell_days": 12,
+      "mean_tmax": 31.3161470788188,
+      "min_tmax": 21.9109153748,
+      "max_tmax": 41.7001571655,
+      "mean_tmin": 20.743331925480344,
+      "min_tmin": 12.8497810364,
+      "max_tmin": 27.4866828918,
+      "mean_srad": 16.005202081468376,
+      "min_srad": 4.7446269989,
+      "max_srad": 31.5855331421
+    },
+    {
+      "run_id": "seed_104",
+      "weather_seed": 104,
+      "weather_sha256": "7E6D92914D38E0C6B4C9A90F9FA4438F8DFA51AFC7963AA64F147A29FEE74E67",
+      "window_type": "simulation-period statistics",
+      "row_count": 116,
+      "start_date": "2008-06-01",
+      "end_date": "2008-09-24",
+      "rain_total_mm": 290.096679866398,
+      "rainy_days_gt_0mm": 22,
+      "max_daily_rain_mm": 51.0497360229,
+      "longest_dry_spell_days": 19,
+      "mean_tmax": 32.105434598593106,
+      "min_tmax": 17.8860569,
+      "max_tmax": 41.5606994629,
+      "mean_tmin": 21.07796807946724,
+      "min_tmin": 11.2212400436,
+      "max_tmin": 29.2758255005,
+      "mean_srad": 16.44860297647,
+      "min_srad": 4.7446269989,
+      "max_srad": 31.2892093658
+    },
+    {
+      "run_id": "seed_105",
+      "weather_seed": 105,
+      "weather_sha256": "94E881EBFFFFA8224F5E1BF386E5589C74CAB3CB3EF8A9B52F422C3B569B3405",
+      "window_type": "simulation-period statistics",
+      "row_count": 118,
+      "start_date": "2008-06-01",
+      "end_date": "2008-09-26",
+      "rain_total_mm": 483.082335479619,
+      "rainy_days_gt_0mm": 30,
+      "max_daily_rain_mm": 97.3187637329,
+      "longest_dry_spell_days": 12,
+      "mean_tmax": 30.86665374950085,
+      "min_tmax": 20.9837589264,
+      "max_tmax": 40.9824790955,
+      "mean_tmin": 20.341342303713137,
+      "min_tmin": 8.27594947815,
+      "max_tmin": 26.9600410461,
+      "mean_srad": 17.02825231067237,
+      "min_srad": 4.89220237732,
+      "max_srad": 32.2544708252
+    }
+  ],
+  "input_consistency": {
+    "source_input_sha256": {
+      "source_filex": "793EB12137B05F1A5F4730EB21A3281AF65CDBBF58A2698338AE630224A5406B",
+      "cultivar": "7810190A042B2FE3C53C54D43BF8080AE02DD3D1EDFEC202BF572E130761403C",
+      "soil": "3C303D68DDA19BA6F40573A3BBA5464E40230DDD60C6C746F0EA6BBFEEE9E644"
+    },
+    "runtime_filex_sha256_by_run": {
+      "seed_101_run_a": "BA6C31A13C7BE59FED2538C85A57B4A0F5FA076FCD643C3CB842CF609D47BDCA",
+      "seed_101_run_b": "BA6C31A13C7BE59FED2538C85A57B4A0F5FA076FCD643C3CB842CF609D47BDCA",
+      "seed_102": "BA6C31A13C7BE59FED2538C85A57B4A0F5FA076FCD643C3CB842CF609D47BDCA",
+      "seed_103": "BA6C31A13C7BE59FED2538C85A57B4A0F5FA076FCD643C3CB842CF609D47BDCA",
+      "seed_104": "BA6C31A13C7BE59FED2538C85A57B4A0F5FA076FCD643C3CB842CF609D47BDCA",
+      "seed_105": "BA6C31A13C7BE59FED2538C85A57B4A0F5FA076FCD643C3CB842CF609D47BDCA"
+    },
+    "runtime_pdi_yaml_sha256_by_run": {
+      "seed_101_run_a": "3CF2661D1A8786BB1B10D27CF413D46FA784BDFC2A5F24D150C829DE90892E9B",
+      "seed_101_run_b": "2FBBCDC1A70A36113ABD7BC62FAFF6BEC1C18A6126894C486044FD6C0DC7D063",
+      "seed_102": "1B07EE41344D9961FEF8B82232F8D6047EA4288F408DF3E80FEB9505C6547B4F",
+      "seed_103": "2667B0AE5E351197DC30745DF67F79F4E3B2ECD1E04B6C51008DE74FE6019DF4",
+      "seed_104": "C1AB89886E373892195364D38252CD34635E232FCBBCCF80DC7AAB79F79F33C5",
+      "seed_105": "5E8E7F611A2985EA1242F11CE44B3C1DC1DE90F60A8005D9286610915A8F9CD3"
+    },
+    "runtime_pdi_yaml_sha256_seed_normalized_by_run": {
+      "seed_101_run_a": "07044B0E47ACD2740E7B85A9D3CDFDDEAC1954B864DA34B6452C97FE6829D338",
+      "seed_101_run_b": "07044B0E47ACD2740E7B85A9D3CDFDDEAC1954B864DA34B6452C97FE6829D338",
+      "seed_102": "07044B0E47ACD2740E7B85A9D3CDFDDEAC1954B864DA34B6452C97FE6829D338",
+      "seed_103": "07044B0E47ACD2740E7B85A9D3CDFDDEAC1954B864DA34B6452C97FE6829D338",
+      "seed_104": "07044B0E47ACD2740E7B85A9D3CDFDDEAC1954B864DA34B6452C97FE6829D338",
+      "seed_105": "07044B0E47ACD2740E7B85A9D3CDFDDEAC1954B864DA34B6452C97FE6829D338"
+    },
+    "weather_seed_interface_by_run": {
+      "seed_101_run_a": {
+        "expected_weather_seed": 101,
+        "pdi_rseed1": 101,
+        "pdi_rseed1_matches": true,
+        "gym_make_seed": null,
+        "pilot_seed_injection": "weather_seed explicitly assigned to instance._rseed1 before runtime launch",
+        "filex_wther": "W",
+        "filex_wsta": "CNYC0801",
+        "runtime_cli_sha256": "65CF134600A5881706A5D435E1A09B276ED92A21FA5ABE2E18AAF63AF1E3A929",
+        "runtime_status": "PASS"
+      },
+      "seed_101_run_b": {
+        "expected_weather_seed": 101,
+        "pdi_rseed1": 101,
+        "pdi_rseed1_matches": true,
+        "gym_make_seed": null,
+        "pilot_seed_injection": "weather_seed explicitly assigned to instance._rseed1 before runtime launch",
+        "filex_wther": "W",
+        "filex_wsta": "CNYC0801",
+        "runtime_cli_sha256": "65CF134600A5881706A5D435E1A09B276ED92A21FA5ABE2E18AAF63AF1E3A929",
+        "runtime_status": "PASS"
+      },
+      "seed_102": {
+        "expected_weather_seed": 102,
+        "pdi_rseed1": 102,
+        "pdi_rseed1_matches": true,
+        "gym_make_seed": null,
+        "pilot_seed_injection": "weather_seed explicitly assigned to instance._rseed1 before runtime launch",
+        "filex_wther": "W",
+        "filex_wsta": "CNYC0801",
+        "runtime_cli_sha256": "65CF134600A5881706A5D435E1A09B276ED92A21FA5ABE2E18AAF63AF1E3A929",
+        "runtime_status": "PASS"
+      },
+      "seed_103": {
+        "expected_weather_seed": 103,
+        "pdi_rseed1": 103,
+        "pdi_rseed1_matches": true,
+        "gym_make_seed": null,
+        "pilot_seed_injection": "weather_seed explicitly assigned to instance._rseed1 before runtime launch",
+        "filex_wther": "W",
+        "filex_wsta": "CNYC0801",
+        "runtime_cli_sha256": "65CF134600A5881706A5D435E1A09B276ED92A21FA5ABE2E18AAF63AF1E3A929",
+        "runtime_status": "PASS"
+      },
+      "seed_104": {
+        "expected_weather_seed": 104,
+        "pdi_rseed1": 104,
+        "pdi_rseed1_matches": true,
+        "gym_make_seed": null,
+        "pilot_seed_injection": "weather_seed explicitly assigned to instance._rseed1 before runtime launch",
+        "filex_wther": "W",
+        "filex_wsta": "CNYC0801",
+        "runtime_cli_sha256": "65CF134600A5881706A5D435E1A09B276ED92A21FA5ABE2E18AAF63AF1E3A929",
+        "runtime_status": "PASS"
+      },
+      "seed_105": {
+        "expected_weather_seed": 105,
+        "pdi_rseed1": 105,
+        "pdi_rseed1_matches": true,
+        "gym_make_seed": null,
+        "pilot_seed_injection": "weather_seed explicitly assigned to instance._rseed1 before runtime launch",
+        "filex_wther": "W",
+        "filex_wsta": "CNYC0801",
+        "runtime_cli_sha256": "65CF134600A5881706A5D435E1A09B276ED92A21FA5ABE2E18AAF63AF1E3A929",
+        "runtime_status": "PASS"
+      }
+    },
+    "fixed_non_weather_inputs_pass": true,
+    "seed_coupling_status": "SEPARATE: PPO seed NOT_APPLICABLE; Gym-DSSAT seed=None; each weather_seed explicitly injected as instance._rseed1 and confirmed in runtime dssat-pdi.yml rseed1_.",
+    "wet_day_definition": "RAIN > 0.0 mm; unchanged",
+    "ppo_training_run": false,
+    "other_sites_modified": false
+  }
+}

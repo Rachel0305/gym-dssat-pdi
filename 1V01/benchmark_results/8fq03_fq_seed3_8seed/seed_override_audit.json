@@ -1,0 +1,25 @@
+{
+  "created_utc": "2026-09-28T11:57:29.613136+00:00",
+  "station_code": "FQA",
+  "site": "FQ",
+  "mode": "formal",
+  "config_path": "configs/hl_fq_8seed_cross_site/fq_seed3.json",
+  "config_sha256": "09ad2ddcef42d0d834c5bdb76325c24f834423e810631701644f4040a7d4665b",
+  "configured_seed": 3,
+  "engine_module": "run_five_site_half_split_stress_aware_maskableppo_batch_032_22.SEED",
+  "engine_seed_set_before_runner": 3,
+  "checkpoint_paths": [
+    "benchmark_results/8fq03_fq_seed3_8seed/models/FQA/FQA_half_split_stress_aware_maskableppo_seed3_ckpt100000.zip",
+    "benchmark_results/8fq03_fq_seed3_8seed/models/FQA/FQA_half_split_stress_aware_maskableppo_seed3_ckpt25000.zip",
+    "benchmark_results/8fq03_fq_seed3_8seed/models/FQA/FQA_half_split_stress_aware_maskableppo_seed3_ckpt50000.zip",
+    "benchmark_results/8fq03_fq_seed3_8seed/models/FQA/FQA_half_split_stress_aware_maskableppo_seed3_ckpt75000.zip"
+  ],
+  "checkpoint_sha256": {
+    "benchmark_results/8fq03_fq_seed3_8seed/models/FQA/FQA_half_split_stress_aware_maskableppo_seed3_ckpt100000.zip": "18da299aac8445a599712e1de25fcf1a3febb6780a78882e1ea778bab1090fd8",
+    "benchmark_results/8fq03_fq_seed3_8seed/models/FQA/FQA_half_split_stress_aware_maskableppo_seed3_ckpt25000.zip": "462b84f0f0030aaad7249c37668a8c507541c4b23fa530fda6136d6c87ab14fb",
+    "benchmark_results/8fq03_fq_seed3_8seed/models/FQA/FQA_half_split_stress_aware_maskableppo_seed3_ckpt50000.zip": "8b1ea6ba6b7772ef4dd7d9b7295b2dbdebdbec3222ea42b04524a6fd408c17c6",
+    "benchmark_results/8fq03_fq_seed3_8seed/models/FQA/FQA_half_split_stress_aware_maskableppo_seed3_ckpt75000.zip": "8e87c3e0ae55d773a2b2a8a27350253d6f6e13e1312256b0ff029c5bc3b30f85"
+  },
+  "seed_name_match": true,
+  "formal_100k_checkpoint_present": true
+}

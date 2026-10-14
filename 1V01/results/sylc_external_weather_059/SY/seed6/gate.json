@@ -1,0 +1,2328 @@
+{
+  "site": "SY",
+  "PPO_seed": 6,
+  "requested_steps": 100000,
+  "training_weather_states_matched": 300438,
+  "weather_seeds": [
+    1001,
+    1002,
+    1003,
+    1004,
+    1005,
+    1006,
+    1007,
+    1008,
+    1009,
+    1010
+  ],
+  "weather_environment_count": 729,
+  "runtime_weather_date_offsets": {
+    "/tmp/tmphtw7tbpi": [
+      -1
+    ],
+    "/tmp/tmpy9jfi2gg": [
+      -1
+    ],
+    "/tmp/tmpavavsyy3": [
+      -1
+    ],
+    "/tmp/tmpwox0bqp6": [
+      -1
+    ],
+    "/tmp/tmpi1_afw_u": [
+      -1
+    ],
+    "/tmp/tmpovdaiotj": [
+      -1
+    ],
+    "/tmp/tmpdu13h509": [
+      -1
+    ],
+    "/tmp/tmpl_2x2vhy": [
+      -1
+    ],
+    "/tmp/tmpue20du8k": [
+      -1
+    ],
+    "/tmp/tmpqa4fc7ll": [
+      -1
+    ],
+    "/tmp/tmpj0hob2nu": [
+      -1
+    ],
+    "/tmp/tmpx28zx0zp": [
+      -1
+    ],
+    "/tmp/tmpylibildt": [
+      -1
+    ],
+    "/tmp/tmpxj5x7bk8": [
+      -1
+    ],
+    "/tmp/tmp9r3atlra": [
+      -1
+    ],
+    "/tmp/tmpelo89xg5": [
+      -1
+    ],
+    "/tmp/tmp9z5t__c8": [
+      -1
+    ],
+    "/tmp/tmpxm5o1bng": [
+      -1
+    ],
+    "/tmp/tmpidh8pza_": [
+      -1
+    ],
+    "/tmp/tmpt04wqi45": [
+      -1
+    ],
+    "/tmp/tmpbmo9uky4": [
+      -1
+    ],
+    "/tmp/tmpfqd8xv5u": [
+      -1
+    ],
+    "/tmp/tmp8cnaoxy5": [
+      -1
+    ],
+    "/tmp/tmpjcp7098f": [
+      -1
+    ],
+    "/tmp/tmpsm1s74ij": [
+      -1
+    ],
+    "/tmp/tmpl2kgh656": [
+      -1
+    ],
+    "/tmp/tmpi_83q1iy": [
+      -1
+    ],
+    "/tmp/tmpgyh5lc_5": [
+      -1
+    ],
+    "/tmp/tmphmf3pf5w": [
+      -1
+    ],
+    "/tmp/tmp_tkd1lpr": [
+      -1
+    ],
+    "/tmp/tmplzbl2468": [
+      -1
+    ],
+    "/tmp/tmpv8x04_7c": [
+      -1
+    ],
+    "/tmp/tmpq2g5nrl8": [
+      -1
+    ],
+    "/tmp/tmp5u87vjqg": [
+      -1
+    ],
+    "/tmp/tmp3b3v6_7u": [
+      -1
+    ],
+    "/tmp/tmpd0zybapi": [
+      -1
+    ],
+    "/tmp/tmp82ecgzyl": [
+      -1
+    ],
+    "/tmp/tmpreyfwbmu": [
+      -1
+    ],
+    "/tmp/tmplfd_ed46": [
+      -1
+    ],
+    "/tmp/tmptdc0h1n3": [
+      -1
+    ],
+    "/tmp/tmpnhfc9h6k": [
+      -1
+    ],
+    "/tmp/tmpcc2ob69c": [
+      -1
+    ],
+    "/tmp/tmp0hyqlov_": [
+      -1
+    ],
+    "/tmp/tmptx07j87l": [
+      -1
+    ],
+    "/tmp/tmpftuprb6m": [
+      -1
+    ],
+    "/tmp/tmpb7vsx_c4": [
+      -1
+    ],
+    "/tmp/tmpjsqiyzha": [
+      -1
+    ],
+    "/tmp/tmpb37tvqpw": [
+      -1
+    ],
+    "/tmp/tmpb_lqc2ay": [
+      -1
+    ],
+    "/tmp/tmps07g_dbp": [
+      -1
+    ],
+    "/tmp/tmp4oaih2vk": [
+      -1
+    ],
+    "/tmp/tmpqczdx_7k": [
+      -1
+    ],
+    "/tmp/tmp6ipz_rc6": [
+      -1
+    ],
+    "/tmp/tmpwx6q_wye": [
+      -1
+    ],
+    "/tmp/tmpmvpjur21": [
+      -1
+    ],
+    "/tmp/tmpgvb3av5g": [
+      -1
+    ],
+    "/tmp/tmppg6akev6": [
+      -1
+    ],
+    "/tmp/tmptyj1deo1": [
+      -1
+    ],
+    "/tmp/tmp8rn69mlb": [
+      -1
+    ],
+    "/tmp/tmpuy_5r3le": [
+      -1
+    ],
+    "/tmp/tmpg6p8n9a0": [
+      -1
+    ],
+    "/tmp/tmp4iuxgbxl": [
+      -1
+    ],
+    "/tmp/tmpjiggeswt": [
+      -1
+    ],
+    "/tmp/tmpzwhfu0q4": [
+      -1
+    ],
+    "/tmp/tmpf_ykz4rr": [
+      -1
+    ],
+    "/tmp/tmp1qipqfc2": [
+      -1
+    ],
+    "/tmp/tmphzvzf0yo": [
+      -1
+    ],
+    "/tmp/tmp32ckfbnf": [
+      -1
+    ],
+    "/tmp/tmpyjd0rc2q": [
+      -1
+    ],
+    "/tmp/tmpgkr6wypb": [
+      -1
+    ],
+    "/tmp/tmpsxfmv_fh": [
+      -1
+    ],
+    "/tmp/tmpnfr2_q09": [
+      -1
+    ],
+    "/tmp/tmp_4ysnlz8": [
+      -1
+    ],
+    "/tmp/tmpuyf8081d": [
+      -1
+    ],
+    "/tmp/tmpjew081ef": [
+      -1
+    ],
+    "/tmp/tmps0inlrtn": [
+      -1
+    ],
+    "/tmp/tmpm5u29me6": [
+      -1
+    ],
+    "/tmp/tmpby4tsa5f": [
+      -1
+    ],
+    "/tmp/tmps63ms1m7": [
+      -1
+    ],
+    "/tmp/tmpp6erjciu": [
+      -1
+    ],
+    "/tmp/tmpve1ju0rq": [
+      -1
+    ],
+    "/tmp/tmpxnmgxkhk": [
+      -1
+    ],
+    "/tmp/tmpnsx4_k_w": [
+      -1
+    ],
+    "/tmp/tmprbskgboj": [
+      -1
+    ],
+    "/tmp/tmpivqxgrhy": [
+      -1
+    ],
+    "/tmp/tmpp77wfh0j": [
+      -1
+    ],
+    "/tmp/tmp_nyf7q93": [
+      -1
+    ],
+    "/tmp/tmpc36ms5s7": [
+      -1
+    ],
+    "/tmp/tmpcrlh7uwt": [
+      -1
+    ],
+    "/tmp/tmpud0grdm6": [
+      -1
+    ],
+    "/tmp/tmpx94ktias": [
+      -1
+    ],
+    "/tmp/tmpic27c5nh": [
+      -1
+    ],
+    "/tmp/tmpezzt43xt": [
+      -1
+    ],
+    "/tmp/tmpxuh7v15f": [
+      -1
+    ],
+    "/tmp/tmpcizrkgd8": [
+      -1
+    ],
+    "/tmp/tmpzghcft2q": [
+      -1
+    ],
+    "/tmp/tmpjpn1yckn": [
+      -1
+    ],
+    "/tmp/tmp54av00w7": [
+      -1
+    ],
+    "/tmp/tmpi3cmwubx": [
+      -1
+    ],
+    "/tmp/tmp83a5egey": [
+      -1
+    ],
+    "/tmp/tmp10q60ovv": [
+      -1
+    ],
+    "/tmp/tmpza1q8hix": [
+      -1
+    ],
+    "/tmp/tmphnr222qd": [
+      -1
+    ],
+    "/tmp/tmp2akm0bin": [
+      -1
+    ],
+    "/tmp/tmp72d64pxb": [
+      -1
+    ],
+    "/tmp/tmpr42znhr7": [
+      -1
+    ],
+    "/tmp/tmpt_eum_kh": [
+      -1
+    ],
+    "/tmp/tmp77icqoxg": [
+      -1
+    ],
+    "/tmp/tmpht_qgbn3": [
+      -1
+    ],
+    "/tmp/tmpm231jsy0": [
+      -1
+    ],
+    "/tmp/tmpkpa87e6m": [
+      -1
+    ],
+    "/tmp/tmpn661huln": [
+      -1
+    ],
+    "/tmp/tmpcn_b067r": [
+      -1
+    ],
+    "/tmp/tmpcxwf588r": [
+      -1
+    ],
+    "/tmp/tmpdjqiw383": [
+      -1
+    ],
+    "/tmp/tmprg6aatxj": [
+      -1
+    ],
+    "/tmp/tmpgcs11xg4": [
+      -1
+    ],
+    "/tmp/tmpu0pf0ilc": [
+      -1
+    ],
+    "/tmp/tmpm3n6amhz": [
+      -1
+    ],
+    "/tmp/tmp9ucmj3aa": [
+      -1
+    ],
+    "/tmp/tmp31cb3_15": [
+      -1
+    ],
+    "/tmp/tmp2ly8vi17": [
+      -1
+    ],
+    "/tmp/tmpmg4hsog3": [
+      -1
+    ],
+    "/tmp/tmpq63f9i15": [
+      -1
+    ],
+    "/tmp/tmp2vesug3c": [
+      -1
+    ],
+    "/tmp/tmpn10mvt2c": [
+      -1
+    ],
+    "/tmp/tmptnfok313": [
+      -1
+    ],
+    "/tmp/tmpmlitx463": [
+      -1
+    ],
+    "/tmp/tmpi7unj65p": [
+      -1
+    ],
+    "/tmp/tmp6u5j1f0_": [
+      -1
+    ],
+    "/tmp/tmp2_pgj241": [
+      -1
+    ],
+    "/tmp/tmpg94r2b8t": [
+      -1
+    ],
+    "/tmp/tmpma_jxfcm": [
+      -1
+    ],
+    "/tmp/tmpja4veb2d": [
+      -1
+    ],
+    "/tmp/tmph7c8met3": [
+      -1
+    ],
+    "/tmp/tmpvzogn03b": [
+      -1
+    ],
+    "/tmp/tmpmlpd921i": [
+      -1
+    ],
+    "/tmp/tmp9yn26dsp": [
+      -1
+    ],
+    "/tmp/tmpngyscdvy": [
+      -1
+    ],
+    "/tmp/tmpqc6hntbs": [
+      -1
+    ],
+    "/tmp/tmp3mm0cqep": [
+      -1
+    ],
+    "/tmp/tmp4gjss66e": [
+      -1
+    ],
+    "/tmp/tmpq8ywi118": [
+      -1
+    ],
+    "/tmp/tmpx0zh7boy": [
+      -1
+    ],
+    "/tmp/tmpfn0v2ntg": [
+      -1
+    ],
+    "/tmp/tmpyk464xi8": [
+      -1
+    ],
+    "/tmp/tmpm4cq3wwp": [
+      -1
+    ],
+    "/tmp/tmpvehu44km": [
+      -1
+    ],
+    "/tmp/tmpq5y9ia_b": [
+      -1
+    ],
+    "/tmp/tmpx_vgxdoc": [
+      -1
+    ],
+    "/tmp/tmp67z8ouu8": [
+      -1
+    ],
+    "/tmp/tmpj31t2qjf": [
+      -1
+    ],
+    "/tmp/tmp_340krlj": [
+      -1
+    ],
+    "/tmp/tmp1b_5gbyg": [
+      -1
+    ],
+    "/tmp/tmpo3fh_n9h": [
+      -1
+    ],
+    "/tmp/tmp9fj68yk0": [
+      -1
+    ],
+    "/tmp/tmpce2f5ati": [
+      -1
+    ],
+    "/tmp/tmp49n8fq3y": [
+      -1
+    ],
+    "/tmp/tmp3oojjsiy": [
+      -1
+    ],
+    "/tmp/tmp4rh8rn94": [
+      -1
+    ],
+    "/tmp/tmpacrtflho": [
+      -1
+    ],
+    "/tmp/tmp9g_axpfu": [
+      -1
+    ],
+    "/tmp/tmpzkelew86": [
+      -1
+    ],
+    "/tmp/tmpulomx1yh": [
+      -1
+    ],
+    "/tmp/tmpfwl71ek7": [
+      -1
+    ],
+    "/tmp/tmpdl8lopfa": [
+      -1
+    ],
+    "/tmp/tmp_lfypad_": [
+      -1
+    ],
+    "/tmp/tmpyp5pe4w8": [
+      -1
+    ],
+    "/tmp/tmpd159g991": [
+      -1
+    ],
+    "/tmp/tmpe8hzxnhc": [
+      -1
+    ],
+    "/tmp/tmpngiclfjg": [
+      -1
+    ],
+    "/tmp/tmp2ft02tne": [
+      -1
+    ],
+    "/tmp/tmpdiv4ujs2": [
+      -1
+    ],
+    "/tmp/tmp5w0fr9mq": [
+      -1
+    ],
+    "/tmp/tmp1hyxexpg": [
+      -1
+    ],
+    "/tmp/tmpvmb016xc": [
+      -1
+    ],
+    "/tmp/tmp9lqdq_p0": [
+      -1
+    ],
+    "/tmp/tmp5s8wd3vy": [
+      -1
+    ],
+    "/tmp/tmpmhk5itdp": [
+      -1
+    ],
+    "/tmp/tmp525x1m31": [
+      -1
+    ],
+    "/tmp/tmpbndelh_e": [
+      -1
+    ],
+    "/tmp/tmpzuwpuwtg": [
+      -1
+    ],
+    "/tmp/tmpp60l8e32": [
+      -1
+    ],
+    "/tmp/tmpp1hs6_4z": [
+      -1
+    ],
+    "/tmp/tmpihira5e8": [
+      -1
+    ],
+    "/tmp/tmpiakoyd10": [
+      -1
+    ],
+    "/tmp/tmphhbbr75s": [
+      -1
+    ],
+    "/tmp/tmpj6x33pnd": [
+      -1
+    ],
+    "/tmp/tmp5kj30fjj": [
+      -1
+    ],
+    "/tmp/tmpbk81rknk": [
+      -1
+    ],
+    "/tmp/tmpy4uv8wgv": [
+      -1
+    ],
+    "/tmp/tmp_6md753q": [
+      -1
+    ],
+    "/tmp/tmpjgb25ifj": [
+      -1
+    ],
+    "/tmp/tmpo4nfu_1z": [
+      -1
+    ],
+    "/tmp/tmp9i48zh7t": [
+      -1
+    ],
+    "/tmp/tmpvjf9yuwo": [
+      -1
+    ],
+    "/tmp/tmpsdzvfzys": [
+      -1
+    ],
+    "/tmp/tmp0o9opbxx": [
+      -1
+    ],
+    "/tmp/tmpg603fjcn": [
+      -1
+    ],
+    "/tmp/tmp3nui2xda": [
+      -1
+    ],
+    "/tmp/tmp5lme744p": [
+      -1
+    ],
+    "/tmp/tmpw209a1px": [
+      -1
+    ],
+    "/tmp/tmpkhcdt9uq": [
+      -1
+    ],
+    "/tmp/tmp9ltq5t7t": [
+      -1
+    ],
+    "/tmp/tmpkoa_impz": [
+      -1
+    ],
+    "/tmp/tmpvucuxnw5": [
+      -1
+    ],
+    "/tmp/tmphwaq7zh1": [
+      -1
+    ],
+    "/tmp/tmpsvfoffj_": [
+      -1
+    ],
+    "/tmp/tmpiqubilfj": [
+      -1
+    ],
+    "/tmp/tmprkoe_jm0": [
+      -1
+    ],
+    "/tmp/tmp3vzcheiq": [
+      -1
+    ],
+    "/tmp/tmpraaaahh_": [
+      -1
+    ],
+    "/tmp/tmp3a2_po5v": [
+      -1
+    ],
+    "/tmp/tmphy7os4hd": [
+      -1
+    ],
+    "/tmp/tmpsicijbr8": [
+      -1
+    ],
+    "/tmp/tmpgl_04q7v": [
+      -1
+    ],
+    "/tmp/tmpuvijl9f3": [
+      -1
+    ],
+    "/tmp/tmpcyssioa7": [
+      -1
+    ],
+    "/tmp/tmphiq7vf1s": [
+      -1
+    ],
+    "/tmp/tmpgkv54xnk": [
+      -1
+    ],
+    "/tmp/tmpuijqqvhk": [
+      -1
+    ],
+    "/tmp/tmpw3b8u1xd": [
+      -1
+    ],
+    "/tmp/tmpcjaxm1hj": [
+      -1
+    ],
+    "/tmp/tmpm78pjvcq": [
+      -1
+    ],
+    "/tmp/tmpx_ppc121": [
+      -1
+    ],
+    "/tmp/tmpubghnhf8": [
+      -1
+    ],
+    "/tmp/tmpduzr7ve5": [
+      -1
+    ],
+    "/tmp/tmp__lvz8gj": [
+      -1
+    ],
+    "/tmp/tmp_n4ezjij": [
+      -1
+    ],
+    "/tmp/tmpn21bvylr": [
+      -1
+    ],
+    "/tmp/tmpp6lzbueu": [
+      -1
+    ],
+    "/tmp/tmp29kzmlvt": [
+      -1
+    ],
+    "/tmp/tmpl0kea9pe": [
+      -1
+    ],
+    "/tmp/tmpurm1963t": [
+      -1
+    ],
+    "/tmp/tmpndghlcu1": [
+      -1
+    ],
+    "/tmp/tmpbg9kuves": [
+      -1
+    ],
+    "/tmp/tmp1ul8xcw6": [
+      -1
+    ],
+    "/tmp/tmphrxojb6h": [
+      -1
+    ],
+    "/tmp/tmpb0t3e7xe": [
+      -1
+    ],
+    "/tmp/tmpggbe8y_s": [
+      -1
+    ],
+    "/tmp/tmpi6l1_f9m": [
+      -1
+    ],
+    "/tmp/tmp0c_2d7h9": [
+      -1
+    ],
+    "/tmp/tmpvos53bx6": [
+      -1
+    ],
+    "/tmp/tmpcy93qiys": [
+      -1
+    ],
+    "/tmp/tmpyze4p6xc": [
+      -1
+    ],
+    "/tmp/tmpr0juyaqk": [
+      -1
+    ],
+    "/tmp/tmph3hkp1d1": [
+      -1
+    ],
+    "/tmp/tmplpar6k4h": [
+      -1
+    ],
+    "/tmp/tmpkgrx33si": [
+      -1
+    ],
+    "/tmp/tmpa8zlvcr9": [
+      -1
+    ],
+    "/tmp/tmppkjstf2n": [
+      -1
+    ],
+    "/tmp/tmp0v07fdmq": [
+      -1
+    ],
+    "/tmp/tmpd8sn2rd3": [
+      -1
+    ],
+    "/tmp/tmp4a0mn33b": [
+      -1
+    ],
+    "/tmp/tmp5e4ft_l9": [
+      -1
+    ],
+    "/tmp/tmph1q0d_ht": [
+      -1
+    ],
+    "/tmp/tmp58jav0yz": [
+      -1
+    ],
+    "/tmp/tmpo8mhm3lr": [
+      -1
+    ],
+    "/tmp/tmp3malmuz9": [
+      -1
+    ],
+    "/tmp/tmpwyy5p7h2": [
+      -1
+    ],
+    "/tmp/tmpndpsye7q": [
+      -1
+    ],
+    "/tmp/tmp7b0uk9z0": [
+      -1
+    ],
+    "/tmp/tmpt4vt191y": [
+      -1
+    ],
+    "/tmp/tmp1l4s12nq": [
+      -1
+    ],
+    "/tmp/tmpbbjsxvp6": [
+      -1
+    ],
+    "/tmp/tmp5zpyim3q": [
+      -1
+    ],
+    "/tmp/tmpm4wj4_ro": [
+      -1
+    ],
+    "/tmp/tmpdn1ys1lc": [
+      -1
+    ],
+    "/tmp/tmpqov299zx": [
+      -1
+    ],
+    "/tmp/tmp6yd1nvaz": [
+      -1
+    ],
+    "/tmp/tmp0gqio69w": [
+      -1
+    ],
+    "/tmp/tmprmnc4aa3": [
+      -1
+    ],
+    "/tmp/tmpydztcm61": [
+      -1
+    ],
+    "/tmp/tmpw5gu07x0": [
+      -1
+    ],
+    "/tmp/tmp99_2thjv": [
+      -1
+    ],
+    "/tmp/tmp2xy69d7l": [
+      -1
+    ],
+    "/tmp/tmpbgadklyx": [
+      -1
+    ],
+    "/tmp/tmpv_ss6a1a": [
+      -1
+    ],
+    "/tmp/tmp1dez7tnu": [
+      -1
+    ],
+    "/tmp/tmpt_k33nds": [
+      -1
+    ],
+    "/tmp/tmptt2x54wj": [
+      -1
+    ],
+    "/tmp/tmp_gw6gfhk": [
+      -1
+    ],
+    "/tmp/tmp74wildmu": [
+      -1
+    ],
+    "/tmp/tmpe_rjwws7": [
+      -1
+    ],
+    "/tmp/tmphj6lm95v": [
+      -1
+    ],
+    "/tmp/tmpdmbl2gxe": [
+      -1
+    ],
+    "/tmp/tmp3oqy_6se": [
+      -1
+    ],
+    "/tmp/tmpgjeujzhg": [
+      -1
+    ],
+    "/tmp/tmpsm571uj7": [
+      -1
+    ],
+    "/tmp/tmpuypp_lei": [
+      -1
+    ],
+    "/tmp/tmpb_xifah6": [
+      -1
+    ],
+    "/tmp/tmpfy1vv6l6": [
+      -1
+    ],
+    "/tmp/tmpkg6wc5zr": [
+      -1
+    ],
+    "/tmp/tmpk53f6qda": [
+      -1
+    ],
+    "/tmp/tmpkfm90oqu": [
+      -1
+    ],
+    "/tmp/tmprgv818ek": [
+      -1
+    ],
+    "/tmp/tmp64s1hlyg": [
+      -1
+    ],
+    "/tmp/tmpqpv5h4sk": [
+      -1
+    ],
+    "/tmp/tmpa_6shpq5": [
+      -1
+    ],
+    "/tmp/tmpcwsapbl0": [
+      -1
+    ],
+    "/tmp/tmpn3agew8s": [
+      -1
+    ],
+    "/tmp/tmplwdug3pv": [
+      -1
+    ],
+    "/tmp/tmp0yn0d0c8": [
+      -1
+    ],
+    "/tmp/tmp_b90kdoe": [
+      -1
+    ],
+    "/tmp/tmp42o5x2_l": [
+      -1
+    ],
+    "/tmp/tmpab715feg": [
+      -1
+    ],
+    "/tmp/tmpjdwko8ox": [
+      -1
+    ],
+    "/tmp/tmp91hzpt96": [
+      -1
+    ],
+    "/tmp/tmpi9mbwqmj": [
+      -1
+    ],
+    "/tmp/tmpcnqy3m_f": [
+      -1
+    ],
+    "/tmp/tmpy2rsm72h": [
+      -1
+    ],
+    "/tmp/tmpl4isuk0r": [
+      -1
+    ],
+    "/tmp/tmpjni1l__9": [
+      -1
+    ],
+    "/tmp/tmp7ujn0ezk": [
+      -1
+    ],
+    "/tmp/tmpwxfpllpb": [
+      -1
+    ],
+    "/tmp/tmpxgk97yxe": [
+      -1
+    ],
+    "/tmp/tmp6hp5nd99": [
+      -1
+    ],
+    "/tmp/tmpslayeu66": [
+      -1
+    ],
+    "/tmp/tmpjy_y893t": [
+      -1
+    ],
+    "/tmp/tmpgqmi1up_": [
+      -1
+    ],
+    "/tmp/tmpgor4mlir": [
+      -1
+    ],
+    "/tmp/tmp489g49tz": [
+      -1
+    ],
+    "/tmp/tmpb5uk8of_": [
+      -1
+    ],
+    "/tmp/tmpqia1j_8n": [
+      -1
+    ],
+    "/tmp/tmpse4td_6j": [
+      -1
+    ],
+    "/tmp/tmpp5qumkiv": [
+      -1
+    ],
+    "/tmp/tmpjhb2e5sl": [
+      -1
+    ],
+    "/tmp/tmpkhvqz4qk": [
+      -1
+    ],
+    "/tmp/tmp9p1a2q9m": [
+      -1
+    ],
+    "/tmp/tmpc1pm6ycy": [
+      -1
+    ],
+    "/tmp/tmp443aayen": [
+      -1
+    ],
+    "/tmp/tmpzm1ifjaf": [
+      -1
+    ],
+    "/tmp/tmpcvoszvec": [
+      -1
+    ],
+    "/tmp/tmpxw9x_wgp": [
+      -1
+    ],
+    "/tmp/tmpsud6sxq8": [
+      -1
+    ],
+    "/tmp/tmpkdnoiv0e": [
+      -1
+    ],
+    "/tmp/tmp_sxc7duu": [
+      -1
+    ],
+    "/tmp/tmpgv951jfp": [
+      -1
+    ],
+    "/tmp/tmpla7t6zrp": [
+      -1
+    ],
+    "/tmp/tmpa7t1z700": [
+      -1
+    ],
+    "/tmp/tmpvkipsiq8": [
+      -1
+    ],
+    "/tmp/tmpfqke5im5": [
+      -1
+    ],
+    "/tmp/tmp5ldl5e5o": [
+      -1
+    ],
+    "/tmp/tmp9fhy67qp": [
+      -1
+    ],
+    "/tmp/tmp_j1bd5hy": [
+      -1
+    ],
+    "/tmp/tmpj73cl5wn": [
+      -1
+    ],
+    "/tmp/tmpmq0gcl1e": [
+      -1
+    ],
+    "/tmp/tmpltlgfi15": [
+      -1
+    ],
+    "/tmp/tmpj8zipfsk": [
+      -1
+    ],
+    "/tmp/tmpkb4b1f6r": [
+      -1
+    ],
+    "/tmp/tmpzwrqvlbp": [
+      -1
+    ],
+    "/tmp/tmp9o8f4726": [
+      -1
+    ],
+    "/tmp/tmpws_lhu3d": [
+      -1
+    ],
+    "/tmp/tmpemplgl3z": [
+      -1
+    ],
+    "/tmp/tmpyriufzzv": [
+      -1
+    ],
+    "/tmp/tmp34q21myr": [
+      -1
+    ],
+    "/tmp/tmpdc6tgsec": [
+      -1
+    ],
+    "/tmp/tmp9hoqj7vl": [
+      -1
+    ],
+    "/tmp/tmpi692qb_d": [
+      -1
+    ],
+    "/tmp/tmp5vzq_qcz": [
+      -1
+    ],
+    "/tmp/tmpr0vd4c3y": [
+      -1
+    ],
+    "/tmp/tmpwkeairwe": [
+      -1
+    ],
+    "/tmp/tmpy7nthlc0": [
+      -1
+    ],
+    "/tmp/tmpwg42n03b": [
+      -1
+    ],
+    "/tmp/tmpo4hztsm7": [
+      -1
+    ],
+    "/tmp/tmpnzy_ipqw": [
+      -1
+    ],
+    "/tmp/tmplg0wu7oo": [
+      -1
+    ],
+    "/tmp/tmpvvra2t4r": [
+      -1
+    ],
+    "/tmp/tmpyuhi60b0": [
+      -1
+    ],
+    "/tmp/tmpj8_q5md5": [
+      -1
+    ],
+    "/tmp/tmpe095zvw7": [
+      -1
+    ],
+    "/tmp/tmp4fs6xtl1": [
+      -1
+    ],
+    "/tmp/tmprbz3l5t1": [
+      -1
+    ],
+    "/tmp/tmp9k48hgwo": [
+      -1
+    ],
+    "/tmp/tmps6sg7pum": [
+      -1
+    ],
+    "/tmp/tmpxxv_fc_v": [
+      -1
+    ],
+    "/tmp/tmpxa7ltoa3": [
+      -1
+    ],
+    "/tmp/tmps6t6ooeu": [
+      -1
+    ],
+    "/tmp/tmp7nwnlg9f": [
+      -1
+    ],
+    "/tmp/tmph9popqpc": [
+      -1
+    ],
+    "/tmp/tmpyyiw0mux": [
+      -1
+    ],
+    "/tmp/tmp6_qpb5pn": [
+      -1
+    ],
+    "/tmp/tmp24iz006f": [
+      -1
+    ],
+    "/tmp/tmpn890cj87": [
+      -1
+    ],
+    "/tmp/tmpwtx4qn6t": [
+      -1
+    ],
+    "/tmp/tmpekdywas2": [
+      -1
+    ],
+    "/tmp/tmp0nfprrqv": [
+      -1
+    ],
+    "/tmp/tmpbtga81t7": [
+      -1
+    ],
+    "/tmp/tmp4q6ukz73": [
+      -1
+    ],
+    "/tmp/tmpw_f_otgx": [
+      -1
+    ],
+    "/tmp/tmpb4gs7pa1": [
+      -1
+    ],
+    "/tmp/tmpk6jilfdr": [
+      -1
+    ],
+    "/tmp/tmpzjhsmb3j": [
+      -1
+    ],
+    "/tmp/tmpxlxb6iiq": [
+      -1
+    ],
+    "/tmp/tmp2zd0dgxi": [
+      -1
+    ],
+    "/tmp/tmpzpg1l3m2": [
+      -1
+    ],
+    "/tmp/tmpqmvwumxa": [
+      -1
+    ],
+    "/tmp/tmp5lcp61a_": [
+      -1
+    ],
+    "/tmp/tmpghm0nfe_": [
+      -1
+    ],
+    "/tmp/tmp8ovr9r8u": [
+      -1
+    ],
+    "/tmp/tmps1licq1l": [
+      -1
+    ],
+    "/tmp/tmp4wt8zubp": [
+      -1
+    ],
+    "/tmp/tmpm6cdxsvx": [
+      -1
+    ],
+    "/tmp/tmpmeswjoub": [
+      -1
+    ],
+    "/tmp/tmphrvol3da": [
+      -1
+    ],
+    "/tmp/tmpoxcr5y7z": [
+      -1
+    ],
+    "/tmp/tmpkis1m7u0": [
+      -1
+    ],
+    "/tmp/tmp0fwcwh6d": [
+      -1
+    ],
+    "/tmp/tmptbf_k2r7": [
+      -1
+    ],
+    "/tmp/tmpa1krnvjx": [
+      -1
+    ],
+    "/tmp/tmp2z6qizvx": [
+      -1
+    ],
+    "/tmp/tmpbxwvc4f1": [
+      -1
+    ],
+    "/tmp/tmptxxyutrg": [
+      -1
+    ],
+    "/tmp/tmpiaz22mn8": [
+      -1
+    ],
+    "/tmp/tmpq8pqdtgq": [
+      -1
+    ],
+    "/tmp/tmp1fsu1h8w": [
+      -1
+    ],
+    "/tmp/tmp5k1swzwb": [
+      -1
+    ],
+    "/tmp/tmpdwv5l6rz": [
+      -1
+    ],
+    "/tmp/tmpyfptnuhd": [
+      -1
+    ],
+    "/tmp/tmp7lx84u5t": [
+      -1
+    ],
+    "/tmp/tmpg3dcfuvp": [
+      -1
+    ],
+    "/tmp/tmp_xs9i974": [
+      -1
+    ],
+    "/tmp/tmpqprxqlod": [
+      -1
+    ],
+    "/tmp/tmp59jj029k": [
+      -1
+    ],
+    "/tmp/tmpv9n26e3t": [
+      -1
+    ],
+    "/tmp/tmpt_4wgrpp": [
+      -1
+    ],
+    "/tmp/tmp5iw1a6fk": [
+      -1
+    ],
+    "/tmp/tmpacehucom": [
+      -1
+    ],
+    "/tmp/tmpl847553u": [
+      -1
+    ],
+    "/tmp/tmpxibet3rn": [
+      -1
+    ],
+    "/tmp/tmps3_jllyd": [
+      -1
+    ],
+    "/tmp/tmpvgaax3j6": [
+      -1
+    ],
+    "/tmp/tmp0sspiw11": [
+      -1
+    ],
+    "/tmp/tmprdwg9ldm": [
+      -1
+    ],
+    "/tmp/tmposrewdqg": [
+      -1
+    ],
+    "/tmp/tmp21pb5tlz": [
+      -1
+    ],
+    "/tmp/tmpp_g9muif": [
+      -1
+    ],
+    "/tmp/tmpzrtw9mq8": [
+      -1
+    ],
+    "/tmp/tmpmb4e5ofz": [
+      -1
+    ],
+    "/tmp/tmpwj323dsw": [
+      -1
+    ],
+    "/tmp/tmpe35iasx9": [
+      -1
+    ],
+    "/tmp/tmp8kns3kyq": [
+      -1
+    ],
+    "/tmp/tmp6kg0efqn": [
+      -1
+    ],
+    "/tmp/tmpd4mjeggo": [
+      -1
+    ],
+    "/tmp/tmp2s_600x8": [
+      -1
+    ],
+    "/tmp/tmpm1l8w230": [
+      -1
+    ],
+    "/tmp/tmpiffj3eeu": [
+      -1
+    ],
+    "/tmp/tmpxw1jz9gm": [
+      -1
+    ],
+    "/tmp/tmpgxegsyhs": [
+      -1
+    ],
+    "/tmp/tmp02sf9pew": [
+      -1
+    ],
+    "/tmp/tmp_qg_e1vs": [
+      -1
+    ],
+    "/tmp/tmpkn0hzqv3": [
+      -1
+    ],
+    "/tmp/tmp91zbqiyq": [
+      -1
+    ],
+    "/tmp/tmphune4uo9": [
+      -1
+    ],
+    "/tmp/tmp21b692gs": [
+      -1
+    ],
+    "/tmp/tmpfhkn50p9": [
+      -1
+    ],
+    "/tmp/tmpqjna_kus": [
+      -1
+    ],
+    "/tmp/tmpje_jv6g3": [
+      -1
+    ],
+    "/tmp/tmpqe1f_ez7": [
+      -1
+    ],
+    "/tmp/tmpxy1sxg9t": [
+      -1
+    ],
+    "/tmp/tmpq_3b7xhh": [
+      -1
+    ],
+    "/tmp/tmp89digg3b": [
+      -1
+    ],
+    "/tmp/tmph2ompehj": [
+      -1
+    ],
+    "/tmp/tmper687b59": [
+      -1
+    ],
+    "/tmp/tmpra950dw0": [
+      -1
+    ],
+    "/tmp/tmpj65oatxt": [
+      -1
+    ],
+    "/tmp/tmp4pyuliz4": [
+      -1
+    ],
+    "/tmp/tmpz_98vn3m": [
+      -1
+    ],
+    "/tmp/tmp7x567e68": [
+      -1
+    ],
+    "/tmp/tmplllrhsy2": [
+      -1
+    ],
+    "/tmp/tmpkh9v50mx": [
+      -1
+    ],
+    "/tmp/tmpycb4km95": [
+      -1
+    ],
+    "/tmp/tmp5rg23zl6": [
+      -1
+    ],
+    "/tmp/tmp9f9dzch_": [
+      -1
+    ],
+    "/tmp/tmpt56ikrq8": [
+      -1
+    ],
+    "/tmp/tmpp5hhz8v7": [
+      -1
+    ],
+    "/tmp/tmpf9a6st1a": [
+      -1
+    ],
+    "/tmp/tmpm0qf3h3z": [
+      -1
+    ],
+    "/tmp/tmp6bclts0r": [
+      -1
+    ],
+    "/tmp/tmpp8pdvebr": [
+      -1
+    ],
+    "/tmp/tmpnetahj6p": [
+      -1
+    ],
+    "/tmp/tmpcoc6wg67": [
+      -1
+    ],
+    "/tmp/tmpcp7lglyd": [
+      -1
+    ],
+    "/tmp/tmp60pshqau": [
+      -1
+    ],
+    "/tmp/tmpphjlg8eh": [
+      -1
+    ],
+    "/tmp/tmpqmn1zozz": [
+      -1
+    ],
+    "/tmp/tmpl7o1u3s5": [
+      -1
+    ],
+    "/tmp/tmpngsg_1f1": [
+      -1
+    ],
+    "/tmp/tmpwvea3jvp": [
+      -1
+    ],
+    "/tmp/tmp9p75fb87": [
+      -1
+    ],
+    "/tmp/tmpmnl_wu7w": [
+      -1
+    ],
+    "/tmp/tmpy0xr7za6": [
+      -1
+    ],
+    "/tmp/tmpeizt2jug": [
+      -1
+    ],
+    "/tmp/tmpoevzc2sx": [
+      -1
+    ],
+    "/tmp/tmpvhfhfob3": [
+      -1
+    ],
+    "/tmp/tmp0474rrlv": [
+      -1
+    ],
+    "/tmp/tmp2budh1rm": [
+      -1
+    ],
+    "/tmp/tmp1ym5z4y4": [
+      -1
+    ],
+    "/tmp/tmpxxo9rn7m": [
+      -1
+    ],
+    "/tmp/tmpdi93xxc_": [
+      -1
+    ],
+    "/tmp/tmpfgheaxk0": [
+      -1
+    ],
+    "/tmp/tmpng3iasj2": [
+      -1
+    ],
+    "/tmp/tmpapk3etfp": [
+      -1
+    ],
+    "/tmp/tmpalg_at09": [
+      -1
+    ],
+    "/tmp/tmp453hm7sj": [
+      -1
+    ],
+    "/tmp/tmpmhb9da6w": [
+      -1
+    ],
+    "/tmp/tmpbcr9ml0e": [
+      -1
+    ],
+    "/tmp/tmpfnh3iwls": [
+      -1
+    ],
+    "/tmp/tmpk7ct7t9b": [
+      -1
+    ],
+    "/tmp/tmppejmye37": [
+      -1
+    ],
+    "/tmp/tmpoac7shzl": [
+      -1
+    ],
+    "/tmp/tmpmiiwerrf": [
+      -1
+    ],
+    "/tmp/tmpdbze1k3i": [
+      -1
+    ],
+    "/tmp/tmpg_w1kmyx": [
+      -1
+    ],
+    "/tmp/tmpvglsnw02": [
+      -1
+    ],
+    "/tmp/tmpu2genuwc": [
+      -1
+    ],
+    "/tmp/tmpynk2x86a": [
+      -1
+    ],
+    "/tmp/tmp3tmcpojj": [
+      -1
+    ],
+    "/tmp/tmprmj3wi77": [
+      -1
+    ],
+    "/tmp/tmptljuedtg": [
+      -1
+    ],
+    "/tmp/tmpd26kq9nc": [
+      -1
+    ],
+    "/tmp/tmpzriaap3s": [
+      -1
+    ],
+    "/tmp/tmpgchf_6cq": [
+      -1
+    ],
+    "/tmp/tmpq64w23n3": [
+      -1
+    ],
+    "/tmp/tmpix1wli9e": [
+      -1
+    ],
+    "/tmp/tmpe78dgmmx": [
+      -1
+    ],
+    "/tmp/tmpfkbyxat7": [
+      -1
+    ],
+    "/tmp/tmp6966am60": [
+      -1
+    ],
+    "/tmp/tmp_pcnkked": [
+      -1
+    ],
+    "/tmp/tmpbfhng479": [
+      -1
+    ],
+    "/tmp/tmpnft_vi9h": [
+      -1
+    ],
+    "/tmp/tmp2pwlew1u": [
+      -1
+    ],
+    "/tmp/tmphoxfc5po": [
+      -1
+    ],
+    "/tmp/tmpxyzef9zr": [
+      -1
+    ],
+    "/tmp/tmpliivswb3": [
+      -1
+    ],
+    "/tmp/tmpboenepd5": [
+      -1
+    ],
+    "/tmp/tmp2g4eqgu5": [
+      -1
+    ],
+    "/tmp/tmpgypkknqz": [
+      -1
+    ],
+    "/tmp/tmp581kjhz0": [
+      -1
+    ],
+    "/tmp/tmpecadv_1g": [
+      -1
+    ],
+    "/tmp/tmp7oq21lcz": [
+      -1
+    ],
+    "/tmp/tmpflf9_hw9": [
+      -1
+    ],
+    "/tmp/tmpguzegu_x": [
+      -1
+    ],
+    "/tmp/tmp88vresdm": [
+      -1
+    ],
+    "/tmp/tmpn5zy20jy": [
+      -1
+    ],
+    "/tmp/tmpxfu3syn7": [
+      -1
+    ],
+    "/tmp/tmpv96ozjil": [
+      -1
+    ],
+    "/tmp/tmp3n4sdbm2": [
+      -1
+    ],
+    "/tmp/tmpno32diwh": [
+      -1
+    ],
+    "/tmp/tmpsoj7r09g": [
+      -1
+    ],
+    "/tmp/tmpvo4psc98": [
+      -1
+    ],
+    "/tmp/tmpfp6n62zw": [
+      -1
+    ],
+    "/tmp/tmpvc7zg91_": [
+      -1
+    ],
+    "/tmp/tmpnjrywci5": [
+      -1
+    ],
+    "/tmp/tmpbyxm6ao9": [
+      -1
+    ],
+    "/tmp/tmp0gpnxe0u": [
+      -1
+    ],
+    "/tmp/tmpgarqnup8": [
+      -1
+    ],
+    "/tmp/tmpfx6yinwj": [
+      -1
+    ],
+    "/tmp/tmp30b03sk1": [
+      -1
+    ],
+    "/tmp/tmpcjldcwql": [
+      -1
+    ],
+    "/tmp/tmpcpwd7mrt": [
+      -1
+    ],
+    "/tmp/tmpee2vm8gs": [
+      -1
+    ],
+    "/tmp/tmp79327hfe": [
+      -1
+    ],
+    "/tmp/tmpeu7fzms1": [
+      -1
+    ],
+    "/tmp/tmp0alj99m1": [
+      -1
+    ],
+    "/tmp/tmpya_sn0c6": [
+      -1
+    ],
+    "/tmp/tmpzd7feazy": [
+      -1
+    ],
+    "/tmp/tmp0uyscd9_": [
+      -1
+    ],
+    "/tmp/tmp6gtfko88": [
+      -1
+    ],
+    "/tmp/tmpqk_ph10_": [
+      -1
+    ],
+    "/tmp/tmpvgrgt26c": [
+      -1
+    ],
+    "/tmp/tmp1g0crkpl": [
+      -1
+    ],
+    "/tmp/tmpzja5p4ec": [
+      -1
+    ],
+    "/tmp/tmplfok1vyg": [
+      -1
+    ],
+    "/tmp/tmptqyxkpq7": [
+      -1
+    ],
+    "/tmp/tmp0jrjhs2c": [
+      -1
+    ],
+    "/tmp/tmp_pygcvu4": [
+      -1
+    ],
+    "/tmp/tmpc2_xdzik": [
+      -1
+    ],
+    "/tmp/tmpjg6gj2a4": [
+      -1
+    ],
+    "/tmp/tmpoge9yuug": [
+      -1
+    ],
+    "/tmp/tmphgo20er8": [
+      -1
+    ],
+    "/tmp/tmpmtcoxt7b": [
+      -1
+    ],
+    "/tmp/tmpxfz8o994": [
+      -1
+    ],
+    "/tmp/tmpdcn16jt_": [
+      -1
+    ],
+    "/tmp/tmpo8j6qzyc": [
+      -1
+    ],
+    "/tmp/tmpcyzvsot8": [
+      -1
+    ],
+    "/tmp/tmpkt4lmczv": [
+      -1
+    ],
+    "/tmp/tmpdmp29q41": [
+      -1
+    ],
+    "/tmp/tmpubghq7ph": [
+      -1
+    ],
+    "/tmp/tmpmifcn7ji": [
+      -1
+    ],
+    "/tmp/tmphi0qfyab": [
+      -1
+    ],
+    "/tmp/tmp5s9umuz5": [
+      -1
+    ],
+    "/tmp/tmp83495ymd": [
+      -1
+    ],
+    "/tmp/tmpj4q0arqf": [
+      -1
+    ],
+    "/tmp/tmpz07ncd9y": [
+      -1
+    ],
+    "/tmp/tmpe4uobvuf": [
+      -1
+    ],
+    "/tmp/tmptnozq251": [
+      -1
+    ],
+    "/tmp/tmpkf__notx": [
+      -1
+    ],
+    "/tmp/tmp9wq3wbq1": [
+      -1
+    ],
+    "/tmp/tmpu7w3yug4": [
+      -1
+    ],
+    "/tmp/tmpcreqfvig": [
+      -1
+    ],
+    "/tmp/tmp7ufwaqg6": [
+      -1
+    ],
+    "/tmp/tmpfw37hh_n": [
+      -1
+    ],
+    "/tmp/tmpzmt8lr50": [
+      -1
+    ],
+    "/tmp/tmprr3xq65s": [
+      -1
+    ],
+    "/tmp/tmpy1ax_zta": [
+      -1
+    ],
+    "/tmp/tmp9ueoxgcs": [
+      -1
+    ],
+    "/tmp/tmp_bvvzczi": [
+      -1
+    ],
+    "/tmp/tmpw1014hfh": [
+      -1
+    ],
+    "/tmp/tmpg9i8yc_c": [
+      -1
+    ],
+    "/tmp/tmpl9nrlwcm": [
+      -1
+    ],
+    "/tmp/tmpdymw8csr": [
+      -1
+    ],
+    "/tmp/tmpmraoheo5": [
+      -1
+    ],
+    "/tmp/tmpe3yttjmx": [
+      -1
+    ],
+    "/tmp/tmp8da_25ae": [
+      -1
+    ],
+    "/tmp/tmpzgdsqwvn": [
+      -1
+    ],
+    "/tmp/tmpxxfuawz8": [
+      -1
+    ],
+    "/tmp/tmpqoku2een": [
+      -1
+    ],
+    "/tmp/tmpziqucrjg": [
+      -1
+    ],
+    "/tmp/tmpg8x6nvlm": [
+      -1
+    ],
+    "/tmp/tmp7diz_s_0": [
+      -1
+    ],
+    "/tmp/tmp5sdkoryd": [
+      -1
+    ],
+    "/tmp/tmpo91tw6rt": [
+      -1
+    ],
+    "/tmp/tmph14b2wmy": [
+      -1
+    ],
+    "/tmp/tmppyu09ssa": [
+      -1
+    ],
+    "/tmp/tmpupgcm6ep": [
+      -1
+    ],
+    "/tmp/tmpwhiczvin": [
+      -1
+    ],
+    "/tmp/tmp36kkirdd": [
+      -1
+    ],
+    "/tmp/tmpbm3mtakb": [
+      -1
+    ],
+    "/tmp/tmp1gs0jng0": [
+      -1
+    ],
+    "/tmp/tmpdxs0psti": [
+      -1
+    ],
+    "/tmp/tmpeq_umdq5": [
+      -1
+    ],
+    "/tmp/tmpum0hok1p": [
+      -1
+    ],
+    "/tmp/tmp9glu9wm7": [
+      -1
+    ],
+    "/tmp/tmprzw_efz3": [
+      -1
+    ],
+    "/tmp/tmp06p35cnc": [
+      -1
+    ],
+    "/tmp/tmpu6egir4a": [
+      -1
+    ],
+    "/tmp/tmpqtw76wjg": [
+      -1
+    ],
+    "/tmp/tmppy2ms7no": [
+      -1
+    ],
+    "/tmp/tmpalnyv_5c": [
+      -1
+    ],
+    "/tmp/tmpffx5imzf": [
+      -1
+    ],
+    "/tmp/tmpcw0lkron": [
+      -1
+    ],
+    "/tmp/tmp6j9w49qs": [
+      -1
+    ],
+    "/tmp/tmpdezn7t4y": [
+      -1
+    ],
+    "/tmp/tmpwyjxynoz": [
+      -1
+    ],
+    "/tmp/tmpita2acyu": [
+      -1
+    ],
+    "/tmp/tmp90dduj92": [
+      -1
+    ],
+    "/tmp/tmptgjtkuus": [
+      -1
+    ],
+    "/tmp/tmpyqsryrge": [
+      -1
+    ],
+    "/tmp/tmp3oqgct1y": [
+      -1
+    ],
+    "/tmp/tmp4kuv1oqb": [
+      -1
+    ],
+    "/tmp/tmp5sr3l5f5": [
+      -1
+    ],
+    "/tmp/tmpjz8tbm2t": [
+      -1
+    ],
+    "/tmp/tmp4wy1r1td": [
+      -1
+    ],
+    "/tmp/tmpy4d753ou": [
+      -1
+    ],
+    "/tmp/tmpm44_eo0c": [
+      -1
+    ],
+    "/tmp/tmpds9w5pys": [
+      -1
+    ],
+    "/tmp/tmpa68uz39y": [
+      -1
+    ],
+    "/tmp/tmp8f6e6jzu": [
+      -1
+    ],
+    "/tmp/tmp94q_lc26": [
+      -1
+    ],
+    "/tmp/tmpw154hrpc": [
+      -1
+    ],
+    "/tmp/tmpye0sflvl": [
+      -1
+    ],
+    "/tmp/tmp36e2qw_n": [
+      -1
+    ],
+    "/tmp/tmpf4f33apg": [
+      -1
+    ],
+    "/tmp/tmpl2495lqy": [
+      -1
+    ],
+    "/tmp/tmptcmkjdf5": [
+      -1
+    ],
+    "/tmp/tmpaf1knuya": [
+      -1
+    ],
+    "/tmp/tmpouf64u9m": [
+      -1
+    ],
+    "/tmp/tmpk9h6b9lg": [
+      -1
+    ],
+    "/tmp/tmp6od70da8": [
+      -1
+    ],
+    "/tmp/tmpq0x5ik9m": [
+      -1
+    ],
+    "/tmp/tmp8fpn8g5r": [
+      -1
+    ],
+    "/tmp/tmp99s0a8h4": [
+      -1
+    ],
+    "/tmp/tmp5_96u88c": [
+      -1
+    ],
+    "/tmp/tmpvw35w232": [
+      -1
+    ],
+    "/tmp/tmpv5jl_tny": [
+      -1
+    ],
+    "/tmp/tmp3ims56c7": [
+      -1
+    ],
+    "/tmp/tmpiv1wz0i9": [
+      -1
+    ],
+    "/tmp/tmp4m1lacrw": [
+      -1
+    ],
+    "/tmp/tmpkddw7r4u": [
+      -1
+    ],
+    "/tmp/tmpj36sht4_": [
+      -1
+    ],
+    "/tmp/tmp18bb3dki": [
+      -1
+    ],
+    "/tmp/tmp7rm551bj": [
+      -1
+    ],
+    "/tmp/tmphi_lh6fz": [
+      -1
+    ],
+    "/tmp/tmpcfwt6l26": [
+      -1
+    ],
+    "/tmp/tmp89n4mejx": [
+      -1
+    ],
+    "/tmp/tmpuoj2fk1a": [
+      -1
+    ],
+    "/tmp/tmpny4z7o3g": [
+      -1
+    ],
+    "/tmp/tmpu0ds7y7z": [
+      -1
+    ],
+    "/tmp/tmp68pz85j3": [
+      -1
+    ],
+    "/tmp/tmp956j_z6z": [
+      -1
+    ],
+    "/tmp/tmp5aduirnu": [
+      -1
+    ],
+    "/tmp/tmp4e8iwxbh": [
+      -1
+    ],
+    "/tmp/tmp2t0f6x4o": [
+      -1
+    ],
+    "/tmp/tmpwqn5yx9p": [
+      -1
+    ],
+    "/tmp/tmp5a1ibbuz": [
+      -1
+    ],
+    "/tmp/tmpqljjc3ev": [
+      -1
+    ],
+    "/tmp/tmpxty74waw": [
+      -1
+    ],
+    "/tmp/tmptgn11ou7": [
+      -1
+    ],
+    "/tmp/tmpfx6p7xbm": [
+      -1
+    ],
+    "/tmp/tmprterbaoz": [
+      -1
+    ],
+    "/tmp/tmp7_60gtlr": [
+      -1
+    ],
+    "/tmp/tmpr2llg7dh": [
+      -1
+    ],
+    "/tmp/tmpvs2brxb3": [
+      -1
+    ],
+    "/tmp/tmp9xw5o_0h": [
+      -1
+    ],
+    "/tmp/tmpgqo5ri6n": [
+      -1
+    ],
+    "/tmp/tmpp6bofq06": [
+      -1
+    ],
+    "/tmp/tmp95j2d_re": [
+      -1
+    ],
+    "/tmp/tmp3rk0kf52": [
+      -1
+    ],
+    "/tmp/tmp63f4olo_": [
+      -1
+    ],
+    "/tmp/tmpjw8xhrae": [
+      -1
+    ],
+    "/tmp/tmpy5n0vula": [
+      -1
+    ],
+    "/tmp/tmp4p4e12h7": [
+      -1
+    ],
+    "/tmp/tmpn2ogmatp": [
+      -1
+    ],
+    "/tmp/tmpidzd9kl7": [
+      -1
+    ],
+    "/tmp/tmpj4fgmbpp": [
+      -1
+    ],
+    "/tmp/tmp2fyojych": [
+      -1
+    ],
+    "/tmp/tmpg3tppb9p": [
+      -1
+    ],
+    "/tmp/tmpwc4_0a_d": [
+      -1
+    ],
+    "/tmp/tmpvdkl5iuh": [
+      -1
+    ],
+    "/tmp/tmpk9uxpkfp": [
+      -1
+    ],
+    "/tmp/tmplqcfj2xn": [
+      -1
+    ],
+    "/tmp/tmpqpyylm89": [
+      -1
+    ],
+    "/tmp/tmpavh5z4ri": [
+      -1
+    ],
+    "/tmp/tmpctkwmkz6": [
+      -1
+    ],
+    "/tmp/tmp8g4iirwb": [
+      -1
+    ],
+    "/tmp/tmphgfl5qq3": [
+      -1
+    ],
+    "/tmp/tmpara2dndb": [
+      -1
+    ],
+    "/tmp/tmpa92_4fom": [
+      -1
+    ]
+  },
+  "injection_pass": true,
+  "result": {
+    "task": "059SYs6_frozen_weather_augmented_100k",
+    "station_code": "SYA",
+    "input_profile": "originIC",
+    "resolved_input_root": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013",
+    "source_mzx": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013/SY/CNSY1201.MZX",
+    "source_mzx_sha256": "20b071bc49549cbf561be3aae81caa355aa0582564db524e17d68ab6a274418a",
+    "config_train_years": [
+      2005,
+      2006,
+      2007,
+      2008,
+      2009,
+      2010,
+      2011,
+      2012,
+      2013
+    ],
+    "config_validation_years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "engine_train_years": [
+      2005,
+      2006,
+      2007,
+      2008,
+      2009,
+      2010,
+      2011,
+      2012,
+      2013
+    ],
+    "engine_validation_years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "recorded_template": {
+      "recorded_schedule_source": "benchmark_results/027_05/027_05_daily_values.csv",
+      "recorded_schedule_source_exists": true,
+      "recorded_template_event_days": 2,
+      "recorded_template_irrigation_mm": 0.0,
+      "recorded_template_nitrogen_kg_ha": 586.0,
+      "recorded_template_daps": [
+        1,
+        61
+      ]
+    },
+    "issues": [],
+    "next_step_allowed": true,
+    "reference_run": "046_02_sya_originIC_binary_timing_ppo",
+    "observation_contract": {
+      "base": "046_02_raw_observation",
+      "normalization_enabled": false,
+      "weather_forecast_enabled": false
+    },
+    "irrigation_levels_mm": [
+      0.0,
+      15.0,
+      30.0,
+      45.0
+    ],
+    "nitrogen_levels_kg_ha": [
+      0.0,
+      40.0,
+      80.0,
+      120.0
+    ],
+    "combined_action_count": 16,
+    "prompt_exists": true,
+    "mode": "formal_train_and_validate",
+    "output_root": "benchmark_results/059SYs6_frozen_weather_augmented_100k",
+    "manifest": "benchmark_results/059SYs6_frozen_weather_augmented_100k/059SYs6_run_manifest.json",
+    "record_md": "docs/059SYs6_frozen_weather_augmented_100k_record.md",
+    "action_audit": {
+      "final_checkpoint": 100000,
+      "expected_validation_rows": 10,
+      "observed_validation_rows": 10,
+      "all_daily_files_exist": true,
+      "all_actions_on_declared_grid": true,
+      "positive_actions_present": true,
+      "positive_actions_transmitted": true,
+      "not_all_positive_actions_at_dap1": false,
+      "multiple_nonzero_action_pairs": false,
+      "new_action_levels_used": true,
+      "next_step_allowed": false
+    },
+    "smoke_verification": {
+      "smoke_result_exists": true,
+      "smoke_manifest_exists": true,
+      "smoke_status_completed": true,
+      "smoke_gate_passed": true,
+      "smoke_timesteps_match": true,
+      "smoke_checkpoints_match": true,
+      "smoke_input_profile_match": true,
+      "smoke_actions_match": true,
+      "smoke_observation_contract_match": true,
+      "smoke_output_root": "benchmark_results/058SY_frozen_weather_seed0_smoke_smoke2k",
+      "next_step_allowed": true,
+      "shared_seed0_smoke_for_frozen_cohort": true
+    }
+  },
+  "formal_training_allowed": false
+}

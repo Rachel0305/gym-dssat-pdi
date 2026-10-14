@@ -1,0 +1,75 @@
+{
+  "actual_timesteps_values": [
+    100080
+  ],
+  "issues": [
+    "WGEN actual rseed1 sequences differ across PPO seeds"
+  ],
+  "passed": false,
+  "run_count": 6,
+  "runs": [
+    {
+      "actual_timesteps": 100080,
+      "checkpoints_present": true,
+      "episodes": 940,
+      "max_process_tree_rss_mb": 924.95703125,
+      "ppo_seed": 0,
+      "requested_timesteps": 100000,
+      "run_status": "completed",
+      "training_regime": "HISTORICAL_WEATHER"
+    },
+    {
+      "actual_timesteps": 100080,
+      "checkpoints_present": true,
+      "episodes": 942,
+      "max_process_tree_rss_mb": 982.07421875,
+      "ppo_seed": 1,
+      "requested_timesteps": 100000,
+      "run_status": "completed",
+      "training_regime": "HISTORICAL_WEATHER"
+    },
+    {
+      "actual_timesteps": 100080,
+      "checkpoints_present": true,
+      "episodes": 940,
+      "max_process_tree_rss_mb": 993.3515625,
+      "ppo_seed": 2,
+      "requested_timesteps": 100000,
+      "run_status": "completed",
+      "training_regime": "HISTORICAL_WEATHER"
+    },
+    {
+      "actual_timesteps": 100080,
+      "checkpoints_present": true,
+      "episodes": 940,
+      "max_process_tree_rss_mb": 1031.3125,
+      "ppo_seed": 0,
+      "requested_timesteps": 100000,
+      "run_status": "completed",
+      "training_regime": "RANDOM_WEATHER_WGEN"
+    },
+    {
+      "actual_timesteps": 100080,
+      "checkpoints_present": true,
+      "episodes": 942,
+      "max_process_tree_rss_mb": 1046.37890625,
+      "ppo_seed": 1,
+      "requested_timesteps": 100000,
+      "run_status": "completed",
+      "training_regime": "RANDOM_WEATHER_WGEN"
+    },
+    {
+      "actual_timesteps": 100080,
+      "checkpoints_present": true,
+      "episodes": 940,
+      "max_process_tree_rss_mb": 1053.3984375,
+      "ppo_seed": 2,
+      "requested_timesteps": 100000,
+      "run_status": "completed",
+      "training_regime": "RANDOM_WEATHER_WGEN"
+    }
+  ],
+  "same_actual_timestep_count": true,
+  "same_effective_config_across_all_runs": true,
+  "train_eval_wgen_seed_intersection": []
+}

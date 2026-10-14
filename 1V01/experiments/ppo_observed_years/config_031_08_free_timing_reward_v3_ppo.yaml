@@ -1,0 +1,74 @@
+seed: 0
+mode: water_nitrogen
+algorithm: PPO
+total_timesteps: 5000
+
+paths:
+  base_env_config: experiments/ppo_observed_years/config_all_year_weather_calibration_validation.yaml
+  output_root: benchmark_results/031_08_sy2014_free_timing_reward_v3_ppo_smoke/ppo
+  scenario_pool_csv: Leave_One_experiments/all_year_weather_calibration_validation/scenario_pool/all_year_weather_scenario_pool.csv
+  weather_inventory_csv: Leave_One_experiments/all_year_weather_calibration_validation/weather_inventory/weather_year_inventory.csv
+  weather_clean_csv: weather_clean_qc/all_sites_weather_cleaned_qc.csv
+  cultivar_file: my_data/MZCER048.CUL
+  my_data_dir: my_data
+  wth_dir: Leave_One_experiments/wth_generated_qc
+
+runtime:
+  mode: all
+  max_steps: 260
+  episode_timeout_seconds: 300
+  train_years_per_station: 1
+  eval_years_per_station: 1
+  smoke_station: SYA
+
+ppo:
+  learning_rate: 0.0003
+  gamma: 0.99
+  n_steps: 64
+  batch_size: 32
+  ent_coef: 0.01
+  clip_range: 0.2
+
+action_scale:
+  daily_irrigation_max: 40.0
+  daily_n_max: 80.0
+
+action_safety:
+  enabled: true
+  daily_irrigation_max: 40.0
+  daily_n_max: 80.0
+  season_irrigation_soft_limit: 160.0
+  season_n_soft_limit: 250.0
+  min_days_between_irrigation: 1
+  min_days_between_fertilization: 1
+  irrigation_allowed_dap_range: [1, 120]
+  fertilization_allowed_dap_range: [1, 90]
+
+economics:
+  grain_value_coef: 1.0
+  water_cost: 1.0
+  nitrogen_cost: 5.0
+
+reward:
+  reward_type: free_timing_reward_v3
+  grnwt_delta_coef: 1.0
+  topwt_delta_coef: 0.0
+  water_cost: 1.0
+  nitrogen_cost: 5.0
+  repeat_window_days: 7
+  repeat_irrigation_penalty_coef: 2.00
+  repeat_nitrogen_penalty_coef: 2.00
+  early_dap_threshold: 10
+  early_irrigation_cumulative_threshold: 40.0
+  early_n_cumulative_threshold: 80.0
+  early_irrigation_penalty_coef: 2.00
+  early_nitrogen_penalty_coef: 2.00
+  no_stress_early_dap_threshold: 65
+  no_stress_swfac_threshold: 0.01
+  no_stress_nstres_threshold: 0.01
+  no_stress_irrigation_penalty_coef: 0.50
+  no_stress_nitrogen_penalty_coef: 2.00
+  late_irrigation_dap_threshold: 100
+  late_nitrogen_dap_threshold: 80
+  late_irrigation_penalty_coef: 0.50
+  late_nitrogen_penalty_coef: 2.00

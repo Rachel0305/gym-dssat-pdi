@@ -1,0 +1,4 @@
+﻿training_regime,ppo_seed,episode_index,historical_year,training_weather_source,training_weather_seed,scheduled_rseed1_,actual_rseed1_sent_to_pdi,outer_reset_seed_received,episode_return,reward_component_sum,reward_decomposition_abs_error,yield,fertilizer,irrigation,episode_days,runtime_weather_sha256,filex_wther,runtime_filex_template_sha256,status
+HISTORICAL_WEATHER,3,1,2008,observed_historical,,,,3,0.49555172297954575,0.49555172297954575,0.0,6922.479248046875,240.0,240.0,109,,,,completed
+HISTORICAL_WEATHER,3,2,2008,observed_historical,,,,,0.45176102834701526,0.45176102834701526,0.0,6921.995849609375,240.0,240.0,109,,,,completed
+HISTORICAL_WEATHER,3,3,2008,observed_historical,,,,,0.4517679717063906,0.4517679717063906,0.0,6922.039794921875,240.0,240.0,109,,,,completed

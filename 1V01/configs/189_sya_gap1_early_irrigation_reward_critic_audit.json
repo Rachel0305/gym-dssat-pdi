@@ -1,0 +1,33 @@
+{
+  "task_id": "189",
+  "task_name": "sya_gap1_early_irrigation_reward_critic_audit",
+  "source_task": "188_sya_balanced_irrigation_gap1_smoke2k",
+  "physical_gate_task": "167_sya_weather_v2_fixed_format_gate",
+  "scenario_manifest": "benchmark_results/166_sya_weather_scenario_bank_v2_fixed_format/163_sya_weather_scenario_manifest.csv",
+  "input_root": "DSSAT_auto_validation/sya_weather_scenario_bank_166_fixed_format",
+  "model_root": "benchmark_results/188_sya_balanced_irrigation_gap1_smoke2k/models/SYA",
+  "station_code": "SYA",
+  "site": "SY",
+  "source_year": 2005,
+  "seed": 0,
+  "checkpoint_steps": [1000, 2000],
+  "target_daps": [2, 31, 61, 91],
+  "scenario_order": ["original", "early_dry", "mid_dry", "late_dry", "early_wet", "mid_wet"],
+  "key_actions": {
+    "noop": 0,
+    "i15_n0": 4,
+    "i30_n0": 8,
+    "i45_n0": 12
+  },
+  "action_mask_override": {
+    "min_days_between_irrigation": 1,
+    "min_days_between_fertilization": 7,
+    "season_irrigation_cap_mm": 240
+  },
+  "mode": "read_only_early_action_one_step_td_audit",
+  "training_executed": false,
+  "rerun_dssat_for_action_branches": true,
+  "reward_changed": false,
+  "observation_changed": false,
+  "action_grid_changed": false
+}

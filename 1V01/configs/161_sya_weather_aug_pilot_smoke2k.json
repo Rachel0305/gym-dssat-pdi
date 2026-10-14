@@ -1,0 +1,40 @@
+{
+  "task_id": "161",
+  "task_name": "sya_weather_aug_pilot_smoke2k",
+  "container": "nifty_taussig",
+  "python": "/opt/gym_dssat_pdi/bin/python",
+  "station_code": "SYA",
+  "site": "SY",
+  "source_manifest": "benchmark_results/160_multisite_weather_scenario_bank_v1/160_weather_scenario_manifest.csv",
+  "input_root": "DSSAT_auto_validation/multisite_weather_scenario_bank_160_v1",
+  "source_input_root": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013",
+  "source_year": 2005,
+  "validation_years": [2014],
+  "training": {
+    "total_timesteps": 2000,
+    "checkpoint_steps": [1000, 2000]
+  },
+  "seed": 0,
+  "actions": {
+    "irrigation_levels_mm": [0.0, 15.0, 30.0, 45.0],
+    "nitrogen_levels_kg_ha": [0.0, 40.0, 80.0, 120.0]
+  },
+  "observation_contract": {
+    "base": "046_02_raw_observation",
+    "normalization_enabled": false,
+    "weather_forecast_enabled": false
+  },
+  "inheritance": {
+    "reference_run": "046_10_sya_originIC_expanded_action_maskableppo",
+    "reward_changed": false,
+    "action_safety_changed": false,
+    "cultivar_parameters_changed": false,
+    "soil_parameters_changed": false,
+    "weather_only_change": true
+  },
+  "interpretation": {
+    "validation_is_formal": false,
+    "purpose": "End-to-end input wiring and low-cost PPO smoke only"
+  },
+  "prompt": "prompts/2026-08-18_sya_weather_aug_pilot_smoke2k.md"
+}

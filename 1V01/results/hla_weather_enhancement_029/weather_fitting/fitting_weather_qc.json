@@ -1,0 +1,485 @@
+{
+  "task": "029",
+  "site": "HLA",
+  "qa_scope": "FITTING_INPUT_ONLY_NOT_SYNTHETIC_CANDIDATES",
+  "scenarios": [
+    {
+      "scenario": "GPCC_RAW",
+      "row_count": 3653,
+      "first_date": "2004-01-01",
+      "last_date": "2013-12-31",
+      "unique_dates": true,
+      "daily_continuous": true,
+      "finite_values": true,
+      "basic_physical": true,
+      "zero_monthly_constant_warning": [],
+      "annual": [
+        {
+          "year": 2004,
+          "days": 366,
+          "rain_total_mm": 350.0,
+          "wet_days_gt0": 101,
+          "max_daily_rain_mm": 33.7,
+          "longest_dry_spell_days": 19
+        },
+        {
+          "year": 2005,
+          "days": 365,
+          "rain_total_mm": 586.7,
+          "wet_days_gt0": 101,
+          "max_daily_rain_mm": 60.4,
+          "longest_dry_spell_days": 23
+        },
+        {
+          "year": 2006,
+          "days": 365,
+          "rain_total_mm": 606.6,
+          "wet_days_gt0": 84,
+          "max_daily_rain_mm": 115.2,
+          "longest_dry_spell_days": 19
+        },
+        {
+          "year": 2007,
+          "days": 365,
+          "rain_total_mm": 481.8,
+          "wet_days_gt0": 84,
+          "max_daily_rain_mm": 32.8,
+          "longest_dry_spell_days": 28
+        },
+        {
+          "year": 2008,
+          "days": 366,
+          "rain_total_mm": 615.3,
+          "wet_days_gt0": 98,
+          "max_daily_rain_mm": 80.7,
+          "longest_dry_spell_days": 45
+        },
+        {
+          "year": 2009,
+          "days": 365,
+          "rain_total_mm": 546.8,
+          "wet_days_gt0": 94,
+          "max_daily_rain_mm": 58.7,
+          "longest_dry_spell_days": 23
+        },
+        {
+          "year": 2010,
+          "days": 365,
+          "rain_total_mm": 461.3,
+          "wet_days_gt0": 114,
+          "max_daily_rain_mm": 48.3,
+          "longest_dry_spell_days": 19
+        },
+        {
+          "year": 2011,
+          "days": 365,
+          "rain_total_mm": 564.9,
+          "wet_days_gt0": 88,
+          "max_daily_rain_mm": 46.3,
+          "longest_dry_spell_days": 28
+        },
+        {
+          "year": 2012,
+          "days": 366,
+          "rain_total_mm": 677.3,
+          "wet_days_gt0": 107,
+          "max_daily_rain_mm": 50.4,
+          "longest_dry_spell_days": 20
+        },
+        {
+          "year": 2013,
+          "days": 365,
+          "rain_total_mm": 1152.64,
+          "wet_days_gt0": 162,
+          "max_daily_rain_mm": 178.2,
+          "longest_dry_spell_days": 19
+        }
+      ],
+      "pre_wgen_pass": true,
+      "candidate_qa_status": "NOT_RUN_NO_WGEN_CANDIDATES"
+    },
+    {
+      "scenario": "CPC_RAW",
+      "row_count": 3653,
+      "first_date": "2004-01-01",
+      "last_date": "2013-12-31",
+      "unique_dates": true,
+      "daily_continuous": true,
+      "finite_values": true,
+      "basic_physical": true,
+      "zero_monthly_constant_warning": [],
+      "annual": [
+        {
+          "year": 2004,
+          "days": 366,
+          "rain_total_mm": 350.0,
+          "wet_days_gt0": 101,
+          "max_daily_rain_mm": 33.7,
+          "longest_dry_spell_days": 19
+        },
+        {
+          "year": 2005,
+          "days": 365,
+          "rain_total_mm": 586.7,
+          "wet_days_gt0": 101,
+          "max_daily_rain_mm": 60.4,
+          "longest_dry_spell_days": 23
+        },
+        {
+          "year": 2006,
+          "days": 365,
+          "rain_total_mm": 606.6,
+          "wet_days_gt0": 84,
+          "max_daily_rain_mm": 115.2,
+          "longest_dry_spell_days": 19
+        },
+        {
+          "year": 2007,
+          "days": 365,
+          "rain_total_mm": 481.8,
+          "wet_days_gt0": 84,
+          "max_daily_rain_mm": 32.8,
+          "longest_dry_spell_days": 28
+        },
+        {
+          "year": 2008,
+          "days": 366,
+          "rain_total_mm": 615.3,
+          "wet_days_gt0": 98,
+          "max_daily_rain_mm": 80.7,
+          "longest_dry_spell_days": 45
+        },
+        {
+          "year": 2009,
+          "days": 365,
+          "rain_total_mm": 546.8,
+          "wet_days_gt0": 94,
+          "max_daily_rain_mm": 58.7,
+          "longest_dry_spell_days": 23
+        },
+        {
+          "year": 2010,
+          "days": 365,
+          "rain_total_mm": 461.3,
+          "wet_days_gt0": 114,
+          "max_daily_rain_mm": 48.3,
+          "longest_dry_spell_days": 19
+        },
+        {
+          "year": 2011,
+          "days": 365,
+          "rain_total_mm": 564.9,
+          "wet_days_gt0": 88,
+          "max_daily_rain_mm": 46.3,
+          "longest_dry_spell_days": 28
+        },
+        {
+          "year": 2012,
+          "days": 366,
+          "rain_total_mm": 677.3,
+          "wet_days_gt0": 107,
+          "max_daily_rain_mm": 50.4,
+          "longest_dry_spell_days": 20
+        },
+        {
+          "year": 2013,
+          "days": 365,
+          "rain_total_mm": 1152.7449,
+          "wet_days_gt0": 157,
+          "max_daily_rain_mm": 178.2,
+          "longest_dry_spell_days": 22
+        }
+      ],
+      "pre_wgen_pass": true,
+      "candidate_qa_status": "NOT_RUN_NO_WGEN_CANDIDATES"
+    },
+    {
+      "scenario": "GPCC_BIASCORR",
+      "row_count": 3653,
+      "first_date": "2004-01-01",
+      "last_date": "2013-12-31",
+      "unique_dates": true,
+      "daily_continuous": true,
+      "finite_values": true,
+      "basic_physical": true,
+      "zero_monthly_constant_warning": [],
+      "annual": [
+        {
+          "year": 2004,
+          "days": 366,
+          "rain_total_mm": 350.0,
+          "wet_days_gt0": 101,
+          "max_daily_rain_mm": 33.7,
+          "longest_dry_spell_days": 19
+        },
+        {
+          "year": 2005,
+          "days": 365,
+          "rain_total_mm": 586.7,
+          "wet_days_gt0": 101,
+          "max_daily_rain_mm": 60.4,
+          "longest_dry_spell_days": 23
+        },
+        {
+          "year": 2006,
+          "days": 365,
+          "rain_total_mm": 606.6,
+          "wet_days_gt0": 84,
+          "max_daily_rain_mm": 115.2,
+          "longest_dry_spell_days": 19
+        },
+        {
+          "year": 2007,
+          "days": 365,
+          "rain_total_mm": 481.8,
+          "wet_days_gt0": 84,
+          "max_daily_rain_mm": 32.8,
+          "longest_dry_spell_days": 28
+        },
+        {
+          "year": 2008,
+          "days": 366,
+          "rain_total_mm": 615.3,
+          "wet_days_gt0": 98,
+          "max_daily_rain_mm": 80.7,
+          "longest_dry_spell_days": 45
+        },
+        {
+          "year": 2009,
+          "days": 365,
+          "rain_total_mm": 546.8,
+          "wet_days_gt0": 94,
+          "max_daily_rain_mm": 58.7,
+          "longest_dry_spell_days": 23
+        },
+        {
+          "year": 2010,
+          "days": 365,
+          "rain_total_mm": 461.3,
+          "wet_days_gt0": 114,
+          "max_daily_rain_mm": 48.3,
+          "longest_dry_spell_days": 19
+        },
+        {
+          "year": 2011,
+          "days": 365,
+          "rain_total_mm": 564.9,
+          "wet_days_gt0": 88,
+          "max_daily_rain_mm": 46.3,
+          "longest_dry_spell_days": 28
+        },
+        {
+          "year": 2012,
+          "days": 366,
+          "rain_total_mm": 677.3,
+          "wet_days_gt0": 107,
+          "max_daily_rain_mm": 50.4,
+          "longest_dry_spell_days": 20
+        },
+        {
+          "year": 2013,
+          "days": 365,
+          "rain_total_mm": 1152.746229,
+          "wet_days_gt0": 162,
+          "max_daily_rain_mm": 178.2,
+          "longest_dry_spell_days": 19
+        }
+      ],
+      "pre_wgen_pass": true,
+      "candidate_qa_status": "NOT_RUN_NO_WGEN_CANDIDATES"
+    },
+    {
+      "scenario": "CPC_BIASCORR",
+      "row_count": 3653,
+      "first_date": "2004-01-01",
+      "last_date": "2013-12-31",
+      "unique_dates": true,
+      "daily_continuous": true,
+      "finite_values": true,
+      "basic_physical": true,
+      "zero_monthly_constant_warning": [],
+      "annual": [
+        {
+          "year": 2004,
+          "days": 366,
+          "rain_total_mm": 350.0,
+          "wet_days_gt0": 101,
+          "max_daily_rain_mm": 33.7,
+          "longest_dry_spell_days": 19
+        },
+        {
+          "year": 2005,
+          "days": 365,
+          "rain_total_mm": 586.7,
+          "wet_days_gt0": 101,
+          "max_daily_rain_mm": 60.4,
+          "longest_dry_spell_days": 23
+        },
+        {
+          "year": 2006,
+          "days": 365,
+          "rain_total_mm": 606.6,
+          "wet_days_gt0": 84,
+          "max_daily_rain_mm": 115.2,
+          "longest_dry_spell_days": 19
+        },
+        {
+          "year": 2007,
+          "days": 365,
+          "rain_total_mm": 481.8,
+          "wet_days_gt0": 84,
+          "max_daily_rain_mm": 32.8,
+          "longest_dry_spell_days": 28
+        },
+        {
+          "year": 2008,
+          "days": 366,
+          "rain_total_mm": 615.3,
+          "wet_days_gt0": 98,
+          "max_daily_rain_mm": 80.7,
+          "longest_dry_spell_days": 45
+        },
+        {
+          "year": 2009,
+          "days": 365,
+          "rain_total_mm": 546.8,
+          "wet_days_gt0": 94,
+          "max_daily_rain_mm": 58.7,
+          "longest_dry_spell_days": 23
+        },
+        {
+          "year": 2010,
+          "days": 365,
+          "rain_total_mm": 461.3,
+          "wet_days_gt0": 114,
+          "max_daily_rain_mm": 48.3,
+          "longest_dry_spell_days": 19
+        },
+        {
+          "year": 2011,
+          "days": 365,
+          "rain_total_mm": 564.9,
+          "wet_days_gt0": 88,
+          "max_daily_rain_mm": 46.3,
+          "longest_dry_spell_days": 28
+        },
+        {
+          "year": 2012,
+          "days": 366,
+          "rain_total_mm": 677.3,
+          "wet_days_gt0": 107,
+          "max_daily_rain_mm": 50.4,
+          "longest_dry_spell_days": 20
+        },
+        {
+          "year": 2013,
+          "days": 365,
+          "rain_total_mm": 1152.898935,
+          "wet_days_gt0": 157,
+          "max_daily_rain_mm": 178.2,
+          "longest_dry_spell_days": 22
+        }
+      ],
+      "pre_wgen_pass": true,
+      "candidate_qa_status": "NOT_RUN_NO_WGEN_CANDIDATES"
+    },
+    {
+      "scenario": "ENSEMBLE_BIASCORR",
+      "row_count": 3653,
+      "first_date": "2004-01-01",
+      "last_date": "2013-12-31",
+      "unique_dates": true,
+      "daily_continuous": true,
+      "finite_values": true,
+      "basic_physical": true,
+      "zero_monthly_constant_warning": [],
+      "annual": [
+        {
+          "year": 2004,
+          "days": 366,
+          "rain_total_mm": 350.0,
+          "wet_days_gt0": 101,
+          "max_daily_rain_mm": 33.7,
+          "longest_dry_spell_days": 19
+        },
+        {
+          "year": 2005,
+          "days": 365,
+          "rain_total_mm": 586.7,
+          "wet_days_gt0": 101,
+          "max_daily_rain_mm": 60.4,
+          "longest_dry_spell_days": 23
+        },
+        {
+          "year": 2006,
+          "days": 365,
+          "rain_total_mm": 606.6,
+          "wet_days_gt0": 84,
+          "max_daily_rain_mm": 115.2,
+          "longest_dry_spell_days": 19
+        },
+        {
+          "year": 2007,
+          "days": 365,
+          "rain_total_mm": 481.8,
+          "wet_days_gt0": 84,
+          "max_daily_rain_mm": 32.8,
+          "longest_dry_spell_days": 28
+        },
+        {
+          "year": 2008,
+          "days": 366,
+          "rain_total_mm": 615.3,
+          "wet_days_gt0": 98,
+          "max_daily_rain_mm": 80.7,
+          "longest_dry_spell_days": 45
+        },
+        {
+          "year": 2009,
+          "days": 365,
+          "rain_total_mm": 546.8,
+          "wet_days_gt0": 94,
+          "max_daily_rain_mm": 58.7,
+          "longest_dry_spell_days": 23
+        },
+        {
+          "year": 2010,
+          "days": 365,
+          "rain_total_mm": 461.3,
+          "wet_days_gt0": 114,
+          "max_daily_rain_mm": 48.3,
+          "longest_dry_spell_days": 19
+        },
+        {
+          "year": 2011,
+          "days": 365,
+          "rain_total_mm": 564.9,
+          "wet_days_gt0": 88,
+          "max_daily_rain_mm": 46.3,
+          "longest_dry_spell_days": 28
+        },
+        {
+          "year": 2012,
+          "days": 366,
+          "rain_total_mm": 677.3,
+          "wet_days_gt0": 107,
+          "max_daily_rain_mm": 50.4,
+          "longest_dry_spell_days": 20
+        },
+        {
+          "year": 2013,
+          "days": 365,
+          "rain_total_mm": 1152.822582,
+          "wet_days_gt0": 163,
+          "max_daily_rain_mm": 178.2,
+          "longest_dry_spell_days": 19
+        }
+      ],
+      "pre_wgen_pass": true,
+      "candidate_qa_status": "NOT_RUN_NO_WGEN_CANDIDATES"
+    }
+  ],
+  "all_pre_wgen_pass": true,
+  "observed_2014_2023_used": false,
+  "candidate_qa_status": "NOT_RUN_NO_WGEN_CANDIDATES"
+}

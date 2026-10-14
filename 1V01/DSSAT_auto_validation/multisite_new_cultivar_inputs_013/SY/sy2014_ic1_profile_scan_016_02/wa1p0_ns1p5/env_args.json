@@ -1,0 +1,18 @@
+{
+  "log_saving_path": "/workspace/DSSAT_auto_validation/multisite_new_cultivar_inputs_013/SY/sy2014_ic1_profile_scan_016_02/wa1p0_ns1p5/wa1p0_ns1p5.log",
+  "mode": "all",
+  "seed": 0,
+  "random_weather": false,
+  "evaluation": true,
+  "fileX_template_path": "/workspace/DSSAT_auto_validation/multisite_new_cultivar_inputs_013/SY/sy2014_ic1_profile_scan_016_02/wa1p0_ns1p5/input/CNSY1201.MZX",
+  "experiment_number": 2,
+  "auxiliary_file_paths": [
+    "/workspace/DSSAT_auto_validation/multisite_new_cultivar_inputs_013/SY/sy2014_ic1_profile_scan_016_02/wa1p0_ns1p5/input/CNSY1401.WTH",
+    "/workspace/DSSAT_auto_validation/multisite_new_cultivar_inputs_013/SY/sy2014_ic1_profile_scan_016_02/wa1p0_ns1p5/input/SOIL.SOL",
+    "/workspace/DSSAT_auto_validation/multisite_new_cultivar_inputs_013/SY/sy2014_ic1_profile_scan_016_02/wa1p0_ns1p5/input/MZCER048.CUL",
+    "/workspace/DSSAT_auto_validation/multisite_new_cultivar_inputs_013/SY/sy2014_ic1_profile_scan_016_02/wa1p0_ns1p5/input/CNSY.CLI",
+    "/workspace/DSSAT_auto_validation/multisite_new_cultivar_inputs_013/SY/sy2014_ic1_profile_scan_016_02/wa1p0_ns1p5/input/CNSY.PRM",
+    "/workspace/DSSAT_auto_validation/multisite_new_cultivar_inputs_013/SY/sy2014_ic1_profile_scan_016_02/wa1p0_ns1p5/input/CNSY.wdb"
+  ],
+  "run_dssat_location": "/opt/dssat_pdi/run_dssat"
+}

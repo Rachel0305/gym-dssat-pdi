@@ -1,0 +1,5 @@
+extends: 021_13_sy2014_reward_scale_smoke.yaml
+site_config: ../sites/sya.yaml
+experiment:
+  experiment_id: 021_13_sy2014_reward_scale_smoke_retry
+  description: SY2014 IC2 seed1 reward scale 0.1 smoke retry after callback-boundary audit fix

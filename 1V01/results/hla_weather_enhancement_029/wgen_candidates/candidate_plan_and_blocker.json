@@ -1,0 +1,48 @@
+{
+  "task": "029",
+  "site": "HLA",
+  "user_selection": "Five isolated limited-candidate sensitivity tracks",
+  "planned_tracks": [
+    {
+      "scenario": "GPCC_RAW",
+      "candidate_id": "candidate_001",
+      "seed": null,
+      "seed_status": "NOT_ASSIGNED_NO_VERIFIED_WGEN_RUNTIME_CONTEXT",
+      "status": "NOT_GENERATED"
+    },
+    {
+      "scenario": "CPC_RAW",
+      "candidate_id": "candidate_001",
+      "seed": null,
+      "seed_status": "NOT_ASSIGNED_NO_VERIFIED_WGEN_RUNTIME_CONTEXT",
+      "status": "NOT_GENERATED"
+    },
+    {
+      "scenario": "GPCC_BIASCORR",
+      "candidate_id": "candidate_001",
+      "seed": null,
+      "seed_status": "NOT_ASSIGNED_NO_VERIFIED_WGEN_RUNTIME_CONTEXT",
+      "status": "NOT_GENERATED"
+    },
+    {
+      "scenario": "CPC_BIASCORR",
+      "candidate_id": "candidate_001",
+      "seed": null,
+      "seed_status": "NOT_ASSIGNED_NO_VERIFIED_WGEN_RUNTIME_CONTEXT",
+      "status": "NOT_GENERATED"
+    },
+    {
+      "scenario": "ENSEMBLE_BIASCORR",
+      "candidate_id": "candidate_001",
+      "seed": null,
+      "seed_status": "NOT_ASSIGNED_NO_VERIFIED_WGEN_RUNTIME_CONTEXT",
+      "status": "NOT_GENERATED"
+    }
+  ],
+  "candidate_count_generated": 0,
+  "wgen_executed": false,
+  "blocking_reason": "No project-local verified official full-calendar-year WGEN/WeatherMan entry point. YC known runtime generates crop-season daily-state fragments inside DSSAT crop simulation, and 004_01/004_16 did not validate a full-year export path. The AGENTS.md project-only boundary precludes inspecting an external installation.",
+  "failed_candidate_files": [],
+  "candidate_qa_status": "NOT_RUN",
+  "no_seed_resampling_or_candidate_selection": true
+}

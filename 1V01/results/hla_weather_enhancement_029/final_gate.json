@@ -1,0 +1,19 @@
+{
+  "task": "029",
+  "site": "HLA",
+  "purpose": "WEATHER_ENHANCEMENT_RESUME",
+  "source_audit_pass": false,
+  "source_audit_detail": "Five 024 reference scenarios are frozen and structurally complete, but 111 rain days have no formally accepted HLA daily source; 2013 climate magnitude remains suspicious.",
+  "weather_modified": false,
+  "wgen_executed": false,
+  "dssat_executed": false,
+  "ppo_executed": false,
+  "phase_A": "PASS_SCENARIO_SOURCE_FREEZE_NOT_FORMAL_SOURCE_ACCEPTANCE",
+  "phase_B": "PASS_FIVE_SCENARIO_FITTING_AND_STATIC_CLI_CANDIDATES",
+  "phase_C": "BLOCKED_NO_VERIFIED_PROJECT_LOCAL_FULL_YEAR_WGEN_RUNTIME",
+  "phase_D": "NOT_RUN_NO_GENERATED_CANDIDATES",
+  "candidate_pool_status": "BLOCKED_NO_GENERATED_CANDIDATES",
+  "candidate_count_generated": 0,
+  "ready_for_ppo": false,
+  "recommendation": "Keep five fitting/CLI tracks as exploratory sensitivity inputs. Provide a project-local verified official full-year WGEN/WeatherMan executable and version plus seed/context contract; first generate one isolated candidate per scenario and run structural, climate and extreme-event QA. Do not enter PPO until the source and candidate gates pass."
+}

@@ -1,0 +1,34 @@
+{
+  "status": "PASS_SMOKE_ONLY",
+  "checks": {
+    "run_pass": true,
+    "episode_index_unique_sequential": true,
+    "episode_status": true,
+    "step_archive_closure": true,
+    "weather_seed_train_pool": true,
+    "pdi_runtime_seed": true,
+    "capture_one_per_step": true,
+    "physical_screen": true,
+    "all_weather_files_reread": true,
+    "all_runtime_evidence": true,
+    "rss_below_1536_mb": true,
+    "model_hash_reread": true
+  },
+  "actual_steps": 2016,
+  "episodes": 20,
+  "completed_episodes": 19,
+  "partial_episodes": 1,
+  "unique_weather_hashes": 20,
+  "peak_process_tree_rss_mb": 430.91,
+  "failed_attempts_preserved": [
+    "attempt_01",
+    "attempt_02",
+    "attempt_04"
+  ],
+  "scope": "single FQA 2007 PPO seed0 WGEN 2K smoke; no formal 8-seed training",
+  "limitations": [
+    "fixed-year smoke does not validate 2005-2013 year scheduling",
+    "weather climate distribution and heldout pool not assessed",
+    "shared native FIELD coordinate warning remains unresolved"
+  ]
+}

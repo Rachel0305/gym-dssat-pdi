@@ -1,0 +1,12 @@
+{
+  "status": "PASS_SMOKE_ONLY",
+  "requested_steps": 432,
+  "ppo_seed": 0,
+  "actual_steps": 432,
+  "archived_days": 432,
+  "episode_archives": 4,
+  "completed_episodes": 3,
+  "model_path": "results/hla_wgen_8seed_053/smoke_gpcc_raw_432_attempt02/models/hla_ppo_seed0_432.zip",
+  "model_sha256": "C7D0E7F688469440706D37D9FBFDE8AD2EAB6449385F9770D2D9755615C87AA9",
+  "elapsed_seconds": 7.71
+}

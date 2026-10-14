@@ -1,0 +1,116 @@
+{
+  "action_mask_modified": false,
+  "actual_new_models": 10,
+  "actual_timesteps_values": [
+    100080
+  ],
+  "expected_new_models": 10,
+  "historical_schedule_identical_across_seeds": false,
+  "issues": [
+    "historical WTHER is not M: seed=3",
+    "historical WTHER is not M: seed=4",
+    "historical WTHER is not M: seed=5",
+    "historical WTHER is not M: seed=6",
+    "historical WTHER is not M: seed=7",
+    "historical training sequence differs across PPO seeds"
+  ],
+  "passed": false,
+  "ppo_modified": false,
+  "requested_timesteps": 100000,
+  "reward_modified": false,
+  "runs": [
+    {
+      "actual_timesteps": 100080,
+      "checkpoint_loadable": true,
+      "episodes": 940,
+      "ppo_seed": 3,
+      "rss_mb": 927.03515625,
+      "status": "completed",
+      "training_regime": "HISTORICAL_WEATHER"
+    },
+    {
+      "actual_timesteps": 100080,
+      "checkpoint_loadable": true,
+      "episodes": 941,
+      "ppo_seed": 4,
+      "rss_mb": 950.65234375,
+      "status": "completed",
+      "training_regime": "HISTORICAL_WEATHER"
+    },
+    {
+      "actual_timesteps": 100080,
+      "checkpoint_loadable": true,
+      "episodes": 942,
+      "ppo_seed": 5,
+      "rss_mb": 960.0078125,
+      "status": "completed",
+      "training_regime": "HISTORICAL_WEATHER"
+    },
+    {
+      "actual_timesteps": 100080,
+      "checkpoint_loadable": true,
+      "episodes": 940,
+      "ppo_seed": 6,
+      "rss_mb": 971.19140625,
+      "status": "completed",
+      "training_regime": "HISTORICAL_WEATHER"
+    },
+    {
+      "actual_timesteps": 100080,
+      "checkpoint_loadable": true,
+      "episodes": 941,
+      "ppo_seed": 7,
+      "rss_mb": 977.44921875,
+      "status": "completed",
+      "training_regime": "HISTORICAL_WEATHER"
+    },
+    {
+      "actual_timesteps": 100080,
+      "checkpoint_loadable": true,
+      "episodes": 962,
+      "ppo_seed": 3,
+      "rss_mb": 1001.28125,
+      "status": "completed",
+      "training_regime": "RANDOM_WEATHER_WGEN"
+    },
+    {
+      "actual_timesteps": 100080,
+      "checkpoint_loadable": true,
+      "episodes": 962,
+      "ppo_seed": 4,
+      "rss_mb": 1026.390625,
+      "status": "completed",
+      "training_regime": "RANDOM_WEATHER_WGEN"
+    },
+    {
+      "actual_timesteps": 100080,
+      "checkpoint_loadable": true,
+      "episodes": 962,
+      "ppo_seed": 5,
+      "rss_mb": 1036.81640625,
+      "status": "completed",
+      "training_regime": "RANDOM_WEATHER_WGEN"
+    },
+    {
+      "actual_timesteps": 100080,
+      "checkpoint_loadable": true,
+      "episodes": 962,
+      "ppo_seed": 6,
+      "rss_mb": 1046.09765625,
+      "status": "completed",
+      "training_regime": "RANDOM_WEATHER_WGEN"
+    },
+    {
+      "actual_timesteps": 100080,
+      "checkpoint_loadable": true,
+      "episodes": 962,
+      "ppo_seed": 7,
+      "rss_mb": 1057.546875,
+      "status": "completed",
+      "training_regime": "RANDOM_WEATHER_WGEN"
+    }
+  ],
+  "runtime_modified": false,
+  "same_canonical_config": true,
+  "wgen_schedule_and_runtime_weather_identical_across_seeds": true
+}

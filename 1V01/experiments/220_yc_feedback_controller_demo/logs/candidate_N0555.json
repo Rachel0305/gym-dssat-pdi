@@ -1,0 +1,96 @@
+{
+  "candidate_id": "N0555",
+  "n_threshold": 0.22265059935832077,
+  "n_dose": 20,
+  "n_min_interval_days": 8,
+  "n_season_budget": 150,
+  "water_threshold": 0.1495245200276262,
+  "irrigation_dose": 50,
+  "irrigation_min_interval_days": 9,
+  "irrigation_season_budget": 90,
+  "n_start_dap": 7,
+  "n_stop_dap": 90,
+  "irrigation_start_dap": 7,
+  "irrigation_stop_dap": 90,
+  "status": "valid",
+  "valid": true,
+  "feasible": false,
+  "invalid_reason": "",
+  "grain_yield_kg_ha": 3663.3895874023438,
+  "yield_constraint_floor_kg_ha": 7229.904235839844,
+  "total_nitrogen_kg_ha": 96.0,
+  "total_irrigation_mm": 50.0,
+  "basal_n_kg_ha": 96.0,
+  "controller_n_kg_ha": 0.0,
+  "controller_irrigation_mm": 50.0,
+  "n_action_count": 0,
+  "irrigation_action_count": 1,
+  "dssat_event_count": 2,
+  "summary_irrigation_total_mm": 50.0,
+  "summary_nitrogen_total_kg_ha": 96.0,
+  "etcp_mm": 242.3,
+  "WP_ET_kg_m3": 1.51,
+  "PFP_N_kg_kg": 38.16030820210775,
+  "max_swfac_pre": 0.9772905949503183,
+  "max_nstres_pre": 0.012191057205200195,
+  "sanity_checks": [
+    {
+      "check": "episode_completed",
+      "status": "pass",
+      "details": "done=True, trace_days=101"
+    },
+    {
+      "check": "finite_yield",
+      "status": "pass",
+      "details": "grain_yield=3663.3895874023438"
+    },
+    {
+      "check": "controller_n_budget",
+      "status": "pass",
+      "details": "controller_n=0.000000; budget=150"
+    },
+    {
+      "check": "irrigation_budget",
+      "status": "pass",
+      "details": "irrigation=50.000000; budget=90"
+    },
+    {
+      "check": "n_action_windows",
+      "status": "pass",
+      "details": "daps=[]"
+    },
+    {
+      "check": "irrigation_action_windows",
+      "status": "pass",
+      "details": "daps=[12]"
+    },
+    {
+      "check": "n_intervals",
+      "status": "pass",
+      "details": "daps=[]"
+    },
+    {
+      "check": "irrigation_intervals",
+      "status": "pass",
+      "details": "daps=[12]"
+    },
+    {
+      "check": "n_action_sum_closure",
+      "status": "pass",
+      "details": "expected=96.000000; DSSAT events=96.000000"
+    },
+    {
+      "check": "irrigation_action_sum_closure",
+      "status": "pass",
+      "details": "expected=50.000000; DSSAT events=50.000000"
+    },
+    {
+      "check": "dssat_action_events_present",
+      "status": "pass",
+      "details": "event_count=2"
+    }
+  ],
+  "snapshot_path": "",
+  "error_text": "",
+  "trace_days": 101
+}

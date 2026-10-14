@@ -1,0 +1,22 @@
+{
+  "status": "PASS_FROZEN_366_DAY_RUNTIME_INJECTION",
+  "sites": [
+    {
+      "site": "SY",
+      "days_matched": 366,
+      "Feb29_matched": true,
+      "WTHER": "M",
+      "WTH_sha256": "1fb37b2d352c2bc54e9d84c03ca6ea0f33b0be7590ef00577b75b6c47c99ff22",
+      "peak_rss_mb": 129.04296875
+    },
+    {
+      "site": "LC",
+      "days_matched": 366,
+      "Feb29_matched": true,
+      "WTHER": "M",
+      "WTH_sha256": "9dc3ba6f3a6148e62be6c49770284a55526bfc9b451147b3b4f4c4ebcd5118d4",
+      "peak_rss_mb": 132.4296875
+    }
+  ],
+  "management_output": "DIAGNOSTIC_ONLY; does not replace station PPO results"
+}

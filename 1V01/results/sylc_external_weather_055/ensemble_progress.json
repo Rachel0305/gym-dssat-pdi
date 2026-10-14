@@ -1,0 +1,312 @@
+[
+  {
+    "site": "SY",
+    "tag": "seed1001_a",
+    "weather_seed": 1001,
+    "scope": "full_year_diagnostic",
+    "status": "PASS",
+    "steps": 365,
+    "rows": 365,
+    "physical_qc": {
+      "status": "PASS",
+      "row_count": 365,
+      "missing_by_field": {
+        "RAIN": 0,
+        "SRAD": 0,
+        "TMAX": 0,
+        "TMIN": 0
+      },
+      "all_zero_rainfall": false,
+      "issues": [],
+      "bounds_are_screening_checks_not_calibrated_extreme_value_tests": true
+    },
+    "cli_sha256": "e4fce2601338ba689e294af167bd35e236925a0e9b41c873e2741ce5972b7a0f",
+    "runtime_WTHER": "W",
+    "runtime_seed_verified": true,
+    "weather_sha256": "05f518f4f4bbd0dd0bc0538191ac5683a72b8e38a27d8c446610b510e1887f04",
+    "full_year_dates_complete": true,
+    "actual_start_date": "2005-01-01",
+    "actual_end_date": "2005-12-31",
+    "elapsed_seconds": 2.904483899999832,
+    "peak_tree_rss_mb": 127.90234375
+  },
+  {
+    "site": "SY",
+    "tag": "seed1002",
+    "weather_seed": 1002,
+    "scope": "full_year_diagnostic",
+    "status": "PASS",
+    "steps": 365,
+    "rows": 365,
+    "physical_qc": {
+      "status": "PASS",
+      "row_count": 365,
+      "missing_by_field": {
+        "RAIN": 0,
+        "SRAD": 0,
+        "TMAX": 0,
+        "TMIN": 0
+      },
+      "all_zero_rainfall": false,
+      "issues": [],
+      "bounds_are_screening_checks_not_calibrated_extreme_value_tests": true
+    },
+    "cli_sha256": "e4fce2601338ba689e294af167bd35e236925a0e9b41c873e2741ce5972b7a0f",
+    "runtime_WTHER": "W",
+    "runtime_seed_verified": true,
+    "weather_sha256": "90998e635ae498ec7f046b33ecfccc0dd633bcaf9adcc967027519965b0bac58",
+    "full_year_dates_complete": true,
+    "actual_start_date": "2005-01-01",
+    "actual_end_date": "2005-12-31",
+    "elapsed_seconds": 3.0489295269999275,
+    "peak_tree_rss_mb": 133.265625
+  },
+  {
+    "site": "SY",
+    "tag": "seed1003",
+    "weather_seed": 1003,
+    "scope": "full_year_diagnostic",
+    "status": "PASS",
+    "steps": 365,
+    "rows": 365,
+    "physical_qc": {
+      "status": "PASS",
+      "row_count": 365,
+      "missing_by_field": {
+        "RAIN": 0,
+        "SRAD": 0,
+        "TMAX": 0,
+        "TMIN": 0
+      },
+      "all_zero_rainfall": false,
+      "issues": [],
+      "bounds_are_screening_checks_not_calibrated_extreme_value_tests": true
+    },
+    "cli_sha256": "e4fce2601338ba689e294af167bd35e236925a0e9b41c873e2741ce5972b7a0f",
+    "runtime_WTHER": "W",
+    "runtime_seed_verified": true,
+    "weather_sha256": "f8e469e0550df56af8ab4420ea96d2c83fdf919cefc485c6dc61a72aee59a2b3",
+    "full_year_dates_complete": true,
+    "actual_start_date": "2005-01-01",
+    "actual_end_date": "2005-12-31",
+    "elapsed_seconds": 3.076614738999524,
+    "peak_tree_rss_mb": 160.30078125
+  },
+  {
+    "site": "SY",
+    "tag": "seed1004",
+    "weather_seed": 1004,
+    "scope": "full_year_diagnostic",
+    "status": "PASS",
+    "steps": 365,
+    "rows": 365,
+    "physical_qc": {
+      "status": "PASS",
+      "row_count": 365,
+      "missing_by_field": {
+        "RAIN": 0,
+        "SRAD": 0,
+        "TMAX": 0,
+        "TMIN": 0
+      },
+      "all_zero_rainfall": false,
+      "issues": [],
+      "bounds_are_screening_checks_not_calibrated_extreme_value_tests": true
+    },
+    "cli_sha256": "e4fce2601338ba689e294af167bd35e236925a0e9b41c873e2741ce5972b7a0f",
+    "runtime_WTHER": "W",
+    "runtime_seed_verified": true,
+    "weather_sha256": "0a6b729defe0acd062de4c1424e41ddd27f8f694f220d7f0a9e2d293654cd680",
+    "full_year_dates_complete": true,
+    "actual_start_date": "2005-01-01",
+    "actual_end_date": "2005-12-31",
+    "elapsed_seconds": 2.971094252000512,
+    "peak_tree_rss_mb": 163.546875
+  },
+  {
+    "site": "SY",
+    "tag": "seed1005",
+    "weather_seed": 1005,
+    "scope": "full_year_diagnostic",
+    "status": "PASS",
+    "steps": 365,
+    "rows": 365,
+    "physical_qc": {
+      "status": "PASS",
+      "row_count": 365,
+      "missing_by_field": {
+        "RAIN": 0,
+        "SRAD": 0,
+        "TMAX": 0,
+        "TMIN": 0
+      },
+      "all_zero_rainfall": false,
+      "issues": [],
+      "bounds_are_screening_checks_not_calibrated_extreme_value_tests": true
+    },
+    "cli_sha256": "e4fce2601338ba689e294af167bd35e236925a0e9b41c873e2741ce5972b7a0f",
+    "runtime_WTHER": "W",
+    "runtime_seed_verified": true,
+    "weather_sha256": "40cbe0f7466f3bef227f98f5f19b8754185a0cecab431d9b963ca124ff9333d7",
+    "full_year_dates_complete": true,
+    "actual_start_date": "2005-01-01",
+    "actual_end_date": "2005-12-31",
+    "elapsed_seconds": 3.0183153769994533,
+    "peak_tree_rss_mb": 165.91796875
+  },
+  {
+    "site": "SY",
+    "tag": "seed1006",
+    "weather_seed": 1006,
+    "scope": "full_year_diagnostic",
+    "status": "PASS",
+    "steps": 365,
+    "rows": 365,
+    "physical_qc": {
+      "status": "PASS",
+      "row_count": 365,
+      "missing_by_field": {
+        "RAIN": 0,
+        "SRAD": 0,
+        "TMAX": 0,
+        "TMIN": 0
+      },
+      "all_zero_rainfall": false,
+      "issues": [],
+      "bounds_are_screening_checks_not_calibrated_extreme_value_tests": true
+    },
+    "cli_sha256": "e4fce2601338ba689e294af167bd35e236925a0e9b41c873e2741ce5972b7a0f",
+    "runtime_WTHER": "W",
+    "runtime_seed_verified": true,
+    "weather_sha256": "8a05e046f688b43b7c3a9757667846068953f860af09b07222563a14aa97c1cc",
+    "full_year_dates_complete": true,
+    "actual_start_date": "2005-01-01",
+    "actual_end_date": "2005-12-31",
+    "elapsed_seconds": 3.1091480469995076,
+    "peak_tree_rss_mb": 168.1328125
+  },
+  {
+    "site": "SY",
+    "tag": "seed1007",
+    "weather_seed": 1007,
+    "scope": "full_year_diagnostic",
+    "status": "PASS",
+    "steps": 365,
+    "rows": 365,
+    "physical_qc": {
+      "status": "PASS",
+      "row_count": 365,
+      "missing_by_field": {
+        "RAIN": 0,
+        "SRAD": 0,
+        "TMAX": 0,
+        "TMIN": 0
+      },
+      "all_zero_rainfall": false,
+      "issues": [],
+      "bounds_are_screening_checks_not_calibrated_extreme_value_tests": true
+    },
+    "cli_sha256": "e4fce2601338ba689e294af167bd35e236925a0e9b41c873e2741ce5972b7a0f",
+    "runtime_WTHER": "W",
+    "runtime_seed_verified": true,
+    "weather_sha256": "331a2093ac0135755b62e367ab7cfd0a3edf495a5d79bf1312afc7b5dba3bae8",
+    "full_year_dates_complete": true,
+    "actual_start_date": "2005-01-01",
+    "actual_end_date": "2005-12-31",
+    "elapsed_seconds": 3.0630880310000066,
+    "peak_tree_rss_mb": 170.640625
+  },
+  {
+    "site": "SY",
+    "tag": "seed1008",
+    "weather_seed": 1008,
+    "scope": "full_year_diagnostic",
+    "status": "PASS",
+    "steps": 365,
+    "rows": 365,
+    "physical_qc": {
+      "status": "PASS",
+      "row_count": 365,
+      "missing_by_field": {
+        "RAIN": 0,
+        "SRAD": 0,
+        "TMAX": 0,
+        "TMIN": 0
+      },
+      "all_zero_rainfall": false,
+      "issues": [],
+      "bounds_are_screening_checks_not_calibrated_extreme_value_tests": true
+    },
+    "cli_sha256": "e4fce2601338ba689e294af167bd35e236925a0e9b41c873e2741ce5972b7a0f",
+    "runtime_WTHER": "W",
+    "runtime_seed_verified": true,
+    "weather_sha256": "a22a179f7f2a4ec4c9080607a823290cd816089b295576f8f94f490be4a4e348",
+    "full_year_dates_complete": true,
+    "actual_start_date": "2005-01-01",
+    "actual_end_date": "2005-12-31",
+    "elapsed_seconds": 3.249791928000377,
+    "peak_tree_rss_mb": 172.8046875
+  },
+  {
+    "site": "SY",
+    "tag": "seed1009",
+    "weather_seed": 1009,
+    "scope": "full_year_diagnostic",
+    "status": "PASS",
+    "steps": 365,
+    "rows": 365,
+    "physical_qc": {
+      "status": "PASS",
+      "row_count": 365,
+      "missing_by_field": {
+        "RAIN": 0,
+        "SRAD": 0,
+        "TMAX": 0,
+        "TMIN": 0
+      },
+      "all_zero_rainfall": false,
+      "issues": [],
+      "bounds_are_screening_checks_not_calibrated_extreme_value_tests": true
+    },
+    "cli_sha256": "e4fce2601338ba689e294af167bd35e236925a0e9b41c873e2741ce5972b7a0f",
+    "runtime_WTHER": "W",
+    "runtime_seed_verified": true,
+    "weather_sha256": "49142d20f0a95e6d729f5abaa0fafa66bc2b9665f6980e8d9bc9fe7a9b529f0c",
+    "full_year_dates_complete": true,
+    "actual_start_date": "2005-01-01",
+    "actual_end_date": "2005-12-31",
+    "elapsed_seconds": 3.1369696660003683,
+    "peak_tree_rss_mb": 175.24609375
+  },
+  {
+    "site": "SY",
+    "tag": "seed1010",
+    "weather_seed": 1010,
+    "scope": "full_year_diagnostic",
+    "status": "PASS",
+    "steps": 365,
+    "rows": 365,
+    "physical_qc": {
+      "status": "PASS",
+      "row_count": 365,
+      "missing_by_field": {
+        "RAIN": 0,
+        "SRAD": 0,
+        "TMAX": 0,
+        "TMIN": 0
+      },
+      "all_zero_rainfall": false,
+      "issues": [],
+      "bounds_are_screening_checks_not_calibrated_extreme_value_tests": true
+    },
+    "cli_sha256": "e4fce2601338ba689e294af167bd35e236925a0e9b41c873e2741ce5972b7a0f",
+    "runtime_WTHER": "W",
+    "runtime_seed_verified": true,
+    "weather_sha256": "26ed66e8bbea8e9667d88696604ba4896ceb706b5cef69c0c300f6a5ba761598",
+    "full_year_dates_complete": true,
+    "actual_start_date": "2005-01-01",
+    "actual_end_date": "2005-12-31",
+    "elapsed_seconds": 3.1495635780001976,
+    "peak_tree_rss_mb": 178.0078125
+  }
+]

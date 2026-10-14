@@ -1,0 +1,18 @@
+{
+  "runs": [
+    {
+      "site": "LC",
+      "tag": "seed1001_a",
+      "weather_seed": 1001,
+      "scope": "full_year_diagnostic",
+      "status": "FAILED",
+      "error": "FileNotFoundError: [Errno 2] No such file or directory: '/workspace/results/sylc_external_weather_055/LC_v2/CNLC.CLI'",
+      "elapsed_seconds": 0.09300392699969962,
+      "peak_tree_rss_mb": 0
+    }
+  ],
+  "full_year_path_pass": false,
+  "ensemble_quality": "NOT_RUN",
+  "PPO_smoke": "NOT_RUN",
+  "formal_training_allowed": false
+}

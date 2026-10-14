@@ -1,0 +1,51 @@
+﻿site,station_code,seed,year,checkpoint_step,scenario,scenario_label,grain_yield_kg_ha,total_irrigation_mm,total_n_kg_ha,etcp_mm,WP_ET_kg_m3,PFP_N_kg_grain_per_kg_N,NUE,WUE,plant_n_uptake_kg_ha,common_reward,source_status,max_wspd,max_nstd,etcp_source,snapshot_path,model_sha256
+FQ,FQA,5,2014,100000,dssat_auto_external_n,DSSAT auto + external N,7954.0,0.0,0.0,351.6,2.26,,,2.26,,1256.732,frozen 051_03 four-baseline Summary.OUT/ETCP,,,,,
+FQ,FQA,5,2014,100000,null,Null,7954.0,0.0,0.0,351.6,2.26,,,2.26,,1256.732,frozen 051_03 four-baseline Summary.OUT/ETCP,,,,,
+FQ,FQA,5,2014,100000,official_extension_expert,Official expert,8657.0,229.0,245.0,366.7,2.3600000000000003,35.3,,2.3600000000000003,,729.0260000000001,frozen 051_03 four-baseline Summary.OUT/ETCP,,,,,
+FQ,FQA,5,2014,100000,ppo_seed_5,PPO seed 5,8300.0,45.0,120.0,354.6,2.34,69.2,,2.34,,1072.3000000000002,,0.0,0.012,exact Summary.OUT ETCP,results/fqa_multiyear_wgen_ppo_052_8seed/validation/seed_05/snapshots/FQA/2014/ppo_seed_5,3049499A53C6233EC0CF6476FD7386068DBEBA87BF5CEA66F309C17AFF53F7AF
+FQ,FQA,5,2014,100000,recorded_farmer_template,Recorded template,8273.0,75.0,144.0,364.1,2.27,57.5,,2.27,,997.114,frozen 051_03 four-baseline Summary.OUT/ETCP,,,,,
+FQ,FQA,5,2015,100000,dssat_auto_external_n,DSSAT auto + external N,8087.0,0.0,0.0,325.9,2.4800000000000004,,,2.4800000000000004,,1277.746,frozen 051_03 four-baseline Summary.OUT/ETCP,,,,,
+FQ,FQA,5,2015,100000,null,Null,8087.0,0.0,0.0,325.9,2.4800000000000004,,,2.4800000000000004,,1277.746,frozen 051_03 four-baseline Summary.OUT/ETCP,,,,,
+FQ,FQA,5,2015,100000,official_extension_expert,Official expert,8020.0,229.0,245.0,348.8,2.3000000000000003,32.7,,2.3000000000000003,,628.3800000000001,frozen 051_03 four-baseline Summary.OUT/ETCP,,,,,
+FQ,FQA,5,2015,100000,ppo_seed_5,PPO seed 5,8005.0,45.0,120.0,326.8,2.45,66.7,,2.45,,1025.69,,0.0,0.012,exact Summary.OUT ETCP,results/fqa_multiyear_wgen_ppo_052_8seed/validation/seed_05/snapshots/FQA/2015/ppo_seed_5,3049499A53C6233EC0CF6476FD7386068DBEBA87BF5CEA66F309C17AFF53F7AF
+FQ,FQA,5,2015,100000,recorded_farmer_template,Recorded template,7933.0,75.0,144.0,334.4,2.37,55.1,,2.37,,943.394,frozen 051_03 four-baseline Summary.OUT/ETCP,,,,,
+FQ,FQA,5,2016,100000,dssat_auto_external_n,DSSAT auto + external N,8012.0,57.0,0.0,324.4,2.47,,,2.47,,1202.646,frozen 051_03 four-baseline Summary.OUT/ETCP,,,,,
+FQ,FQA,5,2016,100000,null,Null,7235.0,0.0,0.0,298.2,2.43,,,2.43,,1143.13,frozen 051_03 four-baseline Summary.OUT/ETCP,,,,,
+FQ,FQA,5,2016,100000,official_extension_expert,Official expert,7922.0,199.0,245.0,337.2,2.35,32.3,,2.35,,645.896,frozen 051_03 four-baseline Summary.OUT/ETCP,,,,,
+FQ,FQA,5,2016,100000,ppo_seed_5,PPO seed 5,7801.0,45.0,120.0,304.6,2.5600000000000005,65.0,,2.5600000000000005,,993.458,,0.457,0.012,exact Summary.OUT ETCP,results/fqa_multiyear_wgen_ppo_052_8seed/validation/seed_05/snapshots/FQA/2016/ppo_seed_5,3049499A53C6233EC0CF6476FD7386068DBEBA87BF5CEA66F309C17AFF53F7AF
+FQ,FQA,5,2016,100000,recorded_farmer_template,Recorded template,7932.0,75.0,144.0,316.5,2.51,55.1,,2.51,,943.236,frozen 051_03 four-baseline Summary.OUT/ETCP,,,,,
+FQ,FQA,5,2017,100000,dssat_auto_external_n,DSSAT auto + external N,7705.0,40.0,0.0,334.7,2.3000000000000003,,,2.3000000000000003,,1173.17,frozen 051_03 four-baseline Summary.OUT/ETCP,,,,,
+FQ,FQA,5,2017,100000,null,Null,7694.0,0.0,0.0,333.8,2.3000000000000003,,,2.3000000000000003,,1215.652,frozen 051_03 four-baseline Summary.OUT/ETCP,,,,,
+FQ,FQA,5,2017,100000,official_extension_expert,Official expert,7640.0,229.0,245.0,349.6,2.19,31.2,,2.19,,568.3400000000001,frozen 051_03 four-baseline Summary.OUT/ETCP,,,,,
+FQ,FQA,5,2017,100000,ppo_seed_5,PPO seed 5,7704.0,45.0,120.0,335.9,2.29,64.2,,2.29,,978.132,,0.0,0.012,exact Summary.OUT ETCP,results/fqa_multiyear_wgen_ppo_052_8seed/validation/seed_05/snapshots/FQA/2017/ppo_seed_5,3049499A53C6233EC0CF6476FD7386068DBEBA87BF5CEA66F309C17AFF53F7AF
+FQ,FQA,5,2017,100000,recorded_farmer_template,Recorded template,7704.0,75.0,144.0,343.7,2.24,53.5,,2.24,,907.212,frozen 051_03 four-baseline Summary.OUT/ETCP,,,,,
+FQ,FQA,5,2018,100000,dssat_auto_external_n,DSSAT auto + external N,0.0,57.0,0.0,218.0,0.0,,,0.0,,-83.71000000000001,frozen 051_03 four-baseline Summary.OUT/ETCP,,,,,
+FQ,FQA,5,2018,100000,null,Null,0.0,0.0,0.0,182.8,0.0,,,0.0,,0.0,frozen 051_03 four-baseline Summary.OUT/ETCP,,,,,
+FQ,FQA,5,2018,100000,official_extension_expert,Official expert,0.0,158.0,212.0,225.5,0.0,,,0.0,,-508.32,frozen 051_03 four-baseline Summary.OUT/ETCP,,,,,
+FQ,FQA,5,2018,100000,ppo_seed_5,PPO seed 5,0.0,45.0,120.0,182.5,0.0,,,0.0,,-239.10000000000002,,0.0,0.012,exact Summary.OUT ETCP,results/fqa_multiyear_wgen_ppo_052_8seed/validation/seed_05/snapshots/FQA/2018/ppo_seed_5,3049499A53C6233EC0CF6476FD7386068DBEBA87BF5CEA66F309C17AFF53F7AF
+FQ,FQA,5,2018,100000,recorded_farmer_template,Recorded template,0.0,75.0,144.0,190.9,0.0,,,0.0,,-310.02,frozen 051_03 four-baseline Summary.OUT/ETCP,,,,,
+FQ,FQA,5,2019,100000,dssat_auto_external_n,DSSAT auto + external N,8458.0,115.0,0.0,340.6,2.4800000000000004,,,2.4800000000000004,,1210.084,frozen 051_03 four-baseline Summary.OUT/ETCP,,,,,
+FQ,FQA,5,2019,100000,null,Null,7014.0,0.0,0.0,273.1,2.5700000000000003,,,2.5700000000000003,,1108.212,frozen 051_03 four-baseline Summary.OUT/ETCP,,,,,
+FQ,FQA,5,2019,100000,official_extension_expert,Official expert,8811.0,229.0,245.0,347.2,2.54,36.0,,2.54,,753.358,frozen 051_03 four-baseline Summary.OUT/ETCP,,,,,
+FQ,FQA,5,2019,100000,ppo_seed_5,PPO seed 5,7859.0,45.0,120.0,286.4,2.74,65.5,,2.74,,1002.622,,0.626,0.012,exact Summary.OUT ETCP,results/fqa_multiyear_wgen_ppo_052_8seed/validation/seed_05/snapshots/FQA/2019/ppo_seed_5,3049499A53C6233EC0CF6476FD7386068DBEBA87BF5CEA66F309C17AFF53F7AF
+FQ,FQA,5,2019,100000,recorded_farmer_template,Recorded template,8027.0,75.0,144.0,300.8,2.67,55.7,,2.67,,958.246,frozen 051_03 four-baseline Summary.OUT/ETCP,,,,,
+FQ,FQA,5,2020,100000,dssat_auto_external_n,DSSAT auto + external N,8435.0,20.0,0.0,361.6,2.33,,,2.33,,1310.73,frozen 051_03 four-baseline Summary.OUT/ETCP,,,,,
+FQ,FQA,5,2020,100000,null,Null,8435.0,0.0,0.0,358.2,2.35,,,2.35,,1332.73,frozen 051_03 four-baseline Summary.OUT/ETCP,,,,,
+FQ,FQA,5,2020,100000,official_extension_expert,Official expert,8968.0,229.0,245.0,373.5,2.4000000000000004,36.6,,2.4000000000000004,,778.164,frozen 051_03 four-baseline Summary.OUT/ETCP,,,,,
+FQ,FQA,5,2020,100000,ppo_seed_5,PPO seed 5,8962.0,45.0,120.0,357.0,2.5100000000000002,74.7,,2.5100000000000002,,1176.8960000000002,,0.0,0.012,exact Summary.OUT ETCP,results/fqa_multiyear_wgen_ppo_052_8seed/validation/seed_05/snapshots/FQA/2020/ppo_seed_5,3049499A53C6233EC0CF6476FD7386068DBEBA87BF5CEA66F309C17AFF53F7AF
+FQ,FQA,5,2020,100000,recorded_farmer_template,Recorded template,8956.0,75.0,144.0,356.5,2.51,62.2,,2.51,,1105.028,frozen 051_03 four-baseline Summary.OUT/ETCP,,,,,
+FQ,FQA,5,2021,100000,dssat_auto_external_n,DSSAT auto + external N,7477.0,19.0,0.0,320.6,2.33,,,2.33,,1160.246,frozen 051_03 four-baseline Summary.OUT/ETCP,,,,,
+FQ,FQA,5,2021,100000,null,Null,7479.0,0.0,0.0,308.3,2.43,,,2.43,,1181.682,frozen 051_03 four-baseline Summary.OUT/ETCP,,,,,
+FQ,FQA,5,2021,100000,official_extension_expert,Official expert,7322.0,229.0,245.0,335.1,2.19,29.9,,2.19,,518.096,frozen 051_03 four-baseline Summary.OUT/ETCP,,,,,
+FQ,FQA,5,2021,100000,ppo_seed_5,PPO seed 5,7463.0,45.0,120.0,311.2,2.4000000000000004,62.2,,2.4000000000000004,,940.054,,0.0,0.012,exact Summary.OUT ETCP,results/fqa_multiyear_wgen_ppo_052_8seed/validation/seed_05/snapshots/FQA/2021/ppo_seed_5,3049499A53C6233EC0CF6476FD7386068DBEBA87BF5CEA66F309C17AFF53F7AF
+FQ,FQA,5,2021,100000,recorded_farmer_template,Recorded template,7462.0,75.0,144.0,323.2,2.31,51.8,,2.31,,868.9760000000001,frozen 051_03 four-baseline Summary.OUT/ETCP,,,,,
+FQ,FQA,5,2022,100000,dssat_auto_external_n,DSSAT auto + external N,6823.0,0.0,0.0,329.9,2.07,,,2.07,,1078.034,frozen 051_03 four-baseline Summary.OUT/ETCP,,,,,
+FQ,FQA,5,2022,100000,null,Null,6823.0,0.0,0.0,329.9,2.07,,,2.07,,1078.034,frozen 051_03 four-baseline Summary.OUT/ETCP,,,,,
+FQ,FQA,5,2022,100000,official_extension_expert,Official expert,6512.0,199.0,245.0,347.0,1.88,26.6,,1.88,,423.116,frozen 051_03 four-baseline Summary.OUT/ETCP,,,,,
+FQ,FQA,5,2022,100000,ppo_seed_5,PPO seed 5,6687.0,45.0,120.0,324.0,2.06,55.7,,2.06,,817.446,,0.0,0.012,exact Summary.OUT ETCP,results/fqa_multiyear_wgen_ppo_052_8seed/validation/seed_05/snapshots/FQA/2022/ppo_seed_5,3049499A53C6233EC0CF6476FD7386068DBEBA87BF5CEA66F309C17AFF53F7AF
+FQ,FQA,5,2022,100000,recorded_farmer_template,Recorded template,6632.0,75.0,144.0,331.9,2.0,46.1,,2.0,,737.836,frozen 051_03 four-baseline Summary.OUT/ETCP,,,,,
+FQ,FQA,5,2023,100000,dssat_auto_external_n,DSSAT auto + external N,8831.0,39.0,0.0,348.5,2.53,,,2.53,,1330.948,frozen 051_03 four-baseline Summary.OUT/ETCP,,,,,
+FQ,FQA,5,2023,100000,null,Null,8813.0,0.0,0.0,343.7,2.5600000000000005,,,2.5600000000000005,,1392.454,frozen 051_03 four-baseline Summary.OUT/ETCP,,,,,
+FQ,FQA,5,2023,100000,official_extension_expert,Official expert,9267.0,199.0,245.0,359.6,2.58,37.8,,2.58,,858.406,frozen 051_03 four-baseline Summary.OUT/ETCP,,,,,
+FQ,FQA,5,2023,100000,ppo_seed_5,PPO seed 5,9099.0,45.0,120.0,343.2,2.6500000000000004,75.8,,2.6500000000000004,,1198.542,,0.0,0.012,exact Summary.OUT ETCP,results/fqa_multiyear_wgen_ppo_052_8seed/validation/seed_05/snapshots/FQA/2023/ppo_seed_5,3049499A53C6233EC0CF6476FD7386068DBEBA87BF5CEA66F309C17AFF53F7AF
+FQ,FQA,5,2023,100000,recorded_farmer_template,Recorded template,9098.0,75.0,144.0,354.1,2.5700000000000003,63.2,,2.5700000000000003,,1127.464,frozen 051_03 four-baseline Summary.OUT/ETCP,,,,,

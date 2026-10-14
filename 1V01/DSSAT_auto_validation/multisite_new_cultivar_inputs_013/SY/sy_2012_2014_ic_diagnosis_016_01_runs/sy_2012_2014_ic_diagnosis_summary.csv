@@ -1,0 +1,5 @@
+﻿case,description,experiment_number,patch_2014_ic,icdat_override,steps_completed,terminated,truncated,final_dap_gym,final_topwt_gym,final_grnwt_gym,max_swfac_gym,max_nstres_gym,hwam_summary,cwam_summary,mdat_summary,edat_summary
+sy2012_ic1,"2012 treatment, keep original IC=1",1,,,158,True,False,130.0,16789.09423828125,10165.953979492188,0.0,0.017070889472961426,,,,
+sy2014_ic0,"2014 treatment, keep original IC=0",2,,,160,True,False,139.0,18302.4365234375,9593.248901367188,0.8069347739219666,0.012191057205200195,,,,
+sy2014_ic1,"2014 treatment, patch treatment row back to IC=1",2,1.0,,160,True,False,139.0,13299.51171875,5125.478515625,1.0,0.012191057205200195,,,,
+sy2014_ic1_icdat14100,"2014 treatment, patch to IC=1 and set ICDAT=14100",2,1.0,14100.0,160,True,False,139.0,13299.51171875,5125.478515625,1.0,0.012191057205200195,,,,

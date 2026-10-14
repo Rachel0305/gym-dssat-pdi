@@ -1,0 +1,14 @@
+{
+  "episode_index": 20,
+  "runtime_dir": "results/hla_wgen_8seed_053/seed_00/attempt_01/temp/tmpdkzhf3q6",
+  "runtime_filex_sha256": "A448CA92CF17C38A48B354CADFA30DE016850F90DC51110E8F1293F010126697",
+  "wther": "W",
+  "wsta_confirmed": true,
+  "runtime_cli_sha256": "AF957CD7C28D427E6B1319CF95D37B1EA8963770795C70B826F71FF2CB08F29F",
+  "source_cli_sha256": "AF957CD7C28D427E6B1319CF95D37B1EA8963770795C70B826F71FF2CB08F29F",
+  "pdi_config_sha256": "1CC9DA45B72834F3B24F43FD993D490EB7ABD4E27DEC073A9C813996737AF6B5",
+  "yaml_bootstrap_seed": 1036,
+  "yaml_bootstrap_confirmed": true,
+  "runtime_rseed1": 1036,
+  "scheduled_seed": 1036
+}

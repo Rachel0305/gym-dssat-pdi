@@ -1,0 +1,112 @@
+{
+  "reference_method": "Wang_2025_style_episode_weather",
+  "fitting_period": "2004-2013",
+  "independent_validation_period": "2014-2023 (comparison only; prior project audit did not certify a globally pristine holdout)",
+  "cnyc_cli_sha256": "65CF134600A5881706A5D435E1A09B276ED92A21FA5ABE2E18AAF63AF1E3A929",
+  "synthetic_episode_count": 100,
+  "weather_seed_range": "1001-1100",
+  "fixed_common_window": {
+    "start": "2008-06-01",
+    "end": "2008-09-14",
+    "days": 106,
+    "selection_reason": "earliest end among all 100 episodes, capped at the preferred 2008-09-24"
+  },
+  "generation_status": "PASS",
+  "episodes_passed": 100,
+  "episodes_failed": 0,
+  "same_seed_reproducibility": {
+    "status": "PASS",
+    "passed": 5,
+    "total": 5
+  },
+  "different_seed_diversity": {
+    "status": "PASS",
+    "unique_full_sequences": 100,
+    "total": 100
+  },
+  "rainfall_means_mm": {
+    "fitting": 463.5400000000001,
+    "independent_validation": 398.16999999999996,
+    "synthetic": 494.2223931820691
+  },
+  "rainfall_ranges_mm": {
+    "fitting": [
+      289.69999999999993,
+      675.5
+    ],
+    "independent_validation": [
+      182.7,
+      727.8
+    ],
+    "synthetic": [
+      225.8688005208969,
+      1066.022432923317
+    ]
+  },
+  "rain_mean_bias_in_fitting_interannual_sd": {
+    "rain_total_mm": 0.22312087021954455,
+    "wet_days": -0.04522670168666465
+  },
+  "monthly_rainfall_profile_pearson": 0.9764804436476168,
+  "temperature_diagnostics": {
+    "tmax": {
+      "fitting_mean_c": 31.122107891301766,
+      "synthetic_mean_c": 31.573153666550255,
+      "mean_bias_c": 0.4510457752484882,
+      "mean_bias_in_fitting_year_sd": 0.5552997713530232,
+      "synthetic_to_fitting_daily_sd_ratio": 0.9963259627439393
+    },
+    "tmin": {
+      "fitting_mean_c": 20.572307117004865,
+      "synthetic_mean_c": 21.153619656922682,
+      "mean_bias_c": 0.5813125399178176,
+      "mean_bias_in_fitting_year_sd": 1.0849417828696515,
+      "synthetic_to_fitting_daily_sd_ratio": 0.993341970206346
+    }
+  },
+  "temperature_tail_thresholds_c": {
+    "hot_tail_tmax_gt_fitting_daily_p95": 37.1,
+    "cold_tail_tmin_lt_fitting_daily_p05": 14.0855
+  },
+  "srad_diagnostics": {
+    "fitting_mean": 16.938521098163264,
+    "synthetic_mean": 17.18824936214483,
+    "mean_bias_in_fitting_year_sd": 0.36612920678851724,
+    "synthetic_to_fitting_daily_sd_ratio": 0.9083135973516893
+  },
+  "systematic_bias_detected": false,
+  "gate_status": {
+    "generation_status": "PASS",
+    "reproducibility_status": "PASS",
+    "diversity_status": "PASS",
+    "rainfall_status": "PASS",
+    "temperature_status": "PASS_WITH_NOTES",
+    "srad_status": "PASS",
+    "dependence_structure_status": "PASS"
+  },
+  "random_weather_episode_quality_status": "PASS_WITH_NOTES",
+  "yc_random_weather_ready_for_ppo_pilot": "YES",
+  "full_year_wgen_validation": "DEFERRED_OPTIONAL_ADDITIONAL_VALIDATION",
+  "full_year_wgen_is_ppo_blocker": "NO",
+  "ppo_run": "NO",
+  "runtime_modified": "NO",
+  "cnyc_cli_modified": "NO",
+  "wgen_refit": "NO",
+  "validation_data_used_for_fitting": "NO",
+  "ppt_created": "NO",
+  "validation_data_note": "2014-2023 comparison was not used by the WGEN fitting/generation path; existing project audit did not certify these files as globally untouched holdout data.",
+  "tests_status": {
+    "self_tests": "PASS",
+    "fixed_window_extraction": "PASS",
+    "physical_qc": "PASS",
+    "aggregation_consistency": "PASS",
+    "validation_leakage_check": "PASS"
+  },
+  "decision_rules": {
+    "rainfall": "descriptive screen: annual rain-total/wet-day synthetic mean shift <=2 fitting interannual SD; monthly profile correlation >=0.50",
+    "temperature": "descriptive screen: seasonal mean shift <=2 fitting year SD; daily SD ratio 0.35-2.0",
+    "srad": "descriptive screen: seasonal mean shift <=2 fitting year SD; daily SD ratio 0.35-2.0",
+    "dependence": "descriptive screen: maximum group mean correlation/lag-1 difference <=0.60",
+    "interpretation": "heuristic audit flags, not hypothesis tests or tuned generator thresholds; PASS_WITH_NOTES used for moderate departures"
+  }
+}

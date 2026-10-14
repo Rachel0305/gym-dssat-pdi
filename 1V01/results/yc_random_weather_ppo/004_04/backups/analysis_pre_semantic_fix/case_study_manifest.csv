@@ -1,0 +1,7 @@
+﻿case_group,episode_key,w0_minus_h0_reward
+WGEN_W0_largest_improvement,heldout_wgen:1085,0.5004872340774535
+WGEN_W0_largest_improvement,heldout_wgen:1092,0.4936226878547667
+WGEN_W0_largest_decline,heldout_wgen:1082,0.12759049337625505
+WGEN_W0_largest_decline,heldout_wgen:1099,0.22946892122745544
+OBSERVED_W0_largest_decline,observed_weather:2014,-1.959259518477618
+OBSERVED_W0_largest_decline,observed_weather:2019,-1.2707352228388176

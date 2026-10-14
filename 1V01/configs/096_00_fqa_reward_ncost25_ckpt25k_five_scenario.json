@@ -1,0 +1,59 @@
+{
+  "task_id": "096_00",
+  "task_name": "fqa_originIC_reward_ncost25_ckpt25k_five_scenario",
+  "station_code": "FQA",
+  "site": "FQ",
+  "reference_smoke": "095_00_fqa_originIC_reward_ncost25_smoke",
+  "input_profile": "originIC",
+  "seed": 0,
+  "training": {
+    "total_timesteps": 25000,
+    "checkpoint_steps": [25000]
+  },
+  "actions": {
+    "irrigation_levels_mm": [0.0, 15.0, 30.0, 45.0],
+    "nitrogen_levels_kg_ha": [0.0, 40.0, 80.0, 120.0]
+  },
+  "observation_contract": {
+    "base": "046_02_raw_observation",
+    "normalization_enabled": false,
+    "weather_forecast_enabled": false
+  },
+  "scope": {
+    "train_years": [2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013],
+    "validation_years": [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023],
+    "reward_and_safety": "inherit_051_00_except_nitrogen_cost",
+    "paper_scenarios": [
+      "null",
+      "recorded_farmer_template",
+      "dssat_auto",
+      "official_extension_expert",
+      "ppo"
+    ]
+  },
+  "fixed_ppo": {
+    "learning_rate": 0.0003,
+    "gamma": 1.0,
+    "gae_lambda": 1.0,
+    "n_steps": 144,
+    "batch_size": 144,
+    "n_epochs": 5,
+    "ent_coef": 0.01,
+    "clip_range": 0.2,
+    "net_arch": [64, 64]
+  },
+  "reward_override": {
+    "nitrogen_cost": 2.5,
+    "reward_type": "fqa_low_n_project_cost_single_factor"
+  },
+  "training_allowed": true,
+  "external_n_allowed": false,
+  "weather_forecast_allowed": false,
+  "input_roots": {
+    "original": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013",
+    "corrected_2018": "benchmark_results/088_00_fq2018_input_quality_correction/corrected_input",
+    "baseline_original": "benchmark_results/051_02_fqa_originIC_four_baselines_static_level1",
+    "baseline_corrected_2018": "benchmark_results/088_00_fq2018_input_quality_correction_run_corrected2018"
+  },
+  "output_root": "benchmark_results/096_00_fqa_originIC_reward_ncost25_ckpt25k_five_scenario"
+}

@@ -1,0 +1,5 @@
+﻿station_code,site,train_years,seed,checkpoint_step,run_status,model_path,model_sha256,notes
+FQA,FQ,"2005,2006,2007,2008,2009,2010,2011,2012,2013",7,25000,ok,benchmark_results/20261012fq7_fq_seed7_historical_completion/models/FQA/FQA_half_split_stress_aware_maskableppo_seed7_ckpt25000.zip,26a66f23cb741182cb9f575d2af63be09a8f5bb1a8767c0ebce5ea9ebb76417c,
+FQA,FQ,"2005,2006,2007,2008,2009,2010,2011,2012,2013",7,50000,ok,benchmark_results/20261012fq7_fq_seed7_historical_completion/models/FQA/FQA_half_split_stress_aware_maskableppo_seed7_ckpt50000.zip,b8c545e7e6e8b2c375ebb5edf2903643a44e4f439d6657cab5147ec075859037,
+FQA,FQ,"2005,2006,2007,2008,2009,2010,2011,2012,2013",7,75000,ok,benchmark_results/20261012fq7_fq_seed7_historical_completion/models/FQA/FQA_half_split_stress_aware_maskableppo_seed7_ckpt75000.zip,23d89feb8c62adfd34dcbd610d7e509907d741632896f40ea447088b0db5dd67,
+FQA,FQ,"2005,2006,2007,2008,2009,2010,2011,2012,2013",7,100000,ok,benchmark_results/20261012fq7_fq_seed7_historical_completion/models/FQA/FQA_half_split_stress_aware_maskableppo_seed7_ckpt100000.zip,78d1e2d9ad5e54d8971ebf35947e3b61f241cd8fb7d50b058c984163b318ae96,

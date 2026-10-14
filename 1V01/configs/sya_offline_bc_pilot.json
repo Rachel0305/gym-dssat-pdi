@@ -1,0 +1,86 @@
+{
+  "task_id": "sya_offline_bc_pilot",
+  "task_name": "SY 单站点低算力离线轨迹与行为克隆 pilot",
+  "scope": {
+    "station_code": "SYA",
+    "site": "SY",
+    "input_profile": "originIC",
+    "cultivar_id": "FY0985",
+    "cultivar_name": "Fuyou No009",
+    "soil_id": "SY99001200",
+    "source_template": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013/SY/CNSY1201.MZX",
+    "years": [2012, 2014, 2015],
+    "year_inputs": [
+      {"year": 2012, "planting_date": "2012-04-28", "weather_file": "CNSY1201.WTH", "initial_condition": "IC1"},
+      {"year": 2014, "planting_date": "2014-04-21", "weather_file": "CNSY1401.WTH", "initial_condition": "IC2"},
+      {"year": 2015, "planting_date": "2015-04-18", "weather_file": "CNSY1501.WTH", "initial_condition": "IC1"}
+    ]
+  },
+  "action_grid": {
+    "irrigation_levels_mm": [0.0, 15.0, 30.0, 45.0],
+    "nitrogen_levels_kg_ha": [0.0, 40.0, 80.0, 120.0],
+    "order": "for irrigation level in order, for nitrogen level in order",
+    "joint_action_count": 16
+  },
+  "observation_contract": {
+    "reference_config": "configs/046_10_sya_originIC_expanded_action_maskableppo.json",
+    "normalization_enabled": false,
+    "weather_forecast_enabled": false,
+    "expected_flat_dimension": 25,
+    "nstres_rule": "PPO-observable exported state field; not an oracle variable under the verified 046_10 25D contract",
+    "oracle_policies_in_main_dataset": false
+  },
+  "behavior_sources": {
+    "recorded_farmer_template": {
+      "source": "benchmark_results/027_05/027_05_daily_values.csv",
+      "status": "static_template_not_annual_real_farmer_record",
+      "projection": "nearest_legal_joint_action",
+      "include_in_bc": true
+    },
+    "official_extension_expert": {
+      "source": "benchmark_results/046_03_sya_originIC_four_baselines/evaluation/046_03_baseline_daily.csv",
+      "status": "project_extension_expert_schedule_existing_output",
+      "projection": "nearest_legal_joint_action",
+      "include_in_bc": true
+    },
+    "state_rule_observable": {
+      "status": "deterministic_rule_on_final_PPO_observable_state",
+      "include_in_bc": true
+    },
+    "structured_grid_round_robin": {
+      "status": "deterministic_round_robin_over_current_legal_grid",
+      "include_in_bc": true
+    },
+    "ppo_contrast": {
+      "checkpoint": "benchmark_results/046_10_sya_originIC_expanded_action_maskableppo/models/SYA/SYA_half_split_stress_aware_maskableppo_seed0_ckpt100000.zip",
+      "status": "contrast_or_behavior_source_only_not_expert",
+      "include_in_bc": false
+    }
+  },
+  "bc": {
+    "model": "standardized_1_nearest_neighbor_joint_action_classifier",
+    "train_years": [2012, 2014],
+    "validation_years": [2015],
+    "smoke_years": [2014],
+    "within_episode_holdout_fraction": 0.3,
+    "validation_replay_episodes": 1
+  },
+  "coverage_gate": {
+    "target_trajectories": 100,
+    "minimum_success_rate": 0.95,
+    "minimum_each_nonzero_action_count_on_decision_days": 4,
+    "minimum_decision_day_positive_action_rate": 0.10,
+    "minimum_behavior_policy_families": 4,
+    "decision_day_definition": "at least one positive action is legal in pre-action mask",
+    "bc_required_metrics": ["accuracy_vs_always_noop", "macro_f1", "per_action_recall", "positive_action_recall", "legal_rate"],
+    "bc_must_not_be_template_only": true
+  },
+  "compute_guardrails": {
+    "max_steps": 260,
+    "smoke_max_years": 1,
+    "cpu_only": true,
+    "online_ppo_training": false,
+    "offline_rl": false,
+    "overwrite_existing_output": false
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "task_id": "227_00",
+  "task_name": "yc_mask_aware_dqn_formal",
+  "freeze_status": "FROZEN_BEFORE_FORMAL_TRAINING",
+  "freeze_date": "2026-09-11",
+  "formal_training_performed": false,
+  "formal_yc_dqn_results_seen_before_freeze": false,
+  "scientific_contract": {
+    "site": "YC",
+    "station_code": "YCA",
+    "input_profile": "lowIC",
+    "input_root": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013_lowIC_manual",
+    "source_mzx": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013_lowIC_manual/YC/CNYC0801.MZX",
+    "cultivar_file": "my_data/MZCER048.CUL",
+    "train_years": [2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013],
+    "validation_years": [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023],
+    "weather_augmentation": false,
+    "observation": {
+      "source": "226_yc_dqn_adapter_smoke",
+      "type": "current_raw_daily_observation",
+      "dimension": 22,
+      "normalization_enabled": false,
+      "forecast_enabled": false,
+      "field_order": [
+        "cumsumfert", "dap", "dtt", "ep", "grnwt", "istage", "nstres", "rtdep", "srad",
+        "sw[0]", "sw[1]", "sw[2]", "sw[3]", "sw[4]", "sw[5]", "swfac", "tmax", "topwt",
+        "totir", "vstage", "wtdep", "xlai"
+      ]
+    },
+    "actions": {
+      "irrigation_levels_mm": [0.0, 15.0, 30.0, 45.0],
+      "nitrogen_levels_kg_ha": [0.0, 40.0, 80.0, 120.0],
+      "combined_action_count": 16,
+      "mapping": "row_major; action_index = irrigation_index * 4 + nitrogen_index"
+    },
+    "safety_and_mask": {
+      "daily_irrigation_max_mm": 45.0,
+      "daily_nitrogen_max_kg_ha": 120.0,
+      "minimum_days_between_irrigation": 7,
+      "minimum_days_between_fertilization": 7,
+      "irrigation_dap_window": [1, 120],
+      "nitrogen_dap_window": [1, 90],
+      "season_irrigation_cap_mm": 240.0,
+      "season_nitrogen_cap_kg_ha": 250.0,
+      "staged_irrigation_caps_mm": {
+        "dap_le_30": 75.0,
+        "dap_le_60": 150.0,
+        "dap_le_90": 195.0,
+        "full_season": 240.0
+      },
+      "late_irrigation_reserve_mm": 45.0,
+      "late_irrigation_reserve_dap_end": 90,
+      "mask_source": "current 055-style PPO wrapper chain validated by 226 smoke",
+      "mask_application": {
+        "exploration": "sample only legal actions",
+        "greedy": "masked argmax",
+        "bellman_target": "max over legal next actions; terminal transitions do not bootstrap",
+        "replay": "store collection and next masks; reject masked collection actions",
+        "executed_action_closure": "selected action must equal wrapper-executed and logged action"
+      }
+    },
+    "reward": {
+      "wrapper_chain": "LateIrrigationReserveMaskWrapper via current 040_28/040_36 chain",
+      "reward_type": "harvest_yield_minus_water_nitrogen_cost_plus_stress_relief_scaled_0p001",
+      "yield_coef": 0.158,
+      "water_cost": 1.1,
+      "nitrogen_cost": 1.58,
+      "water_stress_relief_coef": 10.0,
+      "nitrogen_stress_relief_coef": 5.0,
+      "reward_scale": 0.001,
+      "swfac_guardrail": {
+        "enabled": true,
+        "threshold": 0.05,
+        "coef": 50.0
+      },
+      "change_from_226": false
+    }
+  },
+  "dqn": {
+    "implementation": "project_local_mask_aware_dqn_029_with_explicit_formal_parameter_adapter",
+    "learning_rate": 0.00001,
+    "gamma": 0.99,
+    "batch_size": 1024,
+    "network_architecture": [256, 256, 256],
+    "activation": "ReLU",
+    "optimizer": "Adam",
+    "replay_capacity": 100000,
+    "learning_starts": 1024,
+    "train_frequency_env_steps": 4,
+    "gradient_steps_per_update": 1,
+    "target_sync_frequency_env_steps": 120,
+    "exploration_family": "epsilon_greedy",
+    "epsilon_start": 1.0,
+    "epsilon_end": 0.0,
+    "epsilon_decay_type": "linear",
+    "epsilon_decay_duration_steps": 100000,
+    "epsilon_decay_fraction": 1.0,
+    "epsilon_after_decay": 0.0,
+    "weight_decay": 0.001,
+    "gradient_clip_norm": 10.0,
+    "loss": "smooth_l1_huber",
+    "device": "cpu",
+    "replay_sampling": "uniform_with_replacement",
+    "double_dqn": false,
+    "provenance": {
+      "paper_explicit": ["learning_rate", "gamma", "batch_size", "network_architecture", "exploration_family"],
+      "historical_project_values": [
+        "replay_capacity", "learning_starts", "train_frequency_env_steps", "gradient_steps_per_update",
+        "target_sync_frequency_env_steps", "epsilon_start", "epsilon_end", "epsilon_decay_type",
+        "epsilon_decay_fraction", "epsilon_after_decay", "weight_decay", "gradient_clip_norm"
+      ],
+      "algorithm_or_existing_core_values": ["activation", "optimizer", "loss", "replay_sampling", "double_dqn"],
+      "engineering_choice": ["device"]
+    }
+  },
+  "training": {
+    "env_interaction_budget_per_seed": 100000,
+    "seeds": [0, 1, 2],
+    "checkpoint_steps": [25000, 50000, 75000, 100000],
+    "report_checkpoint": 100000,
+    "year_schedule": {
+      "source_contract": "same 032_22 RandomYearEnv-style schedule used by the current Original PPO domain",
+      "train_years": [2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013],
+      "sampling": "uniform_random_with_replacement_per_episode",
+      "shuffled": false,
+      "balanced": "in_expectation_only; finite-run counts are not forced equal",
+      "episode_reset_at_year_boundary": true,
+      "seed_controls": ["year_sampling_rng", "epsilon_exploration_rng", "replay_sampling_rng", "network_initialization"],
+      "weather_augmentation": false
+    }
+  },
+  "evaluation": {
+    "validation_years": [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023],
+    "deterministic": true,
+    "epsilon": 0.0,
+    "action_selection": "masked_greedy",
+    "mask_source": "same current 055-style wrapper as training",
+    "metrics": ["yield", "irrigation", "nitrogen", "PFP_N", "WP_ET", "NUE_if_consistently_available"],
+    "wp_et_source": "Summary.OUT/ETCP replay when available; do not infer from daily CSV",
+    "failed_seed_retention": true
+  },
+  "outputs": {
+    "root": "benchmark_results/227_00_yc_mask_aware_dqn_formal",
+    "seed_directories": ["seed_0", "seed_1", "seed_2"],
+    "checkpoint_directory_pattern": "seed_{seed}/checkpoints",
+    "checkpoint_filename_pattern": "dqn_checkpoint_{step:06d}.pt",
+    "required_per_seed": [
+      "model_checkpoint", "training_provenance", "training_log", "validation_daily_logs",
+      "validation_summary", "action_distribution_or_sequence", "config_snapshot", "git_hash_if_available"
+    ],
+    "failure_policy": "retain_failed_seed_outputs_and_logs; never delete or replace"
+  },
+  "implementation_boundary": {
+    "core_reference": "src/mask_aware_dqn_029.py",
+    "smoke_reference": "src/run_yc_daily_16action_mask_aware_dqn_smoke_226_00.py",
+    "known_engineering_adaptation_before_training": [
+      "Expose and pass network_architecture [256,256,256] instead of the smoke-only fixed 32-32 QNetwork.",
+      "Pass weight_decay=0.001 into the Adam optimizer.",
+      "Implement explicit train_frequency=4, gradient_steps=1, target_sync_frequency=120, and 100K-step epsilon schedule.",
+      "Persist the full formal config and code/git provenance in each seed output."
+    ],
+    "classification": "engineering_parameter_plumbing_only; no scientific_contract_change",
+    "unresolved_scientific_parameters": [],
+    "formal_runner_started": false
+  },
+  "provenance": {
+    "smoke_contract": "experiments/226_yc_dqn_adapter_smoke/configs/yc_dqn_smoke_reference_contract.json",
+    "ppo_seed0_manifest": "benchmark_results/055_00_yca_lowIC_expanded_action_maskableppo/055_00_run_manifest.json",
+    "ppo_seed1_status": "experiments/222_yc_v1_three_seed_confirmation/logs/original_seed1_formal_status.json",
+    "ppo_seed2_status": "experiments/222_yc_v1_three_seed_confirmation/logs/original_seed2_formal_status.json",
+    "historical_config_031_13": "experiments/ppo_observed_years/config_031_13_literature_dqn_interval7_ncost2x.yaml",
+    "historical_config_031_15": "experiments/ppo_observed_years/config_031_15_literature_dqn_interval7_ncost2x_100k_seed0.yaml",
+    "current_core": "src/mask_aware_dqn_029.py",
+    "freeze_report": "docs/yc_dqn_formal_config_freeze_report.md",
+    "git_head_at_freeze": "72eea92c50bd83a144264621eb53cb3aaf0b107f",
+    "working_tree_note": "HEAD is recorded; the working tree was already dirty, so formal runs must record the exact working-tree code hash or commit state."
+  }
+}

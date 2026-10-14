@@ -1,0 +1,13 @@
+# Report-only template. It must never train.
+extends: ../benchmark_defaults.yaml
+site_config: ../sites/hla.yaml
+experiment:
+  experiment_id: 021_08_paper_report_generator
+  experiment_type: paper_report_generator
+  description: Rebuild tables, figures, Markdown and PPT from registered results
+  dry_run: true
+  user_confirmation_required: [registered_experiment_ids]
+mode: report-only
+registered_experiment_ids: []
+example_command: python -m benchmark.benchmark_runner --config configs/experiments/021_08_paper_report_generator.yaml --report-only --dry-run
+

@@ -1,0 +1,35 @@
+{
+  "task_id": "180",
+  "task_name": "sya_action_conditioned_payoff_probe",
+  "source_task": "177_sya_dense_yield_credit_smoke2k",
+  "physical_gate_task": "167_sya_weather_v2_fixed_format_gate",
+  "mode": "read_only_action_grid_probe",
+  "station_code": "SYA",
+  "site": "SY",
+  "source_year": 2005,
+  "seed": 0,
+  "checkpoint_steps": [2000],
+  "target_daps": [8, 31, 61],
+  "target_stage_labels": {
+    "8": "early",
+    "31": "middle",
+    "61": "late_pre_reproductive"
+  },
+  "scenario_manifest": "benchmark_results/166_sya_weather_scenario_bank_v2_fixed_format/163_sya_weather_scenario_manifest.csv",
+  "input_root": "DSSAT_auto_validation/sya_weather_scenario_bank_166_fixed_format",
+  "scenario_keys": {
+    "2005": "original",
+    "2006": "early_dry",
+    "2007": "mid_dry",
+    "2008": "late_dry",
+    "2009": "early_wet",
+    "2010": "mid_wet"
+  },
+  "weather_only_change": true,
+  "training_executed": false,
+  "reward_changed": false,
+  "action_mask_changed": false,
+  "action_grid_changed": false,
+  "probe_definition": "Replay the deterministic PPO-2000 prefix to each target DAP, then replace only the current action with each valid action on the unchanged 16-action grid and record one-step DSSAT response.",
+  "interpretation_guardrail": "One-step reward ranking is a local payoff diagnostic, not a final-season optimality claim."
+}

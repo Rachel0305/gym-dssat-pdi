@@ -1,0 +1,46 @@
+{
+  "task_id": "123_00",
+  "task_name": "sya_2017_weather_responsive_dap_scan",
+  "reference_run": "118_00_sya_originIC_forecast_potential_shaping_smoke2k_rerun1",
+  "station_code": "SYA",
+  "site": "SY",
+  "input_profile": "originIC",
+  "seed": 0,
+  "reference_checkpoint": 2000,
+  "reference_daily_root": "benchmark_results/118_00_sya_originIC_forecast_potential_shaping_smoke2k_rerun1/daily_outputs/SYA",
+  "states": {
+    "years": [2017],
+    "target_daps": [30, 45, 60, 75, 90],
+    "horizon_steps": 160,
+    "weather_perturbation_days": 7,
+    "continuation_policy": "replay_reference_actions_after_candidate_to_season_end"
+  },
+  "scenarios": {
+    "actual": {"rain_mode": "as_recorded", "description": "原始逐日天气"},
+    "wet": {"rain_mode": "set_window", "rain_mm_per_day": 15.0, "description": "目标日后连续7天强降雨诊断情景"},
+    "dry": {"rain_mode": "set_window", "rain_mm_per_day": 0.0, "description": "目标日后连续7天无降雨诊断情景"}
+  },
+  "actions": {
+    "irrigation_levels_mm": [0.0, 15.0, 30.0, 45.0],
+    "nitrogen_levels_kg_ha": [0.0],
+    "fixed_nitrogen_kg_ha": 0.0
+  },
+  "observation_contract": {
+    "base": "046_02_raw_observation",
+    "normalization_enabled": false,
+    "weather_forecast_enabled": false,
+    "weather_scenario_mode": "counterfactual_wth_window",
+    "management_mode": "ppo_linked_irrigation_and_nitrogen"
+  },
+  "scope": {
+    "read_only": true,
+    "training": false,
+    "dssat_training": false,
+    "five_scenario_replay": false,
+    "external_n": false,
+    "native_dssat_automatic_irrigation": false,
+    "ppo_linked_management": true
+  },
+  "output_root": "benchmark_results/123_00_sya_2017_weather_responsive_dap_scan_rerun1",
+  "prompt": "prompts/2026-08-16_sya_2017_weather_responsive_dap_scan.md"
+}

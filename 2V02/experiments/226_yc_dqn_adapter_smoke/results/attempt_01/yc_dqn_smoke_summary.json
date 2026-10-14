@@ -1,0 +1,8 @@
+{
+  "task": "226_00_yc_dqn_adapter_smoke",
+  "readiness": "STILL_NOT_READY",
+  "proceed_to_formal_config_freeze": "NO",
+  "error": "AssertionError: YC staged irrigation assertions failed",
+  "traceback": "Traceback (most recent call last):\n  File \"/workspace/src/run_yc_daily_16action_mask_aware_dqn_smoke_226_00.py\", line 832, in main\n    result = run()\n  File \"/workspace/src/run_yc_daily_16action_mask_aware_dqn_smoke_226_00.py\", line 751, in run\n    staged_rows = run_staged_assertions(current_wrapper, ActionSafetyState, config)\n  File \"/workspace/src/run_yc_daily_16action_mask_aware_dqn_smoke_226_00.py\", line 241, in run_staged_assertions\n    raise AssertionError(\"YC staged irrigation assertions failed\")\nAssertionError: YC staged irrigation assertions failed\n",
+  "training_performed": "engineering smoke may be partial; formal training not performed"
+}

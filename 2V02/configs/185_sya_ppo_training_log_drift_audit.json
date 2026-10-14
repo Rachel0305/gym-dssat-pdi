@@ -1,0 +1,31 @@
+{
+  "task_id": "185",
+  "task_name": "sya_ppo_training_log_drift_audit",
+  "mode": "read_only_training_log_audit",
+  "source_task": "177_sya_dense_yield_credit_smoke2k",
+  "station_code": "SYA",
+  "seed": 0,
+  "checkpoint_steps": [1000, 2000],
+  "training_executed": false,
+  "rerun_dssat": false,
+  "inputs": {
+    "source_root": "benchmark_results/177_sya_dense_yield_credit_smoke2k",
+    "tensorboard_event": "benchmark_results/177_sya_dense_yield_credit_smoke2k/tensorboard/SYA/MaskablePPO_1/events.out.tfevents.1787183685.b2fd6726c8c1.78484.0",
+    "task177_result": "benchmark_results/177_sya_dense_yield_credit_smoke2k/177_result.json",
+    "training_year_switch_log": "benchmark_results/177_sya_dense_yield_credit_smoke2k/logs/032_22_SYA_training_year_switch_log.csv",
+    "training_year_reset_counts": "benchmark_results/177_sya_dense_yield_credit_smoke2k/logs/032_22_training_year_reset_counts.csv",
+    "scenario_episode_metrics": "benchmark_results/177_sya_dense_yield_credit_smoke2k/evaluation/177_scenario_episode_metrics.csv",
+    "action_change_summary": "benchmark_results/177_sya_dense_yield_credit_smoke2k/evaluation/177_action_change_summary.csv",
+    "task183_interpretation": "benchmark_results/183_sya_ppo_decision_point_rootcause_audit/183_interpretation_addendum.json",
+    "task184_interpretation": "benchmark_results/184_sya_ppo_critic_td_action_value_audit/184_interpretation_addendum.json"
+  },
+  "audit_thresholds": {
+    "small_approx_kl": 0.001,
+    "very_small_approx_kl": 0.0001,
+    "high_clip_fraction": 0.1,
+    "min_episode_count_per_scenario": 1
+  },
+  "notes": {
+    "purpose": "Diagnose why checkpoint 2000 drifted to fixed low-value I45/N0 without changing the environment or training."
+  }
+}

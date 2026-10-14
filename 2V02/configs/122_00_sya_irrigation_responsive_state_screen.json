@@ -1,0 +1,16 @@
+{
+  "task_id": "122_00",
+  "task_name": "sya_irrigation_responsive_state_screen",
+  "station_code": "SYA",
+  "source_pool": "Leave_One_experiments/all_year_weather_calibration_validation/scenario_pool/all_year_weather_scenario_pool.csv",
+  "read_only": true,
+  "training": false,
+  "dssat_run": false,
+  "selection_rule": {
+    "water_stress": "has_water_stress OR swfac_stress_days_gt_0p05>0 OR max_swfac>0.05",
+    "irrigation_response": "irrigation_responsive OR yield_gain_from_irrigation_at_same_N>0",
+    "priority": "irrigation_response, water_stress, yield_gain_from_irrigation_at_same_N, swfac_stress_days_gt_0p05"
+  },
+  "output_root": "benchmark_results/122_00_sya_irrigation_responsive_state_screen",
+  "prompt": "prompts/2026-08-16_sya_irrigation_responsive_state_screen.md"
+}

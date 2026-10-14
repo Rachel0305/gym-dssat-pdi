@@ -1,0 +1,20 @@
+extends: ../benchmark_defaults.yaml
+site_config: ../sites/hla.yaml
+experiment:
+  experiment_id: 021_00_hla2007_framework_smoke
+  experiment_type: framework_validation
+  description: Low-cost HLA2007 DQN framework smoke and resume/reuse validation
+  dry_run: false
+  reuse_existing_results: true
+  resume: true
+site:
+  train_years: [2007]
+  eval_years: [2007]
+algorithm:
+  total_timesteps: 200
+  checkpoint_interval: 100
+  seed: 0
+  simulate_interruption_after_checkpoint: 100
+evaluation:
+  seeds: [0]
+

@@ -1,0 +1,5 @@
+﻿station_code,site,train_years,seed,checkpoint_step,run_status,model_path,model_sha256,notes
+LCA,LC,"2005,2006,2007,2008,2009,2010,2011,2012,2013",5,25000,ok,benchmark_results/059LCs5_frozen_weather_augmented_100k/models/LCA/LCA_half_split_stress_aware_maskableppo_seed5_ckpt25000.zip,4102920f012db36d30021d3b1895595528bbcfb4e671c1794dc0e518968c0562,
+LCA,LC,"2005,2006,2007,2008,2009,2010,2011,2012,2013",5,50000,ok,benchmark_results/059LCs5_frozen_weather_augmented_100k/models/LCA/LCA_half_split_stress_aware_maskableppo_seed5_ckpt50000.zip,5cfde78e67bfa06594d2a96f737c51823abee176e7aa52055948bfc8be6d7cc1,
+LCA,LC,"2005,2006,2007,2008,2009,2010,2011,2012,2013",5,75000,ok,benchmark_results/059LCs5_frozen_weather_augmented_100k/models/LCA/LCA_half_split_stress_aware_maskableppo_seed5_ckpt75000.zip,7995bec8d6f165a208a9c781c79c1f9e76396dc3f391729c23f62c83fd72e985,
+LCA,LC,"2005,2006,2007,2008,2009,2010,2011,2012,2013",5,100000,ok,benchmark_results/059LCs5_frozen_weather_augmented_100k/models/LCA/LCA_half_split_stress_aware_maskableppo_seed5_ckpt100000.zip,176ba9af9bc9829f6ac1e69bbc6d096d539ec7e6647ba5ddc25525ec265691cd,

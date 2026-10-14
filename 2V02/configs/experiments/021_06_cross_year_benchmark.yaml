@@ -1,0 +1,14 @@
+# Planned only; trains on one confirmed year and evaluates without retraining.
+extends: ../benchmark_defaults.yaml
+site_config: ../sites/hla.yaml
+experiment:
+  experiment_id: 021_06_cross_year_benchmark
+  experiment_type: cross_year_benchmark
+  description: HLA cross-year model evaluation; inherits benchmark_defaults.yaml
+  dry_run: true
+  user_confirmation_required: [site.train_years, site.eval_years, evaluation.seeds]
+site:
+  train_years: [2010]
+  eval_years: [2007, 2010, 2015, 2016, 2022]
+example_command: python -m benchmark.benchmark_runner --config configs/experiments/021_06_cross_year_benchmark.yaml --dry-run
+

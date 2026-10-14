@@ -1,0 +1,25 @@
+schema_version: 1
+required_sections:
+  - experiment
+  - site
+  - algorithm
+  - action_space
+  - constraints
+  - reward
+  - observations
+  - evaluation
+  - reporting
+station_codes: [HLA, YC, FQ, LC, SY]
+station_aliases:
+  HL: HLA
+  YCA: YC
+  FQA: FQ
+  LCA: LC
+  SYA: SY
+statuses: [pending, running, completed, failed, reused, partial]
+reward_types: [local_null_terminal]
+runtime_engines: [legacy_frozen_dqn_adapter]
+notes:
+  - This is a project schema contract; runtime validation is implemented in benchmark/validators.py.
+  - Alternative action spaces are accepted for dry-run templates but are not claimed as trained in 021_00.
+

@@ -1,0 +1,74 @@
+{
+  "site": "LC",
+  "seed": 2,
+  "checkpoint": 100000,
+  "source_frozen_baselines": "benchmark_results/053_03_lca_lowIC_053_00_lca_lowIC_expanded_action_maskableppo_auto_nstd050_minimal_five_scenario_figures_ckpt100000",
+  "ppo_run": "benchmark_results/231_lc_seed2_lca_lowIC_expanded_action_maskableppo_seed2_extension",
+  "behavior_gate": {
+    "final_checkpoint": 100000,
+    "expected_validation_rows": 10,
+    "observed_validation_rows": 10,
+    "all_daily_files_exist": true,
+    "all_actions_on_declared_grid": true,
+    "positive_actions_present": true,
+    "positive_actions_transmitted": true,
+    "not_all_positive_actions_at_dap1": true,
+    "multiple_nonzero_action_pairs": true,
+    "new_action_levels_used": true,
+    "next_step_allowed": true
+  },
+  "replay_years": [
+    {
+      "year": 2014,
+      "snapshot": "results/sy_lc_8seed_extension_231/five_scenario_figures_v2/LC/seed_02/snapshots/LCA/2014/rl_candidate",
+      "ppo_daily_rows": 102
+    },
+    {
+      "year": 2015,
+      "snapshot": "results/sy_lc_8seed_extension_231/five_scenario_figures_v2/LC/seed_02/snapshots/LCA/2015/rl_candidate",
+      "ppo_daily_rows": 99
+    },
+    {
+      "year": 2016,
+      "snapshot": "results/sy_lc_8seed_extension_231/five_scenario_figures_v2/LC/seed_02/snapshots/LCA/2016/rl_candidate",
+      "ppo_daily_rows": 93
+    },
+    {
+      "year": 2017,
+      "snapshot": "results/sy_lc_8seed_extension_231/five_scenario_figures_v2/LC/seed_02/snapshots/LCA/2017/rl_candidate",
+      "ppo_daily_rows": 94
+    },
+    {
+      "year": 2018,
+      "snapshot": "results/sy_lc_8seed_extension_231/five_scenario_figures_v2/LC/seed_02/snapshots/LCA/2018/rl_candidate",
+      "ppo_daily_rows": 87
+    },
+    {
+      "year": 2019,
+      "snapshot": "results/sy_lc_8seed_extension_231/five_scenario_figures_v2/LC/seed_02/snapshots/LCA/2019/rl_candidate",
+      "ppo_daily_rows": 92
+    },
+    {
+      "year": 2020,
+      "snapshot": "results/sy_lc_8seed_extension_231/five_scenario_figures_v2/LC/seed_02/snapshots/LCA/2020/rl_candidate",
+      "ppo_daily_rows": 92
+    },
+    {
+      "year": 2021,
+      "snapshot": "results/sy_lc_8seed_extension_231/five_scenario_figures_v2/LC/seed_02/snapshots/LCA/2021/rl_candidate",
+      "ppo_daily_rows": 96
+    },
+    {
+      "year": 2022,
+      "snapshot": "results/sy_lc_8seed_extension_231/five_scenario_figures_v2/LC/seed_02/snapshots/LCA/2022/rl_candidate",
+      "ppo_daily_rows": 95
+    },
+    {
+      "year": 2023,
+      "snapshot": "results/sy_lc_8seed_extension_231/five_scenario_figures_v2/LC/seed_02/snapshots/LCA/2023/rl_candidate",
+      "ppo_daily_rows": 88
+    }
+  ],
+  "figure_count": 12,
+  "summary_rows": 50
+}

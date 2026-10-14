@@ -1,0 +1,22 @@
+{
+  "task": "053_limited_wgen_candidate",
+  "site": "HLA",
+  "scenario": "GPCC_BIASCORR",
+  "crop_year": 2007,
+  "weather_seed": 101,
+  "formal_training": false,
+  "cli_sha256": "6318FD282A213E6AAA76C54C22E129AE25EC9351D0044C9FC7D15EEAAE053A1E",
+  "fixture_sha256": "2240DED7C82CD52102FA0C0C8080BA1CB773C676649B50D66A2C005C25EFE856",
+  "source_probe_sha256": "FFF2AB393E0CF41F1B89A1704D19B9516766786D477E393BFCBF3754A966BF9D",
+  "known_coordinate_limit": "native FIELD coordinates remain placeholders in 032/033",
+  "file_hashes": [
+    {
+      "path": "results/hla_weather_enhancement_029/weather_fitting/gpcc_biascorr/CNHL.CLI",
+      "sha256": "6318FD282A213E6AAA76C54C22E129AE25EC9351D0044C9FC7D15EEAAE053A1E"
+    },
+    {
+      "path": "results/hla_wgen_8seed_053/limited_candidates/gpcc_biascorr/2007_seed101/inputs/fileX_after_W.jinja2",
+      "sha256": "2240DED7C82CD52102FA0C0C8080BA1CB773C676649B50D66A2C005C25EFE856"
+    }
+  ]
+}

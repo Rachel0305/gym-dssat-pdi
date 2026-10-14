@@ -1,0 +1,25 @@
+{
+  "task_id": "088_00",
+  "task_name": "fq2018_input_quality_correction",
+  "station_code": "FQA",
+  "site": "FQ",
+  "input_profile": "originIC",
+  "seed": 0,
+  "scope": {
+    "validation_years": [
+      2018
+    ]
+  },
+  "correction": {
+    "source_weather": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013/FQ/CNFQ1801.WTH",
+    "rule": "2018 DOY 120-300, TMIN<0 and TMAX>15: replace TMIN with abs(TMIN)",
+    "scenarios": [
+      "null",
+      "recorded_farmer_template",
+      "dssat_auto",
+      "official_extension_expert"
+    ],
+    "ppo_training": false,
+    "ppo_replay": false
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "site": "FQ",
+  "seed": 3,
+  "original_weather_action_audit_file": "fq_seed3_original_weather_action_sequence_audit.json",
+  "uncorrected_2014_2017_2019_2023_sequences": {
+    "2014": [
+      [
+        1,
+        45.0,
+        80.0
+      ]
+    ],
+    "2015": [
+      [
+        1,
+        45.0,
+        80.0
+      ]
+    ],
+    "2016": [
+      [
+        1,
+        45.0,
+        80.0
+      ]
+    ],
+    "2017": [
+      [
+        1,
+        45.0,
+        80.0
+      ]
+    ],
+    "2019": [
+      [
+        1,
+        45.0,
+        80.0
+      ]
+    ],
+    "2020": [
+      [
+        1,
+        45.0,
+        80.0
+      ]
+    ],
+    "2021": [
+      [
+        1,
+        45.0,
+        80.0
+      ]
+    ],
+    "2022": [
+      [
+        1,
+        45.0,
+        80.0
+      ]
+    ],
+    "2023": [
+      [
+        1,
+        45.0,
+        80.0
+      ]
+    ]
+  },
+  "corrected_2018_action_events_from_snapshot": [
+    {
+      "date": "2018-06-07",
+      "dap": 0.0,
+      "irrigation_executed_mm": 45.0,
+      "nitrogen_executed_kg_ha": 80.0
+    }
+  ],
+  "identical_across_all_validation_years": null,
+  "unique_yearly_action_sequence_count": null,
+  "corrected_2018_timing_note": "Corrected-year events come from DSSAT MgmtEvent.OUT; other years come from PPO validation logs. DAP origin differs, so exact cross-year sequence status is not asserted here."
+}

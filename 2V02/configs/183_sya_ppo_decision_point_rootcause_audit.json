@@ -1,0 +1,38 @@
+{
+  "task_id": "183",
+  "task_name": "sya_ppo_decision_point_rootcause_audit",
+  "source_task": "177_sya_dense_yield_credit_smoke2k",
+  "ablation_reference_task": "182_sya_fullseason_ppo_action_ablation",
+  "physical_gate_task": "167_sya_weather_v2_fixed_format_gate",
+  "mode": "read_only_decision_point_policy_audit",
+  "station_code": "SYA",
+  "site": "SY",
+  "source_year": 2005,
+  "seed": 0,
+  "checkpoint_steps": [1000, 2000],
+  "target_daps": [97, 104],
+  "scenario_manifest": "benchmark_results/166_sya_weather_scenario_bank_v2_fixed_format/163_sya_weather_scenario_manifest.csv",
+  "input_root": "DSSAT_auto_validation/sya_weather_scenario_bank_166_fixed_format",
+  "scenario_keys": {
+    "2005": "original",
+    "2006": "early_dry",
+    "2007": "mid_dry",
+    "2008": "late_dry",
+    "2009": "early_wet",
+    "2010": "mid_wet"
+  },
+  "key_actions": {
+    "noop": 0,
+    "i15_n0": 4,
+    "i30_n0": 8,
+    "i45_n0": 12
+  },
+  "policy_concentration_top_prob_threshold": 0.7,
+  "training_executed": false,
+  "weather_changed": false,
+  "reward_changed": false,
+  "observation_changed": false,
+  "action_mask_changed": false,
+  "action_grid_changed": false,
+  "interpretation_guardrail": "This audit inspects masks, observations and policy probabilities at DAP97/104. It does not retrain PPO and does not estimate new action payoffs."
+}

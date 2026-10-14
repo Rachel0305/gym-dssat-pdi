@@ -1,0 +1,95 @@
+{
+  "site": "LC",
+  "runs": [
+    {
+      "site": "LC",
+      "tag": "seed1001_a",
+      "weather_seed": 1001,
+      "scope": "season_only",
+      "status": "PASS",
+      "steps": 95,
+      "rows": 95,
+      "physical_qc": {
+        "status": "PASS",
+        "row_count": 95,
+        "missing_by_field": {
+          "RAIN": 0,
+          "SRAD": 0,
+          "TMAX": 0,
+          "TMIN": 0
+        },
+        "all_zero_rainfall": false,
+        "issues": [],
+        "bounds_are_screening_checks_not_calibrated_extreme_value_tests": true
+      },
+      "cli_sha256": "6f73f8ea7fbe04b0ce042e2d632ec32d7648f1a72c59a79bb3dd8c1b60c2face",
+      "runtime_WTHER": "W",
+      "runtime_seed_verified": true,
+      "weather_sha256": "fe602cd1d903b016651df02be951301bcaaaaeef1537e9c3fd7ed259be96a7fd",
+      "elapsed_seconds": 1.091857137000261,
+      "peak_tree_rss_mb": 126.16796875
+    },
+    {
+      "site": "LC",
+      "tag": "seed1001_b",
+      "weather_seed": 1001,
+      "scope": "season_only",
+      "status": "PASS",
+      "steps": 95,
+      "rows": 95,
+      "physical_qc": {
+        "status": "PASS",
+        "row_count": 95,
+        "missing_by_field": {
+          "RAIN": 0,
+          "SRAD": 0,
+          "TMAX": 0,
+          "TMIN": 0
+        },
+        "all_zero_rainfall": false,
+        "issues": [],
+        "bounds_are_screening_checks_not_calibrated_extreme_value_tests": true
+      },
+      "cli_sha256": "6f73f8ea7fbe04b0ce042e2d632ec32d7648f1a72c59a79bb3dd8c1b60c2face",
+      "runtime_WTHER": "W",
+      "runtime_seed_verified": true,
+      "weather_sha256": "fe602cd1d903b016651df02be951301bcaaaaeef1537e9c3fd7ed259be96a7fd",
+      "elapsed_seconds": 1.0789801659993827,
+      "peak_tree_rss_mb": 127.2421875
+    },
+    {
+      "site": "LC",
+      "tag": "seed1002",
+      "weather_seed": 1002,
+      "scope": "season_only",
+      "status": "PASS",
+      "steps": 94,
+      "rows": 94,
+      "physical_qc": {
+        "status": "PASS",
+        "row_count": 94,
+        "missing_by_field": {
+          "RAIN": 0,
+          "SRAD": 0,
+          "TMAX": 0,
+          "TMIN": 0
+        },
+        "all_zero_rainfall": false,
+        "issues": [],
+        "bounds_are_screening_checks_not_calibrated_extreme_value_tests": true
+      },
+      "cli_sha256": "6f73f8ea7fbe04b0ce042e2d632ec32d7648f1a72c59a79bb3dd8c1b60c2face",
+      "runtime_WTHER": "W",
+      "runtime_seed_verified": true,
+      "weather_sha256": "17a643000e6816b177f7810cac13cb61af331c8f8ec4d45aebc857e2914d9cdf",
+      "elapsed_seconds": 1.1133765109998421,
+      "peak_tree_rss_mb": 127.72265625
+    }
+  ],
+  "same_seed_reproduced": true,
+  "different_seed_changed": true,
+  "season_runtime_pass": true,
+  "full_year_QC": "NOT_RUN",
+  "PPO_smoke": "NOT_RUN",
+  "formal_training_allowed": false
+}

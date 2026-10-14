@@ -1,0 +1,19 @@
+{
+  "site": "FQ",
+  "seed": 7,
+  "year": 2018,
+  "checkpoint_step": 100000,
+  "original_weather_yield_kg_ha": 0.0,
+  "corrected_yield_kg_ha": 8317.0,
+  "corrected_irrigation_mm": 180.0,
+  "corrected_n_kg_ha": 240.0,
+  "corrected_etcp_mm": 353.3,
+  "corrected_WP_ET_kg_m3": 2.35,
+  "corrected_PFP_N_kg_kg": 34.7,
+  "last_dap": 92,
+  "slow_grain_filling_warning": false,
+  "precipitation_error": false,
+  "model_path": "benchmark_results/20261012fq7_fq_seed7_historical_completion/models/FQA/FQA_half_split_stress_aware_maskableppo_seed7_ckpt100000.zip",
+  "corrected_weather_sha256": "ba88b61dca081eb09513562471ac4e4d27f1fe805037ef64d97ecffce8a98882",
+  "snapshot_path": "results/version2_fq_seed7_corrected2018_063/seed7/snapshot"
+}

@@ -1,0 +1,39 @@
+{
+  "runs": [
+    {
+      "site": "LC",
+      "tag": "attempt002_seed1001_a",
+      "weather_seed": 1001,
+      "scope": "full_year_diagnostic",
+      "status": "FULL_YEAR_INCOMPLETE",
+      "steps": 275,
+      "rows": 275,
+      "physical_qc": {
+        "status": "PASS",
+        "row_count": 275,
+        "missing_by_field": {
+          "RAIN": 0,
+          "SRAD": 0,
+          "TMAX": 0,
+          "TMIN": 0
+        },
+        "all_zero_rainfall": false,
+        "issues": [],
+        "bounds_are_screening_checks_not_calibrated_extreme_value_tests": true
+      },
+      "cli_sha256": "6f73f8ea7fbe04b0ce042e2d632ec32d7648f1a72c59a79bb3dd8c1b60c2face",
+      "runtime_WTHER": "W",
+      "runtime_seed_verified": true,
+      "weather_sha256": "c4f0905807991b3e84a4d7b166dfa61bf0f7678005bf3a6bf77306c68bfded34",
+      "full_year_dates_complete": false,
+      "actual_start_date": "2005-01-01",
+      "actual_end_date": "2005-10-02",
+      "elapsed_seconds": 2.5772252200004004,
+      "peak_tree_rss_mb": 127.52734375
+    }
+  ],
+  "full_year_path_pass": false,
+  "ensemble_quality": "NOT_RUN",
+  "PPO_smoke": "NOT_RUN",
+  "formal_training_allowed": false
+}

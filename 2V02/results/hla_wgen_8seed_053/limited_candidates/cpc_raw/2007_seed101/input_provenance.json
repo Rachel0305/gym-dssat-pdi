@@ -1,0 +1,22 @@
+{
+  "task": "053_limited_wgen_candidate",
+  "site": "HLA",
+  "scenario": "CPC_RAW",
+  "crop_year": 2007,
+  "weather_seed": 101,
+  "formal_training": false,
+  "cli_sha256": "907558F5399677A5A6492222919F239F88034984689E34389A6CF29117442CD8",
+  "fixture_sha256": "2240DED7C82CD52102FA0C0C8080BA1CB773C676649B50D66A2C005C25EFE856",
+  "source_probe_sha256": "FFF2AB393E0CF41F1B89A1704D19B9516766786D477E393BFCBF3754A966BF9D",
+  "known_coordinate_limit": "native FIELD coordinates remain placeholders in 032/033",
+  "file_hashes": [
+    {
+      "path": "results/hla_weather_enhancement_029/weather_fitting/cpc_raw/CNHL.CLI",
+      "sha256": "907558F5399677A5A6492222919F239F88034984689E34389A6CF29117442CD8"
+    },
+    {
+      "path": "results/hla_wgen_8seed_053/limited_candidates/cpc_raw/2007_seed101/inputs/fileX_after_W.jinja2",
+      "sha256": "2240DED7C82CD52102FA0C0C8080BA1CB773C676649B50D66A2C005C25EFE856"
+    }
+  ]
+}

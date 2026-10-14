@@ -1,0 +1,15 @@
+# Planned only. Each ablation must hold all non-observation settings fixed.
+extends: ../benchmark_defaults.yaml
+site_config: ../sites/hla.yaml
+experiment:
+  experiment_id: 021_05_observation_ablation
+  experiment_type: observation_ablation
+  description: Controlled observation removal; inherits benchmark_defaults.yaml
+  dry_run: true
+  user_confirmation_required: [observations.candidate_sets, site.train_years, evaluation.seeds]
+observations:
+  candidate_sets:
+    - name: frozen_full
+      inherit_default: true
+example_command: python -m benchmark.benchmark_runner --config configs/experiments/021_05_observation_ablation.yaml --dry-run
+

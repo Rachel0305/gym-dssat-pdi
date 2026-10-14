@@ -1,0 +1,14 @@
+{
+  "episode_index": 536,
+  "runtime_dir": "results/hla_wgen_8seed_053/seed_02/attempt_01/temp/tmpfsk_k6qo",
+  "runtime_filex_sha256": "5FEEC4D7B19C3972531D309E958FB7A1BBEB40C2B20AC383F6BAE0BD2CE4F51E",
+  "wther": "W",
+  "wsta_confirmed": true,
+  "runtime_cli_sha256": "AF957CD7C28D427E6B1319CF95D37B1EA8963770795C70B826F71FF2CB08F29F",
+  "source_cli_sha256": "AF957CD7C28D427E6B1319CF95D37B1EA8963770795C70B826F71FF2CB08F29F",
+  "pdi_config_sha256": "6443427361AAA1C64C095F5A6C0F2F52BE076AB534903ECDED97ECEA9F4C3523",
+  "yaml_bootstrap_seed": 1013,
+  "yaml_bootstrap_confirmed": true,
+  "runtime_rseed1": 1013,
+  "scheduled_seed": 1013
+}

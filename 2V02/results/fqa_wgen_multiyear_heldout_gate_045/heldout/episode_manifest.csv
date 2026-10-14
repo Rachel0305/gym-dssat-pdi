@@ -1,0 +1,3 @@
+split,episode_index,year,ppo_seed,weather_seed,pdi_rseed1,days,weather_rows,weather_path,weather_sha256,runtime_evidence_path,physical_status,reward,status
+heldout,1,2007,0,1081,1081,103,103,results/fqa_wgen_multiyear_heldout_gate_045/heldout/weather_daily/episode_0001.csv,BFA3F248944916D3258E97FFE234AAA582E9E7D957757D89E51254C8840BC2B2,results/fqa_wgen_multiyear_heldout_gate_045/heldout/runtime_evidence/episode_0001.json,PASS,0.5746787,completed
+heldout,2,2007,0,1100,1100,101,101,results/fqa_wgen_multiyear_heldout_gate_045/heldout/weather_daily/episode_0002.csv,D142B32B3903A97A2F8E7BBCF99D9710E77E28DA5B8A23A4054F9F6CC96F1D4B,results/fqa_wgen_multiyear_heldout_gate_045/heldout/runtime_evidence/episode_0002.json,PASS,0.46782847,completed

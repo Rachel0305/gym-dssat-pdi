@@ -1,0 +1,8 @@
+{
+  "status": "FAILED",
+  "requested_steps": 432,
+  "ppo_seed": 0,
+  "error": "Traceback (most recent call last):\n  File \"/workspace/results/hla_wgen_8seed_053/run_ppo_smoke.py\", line 268, in main\n    env.archive_current(\"partial_at_stop\")\n  File \"/workspace/results/hla_wgen_8seed_053/run_ppo_smoke.py\", line 179, in archive_current\n    raise RuntimeError(f\"physical screen failed episode={index}: {screen}\")\nRuntimeError: physical screen failed episode=4: {'status': 'FAIL_OR_INCOMPLETE', 'row_count': 1, 'missing_by_field': {'RAIN': 0, 'SRAD': 0, 'TMAX': 0, 'TMIN': 0}, 'all_zero_rainfall': True, 'issues': ['all-zero rainfall in captured simulation window'], 'bounds_are_screening_checks_not_calibrated_extreme_value_tests': True}\n",
+  "archive_after_failure_error": "physical screen failed episode=4: {'status': 'FAIL_OR_INCOMPLETE', 'row_count': 1, 'missing_by_field': {'RAIN': 0, 'SRAD': 0, 'TMAX': 0, 'TMIN': 0}, 'all_zero_rainfall': True, 'issues': ['all-zero rainfall in captured simulation window'], 'bounds_are_screening_checks_not_calibrated_extreme_value_tests': True}",
+  "elapsed_seconds": 7.47
+}

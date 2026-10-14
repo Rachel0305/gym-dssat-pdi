@@ -1,0 +1,35 @@
+{
+  "baseline_csv_sha256": "475F379FA259B860BBBA94480082F8B7B13400273E468D07EAD3B86D2D45056B",
+  "baseline_scenarios": [
+    "dssat_auto_external_n",
+    "null",
+    "official_extension_expert",
+    "recorded_farmer_template"
+  ],
+  "frozen_episode_csv_sha256": {
+    "3": "3CEB83DBFFC09B61A09F52D0A0DFCE685110886281AF1030B769629070AE4514",
+    "4": "E5BFC767C5EB3F60F0359FFADB890C4933DFCC7115584437347FD2EC130DB25D",
+    "5": "3C1E5B1F83DDFAFD843A61BA609B82FE5B7AF847E45EA2D84888D1362F61C37F"
+  },
+  "frozen_step_csv_sha256": {
+    "3": "ED6E77CE847AC8375DA0CC8863EA02052D17EEFD96E6E37D1D7A20D0C71A11C3",
+    "4": "5CEE1194D451282BFC199A23D4BDB40FDA57D93B9B5484EAC874D5E4D11F1DAB",
+    "5": "25B45176C95A2873612D657A7409E2C0F4638F898D196AE51BF19BDAA0CE687A"
+  },
+  "model_sha256": {
+    "3": "78D3CF89E0FB0B0100E06583842A7FADBEE862F7C06AA896524A54D85CA6CDA9",
+    "4": "6B7895714C6011E9359A2A0F6E656135AE8B671AE35D86C126A63458CA605CF7",
+    "5": "814A5C73404D2B046927BA0ECA42DCE7F8F1D804B550A226C96B61CFDA97E2BF"
+  },
+  "original_formal_manifest_status": "failed_after_30_episodes_due_to_postprocessing_NameError; retained",
+  "original_smoke_manifest_status": "failed_due_to_validator_path_bug; retained",
+  "pairwise_row_count": 120,
+  "peak_rss_mb": 445.88671875,
+  "prompt_sha256": "91085832D72D95A81D0C26A99791853C35B7C96849515404EAE47B47D617F577",
+  "recovery_note": "Simulation completed once; post-run validation and finalization were repaired without repeating any DSSAT episode.",
+  "result_row_count": 30,
+  "rss_limit_mb": 4096.0,
+  "script_sha256": "2D2294920DCF4F31B5FDC1B9EADF096C50FC1FA6606D4EAE7C1D33CE85B9D840",
+  "snapshot_file_count": 150,
+  "source_summary_metric_function": "src/build_relaxed_success_five_scenario_daily_evidence_027_05.py::summary_metrics"
+}

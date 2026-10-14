@@ -1,0 +1,16 @@
+task_id: "031_31"
+description: "Readiness audit for extending the frozen SYA free-timing discrete MaskablePPO workflow to HLA/FQA/LCA/YCA."
+scenario_pool_csv: "Leave_One_experiments/all_year_weather_calibration_validation/scenario_pool/all_year_weather_scenario_pool.csv"
+weather_inventory_csv: "Leave_One_experiments/all_year_weather_calibration_validation/weather_inventory/weather_year_inventory.csv"
+weather_clean_csv: "weather_clean_qc/all_sites_weather_cleaned_qc.csv"
+smoke_eval_csv: "benchmark_results/031_20_free_timing_discrete_maskableppo_scaled_reward_five_station_smoke/evaluation/eval_summary.csv"
+source_config: "experiments/ppo_observed_years/config_031_20_free_timing_discrete_maskableppo_scaled_reward_five_station_smoke.yaml"
+output_root: "benchmark_results/031_31_four_site_free_timing_maskableppo_readiness"
+target_stations:
+  HLA: 2015
+  FQA: 2016
+  LCA: 2010
+  YCA: 2014
+reference_completed_station:
+  SYA: 2014
+status: "pre_registered"

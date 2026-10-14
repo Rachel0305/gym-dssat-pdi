@@ -1,0 +1,104 @@
+{
+  "source_input_sha256": {
+    "source_filex": "793EB12137B05F1A5F4730EB21A3281AF65CDBBF58A2698338AE630224A5406B",
+    "cultivar": "7810190A042B2FE3C53C54D43BF8080AE02DD3D1EDFEC202BF572E130761403C",
+    "soil": "3C303D68DDA19BA6F40573A3BBA5464E40230DDD60C6C746F0EA6BBFEEE9E644"
+  },
+  "runtime_filex_sha256_by_run": {
+    "seed_101_run_a": "BA6C31A13C7BE59FED2538C85A57B4A0F5FA076FCD643C3CB842CF609D47BDCA",
+    "seed_101_run_b": "BA6C31A13C7BE59FED2538C85A57B4A0F5FA076FCD643C3CB842CF609D47BDCA",
+    "seed_102": "BA6C31A13C7BE59FED2538C85A57B4A0F5FA076FCD643C3CB842CF609D47BDCA",
+    "seed_103": "BA6C31A13C7BE59FED2538C85A57B4A0F5FA076FCD643C3CB842CF609D47BDCA",
+    "seed_104": "BA6C31A13C7BE59FED2538C85A57B4A0F5FA076FCD643C3CB842CF609D47BDCA",
+    "seed_105": "BA6C31A13C7BE59FED2538C85A57B4A0F5FA076FCD643C3CB842CF609D47BDCA"
+  },
+  "runtime_pdi_yaml_sha256_by_run": {
+    "seed_101_run_a": "3CF2661D1A8786BB1B10D27CF413D46FA784BDFC2A5F24D150C829DE90892E9B",
+    "seed_101_run_b": "2FBBCDC1A70A36113ABD7BC62FAFF6BEC1C18A6126894C486044FD6C0DC7D063",
+    "seed_102": "1B07EE41344D9961FEF8B82232F8D6047EA4288F408DF3E80FEB9505C6547B4F",
+    "seed_103": "2667B0AE5E351197DC30745DF67F79F4E3B2ECD1E04B6C51008DE74FE6019DF4",
+    "seed_104": "C1AB89886E373892195364D38252CD34635E232FCBBCCF80DC7AAB79F79F33C5",
+    "seed_105": "5E8E7F611A2985EA1242F11CE44B3C1DC1DE90F60A8005D9286610915A8F9CD3"
+  },
+  "runtime_pdi_yaml_sha256_seed_normalized_by_run": {
+    "seed_101_run_a": "07044B0E47ACD2740E7B85A9D3CDFDDEAC1954B864DA34B6452C97FE6829D338",
+    "seed_101_run_b": "07044B0E47ACD2740E7B85A9D3CDFDDEAC1954B864DA34B6452C97FE6829D338",
+    "seed_102": "07044B0E47ACD2740E7B85A9D3CDFDDEAC1954B864DA34B6452C97FE6829D338",
+    "seed_103": "07044B0E47ACD2740E7B85A9D3CDFDDEAC1954B864DA34B6452C97FE6829D338",
+    "seed_104": "07044B0E47ACD2740E7B85A9D3CDFDDEAC1954B864DA34B6452C97FE6829D338",
+    "seed_105": "07044B0E47ACD2740E7B85A9D3CDFDDEAC1954B864DA34B6452C97FE6829D338"
+  },
+  "weather_seed_interface_by_run": {
+    "seed_101_run_a": {
+      "expected_weather_seed": 101,
+      "pdi_rseed1": 101,
+      "pdi_rseed1_matches": true,
+      "gym_make_seed": null,
+      "pilot_seed_injection": "weather_seed explicitly assigned to instance._rseed1 before runtime launch",
+      "filex_wther": "W",
+      "filex_wsta": "CNYC0801",
+      "runtime_cli_sha256": "65CF134600A5881706A5D435E1A09B276ED92A21FA5ABE2E18AAF63AF1E3A929",
+      "runtime_status": "PASS"
+    },
+    "seed_101_run_b": {
+      "expected_weather_seed": 101,
+      "pdi_rseed1": 101,
+      "pdi_rseed1_matches": true,
+      "gym_make_seed": null,
+      "pilot_seed_injection": "weather_seed explicitly assigned to instance._rseed1 before runtime launch",
+      "filex_wther": "W",
+      "filex_wsta": "CNYC0801",
+      "runtime_cli_sha256": "65CF134600A5881706A5D435E1A09B276ED92A21FA5ABE2E18AAF63AF1E3A929",
+      "runtime_status": "PASS"
+    },
+    "seed_102": {
+      "expected_weather_seed": 102,
+      "pdi_rseed1": 102,
+      "pdi_rseed1_matches": true,
+      "gym_make_seed": null,
+      "pilot_seed_injection": "weather_seed explicitly assigned to instance._rseed1 before runtime launch",
+      "filex_wther": "W",
+      "filex_wsta": "CNYC0801",
+      "runtime_cli_sha256": "65CF134600A5881706A5D435E1A09B276ED92A21FA5ABE2E18AAF63AF1E3A929",
+      "runtime_status": "PASS"
+    },
+    "seed_103": {
+      "expected_weather_seed": 103,
+      "pdi_rseed1": 103,
+      "pdi_rseed1_matches": true,
+      "gym_make_seed": null,
+      "pilot_seed_injection": "weather_seed explicitly assigned to instance._rseed1 before runtime launch",
+      "filex_wther": "W",
+      "filex_wsta": "CNYC0801",
+      "runtime_cli_sha256": "65CF134600A5881706A5D435E1A09B276ED92A21FA5ABE2E18AAF63AF1E3A929",
+      "runtime_status": "PASS"
+    },
+    "seed_104": {
+      "expected_weather_seed": 104,
+      "pdi_rseed1": 104,
+      "pdi_rseed1_matches": true,
+      "gym_make_seed": null,
+      "pilot_seed_injection": "weather_seed explicitly assigned to instance._rseed1 before runtime launch",
+      "filex_wther": "W",
+      "filex_wsta": "CNYC0801",
+      "runtime_cli_sha256": "65CF134600A5881706A5D435E1A09B276ED92A21FA5ABE2E18AAF63AF1E3A929",
+      "runtime_status": "PASS"
+    },
+    "seed_105": {
+      "expected_weather_seed": 105,
+      "pdi_rseed1": 105,
+      "pdi_rseed1_matches": true,
+      "gym_make_seed": null,
+      "pilot_seed_injection": "weather_seed explicitly assigned to instance._rseed1 before runtime launch",
+      "filex_wther": "W",
+      "filex_wsta": "CNYC0801",
+      "runtime_cli_sha256": "65CF134600A5881706A5D435E1A09B276ED92A21FA5ABE2E18AAF63AF1E3A929",
+      "runtime_status": "PASS"
+    }
+  },
+  "fixed_non_weather_inputs_pass": true,
+  "seed_coupling_status": "SEPARATE: PPO seed NOT_APPLICABLE; Gym-DSSAT seed=None; each weather_seed explicitly injected as instance._rseed1 and confirmed in runtime dssat-pdi.yml rseed1_.",
+  "wet_day_definition": "RAIN > 0.0 mm; unchanged",
+  "ppo_training_run": false,
+  "other_sites_modified": false
+}

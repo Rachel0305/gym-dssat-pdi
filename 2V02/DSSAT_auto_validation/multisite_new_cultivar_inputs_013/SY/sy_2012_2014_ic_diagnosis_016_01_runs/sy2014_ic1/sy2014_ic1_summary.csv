@@ -1,0 +1,2 @@
+﻿case,description,experiment_number,patch_2014_ic,icdat_override,steps_completed,terminated,truncated,final_dap_gym,final_topwt_gym,final_grnwt_gym,max_swfac_gym,max_nstres_gym,hwam_summary,cwam_summary,mdat_summary,edat_summary
+sy2014_ic1,"2014 treatment, patch treatment row back to IC=1",2,1,,160,True,False,139.0,13299.51171875,5125.478515625,1.0,0.012191057205200195,,,,

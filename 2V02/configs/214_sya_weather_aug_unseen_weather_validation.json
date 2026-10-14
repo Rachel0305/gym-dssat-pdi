@@ -1,0 +1,49 @@
+{
+  "task_id": "214",
+  "task_name": "sya_weather_aug_unseen_weather_validation",
+  "source_training_task": "168_sya_weather_aug_pilot_smoke2k_v2",
+  "station_code": "SYA",
+  "site": "SY",
+  "seed": 0,
+  "primary_checkpoint": 2000,
+  "diagnostic_checkpoints": [1000, 2000],
+  "training_weather": {
+    "source_year": 2005,
+    "variants": ["original", "early_dry", "mid_dry", "late_dry", "early_wet", "mid_wet"],
+    "weather_change": "RAIN only in DAP 1-30, 31-60, or 61-90 windows; SRAD/TMAX/TMIN unchanged",
+    "online_learning": true
+  },
+  "unseen_weather": {
+    "years": [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023],
+    "weather": "original observed-year WTH; no perturbation",
+    "used_for_training": false,
+    "used_for_checkpoint_selection": false
+  },
+  "frozen_contract": {
+    "cultivar_genotype": "unchanged from 168/046_10 contract",
+    "soil": "unchanged from 168/046_10 contract",
+    "management_action_grid": {
+      "irrigation_levels_mm": [0.0, 15.0, 30.0, 45.0],
+      "nitrogen_levels_kg_ha": [0.0, 40.0, 80.0, 120.0]
+    },
+    "reward": "inherit_046_02_unchanged",
+    "action_mask": "inherit_046_02_unchanged",
+    "ppo_hyperparameters": "inherit_168_base_contract",
+    "observation": "raw 25-dimensional state; no forecast feature intervention"
+  },
+  "stability_gate": {
+    "all_unseen_episodes_complete": true,
+    "all_actions_on_declared_grid": true,
+    "no_all_zero_management_collapse": true,
+    "report_metrics": [
+      "final_grnwt",
+      "PFP_N",
+      "total_irrigation",
+      "total_n",
+      "action_signature",
+      "stress_days",
+      "checkpoint_drift"
+    ],
+    "wp_et": "pending exact Summary.OUT/ETCP replay; never infer from daily CSV"
+  }
+}

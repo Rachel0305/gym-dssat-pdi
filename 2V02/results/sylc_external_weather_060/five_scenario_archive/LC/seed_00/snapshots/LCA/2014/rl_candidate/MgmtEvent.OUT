@@ -1,0 +1,71 @@
+*MANAGEMENT OPERATIONS EVENT SUMMARY
+
+*DSSAT Cropping System Model Ver. 4.8.0.024 -stable  OCT 13, 2026 14:20:29
+!---------------------------------------------------------------------------------------------
+@RUN Date........  DOY    DAS    DAP  CR  Stage         Operation       Quantities
+!---------------------------------------------------------------------------------------------
+   1 JUN 11, 2014  162      1      0  MZ  14 Start Sim 
+   1 JUN 15, 2014  166      5      0  MZ                Planting       
+   1 JUN 15, 2014  166      5      0  MZ  07 Sowing    
+   1 JUN 16, 2014  167      6      1  MZ  08 Germinate 
+   1 JUN 21, 2014  172     11      6  MZ  09 Emergence 
+   1 JUL  1, 2014  182     21     16  MZ  01 End Juveni
+   1 JUL  7, 2014  188     27     22  MZ  02 Floral Ini
+   1 AUG  3, 2014  215     54     49  MZ  03 75% Silkin
+   1 AUG 12, 2014  224     63     58  MZ  04 Beg Gr Fil
+   1 SEP 15, 2014  258     97     92  MZ  05 End Gr Fil
+   1 SEP 20, 2014  263    102     97  MZ  16 Harvest   
+   1 SEP 20, 2014  263    102     97  MZ                Harvest Yield    1976. kg/ha
+ 
+
+*DSSAT Cropping System Model Ver. 4.8.0.024 -stable  OCT 13, 2026 14:20:30
+!---------------------------------------------------------------------------------------------
+@RUN Date........  DOY    DAS    DAP  CR  Stage         Operation       Quantities
+!---------------------------------------------------------------------------------------------
+   1 JUN 11, 2014  162      1      0  MZ  14 Start Sim 
+   1 JUN 15, 2014  166      5      0  MZ                Planting       
+   1 JUN 15, 2014  166      5      0  MZ  07 Sowing    
+   1 JUN 16, 2014  167      6      1  MZ  08 Germinate 
+   1 JUN 21, 2014  172     11      6  MZ  09 Emergence 
+   1 JUL  1, 2014  182     21     16  MZ  01 End Juveni
+   1 JUL  7, 2014  188     27     22  MZ  02 Floral Ini
+   1 AUG  3, 2014  215     54     49  MZ  03 75% Silkin
+   1 AUG 12, 2014  224     63     58  MZ  04 Beg Gr Fil
+   1 SEP 15, 2014  258     97     92  MZ  05 End Gr Fil
+   1 SEP 20, 2014  263    102     97  MZ  16 Harvest   
+   1 SEP 20, 2014  263    102     97  MZ                Harvest Yield    1976. kg/ha
+ 
+
+*DSSAT Cropping System Model Ver. 4.8.0.024 -stable  OCT 13, 2026 14:20:30
+!---------------------------------------------------------------------------------------------
+@RUN Date........  DOY    DAS    DAP  CR  Stage         Operation       Quantities
+!---------------------------------------------------------------------------------------------
+   1 JUN 11, 2014  162      1      0  MZ  14 Start Sim 
+   1 JUN 11, 2014  162      1      0  MZ                Fertilizer         40. kg[N]/ha 
+   1 JUN 11, 2014  162      1      0  MZ                Irrigation        30.0 mm
+   1 JUN 15, 2014  166      5      0  MZ                Planting       
+   1 JUN 15, 2014  166      5      0  MZ  07 Sowing    
+   1 JUN 16, 2014  167      6      1  MZ  08 Germinate 
+   1 JUN 21, 2014  172     11      6  MZ  09 Emergence 
+   1 JUN 23, 2014  174     13      8  MZ                Fertilizer         80. kg[N]/ha 
+   1 JUN 23, 2014  174     13      8  MZ                Irrigation        15.0 mm
+   1 JUN 30, 2014  181     20     15  MZ                Fertilizer         80. kg[N]/ha 
+   1 JUN 30, 2014  181     20     15  MZ                Irrigation        15.0 mm
+   1 JUL  1, 2014  182     21     16  MZ  01 End Juveni
+   1 JUL  7, 2014  188     27     22  MZ  02 Floral Ini
+   1 JUL  7, 2014  188     27     22  MZ                Irrigation        15.0 mm
+   1 JUL 16, 2014  197     36     31  MZ                Irrigation        15.0 mm
+   1 JUL 23, 2014  204     43     38  MZ                Irrigation        15.0 mm
+   1 JUL 30, 2014  211     50     45  MZ                Irrigation        15.0 mm
+   1 AUG  3, 2014  215     54     49  MZ  03 75% Silkin
+   1 AUG  6, 2014  218     57     52  MZ                Irrigation        15.0 mm
+   1 AUG 12, 2014  224     63     58  MZ  04 Beg Gr Fil
+   1 AUG 13, 2014  225     64     59  MZ                Irrigation        15.0 mm
+   1 AUG 20, 2014  232     71     66  MZ                Irrigation        15.0 mm
+   1 AUG 27, 2014  239     78     73  MZ                Irrigation        15.0 mm
+   1 SEP  3, 2014  246     85     80  MZ                Irrigation        15.0 mm
+   1 SEP 14, 2014  257     96     91  MZ                Irrigation        15.0 mm
+   1 SEP 15, 2014  258     97     92  MZ  05 End Gr Fil
+   1 SEP 20, 2014  263    102     97  MZ  16 Harvest   
+   1 SEP 20, 2014  263    102     97  MZ                Harvest Yield    9529. kg/ha
+ 

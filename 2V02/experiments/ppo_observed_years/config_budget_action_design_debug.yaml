@@ -1,0 +1,160 @@
+seed: 0
+
+training:
+  total_timesteps: 5000
+  hla_pilot_station: HLA
+  hla_train_year: 2011
+  hla_eval_years: [2011, 2007, 2009]
+  extension_sites: [SYA, LCA]
+  best_train_years:
+    HLA: 2011
+    SYA: 2012
+    LCA: 2010
+  cv_types:
+    HLA: observed_year_leave_one
+    SYA: observed_year_leave_one
+    LCA: observed_year_leave_one
+
+action_designs:
+  - name: baseline_daily_action_current
+    type: baseline
+    reward_version: P6_high_economic_pressure
+  - name: D_seasonal_budget_fixed_split
+    type: seasonal_budget
+    reward_version: P0_current_reward_baseline
+  - name: E_scheduled_events_default
+    type: scheduled_event
+    reward_version: P0_current_reward_baseline
+  - name: F_stage_budget_default
+    type: stage_budget
+    reward_version: P0_current_reward_baseline
+  - name: D_plus_profit_reward
+    type: seasonal_budget
+    reward_version: P6_high_economic_pressure
+  - name: E_plus_profit_reward
+    type: scheduled_event
+    reward_version: P6_high_economic_pressure
+
+budget_action:
+  irrigation_cap: 300.0
+  n_cap: 450.0
+  irrigation_schedule:
+    - {dap: 25, fraction: 0.2, name: early_growth}
+    - {dap: 50, fraction: 0.4, name: mid_growth}
+    - {dap: 75, fraction: 0.4, name: silking_grainfill}
+  nitrogen_schedule:
+    - {dap: 1, fraction: 0.3, name: basal}
+    - {dap: 30, fraction: 0.3, name: early_growth}
+    - {dap: 60, fraction: 0.4, name: pre_tasseling}
+  irrigation_events:
+    - {dap: 25, name: early_growth}
+    - {dap: 50, name: mid_growth}
+    - {dap: 75, name: silking_grainfill}
+  nitrogen_events:
+    - {dap: 1, name: basal}
+    - {dap: 30, name: early_growth}
+    - {dap: 60, name: pre_tasseling}
+  single_irrigation_event_max: 100.0
+  single_n_event_max: 150.0
+  stages:
+    - {name: stage_1, start: 1, end: 30, irrigation_max: 75.0, n_max: 150.0}
+    - {name: stage_2, start: 31, end: 60, irrigation_max: 75.0, n_max: 150.0}
+    - {name: stage_3, start: 61, end: 95, irrigation_max: 100.0, n_max: 150.0}
+    - {name: stage_4, start: 96, end: 120, irrigation_max: 50.0, n_max: 0.0}
+
+cap:
+  cap_name: cap_high
+  season_irrigation_cap: 300.0
+  season_n_cap: 450.0
+
+debug:
+  enabled: false
+  ppo_overrides:
+    learning_rate: 0.0003
+    gamma: 0.99
+    n_steps: 128
+    batch_size: 64
+    ent_coef: 0.0
+    clip_range: 0.2
+
+ppo:
+  total_timesteps_full: 5000
+  learning_rate: null
+  gamma: null
+  n_steps: null
+  batch_size: null
+  ent_coef: null
+  clip_range: null
+
+paths:
+  output_root: Leave_One_experiments/budget_action_design_debug
+  weather_dir: weather_clean_qc
+  wth_dir: Leave_One_experiments/wth_generated_qc
+  my_data_dir: my_data
+  cultivar_file: my_data/MZCER048.CUL
+
+safety:
+  run_pretrain_smoke_check: true
+  do_not_overwrite_raw_inputs: true
+  batch_training_disabled_by_default: false
+
+action_safety:
+  enabled: true
+  daily_irrigation_max: 100.0
+  daily_n_max: 150.0
+  season_irrigation_soft_limit: 300.0
+  season_n_soft_limit: 450.0
+  min_days_between_irrigation: 7
+  min_days_between_fertilization: 10
+  fertilization_allowed_dap_range: [1, 120]
+  irrigation_allowed_dap_range: [1, 120]
+
+runtime:
+  max_steps: 260
+  episode_timeout_seconds: 300
+  mode: all
+
+observed_years:
+  HLA:
+    - year: 2007
+      label: observed_low_rain_year
+      planting_date: "2007-05-05"
+      harvest_window_rain_mm: 345.6
+    - year: 2011
+      label: observed_mid_rain_year
+      planting_date: "2011-05-05"
+      harvest_window_rain_mm: 479.2
+    - year: 2009
+      label: observed_high_rain_year
+      planting_date: "2009-05-02"
+      harvest_window_rain_mm: 489.5
+  SYA:
+    - year: 2014
+      label: observed_low_rain_year
+      planting_date: "2014-04-21"
+      harvest_window_rain_mm: 331.8
+    - year: 2015
+      label: observed_mid_rain_year
+      planting_date: "2015-04-18"
+      harvest_window_rain_mm: 424.1
+    - year: 2012
+      label: observed_high_rain_year
+      planting_date: "2012-04-28"
+      harvest_window_rain_mm: 649.4
+  LCA:
+    - year: 2010
+      label: observed_low_rain_year
+      planting_date: "2010-06-06"
+      harvest_window_rain_mm: 288.5
+    - year: 2011
+      label: observed_mid_rain_year
+      planting_date: "2011-06-15"
+      harvest_window_rain_mm: 300.9
+    - year: 2008
+      label: observed_intermediate_rain_year_3
+      planting_date: "2008-06-19"
+      harvest_window_rain_mm: 357.1
+    - year: 2009
+      label: observed_high_rain_year
+      planting_date: "2009-06-14"
+      harvest_window_rain_mm: 417.1

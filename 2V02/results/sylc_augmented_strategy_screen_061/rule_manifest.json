@@ -1,0 +1,41 @@
+{
+  "status": "post_hoc_exploratory_not_confirmatory",
+  "validation_years": "2014-2023",
+  "site_local_reference": "four fixed conventional scenarios; expert is resource reference",
+  "yield_floor": "at least 95% of highest conventional mean yield",
+  "resource_cap": "I and N each <= 110% of expert mean",
+  "conservation": "at least 10% lower I or N than expert mean",
+  "operation_limit": "mean irrigation events <= 1.5x expert and <= 2/3 of irrigation events <=15mm",
+  "temporal": "at least 2 unique DAP+I+N schedules across 10 years, except YC",
+  "anchor": {
+    "SY": [
+      "historical",
+      0
+    ],
+    "LC": [
+      "historical",
+      0
+    ],
+    "YC": [
+      "wgen_004_05",
+      5
+    ],
+    "HL": [
+      "historical",
+      5
+    ],
+    "FQ": [
+      "wgen",
+      4
+    ]
+  },
+  "anchor_materiality": "if lower yield than anchor, >=10% lower I or N required",
+  "yc_source_note": "004_05 official results; 004_15 event table is a plotting derivative of 004_05",
+  "limitations": [
+    "FQ 2018 frozen weather gives zero yield in all scenarios",
+    "YC WP_ET unavailable for five of eight seeds; not a screen gate",
+    "thresholds were formulated after viewing outcomes and require sensitivity review"
+  ],
+  "implementation_source": "src/screen_five_site_ppo_233.py",
+  "implementation_sha256": "2c16101b7a6cada7075408693ab327a09d5fb53b040389b014d4da228f78c1c0"
+}

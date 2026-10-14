@@ -1,0 +1,74 @@
+{
+  "site": "SY",
+  "seed": 2,
+  "checkpoint": 100000,
+  "source_frozen_baselines": "benchmark_results/046_06_sya_originIC_046_10_sya_originIC_expanded_action_maskableppo_five_scenario_daily_ckpt100000",
+  "ppo_run": "benchmark_results/059SYs2_frozen_weather_augmented_100k",
+  "behavior_gate": {
+    "final_checkpoint": 100000,
+    "expected_validation_rows": 10,
+    "observed_validation_rows": 10,
+    "all_daily_files_exist": true,
+    "all_actions_on_declared_grid": true,
+    "positive_actions_present": true,
+    "positive_actions_transmitted": true,
+    "not_all_positive_actions_at_dap1": true,
+    "multiple_nonzero_action_pairs": true,
+    "new_action_levels_used": true,
+    "next_step_allowed": true
+  },
+  "replay_years": [
+    {
+      "year": 2014,
+      "snapshot": "results/sylc_external_weather_060/five_scenario_archive/SY/seed_02/snapshots/SYA/2014/rl_candidate",
+      "ppo_daily_rows": 144
+    },
+    {
+      "year": 2015,
+      "snapshot": "results/sylc_external_weather_060/five_scenario_archive/SY/seed_02/snapshots/SYA/2015/rl_candidate",
+      "ppo_daily_rows": 141
+    },
+    {
+      "year": 2016,
+      "snapshot": "results/sylc_external_weather_060/five_scenario_archive/SY/seed_02/snapshots/SYA/2016/rl_candidate",
+      "ppo_daily_rows": 141
+    },
+    {
+      "year": 2017,
+      "snapshot": "results/sylc_external_weather_060/five_scenario_archive/SY/seed_02/snapshots/SYA/2017/rl_candidate",
+      "ppo_daily_rows": 130
+    },
+    {
+      "year": 2018,
+      "snapshot": "results/sylc_external_weather_060/five_scenario_archive/SY/seed_02/snapshots/SYA/2018/rl_candidate",
+      "ppo_daily_rows": 129
+    },
+    {
+      "year": 2019,
+      "snapshot": "results/sylc_external_weather_060/five_scenario_archive/SY/seed_02/snapshots/SYA/2019/rl_candidate",
+      "ppo_daily_rows": 140
+    },
+    {
+      "year": 2020,
+      "snapshot": "results/sylc_external_weather_060/five_scenario_archive/SY/seed_02/snapshots/SYA/2020/rl_candidate",
+      "ppo_daily_rows": 138
+    },
+    {
+      "year": 2021,
+      "snapshot": "results/sylc_external_weather_060/five_scenario_archive/SY/seed_02/snapshots/SYA/2021/rl_candidate",
+      "ppo_daily_rows": 138
+    },
+    {
+      "year": 2022,
+      "snapshot": "results/sylc_external_weather_060/five_scenario_archive/SY/seed_02/snapshots/SYA/2022/rl_candidate",
+      "ppo_daily_rows": 142
+    },
+    {
+      "year": 2023,
+      "snapshot": "results/sylc_external_weather_060/five_scenario_archive/SY/seed_02/snapshots/SYA/2023/rl_candidate",
+      "ppo_daily_rows": 138
+    }
+  ],
+  "figure_count": 12,
+  "summary_rows": 50
+}

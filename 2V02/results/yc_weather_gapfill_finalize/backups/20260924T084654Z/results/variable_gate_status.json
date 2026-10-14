@@ -1,0 +1,95 @@
+{
+  "source": "results\\yc_weather_finalize_and_cli\\external_gapfill_validation.json",
+  "validation_overlap_years": "2005-2013 only; no 2014+ values read",
+  "thresholds_redefined": false,
+  "rain_event_agreement_threshold": 0.8,
+  "variables": {
+    "TMAX": {
+      "gate": "PASS",
+      "checks": {
+        "TMAX_coverage": true,
+        "TMAX_corrected_MAE": true,
+        "TMAX_pearson_r": true
+      },
+      "overlap_n": 3180,
+      "raw_bias_external_minus_official": 0.5639496855345911,
+      "corrected_mae": 1.7207975871207628,
+      "corrected_rmse": 2.315611333217442,
+      "pearson_r": 0.980835285177861,
+      "bias_correction_official_minus_external": -0.5639496855345911,
+      "correction_formula": "corrected = external_raw + mean(official - external_raw) on valid 2005-2013 overlap",
+      "limits": {
+        "TMAX_corrected_MAE_max_C": 3.0,
+        "temperature_minimum_pearson_r": 0.85
+      }
+    },
+    "TMIN": {
+      "gate": "PASS",
+      "checks": {
+        "TMIN_coverage": true,
+        "TMIN_corrected_MAE": true,
+        "TMIN_pearson_r": true
+      },
+      "overlap_n": 3180,
+      "raw_bias_external_minus_official": -0.435437106918239,
+      "corrected_mae": 1.6296259740516594,
+      "corrected_rmse": 2.119815636075487,
+      "pearson_r": 0.9814282423359058,
+      "bias_correction_official_minus_external": 0.435437106918239,
+      "correction_formula": "corrected = external_raw + mean(official - external_raw) on valid 2005-2013 overlap",
+      "limits": {
+        "TMIN_corrected_MAE_max_C": 3.0,
+        "temperature_minimum_pearson_r": 0.85
+      }
+    },
+    "SRAD": {
+      "gate": "PASS",
+      "checks": {
+        "SRAD_coverage": true,
+        "SRAD_corrected_MAE": true,
+        "SRAD_pearson_r": true
+      },
+      "overlap_n": 3136,
+      "raw_bias_external_minus_official": 0.0774607780612246,
+      "corrected_mae": 1.5617650620835066,
+      "corrected_rmse": 2.481938525323935,
+      "pearson_r": 0.9363290736032396,
+      "bias_correction_official_minus_external": -0.0774607780612246,
+      "correction_formula": "corrected = external_raw + mean(official - external_raw) on valid 2005-2013 overlap",
+      "limits": {
+        "SRAD_corrected_MAE_max_MJ_m2_d": 4.0,
+        "SRAD_minimum_pearson_r": 0.7
+      }
+    },
+    "RAIN": {
+      "gate": "BLOCKED",
+      "checks": {
+        "RAIN_coverage": true,
+        "RAIN_event_agreement": false,
+        "RAIN_monthly_total_ratio": true,
+        "RAIN_annual_total_ratio": true
+      },
+      "overlap_n": 3287,
+      "event_agreement_days": 2366,
+      "event_agreement_rate": 0.7198052935807727,
+      "event_agreement_threshold": 0.8,
+      "monthly_ratio_summary": {
+        "n": 93,
+        "mean": 1.3261416869682925,
+        "median": 1.13375,
+        "minimum": 0.4216981132075472,
+        "maximum": 7.4043478260869575
+      },
+      "annual_ratio_summary": {
+        "n": 9,
+        "mean": 1.0686092901412447,
+        "median": 1.0819660661185937,
+        "minimum": 0.8363181040801368,
+        "maximum": 1.3267343904856292
+      },
+      "nasa_rain_allowed": false,
+      "reason": "降雨事件一致率未达本项目预设80%门槛；NASA RAIN 不用于正式填补。"
+    }
+  },
+  "reproduction_passed": true
+}

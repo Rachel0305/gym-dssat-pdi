@@ -1,0 +1,20 @@
+{
+  "task_id": "080_00",
+  "task_name": "hla_lowIC_nepochs3_10k_native_auto_replay",
+  "station_code": "HLA",
+  "site": "HL",
+  "input_profile": "lowIC",
+  "seed": 0,
+  "checkpoint": 10000,
+  "ppo_task_id": "042_10",
+  "ppo_task_name": "hla_lowIC_nepochs3_25k_replay_source",
+  "ppo_run_dir": "benchmark_results/078_01_hla_lowIC_nepochs3_25k",
+  "baseline_root": "benchmark_results/054_02_hla_lowIC_four_baselines_static_level1",
+  "output_root": "benchmark_results/080_00_hla_lowIC_nepochs3_10k_native_auto_replay",
+  "validation_years": [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023],
+  "actions": {"irrigation_levels_mm": [0.0, 15.0, 30.0, 45.0], "nitrogen_levels_kg_ha": [0.0, 40.0, 80.0, 120.0]},
+  "observation_contract": {"raw": true, "forecast": false},
+  "scenarios": ["null", "recorded_farmer_template", "official_extension_expert", "dssat_auto", "rl_candidate"],
+  "external_n_control": false,
+  "endpoint_tolerance_kg_ha": 1.0
+}

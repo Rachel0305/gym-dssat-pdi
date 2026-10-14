@@ -1,0 +1,2 @@
+﻿station_code,site,year,split,split_rule,n_available_years_for_station
+FQA,FQ,2018,validation,按年份排序；前半训练、后半验证；奇数年份数时后半验证多1年,19

@@ -1,0 +1,15 @@
+{
+  "station_code": "FQA",
+  "input_profile": "originIC",
+  "resolved_input_root": "benchmark_results/088_00_fq2018_input_quality_correction/corrected_input",
+  "source_mzx": "benchmark_results/088_00_fq2018_input_quality_correction/corrected_input/FQ/CNFQ0801.MZX",
+  "source_mzx_sha256": "3bfe509af06d2c724b0635d0150ba31544d338039634ba6cc98b64d1c8422135",
+  "years": [
+    2018
+  ],
+  "recorded_template_source": "benchmark_results/027_05/027_05_daily_values.csv",
+  "recorded_template_total_irrigation_mm": 75.0,
+  "recorded_template_total_nitrogen_kg_ha": 144.0,
+  "issues": [],
+  "next_step_allowed": true
+}

@@ -1,0 +1,23 @@
+{
+  "version": "2V02",
+  "site_count": 5,
+  "regimes": [
+    "historical",
+    "augmented"
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "policy_count": 80,
+  "source_commit": "1b1cd300fae7f322e0c8759620943d5831449ce6",
+  "FQ2018": "corrected validation weather; training unchanged",
+  "YC_WP_ET": "complete exact observed-weather 160-year endpoints",
+  "excluded": "large caches/repeated rendered inputs/unrelated research; original source directories remain intact"
+}

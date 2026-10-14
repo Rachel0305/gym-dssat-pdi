@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/workspace/results/yc_random_weather_ppo/004_03/run_controlled_pilot.py", line 761, in train_model
+    model.learn(total_timesteps=timesteps, reset_num_timesteps=True, progress_bar=False, callback=callback.callback)
+  File "/home/gymusr/.local/lib/python3.10/site-packages/sb3_contrib/ppo_mask/ppo_mask.py", line 440, in learn
+    total_timesteps, callback = self._setup_learn(
+  File "/opt/gym_dssat_pdi/lib/python3.10/site-packages/stable_baselines3/common/base_class.py", line 423, in _setup_learn
+    self._last_obs = self.env.reset()  # type: ignore[assignment]
+  File "/opt/gym_dssat_pdi/lib/python3.10/site-packages/stable_baselines3/common/vec_env/dummy_vec_env.py", line 78, in reset
+    obs, self.reset_infos[env_idx] = self.envs[env_idx].reset(seed=self._seeds[env_idx], **maybe_options)
+  File "/opt/gym_dssat_pdi/lib/python3.10/site-packages/stable_baselines3/common/monitor.py", line 83, in reset
+    return self.env.reset(**kwargs)
+  File "/workspace/results/yc_random_weather_ppo/004_03/run_controlled_pilot.py", line 444, in reset
+    return self.outer._reset(seed, options)
+  File "/workspace/results/yc_random_weather_ppo/004_03/run_controlled_pilot.py", line 527, in _reset
+    raise RuntimeError(
+RuntimeError: PDI rseed1 mismatch: scheduled=1070, actual=55411; before={'closed': False, 'reset_counter': 1, 'rng_type': 'RandomState', 'constructor_rseed1_': 78653, 'socket_injection_trace': [{'instance_id': 139381551725104, 'rseed1_': 1070}]}; after_closed=False; after_reset_counter=2; after_rng=SequenceWeatherRng; adapter_calls=0

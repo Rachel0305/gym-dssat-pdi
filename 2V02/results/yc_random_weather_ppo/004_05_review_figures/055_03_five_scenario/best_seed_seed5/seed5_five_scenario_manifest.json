@@ -1,0 +1,32 @@
+{
+  "selected_seed": 5,
+  "years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "scenario_order": [
+    "null",
+    "recorded_farmer_template",
+    "dssat_auto_external_n",
+    "official_extension_expert",
+    "random_weather_ppo_seed5"
+  ],
+  "style_reference": "results/yc_random_weather_ppo/004_05_review_figures/055_03_five_scenario/best_seed_seed3",
+  "style_script_reference": "results/yc_random_weather_ppo/004_05_review_figures/055_03_five_scenario/plot_004_05_seed3_diagnostic.py",
+  "baseline_summary_source": "benchmark_results\\055_03_yca_lowIC_055_00_yca_lowIC_expanded_action_maskableppo_auto_nstd050_minimal_five_scenario_figures_ckpt100000\\tables\\055_03_yca_five_scenario_season_summary.csv",
+  "baseline_daily_source": "benchmark_results\\055_03_yca_lowIC_055_00_yca_lowIC_expanded_action_maskableppo_auto_nstd050_minimal_five_scenario_figures_ckpt100000\\tables\\055_03_yca_five_scenario_daily.csv",
+  "seed5_replay_source": "results\\yc_random_weather_ppo\\004_07_02_seed345_etcp_replay\\replay_episode_summary.csv",
+  "seed5_snapshots": "results/yc_random_weather_ppo/004_07_02_seed345_etcp_replay/snapshots/seed_5/YCA/{year}",
+  "wp_et_source": "Exact seed-5 Summary.OUT replay ETCP; WP_ET = yield / ETCP",
+  "common_reward_formula": "0.158*yield - 1.1*irrigation - 1.58*nitrogen",
+  "training_or_new_dssat_runs": false,
+  "png_count": 16
+}

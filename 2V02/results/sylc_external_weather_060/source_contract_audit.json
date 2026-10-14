@@ -1,0 +1,310 @@
+[
+  {
+    "site": "SY",
+    "seed": 0,
+    "domain": "augmented",
+    "config_sha256": "e1619886b658fe98407b404bfd77d90ee62d49f26127edd93f716bd323d394fa",
+    "summary": "benchmark_results/059SYs0_frozen_weather_augmented_100k/evaluation/032_22_checkpoint_validation_summary.csv",
+    "summary_sha256": "935fa82ad2f107930084e34915116d9bafee1451433976f89c6079068aff3f7e",
+    "rows": 40
+  },
+  {
+    "site": "SY",
+    "seed": 0,
+    "domain": "historical",
+    "config_sha256": "dc29ce6a6de3030a7b11d05cae0d0d33999e510a7591f489b2295594c56ea76d",
+    "summary": "benchmark_results/046_10_sya_originIC_expanded_action_maskableppo/evaluation/032_22_checkpoint_validation_summary.csv",
+    "summary_sha256": "26d21a7fa22d8c8c970355347ef870db2685a652d1f6078944ac48d67ab2003b",
+    "rows": 40
+  },
+  {
+    "site": "SY",
+    "seed": 1,
+    "domain": "augmented",
+    "config_sha256": "49e8521d2fd0f4285d559d58ef90073c0480976ceb0d1342e8b9a544dd80589d",
+    "summary": "benchmark_results/059SYs1_frozen_weather_augmented_100k/evaluation/032_22_checkpoint_validation_summary.csv",
+    "summary_sha256": "0670d2766888c722708f9fbd024732399d9c8cc06ce2ae066d00724a25b5030c",
+    "rows": 40
+  },
+  {
+    "site": "SY",
+    "seed": 1,
+    "domain": "historical",
+    "config_sha256": "4fb5025619cb76b93f8adbbdd3d2a9294a03b1d619ae72193723ce362f7134ea",
+    "summary": "benchmark_results/231_sy_seed1_sya_originIC_expanded_action_maskableppo_seed1_extension/evaluation/032_22_checkpoint_validation_summary.csv",
+    "summary_sha256": "271d4bf45c219c46ba4ecee434e17301d9303518240ca98dcd80f683c1359187",
+    "rows": 40
+  },
+  {
+    "site": "SY",
+    "seed": 2,
+    "domain": "augmented",
+    "config_sha256": "bcdbb7a444a32393e637d13c8fbcf7f9320434a0b7026bb8580593b0eb272842",
+    "summary": "benchmark_results/059SYs2_frozen_weather_augmented_100k/evaluation/032_22_checkpoint_validation_summary.csv",
+    "summary_sha256": "8c3d58ff9a3127b467c981ed7cffbc7308e19fe1ba1db60164afd4246f6f0dbd",
+    "rows": 40
+  },
+  {
+    "site": "SY",
+    "seed": 2,
+    "domain": "historical",
+    "config_sha256": "e170fdcc3120eda6ec3297b5fd493708a383b98264ca42b22c32c1b590e038d0",
+    "summary": "benchmark_results/231_sy_seed2_sya_originIC_expanded_action_maskableppo_seed2_extension/evaluation/032_22_checkpoint_validation_summary.csv",
+    "summary_sha256": "4c7e073c64f96b59a472fee2d6591e89670eaed646685d20321c14b13ace1d83",
+    "rows": 40
+  },
+  {
+    "site": "SY",
+    "seed": 3,
+    "domain": "augmented",
+    "config_sha256": "c7368d0d4a7913dd969d1573391f7e5b7df78284592ac770c94992f5a48a985a",
+    "summary": "benchmark_results/059SYs3_frozen_weather_augmented_100k/evaluation/032_22_checkpoint_validation_summary.csv",
+    "summary_sha256": "a53f5c07d8db52e1f17534d0086ae4dfcbe4e41cdb8c4eb97e74914fc6bc3d21",
+    "rows": 40
+  },
+  {
+    "site": "SY",
+    "seed": 3,
+    "domain": "historical",
+    "config_sha256": "9cd1da2637603eba0bd23387deda29b092d15c9989e84eaea5cea770eb83369e",
+    "summary": "benchmark_results/231_sy_seed3_sya_originIC_expanded_action_maskableppo_seed3_extension/evaluation/032_22_checkpoint_validation_summary.csv",
+    "summary_sha256": "dce4efef0416b7e00662feb19b546a13172f42d39555d899ce636250b486a546",
+    "rows": 40
+  },
+  {
+    "site": "SY",
+    "seed": 4,
+    "domain": "augmented",
+    "config_sha256": "939b7151f05b2b2f8b86b6e894c0fb6c4c3f081d6f7104e77af695c2ddbd8fe0",
+    "summary": "benchmark_results/059SYs4_frozen_weather_augmented_100k/evaluation/032_22_checkpoint_validation_summary.csv",
+    "summary_sha256": "bd39f5c454796d7090618b8863dce2388e2fe81048243d24919b91c7c76fc49a",
+    "rows": 40
+  },
+  {
+    "site": "SY",
+    "seed": 4,
+    "domain": "historical",
+    "config_sha256": "2ec2f380e69e1971a471eb60ffd187a3d59ee9c01c6cfbbfed3f5015d4985f7e",
+    "summary": "benchmark_results/231_sy_seed4_sya_originIC_expanded_action_maskableppo_seed4_extension/evaluation/032_22_checkpoint_validation_summary.csv",
+    "summary_sha256": "d0e3027b83f6708b05fe1fe62e3f28217a4c4c715a2a4a59a27ed9c071087350",
+    "rows": 40
+  },
+  {
+    "site": "SY",
+    "seed": 5,
+    "domain": "augmented",
+    "config_sha256": "dbd2d319ccf8557fe0e431da500013513158ea79c1fa0eed221e741bf35abc5d",
+    "summary": "benchmark_results/059SYs5_frozen_weather_augmented_100k/evaluation/032_22_checkpoint_validation_summary.csv",
+    "summary_sha256": "bab39e94df133670406db324c03d4e614c8caa03a01a12281d5ecfb349f2e59e",
+    "rows": 40
+  },
+  {
+    "site": "SY",
+    "seed": 5,
+    "domain": "historical",
+    "config_sha256": "1c597dc367d822057b24d1b60e3d2f33e8c581180c4d42a40df28aef56d7d0c9",
+    "summary": "benchmark_results/231_sy_seed5_sya_originIC_expanded_action_maskableppo_seed5_extension/evaluation/032_22_checkpoint_validation_summary.csv",
+    "summary_sha256": "fb7a3276a51a70daedf19ccf7efcb618ef8b6d08c04a791bd4caac0d5b9de320",
+    "rows": 40
+  },
+  {
+    "site": "SY",
+    "seed": 6,
+    "domain": "augmented",
+    "config_sha256": "20c96f277beba17bee590f69d3b077d4a9b2be7e761f1fbb4a0c78726b7f5edb",
+    "summary": "benchmark_results/059SYs6_frozen_weather_augmented_100k/evaluation/032_22_checkpoint_validation_summary.csv",
+    "summary_sha256": "95f944f32188716a717a3f0e78094a18ccebc957af0fe4532e89998583f3a7a3",
+    "rows": 40
+  },
+  {
+    "site": "SY",
+    "seed": 6,
+    "domain": "historical",
+    "config_sha256": "70e127b16346c9fb2997313c3a59c78dc9b053e644f827f6fc7bc183b1172fa5",
+    "summary": "benchmark_results/231_sy_seed6_sya_originIC_expanded_action_maskableppo_seed6_extension/evaluation/032_22_checkpoint_validation_summary.csv",
+    "summary_sha256": "69a06ba41eae0e05ef2dd654f57ea96ce9ce3d062dbd85619602f472dc51cd6d",
+    "rows": 40
+  },
+  {
+    "site": "SY",
+    "seed": 7,
+    "domain": "augmented",
+    "config_sha256": "b77ac3f55ef4d06feb31147198b01f235c784ecbd8228c2303eb189454b061b5",
+    "summary": "benchmark_results/059SYs7_frozen_weather_augmented_100k/evaluation/032_22_checkpoint_validation_summary.csv",
+    "summary_sha256": "1803497bbcecb4f7018813bc171e1e1c3773fd1fb626cfc1495742e45356736e",
+    "rows": 40
+  },
+  {
+    "site": "SY",
+    "seed": 7,
+    "domain": "historical",
+    "config_sha256": "8efcac2962f29a3d2fc6cd92e49e254cb2a69973557d7eddcffbef38b8955917",
+    "summary": "benchmark_results/231_sy_seed7_sya_originIC_expanded_action_maskableppo_seed7_extension/evaluation/032_22_checkpoint_validation_summary.csv",
+    "summary_sha256": "06e5f94eaabbd79bc2297e74ce75a0fb16179048d8ecd0cb8d10a53301e08f6f",
+    "rows": 40
+  },
+  {
+    "site": "SY",
+    "frozen_baseline": "benchmark_results/046_06_sya_originIC_046_10_sya_originIC_expanded_action_maskableppo_five_scenario_daily_ckpt100000/tables/046_06_sya_five_scenario_daily.csv",
+    "sha256": "7b0897e02a8e5baa07b729f6ed76b619cc932809e217c7fce034a4c049dafa6b"
+  },
+  {
+    "site": "SY",
+    "frozen_baseline": "benchmark_results/046_06_sya_originIC_046_10_sya_originIC_expanded_action_maskableppo_five_scenario_daily_ckpt100000/tables/046_06_sya_five_scenario_season_summary.csv",
+    "sha256": "d323a9c45b086325dcc44e7031e58562c04769420fed494d03cf0defc61900b3"
+  },
+  {
+    "site": "LC",
+    "seed": 0,
+    "domain": "augmented",
+    "config_sha256": "9954826ac4b5792c4f3f80f99187346def19b72e0050d493f01b7beb8971c552",
+    "summary": "benchmark_results/059LCs0_frozen_weather_augmented_100k/evaluation/032_22_checkpoint_validation_summary.csv",
+    "summary_sha256": "42842450537d04878487fd26ed70879a91edb3066e025c6aeb53d731216d8cba",
+    "rows": 40
+  },
+  {
+    "site": "LC",
+    "seed": 0,
+    "domain": "historical",
+    "config_sha256": "6dc5480c1d0fccea1903a98560ab01f0c3811e0f28665286684a1c8053587e42",
+    "summary": "benchmark_results/053_00_lca_lowIC_expanded_action_maskableppo/evaluation/032_22_checkpoint_validation_summary.csv",
+    "summary_sha256": "9c899a178b51c0df98b43035eef2d18014bd46b2d0651ebf4e648f4ed783c1be",
+    "rows": 40
+  },
+  {
+    "site": "LC",
+    "seed": 1,
+    "domain": "augmented",
+    "config_sha256": "3408508a88543f40651b98d07691464080e24d82cd80669af53c6890fcb3c992",
+    "summary": "benchmark_results/059LCs1_frozen_weather_augmented_100k/evaluation/032_22_checkpoint_validation_summary.csv",
+    "summary_sha256": "c5177529dfb4714a376eae8dc76b0d0e1ae7d3b0dcc2693f0f016745fd05e2d3",
+    "rows": 40
+  },
+  {
+    "site": "LC",
+    "seed": 1,
+    "domain": "historical",
+    "config_sha256": "34cf531d199a4882aa3735c4aabf881c133186db445785fd4d6ec486011b61e6",
+    "summary": "benchmark_results/231_lc_seed1_lca_lowIC_expanded_action_maskableppo_seed1_extension/evaluation/032_22_checkpoint_validation_summary.csv",
+    "summary_sha256": "3c5f7ca7c9d1a0d84e93aae29669e441b3522ba8ccc91a8e32803d57330e7eaa",
+    "rows": 40
+  },
+  {
+    "site": "LC",
+    "seed": 2,
+    "domain": "augmented",
+    "config_sha256": "dba2ef117131bc525578ec1d4fa877a63d323bf623c7e51de289197f57922f25",
+    "summary": "benchmark_results/059LCs2_frozen_weather_augmented_100k/evaluation/032_22_checkpoint_validation_summary.csv",
+    "summary_sha256": "6cd3b5630bc7f1f8f56a96451b31960fc5ceddc972248cd3700f88abffb718a5",
+    "rows": 40
+  },
+  {
+    "site": "LC",
+    "seed": 2,
+    "domain": "historical",
+    "config_sha256": "8f486ddd652fbb2cad56b617ad45d3e48ece2d21b2f73d6e3dad00e9889cc6cf",
+    "summary": "benchmark_results/231_lc_seed2_lca_lowIC_expanded_action_maskableppo_seed2_extension/evaluation/032_22_checkpoint_validation_summary.csv",
+    "summary_sha256": "1a115631b37cc77625f862cf081c5af03a7ff80e1078e8f41e74d21364076052",
+    "rows": 40
+  },
+  {
+    "site": "LC",
+    "seed": 3,
+    "domain": "augmented",
+    "config_sha256": "06f2eb40acfe1665842f11e0065f85200ce3b73334d73f25d52372d40d97dffa",
+    "summary": "benchmark_results/059LCs3_frozen_weather_augmented_100k/evaluation/032_22_checkpoint_validation_summary.csv",
+    "summary_sha256": "83a77dd08cf99242a808e15a5f640184601765777375f2e06d34ff3c94b3bef1",
+    "rows": 40
+  },
+  {
+    "site": "LC",
+    "seed": 3,
+    "domain": "historical",
+    "config_sha256": "36e55c0c224fce0b5f3610a1fa01ca8987ab0731c8e51203e87a58b629f8a0b4",
+    "summary": "benchmark_results/231_lc_seed3_lca_lowIC_expanded_action_maskableppo_seed3_extension/evaluation/032_22_checkpoint_validation_summary.csv",
+    "summary_sha256": "b954a3ad01427070b0cbc9a1edf59fde9d289e4204832263db7d73f276ee2946",
+    "rows": 40
+  },
+  {
+    "site": "LC",
+    "seed": 4,
+    "domain": "augmented",
+    "config_sha256": "c6ccb8e6d920731e6eaf9837fe1e75b298569f3fa35f2f0b00fc242cff289f3b",
+    "summary": "benchmark_results/059LCs4_frozen_weather_augmented_100k/evaluation/032_22_checkpoint_validation_summary.csv",
+    "summary_sha256": "6f7451e36c661f1a95a34f36e8caa9fe3d8b5c06cba82f5c7a09c75a8c66ba64",
+    "rows": 40
+  },
+  {
+    "site": "LC",
+    "seed": 4,
+    "domain": "historical",
+    "config_sha256": "a70d0c5072759feffe49e291f73648597a6d8c71e18ec6b238ccb055932275d5",
+    "summary": "benchmark_results/231_lc_seed4_lca_lowIC_expanded_action_maskableppo_seed4_extension/evaluation/032_22_checkpoint_validation_summary.csv",
+    "summary_sha256": "53b9c1ca762870cf4c34f82bfaa2b60e7e178bf899336e3ced7d961cb5f81379",
+    "rows": 40
+  },
+  {
+    "site": "LC",
+    "seed": 5,
+    "domain": "augmented",
+    "config_sha256": "e6ec53625416ac04bca27b60b91331f997d1260b06d9954f2e15c0eccfb9bb4f",
+    "summary": "benchmark_results/059LCs5_frozen_weather_augmented_100k/evaluation/032_22_checkpoint_validation_summary.csv",
+    "summary_sha256": "81574d5a5b0490c50112ac8cb2c0e06b4a560973b9641ba6aecda7dbd4cc79d5",
+    "rows": 40
+  },
+  {
+    "site": "LC",
+    "seed": 5,
+    "domain": "historical",
+    "config_sha256": "b6c6e3e884deec12bf4f23b245f9e8c2564b24dd9e9c9054100a7eb40cc6f1c6",
+    "summary": "benchmark_results/231_lc_seed5_lca_lowIC_expanded_action_maskableppo_seed5_extension/evaluation/032_22_checkpoint_validation_summary.csv",
+    "summary_sha256": "bc1d71e895f3b46bb528c1f42cbdd06c407ff08101047125c496dd5d5e1f306a",
+    "rows": 40
+  },
+  {
+    "site": "LC",
+    "seed": 6,
+    "domain": "augmented",
+    "config_sha256": "e18174a483ec0f32fa7b50700d3be7e7747ae7aece0be28f6de841092f9fcd6e",
+    "summary": "benchmark_results/059LCs6_frozen_weather_augmented_100k/evaluation/032_22_checkpoint_validation_summary.csv",
+    "summary_sha256": "e61beb5eb8a345976c1cd2b5dee9073779d3acb200a40cde3165d81c90948c6a",
+    "rows": 40
+  },
+  {
+    "site": "LC",
+    "seed": 6,
+    "domain": "historical",
+    "config_sha256": "1aa22d78e28666945985d18e134b3087d2cd8b753f345148721d3d72b17ccdf4",
+    "summary": "benchmark_results/231_lc_seed6_lca_lowIC_expanded_action_maskableppo_seed6_extension/evaluation/032_22_checkpoint_validation_summary.csv",
+    "summary_sha256": "733e658108f8a25a11883d462af915e3cad256d606b2eb0e6318ff79a248bbe0",
+    "rows": 40
+  },
+  {
+    "site": "LC",
+    "seed": 7,
+    "domain": "augmented",
+    "config_sha256": "864c1416ef88688b2fcbc0b55759cb67cb7f1e1698b4d468033507e386136926",
+    "summary": "benchmark_results/059LCs7_frozen_weather_augmented_100k/evaluation/032_22_checkpoint_validation_summary.csv",
+    "summary_sha256": "196bde62de625ec77e81608d28918d91bdb19263de3dab88e4fe598903f8f565",
+    "rows": 40
+  },
+  {
+    "site": "LC",
+    "seed": 7,
+    "domain": "historical",
+    "config_sha256": "d0b2c7d1c49b7e128fed78b278495ff261eb363576fd867e3a68ec145914e5db",
+    "summary": "benchmark_results/231_lc_seed7_lca_lowIC_expanded_action_maskableppo_seed7_extension/evaluation/032_22_checkpoint_validation_summary.csv",
+    "summary_sha256": "fda26ce1b766d0c9e4cbc5ae08d2baf71146664b47e53cd78f6d4e380a8fb424",
+    "rows": 40
+  },
+  {
+    "site": "LC",
+    "frozen_baseline": "benchmark_results/053_03_lca_lowIC_053_00_lca_lowIC_expanded_action_maskableppo_auto_nstd050_minimal_five_scenario_figures_ckpt100000/tables/053_03_lca_five_scenario_daily.csv",
+    "sha256": "4ea4f85e6145c0761cd21bd9b3b007b59f9d5953f7222606e57f69a903ee005d"
+  },
+  {
+    "site": "LC",
+    "frozen_baseline": "benchmark_results/053_03_lca_lowIC_053_00_lca_lowIC_expanded_action_maskableppo_auto_nstd050_minimal_five_scenario_figures_ckpt100000/tables/053_03_lca_five_scenario_season_summary.csv",
+    "sha256": "a144c4a0575a1ec56c92e9fe43a4f1d46c2ff9df4f2502fc38df172979bc14d0"
+  }
+]

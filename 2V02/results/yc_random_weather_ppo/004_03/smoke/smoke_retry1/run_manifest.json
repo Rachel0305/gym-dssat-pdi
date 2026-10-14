@@ -1,0 +1,20 @@
+{
+  "checkpoint_steps_actual": {},
+  "checkpoint_steps_requested": [
+    432
+  ],
+  "completed_training_episodes": 0,
+  "elapsed_seconds": 2.96,
+  "error": "Traceback (most recent call last):\n  File \"/workspace/results/yc_random_weather_ppo/004_03/run_controlled_pilot.py\", line 761, in train_model\n    model.learn(total_timesteps=timesteps, reset_num_timesteps=True, progress_bar=False, callback=callback.callback)\n  File \"/home/gymusr/.local/lib/python3.10/site-packages/sb3_contrib/ppo_mask/ppo_mask.py\", line 440, in learn\n    total_timesteps, callback = self._setup_learn(\n  File \"/opt/gym_dssat_pdi/lib/python3.10/site-packages/stable_baselines3/common/base_class.py\", line 423, in _setup_learn\n    self._last_obs = self.env.reset()  # type: ignore[assignment]\n  File \"/opt/gym_dssat_pdi/lib/python3.10/site-packages/stable_baselines3/common/vec_env/dummy_vec_env.py\", line 78, in reset\n    obs, self.reset_infos[env_idx] = self.envs[env_idx].reset(seed=self._seeds[env_idx], **maybe_options)\n  File \"/opt/gym_dssat_pdi/lib/python3.10/site-packages/stable_baselines3/common/monitor.py\", line 83, in reset\n    return self.env.reset(**kwargs)\n  File \"/workspace/results/yc_random_weather_ppo/004_03/run_controlled_pilot.py\", line 444, in reset\n    return self.outer._reset(seed, options)\n  File \"/workspace/results/yc_random_weather_ppo/004_03/run_controlled_pilot.py\", line 527, in _reset\n    raise RuntimeError(\nRuntimeError: PDI rseed1 mismatch: scheduled=1070, actual=55411; before={'closed': False, 'reset_counter': 1, 'rng_type': 'RandomState', 'constructor_rseed1_': 78653, 'socket_injection_trace': [{'instance_id': 139381551725104, 'rseed1_': 1070}]}; after_closed=False; after_reset_counter=2; after_rng=SequenceWeatherRng; adapter_calls=0\n",
+  "max_process_tree_rss_mb": null,
+  "memory_stop_threshold_mb": 6000,
+  "model_dir": "results/yc_random_weather_ppo/004_03/smoke/smoke_retry1/models",
+  "model_final": "results/yc_random_weather_ppo/004_03/smoke/smoke_retry1/models/checkpoint_432.zip",
+  "ppo_seed": 0,
+  "run_status": "failed",
+  "total_timesteps_actual": 0,
+  "total_timesteps_requested": 432,
+  "training_regime": "RANDOM_WEATHER_WGEN",
+  "training_weather_schedule_id": "wgen_rseed1_64004_v1",
+  "training_weather_source": "WGEN_random"
+}

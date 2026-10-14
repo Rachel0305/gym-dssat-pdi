@@ -1,0 +1,16 @@
+﻿line_no,date,doy,tmax_c,old_tmin_c,new_tmin_c,reason
+218,2018213,213,35.7,-23.3,23.3,summer TMIN sign inconsistency: TMAX>15 with negative TMIN
+220,2018215,215,35.0,-22.9,22.9,summer TMIN sign inconsistency: TMAX>15 with negative TMIN
+221,2018216,216,33.5,-22.9,22.9,summer TMIN sign inconsistency: TMAX>15 with negative TMIN
+223,2018218,218,36.8,-25.5,25.5,summer TMIN sign inconsistency: TMAX>15 with negative TMIN
+225,2018220,220,37.3,-28.9,28.9,summer TMIN sign inconsistency: TMAX>15 with negative TMIN
+227,2018222,222,35.9,-24.3,24.3,summer TMIN sign inconsistency: TMAX>15 with negative TMIN
+230,2018225,225,34.0,-24.4,24.4,summer TMIN sign inconsistency: TMAX>15 with negative TMIN
+231,2018226,226,32.6,-22.6,22.6,summer TMIN sign inconsistency: TMAX>15 with negative TMIN
+232,2018227,227,32.9,-21.2,21.2,summer TMIN sign inconsistency: TMAX>15 with negative TMIN
+235,2018230,230,26.9,-18.6,18.6,summer TMIN sign inconsistency: TMAX>15 with negative TMIN
+236,2018231,231,24.7,-18.6,18.6,summer TMIN sign inconsistency: TMAX>15 with negative TMIN
+239,2018234,234,30.2,-19.4,19.4,summer TMIN sign inconsistency: TMAX>15 with negative TMIN
+241,2018236,236,32.1,-23.4,23.4,summer TMIN sign inconsistency: TMAX>15 with negative TMIN
+242,2018237,237,32.5,-25.4,25.4,summer TMIN sign inconsistency: TMAX>15 with negative TMIN
+247,2018242,242,28.6,-20.4,20.4,summer TMIN sign inconsistency: TMAX>15 with negative TMIN

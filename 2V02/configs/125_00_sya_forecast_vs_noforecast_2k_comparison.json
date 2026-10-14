@@ -1,0 +1,22 @@
+{
+  "task_id": "125_00",
+  "task_name": "sya_forecast_vs_noforecast_2k_comparison",
+  "station_code": "SYA",
+  "site": "SY",
+  "seed": 0,
+  "checkpoint_step": 2000,
+  "forecast_run": "benchmark_results/111_00_sya_originIC_rolling7d_perfect_forecast_smoke2k_smoke2k",
+  "no_forecast_run": "benchmark_results/046_10_sya_originIC_expanded_action_maskableppo_smoke2k",
+  "validation_years": [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023],
+  "actions": {"irrigation_levels_mm": [0.0, 15.0, 30.0, 45.0], "nitrogen_levels_kg_ha": [0.0, 40.0, 80.0, 120.0]},
+  "observation_contract": {
+    "base": "046_02_raw_observation",
+    "forecast_variant": "rolling_7d_perfect_hindcast",
+    "no_forecast_variant": "raw_observation",
+    "native_dssat_automatic_irrigation": false,
+    "external_n": false
+  },
+  "scope": {"read_only": true, "training": false, "wp_et_policy": "report_missing_if_not_in_source"},
+  "output_root": "benchmark_results/125_00_sya_forecast_vs_noforecast_2k_comparison",
+  "prompt": "prompts/2026-08-16_sya_forecast_vs_noforecast_2k_comparison.md"
+}

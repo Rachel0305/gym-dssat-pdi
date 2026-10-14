@@ -1,0 +1,38 @@
+protocol_id: deterministic_water_nitrogen_optimization_025
+method_status: preregistered
+method_type: dssat_constrained_deterministic_optimization
+scope:
+  retrospective_oracle:
+    uses_target_year_weather: true
+    claim: site_year_upper_bound_only
+  fixed_cross_year_strategy:
+    reoptimization_in_validation_year: false
+    claim: cross_year_transfer_only_if_validation_thresholds_pass
+metrics:
+  yield_kg_ha: HWAM
+  wp_et_kg_m3: yield_kg_ha / et_mm / 10
+  pfp_n_kg_kg: yield_kg_ha / applied_nitrogen_kg_ha
+comparators:
+  required: [null, dssat_auto, official_extension_expert]
+  descriptive: [recorded_farmer]
+feasibility_order:
+  - yield_ge_max_of_auto_and_official_expert
+  - wp_et_ge_max_of_auto_and_official_expert
+  - pfp_n_ge_official_expert
+  - resource_budgets_respected
+  - no_unjustified_late_nitrogen
+tie_break_order:
+  - lower_nitrogen
+  - lower_irrigation
+  - higher_yield
+first_cross_year_test:
+  station: SY
+  selection_year: 2014
+  selection_year_ic: 2
+  validation_year: 2012
+  validation_year_ic: 1
+  candidate_source: benchmark_results/022_01/022_01_strict_success_candidates.csv
+  candidate_count_expected: 18
+  validation_year_candidate_reselection: forbidden
+  next_required_step: validate_input_provenance_and_four_baselines_before_candidate_transfer
+

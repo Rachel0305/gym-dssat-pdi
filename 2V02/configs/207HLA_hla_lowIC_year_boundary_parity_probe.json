@@ -1,0 +1,14 @@
+{
+  "task_id": "207HLA",
+  "task_name": "hla_lowIC_year_boundary_parity_probe",
+  "status": "diagnostic_only_no_training",
+  "source_input_root": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013_lowIC_manual",
+  "probe_input_root": "DSSAT_auto_validation/hla_lowIC_year_boundary_probe_207_v1",
+  "source_year": 2005,
+  "clone_years": [2029, 2030],
+  "checkpoint_step": 10000,
+  "invariant": "All three WTH files have identical SRAD/TMAX/TMIN/RAIN sequences; only the four-digit year in DATE changes.",
+  "training_allowed": false,
+  "reward_change_allowed": false,
+  "action_change_allowed": false
+}

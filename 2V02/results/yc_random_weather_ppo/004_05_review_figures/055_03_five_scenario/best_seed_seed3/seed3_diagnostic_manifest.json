@@ -1,0 +1,25 @@
+{
+  "selected_seed": 3,
+  "selection_rule": "Highest per-seed canonical reward after giving observed-weather and heldout-WGEN domain means equal weight; descriptive post-hoc selection, not confirmatory evidence.",
+  "selection_basis": "results/yc_random_weather_ppo/004_05/all_evaluation_episode_level_0_7.csv",
+  "style_reference": "benchmark_results/055_03_yca_lowIC_055_00_yca_lowIC_expanded_action_maskableppo_auto_nstd050_minimal_five_scenario_figures_ckpt100000/figures and src/055_yca_lowIC_site_transfer/run_055_03_yca_lowIC_five_scenario_figures.py",
+  "comparison_baseline_source": "benchmark_results\\055_03_yca_lowIC_055_00_yca_lowIC_expanded_action_maskableppo_auto_nstd050_minimal_five_scenario_figures_ckpt100000\\tables\\055_03_yca_five_scenario_season_summary.csv",
+  "episode_source": "results\\yc_random_weather_ppo\\004_05\\all_evaluation_episode_level_0_7.csv",
+  "management_step_source": "results\\yc_random_weather_ppo\\004_05\\evaluation_step_level_all_models.csv",
+  "years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "WP_ET": "unavailable for this PPO seed: no matching 004_05 ETCP replay",
+  "no_retraining_or_DSSAT_replay": true,
+  "common_reward_formula": "0.158*yield - 1.1*irrigation - 1.58*nitrogen (055_03 comparison formula)",
+  "canonical_reward_kept_separate": true
+}

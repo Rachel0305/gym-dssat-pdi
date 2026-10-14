@@ -1,0 +1,18 @@
+{
+  "log_saving_path": "/workspaces/gym-dssat-pdi/DSSAT_auto_validation/multisite_new_cultivar_inputs_013/SY/sy_2012_2014_ic_diagnosis_016_01_runs/sy2014_ic1_icdat14100/sy2014_ic1_icdat14100.log",
+  "mode": "all",
+  "seed": 0,
+  "random_weather": false,
+  "evaluation": true,
+  "fileX_template_path": "/workspaces/gym-dssat-pdi/DSSAT_auto_validation/multisite_new_cultivar_inputs_013/SY/sy_2012_2014_ic_diagnosis_016_01_runs/sy2014_ic1_icdat14100/input/CNSY1201.MZX",
+  "experiment_number": 2,
+  "auxiliary_file_paths": [
+    "/workspaces/gym-dssat-pdi/DSSAT_auto_validation/multisite_new_cultivar_inputs_013/SY/sy_2012_2014_ic_diagnosis_016_01_runs/sy2014_ic1_icdat14100/input/CNSY1401.WTH",
+    "/workspaces/gym-dssat-pdi/DSSAT_auto_validation/multisite_new_cultivar_inputs_013/SY/sy_2012_2014_ic_diagnosis_016_01_runs/sy2014_ic1_icdat14100/input/SOIL.SOL",
+    "/workspaces/gym-dssat-pdi/DSSAT_auto_validation/multisite_new_cultivar_inputs_013/SY/sy_2012_2014_ic_diagnosis_016_01_runs/sy2014_ic1_icdat14100/input/MZCER048.CUL",
+    "/workspaces/gym-dssat-pdi/DSSAT_auto_validation/multisite_new_cultivar_inputs_013/SY/sy_2012_2014_ic_diagnosis_016_01_runs/sy2014_ic1_icdat14100/input/CNSY.CLI",
+    "/workspaces/gym-dssat-pdi/DSSAT_auto_validation/multisite_new_cultivar_inputs_013/SY/sy_2012_2014_ic_diagnosis_016_01_runs/sy2014_ic1_icdat14100/input/CNSY.PRM",
+    "/workspaces/gym-dssat-pdi/DSSAT_auto_validation/multisite_new_cultivar_inputs_013/SY/sy_2012_2014_ic_diagnosis_016_01_runs/sy2014_ic1_icdat14100/input/CNSY.wdb"
+  ],
+  "run_dssat_location": "/opt/dssat_pdi/run_dssat"
+}

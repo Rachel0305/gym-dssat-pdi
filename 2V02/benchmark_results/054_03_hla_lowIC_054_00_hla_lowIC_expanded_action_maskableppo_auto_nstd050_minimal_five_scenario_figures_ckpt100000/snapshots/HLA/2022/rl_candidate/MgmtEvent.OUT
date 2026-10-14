@@ -1,0 +1,59 @@
+*MANAGEMENT OPERATIONS EVENT SUMMARY
+
+*DSSAT Cropping System Model Ver. 4.8.0.024 -stable  AUG 06, 2026 15:09:42
+!---------------------------------------------------------------------------------------------
+@RUN Date........  DOY    DAS    DAP  CR  Stage         Operation       Quantities
+!---------------------------------------------------------------------------------------------
+   1 MAY  1, 2022  121      1      0  MZ  14 Start Sim 
+   1 MAY  5, 2022  125      5      0  MZ                Planting       
+   1 MAY  5, 2022  125      5      0  MZ  07 Sowing    
+   1 MAY  6, 2022  126      6      1  MZ  08 Germinate 
+   1 MAY 20, 2022  140     20     15  MZ  09 Emergence 
+   1 JUN 12, 2022  163     43     38  MZ  01 End Juveni
+   1 JUN 19, 2022  170     50     45  MZ  02 Floral Ini
+   1 JUL 25, 2022  206     86     81  MZ  03 75% Silkin
+   1 AUG  4, 2022  216     96     91  MZ  04 Beg Gr Fil
+   1 SEP 15, 2022  258    138    133  MZ  05 End Gr Fil
+   1 SEP 18, 2022  261    141    136  MZ  16 Harvest   
+   1 SEP 18, 2022  261    141    136  MZ                Harvest Yield    3749. kg/ha
+ 
+
+*DSSAT Cropping System Model Ver. 4.8.0.024 -stable  AUG 06, 2026 15:09:43
+!---------------------------------------------------------------------------------------------
+@RUN Date........  DOY    DAS    DAP  CR  Stage         Operation       Quantities
+!---------------------------------------------------------------------------------------------
+   1 MAY  1, 2022  121      1      0  MZ  14 Start Sim 
+   1 MAY  5, 2022  125      5      0  MZ                Planting       
+   1 MAY  5, 2022  125      5      0  MZ  07 Sowing    
+   1 MAY  6, 2022  126      6      1  MZ  08 Germinate 
+   1 MAY 20, 2022  140     20     15  MZ  09 Emergence 
+   1 JUN 12, 2022  163     43     38  MZ  01 End Juveni
+   1 JUN 19, 2022  170     50     45  MZ  02 Floral Ini
+   1 JUL 25, 2022  206     86     81  MZ  03 75% Silkin
+   1 AUG  4, 2022  216     96     91  MZ  04 Beg Gr Fil
+   1 SEP 15, 2022  258    138    133  MZ  05 End Gr Fil
+   1 SEP 18, 2022  261    141    136  MZ  16 Harvest   
+   1 SEP 18, 2022  261    141    136  MZ                Harvest Yield    3749. kg/ha
+ 
+
+*DSSAT Cropping System Model Ver. 4.8.0.024 -stable  AUG 06, 2026 15:09:44
+!---------------------------------------------------------------------------------------------
+@RUN Date........  DOY    DAS    DAP  CR  Stage         Operation       Quantities
+!---------------------------------------------------------------------------------------------
+   1 MAY  1, 2022  121      1      0  MZ  14 Start Sim 
+   1 MAY  1, 2022  121      1      0  MZ                Fertilizer         80. kg[N]/ha 
+   1 MAY  1, 2022  121      1      0  MZ                Irrigation        45.0 mm
+   1 MAY  5, 2022  125      5      0  MZ                Planting       
+   1 MAY  5, 2022  125      5      0  MZ  07 Sowing    
+   1 MAY  6, 2022  126      6      1  MZ  08 Germinate 
+   1 MAY 13, 2022  133     13      8  MZ                Fertilizer         40. kg[N]/ha 
+   1 MAY 13, 2022  133     13      8  MZ                Irrigation        30.0 mm
+   1 MAY 20, 2022  140     20     15  MZ  09 Emergence 
+   1 JUN 12, 2022  163     43     38  MZ  01 End Juveni
+   1 JUN 19, 2022  170     50     45  MZ  02 Floral Ini
+   1 JUL 25, 2022  206     86     81  MZ  03 75% Silkin
+   1 AUG  4, 2022  216     96     91  MZ  04 Beg Gr Fil
+   1 SEP 15, 2022  258    138    133  MZ  05 End Gr Fil
+   1 SEP 18, 2022  261    141    136  MZ  16 Harvest   
+   1 SEP 18, 2022  261    141    136  MZ                Harvest Yield    6559. kg/ha
+ 

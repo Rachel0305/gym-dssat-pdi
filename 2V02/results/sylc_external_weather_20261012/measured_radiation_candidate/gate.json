@@ -1,0 +1,640 @@
+{
+  "SY": {
+    "quantitative_qc": true,
+    "crosscheck": {
+      "method": "independent statistics.mean/stdev two-pass calculation and separately recounted raw daily groups",
+      "months_checked": 12,
+      "checks_per_month": 15,
+      "passed": false,
+      "month_results": [
+        {
+          "month": 1,
+          "independent_statistics_checked": [
+            "SDMN",
+            "SDSD",
+            "SWMN",
+            "SWSD",
+            "XDMN",
+            "XDSD",
+            "XWMN",
+            "XWSD",
+            "NAMN",
+            "NASD",
+            "ALPHA",
+            "PDW",
+            "PWW_audit",
+            "RTOT",
+            "RNUM"
+          ],
+          "mismatches": [
+            "RNUM"
+          ],
+          "wet_count_independent": 37,
+          "dry_count_independent": 242
+        },
+        {
+          "month": 2,
+          "independent_statistics_checked": [
+            "SDMN",
+            "SDSD",
+            "SWMN",
+            "SWSD",
+            "XDMN",
+            "XDSD",
+            "XWMN",
+            "XWSD",
+            "NAMN",
+            "NASD",
+            "ALPHA",
+            "PDW",
+            "PWW_audit",
+            "RTOT",
+            "RNUM"
+          ],
+          "mismatches": [
+            "RNUM"
+          ],
+          "wet_count_independent": 42,
+          "dry_count_independent": 212
+        },
+        {
+          "month": 3,
+          "independent_statistics_checked": [
+            "SDMN",
+            "SDSD",
+            "SWMN",
+            "SWSD",
+            "XDMN",
+            "XDSD",
+            "XWMN",
+            "XWSD",
+            "NAMN",
+            "NASD",
+            "ALPHA",
+            "PDW",
+            "PWW_audit",
+            "RTOT",
+            "RNUM"
+          ],
+          "mismatches": [
+            "RNUM"
+          ],
+          "wet_count_independent": 49,
+          "dry_count_independent": 230
+        },
+        {
+          "month": 4,
+          "independent_statistics_checked": [
+            "SDMN",
+            "SDSD",
+            "SWMN",
+            "SWSD",
+            "XDMN",
+            "XDSD",
+            "XWMN",
+            "XWSD",
+            "NAMN",
+            "NASD",
+            "ALPHA",
+            "PDW",
+            "PWW_audit",
+            "RTOT",
+            "RNUM"
+          ],
+          "mismatches": [
+            "RNUM"
+          ],
+          "wet_count_independent": 70,
+          "dry_count_independent": 200
+        },
+        {
+          "month": 5,
+          "independent_statistics_checked": [
+            "SDMN",
+            "SDSD",
+            "SWMN",
+            "SWSD",
+            "XDMN",
+            "XDSD",
+            "XWMN",
+            "XWSD",
+            "NAMN",
+            "NASD",
+            "ALPHA",
+            "PDW",
+            "PWW_audit",
+            "RTOT",
+            "RNUM"
+          ],
+          "mismatches": [
+            "RNUM"
+          ],
+          "wet_count_independent": 94,
+          "dry_count_independent": 185
+        },
+        {
+          "month": 6,
+          "independent_statistics_checked": [
+            "SDMN",
+            "SDSD",
+            "SWMN",
+            "SWSD",
+            "XDMN",
+            "XDSD",
+            "XWMN",
+            "XWSD",
+            "NAMN",
+            "NASD",
+            "ALPHA",
+            "PDW",
+            "PWW_audit",
+            "RTOT",
+            "RNUM"
+          ],
+          "mismatches": [
+            "RNUM"
+          ],
+          "wet_count_independent": 116,
+          "dry_count_independent": 154
+        },
+        {
+          "month": 7,
+          "independent_statistics_checked": [
+            "SDMN",
+            "SDSD",
+            "SWMN",
+            "SWSD",
+            "XDMN",
+            "XDSD",
+            "XWMN",
+            "XWSD",
+            "NAMN",
+            "NASD",
+            "ALPHA",
+            "PDW",
+            "PWW_audit",
+            "RTOT",
+            "RNUM"
+          ],
+          "mismatches": [
+            "RNUM"
+          ],
+          "wet_count_independent": 123,
+          "dry_count_independent": 156
+        },
+        {
+          "month": 8,
+          "independent_statistics_checked": [
+            "SDMN",
+            "SDSD",
+            "SWMN",
+            "SWSD",
+            "XDMN",
+            "XDSD",
+            "XWMN",
+            "XWSD",
+            "NAMN",
+            "NASD",
+            "ALPHA",
+            "PDW",
+            "PWW_audit",
+            "RTOT",
+            "RNUM"
+          ],
+          "mismatches": [
+            "RNUM"
+          ],
+          "wet_count_independent": 100,
+          "dry_count_independent": 179
+        },
+        {
+          "month": 9,
+          "independent_statistics_checked": [
+            "SDMN",
+            "SDSD",
+            "SWMN",
+            "SWSD",
+            "XDMN",
+            "XDSD",
+            "XWMN",
+            "XWSD",
+            "NAMN",
+            "NASD",
+            "ALPHA",
+            "PDW",
+            "PWW_audit",
+            "RTOT",
+            "RNUM"
+          ],
+          "mismatches": [
+            "RNUM"
+          ],
+          "wet_count_independent": 52,
+          "dry_count_independent": 218
+        },
+        {
+          "month": 10,
+          "independent_statistics_checked": [
+            "SDMN",
+            "SDSD",
+            "SWMN",
+            "SWSD",
+            "XDMN",
+            "XDSD",
+            "XWMN",
+            "XWSD",
+            "NAMN",
+            "NASD",
+            "ALPHA",
+            "PDW",
+            "PWW_audit",
+            "RTOT",
+            "RNUM"
+          ],
+          "mismatches": [
+            "RNUM"
+          ],
+          "wet_count_independent": 64,
+          "dry_count_independent": 215
+        },
+        {
+          "month": 11,
+          "independent_statistics_checked": [
+            "SDMN",
+            "SDSD",
+            "SWMN",
+            "SWSD",
+            "XDMN",
+            "XDSD",
+            "XWMN",
+            "XWSD",
+            "NAMN",
+            "NASD",
+            "ALPHA",
+            "PDW",
+            "PWW_audit",
+            "RTOT",
+            "RNUM"
+          ],
+          "mismatches": [
+            "RNUM"
+          ],
+          "wet_count_independent": 59,
+          "dry_count_independent": 211
+        },
+        {
+          "month": 12,
+          "independent_statistics_checked": [
+            "SDMN",
+            "SDSD",
+            "SWMN",
+            "SWSD",
+            "XDMN",
+            "XDSD",
+            "XWMN",
+            "XWSD",
+            "NAMN",
+            "NASD",
+            "ALPHA",
+            "PDW",
+            "PWW_audit",
+            "RTOT",
+            "RNUM"
+          ],
+          "mismatches": [
+            "RNUM"
+          ],
+          "wet_count_independent": 52,
+          "dry_count_independent": 227
+        }
+      ]
+    },
+    "rain_fallback_days": 185,
+    "estimated_rsds_used": false,
+    "january_no_clamp_full_and_leave_one_out": true,
+    "stage": "CANDIDATE_ONLY_NOT_INJECTED",
+    "remaining": [
+      "mixed_source_rain_sensitivity",
+      "radiation_gap_effect",
+      "weather_generation_and_DSSAT_smoke"
+    ]
+  },
+  "LC": {
+    "quantitative_qc": true,
+    "crosscheck": {
+      "method": "independent statistics.mean/stdev two-pass calculation and separately recounted raw daily groups",
+      "months_checked": 12,
+      "checks_per_month": 15,
+      "passed": false,
+      "month_results": [
+        {
+          "month": 1,
+          "independent_statistics_checked": [
+            "SDMN",
+            "SDSD",
+            "SWMN",
+            "SWSD",
+            "XDMN",
+            "XDSD",
+            "XWMN",
+            "XWSD",
+            "NAMN",
+            "NASD",
+            "ALPHA",
+            "PDW",
+            "PWW_audit",
+            "RTOT",
+            "RNUM"
+          ],
+          "mismatches": [
+            "RNUM"
+          ],
+          "wet_count_independent": 15,
+          "dry_count_independent": 264
+        },
+        {
+          "month": 2,
+          "independent_statistics_checked": [
+            "SDMN",
+            "SDSD",
+            "SWMN",
+            "SWSD",
+            "XDMN",
+            "XDSD",
+            "XWMN",
+            "XWSD",
+            "NAMN",
+            "NASD",
+            "ALPHA",
+            "PDW",
+            "PWW_audit",
+            "RTOT",
+            "RNUM"
+          ],
+          "mismatches": [
+            "RNUM"
+          ],
+          "wet_count_independent": 30,
+          "dry_count_independent": 224
+        },
+        {
+          "month": 3,
+          "independent_statistics_checked": [
+            "SDMN",
+            "SDSD",
+            "SWMN",
+            "SWSD",
+            "XDMN",
+            "XDSD",
+            "XWMN",
+            "XWSD",
+            "NAMN",
+            "NASD",
+            "ALPHA",
+            "PDW",
+            "PWW_audit",
+            "RTOT",
+            "RNUM"
+          ],
+          "mismatches": [
+            "RNUM"
+          ],
+          "wet_count_independent": 33,
+          "dry_count_independent": 246
+        },
+        {
+          "month": 4,
+          "independent_statistics_checked": [
+            "SDMN",
+            "SDSD",
+            "SWMN",
+            "SWSD",
+            "XDMN",
+            "XDSD",
+            "XWMN",
+            "XWSD",
+            "NAMN",
+            "NASD",
+            "ALPHA",
+            "PDW",
+            "PWW_audit",
+            "RTOT",
+            "RNUM"
+          ],
+          "mismatches": [
+            "RNUM"
+          ],
+          "wet_count_independent": 41,
+          "dry_count_independent": 229
+        },
+        {
+          "month": 5,
+          "independent_statistics_checked": [
+            "SDMN",
+            "SDSD",
+            "SWMN",
+            "SWSD",
+            "XDMN",
+            "XDSD",
+            "XWMN",
+            "XWSD",
+            "NAMN",
+            "NASD",
+            "ALPHA",
+            "PDW",
+            "PWW_audit",
+            "RTOT",
+            "RNUM"
+          ],
+          "mismatches": [],
+          "wet_count_independent": 54,
+          "dry_count_independent": 225
+        },
+        {
+          "month": 6,
+          "independent_statistics_checked": [
+            "SDMN",
+            "SDSD",
+            "SWMN",
+            "SWSD",
+            "XDMN",
+            "XDSD",
+            "XWMN",
+            "XWSD",
+            "NAMN",
+            "NASD",
+            "ALPHA",
+            "PDW",
+            "PWW_audit",
+            "RTOT",
+            "RNUM"
+          ],
+          "mismatches": [
+            "RNUM"
+          ],
+          "wet_count_independent": 89,
+          "dry_count_independent": 181
+        },
+        {
+          "month": 7,
+          "independent_statistics_checked": [
+            "SDMN",
+            "SDSD",
+            "SWMN",
+            "SWSD",
+            "XDMN",
+            "XDSD",
+            "XWMN",
+            "XWSD",
+            "NAMN",
+            "NASD",
+            "ALPHA",
+            "PDW",
+            "PWW_audit",
+            "RTOT",
+            "RNUM"
+          ],
+          "mismatches": [
+            "RNUM"
+          ],
+          "wet_count_independent": 115,
+          "dry_count_independent": 164
+        },
+        {
+          "month": 8,
+          "independent_statistics_checked": [
+            "SDMN",
+            "SDSD",
+            "SWMN",
+            "SWSD",
+            "XDMN",
+            "XDSD",
+            "XWMN",
+            "XWSD",
+            "NAMN",
+            "NASD",
+            "ALPHA",
+            "PDW",
+            "PWW_audit",
+            "RTOT",
+            "RNUM"
+          ],
+          "mismatches": [
+            "RNUM"
+          ],
+          "wet_count_independent": 115,
+          "dry_count_independent": 164
+        },
+        {
+          "month": 9,
+          "independent_statistics_checked": [
+            "SDMN",
+            "SDSD",
+            "SWMN",
+            "SWSD",
+            "XDMN",
+            "XDSD",
+            "XWMN",
+            "XWSD",
+            "NAMN",
+            "NASD",
+            "ALPHA",
+            "PDW",
+            "PWW_audit",
+            "RTOT",
+            "RNUM"
+          ],
+          "mismatches": [
+            "RNUM"
+          ],
+          "wet_count_independent": 79,
+          "dry_count_independent": 191
+        },
+        {
+          "month": 10,
+          "independent_statistics_checked": [
+            "SDMN",
+            "SDSD",
+            "SWMN",
+            "SWSD",
+            "XDMN",
+            "XDSD",
+            "XWMN",
+            "XWSD",
+            "NAMN",
+            "NASD",
+            "ALPHA",
+            "PDW",
+            "PWW_audit",
+            "RTOT",
+            "RNUM"
+          ],
+          "mismatches": [
+            "RNUM"
+          ],
+          "wet_count_independent": 51,
+          "dry_count_independent": 228
+        },
+        {
+          "month": 11,
+          "independent_statistics_checked": [
+            "SDMN",
+            "SDSD",
+            "SWMN",
+            "SWSD",
+            "XDMN",
+            "XDSD",
+            "XWMN",
+            "XWSD",
+            "NAMN",
+            "NASD",
+            "ALPHA",
+            "PDW",
+            "PWW_audit",
+            "RTOT",
+            "RNUM"
+          ],
+          "mismatches": [
+            "RNUM"
+          ],
+          "wet_count_independent": 26,
+          "dry_count_independent": 244
+        },
+        {
+          "month": 12,
+          "independent_statistics_checked": [
+            "SDMN",
+            "SDSD",
+            "SWMN",
+            "SWSD",
+            "XDMN",
+            "XDSD",
+            "XWMN",
+            "XWSD",
+            "NAMN",
+            "NASD",
+            "ALPHA",
+            "PDW",
+            "PWW_audit",
+            "RTOT",
+            "RNUM"
+          ],
+          "mismatches": [
+            "RNUM"
+          ],
+          "wet_count_independent": 20,
+          "dry_count_independent": 259
+        }
+      ]
+    },
+    "rain_fallback_days": 254,
+    "estimated_rsds_used": false,
+    "january_no_clamp_full_and_leave_one_out": false,
+    "stage": "CANDIDATE_ONLY_NOT_INJECTED",
+    "remaining": [
+      "mixed_source_rain_sensitivity",
+      "radiation_gap_effect",
+      "weather_generation_and_DSSAT_smoke"
+    ]
+  }
+}

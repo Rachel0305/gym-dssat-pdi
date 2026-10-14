@@ -1,0 +1,148 @@
+{
+  "decision": {
+    "CNYC_CLI_modified": "NO",
+    "H1_vs_W0_policy_similarity_class": "IDENTICAL_POLICY_BEHAVIOR",
+    "H1_vs_W0_same_state_action_agreement": 1.0,
+    "PPO_algorithm_modified": "NO",
+    "PPO_retrained": "NO",
+    "W0_heldout_gain_explained": "YES",
+    "W0_heldout_gain_main_mechanism": "yield=-0.0923; water-cost savings=+0.1914; N-cost savings=+0.3160; stress-relief=-0.0003; SWFAC-penalty effect=-0.0241; component sum=+0.3908, runtime return delta=+0.3908, residual=-5.55e-17",
+    "W0_heldout_gain_reward_difference_vs_H0": 0.39079640663278103,
+    "W0_observed_drop_explained": "YES",
+    "W0_observed_drop_main_mechanism": "yield=-0.4509; water-cost savings=+0.1865; N-cost savings=+0.3160; stress-relief=-0.0002; SWFAC-penalty effect=-0.4683; component sum=-0.4170, runtime return delta=-0.4170, residual=-5.55e-17",
+    "W0_observed_reward_difference_vs_H0": -0.41697315763232057,
+    "W0_vs_H0_yield_and_resource_differences": {
+      "heldout_wgen": {
+        "fertilizer_w0_minus_h0": -200.0,
+        "irrigation_w0_minus_h0": -174.0,
+        "reward_w0_minus_h0": 0.39079640663278103,
+        "yield_w0_minus_h0": -583.9092407226562
+      },
+      "observed_weather": {
+        "fertilizer_w0_minus_h0": -200.0,
+        "irrigation_w0_minus_h0": -169.5,
+        "reward_w0_minus_h0": -0.41697315763232057,
+        "yield_w0_minus_h0": -2853.7520446777344
+      }
+    },
+    "action_occupancy_status": "PASS",
+    "evaluation_replay_status": "PASS; W0/1081 smoke exactly matched 004_03; six models x 30 episodes",
+    "github_backup_status": "No push performed; external GitHub backup not checked.",
+    "heldout_wgen_eval": "1081-1100",
+    "larger_ppo_seed_experiment_recommended": "YES_WITH_PREDEFINED_DIAGNOSTIC_HYPOTHESIS",
+    "main_source_of_seed_variability": [
+      "灌溉剂量/时机",
+      "施氮剂量/时机",
+      "no-op频率与联合动作选择"
+    ],
+    "management_timing_status": "PASS",
+    "models_analyzed": [
+      "H0",
+      "H1",
+      "H2",
+      "W0",
+      "W1",
+      "W2"
+    ],
+    "observed_eval": "2014-2023",
+    "paired_action_agreement": {
+      "H0_vs_W0": 0.8390390176422289,
+      "H1_vs_W1": 0.9901532534736259,
+      "H2_vs_W2": 0.9345657882874367
+    },
+    "policy_archetype_summary": "H0=高灌溉高氮; H1=低季节投入,高no-op频率; H2=中等/混合投入,高no-op频率; W0=低季节投入,高no-op频率; W1=低灌溉高氮,高no-op频率; W2=低灌溉高氮,高no-op频率",
+    "policy_archetypes_found": true,
+    "ppt_created": "NO",
+    "random_weather_changes_policy_behavior": "MIXED",
+    "recommended_next_step": "本轮不扩增 seeds；若后续正式立项，预注册可区分 favorable-archetype discovery 与 weather-specific response 的 seed-level 假设，并冻结 site/reward/action/runtime，再开展预定规模的多 seed 诊断。",
+    "reward_modified": "NO",
+    "runtime_modified": "NO",
+    "same_state_agreement_matrix": {
+      "H0": {
+        "H0": 1.0,
+        "H1": 0.20833333333333334,
+        "H2": 0.4266666666666667,
+        "W0": 0.20833333333333334,
+        "W1": 0.16833333333333333,
+        "W2": 0.17166666666666666
+      },
+      "H1": {
+        "H0": 0.20833333333333334,
+        "H1": 1.0,
+        "H2": 0.7016666666666667,
+        "W0": 1.0,
+        "W1": 0.96,
+        "W2": 0.9366666666666666
+      },
+      "H2": {
+        "H0": 0.4266666666666667,
+        "H1": 0.7016666666666667,
+        "H2": 1.0,
+        "W0": 0.7016666666666667,
+        "W1": 0.7016666666666667,
+        "W2": 0.6783333333333333
+      },
+      "W0": {
+        "H0": 0.20833333333333334,
+        "H1": 1.0,
+        "H2": 0.7016666666666667,
+        "W0": 1.0,
+        "W1": 0.96,
+        "W2": 0.9366666666666666
+      },
+      "W1": {
+        "H0": 0.16833333333333333,
+        "H1": 0.96,
+        "H2": 0.7016666666666667,
+        "W0": 0.96,
+        "W1": 1.0,
+        "W2": 0.9766666666666667
+      },
+      "W2": {
+        "H0": 0.17166666666666666,
+        "H1": 0.9366666666666666,
+        "H2": 0.6783333333333333,
+        "W0": 0.9366666666666666,
+        "W1": 0.9766666666666667,
+        "W2": 1.0
+      }
+    },
+    "same_state_paired_seed_disagreement": {
+      "H0_vs_W0": 0.7916666666666666,
+      "H1_vs_W1": 0.04,
+      "H2_vs_W2": 0.32166666666666666
+    },
+    "seed_cherry_picking": "NO",
+    "stress_response_status": "PASS; descriptive bins",
+    "training_run_performed": "NO",
+    "weather_augmentation_interpretation": "4. Evidence remains insufficient (D): same-seed behavior changes are mixed, and W0 matches the existing H1 policy rather than demonstrating a systematic shift.",
+    "weather_response_status": "PARTIAL"
+  },
+  "final_qc": {
+    "all_checkpoints_training_verified": true,
+    "all_probe_masks_identical_across_models": true,
+    "all_six_models_all_probe_states": true,
+    "all_wgen_runtime_hashes_reconcile_and_match_across_models": true,
+    "canonical_per_step_reward_reconstruction_max_abs_error": 1.3877787807814457e-17,
+    "episode_reward_reconciliation_max_abs_error": 0.0,
+    "episodes": 180,
+    "evaluation_sets_identical_for_all_models": true,
+    "models": [
+      "H0",
+      "H1",
+      "H2",
+      "W0",
+      "W1",
+      "W2"
+    ],
+    "passed": true,
+    "predicted_actions_obey_saved_masks": true,
+    "probe_action_rows": 3600,
+    "probe_states": 600,
+    "probe_states_frozen_before_predictions": true,
+    "step_action_totals_reconcile": true,
+    "step_rows": 18408,
+    "training_call_executed": false
+  },
+  "report": "docs/yc_ppo_seed_variability_and_policy_behavior_diagnosis.md"
+}

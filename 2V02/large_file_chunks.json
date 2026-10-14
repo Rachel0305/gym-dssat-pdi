@@ -1,0 +1,12 @@
+[
+  {
+    "path": "results/yc_random_weather_ppo/004_05/evaluation_step_level_all_models.csv",
+    "sha256": "4e254bfc34fd0e2355e60608f6a76b4dfe12f78b17d6a872b19b812835e949d7",
+    "parts": [
+      "data_chunks/4e254bfc34fd0e2355e60608f6a76b4dfe12f78b17d6a872b19b812835e949d7/0000.part",
+      "data_chunks/4e254bfc34fd0e2355e60608f6a76b4dfe12f78b17d6a872b19b812835e949d7/0001.part",
+      "data_chunks/4e254bfc34fd0e2355e60608f6a76b4dfe12f78b17d6a872b19b812835e949d7/0002.part"
+    ],
+    "bytes": 73390037
+  }
+]

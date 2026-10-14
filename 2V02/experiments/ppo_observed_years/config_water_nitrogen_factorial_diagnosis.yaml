@@ -1,0 +1,140 @@
+seed: 0
+
+paths:
+  output_root: Leave_One_experiments/water_nitrogen_factorial_diagnosis
+  weather_dir: weather_clean_qc
+  wth_dir: Leave_One_experiments/wth_generated_qc
+  my_data_dir: my_data
+  cultivar_file: my_data/MZCER048.CUL
+
+runtime:
+  mode: all
+  max_steps: 260
+  episode_timeout_seconds: 300
+
+economics:
+  grain_value_coef: 0.01
+  water_cost_default: 0.5
+  water_cost_low: 0.1
+  n_cost: 0.25
+
+factorial_treatments:
+  - treatment_id: T0
+    treatment_name: T0_null_zero
+    nitrogen_by_dap: {}
+    irrigation_by_dap: {}
+  - treatment_id: T1
+    treatment_name: T1_N_only_low
+    nitrogen_by_dap: {1: 25.0, 30: 25.0, 60: 25.0}
+    irrigation_by_dap: {}
+  - treatment_id: T2
+    treatment_name: T2_N_only_medium
+    nitrogen_by_dap: {1: 50.0, 30: 50.0, 60: 50.0}
+    irrigation_by_dap: {}
+  - treatment_id: T3
+    treatment_name: T3_I_only_low
+    nitrogen_by_dap: {}
+    irrigation_by_dap: {35: 30.0, 65: 30.0}
+  - treatment_id: T4
+    treatment_name: T4_N_medium_I_low
+    nitrogen_by_dap: {1: 50.0, 30: 50.0, 60: 50.0}
+    irrigation_by_dap: {35: 30.0, 65: 30.0}
+  - treatment_id: T5
+    treatment_name: T5_N_medium_I_mid
+    nitrogen_by_dap: {1: 50.0, 30: 50.0, 60: 50.0}
+    irrigation_by_dap: {25: 40.0, 50: 40.0, 75: 40.0}
+  - treatment_id: T6
+    treatment_name: T6_N_high_I_mid
+    nitrogen_by_dap: {1: 75.0, 30: 75.0, 60: 75.0}
+    irrigation_by_dap: {25: 40.0, 50: 40.0, 75: 40.0}
+
+irrigation_response_screening:
+  stress_threshold: 0.05
+  yield_gain_ratio_threshold: 1.03
+  yield_gain_abs_threshold: 200.0
+  low_water_profit_tolerance: 0.0
+
+irrigation_responsive_search:
+  enabled_if_candidates: true
+  irrigation_event_daps: [20, 35, 50, 65, 80, 95]
+  irrigation_amounts: [0.0, 20.0, 40.0, 60.0]
+  nitrogen_event_daps: [1, 30, 60]
+  nitrogen_amounts: [0.0, 50.0, 75.0, 100.0, 150.0]
+  total_irrigation_cap: 160.0
+  total_n_cap: 250.0
+  top_n_fixed_n_schedules: 5
+  max_candidates_per_site_year: 120
+
+action_safety:
+  enabled: true
+  daily_irrigation_max: 80.0
+  daily_n_max: 150.0
+  season_irrigation_soft_limit: 200.0
+  season_n_soft_limit: 260.0
+  min_days_between_irrigation: 1
+  min_days_between_fertilization: 1
+  fertilization_allowed_dap_range: [1, 120]
+  irrigation_allowed_dap_range: [1, 120]
+
+observed_years:
+  HLA:
+    - year: 2007
+      label: observed_low_rain_year
+      planting_date: "2007-05-05"
+      harvest_window_rain_mm: 345.6
+    - year: 2011
+      label: observed_mid_rain_year
+      planting_date: "2011-05-05"
+      harvest_window_rain_mm: 479.2
+    - year: 2009
+      label: observed_high_rain_year
+      planting_date: "2009-05-02"
+      harvest_window_rain_mm: 489.5
+  SYA:
+    - year: 2014
+      label: observed_low_rain_year
+      planting_date: "2014-04-21"
+      harvest_window_rain_mm: 331.8
+    - year: 2015
+      label: observed_mid_rain_year
+      planting_date: "2015-04-18"
+      harvest_window_rain_mm: 424.1
+    - year: 2012
+      label: observed_high_rain_year
+      planting_date: "2012-04-28"
+      harvest_window_rain_mm: 649.4
+  LCA:
+    - year: 2010
+      label: observed_low_rain_year
+      planting_date: "2010-06-06"
+      harvest_window_rain_mm: 288.5
+    - year: 2011
+      label: observed_mid_rain_year
+      planting_date: "2011-06-15"
+      harvest_window_rain_mm: 300.9
+    - year: 2008
+      label: observed_intermediate_rain_year_3
+      planting_date: "2008-06-19"
+      harvest_window_rain_mm: 357.1
+    - year: 2009
+      label: observed_high_rain_year
+      planting_date: "2009-06-14"
+      harvest_window_rain_mm: 417.1
+  FQA:
+    - year: 2008
+      label: observed_lower_rain_year
+      planting_date: "2008-06-10"
+      harvest_window_rain_mm: 221.8
+    - year: 2010
+      label: observed_higher_rain_year
+      planting_date: "2010-06-10"
+      harvest_window_rain_mm: 362.3
+  YCA:
+    - year: 2014
+      label: observed_lower_rain_year
+      planting_date: "2014-06-17"
+      harvest_window_rain_mm: 211.7
+    - year: 2008
+      label: observed_higher_rain_year
+      planting_date: "2008-06-18"
+      harvest_window_rain_mm: 346.9

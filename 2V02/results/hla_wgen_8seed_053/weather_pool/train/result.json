@@ -1,0 +1,14 @@
+{
+  "split": "train",
+  "status": "GENERATED_ARCHIVED",
+  "episodes_expected": 80,
+  "pool_seed_range": [
+    1001,
+    1080
+  ],
+  "episodes_completed": 80,
+  "days_archived": 11207,
+  "unique_weather_hashes": 80,
+  "peak_rss_mb": 528.79,
+  "elapsed_seconds": 278.08
+}

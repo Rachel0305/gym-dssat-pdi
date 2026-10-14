@@ -1,0 +1,5 @@
+base_config: experiments/ppo_observed_years/config_031_22_literature_aligned_ppo_dqn_ddqn_sy2014_smoke.yaml
+seeds: [1, 2]
+output_root: benchmark_results/031_23_double_dueling_dqn_sy2014_seeds1_2_repeat
+total_timesteps: 20000
+

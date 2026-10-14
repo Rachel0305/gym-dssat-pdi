@@ -1,0 +1,34 @@
+{
+  "formal_training_performance_excluded": true,
+  "passed": true,
+  "smokes": [
+    {
+      "episode_log_wther": [
+        ""
+      ],
+      "filex_template": "results/yc_random_weather_ppo/004_05/rendered_inputs/YCA/2008/yc00405_historical_filex_preflight/YCA_2008_yc00405_historical_filex_preflight.jinja2",
+      "filex_template_sha256": "D4274CBC3FCAB7A885EA6C2DB6A0738C71FD1FADF4B678B782504BAEDACE5352",
+      "max_rss_mb": 433.46484375,
+      "passed": true,
+      "ppo_seed": 3,
+      "run_manifest": "results/yc_random_weather_ppo/004_05/smoke/historical_seed3/run_manifest.json",
+      "timesteps_actual": 432,
+      "training_regime": "HISTORICAL_WEATHER",
+      "wther": "M"
+    },
+    {
+      "episode_log_wther": [
+        "W"
+      ],
+      "filex_template": "results/yc_random_weather_ppo/004_05/runtime_templates/RANDOM_WEATHER_WGEN_wgen_seed3_2008/YCA_2008_rseed1_1070.jinja2",
+      "filex_template_sha256": "A92F4B4902F0FE7206F1D463BD634D5266C8DE9ED67D6BECA18E97B820E6EC91",
+      "max_rss_mb": 433.83984375,
+      "passed": true,
+      "ppo_seed": 3,
+      "run_manifest": "results/yc_random_weather_ppo/004_05/smoke/wgen_seed3/run_manifest.json",
+      "timesteps_actual": 432,
+      "training_regime": "RANDOM_WEATHER_WGEN",
+      "wther": "W"
+    }
+  ]
+}

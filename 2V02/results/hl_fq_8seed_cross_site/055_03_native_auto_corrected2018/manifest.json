@@ -1,0 +1,392 @@
+[
+  {
+    "site": "HL",
+    "seed": 0,
+    "scenarios": [
+      "null",
+      "recorded_farmer_template",
+      "dssat_auto",
+      "official_extension_expert",
+      "ppo_seed_0"
+    ],
+    "years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "figures": 23,
+    "native_auto_n_zero": true,
+    "fq2018_corrected": false
+  },
+  {
+    "site": "HL",
+    "seed": 1,
+    "scenarios": [
+      "null",
+      "recorded_farmer_template",
+      "dssat_auto",
+      "official_extension_expert",
+      "ppo_seed_1"
+    ],
+    "years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "figures": 23,
+    "native_auto_n_zero": true,
+    "fq2018_corrected": false
+  },
+  {
+    "site": "HL",
+    "seed": 2,
+    "scenarios": [
+      "null",
+      "recorded_farmer_template",
+      "dssat_auto",
+      "official_extension_expert",
+      "ppo_seed_2"
+    ],
+    "years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "figures": 23,
+    "native_auto_n_zero": true,
+    "fq2018_corrected": false
+  },
+  {
+    "site": "HL",
+    "seed": 3,
+    "scenarios": [
+      "null",
+      "recorded_farmer_template",
+      "dssat_auto",
+      "official_extension_expert",
+      "ppo_seed_3"
+    ],
+    "years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "figures": 23,
+    "native_auto_n_zero": true,
+    "fq2018_corrected": false
+  },
+  {
+    "site": "HL",
+    "seed": 4,
+    "scenarios": [
+      "null",
+      "recorded_farmer_template",
+      "dssat_auto",
+      "official_extension_expert",
+      "ppo_seed_4"
+    ],
+    "years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "figures": 23,
+    "native_auto_n_zero": true,
+    "fq2018_corrected": false
+  },
+  {
+    "site": "HL",
+    "seed": 5,
+    "scenarios": [
+      "null",
+      "recorded_farmer_template",
+      "dssat_auto",
+      "official_extension_expert",
+      "ppo_seed_5"
+    ],
+    "years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "figures": 23,
+    "native_auto_n_zero": true,
+    "fq2018_corrected": false
+  },
+  {
+    "site": "HL",
+    "seed": 6,
+    "scenarios": [
+      "null",
+      "recorded_farmer_template",
+      "dssat_auto",
+      "official_extension_expert",
+      "ppo_seed_6"
+    ],
+    "years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "figures": 23,
+    "native_auto_n_zero": true,
+    "fq2018_corrected": false
+  },
+  {
+    "site": "HL",
+    "seed": 7,
+    "scenarios": [
+      "null",
+      "recorded_farmer_template",
+      "dssat_auto",
+      "official_extension_expert",
+      "ppo_seed_7"
+    ],
+    "years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "figures": 23,
+    "native_auto_n_zero": true,
+    "fq2018_corrected": false
+  },
+  {
+    "site": "FQ",
+    "seed": 0,
+    "scenarios": [
+      "null",
+      "recorded_farmer_template",
+      "dssat_auto",
+      "official_extension_expert",
+      "ppo_seed_0"
+    ],
+    "years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "figures": 23,
+    "native_auto_n_zero": true,
+    "fq2018_corrected": true
+  },
+  {
+    "site": "FQ",
+    "seed": 1,
+    "scenarios": [
+      "null",
+      "recorded_farmer_template",
+      "dssat_auto",
+      "official_extension_expert",
+      "ppo_seed_1"
+    ],
+    "years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "figures": 23,
+    "native_auto_n_zero": true,
+    "fq2018_corrected": true
+  },
+  {
+    "site": "FQ",
+    "seed": 2,
+    "scenarios": [
+      "null",
+      "recorded_farmer_template",
+      "dssat_auto",
+      "official_extension_expert",
+      "ppo_seed_2"
+    ],
+    "years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "figures": 23,
+    "native_auto_n_zero": true,
+    "fq2018_corrected": true
+  },
+  {
+    "site": "FQ",
+    "seed": 3,
+    "scenarios": [
+      "null",
+      "recorded_farmer_template",
+      "dssat_auto",
+      "official_extension_expert",
+      "ppo_seed_3"
+    ],
+    "years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "figures": 23,
+    "native_auto_n_zero": true,
+    "fq2018_corrected": true
+  },
+  {
+    "site": "FQ",
+    "seed": 4,
+    "scenarios": [
+      "null",
+      "recorded_farmer_template",
+      "dssat_auto",
+      "official_extension_expert",
+      "ppo_seed_4"
+    ],
+    "years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "figures": 23,
+    "native_auto_n_zero": true,
+    "fq2018_corrected": true
+  },
+  {
+    "site": "FQ",
+    "seed": 5,
+    "scenarios": [
+      "null",
+      "recorded_farmer_template",
+      "dssat_auto",
+      "official_extension_expert",
+      "ppo_seed_5"
+    ],
+    "years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "figures": 23,
+    "native_auto_n_zero": true,
+    "fq2018_corrected": true
+  },
+  {
+    "site": "FQ",
+    "seed": 6,
+    "scenarios": [
+      "null",
+      "recorded_farmer_template",
+      "dssat_auto",
+      "official_extension_expert",
+      "ppo_seed_6"
+    ],
+    "years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "figures": 23,
+    "native_auto_n_zero": true,
+    "fq2018_corrected": true
+  }
+]

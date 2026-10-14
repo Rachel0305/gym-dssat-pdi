@@ -1,0 +1,36 @@
+{
+  "task_id": "135_00",
+  "task_name": "sya_weather_amplification_ckpt5k10k_readonly",
+  "reference_run": "126_00_sya_originIC_rolling7d_perfect_forecast_5k10k",
+  "station_code": "SYA",
+  "site": "SY",
+  "input_profile": "originIC",
+  "seed": 0,
+  "checkpoints": {
+    "ckpt5000": "benchmark_results/126_00_sya_originIC_rolling7d_perfect_forecast_5k10k/models/SYA/SYA_half_split_stress_aware_maskableppo_seed0_ckpt5000.zip",
+    "ckpt10000": "benchmark_results/126_00_sya_originIC_rolling7d_perfect_forecast_5k10k/models/SYA/SYA_half_split_stress_aware_maskableppo_seed0_ckpt10000.zip"
+  },
+  "weather_scenarios": [
+    "real",
+    "rain_half",
+    "rain_double",
+    "heat_minus3c",
+    "heat_plus3c",
+    "srad_half",
+    "srad_double",
+    "dry_hot_bright"
+  ],
+  "scope": {
+    "validation_years": [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023],
+    "base_state_unchanged": true,
+    "action_mask_unchanged": true,
+    "dssat_counterfactual_execution": false,
+    "training": false
+  },
+  "interpretation": {
+    "purpose": "Compare weather sensitivity of the existing 5K and 10K checkpoints under identical within-SY perturbations.",
+    "not_performance_evidence": true,
+    "long_training_allowed": false
+  },
+  "prompt": "prompts/2026-08-16_sya_weather_amplification_ckpt5k10k_readonly.md"
+}

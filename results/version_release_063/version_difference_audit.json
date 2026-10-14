@@ -1,0 +1,9 @@
+{
+  "same_80_model_hashes": true,
+  "primary_rows_per_version": 800,
+  "yield_changed_rows": 16,
+  "yield_revision_only": "FQ2018, 8 historical + 8 augmented",
+  "YC_exact_WP_ET_rows_v1": 30,
+  "YC_exact_WP_ET_rows_v2": 160,
+  "training_repeated": false
+}

@@ -1,0 +1,18 @@
+{
+  "task_id": "075_00",
+  "task_name": "sya_originIC_seed3_canonical_03222_smoke2k",
+  "container": "nifty_taussig",
+  "python": "/opt/gym_dssat_pdi/bin/python",
+  "station_code": "SYA",
+  "site": "SY",
+  "input_profile": "originIC",
+  "seed": 3,
+  "training": {"total_timesteps": 2000, "checkpoint_steps": [1000, 2000]},
+  "train_years": [2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013],
+  "validation_years": [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023],
+  "actions": {"irrigation_levels_mm": [0.0, 15.0, 30.0, 45.0], "nitrogen_levels_kg_ha": [0.0, 40.0, 80.0, 120.0]},
+  "observation_contract": {"base": "032_22_raw_observation", "normalization_enabled": false, "weather_forecast_enabled": false},
+  "ppo": {"learning_rate": 0.0003, "gamma": 1.0, "gae_lambda": 1.0, "n_steps": 144, "batch_size": 144, "n_epochs": 5, "ent_coef": 0.01, "clip_range": 0.2, "net_arch": [64, 64]},
+  "output_root": "benchmark_results/075_00_sya_seed3_canonical_03222_smoke2k",
+  "prompt": "prompts/2026-08-13_sya_seed3_canonical_smoke2k.md"
+}

@@ -1,0 +1,15 @@
+{
+  "task_id": 176,
+  "name": "sya_yield_reward_scale_audit",
+  "mode": "read_only",
+  "source_experiments": [
+    "benchmark_results/172_sya_weather_aug_rain_observation_smoke2k",
+    "benchmark_results/174_sya_weather_aug_rain_obs_no_swfac_guardrail_smoke2k"
+  ],
+  "source_reward_config": "experiments/ppo_observed_years/config_032_00_free_timing_stress_aware_ppo_dqn_smoke.yaml",
+  "source_reward_code": "src/run_free_timing_stress_aware_ppo_dqn_smoke_032_00.py",
+  "daily_glob": "daily_outputs/SYA/*_daily.csv",
+  "run_training": false,
+  "modify_reward": false,
+  "modify_environment": false
+}

@@ -1,0 +1,48 @@
+meta:
+  task: 021_01_final_dqn_strategy_determination
+  date: '2026-07-12'
+  status: provisional_training_protocol_corrected_stability_diagnosis_pending
+  last_updated: '2026-07-13'
+  protocol_caveat: >-
+    The legacy 5K-segment learn() protocol exhausted the DQN exploration schedule
+    inside every segment. Saved 5K models from HLA, YC, FQ, LC and SY all had
+    exploration_rate=0.05. Existing DQN conclusions are therefore provisional
+    until rechecked under the corrected global-horizon schedule. Baseline and
+    deterministic DSSAT forward results are not affected by this training bug.
+candidate:
+  algorithm: DQN
+  reward:
+    type: null_relative_terminal_gain_minus_resource_cost
+    water_cost: 1.0
+    nitrogen_cost: 5.0
+    note: Same formula kept; diagnosis did not justify changing coefficients.
+  actions:
+    irrigation_mm:
+    - 0
+    - 15
+    - 30
+    nitrogen_kg_ha:
+    - 0
+    - 50
+    - 100
+  budgets:
+    irrigation_mm: 120
+    nitrogen_kg_ha: 300
+  training:
+    n_steps: 5
+    exploration_schedule: corrected_global_horizon_with_checkpoint_resume
+    checkpoint_selection: pending_revalidation_after_protocol_fix
+  applicability:
+    provisional_sites:
+    - HLA
+    - YC
+    - FQ
+    blocked_sites:
+      LC: legacy formal 50K yields were similar across seeds while irrigation differed
+        by 90 mm; this must be rechecked because the same exploration-schedule bug
+        affected all three seeds.
+    pending_sites:
+      SY: IC=2 is confirmed. A corrected-protocol seed0 run independently reproduced
+        11131 kg/ha at 10K, but still collapsed after 15K as nitrogen actions fell
+        from 300 to 0 kg/ha. The protocol bug was real but was not the only source
+        of instability; Q/target divergence remains a diagnostic hypothesis.

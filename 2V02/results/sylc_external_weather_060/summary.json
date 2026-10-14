@@ -1,0 +1,30 @@
+[
+  {
+    "site": "SY",
+    "seed_count": 8,
+    "years": 10,
+    "paired_checkpoint_rows": 320,
+    "100k_paired_rows": 80,
+    "delta_100k_seed_mean": {
+      "final_grnwt": -481.64598083496065,
+      "total_irrigation": -45.1875,
+      "total_n": -9.5,
+      "PFP_N": 15.39256315231323,
+      "WP_ET_kg_m3": -0.08624999999999997
+    }
+  },
+  {
+    "site": "LC",
+    "seed_count": 8,
+    "years": 10,
+    "paired_checkpoint_rows": 320,
+    "100k_paired_rows": 80,
+    "delta_100k_seed_mean": {
+      "final_grnwt": -329.0097026824954,
+      "total_irrigation": -9.1875,
+      "total_n": 46.5,
+      "PFP_N": -32.35078894933065,
+      "WP_ET_kg_m3": -0.10212500000000005
+    }
+  }
+]

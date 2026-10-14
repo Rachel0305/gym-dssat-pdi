@@ -1,0 +1,23 @@
+{
+  "deterministic_actions": true,
+  "episodes_completed": 10,
+  "episodes_expected": 10,
+  "evaluation_type": "observed_weather",
+  "evaluation_weather_seeds": [],
+  "evaluation_years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "model_path": "results/yc_random_weather_ppo/004_03/training_verified/random_weather/ppo_seed_0/models/checkpoint_100000.zip",
+  "ppo_seed": 0,
+  "runtime_seed_role": "independent evaluation environment initialization only",
+  "training_regime": "RANDOM_WEATHER_WGEN"
+}

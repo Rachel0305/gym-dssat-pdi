@@ -1,0 +1,29 @@
+{
+  "task": "071_lc_seed_trajectory_diagnostic",
+  "site": "LC",
+  "input_profile": "lowIC",
+  "action_grid": {
+    "irrigation_levels_mm": [0, 15, 30, 45],
+    "nitrogen_levels_kg_ha": [0, 40, 80, 120]
+  },
+  "seeds": {
+    "0": {
+      "root": "benchmark_results/053_00_lca_lowIC_expanded_action_maskableppo",
+      "checkpoints": [25000, 50000, 75000, 100000]
+    },
+    "0_smoke": {
+      "root": "benchmark_results/053_00_lca_lowIC_expanded_action_maskableppo_smoke2k",
+      "checkpoints": [1000, 2000]
+    },
+    "1": {
+      "root": "benchmark_results/069_01_lca_lowIC_seed1_maskableppo_smoke2k_rerun1",
+      "checkpoints": [1000, 2000]
+    },
+    "2": {
+      "root": "benchmark_results/070_02_lca_lowIC_seed2_maskableppo_smoke2k",
+      "checkpoints": [1000, 2000]
+    }
+  },
+  "validation_years": [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023],
+  "output_root": "benchmark_results/071_02_lc_seed_trajectory_diagnostic_with_seed0_smoke"
+}

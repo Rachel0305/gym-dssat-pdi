@@ -1,0 +1,45 @@
+{
+  "seeds": 15,
+  "figures": 345,
+  "season_scenario_rows_checked": 750,
+  "closure_issues": [],
+  "native_auto_external_n_zero": true,
+  "fq2018_weather_checks": [
+    {
+      "seed": 0,
+      "matched_days": 97,
+      "max_weather_difference": 0.0
+    },
+    {
+      "seed": 1,
+      "matched_days": 97,
+      "max_weather_difference": 0.0
+    },
+    {
+      "seed": 2,
+      "matched_days": 97,
+      "max_weather_difference": 0.0
+    },
+    {
+      "seed": 3,
+      "matched_days": 97,
+      "max_weather_difference": 0.0
+    },
+    {
+      "seed": 4,
+      "matched_days": 97,
+      "max_weather_difference": 0.0
+    },
+    {
+      "seed": 5,
+      "matched_days": 97,
+      "max_weather_difference": 0.0
+    },
+    {
+      "seed": 6,
+      "matched_days": 97,
+      "max_weather_difference": 0.0
+    }
+  ],
+  "corrected_fq2018_ppo_replays": 7
+}

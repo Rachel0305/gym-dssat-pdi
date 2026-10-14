@@ -1,0 +1,24 @@
+base_config: experiments/ppo_observed_years/config_031_20_free_timing_discrete_maskableppo_scaled_reward_five_station_smoke.yaml
+output_root: benchmark_results/031_41_lc2010_operation_event_cost_maskableppo_smoke
+target_site_year:
+  station_code: LCA
+  year: 2010
+seed: 1
+max_train_steps: 50000
+checkpoint_steps: [10000, 30000, 50000]
+operation_event_cost:
+  irrigation_event_cost_unscaled: 10.0
+  fertilization_event_cost_unscaled: 20.0
+selection_metric: operation_adjusted_reward_sum
+tie_breakers:
+  - final_grnwt_desc
+  - irrigation_event_count_asc
+  - total_irrigation_asc
+  - total_n_asc
+  - checkpoint_step_asc
+runtime_notes:
+  no_parameter_scan: true
+  single_site_year_smoke_only: true
+  action_grid_unchanged: true
+  action_safety_unchanged: true
+  no_expert_dap_windows: true

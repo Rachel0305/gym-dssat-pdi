@@ -1,0 +1,32 @@
+site:
+  station_code: HLA
+  aliases: [HL]
+  station_name: Hailun
+  adapter: hla_prepared_input_020_11
+  input_status: confirmed
+  treatment: 1
+  cultivar_id: HY0006
+  soil_id: HL99001200
+  initial_condition_mode: 1
+  supported_years: [2007, 2010, 2015, 2016, 2022]
+  train_years: [2010]
+  eval_years: [2007, 2010, 2015, 2016, 2022]
+  inputs:
+    by_year:
+      '2007':
+        prepared_input_dir: DSSAT_auto_validation/HLA_2004/hla2010_nstep_transfer_2007_2016_2022_020_10/test_cases/2007/input
+        fileX_name: CNHL07N1.MZX
+        weather_name: CNHL0701.WTH
+      '2010':
+        prepared_input_dir: DSSAT_auto_validation/HLA_2004/hla2010_nstep_dqn_seed0_020_08/nstep5_seed0_50000steps/input
+        weather_name: CNHL1001.WTH
+      '2015':
+        prepared_input_dir: DSSAT_auto_validation/HLA_2004/hla2010_nstep_to_hla2015_transfer_020_09/test_case_hla2015/input
+        weather_name: CNHL1501.WTH
+      '2016':
+        prepared_input_dir: DSSAT_auto_validation/HLA_2004/hla2010_nstep_transfer_2007_2016_2022_020_10/test_cases/2016/input
+        weather_name: CNHL1601.WTH
+      '2022':
+        prepared_input_dir: DSSAT_auto_validation/HLA_2004/hla2010_nstep_transfer_2007_2016_2022_020_10/test_cases/2022/input
+        weather_name: CNHL2201.WTH
+

@@ -1,0 +1,14 @@
+{
+  "episode_index": 671,
+  "runtime_dir": "results/fqa_multiyear_wgen_ppo_052_8seed/seed_03/attempt_01/temp/tmpdxm7tute",
+  "runtime_filex_sha256": "AB27875EC94507FF1A14D5E2DA0C3D7BC92D3E991BA72C9217F886F124DF39CB",
+  "wther": "W",
+  "wsta_confirmed": true,
+  "runtime_cli_sha256": "7EE3037E05A6850182FB3CECDDED631F26C88FF713E3C279F07F3F000E881FD6",
+  "source_cli_sha256": "7EE3037E05A6850182FB3CECDDED631F26C88FF713E3C279F07F3F000E881FD6",
+  "pdi_config_sha256": "0076796A5B49DAB20452092D6C4B94EF7F5D831D2D497B91694F475AF90A82B1",
+  "yaml_bootstrap_seed": 1064,
+  "yaml_bootstrap_confirmed": true,
+  "runtime_rseed1": 1064,
+  "scheduled_seed": 1064
+}

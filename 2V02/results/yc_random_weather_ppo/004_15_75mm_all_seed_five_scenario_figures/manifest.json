@@ -1,0 +1,63 @@
+{
+  "task": "YC 75 mm all-seed five-scenario figure sets",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "scenario_order": [
+    "null",
+    "recorded_farmer_template",
+    "dssat_auto_external_n",
+    "official_extension_expert",
+    "random_weather_ppo"
+  ],
+  "baseline_scenarios": [
+    "null",
+    "recorded_farmer_template",
+    "dssat_auto_external_n",
+    "official_extension_expert"
+  ],
+  "style_source_figure": "benchmark_results/055_03_yca_lowIC_055_00_yca_lowIC_expanded_action_maskableppo_auto_nstd050_minimal_five_scenario_figures_ckpt100000/figures/055_03_yca_five_scenario_metrics.png",
+  "style_source_script": "src/055_yca_lowIC_site_transfer/run_055_03_yca_lowIC_five_scenario_figures.py",
+  "episode_source": "results\\yc_random_weather_ppo\\004_05\\all_evaluation_episode_level_0_7.csv",
+  "step_action_source": "results\\yc_random_weather_ppo\\004_05\\evaluation_step_level_all_models.csv",
+  "baseline_summary_source": "benchmark_results\\055_03_yca_lowIC_055_00_yca_lowIC_expanded_action_maskableppo_auto_nstd050_minimal_five_scenario_figures_ckpt100000\\tables\\055_03_yca_five_scenario_season_summary.csv",
+  "baseline_management_event_source": "benchmark_results\\055_03_yca_lowIC_055_00_yca_lowIC_expanded_action_maskableppo_auto_nstd050_minimal_five_scenario_figures_ckpt100000\\tables\\055_03_yca_five_scenario_management_events.csv",
+  "exact_wp_et_source": "results\\yc_random_weather_ppo\\004_07_02_seed345_etcp_replay\\replay_episode_summary.csv",
+  "exact_wp_et_seeds": [
+    3,
+    4,
+    5
+  ],
+  "common_reward_formula": "0.158 * yield - 1.1 * irrigation_mm - 1.58 * nitrogen_kg_ha",
+  "canonical_reward_comparison": "PPO-only panel; not directly compared against the common baseline formula",
+  "action_trace_episode_rows_closed": 80,
+  "new_training_or_dssat_replay": false,
+  "daily_process_figures_omitted": "No complete exact DSSAT daily snapshots are available for all eight seeds; identical annual metrics and action figures are produced for every seed.",
+  "figure_files_per_seed": [
+    "seedN_five_scenario_metrics.png",
+    "seedN_five_scenario_management.png",
+    "seedN_five_scenario_reward.png",
+    "seedN_five_scenario_yearly_trends.png",
+    "seedN_five_scenario_action_calendar.png",
+    "seedN_management_action_doses_by_year.png"
+  ]
+}

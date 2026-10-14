@@ -1,0 +1,24 @@
+{
+  "task_id": "128_00",
+  "task_name": "sya_originIC_rolling7d_forecast_resource_cost_half",
+  "reference_run": "126_00_sya_originIC_rolling7d_perfect_forecast_5k10k",
+  "station_code": "SYA",
+  "site": "SY",
+  "input_profile": "originIC",
+  "seed": 0,
+  "training": {"total_timesteps": 2000, "checkpoint_steps": [1000, 2000]},
+  "actions": {"irrigation_levels_mm": [0.0, 15.0, 30.0, 45.0], "nitrogen_levels_kg_ha": [0.0, 40.0, 80.0, 120.0]},
+  "observation_contract": {"base": "046_02_raw_observation", "normalization_enabled": false, "weather_forecast_enabled": true, "weather_forecast_mode": "rolling_7d_perfect_hindcast", "weather_forecast_note": "Same 28 daily weather features as 111/126; no current-day leakage."},
+  "forecast_features": {
+    "enabled": true,
+    "include_today_in_future_windows": false,
+    "source": "historical_WTH_as_perfect_rolling_7d_forecast",
+    "feature_names": ["rain_d1_norm", "srad_d1_norm", "tmax_d1_norm", "tmin_d1_norm", "rain_d2_norm", "srad_d2_norm", "tmax_d2_norm", "tmin_d2_norm", "rain_d3_norm", "srad_d3_norm", "tmax_d3_norm", "tmin_d3_norm", "rain_d4_norm", "srad_d4_norm", "tmax_d4_norm", "tmin_d4_norm", "rain_d5_norm", "srad_d5_norm", "tmax_d5_norm", "tmin_d5_norm", "rain_d6_norm", "srad_d6_norm", "tmax_d6_norm", "tmin_d6_norm", "rain_d7_norm", "srad_d7_norm", "tmax_d7_norm", "tmin_d7_norm"],
+    "raw_feature_names": ["rain_d1_mm", "srad_d1_mj_m2", "tmax_d1_c", "tmin_d1_c", "rain_d2_mm", "srad_d2_mj_m2", "tmax_d2_c", "tmin_d2_c", "rain_d3_mm", "srad_d3_mj_m2", "tmax_d3_c", "tmin_d3_c", "rain_d4_mm", "srad_d4_mj_m2", "tmax_d4_c", "tmin_d4_c", "rain_d5_mm", "srad_d5_mj_m2", "tmax_d5_c", "tmin_d5_c", "rain_d6_mm", "srad_d6_mj_m2", "tmax_d6_c", "tmin_d6_c", "rain_d7_mm", "srad_d7_mj_m2", "tmax_d7_c", "tmin_d7_c"],
+    "scales": {"rain_daily_mm": 30.0, "srad_daily_mj_m2": 30.0, "tmax_center_c": 30.0, "tmax_scale_c": 10.0, "tmin_center_c": 20.0, "tmin_scale_c": 10.0}
+  },
+  "reward_intervention": {"resource_cost_scale": 0.5, "scaled_terms": ["water_cost", "nitrogen_cost"], "baseline_water_cost": 1.1, "baseline_nitrogen_cost": 1.58, "effective_water_cost": 0.55, "effective_nitrogen_cost": 0.79},
+  "scope": {"train_years": [2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013], "validation_years": [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023], "reward_and_safety": "only water/nitrogen resource cost coefficients scaled to 0.5; all else inherited", "external_n": false, "native_dssat_automatic_irrigation": false, "ppo_linked_management": true},
+  "execution_policy": {"smoke_only": true, "no_5k_10k_25k_100k": true, "compare_against": ["111_00_sya_originIC_rolling7d_perfect_forecast_smoke2k_smoke2k", "046_10_sya_originIC_expanded_action_maskableppo_smoke2k"]},
+  "prompt": "prompts/2026-08-16_sya_originIC_rolling7d_forecast_resource_cost_half_smoke2k.md"
+}

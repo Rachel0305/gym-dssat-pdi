@@ -1,0 +1,14 @@
+# Planned only; site-specific inputs/local-null baselines remain separate.
+extends: ../benchmark_defaults.yaml
+site_config: ../sites/hla.yaml
+experiment:
+  experiment_id: 021_07_cross_site_transfer
+  experiment_type: cross_site_transfer
+  description: Cross-site transfer or site-local retraining benchmark; inherits benchmark_defaults.yaml
+  dry_run: true
+  user_confirmation_required: [source_site, target_sites, transfer_mode, evaluation.seeds]
+source_site: HLA
+target_sites: [YC, FQ]
+transfer_mode: confirm_before_run
+example_command: python -m benchmark.benchmark_runner --config configs/experiments/021_07_cross_site_transfer.yaml --dry-run
+

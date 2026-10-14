@@ -1,0 +1,5 @@
+﻿station_code,site,year,scenario,checkpoint_step,grain_yield_kg_ha,biomass_kg_ha,actual_irrigation_mm,actual_nitrogen_kg_ha,etcp_mm,WP_ET_kg_m3,PFP_N_kg_kg,season_last_dap,slow_grain_filling_warning,precipitation_error,snapshot_path
+FQA,FQ,2018,rl_candidate,25000,8301.0,14523.0,210.0,240.0,361.6,2.3000000000000003,34.6,92,False,False,benchmark_results/088_00_fq2018_input_quality_correction/ppo_replay_corrected2018_rerun2/snapshots/FQA/2018/ckpt25000
+FQA,FQ,2018,rl_candidate,50000,8310.0,14540.0,210.0,240.0,360.1,2.31,34.6,92,False,False,benchmark_results/088_00_fq2018_input_quality_correction/ppo_replay_corrected2018_rerun2/snapshots/FQA/2018/ckpt50000
+FQA,FQ,2018,rl_candidate,75000,8307.0,14534.0,210.0,240.0,360.0,2.31,34.6,92,False,False,benchmark_results/088_00_fq2018_input_quality_correction/ppo_replay_corrected2018_rerun2/snapshots/FQA/2018/ckpt75000
+FQA,FQ,2018,rl_candidate,100000,8307.0,14534.0,210.0,240.0,360.0,2.31,34.6,92,False,False,benchmark_results/088_00_fq2018_input_quality_correction/ppo_replay_corrected2018_rerun2/snapshots/FQA/2018/ckpt100000

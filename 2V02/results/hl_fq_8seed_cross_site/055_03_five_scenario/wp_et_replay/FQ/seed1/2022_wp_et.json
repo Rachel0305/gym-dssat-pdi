@@ -1,0 +1,15 @@
+{
+  "site": "FQ",
+  "seed": 1,
+  "year": 2022,
+  "saved_yield_kg_ha": 6431.56005859375,
+  "replay_yield_kg_ha": 6432.0,
+  "saved_irrigation_mm": 210.0,
+  "replay_irrigation_mm": 210.0,
+  "saved_n_kg_ha": 240.0,
+  "replay_n_kg_ha": 240.0,
+  "etcp_mm": 363.0,
+  "WP_ET_kg_m3": 1.77,
+  "snapshot_path": "results/hl_fq_8seed_cross_site/055_03_five_scenario/wp_et_replay/FQ/seed1/snapshots/FQA/2022/rl_candidate",
+  "metric_source": "Summary.OUT ETCP from deterministic 100K checkpoint replay"
+}

@@ -1,0 +1,21 @@
+# Planned only. Confirm action levels and compute budget before disabling dry_run.
+extends: ../benchmark_defaults.yaml
+site_config: ../sites/hla.yaml
+experiment:
+  experiment_id: 021_01_action_space_sensitivity
+  experiment_type: action_space_sensitivity
+  description: Controlled action-space sweep; inherits benchmark_defaults.yaml
+  dry_run: true
+  user_confirmation_required: [action_space.candidates, site.train_years, evaluation.seeds]
+action_space:
+  irrigation_levels: [0, 15, 30]
+  nitrogen_levels: [0, 50, 100]
+  candidates:
+    - name: frozen_9_action
+      irrigation_levels: [0, 15, 30]
+      nitrogen_levels: [0, 50, 100]
+    - name: placeholder_confirm_before_run
+      irrigation_levels: [0, 10, 20, 30]
+      nitrogen_levels: [0, 33.3, 66.7, 100]
+example_command: python -m benchmark.benchmark_runner --config configs/experiments/021_01_action_space_sensitivity.yaml --dry-run
+

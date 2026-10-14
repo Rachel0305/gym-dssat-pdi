@@ -1,0 +1,31 @@
+{
+  "site": "LC",
+  "tag": "leap2008_seed1001",
+  "weather_seed": 1001,
+  "scope": "full_year_diagnostic",
+  "status": "PASS",
+  "steps": 366,
+  "rows": 366,
+  "physical_qc": {
+    "status": "PASS",
+    "row_count": 366,
+    "missing_by_field": {
+      "RAIN": 0,
+      "SRAD": 0,
+      "TMAX": 0,
+      "TMIN": 0
+    },
+    "all_zero_rainfall": false,
+    "issues": [],
+    "bounds_are_screening_checks_not_calibrated_extreme_value_tests": true
+  },
+  "cli_sha256": "6f73f8ea7fbe04b0ce042e2d632ec32d7648f1a72c59a79bb3dd8c1b60c2face",
+  "runtime_WTHER": "W",
+  "runtime_seed_verified": true,
+  "weather_sha256": "556814450bd99a47027d8bf893638628d01d26718e2ffefdd5b96c8d59237430",
+  "full_year_dates_complete": true,
+  "actual_start_date": "2008-01-01",
+  "actual_end_date": "2008-12-31",
+  "elapsed_seconds": 2.8592772210004114,
+  "peak_tree_rss_mb": 128.4765625
+}

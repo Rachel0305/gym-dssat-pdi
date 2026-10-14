@@ -1,0 +1,41 @@
+{
+  "task_id": "190",
+  "task_name": "sya_balanced_irrigation_gap1_50k_learning_curve",
+  "source_task": "188_sya_balanced_irrigation_gap1_smoke2k",
+  "physical_gate_task": "167_sya_weather_v2_fixed_format_gate",
+  "station_code": "SYA",
+  "site": "SY",
+  "source_year": 2005,
+  "total_timesteps": 50000,
+  "checkpoint_steps": [1000, 2000, 5000, 10000, 20000, 30000, 40000, 50000],
+  "seed": 0,
+  "scenario_manifest": "benchmark_results/166_sya_weather_scenario_bank_v2_fixed_format/163_sya_weather_scenario_manifest.csv",
+  "input_root": "DSSAT_auto_validation/sya_weather_scenario_bank_166_fixed_format",
+  "scenario_sampling": "deterministic_round_robin",
+  "scenario_order": ["original", "early_dry", "mid_dry", "late_dry", "early_wet", "mid_wet"],
+  "direct_rain_observation": true,
+  "reward_changed_from_task188": false,
+  "observation_changed_from_task188": false,
+  "action_grid_changed_from_task188": false,
+  "action_safety_override": {
+    "min_days_between_irrigation": 1,
+    "min_days_between_fertilization": 7,
+    "season_irrigation_cap_mm": 240,
+    "other_mask_rules_unchanged": true
+  },
+  "ppo_overrides": {
+    "ent_coef": 0.02
+  },
+  "fixed_ppo_parameters": {
+    "learning_rate": 0.0003,
+    "gamma": 1.0,
+    "gae_lambda": 1.0,
+    "n_steps": 144,
+    "batch_size": 144,
+    "n_epochs": 5,
+    "clip_range": 0.2
+  },
+  "run_training": true,
+  "from_scratch": true,
+  "overwrite_existing_output": false
+}

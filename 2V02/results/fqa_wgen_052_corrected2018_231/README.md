@@ -1,0 +1,3 @@
+# FQA WGEN 052 eight seeds: corrected 2018 validation
+
+The frozen 052 figures and models remain unchanged. The 2018 FQ weather copy uses the 088 documented 15-day summer TMIN sign correction. Every 100K model was replayed for 2018 and its DSSAT snapshot, daily CSV, and exact Summary.OUT/ETCP metrics are archived under its seed directory. The ten-year tables and figures use 2014-2017 and 2019-2023 frozen results plus the corrected 2018 replay. They compare Null, recorded template, expert and PPO. The auto baseline is excluded because the existing 088 corrected auto baseline uses a different N contract.

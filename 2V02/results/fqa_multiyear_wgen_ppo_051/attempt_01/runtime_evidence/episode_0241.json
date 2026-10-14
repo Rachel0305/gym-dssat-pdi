@@ -1,0 +1,14 @@
+{
+  "episode_index": 241,
+  "runtime_dir": "results/fqa_multiyear_wgen_ppo_051/attempt_01/temp/tmpalxd200k",
+  "runtime_filex_sha256": "AB27875EC94507FF1A14D5E2DA0C3D7BC92D3E991BA72C9217F886F124DF39CB",
+  "wther": "W",
+  "wsta_confirmed": true,
+  "runtime_cli_sha256": "7EE3037E05A6850182FB3CECDDED631F26C88FF713E3C279F07F3F000E881FD6",
+  "source_cli_sha256": "7EE3037E05A6850182FB3CECDDED631F26C88FF713E3C279F07F3F000E881FD6",
+  "pdi_config_sha256": "6C9D0FCBB265F7DDE41E75228A2344E8D93DD974D3607B871FBBDFB9B3DFFF8F",
+  "yaml_bootstrap_seed": 1078,
+  "yaml_bootstrap_confirmed": true,
+  "runtime_rseed1": 1078,
+  "scheduled_seed": 1078
+}

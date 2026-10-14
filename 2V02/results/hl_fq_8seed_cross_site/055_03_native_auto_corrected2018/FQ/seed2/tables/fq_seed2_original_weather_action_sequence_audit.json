@@ -1,0 +1,177 @@
+{
+  "site": "FQ",
+  "seed": 2,
+  "years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "sequence_definition": "ordered positive irrigation/N event sequence [DAP, irrigation_mm, nitrogen_kg_ha] from validated PPO daily trace",
+  "identical_across_all_validation_years": true,
+  "unique_yearly_action_sequence_count": 1,
+  "sequence_frequency": {
+    "[[1,45.0,40.0]]": 10
+  },
+  "yearly_action_sequences": {
+    "2014": [
+      [
+        1,
+        45.0,
+        40.0
+      ]
+    ],
+    "2015": [
+      [
+        1,
+        45.0,
+        40.0
+      ]
+    ],
+    "2016": [
+      [
+        1,
+        45.0,
+        40.0
+      ]
+    ],
+    "2017": [
+      [
+        1,
+        45.0,
+        40.0
+      ]
+    ],
+    "2018": [
+      [
+        1,
+        45.0,
+        40.0
+      ]
+    ],
+    "2019": [
+      [
+        1,
+        45.0,
+        40.0
+      ]
+    ],
+    "2020": [
+      [
+        1,
+        45.0,
+        40.0
+      ]
+    ],
+    "2021": [
+      [
+        1,
+        45.0,
+        40.0
+      ]
+    ],
+    "2022": [
+      [
+        1,
+        45.0,
+        40.0
+      ]
+    ],
+    "2023": [
+      [
+        1,
+        45.0,
+        40.0
+      ]
+    ]
+  },
+  "weather_input_match_by_calendar_date": {
+    "2014": {
+      "ppo_daily_rows": 114,
+      "date_matched_weather_rows": 114,
+      "weather_values_match_by_calendar_date": true,
+      "rain_mm_max_abs_diff": 0.0,
+      "tmax_c_max_abs_diff": 0.0,
+      "tmin_c_max_abs_diff": 0.0
+    },
+    "2015": {
+      "ppo_daily_rows": 106,
+      "date_matched_weather_rows": 106,
+      "weather_values_match_by_calendar_date": true,
+      "rain_mm_max_abs_diff": 0.0,
+      "tmax_c_max_abs_diff": 0.04283707865168651,
+      "tmin_c_max_abs_diff": 0.04999999999999716
+    },
+    "2016": {
+      "ppo_daily_rows": 101,
+      "date_matched_weather_rows": 101,
+      "weather_values_match_by_calendar_date": true,
+      "rain_mm_max_abs_diff": 0.0,
+      "tmax_c_max_abs_diff": 0.0,
+      "tmin_c_max_abs_diff": 0.0
+    },
+    "2017": {
+      "ppo_daily_rows": 104,
+      "date_matched_weather_rows": 104,
+      "weather_values_match_by_calendar_date": true,
+      "rain_mm_max_abs_diff": 0.0,
+      "tmax_c_max_abs_diff": 0.0,
+      "tmin_c_max_abs_diff": 0.0
+    },
+    "2018": {
+      "ppo_daily_rows": 83,
+      "date_matched_weather_rows": 83,
+      "weather_values_match_by_calendar_date": true,
+      "rain_mm_max_abs_diff": 0.0,
+      "tmax_c_max_abs_diff": 0.0,
+      "tmin_c_max_abs_diff": 0.0
+    },
+    "2019": {
+      "ppo_daily_rows": 113,
+      "date_matched_weather_rows": 113,
+      "weather_values_match_by_calendar_date": true,
+      "rain_mm_max_abs_diff": 0.0,
+      "tmax_c_max_abs_diff": 0.0,
+      "tmin_c_max_abs_diff": 0.0
+    },
+    "2020": {
+      "ppo_daily_rows": 107,
+      "date_matched_weather_rows": 107,
+      "weather_values_match_by_calendar_date": true,
+      "rain_mm_max_abs_diff": 0.0,
+      "tmax_c_max_abs_diff": 0.0,
+      "tmin_c_max_abs_diff": 0.0
+    },
+    "2021": {
+      "ppo_daily_rows": 107,
+      "date_matched_weather_rows": 107,
+      "weather_values_match_by_calendar_date": true,
+      "rain_mm_max_abs_diff": 0.0,
+      "tmax_c_max_abs_diff": 0.0,
+      "tmin_c_max_abs_diff": 0.0
+    },
+    "2022": {
+      "ppo_daily_rows": 102,
+      "date_matched_weather_rows": 102,
+      "weather_values_match_by_calendar_date": true,
+      "rain_mm_max_abs_diff": 0.0,
+      "tmax_c_max_abs_diff": 0.0,
+      "tmin_c_max_abs_diff": 0.0
+    },
+    "2023": {
+      "ppo_daily_rows": 99,
+      "date_matched_weather_rows": 99,
+      "weather_values_match_by_calendar_date": true,
+      "rain_mm_max_abs_diff": 0.0,
+      "tmax_c_max_abs_diff": 0.0009695290858715566,
+      "tmin_c_max_abs_diff": 0.00858725761773016
+    }
+  },
+  "weather_match_all_years": true
+}

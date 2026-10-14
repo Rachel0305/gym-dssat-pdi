@@ -1,0 +1,2 @@
+﻿site,station_code,seed,year,checkpoint_step,scenario,scenario_label,grain_yield_kg_ha,total_irrigation_mm,total_n_kg_ha,etcp_mm,WP_ET_kg_m3,PFP_N_kg_grain_per_kg_N,snapshot_path,model_sha256,weather_sha256,correction_manifest
+FQ,FQA,6,2018,100000,ppo_seed_6,PPO seed 6,8307.0,210.0,240.0,360.1,2.31,34.6,results/fqa_wgen_052_corrected2018_231/seed_06/snapshot,29B14B45447F93E58CB594770523E760CB090A9A325699EE34DD79C0F6332E9F,ba88b61dca081eb09513562471ac4e4d27f1fe805037ef64d97ecffce8a98882,benchmark_results/088_00_fq2018_input_quality_correction/088_00_correction_manifest.json

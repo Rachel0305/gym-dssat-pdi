@@ -1,0 +1,46 @@
+{
+  "status": "PASS_100K_ARCHIVE_ONLY",
+  "mode": "formal_100k",
+  "ppo_seed": 6,
+  "checks": {
+    "source_hashes": true,
+    "frozen_contract": true,
+    "budget_and_status": true,
+    "heldout_excluded_and_train_seeds": true,
+    "first_80_schedule_matches_045": true,
+    "run_schedule_and_episode_closure": true,
+    "daily_weather_hash_dates_and_physical": true,
+    "runtime_wgen_cli_and_seed": true,
+    "resources_within_limits": true,
+    "all_checkpoint_files_and_steps": true,
+    "final_model_hash": true,
+    "completed_episode_summary_closure": true
+  },
+  "requested_timesteps": 100000,
+  "actual_timesteps": 100080,
+  "episode_archives": 956,
+  "completed_episodes": 955,
+  "partial_episodes": 1,
+  "archived_weather_days": 100080,
+  "unique_weather_hashes": 553,
+  "checkpoint_files": {
+    "25000": {
+      "exists": true,
+      "sha256": "453D4A8D44E4C3185667AFE6EC7ACE302E543D6C9F44773729BD1DC5BD55FB40"
+    },
+    "50000": {
+      "exists": true,
+      "sha256": "320A29443A13DE09B4AD900D3545FDFDB819D69BE04A8D9D045371E9726029BB"
+    },
+    "75000": {
+      "exists": true,
+      "sha256": "F6023DD55FEB774E00160326CFCF47F46F460592676CF85BA90F0C9AF67AC3D2"
+    },
+    "100000": {
+      "exists": true,
+      "sha256": "29B14B45447F93E58CB594770523E760CB090A9A325699EE34DD79C0F6332E9F"
+    }
+  },
+  "peak_process_tree_rss_mb": 1433.77,
+  "elapsed_seconds": 2909.24
+}

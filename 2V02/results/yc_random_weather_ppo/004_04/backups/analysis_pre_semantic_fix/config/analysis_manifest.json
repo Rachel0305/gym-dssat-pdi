@@ -1,0 +1,141 @@
+{
+  "episodes": 180,
+  "probe_fixed_before_predictions": true,
+  "probe_seed": 404006,
+  "probe_states": 600,
+  "step_rows": 18408,
+  "stress_bin_semantics": "Existing project interpretation: larger SWFAC/NSTRES values indicate greater stress severity",
+  "weather_context": "POST_HOC_DIAGNOSTIC_ONLY",
+  "weather_data_qc": {
+    "WGEN_hash_reconciliation_pass": true,
+    "WGEN_runtime_weather_hash_reconciles_for_every_step": {
+      "H0": true,
+      "H1": true,
+      "H2": true,
+      "W0": true,
+      "W1": true,
+      "W2": true
+    },
+    "WGEN_source": "per-episode canonical daily_weather_from_states used by 004_03 runtime hash",
+    "WGEN_weather_value_variation": {
+      "RAIN": {
+        "episodes": 120,
+        "median_unique_daily_values_per_episode": 29.5,
+        "minimum_unique_daily_values_per_episode": 21
+      },
+      "SRAD": {
+        "episodes": 120,
+        "median_unique_daily_values_per_episode": 102.0,
+        "minimum_unique_daily_values_per_episode": 97
+      },
+      "TMAX": {
+        "episodes": 120,
+        "median_unique_daily_values_per_episode": 102.0,
+        "minimum_unique_daily_values_per_episode": 97
+      },
+      "TMIN": {
+        "episodes": 120,
+        "median_unique_daily_values_per_episode": 102.0,
+        "minimum_unique_daily_values_per_episode": 97
+      }
+    },
+    "step_weather_coverage_by_model_and_eval": [
+      {
+        "evaluation_weather_type": "heldout_wgen",
+        "model_id": "H0",
+        "rain_present": 1850,
+        "step_rows": 2059,
+        "weather_coverage_fraction": 0.8984944147644488,
+        "weather_sources": "DSSAT_runtime_weather_state_capture"
+      },
+      {
+        "evaluation_weather_type": "observed_weather",
+        "model_id": "H0",
+        "rain_present": 1016,
+        "step_rows": 1016,
+        "weather_coverage_fraction": 1.0,
+        "weather_sources": "observed_cleaned_YCA"
+      },
+      {
+        "evaluation_weather_type": "heldout_wgen",
+        "model_id": "H1",
+        "rain_present": 1850,
+        "step_rows": 2059,
+        "weather_coverage_fraction": 0.8984944147644488,
+        "weather_sources": "DSSAT_runtime_weather_state_capture"
+      },
+      {
+        "evaluation_weather_type": "observed_weather",
+        "model_id": "H1",
+        "rain_present": 1002,
+        "step_rows": 1002,
+        "weather_coverage_fraction": 1.0,
+        "weather_sources": "observed_cleaned_YCA"
+      },
+      {
+        "evaluation_weather_type": "heldout_wgen",
+        "model_id": "H2",
+        "rain_present": 1850,
+        "step_rows": 2059,
+        "weather_coverage_fraction": 0.8984944147644488,
+        "weather_sources": "DSSAT_runtime_weather_state_capture"
+      },
+      {
+        "evaluation_weather_type": "observed_weather",
+        "model_id": "H2",
+        "rain_present": 1016,
+        "step_rows": 1016,
+        "weather_coverage_fraction": 1.0,
+        "weather_sources": "observed_cleaned_YCA"
+      },
+      {
+        "evaluation_weather_type": "heldout_wgen",
+        "model_id": "W0",
+        "rain_present": 1850,
+        "step_rows": 2059,
+        "weather_coverage_fraction": 0.8984944147644488,
+        "weather_sources": "DSSAT_runtime_weather_state_capture"
+      },
+      {
+        "evaluation_weather_type": "observed_weather",
+        "model_id": "W0",
+        "rain_present": 1002,
+        "step_rows": 1002,
+        "weather_coverage_fraction": 1.0,
+        "weather_sources": "observed_cleaned_YCA"
+      },
+      {
+        "evaluation_weather_type": "heldout_wgen",
+        "model_id": "W1",
+        "rain_present": 1850,
+        "step_rows": 2059,
+        "weather_coverage_fraction": 0.8984944147644488,
+        "weather_sources": "DSSAT_runtime_weather_state_capture"
+      },
+      {
+        "evaluation_weather_type": "observed_weather",
+        "model_id": "W1",
+        "rain_present": 1016,
+        "step_rows": 1016,
+        "weather_coverage_fraction": 1.0,
+        "weather_sources": "observed_cleaned_YCA"
+      },
+      {
+        "evaluation_weather_type": "heldout_wgen",
+        "model_id": "W2",
+        "rain_present": 1850,
+        "step_rows": 2059,
+        "weather_coverage_fraction": 0.8984944147644488,
+        "weather_sources": "DSSAT_runtime_weather_state_capture"
+      },
+      {
+        "evaluation_weather_type": "observed_weather",
+        "model_id": "W2",
+        "rain_present": 1002,
+        "step_rows": 1002,
+        "weather_coverage_fraction": 1.0,
+        "weather_sources": "observed_cleaned_YCA"
+      }
+    ]
+  }
+}

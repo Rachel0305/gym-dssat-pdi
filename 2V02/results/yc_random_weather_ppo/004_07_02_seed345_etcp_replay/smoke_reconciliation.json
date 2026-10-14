@@ -1,0 +1,100 @@
+{
+  "completed_utc": "2026-09-26T07:39:30.644109+00:00",
+  "gates": {
+    "mgmtevent_irrigation_matches_formal_and_summary": true,
+    "mgmtevent_nitrogen_matches_formal_and_summary": true,
+    "positive_finite_etcp": true,
+    "rss_below_4096_mib": true,
+    "same_observed_weather_and_filex_hashes": true,
+    "same_step_count_as_formal": true,
+    "summary_yield_within_1kg_ha": true
+  },
+  "input_provenance": {
+    "checks": {
+      "CNYC1901.WTH": {
+        "frozen_sha256": "48A951CDD1669289783338501F736ED28C541809638F3B088ABBF7C36BEC8BAE",
+        "identical": true,
+        "replay_sha256": "48A951CDD1669289783338501F736ED28C541809638F3B088ABBF7C36BEC8BAE"
+      },
+      "YCA_2019_eval_observed_weather_RANDOM_WEATHER_WGEN_5_2019.jinja2": {
+        "frozen_sha256": "5E0CF89CCC7C94CFFD6C4A9E73B3E18724926F2DB5D9AC7DC815C50427EF7EF5",
+        "identical": true,
+        "replay_sha256": "5E0CF89CCC7C94CFFD6C4A9E73B3E18724926F2DB5D9AC7DC815C50427EF7EF5"
+      }
+    },
+    "rendered_dir": "results/yc_random_weather_ppo/004_07_02_seed345_etcp_replay/evaluation/runtime/seed_5/YCA_2019/rendered_inputs/YCA/2019/eval_observed_weather_RANDOM_WEATHER_WGEN_5_2019",
+    "template_file": "YCA_2019_eval_observed_weather_RANDOM_WEATHER_WGEN_5_2019.jinja2",
+    "weather_file": "CNYC1901.WTH"
+  },
+  "passed": true,
+  "peak_process_tree_rss_mb": 424.5,
+  "reason": "The replay completed; the initial smoke validator searched the wrong rendered-input directory. No DSSAT episode was rerun.",
+  "row": {
+    "action_signature": "0:I45/N40;8:I30/N40;15:I0/N80;31:I45/N40;61:I45/N40",
+    "canonical_reward": 0.450975889134407,
+    "canonical_reward_source": "results/yc_random_weather_ppo/004_05/evaluation/runs/observed_weather/random_weather/ppo_seed_5/evaluation_episode_level.csv",
+    "checkpoint": 100000,
+    "common_reward": 580.8499999999999,
+    "etcp_mm": 344.8,
+    "formal_irrigation_mm": 165.0,
+    "formal_nitrogen_kg_ha": 240.0,
+    "formal_yield_kg_ha": 7224.700927734375,
+    "irrigation_action_days": 4,
+    "irrigation_event_abs_error_mm": 0.0,
+    "irrigation_mm": 165.0,
+    "management_action_days_nonzero": 5,
+    "management_event_count": 9,
+    "model_path": "results/yc_random_weather_ppo/004_05/training/random_weather/ppo_seed_5/models/checkpoint_100000.zip",
+    "model_sha256": "814A5C73404D2B046927BA0ECA42DCE7F8F1D804B550A226C96B61CFDA97E2BF",
+    "nitrogen_action_days": 5,
+    "nitrogen_event_abs_error_kg_ha": 0.0,
+    "nitrogen_kg_ha": 240.0,
+    "peak_process_tree_rss_mb": 424.5,
+    "pfp_n_kg_kg": 30.1,
+    "rendered_input_provenance": "{\"checks\": {\"CNYC1901.WTH\": {\"frozen_sha256\": \"48A951CDD1669289783338501F736ED28C541809638F3B088ABBF7C36BEC8BAE\", \"identical\": true, \"replay_sha256\": \"48A951CDD1669289783338501F736ED28C541809638F3B088ABBF7C36BEC8BAE\"}, \"YCA_2019_eval_observed_weather_RANDOM_WEATHER_WGEN_5_2019.jinja2\": {\"frozen_sha256\": \"5E0CF89CCC7C94CFFD6C4A9E73B3E18724926F2DB5D9AC7DC815C50427EF7EF5\", \"identical\": true, \"replay_sha256\": \"5E0CF89CCC7C94CFFD6C4A9E73B3E18724926F2DB5D9AC7DC815C50427EF7EF5\"}}, \"rendered_dir\": \"results/yc_random_weather_ppo/004_07_02_seed345_etcp_replay/evaluation/runtime/seed_5/YCA_2019/rendered_inputs/YCA/2019/eval_observed_weather_RANDOM_WEATHER_WGEN_5_2019\", \"template_file\": \"YCA_2019_eval_observed_weather_RANDOM_WEATHER_WGEN_5_2019.jinja2\", \"weather_file\": \"CNYC1901.WTH\"}",
+    "replay_yield_kg_ha": 7225.0,
+    "seed": 5,
+    "snapshot_dir": "results/yc_random_weather_ppo/004_07_02_seed345_etcp_replay/snapshots/seed_5/YCA/2019",
+    "snapshot_files": "[{\"bytes\": 4014, \"name\": \"MgmtEvent.OUT\", \"sha256\": \"37D04CCDC2B81C003EC3F7981C072CBC66D189E81C467AAA6E70B98F760AB105\"}, {\"bytes\": 97656, \"name\": \"PlantGro.OUT\", \"sha256\": \"21924AEBA399BEE65F0CED613A6F7A531EB3E62D092393FA80F1C6886C68EF77\"}, {\"bytes\": 45227, \"name\": \"SoilWat.OUT\", \"sha256\": \"3D2C19643C41692E572AB2FA998C289A142A9FA03E343289D7586127CAC9DBB3\"}, {\"bytes\": 3799, \"name\": \"Summary.OUT\", \"sha256\": \"E8A4B010CBA45496DF74D6F023A4264AC03A9635243C5D91E515356CD4F059FF\"}, {\"bytes\": 46374, \"name\": \"Weather.OUT\", \"sha256\": \"46CDB332ED3549B3BE7E95EE7829D3E3CCC33175992F3918FCE0037A9E7E2A64\"}]",
+    "status": "passed_reconciled_existing_smoke",
+    "steps": 101,
+    "summary_hwam_kg_ha": 7225.0,
+    "summary_ircm_mm": 165.0,
+    "summary_nicm_kg_ha": 240.0,
+    "summary_row_index_zero_based": 2,
+    "wp_et_kg_m3": 2.1,
+    "year": 2019,
+    "yield_abs_error_kg_ha": 0.299072265625
+  },
+  "seed": 5,
+  "snapshot_files": [
+    {
+      "bytes": 4014,
+      "name": "MgmtEvent.OUT",
+      "sha256": "37D04CCDC2B81C003EC3F7981C072CBC66D189E81C467AAA6E70B98F760AB105"
+    },
+    {
+      "bytes": 97656,
+      "name": "PlantGro.OUT",
+      "sha256": "21924AEBA399BEE65F0CED613A6F7A531EB3E62D092393FA80F1C6886C68EF77"
+    },
+    {
+      "bytes": 45227,
+      "name": "SoilWat.OUT",
+      "sha256": "3D2C19643C41692E572AB2FA998C289A142A9FA03E343289D7586127CAC9DBB3"
+    },
+    {
+      "bytes": 3799,
+      "name": "Summary.OUT",
+      "sha256": "E8A4B010CBA45496DF74D6F023A4264AC03A9635243C5D91E515356CD4F059FF"
+    },
+    {
+      "bytes": 46374,
+      "name": "Weather.OUT",
+      "sha256": "46CDB332ED3549B3BE7E95EE7829D3E3CCC33175992F3918FCE0037A9E7E2A64"
+    }
+  ],
+  "source_failed_manifest_sha256": "59867B78C31D20C6EF145A2C97C43460879C14423A3498BC2C9048FE1A99EFFF",
+  "status": "passed_by_post_run_evidence_reconciliation",
+  "year": 2019
+}

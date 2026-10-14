@@ -1,0 +1,15 @@
+{
+  "site": "HL",
+  "seed": 2,
+  "year": 2023,
+  "saved_yield_kg_ha": 6516.6497802734375,
+  "replay_yield_kg_ha": 6517.0,
+  "saved_irrigation_mm": 240.0,
+  "replay_irrigation_mm": 240.0,
+  "saved_n_kg_ha": 240.0,
+  "replay_n_kg_ha": 240.0,
+  "etcp_mm": 453.9,
+  "WP_ET_kg_m3": 1.4400000000000002,
+  "snapshot_path": "results/hl_fq_8seed_cross_site/055_03_five_scenario/wp_et_replay/HL/seed2/snapshots/HLA/2023/rl_candidate",
+  "metric_source": "Summary.OUT ETCP from deterministic 100K checkpoint replay"
+}

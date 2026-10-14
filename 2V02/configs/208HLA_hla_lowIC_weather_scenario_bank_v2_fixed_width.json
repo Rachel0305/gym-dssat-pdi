@@ -1,0 +1,28 @@
+{
+  "task_id": "208HLA",
+  "task_name": "hla_lowIC_weather_scenario_bank_v2_fixed_width",
+  "source_input_root": "DSSAT_auto_validation/multisite_new_cultivar_inputs_013_lowIC_manual",
+  "target_input_root": "DSSAT_auto_validation/hla_lowIC_weather_scenario_bank_208_v2_fixed_width",
+  "manifest_output_root": "benchmark_results/208HLA_hla_lowIC_weather_scenario_bank_v2_fixed_width",
+  "train_years": [2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013],
+  "validation_years": [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023],
+  "planting_doy": 125,
+  "weather_prefix": "CNHL",
+  "variants": [
+    {"name": "original", "rain_multiplier": 1.0, "window": "none", "target_start_year": null},
+    {"name": "early_dry", "rain_multiplier": 0.5, "window": "dap_1_30", "target_start_year": 1950},
+    {"name": "mid_dry", "rain_multiplier": 0.5, "window": "dap_31_60", "target_start_year": 1960},
+    {"name": "late_dry", "rain_multiplier": 0.5, "window": "dap_61_90", "target_start_year": 1970},
+    {"name": "early_wet", "rain_multiplier": 1.5, "window": "dap_1_30", "target_start_year": 1980},
+    {"name": "mid_wet", "rain_multiplier": 1.5, "window": "dap_31_60", "target_start_year": 1990}
+  ],
+  "dssat_weather_data_contract": {
+    "date_width": 7,
+    "field_width": 6,
+    "field_precision": 1,
+    "expected_data_line_width": 31,
+    "fields": ["DATE", "SRAD", "TMAX", "TMIN", "RAIN"]
+  },
+  "training_allowed": false,
+  "validation_weather_must_remain_byte_identical": true
+}

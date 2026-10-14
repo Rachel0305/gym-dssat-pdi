@@ -1,0 +1,11 @@
+{
+  "site": "LC",
+  "seed": 6,
+  "models": 4,
+  "validation_rows": 40,
+  "historical_WTH_hashes": 40,
+  "sampling_episodes": 1030,
+  "files_backed_up": 1147,
+  "all_archive_sha256_verified": true,
+  "archive_sha256": "f402a2dcf2fe734e7136c85c5d6d7df5056fee6b7630deff9912f7dc259fac7e"
+}

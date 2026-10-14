@@ -1,0 +1,21 @@
+site:
+  station_code: FQ
+  aliases: [FQA]
+  station_name: Fengqiu
+  adapter: fq_frozen_020_12
+  input_status: confirmed
+  treatment: 2
+  cultivar_id: FQ0985
+  soil_id: FQ99001200
+  initial_condition_mode: 1
+  supported_years: [2016]
+  train_years: [2016]
+  eval_years: [2016]
+  inputs:
+    source_dir: DSSAT_auto_validation/multisite_new_cultivar_inputs_013/FQ
+    by_year:
+      '2016':
+        prepared_input_dir: DSSAT_auto_validation/multisite_new_cultivar_inputs_013/FQ
+        fileX_name: CNFQ0801.MZX
+        weather_name: CNFQ1601.WTH
+

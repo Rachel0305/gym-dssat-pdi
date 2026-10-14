@@ -1,0 +1,84 @@
+{
+  "task_id": "057_00",
+  "task_name": "lca_lowIC_forecast_engineered_maskableppo",
+  "reference_run": "053_00_lca_lowIC_expanded_action_maskableppo",
+  "station_code": "LCA",
+  "site": "LC",
+  "input_profile": "lowIC",
+  "seed": 0,
+  "report_checkpoint": 100000,
+  "training": {
+    "total_timesteps": 100000,
+    "checkpoint_steps": [25000, 50000, 75000, 100000]
+  },
+  "actions": {
+    "irrigation_levels_mm": [0.0, 15.0, 30.0, 45.0],
+    "nitrogen_levels_kg_ha": [0.0, 40.0, 80.0, 120.0]
+  },
+  "observation_contract": {
+    "base": "046_02_raw_observation",
+    "normalization_enabled": false,
+    "weather_forecast_enabled": true,
+    "weather_forecast_mode": "engineered_perfect_hindcast_lookahead",
+    "weather_forecast_note": "Append normalized engineered future-weather risk summaries; do not alter base DSSAT observation, reward, safety, action grid, years, or seed."
+  },
+  "forecast_features": {
+    "enabled": true,
+    "include_today_in_future_windows": false,
+    "source": "historical_WTH_as_perfect_short_term_forecast",
+    "feature_names": [
+      "rain_next3_norm",
+      "rain_next7_norm",
+      "rain_next14_norm",
+      "rain_past7_norm",
+      "tmean_next7_norm",
+      "tmax_mean_next7_norm",
+      "heat_days_next7_norm",
+      "srad_next7_norm",
+      "heavy_rain_next3_flag",
+      "dry_spell_next7_flag",
+      "n_leach_risk_next3_flag"
+    ],
+    "raw_feature_names": [
+      "rain_next3_mm",
+      "rain_next7_mm",
+      "rain_next14_mm",
+      "rain_past7_mm",
+      "tmean_next7_c",
+      "tmax_mean_next7_c",
+      "heat_days_next7",
+      "srad_next7_mj_m2",
+      "heavy_rain_next3_flag",
+      "dry_spell_next7_flag",
+      "n_leach_risk_next3_flag"
+    ],
+    "scales": {
+      "rain_next3_mm": 60.0,
+      "rain_next7_mm": 120.0,
+      "rain_next14_mm": 200.0,
+      "rain_past7_mm": 120.0,
+      "tmean_center_c": 25.0,
+      "tmean_scale_c": 10.0,
+      "tmax_center_c": 30.0,
+      "tmax_scale_c": 10.0,
+      "heat_days_next7": 7.0,
+      "srad_next7_mj_m2": 140.0,
+      "heavy_rain_next3_mm": 20.0,
+      "dry_spell_next7_mm": 5.0,
+      "n_leach_risk_next3_mm": 25.0
+    }
+  },
+  "noninferiority_gate": {
+    "baseline_result": "053_03_lca_lowIC_053_00_lca_lowIC_expanded_action_maskableppo_auto_nstd030_minimal_five_scenario_figures_ckpt100000_auto_nstd030_minimal_run_auto_nstd030_minimal",
+    "selected_forecast_checkpoint_policy": "accept_only_if_yield_wp_et_pfp_n_are_not_lower_than_current_accepted_ppo",
+    "yield_tolerance_kg_ha": 25.0,
+    "wp_et_tolerance": 0.005,
+    "pfp_n_tolerance": 0.1
+  },
+  "scope": {
+    "train_years": [2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013],
+    "validation_years": [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023],
+    "reward_and_safety": "inherit_042_15_via_046_02_unchanged",
+    "purpose": "Test whether engineered short-term weather forecast features can match or improve the accepted LCA/LC no-forecast PPO without degrading yield, WP_ET, or PFP_N."
+  }
+}

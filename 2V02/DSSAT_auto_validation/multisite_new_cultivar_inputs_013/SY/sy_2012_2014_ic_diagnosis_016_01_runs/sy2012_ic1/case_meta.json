@@ -1,0 +1,8 @@
+{
+  "case": "sy2012_ic1",
+  "description": "2012 treatment, keep original IC=1",
+  "experiment_number": 1,
+  "patch_2014_ic": null,
+  "icdat_override": null,
+  "input_root": "/workspaces/gym-dssat-pdi/DSSAT_auto_validation/multisite_new_cultivar_inputs_013/SY"
+}

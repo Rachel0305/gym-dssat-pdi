@@ -1,0 +1,9 @@
+{
+  "stage": "saved_evidence_audit",
+  "status": "COMPLETE_WITH_COMPARABILITY_BLOCKERS",
+  "next_priority": "FQ2018 source-output and physical-input reconciliation",
+  "unified_120_publication_counts_allowed": false,
+  "augmentation_use_evidence_found_models": 40,
+  "full_generator_fitting_leakage_audit_completed": false,
+  "new_training_authorized_by_this_stage": false
+}

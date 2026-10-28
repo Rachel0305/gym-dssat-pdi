@@ -1,0 +1,32 @@
+[
+  {
+    "claim": "LC增产伴随追加灌溉和减氮",
+    "evidence": "LC满足增产条件12策略连续指标、T1/T2及S2",
+    "status": "supported within simulation",
+    "boundary": "不推广为全部LC模型平均收益"
+  },
+  {
+    "claim": "收益重复性与最好结果代表性因站点不同",
+    "evidence": "T2十队列计数、Wilson区间、最高与中位",
+    "status": "descriptive support",
+    "boundary": "不声称显著站点差异或未来成功概率"
+  },
+  {
+    "claim": "投入操作信息改变评价集合",
+    "evidence": "T3及S2的N1/N2/N3标记",
+    "status": "supported under exploratory criteria",
+    "boundary": "不是阈值农学验证，19不推荐部署"
+  },
+  {
+    "claim": "平均收益未覆盖年度减产",
+    "evidence": "S1、S3、S2年度最差值",
+    "status": "descriptive support",
+    "boundary": "年度>5%不新增筛选；FQ2018输入依赖"
+  },
+  {
+    "claim": "天气增强未呈现一致收益",
+    "evidence": "T4的15项差值与Welch区间",
+    "status": "conditional route comparison",
+    "boundary": "五站异质处理，非YC运行时合同未完全核实，无无效/等效证明"
+  }
+]

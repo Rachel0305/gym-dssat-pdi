@@ -1,0 +1,122 @@
+[
+  {
+    "year": 2014,
+    "passed": true,
+    "native_irrigation_mode": "A",
+    "archived_fertilizer_mode": "A",
+    "external_n_controller": false,
+    "Summary_NICM": 0,
+    "final_run_fertilizer_events": 0,
+    "event_irrigation_mm": 120.2,
+    "summary_irrigation_mm": 120.0,
+    "snapshot": "benchmark_results/054_02_hla_lowIC_four_baselines_static_level1/snapshots/HLA/2014/dssat_auto"
+  },
+  {
+    "year": 2015,
+    "passed": true,
+    "native_irrigation_mode": "A",
+    "archived_fertilizer_mode": "A",
+    "external_n_controller": false,
+    "Summary_NICM": 0,
+    "final_run_fertilizer_events": 0,
+    "event_irrigation_mm": 269.6,
+    "summary_irrigation_mm": 270.0,
+    "snapshot": "benchmark_results/054_02_hla_lowIC_four_baselines_static_level1/snapshots/HLA/2015/dssat_auto"
+  },
+  {
+    "year": 2016,
+    "passed": true,
+    "native_irrigation_mode": "A",
+    "archived_fertilizer_mode": "A",
+    "external_n_controller": false,
+    "Summary_NICM": 0,
+    "final_run_fertilizer_events": 0,
+    "event_irrigation_mm": 224.7,
+    "summary_irrigation_mm": 225.0,
+    "snapshot": "benchmark_results/054_02_hla_lowIC_four_baselines_static_level1/snapshots/HLA/2016/dssat_auto"
+  },
+  {
+    "year": 2017,
+    "passed": true,
+    "native_irrigation_mode": "A",
+    "archived_fertilizer_mode": "A",
+    "external_n_controller": false,
+    "Summary_NICM": 0,
+    "final_run_fertilizer_events": 0,
+    "event_irrigation_mm": 174.39999999999998,
+    "summary_irrigation_mm": 174.0,
+    "snapshot": "benchmark_results/054_02_hla_lowIC_four_baselines_static_level1/snapshots/HLA/2017/dssat_auto"
+  },
+  {
+    "year": 2018,
+    "passed": true,
+    "native_irrigation_mode": "A",
+    "archived_fertilizer_mode": "A",
+    "external_n_controller": false,
+    "Summary_NICM": 0,
+    "final_run_fertilizer_events": 0,
+    "event_irrigation_mm": 125.7,
+    "summary_irrigation_mm": 126.0,
+    "snapshot": "benchmark_results/054_02_hla_lowIC_four_baselines_static_level1/snapshots/HLA/2018/dssat_auto"
+  },
+  {
+    "year": 2019,
+    "passed": true,
+    "native_irrigation_mode": "A",
+    "archived_fertilizer_mode": "A",
+    "external_n_controller": false,
+    "Summary_NICM": 0,
+    "final_run_fertilizer_events": 0,
+    "event_irrigation_mm": 125.5,
+    "summary_irrigation_mm": 126.0,
+    "snapshot": "benchmark_results/054_02_hla_lowIC_four_baselines_static_level1/snapshots/HLA/2019/dssat_auto"
+  },
+  {
+    "year": 2020,
+    "passed": true,
+    "native_irrigation_mode": "A",
+    "archived_fertilizer_mode": "A",
+    "external_n_controller": false,
+    "Summary_NICM": 0,
+    "final_run_fertilizer_events": 0,
+    "event_irrigation_mm": 125.9,
+    "summary_irrigation_mm": 126.0,
+    "snapshot": "benchmark_results/054_02_hla_lowIC_four_baselines_static_level1/snapshots/HLA/2020/dssat_auto"
+  },
+  {
+    "year": 2021,
+    "passed": true,
+    "native_irrigation_mode": "A",
+    "archived_fertilizer_mode": "A",
+    "external_n_controller": false,
+    "Summary_NICM": 0,
+    "final_run_fertilizer_events": 0,
+    "event_irrigation_mm": 77.1,
+    "summary_irrigation_mm": 77.0,
+    "snapshot": "benchmark_results/054_02_hla_lowIC_four_baselines_static_level1/snapshots/HLA/2021/dssat_auto"
+  },
+  {
+    "year": 2022,
+    "passed": true,
+    "native_irrigation_mode": "A",
+    "archived_fertilizer_mode": "A",
+    "external_n_controller": false,
+    "Summary_NICM": 0,
+    "final_run_fertilizer_events": 0,
+    "event_irrigation_mm": 222.2,
+    "summary_irrigation_mm": 222.0,
+    "snapshot": "benchmark_results/054_02_hla_lowIC_four_baselines_static_level1/snapshots/HLA/2022/dssat_auto"
+  },
+  {
+    "year": 2023,
+    "passed": true,
+    "native_irrigation_mode": "A",
+    "archived_fertilizer_mode": "A",
+    "external_n_controller": false,
+    "Summary_NICM": 0,
+    "final_run_fertilizer_events": 0,
+    "event_irrigation_mm": 173.9,
+    "summary_irrigation_mm": 174.0,
+    "snapshot": "benchmark_results/054_02_hla_lowIC_four_baselines_static_level1/snapshots/HLA/2023/dssat_auto"
+  }
+]

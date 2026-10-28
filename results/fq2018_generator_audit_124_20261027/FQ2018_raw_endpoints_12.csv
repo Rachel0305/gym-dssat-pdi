@@ -1,0 +1,13 @@
+scenario,seed,snapshot,table_yield,HWAM,IRCM,NICM,MDAT,HDAT,summary_rows,yield_matches,slowed_grain_filling,precipitation_error,normal_termination_not_certified_by_summary_alone
+dssat_auto_external_n,0,benchmark_results/051_01_fqa_originIC_external_auto_n_rule_nstd050_minimal/snapshots/FQA/2018/dssat_auto_irrigation_external_n_rule,0.0,0.0,57.0,0.0,2018240.0,2018240.0,3,True,True,False,True
+null,0,benchmark_results/051_02_fqa_originIC_four_baselines_static_level1/snapshots/FQA/2018/null,0.0,0.0,0.0,0.0,2018240.0,2018240.0,3,True,True,False,True
+official_extension_expert,0,benchmark_results/051_02_fqa_originIC_four_baselines_static_level1/snapshots/FQA/2018/official_extension_expert,0.0,0.0,158.0,212.0,2018240.0,2018240.0,3,True,True,False,True
+recorded_farmer_template,0,benchmark_results/051_02_fqa_originIC_four_baselines_static_level1/snapshots/FQA/2018/recorded_farmer_template,0.0,0.0,75.0,144.0,2018240.0,2018240.0,3,True,True,False,True
+rl_candidate,0,results/four_site_forecast_116_20261025/FQ/seed0/eval_100000_2018_snapshot/dssat,0.0,0.0,45.0,120.0,2018240.0,2018240.0,3,True,True,False,True
+rl_candidate,1,results/four_site_forecast_116_20261025/FQ/seed1/eval_100000_2018_snapshot/dssat,0.0,0.0,45.0,40.0,2018240.0,2018240.0,3,True,True,False,True
+rl_candidate,2,results/four_site_forecast_116_20261025/FQ/seed2/eval_100000_2018_snapshot/dssat,0.0,0.0,75.0,240.0,2018240.0,2018240.0,3,True,True,False,True
+rl_candidate,3,results/four_site_forecast_116_20261025/FQ/seed3/eval_100000_2018_snapshot/dssat,0.0,0.0,165.0,240.0,2018240.0,2018240.0,3,True,True,False,True
+rl_candidate,4,results/four_site_forecast_116_20261025/FQ/seed4/eval_100000_2018_snapshot/dssat,0.0,0.0,45.0,120.0,2018240.0,2018240.0,3,True,True,False,True
+rl_candidate,5,results/four_site_forecast_116_20261025/FQ/seed5/eval_100000_2018_snapshot/dssat,0.0,0.0,45.0,240.0,2018240.0,2018240.0,3,True,True,False,True
+rl_candidate,6,results/four_site_forecast_116_20261025/FQ/seed6/eval_100000_2018_snapshot/dssat,0.0,0.0,45.0,40.0,2018240.0,2018240.0,3,True,True,False,True
+rl_candidate,7,results/four_site_forecast_116_20261025/FQ/seed7/eval_100000_2018_snapshot/dssat,0.0,0.0,180.0,240.0,2018240.0,2018240.0,3,True,True,False,True

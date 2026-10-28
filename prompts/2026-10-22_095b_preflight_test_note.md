@@ -1,0 +1,7 @@
+# 095b 测试补充记录
+
+095首轮真实目录并发压力测试在`assert not thread.is_alive() and not errors`处未通过，FAILED_preflight.json保留；没有启动训练。原测试没有把线程错误详情写入失败输出，无法仅据该记录确定是线程异常还是等待超时，不能将其描述为已定位的训练代码缺陷。
+
+095b新增详细线程错误与重命名计数；合成重命名线程逐次记录当前位置，Windows挂载在读取目录时拒绝rename的PermissionError仅由该测试写线程等待重试。实际目录扫描helper仍不吞PermissionError。若扫描本身发生权限错误，测试继续判失败。2500次扫描和非零真实目录重命名均必须通过。首次失败及脚本保留，不替换原记录。
+
+新批次管理器启动门槛改读095b/gates.json；训练和评估worker未变。测试脚本构建时曾有文本替换引入的SyntaxError，被离线编译拦截并修复，记录保存在095/construction_failure_record.json，未消耗PPO训练。

@@ -1,0 +1,21 @@
+{
+  "policy_rows": 120,
+  "group_rows": 15,
+  "response_combinations": 52,
+  "unique_response_states": 30,
+  "single_legal_states": 20594,
+  "original_states": 46480,
+  "phase_changes": {
+    "early": 27,
+    "middle": 25
+  },
+  "phase_unique": {
+    "early": 18,
+    "middle": 12
+  },
+  "negative_JS_rows": 9726,
+  "minimum_JS": -7.728262829687084e-08,
+  "new_simulations": 0,
+  "models_loaded": 0,
+  "elapsed_seconds": 5.100755214691162
+}

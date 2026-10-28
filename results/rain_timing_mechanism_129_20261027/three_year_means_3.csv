@@ -1,0 +1,4 @@
+arm,yield_kg_ha,I,N,triggered_actions
+baseline,9960.330403645834,185.0,240.0,0.0
+correct_gate,9965.635375976562,175.0,240.0,4.0
+shifted_gate,10061.361897786459,175.0,240.0,5.0

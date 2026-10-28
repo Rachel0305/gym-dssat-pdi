@@ -1,0 +1,2733 @@
+{
+  "models": [
+    {
+      "site": "SY",
+      "seed": 0,
+      "model": "results/sy_forecast_seed0_100k_091_20261022/forecast_seed0_ckpt100000.zip",
+      "model_sha256": "216b0151ffacb331ec73f1326dc72b1dc79003d2daaf0eb09f51e381752b71a4",
+      "years": [
+        {
+          "year": 2014,
+          "trace": "results/sy_forecast_seed0_100k_091_20261022/eval_100000_2014_steps.jsonl",
+          "trace_sha256": "0733f9b84b65ce87529b1c1205d4f5e27e01ce03230dfdc6842375a2ef9321cc",
+          "rng_seed": 12702014
+        },
+        {
+          "year": 2015,
+          "trace": "results/sy_forecast_seed0_100k_091_20261022/eval_100000_2015_steps.jsonl",
+          "trace_sha256": "3ad6f99b465ca9b006a9cf8c70e8435f7e1ce95c8b37bc816b3ec406098799e9",
+          "rng_seed": 12702015
+        },
+        {
+          "year": 2016,
+          "trace": "results/sy_forecast_seed0_100k_091_20261022/eval_100000_2016_steps.jsonl",
+          "trace_sha256": "69f92ea06865363317c7931a09c880a7feafdf4db6e85823285bfecfc31db30d",
+          "rng_seed": 12702016
+        },
+        {
+          "year": 2017,
+          "trace": "results/sy_forecast_seed0_100k_091_20261022/eval_100000_2017_steps.jsonl",
+          "trace_sha256": "eeb6f38ecd53b32623734e93959515858ea6d7d61e9b86c436f3613c131533a7",
+          "rng_seed": 12702017
+        },
+        {
+          "year": 2018,
+          "trace": "results/sy_forecast_seed0_100k_091_20261022/eval_100000_2018_steps.jsonl",
+          "trace_sha256": "3b4e23aabee8b428d556d97482c076937cb090f009a722087a33f22641b91ed8",
+          "rng_seed": 12702018
+        },
+        {
+          "year": 2019,
+          "trace": "results/sy_forecast_seed0_100k_091_20261022/eval_100000_2019_steps.jsonl",
+          "trace_sha256": "d182e17bc6c61786657c3fc46384297afd98ee7cb856d1f41d95c815537fc486",
+          "rng_seed": 12702019
+        },
+        {
+          "year": 2020,
+          "trace": "results/sy_forecast_seed0_100k_091_20261022/eval_100000_2020_steps.jsonl",
+          "trace_sha256": "bdc993d9d1300ab8dee929aa60d210d3e219d879c7715de07a08e0ded8f03547",
+          "rng_seed": 12702020
+        },
+        {
+          "year": 2021,
+          "trace": "results/sy_forecast_seed0_100k_091_20261022/eval_100000_2021_steps.jsonl",
+          "trace_sha256": "113760bd2568aee887adea18405eb3b27728d87e6bc89faf7b4b5448631bf704",
+          "rng_seed": 12702021
+        },
+        {
+          "year": 2022,
+          "trace": "results/sy_forecast_seed0_100k_091_20261022/eval_100000_2022_steps.jsonl",
+          "trace_sha256": "48167653adac646678ddc148fa1dbf04a5d54abd5cfbe03d1791a3299e28a3e0",
+          "rng_seed": 12702022
+        },
+        {
+          "year": 2023,
+          "trace": "results/sy_forecast_seed0_100k_091_20261022/eval_100000_2023_steps.jsonl",
+          "trace_sha256": "e88f74d76d312a5af4803775f172e5b947c1732f89eb4628375dbe8663d94645",
+          "rng_seed": 12702023
+        }
+      ]
+    },
+    {
+      "site": "SY",
+      "seed": 1,
+      "model": "results/sy_forecast_seeds1_7_095_20261022/seed1/forecast_seed1_ckpt100000.zip",
+      "model_sha256": "1bb9064b7b4e4a3dc27fee7a225b47ce9643f1213f64122e3763dca9c7e5eeb2",
+      "years": [
+        {
+          "year": 2014,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed1/eval_100000_2014_steps.jsonl",
+          "trace_sha256": "d1d38900640dd2cb4c66a238c7a39333e6fcc8380d988b025fc9c78e754a96c6",
+          "rng_seed": 12703014
+        },
+        {
+          "year": 2015,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed1/eval_100000_2015_steps.jsonl",
+          "trace_sha256": "605b1be67e6afaac50e55c241fed769de8c5722de00b81bd717eb50eb1fecd91",
+          "rng_seed": 12703015
+        },
+        {
+          "year": 2016,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed1/eval_100000_2016_steps.jsonl",
+          "trace_sha256": "c5331b5d4555486f2b1c3c022bb89e476dcaf0af571ce789439a2cb15b057e8f",
+          "rng_seed": 12703016
+        },
+        {
+          "year": 2017,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed1/eval_100000_2017_steps.jsonl",
+          "trace_sha256": "45f4efd8ac801d12e800576cd41ec375b1c7887719d355c41fce69a93c63cd42",
+          "rng_seed": 12703017
+        },
+        {
+          "year": 2018,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed1/eval_100000_2018_steps.jsonl",
+          "trace_sha256": "fa8e27f5188d59ee1cf34daa0fd6656c0586073b2add70b34bc2f6849b072955",
+          "rng_seed": 12703018
+        },
+        {
+          "year": 2019,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed1/eval_100000_2019_steps.jsonl",
+          "trace_sha256": "dd1af7d4ca7be16aa6e84f0faed94a25f52c4917ab183a8fec2bf3098a1e049a",
+          "rng_seed": 12703019
+        },
+        {
+          "year": 2020,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed1/eval_100000_2020_steps.jsonl",
+          "trace_sha256": "4be30c88d6f29175b4e998ea911d9cebab7673a0f97e9803c2aa3917f8fd33c8",
+          "rng_seed": 12703020
+        },
+        {
+          "year": 2021,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed1/eval_100000_2021_steps.jsonl",
+          "trace_sha256": "d33c97c2f7900b784ef45732663e07c16e3ed0771b5601f8fba2d96ee21cd4fd",
+          "rng_seed": 12703021
+        },
+        {
+          "year": 2022,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed1/eval_100000_2022_steps.jsonl",
+          "trace_sha256": "840a235c8266ad061d73313aa792eaa7f03cd12438452addc11eb849e2f3cf4b",
+          "rng_seed": 12703022
+        },
+        {
+          "year": 2023,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed1/eval_100000_2023_steps.jsonl",
+          "trace_sha256": "4765226599028754c613894cde68134924d53ee56e5088a177f2827127217fcc",
+          "rng_seed": 12703023
+        }
+      ]
+    },
+    {
+      "site": "SY",
+      "seed": 2,
+      "model": "results/sy_forecast_seeds1_7_095_20261022/seed2/forecast_seed2_ckpt100000.zip",
+      "model_sha256": "ebd53b2ed9f762031442b360cec758e24be9d864c53bb349cef542598920ae5b",
+      "years": [
+        {
+          "year": 2014,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed2/eval_100000_2014_steps.jsonl",
+          "trace_sha256": "388a133d43c92148f0c26aec870f3eade5aa4dfddb240ecd9af8b7dfe86b49dd",
+          "rng_seed": 12704014
+        },
+        {
+          "year": 2015,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed2/eval_100000_2015_steps.jsonl",
+          "trace_sha256": "88be282a2ee5c354b83f0d2de28f677733b96988f6b319f4c7f2cb49015dbbf2",
+          "rng_seed": 12704015
+        },
+        {
+          "year": 2016,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed2/eval_100000_2016_steps.jsonl",
+          "trace_sha256": "6f809f33f768105f927aeacdd8909051d6da813e003091d80f5835f40132e0b2",
+          "rng_seed": 12704016
+        },
+        {
+          "year": 2017,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed2/eval_100000_2017_steps.jsonl",
+          "trace_sha256": "f3356500414085860690bedb7e7fa59e0c76746dd2351361d7ef0cb8781a2b92",
+          "rng_seed": 12704017
+        },
+        {
+          "year": 2018,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed2/eval_100000_2018_steps.jsonl",
+          "trace_sha256": "5e50a3fdcd56dadc73a1d1d578e37d2f3c73e2f9c860783f299c64ee9d153448",
+          "rng_seed": 12704018
+        },
+        {
+          "year": 2019,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed2/eval_100000_2019_steps.jsonl",
+          "trace_sha256": "a11d6033772df900fc43ad3e8921e56c31cdb011a5774e6b0bbc45e148c82d52",
+          "rng_seed": 12704019
+        },
+        {
+          "year": 2020,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed2/eval_100000_2020_steps.jsonl",
+          "trace_sha256": "4a991eca45140057f122f7ff56df32d34fb316a7ce7d050a7173b62e46f486ff",
+          "rng_seed": 12704020
+        },
+        {
+          "year": 2021,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed2/eval_100000_2021_steps.jsonl",
+          "trace_sha256": "77bb7ae19deba3bb7381fd7e03fdcf9b36ea4726326af9b3e5421f218a25176c",
+          "rng_seed": 12704021
+        },
+        {
+          "year": 2022,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed2/eval_100000_2022_steps.jsonl",
+          "trace_sha256": "cd192e0abc1f28b5fe072db9d98d72be11e4ce34cc1bcd8e67db898eedd0b3b5",
+          "rng_seed": 12704022
+        },
+        {
+          "year": 2023,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed2/eval_100000_2023_steps.jsonl",
+          "trace_sha256": "016a3159fa58e058507052118b3aa5843bf1c02eb7c2421a9bb513f672c0cc64",
+          "rng_seed": 12704023
+        }
+      ]
+    },
+    {
+      "site": "SY",
+      "seed": 3,
+      "model": "results/sy_forecast_seeds1_7_095_20261022/seed3/forecast_seed3_ckpt100000.zip",
+      "model_sha256": "fdd10c2603172b8344c39c00db230454fd706c756bab8906430978faef2c7a9c",
+      "years": [
+        {
+          "year": 2014,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed3/eval_100000_2014_steps.jsonl",
+          "trace_sha256": "eea0b066a4154e10f14f63d55d35da61cfa092e606fb67e29b70b778299a7097",
+          "rng_seed": 12705014
+        },
+        {
+          "year": 2015,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed3/eval_100000_2015_steps.jsonl",
+          "trace_sha256": "d59562a42b1883b01c09d5877d8a27fca75682c65f767a9d917a07d5a011ff4f",
+          "rng_seed": 12705015
+        },
+        {
+          "year": 2016,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed3/eval_100000_2016_steps.jsonl",
+          "trace_sha256": "91809409ad3854cb1ced295eb75d92969b1742e371eef3c2981ee8ad035c5a88",
+          "rng_seed": 12705016
+        },
+        {
+          "year": 2017,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed3/eval_100000_2017_steps.jsonl",
+          "trace_sha256": "1409343f26fa2f3d5cafab8ca03986017b2f18b150457b3e7cdbe8d47a3f7b19",
+          "rng_seed": 12705017
+        },
+        {
+          "year": 2018,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed3/eval_100000_2018_steps.jsonl",
+          "trace_sha256": "317a62fc1b344bc59c7d3196ba70f0da97a28ed8d3345429afcf01cbc8d0d976",
+          "rng_seed": 12705018
+        },
+        {
+          "year": 2019,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed3/eval_100000_2019_steps.jsonl",
+          "trace_sha256": "955d3789861bfa3e5888f60753b4f934783ffca2eb7283f275a33f4f60cee180",
+          "rng_seed": 12705019
+        },
+        {
+          "year": 2020,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed3/eval_100000_2020_steps.jsonl",
+          "trace_sha256": "76634fb1e8668aac77f72be4bc9a17478ee055989c314c9f392d5153486f66e8",
+          "rng_seed": 12705020
+        },
+        {
+          "year": 2021,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed3/eval_100000_2021_steps.jsonl",
+          "trace_sha256": "3f2e074c2175c72695624afee3cd8520b1685d84521f34f2b0b9782d27aeafe1",
+          "rng_seed": 12705021
+        },
+        {
+          "year": 2022,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed3/eval_100000_2022_steps.jsonl",
+          "trace_sha256": "68300d64d52ba95aa93deb6ecf6c9096894eb2c64c8c15385fba3226df4e8a9b",
+          "rng_seed": 12705022
+        },
+        {
+          "year": 2023,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed3/eval_100000_2023_steps.jsonl",
+          "trace_sha256": "a665a6110e17f424741c8808bccb441bb688e05237992be78b3fa4417ac2225c",
+          "rng_seed": 12705023
+        }
+      ]
+    },
+    {
+      "site": "SY",
+      "seed": 4,
+      "model": "results/sy_forecast_seeds1_7_095_20261022/seed4/forecast_seed4_ckpt100000.zip",
+      "model_sha256": "5807c318024d5c1b543e7d2ae18cbe50d547feeb2cb959691bbc0fa14f784761",
+      "years": [
+        {
+          "year": 2014,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed4/eval_100000_2014_steps.jsonl",
+          "trace_sha256": "195dcaa26fd9beb65f171becd7430d09fee1d11c27b6a2d772cbc30c84439cd3",
+          "rng_seed": 12706014
+        },
+        {
+          "year": 2015,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed4/eval_100000_2015_steps.jsonl",
+          "trace_sha256": "972002e4652abb2bc8650aead18e5b4e5e70ad3f322baf2925e0f7478978e189",
+          "rng_seed": 12706015
+        },
+        {
+          "year": 2016,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed4/eval_100000_2016_steps.jsonl",
+          "trace_sha256": "102eae76db67b58d98da6e3d1133517fd032df456ef864592c1e0f8051215bb9",
+          "rng_seed": 12706016
+        },
+        {
+          "year": 2017,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed4/eval_100000_2017_steps.jsonl",
+          "trace_sha256": "c775b39de1134d23f75a574b6c76ccff5c71389c70ac11c6081baf703bfd9ff9",
+          "rng_seed": 12706017
+        },
+        {
+          "year": 2018,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed4/eval_100000_2018_steps.jsonl",
+          "trace_sha256": "8e49e8674622a975fa41e8261e38ce31b4512430451e76a42bb888f4a13cbaea",
+          "rng_seed": 12706018
+        },
+        {
+          "year": 2019,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed4/eval_100000_2019_steps.jsonl",
+          "trace_sha256": "9adde7a8d7fecdc09375b0d131f7403e752a903a8e4a6289fa8f197b53756ec7",
+          "rng_seed": 12706019
+        },
+        {
+          "year": 2020,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed4/eval_100000_2020_steps.jsonl",
+          "trace_sha256": "9c8be9749d943d8fbb6dd744e9977a47af0d1c549960bc70055e385b4588405e",
+          "rng_seed": 12706020
+        },
+        {
+          "year": 2021,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed4/eval_100000_2021_steps.jsonl",
+          "trace_sha256": "8ef159d7d8325128d66160f7ca44a5b948182a64d51ea326e0e9b444288720ae",
+          "rng_seed": 12706021
+        },
+        {
+          "year": 2022,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed4/eval_100000_2022_steps.jsonl",
+          "trace_sha256": "1aa3720591680a70574852175a07f5382c3b6140306cf83d23ae95202ec5f7c6",
+          "rng_seed": 12706022
+        },
+        {
+          "year": 2023,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed4/eval_100000_2023_steps.jsonl",
+          "trace_sha256": "f8168a75e92f529708557e4a3bb0192221452c3e3f601bfa7bf2528b125d0af9",
+          "rng_seed": 12706023
+        }
+      ]
+    },
+    {
+      "site": "SY",
+      "seed": 5,
+      "model": "results/sy_forecast_seeds1_7_095_20261022/seed5/forecast_seed5_ckpt100000.zip",
+      "model_sha256": "c5d05a2ab61264fac7098a2578b8a9dfbd86e53ed7af6756eaf46122cc929671",
+      "years": [
+        {
+          "year": 2014,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed5/eval_100000_2014_steps.jsonl",
+          "trace_sha256": "7e65b8c23fd9947b91a30241dede0172259da3d0679eebe7bcd739a9a505a66a",
+          "rng_seed": 12707014
+        },
+        {
+          "year": 2015,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed5/eval_100000_2015_steps.jsonl",
+          "trace_sha256": "f9be1154a1139497a1ecd29544b66c400b3edfabcddd38c5759d6dcf9e9376b2",
+          "rng_seed": 12707015
+        },
+        {
+          "year": 2016,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed5/eval_100000_2016_steps.jsonl",
+          "trace_sha256": "a3563368d4a352f8b45d5c6eb06e35e00ca4759b6ea7cb1ef12837539dde9bdc",
+          "rng_seed": 12707016
+        },
+        {
+          "year": 2017,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed5/eval_100000_2017_steps.jsonl",
+          "trace_sha256": "a0ce442e0b024ef9de5ed5dea9c3450174b7e3b9065b2b71b68992beb534a16d",
+          "rng_seed": 12707017
+        },
+        {
+          "year": 2018,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed5/eval_100000_2018_steps.jsonl",
+          "trace_sha256": "2d5d844107cb42c95a57ef6278d06a5cd8d830204930e041478f4e0c5bbb9ec5",
+          "rng_seed": 12707018
+        },
+        {
+          "year": 2019,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed5/eval_100000_2019_steps.jsonl",
+          "trace_sha256": "80863593b4bef6adf39899e902ccb7e5784594318ebd92df22876a43b5b331d6",
+          "rng_seed": 12707019
+        },
+        {
+          "year": 2020,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed5/eval_100000_2020_steps.jsonl",
+          "trace_sha256": "e15d0711b5fb895161a744bbb051e3d5f555252595be0d82039e93478a8bf8cd",
+          "rng_seed": 12707020
+        },
+        {
+          "year": 2021,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed5/eval_100000_2021_steps.jsonl",
+          "trace_sha256": "7f79fe9bf9d2d1fc9bebfa90cf2fb865d543c043130a934d9239db06fa4f7aad",
+          "rng_seed": 12707021
+        },
+        {
+          "year": 2022,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed5/eval_100000_2022_steps.jsonl",
+          "trace_sha256": "0f9c3188177e402b20bbb63de601b97f95ace5027f07fe92268e489eedb5727f",
+          "rng_seed": 12707022
+        },
+        {
+          "year": 2023,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed5/eval_100000_2023_steps.jsonl",
+          "trace_sha256": "7a988218e0a33ed8166c5f5420799169f5be7fde4eed8707bd5ba8ece5a1afce",
+          "rng_seed": 12707023
+        }
+      ]
+    },
+    {
+      "site": "SY",
+      "seed": 6,
+      "model": "results/sy_forecast_seeds1_7_095_20261022/seed6/forecast_seed6_ckpt100000.zip",
+      "model_sha256": "458a47e8ccac8b52fa5a0202520ee41186095e70a6f1c05d15d3944c57301aa2",
+      "years": [
+        {
+          "year": 2014,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed6/eval_100000_2014_steps.jsonl",
+          "trace_sha256": "6daa8ad3b2bcfec4ddba4b19512546b6f0c5289eb51047f2ba9126272c33d3eb",
+          "rng_seed": 12708014
+        },
+        {
+          "year": 2015,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed6/eval_100000_2015_steps.jsonl",
+          "trace_sha256": "45862dd1148e09d1569142b2a66da1784a02d9b8d7eba6de19e98183dbf012e3",
+          "rng_seed": 12708015
+        },
+        {
+          "year": 2016,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed6/eval_100000_2016_steps.jsonl",
+          "trace_sha256": "914256020142468fc8a23966ed848986f32aaad54c81acfd9cc122e23db582b2",
+          "rng_seed": 12708016
+        },
+        {
+          "year": 2017,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed6/eval_100000_2017_steps.jsonl",
+          "trace_sha256": "20981098e4cef94e238b62d6e6c32826b113d84705a914c6e401f94dc7702c3d",
+          "rng_seed": 12708017
+        },
+        {
+          "year": 2018,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed6/eval_100000_2018_steps.jsonl",
+          "trace_sha256": "9d836511f7175aae9780fe292b1432df9ee15ffc6dd4b4f1c35c6d71d85f41a6",
+          "rng_seed": 12708018
+        },
+        {
+          "year": 2019,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed6/eval_100000_2019_steps.jsonl",
+          "trace_sha256": "e3a674e34043329b5313009b3c543ca2b48f2627124b71382d979d8dfdd5aabd",
+          "rng_seed": 12708019
+        },
+        {
+          "year": 2020,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed6/eval_100000_2020_steps.jsonl",
+          "trace_sha256": "2a80a8bcae949fcbc898fa89456353eb2edc0db3fe3d64666e38721c74910f83",
+          "rng_seed": 12708020
+        },
+        {
+          "year": 2021,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed6/eval_100000_2021_steps.jsonl",
+          "trace_sha256": "99ba662f9f5f97b5cd67d384265155e927c128af15dd5350bad15029cb7c1bf5",
+          "rng_seed": 12708021
+        },
+        {
+          "year": 2022,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed6/eval_100000_2022_steps.jsonl",
+          "trace_sha256": "f399535a76c46518aa251b399892b13fff1f916bb7e1e4d5436780a3129cd3dc",
+          "rng_seed": 12708022
+        },
+        {
+          "year": 2023,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed6/eval_100000_2023_steps.jsonl",
+          "trace_sha256": "09f89a6fe9d32807a70f24a2d96957209d13216e10447de94ed91cbf3de78e91",
+          "rng_seed": 12708023
+        }
+      ]
+    },
+    {
+      "site": "SY",
+      "seed": 7,
+      "model": "results/sy_forecast_seeds1_7_095_20261022/seed7/forecast_seed7_ckpt100000.zip",
+      "model_sha256": "909bcb5e4a0c06a07e5afa60e04edf1b78b3d1135ab777d965fb38746f612a99",
+      "years": [
+        {
+          "year": 2014,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed7/eval_100000_2014_steps.jsonl",
+          "trace_sha256": "f472b0006446400cb9deec066b8af9e0c0c3bbb33b719d811149cdd7c3b6e880",
+          "rng_seed": 12709014
+        },
+        {
+          "year": 2015,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed7/eval_100000_2015_steps.jsonl",
+          "trace_sha256": "13716b9b5d82da93605f1698efaa35a4ba952c34babc2b7b910d3e2301ca0e13",
+          "rng_seed": 12709015
+        },
+        {
+          "year": 2016,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed7/eval_100000_2016_steps.jsonl",
+          "trace_sha256": "70bf71263644010f319faa98c62657eb522b3fdd81312b516a85fce282276677",
+          "rng_seed": 12709016
+        },
+        {
+          "year": 2017,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed7/eval_100000_2017_steps.jsonl",
+          "trace_sha256": "c9bc9455f91bddc277dca6b7e9db2dcb1cd77784158a3b57dd52027c8ab97836",
+          "rng_seed": 12709017
+        },
+        {
+          "year": 2018,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed7/eval_100000_2018_steps.jsonl",
+          "trace_sha256": "381405d5db16797d29ba00e6473399cbf70dd5e5cdfd2c5f54af012ed7d7d4cb",
+          "rng_seed": 12709018
+        },
+        {
+          "year": 2019,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed7/eval_100000_2019_steps.jsonl",
+          "trace_sha256": "52d156f50473aef85262e61cc87feba731f86cc51ec420df53ccd739fd6cd10b",
+          "rng_seed": 12709019
+        },
+        {
+          "year": 2020,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed7/eval_100000_2020_steps.jsonl",
+          "trace_sha256": "fc069d203437d92415d103962756986dff0dcb77c13f9d51ffb605bc51bf63b4",
+          "rng_seed": 12709020
+        },
+        {
+          "year": 2021,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed7/eval_100000_2021_steps.jsonl",
+          "trace_sha256": "52c1ff457e9a419f9108607cd92f579b8217cfea58526e44302e38709f7873ca",
+          "rng_seed": 12709021
+        },
+        {
+          "year": 2022,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed7/eval_100000_2022_steps.jsonl",
+          "trace_sha256": "1cecfe81079a24b25242ae4e65a723912a6b20a446c49188ad27b62dd79300e0",
+          "rng_seed": 12709022
+        },
+        {
+          "year": 2023,
+          "trace": "results/sy_forecast_seeds1_7_095_20261022/seed7/eval_100000_2023_steps.jsonl",
+          "trace_sha256": "c946c962dab93cea3a06468a1877d98fa78300faec264ea7935f2bf8e35884f6",
+          "rng_seed": 12709023
+        }
+      ]
+    },
+    {
+      "site": "HL",
+      "seed": 0,
+      "model": "results/hl_recovery_106_20261023/formal/forecast_seed0_ckpt100000.zip",
+      "model_sha256": "7af7aaa104fb3d22d67a11f4ccd11b7b4743760c7672b2176ee21ec96e11db64",
+      "years": [
+        {
+          "year": 2014,
+          "trace": "results/hl_recovery_106_20261023/formal/eval_100000_2014_steps.jsonl",
+          "trace_sha256": "b0e032d125be103190b7a24ddf1548c2b77634eae7a541eec7adb432afb54459",
+          "rng_seed": 12802014
+        },
+        {
+          "year": 2015,
+          "trace": "results/hl_recovery_106_20261023/formal/eval_100000_2015_steps.jsonl",
+          "trace_sha256": "dcb291a0138335c5b6323547c36d86049945181fb6596a0fc594499bcc0a34b6",
+          "rng_seed": 12802015
+        },
+        {
+          "year": 2016,
+          "trace": "results/hl_recovery_106_20261023/formal/eval_100000_2016_steps.jsonl",
+          "trace_sha256": "be5578e645573ad935cba694ae541e9432db41aab0230c38dbbc1b5a5fcf345b",
+          "rng_seed": 12802016
+        },
+        {
+          "year": 2017,
+          "trace": "results/hl_recovery_106_20261023/formal/eval_100000_2017_steps.jsonl",
+          "trace_sha256": "de3c4bc7aab89e3378a3e5d1ede710d744d9788fa1b7457147137b5a4aea1059",
+          "rng_seed": 12802017
+        },
+        {
+          "year": 2018,
+          "trace": "results/hl_recovery_106_20261023/formal/eval_100000_2018_steps.jsonl",
+          "trace_sha256": "ef181a5a023d3cadaa90420d585479ec75be6918f0349a46e5506c958b155983",
+          "rng_seed": 12802018
+        },
+        {
+          "year": 2019,
+          "trace": "results/hl_recovery_106_20261023/formal/eval_100000_2019_steps.jsonl",
+          "trace_sha256": "7f7422b3c71ce2719da492e570b0d854abf79974c74d8d1311374673beef1497",
+          "rng_seed": 12802019
+        },
+        {
+          "year": 2020,
+          "trace": "results/hl_recovery_106_20261023/formal/eval_100000_2020_steps.jsonl",
+          "trace_sha256": "0757fe214ad8b2ad5207763ea1e82172146ef1ced5e7c14bf79dc4892c2a4a9f",
+          "rng_seed": 12802020
+        },
+        {
+          "year": 2021,
+          "trace": "results/hl_recovery_106_20261023/formal/eval_100000_2021_steps.jsonl",
+          "trace_sha256": "3adccbcaebc0c6fb6c4ced329a04188ce1f95dfa4df40e9f49b957e63cf193e4",
+          "rng_seed": 12802021
+        },
+        {
+          "year": 2022,
+          "trace": "results/hl_recovery_106_20261023/formal/eval_100000_2022_steps.jsonl",
+          "trace_sha256": "d129fe9f494e32a15b8ab136a23c65ec48814b6613b26b5231e479f16ae73ae6",
+          "rng_seed": 12802022
+        },
+        {
+          "year": 2023,
+          "trace": "results/hl_recovery_106_20261023/formal/eval_100000_2023_steps.jsonl",
+          "trace_sha256": "ae15c474fd36db1093e0591ee5713f2735a2732ea13a9b9b1227a481d39c3ab3",
+          "rng_seed": 12802023
+        }
+      ]
+    },
+    {
+      "site": "HL",
+      "seed": 1,
+      "model": "results/four_site_forecast_110_20261023/HL/seed1/forecast_seed1_ckpt100000.zip",
+      "model_sha256": "8793a7bad76a560c18a69b4b6b5d0d977d193830d2f3ca7930d92926567cd332",
+      "years": [
+        {
+          "year": 2014,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed1/eval_100000_2014_steps.jsonl",
+          "trace_sha256": "48ed624ecf09b13741b188e9b6ad30a3a40cc00f143f91930dc054ab32ee1eb8",
+          "rng_seed": 12803014
+        },
+        {
+          "year": 2015,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed1/eval_100000_2015_steps.jsonl",
+          "trace_sha256": "d33c4777f26d947d06b69537eabab1e56d9e4d50e099bd4d50d2b07c1e03842d",
+          "rng_seed": 12803015
+        },
+        {
+          "year": 2016,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed1/eval_100000_2016_steps.jsonl",
+          "trace_sha256": "52b68bb154dd001bfc042cd43c3c3c8bd79eea0282bd5cd362420d8d228c8d7e",
+          "rng_seed": 12803016
+        },
+        {
+          "year": 2017,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed1/eval_100000_2017_steps.jsonl",
+          "trace_sha256": "fa41a5d8890cb25f41d37b9d64813f92a650323eaaadda632c0bf90461a3700f",
+          "rng_seed": 12803017
+        },
+        {
+          "year": 2018,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed1/eval_100000_2018_steps.jsonl",
+          "trace_sha256": "5b32b46b8d64ebdc5724c17253b82d1563c771ee8e8120e93b74fe125cb79332",
+          "rng_seed": 12803018
+        },
+        {
+          "year": 2019,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed1/eval_100000_2019_steps.jsonl",
+          "trace_sha256": "af673ab49e16fb0383afaacbe64f626f76201d9a5a503b3c5b753e4997d4d00b",
+          "rng_seed": 12803019
+        },
+        {
+          "year": 2020,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed1/eval_100000_2020_steps.jsonl",
+          "trace_sha256": "24ccea149ef516e1f0eaf28bb850e82284b06b4d14576dcf613c2669ccbb55dd",
+          "rng_seed": 12803020
+        },
+        {
+          "year": 2021,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed1/eval_100000_2021_steps.jsonl",
+          "trace_sha256": "8da10c2e8017e052b9772360cb639d0b42c1963252c94316f2f55baebb9f9b1d",
+          "rng_seed": 12803021
+        },
+        {
+          "year": 2022,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed1/eval_100000_2022_steps.jsonl",
+          "trace_sha256": "79f46f8533b6fe777b034e51bca6102bd189cf16dbea0bf1188159aced58ee78",
+          "rng_seed": 12803022
+        },
+        {
+          "year": 2023,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed1/eval_100000_2023_steps.jsonl",
+          "trace_sha256": "d0e31064d44ed532f65094930bde5db8be7c711002108135d1caa753789c68be",
+          "rng_seed": 12803023
+        }
+      ]
+    },
+    {
+      "site": "HL",
+      "seed": 2,
+      "model": "results/four_site_forecast_110_20261023/HL/seed2/forecast_seed2_ckpt100000.zip",
+      "model_sha256": "84f89d835b5726c4cfa0545b649023bdc1b56425c2adbfe9bee0d34c63d8197e",
+      "years": [
+        {
+          "year": 2014,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed2/eval_100000_2014_steps.jsonl",
+          "trace_sha256": "ad49fbc6a938919593ff99a8e4dec0aac8fc6304ba5d5bb7af9d35305bb311cc",
+          "rng_seed": 12804014
+        },
+        {
+          "year": 2015,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed2/eval_100000_2015_steps.jsonl",
+          "trace_sha256": "c2f67cf9ed4560b0db3a5343e5ec99e625c3c3c93121df16461ccccf1cddc07f",
+          "rng_seed": 12804015
+        },
+        {
+          "year": 2016,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed2/eval_100000_2016_steps.jsonl",
+          "trace_sha256": "ef9fc2f4cc4a40ae8fedc706fcf6049020bf9b7ff148ef913238331536ddc466",
+          "rng_seed": 12804016
+        },
+        {
+          "year": 2017,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed2/eval_100000_2017_steps.jsonl",
+          "trace_sha256": "deee637980df1a09dd28ac85579eae61f459fab0845b9f21b9ee114f5d9635e9",
+          "rng_seed": 12804017
+        },
+        {
+          "year": 2018,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed2/eval_100000_2018_steps.jsonl",
+          "trace_sha256": "eab13cebe912ebcd36d2230b80ec6db1baa05dd3d264f16381c2c3306734a8d0",
+          "rng_seed": 12804018
+        },
+        {
+          "year": 2019,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed2/eval_100000_2019_steps.jsonl",
+          "trace_sha256": "df42e4c146888a0241d8799bf65c9e19b422201fa329829c8e255c1ec938d818",
+          "rng_seed": 12804019
+        },
+        {
+          "year": 2020,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed2/eval_100000_2020_steps.jsonl",
+          "trace_sha256": "226d83e676dbf60c414bbc0e1e42782bd6b8c7409e2406468fb2b3f244e9a5ce",
+          "rng_seed": 12804020
+        },
+        {
+          "year": 2021,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed2/eval_100000_2021_steps.jsonl",
+          "trace_sha256": "0fa403790fee67de0d330de7d60c8ba97eb817ea6c2e754107650f327de7f856",
+          "rng_seed": 12804021
+        },
+        {
+          "year": 2022,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed2/eval_100000_2022_steps.jsonl",
+          "trace_sha256": "18c1e7308e8be4dd1aa0881faeafeaf018e4e4484c4bac6629a5bd2e2d42c405",
+          "rng_seed": 12804022
+        },
+        {
+          "year": 2023,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed2/eval_100000_2023_steps.jsonl",
+          "trace_sha256": "1304c157fbbde9ee99cc31b5040ede37e58b6e1236a26d874f3b94a5a39ba2c4",
+          "rng_seed": 12804023
+        }
+      ]
+    },
+    {
+      "site": "HL",
+      "seed": 3,
+      "model": "results/four_site_forecast_110_20261023/HL/seed3/forecast_seed3_ckpt100000.zip",
+      "model_sha256": "50b6e94ea6958c387d5d499bd29cfba64147f881538879298a59bf45e6eaa1ac",
+      "years": [
+        {
+          "year": 2014,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed3/eval_100000_2014_steps.jsonl",
+          "trace_sha256": "57069b95d276026039946a15d5aab8d1fd3b44e3361fa04ad01fb2d6d0d5f6f9",
+          "rng_seed": 12805014
+        },
+        {
+          "year": 2015,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed3/eval_100000_2015_steps.jsonl",
+          "trace_sha256": "b8fb491e11c82326b6ea2aba4cbf1fa12bf5753db6e67be4f41c5b38f6b59d23",
+          "rng_seed": 12805015
+        },
+        {
+          "year": 2016,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed3/eval_100000_2016_steps.jsonl",
+          "trace_sha256": "bfd6626a29212d5b1a5110aa40d8431cbe09b7771cea7932b0b8bed180d2e300",
+          "rng_seed": 12805016
+        },
+        {
+          "year": 2017,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed3/eval_100000_2017_steps.jsonl",
+          "trace_sha256": "347922f95cac28a9b9e89d04bc63f170ca843ddb455a19899205db0d70937431",
+          "rng_seed": 12805017
+        },
+        {
+          "year": 2018,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed3/eval_100000_2018_steps.jsonl",
+          "trace_sha256": "f476cd132c32195c4a3b68b700950627d4c1cd1a9977537bb814c45038282cf4",
+          "rng_seed": 12805018
+        },
+        {
+          "year": 2019,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed3/eval_100000_2019_steps.jsonl",
+          "trace_sha256": "1a6d7d1c419e54ca15b945065ad9406ca56d6873c8ad0427236caf97886c71c9",
+          "rng_seed": 12805019
+        },
+        {
+          "year": 2020,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed3/eval_100000_2020_steps.jsonl",
+          "trace_sha256": "9aac161bba3c276fe0e80188420cd4ac6b150f4c2a374d00fa674fee6c19457f",
+          "rng_seed": 12805020
+        },
+        {
+          "year": 2021,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed3/eval_100000_2021_steps.jsonl",
+          "trace_sha256": "8ec24aaa14822b5da3322ca78a1c04ca775e24b981d73a536cd18422ccdaa78f",
+          "rng_seed": 12805021
+        },
+        {
+          "year": 2022,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed3/eval_100000_2022_steps.jsonl",
+          "trace_sha256": "a19461e71b975076669378b60788bf3719d8e269947463a258574e4397cf462a",
+          "rng_seed": 12805022
+        },
+        {
+          "year": 2023,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed3/eval_100000_2023_steps.jsonl",
+          "trace_sha256": "b3685884d545878fd9156c2eee28491b51ec92dbed9d9681dd0e8589de4137ac",
+          "rng_seed": 12805023
+        }
+      ]
+    },
+    {
+      "site": "HL",
+      "seed": 4,
+      "model": "results/four_site_forecast_110_20261023/HL/seed4/forecast_seed4_ckpt100000.zip",
+      "model_sha256": "3ee0a2bb6c08e0f58a952bcbe53146200ba865f1464e88944eb47ccfabd1970a",
+      "years": [
+        {
+          "year": 2014,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed4/eval_100000_2014_steps.jsonl",
+          "trace_sha256": "bd79639b23c2992523d7fad068658f0bcc73f61b95f068106561a18e4c2e6c06",
+          "rng_seed": 12806014
+        },
+        {
+          "year": 2015,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed4/eval_100000_2015_steps.jsonl",
+          "trace_sha256": "f975288608208d98ae9e7738cdaf0983261d93b2cbe960c59c4783e0cc16580e",
+          "rng_seed": 12806015
+        },
+        {
+          "year": 2016,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed4/eval_100000_2016_steps.jsonl",
+          "trace_sha256": "327601bb7648a221626fcc45f1bf316611cfd8529f4021790a4ad32c546a720b",
+          "rng_seed": 12806016
+        },
+        {
+          "year": 2017,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed4/eval_100000_2017_steps.jsonl",
+          "trace_sha256": "c2b39323b651d210291ea0f6b96ffbcbfa1a5ed96d2f172228c8dd1f9babb89b",
+          "rng_seed": 12806017
+        },
+        {
+          "year": 2018,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed4/eval_100000_2018_steps.jsonl",
+          "trace_sha256": "ba37fac35b64180ba63bf5e4f4a782535d17c5fbe809814e0573362e757356df",
+          "rng_seed": 12806018
+        },
+        {
+          "year": 2019,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed4/eval_100000_2019_steps.jsonl",
+          "trace_sha256": "89fff9abcfee468efd66d8db152dfb73351f12976af0925afadabdd2ac14d2c1",
+          "rng_seed": 12806019
+        },
+        {
+          "year": 2020,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed4/eval_100000_2020_steps.jsonl",
+          "trace_sha256": "3d48f44f77b7266e4724036bc4ca8f4aa7eeef34fa3e6f4af6b083d89aaf0060",
+          "rng_seed": 12806020
+        },
+        {
+          "year": 2021,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed4/eval_100000_2021_steps.jsonl",
+          "trace_sha256": "315eccb550867c67cfadc66138a5811830f8a5a4ae384550fd0a8b3714c073af",
+          "rng_seed": 12806021
+        },
+        {
+          "year": 2022,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed4/eval_100000_2022_steps.jsonl",
+          "trace_sha256": "8b6f88e2caa0f89fd3f115a595434cc686bde1020b40ebacf2f2dfa1db3bd16b",
+          "rng_seed": 12806022
+        },
+        {
+          "year": 2023,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed4/eval_100000_2023_steps.jsonl",
+          "trace_sha256": "6c28cd71ce7bb619d7900eec73fd71f7991883fe4ea394ca5487968ec889d81e",
+          "rng_seed": 12806023
+        }
+      ]
+    },
+    {
+      "site": "HL",
+      "seed": 5,
+      "model": "results/four_site_forecast_110_20261023/HL/seed5/forecast_seed5_ckpt100000.zip",
+      "model_sha256": "5f58e6ee4386dfcc134e26dcf21beccb75a7b784db4ef00d0d1d299bf820afa2",
+      "years": [
+        {
+          "year": 2014,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed5/eval_100000_2014_steps.jsonl",
+          "trace_sha256": "644f2c544965d96d517647368e68a38f6b71f243ea20c0fa2ea2390b15a37009",
+          "rng_seed": 12807014
+        },
+        {
+          "year": 2015,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed5/eval_100000_2015_steps.jsonl",
+          "trace_sha256": "18e57588ef9493bb123c1cc2e4625232234c1ebe61b9bf432afda98b1e4303ef",
+          "rng_seed": 12807015
+        },
+        {
+          "year": 2016,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed5/eval_100000_2016_steps.jsonl",
+          "trace_sha256": "5c4faada5267144fb2ac265b93e7ee29771b5b25f1a60de0219d67bc43ece2a7",
+          "rng_seed": 12807016
+        },
+        {
+          "year": 2017,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed5/eval_100000_2017_steps.jsonl",
+          "trace_sha256": "414e3a10ed4bc5f17a6d52359161a082e578daf36cee79dc01b74c22c5a76f88",
+          "rng_seed": 12807017
+        },
+        {
+          "year": 2018,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed5/eval_100000_2018_steps.jsonl",
+          "trace_sha256": "6b7c2d8442c533a253f4233db4dca60c53959c9f8f867b01aee25a47d79f82ef",
+          "rng_seed": 12807018
+        },
+        {
+          "year": 2019,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed5/eval_100000_2019_steps.jsonl",
+          "trace_sha256": "ea4ba4e3e993d51000105f8da38a3ff97b3fc56ec28f0d643e15413065060108",
+          "rng_seed": 12807019
+        },
+        {
+          "year": 2020,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed5/eval_100000_2020_steps.jsonl",
+          "trace_sha256": "f81a2ccbc882b3f101667b6474fd470503414bda0f4bf0a5b5feec96d3c141cb",
+          "rng_seed": 12807020
+        },
+        {
+          "year": 2021,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed5/eval_100000_2021_steps.jsonl",
+          "trace_sha256": "33ebf49b1f3eacaff370042e6c32cbe640d0d3394697940af5fcf35a25be52e3",
+          "rng_seed": 12807021
+        },
+        {
+          "year": 2022,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed5/eval_100000_2022_steps.jsonl",
+          "trace_sha256": "fd2f03e6b0c633529bf2ea8a6645e965b3395d4bf7d292abb83ec31beab60d27",
+          "rng_seed": 12807022
+        },
+        {
+          "year": 2023,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed5/eval_100000_2023_steps.jsonl",
+          "trace_sha256": "6e1223a45dcad00deed09c4bd50667255a4370a22676e375f9ed895d16a998bc",
+          "rng_seed": 12807023
+        }
+      ]
+    },
+    {
+      "site": "HL",
+      "seed": 6,
+      "model": "results/four_site_forecast_110_20261023/HL/seed6/forecast_seed6_ckpt100000.zip",
+      "model_sha256": "def4c68648e52b28bb126de9972dc3e4362a5381d6cbb115ec34d1ceb24f7966",
+      "years": [
+        {
+          "year": 2014,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed6/eval_100000_2014_steps.jsonl",
+          "trace_sha256": "de8cfb508be07705b7b96e4d4981a6d9b608de20a784f130e94c88d4c30b892c",
+          "rng_seed": 12808014
+        },
+        {
+          "year": 2015,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed6/eval_100000_2015_steps.jsonl",
+          "trace_sha256": "fa45076cd031ff37f5f5c11cbd83d4237fd89384c52e2ab475f269f651577c7c",
+          "rng_seed": 12808015
+        },
+        {
+          "year": 2016,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed6/eval_100000_2016_steps.jsonl",
+          "trace_sha256": "6d9fdbc5e082c29c7f57ca99d55ea1ab0d84304afaad30398394c67037f1e5ab",
+          "rng_seed": 12808016
+        },
+        {
+          "year": 2017,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed6/eval_100000_2017_steps.jsonl",
+          "trace_sha256": "825dd0f68c86411c456966fef731e945a090ddec64de4bac4c8ef230a518a789",
+          "rng_seed": 12808017
+        },
+        {
+          "year": 2018,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed6/eval_100000_2018_steps.jsonl",
+          "trace_sha256": "3f3cab81f5639ae15d4acdda824a697068d2677c15111227eccd8e7355cfaf96",
+          "rng_seed": 12808018
+        },
+        {
+          "year": 2019,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed6/eval_100000_2019_steps.jsonl",
+          "trace_sha256": "fd10da694d8e755432e562e6277ea36ee476d80327f7e0ab93f29d935afc63ac",
+          "rng_seed": 12808019
+        },
+        {
+          "year": 2020,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed6/eval_100000_2020_steps.jsonl",
+          "trace_sha256": "8dab254f35fc631592ccc9d32b201c6461913e13aed3793f262170cdc807028a",
+          "rng_seed": 12808020
+        },
+        {
+          "year": 2021,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed6/eval_100000_2021_steps.jsonl",
+          "trace_sha256": "41f2fe7d5ce3d400a6c6d789a7cfad2cea99a3e40de412d20e0cbe86a674bafa",
+          "rng_seed": 12808021
+        },
+        {
+          "year": 2022,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed6/eval_100000_2022_steps.jsonl",
+          "trace_sha256": "b049058765141f84f96ba4129ece4bb976b22dc28ed7f4a3a9d4c7e5de67f1e1",
+          "rng_seed": 12808022
+        },
+        {
+          "year": 2023,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed6/eval_100000_2023_steps.jsonl",
+          "trace_sha256": "0c4569eb40884dce38df0251c6274eb9f71e1414997496b0d23d02731d21a230",
+          "rng_seed": 12808023
+        }
+      ]
+    },
+    {
+      "site": "HL",
+      "seed": 7,
+      "model": "results/four_site_forecast_110_20261023/HL/seed7/forecast_seed7_ckpt100000.zip",
+      "model_sha256": "55a4b32f0ef0f7b53543dab26582d3d4309fdd55b4a5e33b0b060dadc2e30e66",
+      "years": [
+        {
+          "year": 2014,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed7/eval_100000_2014_steps.jsonl",
+          "trace_sha256": "600d1434390ebb15d6fe9601b0dc2d78f601da4c917ac31739614dc25c27defc",
+          "rng_seed": 12809014
+        },
+        {
+          "year": 2015,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed7/eval_100000_2015_steps.jsonl",
+          "trace_sha256": "79db41cd77db37e17a5d6bc8138983eba279d50463f4690e87ea4e9c0269d078",
+          "rng_seed": 12809015
+        },
+        {
+          "year": 2016,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed7/eval_100000_2016_steps.jsonl",
+          "trace_sha256": "85af9d553510f9bf94f4cc055c46a72382b41523b8c93d90437e805239cf6d2f",
+          "rng_seed": 12809016
+        },
+        {
+          "year": 2017,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed7/eval_100000_2017_steps.jsonl",
+          "trace_sha256": "046b464708e48ac4c282e7c8b9af7ab55b5cd1503a5bea885394fa83f7c7f3fb",
+          "rng_seed": 12809017
+        },
+        {
+          "year": 2018,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed7/eval_100000_2018_steps.jsonl",
+          "trace_sha256": "f694c2c1ae6a2984eae652d750d140035e73ba2fb0a344903adfce2355106016",
+          "rng_seed": 12809018
+        },
+        {
+          "year": 2019,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed7/eval_100000_2019_steps.jsonl",
+          "trace_sha256": "ecf646ed6d4eb753d96a078097dcaea5df16d94f50ad44a8266bf35969c3b2d3",
+          "rng_seed": 12809019
+        },
+        {
+          "year": 2020,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed7/eval_100000_2020_steps.jsonl",
+          "trace_sha256": "30795a9acae5af0ab9e02e104b128fd7d5733941b5d436e6d9c859cf4c032c09",
+          "rng_seed": 12809020
+        },
+        {
+          "year": 2021,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed7/eval_100000_2021_steps.jsonl",
+          "trace_sha256": "0f725020dd4abf3d695e7635153638cc939243cf9650ffd66c7187b7065d4f24",
+          "rng_seed": 12809021
+        },
+        {
+          "year": 2022,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed7/eval_100000_2022_steps.jsonl",
+          "trace_sha256": "82174a9afc4ee579ca568b094a1301e5111926c52532fcbfb8692352a67fd544",
+          "rng_seed": 12809022
+        },
+        {
+          "year": 2023,
+          "trace": "results/four_site_forecast_110_20261023/HL/seed7/eval_100000_2023_steps.jsonl",
+          "trace_sha256": "a1cf3d42ec1cef19a85cf8fb660b6e1dd4668043e77d2abaf1dd245c21b9f5d2",
+          "rng_seed": 12809023
+        }
+      ]
+    },
+    {
+      "site": "LC",
+      "seed": 0,
+      "model": "results/four_site_forecast_110_20261023/LC/seed0/forecast_seed0_ckpt100000.zip",
+      "model_sha256": "9ef1f9e4e1363b7d6118d48f3812d76f198515903e26e20d0991f251d47b21a9",
+      "years": [
+        {
+          "year": 2014,
+          "trace": "results/lc_evaluation_114_20261024/eval_100000_2014_steps.jsonl",
+          "trace_sha256": "af34a650c42dbb0ea65697d7ac05ed4e07b3841554a9a2476659b99b684ab5a2",
+          "rng_seed": 12902014
+        },
+        {
+          "year": 2015,
+          "trace": "results/lc_evaluation_114_20261024/eval_100000_2015_steps.jsonl",
+          "trace_sha256": "3bc69a38755ca8f6a0b3c11251f8202ea6bc68680fb4c972b618102a61dc8b1a",
+          "rng_seed": 12902015
+        },
+        {
+          "year": 2016,
+          "trace": "results/lc_evaluation_114_20261024/eval_100000_2016_steps.jsonl",
+          "trace_sha256": "3d1e4dc05e924c895c785f6f28df41033f3070ae809f8a03c74d74a3c24e344a",
+          "rng_seed": 12902016
+        },
+        {
+          "year": 2017,
+          "trace": "results/lc_evaluation_114_20261024/eval_100000_2017_steps.jsonl",
+          "trace_sha256": "a55ad3e955f1832f272bec0b524cd8abe8a2c953eb7985b400a1f4100516358b",
+          "rng_seed": 12902017
+        },
+        {
+          "year": 2018,
+          "trace": "results/lc_evaluation_114_20261024/eval_100000_2018_steps.jsonl",
+          "trace_sha256": "22e90b6dc93350a6249c7f4e64d5107fc1d0b03c8c5fb6b9910ffc3cf25dc8f7",
+          "rng_seed": 12902018
+        },
+        {
+          "year": 2019,
+          "trace": "results/lc_evaluation_114_20261024/eval_100000_2019_steps.jsonl",
+          "trace_sha256": "5155b02f2d91e8bef26eab71c90b006339ee8ac02b2a281bb751fef7406a5449",
+          "rng_seed": 12902019
+        },
+        {
+          "year": 2020,
+          "trace": "results/lc_evaluation_114_20261024/eval_100000_2020_steps.jsonl",
+          "trace_sha256": "ce5b810006ade97e5a3df48b59398c0dcba83baf45562ed5790096b23287ac01",
+          "rng_seed": 12902020
+        },
+        {
+          "year": 2021,
+          "trace": "results/lc_evaluation_114_20261024/eval_100000_2021_steps.jsonl",
+          "trace_sha256": "86300e1de12b9bdc5d978d93816a70d0c3c1b1157489d91c5e5a6121ad6bbbff",
+          "rng_seed": 12902021
+        },
+        {
+          "year": 2022,
+          "trace": "results/lc_evaluation_114_20261024/eval_100000_2022_steps.jsonl",
+          "trace_sha256": "f78b2c0c7c23b7b513c51801d6720d66d2dfa1b63f7a632bf3993b5b90a1eaff",
+          "rng_seed": 12902022
+        },
+        {
+          "year": 2023,
+          "trace": "results/lc_evaluation_114_20261024/eval_100000_2023_steps.jsonl",
+          "trace_sha256": "4868626b230d8c853a755e94166f2a2577c5c29992b3aaff8c58b0af21ef65f8",
+          "rng_seed": 12902023
+        }
+      ]
+    },
+    {
+      "site": "LC",
+      "seed": 1,
+      "model": "results/four_site_forecast_114_20261024/LC/seed1/forecast_seed1_ckpt100000.zip",
+      "model_sha256": "a3373cece49baef92751fc056a77301cb92c0fc4f6feb44b57f2e4b98a192a8f",
+      "years": [
+        {
+          "year": 2014,
+          "trace": "results/four_site_forecast_114_20261024/LC/seed1/eval_100000_2014_steps.jsonl",
+          "trace_sha256": "7ad6c32a9b73835f37fa06dae53bdd1931ea354a7af096a508a46abdca6e4a6a",
+          "rng_seed": 12903014
+        },
+        {
+          "year": 2015,
+          "trace": "results/four_site_forecast_114_20261024/LC/seed1/eval_100000_2015_steps.jsonl",
+          "trace_sha256": "eba605ca35fab13ceb3cfe61c1c8a0accc55a3c70bf363ee8508de338cd85c5b",
+          "rng_seed": 12903015
+        },
+        {
+          "year": 2016,
+          "trace": "results/four_site_forecast_114_20261024/LC/seed1/eval_100000_2016_steps.jsonl",
+          "trace_sha256": "0758c999e8e61bb612d71b617557ec10f3e0f3bab7707b0b7f3c77faaab97802",
+          "rng_seed": 12903016
+        },
+        {
+          "year": 2017,
+          "trace": "results/four_site_forecast_114_20261024/LC/seed1/eval_100000_2017_steps.jsonl",
+          "trace_sha256": "54bae08afce0828e7c301403cf02cbc7c360ec26f17d44968e404cfbef2638a0",
+          "rng_seed": 12903017
+        },
+        {
+          "year": 2018,
+          "trace": "results/four_site_forecast_114_20261024/LC/seed1/eval_100000_2018_steps.jsonl",
+          "trace_sha256": "f34c4e1be80751f9eecb7d379486fb1f4a7ba58c1b4e90bf64acef51fdd78988",
+          "rng_seed": 12903018
+        },
+        {
+          "year": 2019,
+          "trace": "results/four_site_forecast_114_20261024/LC/seed1/eval_100000_2019_steps.jsonl",
+          "trace_sha256": "80a60941b0aa908d62f7e479a85482754c0b576730813de7045929e1cf05aed4",
+          "rng_seed": 12903019
+        },
+        {
+          "year": 2020,
+          "trace": "results/four_site_forecast_114_20261024/LC/seed1/eval_100000_2020_steps.jsonl",
+          "trace_sha256": "8718aa0946facb08cb31cb4f9c908b8dea4b949bcf054f69bf77ea8f6a9867b4",
+          "rng_seed": 12903020
+        },
+        {
+          "year": 2021,
+          "trace": "results/four_site_forecast_114_20261024/LC/seed1/eval_100000_2021_steps.jsonl",
+          "trace_sha256": "be1290b46ab79dec5576e24b0a447910a3c720ad07214895633766cd604abf4d",
+          "rng_seed": 12903021
+        },
+        {
+          "year": 2022,
+          "trace": "results/four_site_forecast_114_20261024/LC/seed1/eval_100000_2022_steps.jsonl",
+          "trace_sha256": "3d6be488f0fe938ce5275244a501103efed4c9cab191ffce319f4c2e88c8d24d",
+          "rng_seed": 12903022
+        },
+        {
+          "year": 2023,
+          "trace": "results/four_site_forecast_114_20261024/LC/seed1/eval_100000_2023_steps.jsonl",
+          "trace_sha256": "f85be30685f880a6fd17c4bcf6c5cf6e53f98eb3f46de4ed869d55b51aa8dc49",
+          "rng_seed": 12903023
+        }
+      ]
+    },
+    {
+      "site": "LC",
+      "seed": 2,
+      "model": "results/four_site_forecast_114_20261024/LC/seed2/forecast_seed2_ckpt100000.zip",
+      "model_sha256": "0b37e517e4816f092995ee4b98531826039e713c40e5e4cae0607fa1470af4d8",
+      "years": [
+        {
+          "year": 2014,
+          "trace": "results/four_site_forecast_114_20261024/LC/seed2/eval_100000_2014_steps.jsonl",
+          "trace_sha256": "3fd3c89fd60144050c14875c06fe94a04c0522862534e937830d3d9d40bcdc15",
+          "rng_seed": 12904014
+        },
+        {
+          "year": 2015,
+          "trace": "results/four_site_forecast_114_20261024/LC/seed2/eval_100000_2015_steps.jsonl",
+          "trace_sha256": "642e21c887438384deb232e42fae24b0278dbb6333e441c8a1eedb411e2b91d7",
+          "rng_seed": 12904015
+        },
+        {
+          "year": 2016,
+          "trace": "results/four_site_forecast_114_20261024/LC/seed2/eval_100000_2016_steps.jsonl",
+          "trace_sha256": "6efba2e7ad2373cbec81ecd2d5e28f29858d4c6d6d4186b1331ce07e0aacc01f",
+          "rng_seed": 12904016
+        },
+        {
+          "year": 2017,
+          "trace": "results/four_site_forecast_114_20261024/LC/seed2/eval_100000_2017_steps.jsonl",
+          "trace_sha256": "5fcf92272ca980a64d2ed10386e7a3063303094ddaec7ed5b18cd3c0a521df2d",
+          "rng_seed": 12904017
+        },
+        {
+          "year": 2018,
+          "trace": "results/four_site_forecast_114_20261024/LC/seed2/eval_100000_2018_steps.jsonl",
+          "trace_sha256": "a0d72b1c279b53b0a0943391d60bf14b61f0f6d0760d91046c9819d1ef9c0af3",
+          "rng_seed": 12904018
+        },
+        {
+          "year": 2019,
+          "trace": "results/four_site_forecast_114_20261024/LC/seed2/eval_100000_2019_steps.jsonl",
+          "trace_sha256": "727a3579394fcb645f6a9b593f806f5ca0e5e0b913cb2473283668ddbd00b8e2",
+          "rng_seed": 12904019
+        },
+        {
+          "year": 2020,
+          "trace": "results/four_site_forecast_114_20261024/LC/seed2/eval_100000_2020_steps.jsonl",
+          "trace_sha256": "a44cf962d9bb2e6af0f6b00c836f5c157896ac6f5d5ca1ce667905133544f46f",
+          "rng_seed": 12904020
+        },
+        {
+          "year": 2021,
+          "trace": "results/four_site_forecast_114_20261024/LC/seed2/eval_100000_2021_steps.jsonl",
+          "trace_sha256": "daa12348f2d2615dcffb2a5c8270f5acf67d03f4feb1dd0b469d1bb93e94dc5e",
+          "rng_seed": 12904021
+        },
+        {
+          "year": 2022,
+          "trace": "results/four_site_forecast_114_20261024/LC/seed2/eval_100000_2022_steps.jsonl",
+          "trace_sha256": "957eff9829d2e708b07a061ede66bc15bee58dd89dce18fb21cd085843117e7d",
+          "rng_seed": 12904022
+        },
+        {
+          "year": 2023,
+          "trace": "results/four_site_forecast_114_20261024/LC/seed2/eval_100000_2023_steps.jsonl",
+          "trace_sha256": "d014a88827edd76d332d9ac9d116eb27c4a29b9783994a37eba5009c8dfc8c93",
+          "rng_seed": 12904023
+        }
+      ]
+    },
+    {
+      "site": "LC",
+      "seed": 3,
+      "model": "results/four_site_forecast_114_20261024/LC/seed3/forecast_seed3_ckpt100000.zip",
+      "model_sha256": "b148221d9dec5197aec92b8f57ffb27189ec73746eebaba8a65562502da34306",
+      "years": [
+        {
+          "year": 2014,
+          "trace": "results/four_site_forecast_114_20261024/LC/seed3/eval_100000_2014_steps.jsonl",
+          "trace_sha256": "083bec03b3e04af70f4b11c7f9f463432eaebba9f10802be065065b3846a3aaf",
+          "rng_seed": 12905014
+        },
+        {
+          "year": 2015,
+          "trace": "results/four_site_forecast_114_20261024/LC/seed3/eval_100000_2015_steps.jsonl",
+          "trace_sha256": "fa05018be1cc6bd862e8a7cf28eba7375d3434ed131dec371753735351bb8356",
+          "rng_seed": 12905015
+        },
+        {
+          "year": 2016,
+          "trace": "results/four_site_forecast_114_20261024/LC/seed3/eval_100000_2016_steps.jsonl",
+          "trace_sha256": "c37869bcbf5aac9c5c4eebd353233c3d05050fe915ae552fa1a147c3135b7a51",
+          "rng_seed": 12905016
+        },
+        {
+          "year": 2017,
+          "trace": "results/four_site_forecast_114_20261024/LC/seed3/eval_100000_2017_steps.jsonl",
+          "trace_sha256": "4f9e45311f2d034a482cb8a6fffbf86fb1b24f6dd8a00d171ed4cd175b836021",
+          "rng_seed": 12905017
+        },
+        {
+          "year": 2018,
+          "trace": "results/four_site_forecast_114_20261024/LC/seed3/eval_100000_2018_steps.jsonl",
+          "trace_sha256": "801be3daf23471656486e95cc4dd8e4d182353ec8919675f890dcc5ec281ed13",
+          "rng_seed": 12905018
+        },
+        {
+          "year": 2019,
+          "trace": "results/four_site_forecast_114_20261024/LC/seed3/eval_100000_2019_steps.jsonl",
+          "trace_sha256": "639c835add0ba383ca2549b924d91885362060dedcc032a26b4eba5835c102ee",
+          "rng_seed": 12905019
+        },
+        {
+          "year": 2020,
+          "trace": "results/four_site_forecast_114_20261024/LC/seed3/eval_100000_2020_steps.jsonl",
+          "trace_sha256": "a077610c14afdda6efb9750c0791b270193197360d437a6f502edb00ebc58d57",
+          "rng_seed": 12905020
+        },
+        {
+          "year": 2021,
+          "trace": "results/four_site_forecast_114_20261024/LC/seed3/eval_100000_2021_steps.jsonl",
+          "trace_sha256": "7c9871bd6d4d5225b9231f97504eaacded74f4cf3797b13d769b16979293e77c",
+          "rng_seed": 12905021
+        },
+        {
+          "year": 2022,
+          "trace": "results/four_site_forecast_114_20261024/LC/seed3/eval_100000_2022_steps.jsonl",
+          "trace_sha256": "b9e4344579fe200536d5a818c90c5f7e9c2200c3247cf07a4aa268807836eeef",
+          "rng_seed": 12905022
+        },
+        {
+          "year": 2023,
+          "trace": "results/four_site_forecast_114_20261024/LC/seed3/eval_100000_2023_steps.jsonl",
+          "trace_sha256": "e1f9da528637778e6482ac72263444780b58a38bec8ad2e1223e459bdcb048e2",
+          "rng_seed": 12905023
+        }
+      ]
+    },
+    {
+      "site": "LC",
+      "seed": 4,
+      "model": "results/lc_recovery_115_20261024/formal/forecast_seed4_ckpt100000.zip",
+      "model_sha256": "02bee46ea485aeef04f6ecd67e5adccd3e0df6e689086510e38dc1ac9e42fe1e",
+      "years": [
+        {
+          "year": 2014,
+          "trace": "results/lc_recovery_115_20261024/formal/eval_100000_2014_steps.jsonl",
+          "trace_sha256": "963d7740a227aac3de9ca6c528229f93b2327a1e352a9f4ea89f660d6b323007",
+          "rng_seed": 12906014
+        },
+        {
+          "year": 2015,
+          "trace": "results/lc_recovery_115_20261024/formal/eval_100000_2015_steps.jsonl",
+          "trace_sha256": "d0c424da1c95767fca52ecf710239b51df87dcb2101384992ce468f7e6d65b34",
+          "rng_seed": 12906015
+        },
+        {
+          "year": 2016,
+          "trace": "results/lc_recovery_115_20261024/formal/eval_100000_2016_steps.jsonl",
+          "trace_sha256": "373f566d942a6769e83c9b995c6949d0ec4af886a2c71c56f3067220ab35dba2",
+          "rng_seed": 12906016
+        },
+        {
+          "year": 2017,
+          "trace": "results/lc_recovery_115_20261024/formal/eval_100000_2017_steps.jsonl",
+          "trace_sha256": "ceacdb6a8ec88332e81f272381a7df919a2c96b9fa9e90b97f62f7c210bbf164",
+          "rng_seed": 12906017
+        },
+        {
+          "year": 2018,
+          "trace": "results/lc_recovery_115_20261024/formal/eval_100000_2018_steps.jsonl",
+          "trace_sha256": "8298f9edd143ae0f117f88ce6b5e3b4676cd62d8ff4d21b99e27cdd5130225e3",
+          "rng_seed": 12906018
+        },
+        {
+          "year": 2019,
+          "trace": "results/lc_recovery_115_20261024/formal/eval_100000_2019_steps.jsonl",
+          "trace_sha256": "6c5aab07af6fa3b819f89a21d22c2813eeec8b0e5d3d36b57fde95f5301a8710",
+          "rng_seed": 12906019
+        },
+        {
+          "year": 2020,
+          "trace": "results/lc_recovery_115_20261024/formal/eval_100000_2020_steps.jsonl",
+          "trace_sha256": "2fedc9b8829c13262018728d2bf8c1fe839f1e9393d4ef5096a3cac8bba3db7c",
+          "rng_seed": 12906020
+        },
+        {
+          "year": 2021,
+          "trace": "results/lc_recovery_115_20261024/formal/eval_100000_2021_steps.jsonl",
+          "trace_sha256": "6afe9c55e76884533233ad01e90b7a56273fc8ae6f2987031a57665938d1d1fb",
+          "rng_seed": 12906021
+        },
+        {
+          "year": 2022,
+          "trace": "results/lc_recovery_115_20261024/formal/eval_100000_2022_steps.jsonl",
+          "trace_sha256": "c67dac60ff14b64941a644105981dac1fa52c9d5531bbee3b21dc89ab5677750",
+          "rng_seed": 12906022
+        },
+        {
+          "year": 2023,
+          "trace": "results/lc_recovery_115_20261024/formal/eval_100000_2023_steps.jsonl",
+          "trace_sha256": "f453b457f4e758bf0e1f58a8ee66831b78b82c414187cfe53fea5a3af35d6a64",
+          "rng_seed": 12906023
+        }
+      ]
+    },
+    {
+      "site": "LC",
+      "seed": 5,
+      "model": "results/four_site_forecast_115_20261024/LC/seed5/forecast_seed5_ckpt100000.zip",
+      "model_sha256": "8bd34263d4e900875587bbc253cfd943ebf21f5ebd69d0d218139c2b5449eb6a",
+      "years": [
+        {
+          "year": 2014,
+          "trace": "results/four_site_forecast_115_20261024/LC/seed5/eval_100000_2014_steps.jsonl",
+          "trace_sha256": "bfdbe644300f8c7fbff6d184af2df0bdb36edd6640a950c000a9ac60cc70d1cc",
+          "rng_seed": 12907014
+        },
+        {
+          "year": 2015,
+          "trace": "results/four_site_forecast_115_20261024/LC/seed5/eval_100000_2015_steps.jsonl",
+          "trace_sha256": "a82120bf093a38409e25c7b9ab192b1cd59e3b2ae681516946ac3713b9b3d5f9",
+          "rng_seed": 12907015
+        },
+        {
+          "year": 2016,
+          "trace": "results/four_site_forecast_115_20261024/LC/seed5/eval_100000_2016_steps.jsonl",
+          "trace_sha256": "e3932507659d06cdde8fc21ebcaef95cc2175d1602cfb1a4fa5ef73b67bfe9b6",
+          "rng_seed": 12907016
+        },
+        {
+          "year": 2017,
+          "trace": "results/four_site_forecast_115_20261024/LC/seed5/eval_100000_2017_steps.jsonl",
+          "trace_sha256": "bedcfdc5935206cd25c6683b33dcc34b404175870f4c529ece2979e1ee4f26da",
+          "rng_seed": 12907017
+        },
+        {
+          "year": 2018,
+          "trace": "results/four_site_forecast_115_20261024/LC/seed5/eval_100000_2018_steps.jsonl",
+          "trace_sha256": "4f0d2b32742e8b550b011d70a8b3e62d3ed7fff33d944b09618f6ff020b170d4",
+          "rng_seed": 12907018
+        },
+        {
+          "year": 2019,
+          "trace": "results/four_site_forecast_115_20261024/LC/seed5/eval_100000_2019_steps.jsonl",
+          "trace_sha256": "2d30f43bae83eee6ab49c968ac523203ad3cc3716fe0060c1cb669c2d2ba621b",
+          "rng_seed": 12907019
+        },
+        {
+          "year": 2020,
+          "trace": "results/four_site_forecast_115_20261024/LC/seed5/eval_100000_2020_steps.jsonl",
+          "trace_sha256": "b6512ba67240a56461a3c72ae65bbaff9f9ea657067c0dfb11ba50817eecb768",
+          "rng_seed": 12907020
+        },
+        {
+          "year": 2021,
+          "trace": "results/four_site_forecast_115_20261024/LC/seed5/eval_100000_2021_steps.jsonl",
+          "trace_sha256": "3dd93f2e0fe92f8e029747bcda181a6063e865ea2d623e5f223d60b028e3fa2b",
+          "rng_seed": 12907021
+        },
+        {
+          "year": 2022,
+          "trace": "results/four_site_forecast_115_20261024/LC/seed5/eval_100000_2022_steps.jsonl",
+          "trace_sha256": "2bdbc18cc6ab42aabc704f492f37f728e0c6057c3d3addfab29bb6d655c16db3",
+          "rng_seed": 12907022
+        },
+        {
+          "year": 2023,
+          "trace": "results/four_site_forecast_115_20261024/LC/seed5/eval_100000_2023_steps.jsonl",
+          "trace_sha256": "8d74d877b0f3c46899ad713ac3daddf8d3ccd85a49f9f258077d47ba45e9fd5f",
+          "rng_seed": 12907023
+        }
+      ]
+    },
+    {
+      "site": "LC",
+      "seed": 6,
+      "model": "results/four_site_forecast_115_20261024/LC/seed6/forecast_seed6_ckpt100000.zip",
+      "model_sha256": "ea15918d1c14b7035e886649c04b22a2678bd3f3277f10ba22ee3bfeaa459476",
+      "years": [
+        {
+          "year": 2014,
+          "trace": "results/four_site_forecast_115_20261024/LC/seed6/eval_100000_2014_steps.jsonl",
+          "trace_sha256": "f53ed73f16a2885d91efe83df5fe1fb3125f0c51bf6d35c7b857ed7f489bea35",
+          "rng_seed": 12908014
+        },
+        {
+          "year": 2015,
+          "trace": "results/four_site_forecast_115_20261024/LC/seed6/eval_100000_2015_steps.jsonl",
+          "trace_sha256": "f6e2ea0a02c7ccda2aff1b4c3f169217142aceb5f7a6015948fcf369776a159b",
+          "rng_seed": 12908015
+        },
+        {
+          "year": 2016,
+          "trace": "results/four_site_forecast_115_20261024/LC/seed6/eval_100000_2016_steps.jsonl",
+          "trace_sha256": "1399ff09e16914085cbd981db263613fd6108d78739d47caee7521bdb3982363",
+          "rng_seed": 12908016
+        },
+        {
+          "year": 2017,
+          "trace": "results/four_site_forecast_115_20261024/LC/seed6/eval_100000_2017_steps.jsonl",
+          "trace_sha256": "742a8281838e87738684da8762ee6776b4a25a516769f45ad9c38b2eb2e998dd",
+          "rng_seed": 12908017
+        },
+        {
+          "year": 2018,
+          "trace": "results/four_site_forecast_115_20261024/LC/seed6/eval_100000_2018_steps.jsonl",
+          "trace_sha256": "43ce1b4c10b049227b2e8a7b91305693706de07584694f4e92d05cbf0d75dc8c",
+          "rng_seed": 12908018
+        },
+        {
+          "year": 2019,
+          "trace": "results/four_site_forecast_115_20261024/LC/seed6/eval_100000_2019_steps.jsonl",
+          "trace_sha256": "0966fbd3b3b2c9ebd1d61679f262a6cff1b5ff2b4a3fe7968e7f53776c4860d9",
+          "rng_seed": 12908019
+        },
+        {
+          "year": 2020,
+          "trace": "results/four_site_forecast_115_20261024/LC/seed6/eval_100000_2020_steps.jsonl",
+          "trace_sha256": "325b9ddadc33bab4d5a2b382747154d7140a773206ed01fbb2bf184ee09ad4ce",
+          "rng_seed": 12908020
+        },
+        {
+          "year": 2021,
+          "trace": "results/four_site_forecast_115_20261024/LC/seed6/eval_100000_2021_steps.jsonl",
+          "trace_sha256": "b8601d63a1bdda9ae321cb02df9293d7844fd30825779395be2eed6925e6a130",
+          "rng_seed": 12908021
+        },
+        {
+          "year": 2022,
+          "trace": "results/four_site_forecast_115_20261024/LC/seed6/eval_100000_2022_steps.jsonl",
+          "trace_sha256": "d0ed5fb2408c5d0f032592ded7007649bbe6381548c6f37a51475e3798b5cc4c",
+          "rng_seed": 12908022
+        },
+        {
+          "year": 2023,
+          "trace": "results/four_site_forecast_115_20261024/LC/seed6/eval_100000_2023_steps.jsonl",
+          "trace_sha256": "c7500ed3d5792c8de3683caa87d9122497f97d99c61a2ea89345830320e69052",
+          "rng_seed": 12908023
+        }
+      ]
+    },
+    {
+      "site": "LC",
+      "seed": 7,
+      "model": "results/four_site_forecast_115_20261024/LC/seed7/forecast_seed7_ckpt100000.zip",
+      "model_sha256": "08c7894ac2b122e78c6531e0c5e42e20c8db5381eb9f04c2c6c1d153dfcf4349",
+      "years": [
+        {
+          "year": 2014,
+          "trace": "results/four_site_forecast_115_20261024/LC/seed7/eval_100000_2014_steps.jsonl",
+          "trace_sha256": "d3b6d9da45c7b9de9c756a5c3f8387b716fa8b316136ef24cb5aa34c4ac39937",
+          "rng_seed": 12909014
+        },
+        {
+          "year": 2015,
+          "trace": "results/four_site_forecast_115_20261024/LC/seed7/eval_100000_2015_steps.jsonl",
+          "trace_sha256": "8d1b04fac008e08cc2665a38f73fb6499ab143fc3aee694aee74312e8c96eaa0",
+          "rng_seed": 12909015
+        },
+        {
+          "year": 2016,
+          "trace": "results/four_site_forecast_115_20261024/LC/seed7/eval_100000_2016_steps.jsonl",
+          "trace_sha256": "c07c07ece02f8e6695d6065212dc4c2118a5e1ef92dfb3fda8dfe30282a9aced",
+          "rng_seed": 12909016
+        },
+        {
+          "year": 2017,
+          "trace": "results/four_site_forecast_115_20261024/LC/seed7/eval_100000_2017_steps.jsonl",
+          "trace_sha256": "8a25d3964274a8d198e2077d340f3aa83a2320c47ae6307372fb5f3f903c9235",
+          "rng_seed": 12909017
+        },
+        {
+          "year": 2018,
+          "trace": "results/four_site_forecast_115_20261024/LC/seed7/eval_100000_2018_steps.jsonl",
+          "trace_sha256": "a5b831327b8e1e3f0072ae4e3b6b1f3756d6ff28979249f81c751072c67f046e",
+          "rng_seed": 12909018
+        },
+        {
+          "year": 2019,
+          "trace": "results/four_site_forecast_115_20261024/LC/seed7/eval_100000_2019_steps.jsonl",
+          "trace_sha256": "33c91e00dd09490b47a23c4920905354aca6378a2555d032e2494c8e35446c52",
+          "rng_seed": 12909019
+        },
+        {
+          "year": 2020,
+          "trace": "results/four_site_forecast_115_20261024/LC/seed7/eval_100000_2020_steps.jsonl",
+          "trace_sha256": "8249f8d6c96af6899ee2289b9a9eda4cd3eac2397fcf66298a2e0bd95ae08cfe",
+          "rng_seed": 12909020
+        },
+        {
+          "year": 2021,
+          "trace": "results/four_site_forecast_115_20261024/LC/seed7/eval_100000_2021_steps.jsonl",
+          "trace_sha256": "fd91274e17e9199e1680c6e23931553483f58950c6ed7a8cdaaa96760463cea3",
+          "rng_seed": 12909021
+        },
+        {
+          "year": 2022,
+          "trace": "results/four_site_forecast_115_20261024/LC/seed7/eval_100000_2022_steps.jsonl",
+          "trace_sha256": "d7d4ca5e7447793b61ff1dbc4683d50af889f75f87aef00711b32eee7a338c10",
+          "rng_seed": 12909022
+        },
+        {
+          "year": 2023,
+          "trace": "results/four_site_forecast_115_20261024/LC/seed7/eval_100000_2023_steps.jsonl",
+          "trace_sha256": "70c7ddbc7df4eef1a6a52db9680f4ffbfb03b4b4677bf7e4a1e04065670ffcb2",
+          "rng_seed": 12909023
+        }
+      ]
+    },
+    {
+      "site": "YC",
+      "seed": 0,
+      "model": "results/four_site_forecast_115_20261024/YC/seed0/forecast_seed0_ckpt100000.zip",
+      "model_sha256": "25b2b66ca7a1245234f0faa2c8d721cf6decb5fdcc0623d80dfe15b03845b7ff",
+      "years": [
+        {
+          "year": 2014,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed0/eval_100000_2014_steps.jsonl",
+          "trace_sha256": "9864fd6dd82e57c788283fcce02c58b2af2d1842c2e33dd2c2258329d68827d4",
+          "rng_seed": 13002014
+        },
+        {
+          "year": 2015,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed0/eval_100000_2015_steps.jsonl",
+          "trace_sha256": "c82b4928286bf46da9df05972e609d6cce958b05dcc817a2dc700adebf438834",
+          "rng_seed": 13002015
+        },
+        {
+          "year": 2016,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed0/eval_100000_2016_steps.jsonl",
+          "trace_sha256": "9621cf17a2aabadad2760aa336d52adb37f6653bd11dedc3754da5edcb4044f6",
+          "rng_seed": 13002016
+        },
+        {
+          "year": 2017,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed0/eval_100000_2017_steps.jsonl",
+          "trace_sha256": "8502a6297d6f0561e0705faad4a9bec494bb0006783fa5b71a337f29eae4715d",
+          "rng_seed": 13002017
+        },
+        {
+          "year": 2018,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed0/eval_100000_2018_steps.jsonl",
+          "trace_sha256": "7a2e6141539be5fd43e3c4bf78e89184ffd33ef8b5b768a7cc87ceca01a43fb1",
+          "rng_seed": 13002018
+        },
+        {
+          "year": 2019,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed0/eval_100000_2019_steps.jsonl",
+          "trace_sha256": "e30a152b735c7430683e97635e38967dcd7601f4756879fb9c554b28fe317778",
+          "rng_seed": 13002019
+        },
+        {
+          "year": 2020,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed0/eval_100000_2020_steps.jsonl",
+          "trace_sha256": "18f93887a712a8af385f554a941bea39557dbe6aeabf8cc9fb9545443e150851",
+          "rng_seed": 13002020
+        },
+        {
+          "year": 2021,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed0/eval_100000_2021_steps.jsonl",
+          "trace_sha256": "a498934facb097e853973d6106576fa96650d988d2eaa0ebc6cfe28a9d745591",
+          "rng_seed": 13002021
+        },
+        {
+          "year": 2022,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed0/eval_100000_2022_steps.jsonl",
+          "trace_sha256": "28f3123234bddc27510bc269bdfc6319f5233607395a6373ca3ef15d191ce561",
+          "rng_seed": 13002022
+        },
+        {
+          "year": 2023,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed0/eval_100000_2023_steps.jsonl",
+          "trace_sha256": "8fc701d4ec79747275459f451b179fca4cd1066b34770b78aedd7cafd84a1c73",
+          "rng_seed": 13002023
+        }
+      ]
+    },
+    {
+      "site": "YC",
+      "seed": 1,
+      "model": "results/four_site_forecast_115_20261024/YC/seed1/forecast_seed1_ckpt100000.zip",
+      "model_sha256": "7116bcab0f3ff0dc4a93357cc8f5f80ce4f54e34186ffcfe9b7943cbf72f22ac",
+      "years": [
+        {
+          "year": 2014,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed1/eval_100000_2014_steps.jsonl",
+          "trace_sha256": "18799338a6bb56b33f2c803e479310872689645abe04e1150041bd4d9003a320",
+          "rng_seed": 13003014
+        },
+        {
+          "year": 2015,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed1/eval_100000_2015_steps.jsonl",
+          "trace_sha256": "d8de67e6342fa20a04ccbea97107c0fd174caabf715b47e96c33129a48c1ea9c",
+          "rng_seed": 13003015
+        },
+        {
+          "year": 2016,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed1/eval_100000_2016_steps.jsonl",
+          "trace_sha256": "38ec358fd9d534a71961d951b5afbeb1b4eb9bc36d24d0bed1dfc8d721ed56fb",
+          "rng_seed": 13003016
+        },
+        {
+          "year": 2017,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed1/eval_100000_2017_steps.jsonl",
+          "trace_sha256": "26432a1231435053e424e63ca7662ff663e29d913f9bc5c57628d7528d30a860",
+          "rng_seed": 13003017
+        },
+        {
+          "year": 2018,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed1/eval_100000_2018_steps.jsonl",
+          "trace_sha256": "302b557ebeb62844ecf725fa9bdd24ccf19b77ce108bced36eb9ae0669c284c6",
+          "rng_seed": 13003018
+        },
+        {
+          "year": 2019,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed1/eval_100000_2019_steps.jsonl",
+          "trace_sha256": "39e13e420a6d40e8570aca23da9b3c52ca50a824d8a95c0ad5235245c9410173",
+          "rng_seed": 13003019
+        },
+        {
+          "year": 2020,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed1/eval_100000_2020_steps.jsonl",
+          "trace_sha256": "b9c5287f6d1f462d6135aa737f2c94a8c4b8c46c4ffe4271f1d466931f3bdb24",
+          "rng_seed": 13003020
+        },
+        {
+          "year": 2021,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed1/eval_100000_2021_steps.jsonl",
+          "trace_sha256": "abb3ea0e4182a6f0a993986a20964a344e7f65f5a0427dca6193cb5a74377cfd",
+          "rng_seed": 13003021
+        },
+        {
+          "year": 2022,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed1/eval_100000_2022_steps.jsonl",
+          "trace_sha256": "6b64455eb89c004b8b2e11dd956dac822ef76cf763d419048b1b6e3bb5f2d8e7",
+          "rng_seed": 13003022
+        },
+        {
+          "year": 2023,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed1/eval_100000_2023_steps.jsonl",
+          "trace_sha256": "f0496889c670dbe7e31ac9a3a2a9ba9e11fd66181c48f4cdb7da96cb5105a8a6",
+          "rng_seed": 13003023
+        }
+      ]
+    },
+    {
+      "site": "YC",
+      "seed": 2,
+      "model": "results/four_site_forecast_115_20261024/YC/seed2/forecast_seed2_ckpt100000.zip",
+      "model_sha256": "0bd73e4385cc73feb6e03b69d95bc413e494419f777101361fe3fdf52d39583e",
+      "years": [
+        {
+          "year": 2014,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed2/eval_100000_2014_steps.jsonl",
+          "trace_sha256": "c16191fac250f011ac355c96e6a4c322cf513715da3d2837f3bb1982790da01c",
+          "rng_seed": 13004014
+        },
+        {
+          "year": 2015,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed2/eval_100000_2015_steps.jsonl",
+          "trace_sha256": "2ec82165005a1dedab7531175fb112fc9343212a12556668477ae1724a04322b",
+          "rng_seed": 13004015
+        },
+        {
+          "year": 2016,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed2/eval_100000_2016_steps.jsonl",
+          "trace_sha256": "9ceb3ae940c9633e627e7da5552ff5236f8224c6da1dbab604b6a9d3d55b49bd",
+          "rng_seed": 13004016
+        },
+        {
+          "year": 2017,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed2/eval_100000_2017_steps.jsonl",
+          "trace_sha256": "0b8d6012f89c1acad6ab2657a296b4f6aa89ad177e8502e80e15832d52c3851f",
+          "rng_seed": 13004017
+        },
+        {
+          "year": 2018,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed2/eval_100000_2018_steps.jsonl",
+          "trace_sha256": "b178b11f0a841464e2b5d0b8a1f87b7b24070e4edf09cc45f48b73d648c84d98",
+          "rng_seed": 13004018
+        },
+        {
+          "year": 2019,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed2/eval_100000_2019_steps.jsonl",
+          "trace_sha256": "751b702652b7d2b3bfbb49161590b01e67804a41a6a56a8199b3123e16101db7",
+          "rng_seed": 13004019
+        },
+        {
+          "year": 2020,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed2/eval_100000_2020_steps.jsonl",
+          "trace_sha256": "b1ef033bea119bd8a760d70f0603fdffb9267ced5ae7da481a48917aed36c927",
+          "rng_seed": 13004020
+        },
+        {
+          "year": 2021,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed2/eval_100000_2021_steps.jsonl",
+          "trace_sha256": "cb212a8d61110c04a60c0695e7fbded919d693acf2baa3f92bd2e8f548d264de",
+          "rng_seed": 13004021
+        },
+        {
+          "year": 2022,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed2/eval_100000_2022_steps.jsonl",
+          "trace_sha256": "c7a9997ec0b9145c5830bdfa1a7fde43e682361bc617bdba34426232747a4306",
+          "rng_seed": 13004022
+        },
+        {
+          "year": 2023,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed2/eval_100000_2023_steps.jsonl",
+          "trace_sha256": "4a3ab19a9108f409f2a2d0edae22a736c5b8caa484e6955d8c22086e0d36f1f7",
+          "rng_seed": 13004023
+        }
+      ]
+    },
+    {
+      "site": "YC",
+      "seed": 3,
+      "model": "results/four_site_forecast_115_20261024/YC/seed3/forecast_seed3_ckpt100000.zip",
+      "model_sha256": "aee124d43c484d968072eaf5ae44e4c3c1d16572c6846df67fa47e5248867b1d",
+      "years": [
+        {
+          "year": 2014,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed3/eval_100000_2014_steps.jsonl",
+          "trace_sha256": "c0a3b87f1bf59158e9013bb0346ff13f6cf4c261f8355bd2d6637acac85771b3",
+          "rng_seed": 13005014
+        },
+        {
+          "year": 2015,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed3/eval_100000_2015_steps.jsonl",
+          "trace_sha256": "082b383fda8f02e29bf0d2272242aca23bc8a95c6eb43534ebae6bf7781f62d8",
+          "rng_seed": 13005015
+        },
+        {
+          "year": 2016,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed3/eval_100000_2016_steps.jsonl",
+          "trace_sha256": "5cf638a6fc9cb9587a54a5117ab5c51b3fe616752e3947966e4952f16f2eef8e",
+          "rng_seed": 13005016
+        },
+        {
+          "year": 2017,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed3/eval_100000_2017_steps.jsonl",
+          "trace_sha256": "6d98ff491d12b459dac0675aa82df1f8e757f33026de33926de8719970534c50",
+          "rng_seed": 13005017
+        },
+        {
+          "year": 2018,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed3/eval_100000_2018_steps.jsonl",
+          "trace_sha256": "43fc0049d44f7d81e9068f837db16975f4ad40521df0c7f69c12193684efa151",
+          "rng_seed": 13005018
+        },
+        {
+          "year": 2019,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed3/eval_100000_2019_steps.jsonl",
+          "trace_sha256": "71853aff94a469c9198bc5572ffc9b6ae0be40397f40a7c8dc35d13256c08c45",
+          "rng_seed": 13005019
+        },
+        {
+          "year": 2020,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed3/eval_100000_2020_steps.jsonl",
+          "trace_sha256": "581671a5519c1a25c882acf1a0c61af340e3485d0fa05410e081501c297232b1",
+          "rng_seed": 13005020
+        },
+        {
+          "year": 2021,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed3/eval_100000_2021_steps.jsonl",
+          "trace_sha256": "e32f57989525cb7697d82fb7e5bdbf808e1840be50a3fd0835146464984f2228",
+          "rng_seed": 13005021
+        },
+        {
+          "year": 2022,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed3/eval_100000_2022_steps.jsonl",
+          "trace_sha256": "78ce204684074540574c7ac1452eaf7990f8f6be6f1c5d2ca6576bed5e6670f8",
+          "rng_seed": 13005022
+        },
+        {
+          "year": 2023,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed3/eval_100000_2023_steps.jsonl",
+          "trace_sha256": "95f53ab7c7d64a8a0b1cfefb9b4f8aa76e5619fc728969df7e07cc532f9e89d0",
+          "rng_seed": 13005023
+        }
+      ]
+    },
+    {
+      "site": "YC",
+      "seed": 4,
+      "model": "results/four_site_forecast_115_20261024/YC/seed4/forecast_seed4_ckpt100000.zip",
+      "model_sha256": "2722e7510f0d824f84151d4ae1ab1b54b896a8327e196be3b32c9fb89689e4d0",
+      "years": [
+        {
+          "year": 2014,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed4/eval_100000_2014_steps.jsonl",
+          "trace_sha256": "037ac44d611b05e7dfb96d76e182d636f7e31961ab5d6fd5a81ca3b128658cab",
+          "rng_seed": 13006014
+        },
+        {
+          "year": 2015,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed4/eval_100000_2015_steps.jsonl",
+          "trace_sha256": "4b914baafcfb8ca23d4cba2da79dbf54eceb7d24acd2151d5220f1da875efbcd",
+          "rng_seed": 13006015
+        },
+        {
+          "year": 2016,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed4/eval_100000_2016_steps.jsonl",
+          "trace_sha256": "86f14cf5eaa51089736ee00ebe09c608d871dfc9cbbd1dcbd6e22fff7375c7b8",
+          "rng_seed": 13006016
+        },
+        {
+          "year": 2017,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed4/eval_100000_2017_steps.jsonl",
+          "trace_sha256": "cb81a385726649f9a1ca03868f959d847b169aff377e064fa124227e2b66059a",
+          "rng_seed": 13006017
+        },
+        {
+          "year": 2018,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed4/eval_100000_2018_steps.jsonl",
+          "trace_sha256": "b43a0ee818c06d76fbefe0843113b3f4d890c9b06a7a7ad187f63da95f82c3e1",
+          "rng_seed": 13006018
+        },
+        {
+          "year": 2019,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed4/eval_100000_2019_steps.jsonl",
+          "trace_sha256": "2218d5d8ec4020564e99d396bb733aab692cbe6d8c1022695fa70e303f102c12",
+          "rng_seed": 13006019
+        },
+        {
+          "year": 2020,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed4/eval_100000_2020_steps.jsonl",
+          "trace_sha256": "49f1085f8deee5f518854455b4c33f8c252ff1c3b470fe8025d5081233fe791c",
+          "rng_seed": 13006020
+        },
+        {
+          "year": 2021,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed4/eval_100000_2021_steps.jsonl",
+          "trace_sha256": "302b190ae598e6e1e35948534419d98dd11b75f8db775fd183824cfbd15c6d93",
+          "rng_seed": 13006021
+        },
+        {
+          "year": 2022,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed4/eval_100000_2022_steps.jsonl",
+          "trace_sha256": "31770b792febc4a3462d69bb61a53897a498680448ef489db6ba6852ef24d141",
+          "rng_seed": 13006022
+        },
+        {
+          "year": 2023,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed4/eval_100000_2023_steps.jsonl",
+          "trace_sha256": "057cd6021e1a912c0756e74821e988fa75360357cab6844f9ad429e974ec9800",
+          "rng_seed": 13006023
+        }
+      ]
+    },
+    {
+      "site": "YC",
+      "seed": 5,
+      "model": "results/four_site_forecast_115_20261024/YC/seed5/forecast_seed5_ckpt100000.zip",
+      "model_sha256": "8cc57d7a11349a38b4096b096a9506ec6f698e744af469281c6ce1902ff8d6e9",
+      "years": [
+        {
+          "year": 2014,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed5/eval_100000_2014_steps.jsonl",
+          "trace_sha256": "f1fd3e763bd0fcd0c471839fa3001908d6994459477dbc9e261776c813c4bf20",
+          "rng_seed": 13007014
+        },
+        {
+          "year": 2015,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed5/eval_100000_2015_steps.jsonl",
+          "trace_sha256": "c8c757726936d7bf3336dc949d37d7ed6d9fc6a30d028ce4932cde544a1fc39a",
+          "rng_seed": 13007015
+        },
+        {
+          "year": 2016,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed5/eval_100000_2016_steps.jsonl",
+          "trace_sha256": "a5b1a0ddad3878a4e17ffee4baecb2bc8c4297365f2da07413a7f556dc86fd98",
+          "rng_seed": 13007016
+        },
+        {
+          "year": 2017,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed5/eval_100000_2017_steps.jsonl",
+          "trace_sha256": "409cb3c81c86ed1d7aeec0e97f5652096cf715a803559a02501817a0b6a99221",
+          "rng_seed": 13007017
+        },
+        {
+          "year": 2018,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed5/eval_100000_2018_steps.jsonl",
+          "trace_sha256": "95fa856db0ad21411101901790ab5153835a731592e6400b2f1f9ebaabe231f2",
+          "rng_seed": 13007018
+        },
+        {
+          "year": 2019,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed5/eval_100000_2019_steps.jsonl",
+          "trace_sha256": "56a78512184a7d8a08055b7a374c79e8ebdf433a7b5afe51ef3fdd91b6590591",
+          "rng_seed": 13007019
+        },
+        {
+          "year": 2020,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed5/eval_100000_2020_steps.jsonl",
+          "trace_sha256": "060f315c902c9fa9956417db233bd2dbddf006087aa57a0d0bb7db59f2dd60ed",
+          "rng_seed": 13007020
+        },
+        {
+          "year": 2021,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed5/eval_100000_2021_steps.jsonl",
+          "trace_sha256": "0905edd615b9c04b684c4748991dc281b0bf98af8aefc8b4b1c9f62d97e6bc4f",
+          "rng_seed": 13007021
+        },
+        {
+          "year": 2022,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed5/eval_100000_2022_steps.jsonl",
+          "trace_sha256": "c83088ed086b06b715a8ca625b305f63dcfef50bd36c3f13a0dc36bc43f4689b",
+          "rng_seed": 13007022
+        },
+        {
+          "year": 2023,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed5/eval_100000_2023_steps.jsonl",
+          "trace_sha256": "ce90fa114b10c5c0abe8d77bbc23e29ae043a5a08af13ef443f3e12aa4bed9ea",
+          "rng_seed": 13007023
+        }
+      ]
+    },
+    {
+      "site": "YC",
+      "seed": 6,
+      "model": "results/four_site_forecast_115_20261024/YC/seed6/forecast_seed6_ckpt100000.zip",
+      "model_sha256": "d3bfb6f0230d57ded84f5391ead7a45300768b62317656b5cbc25a6388eb727b",
+      "years": [
+        {
+          "year": 2014,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed6/eval_100000_2014_steps.jsonl",
+          "trace_sha256": "23ec4251ae7243fbb9bc6bbdd770161e4fe4dad9d6a5f33968b6b729cedeb546",
+          "rng_seed": 13008014
+        },
+        {
+          "year": 2015,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed6/eval_100000_2015_steps.jsonl",
+          "trace_sha256": "13ed28417b1dfa8bb9ed24f3eeb119e96b01513c6b371b6e2b0229ac381ab89c",
+          "rng_seed": 13008015
+        },
+        {
+          "year": 2016,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed6/eval_100000_2016_steps.jsonl",
+          "trace_sha256": "330c2235ef2d3e82bce67077163f905fa1af0803dde9c9910990255dd7e21598",
+          "rng_seed": 13008016
+        },
+        {
+          "year": 2017,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed6/eval_100000_2017_steps.jsonl",
+          "trace_sha256": "a318d4f6c9601ebb2242ed70d26e117f3d0f3de49e6a8ac572965f98a9990a57",
+          "rng_seed": 13008017
+        },
+        {
+          "year": 2018,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed6/eval_100000_2018_steps.jsonl",
+          "trace_sha256": "3ea9ddece44154b14e33c908d04f36105076436ba26a4995a688cf976d09488e",
+          "rng_seed": 13008018
+        },
+        {
+          "year": 2019,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed6/eval_100000_2019_steps.jsonl",
+          "trace_sha256": "59d31085c135833006765b1d35d9375710713c569ee027c1a01f9478d1e60a2a",
+          "rng_seed": 13008019
+        },
+        {
+          "year": 2020,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed6/eval_100000_2020_steps.jsonl",
+          "trace_sha256": "9336da8c12e926031d9345a9e3f7476b0150b8fc66d80466287e04b5bf995d76",
+          "rng_seed": 13008020
+        },
+        {
+          "year": 2021,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed6/eval_100000_2021_steps.jsonl",
+          "trace_sha256": "e39412ab9b7bb7e8f2430b12b23da2947fd83630f5defcf5d6631873b259adac",
+          "rng_seed": 13008021
+        },
+        {
+          "year": 2022,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed6/eval_100000_2022_steps.jsonl",
+          "trace_sha256": "cf7895e35cee3b7450dc74c556a2a99014d9e565d29c6d46b582252313683421",
+          "rng_seed": 13008022
+        },
+        {
+          "year": 2023,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed6/eval_100000_2023_steps.jsonl",
+          "trace_sha256": "9e3fb5c34ed31289f88ca21b0582922f230e96ce5a4d66311c5cbfd606f47346",
+          "rng_seed": 13008023
+        }
+      ]
+    },
+    {
+      "site": "YC",
+      "seed": 7,
+      "model": "results/four_site_forecast_115_20261024/YC/seed7/forecast_seed7_ckpt100000.zip",
+      "model_sha256": "a13d4079be2b46c42cad27bce652061415eedbf18b81732fa794756e47b4e897",
+      "years": [
+        {
+          "year": 2014,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed7/eval_100000_2014_steps.jsonl",
+          "trace_sha256": "89c6223cbdf977f690f26cd02c75e860e943e60b1088aead4970c3912fd9b9b6",
+          "rng_seed": 13009014
+        },
+        {
+          "year": 2015,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed7/eval_100000_2015_steps.jsonl",
+          "trace_sha256": "714c89a351df5a82ed8d4716f4f245a4979a65a5e5265eff8847985b74d5b101",
+          "rng_seed": 13009015
+        },
+        {
+          "year": 2016,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed7/eval_100000_2016_steps.jsonl",
+          "trace_sha256": "fed6feb9d73faeb17f89b8ddbda6199dbd2c092892058c95d450786cbecbe839",
+          "rng_seed": 13009016
+        },
+        {
+          "year": 2017,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed7/eval_100000_2017_steps.jsonl",
+          "trace_sha256": "d96a357aa7b8e1492a4e4e95bbacb1922375469be8810b988aa9cbeae984b7f8",
+          "rng_seed": 13009017
+        },
+        {
+          "year": 2018,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed7/eval_100000_2018_steps.jsonl",
+          "trace_sha256": "c7b6138e9e85793d3400ad07f52ac26f1e29fffcb562910cea15d1fe99afa7bf",
+          "rng_seed": 13009018
+        },
+        {
+          "year": 2019,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed7/eval_100000_2019_steps.jsonl",
+          "trace_sha256": "270e6e6d98f8fcec98eb7982848adcf8c780a5d0a582e6eb8a74349705eda979",
+          "rng_seed": 13009019
+        },
+        {
+          "year": 2020,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed7/eval_100000_2020_steps.jsonl",
+          "trace_sha256": "8e33ac9772c79d3f582df336fe47585d27f1588aaff0ff89750107501aa74360",
+          "rng_seed": 13009020
+        },
+        {
+          "year": 2021,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed7/eval_100000_2021_steps.jsonl",
+          "trace_sha256": "b5626d5568fd2f1118f6164d54b4d218dadf62c22673f04b4fe02017961e4efb",
+          "rng_seed": 13009021
+        },
+        {
+          "year": 2022,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed7/eval_100000_2022_steps.jsonl",
+          "trace_sha256": "eafbfac2325a16cec75abbaea23128ba3b8100b3b96d72574135175c832502da",
+          "rng_seed": 13009022
+        },
+        {
+          "year": 2023,
+          "trace": "results/four_site_forecast_115_20261024/YC/seed7/eval_100000_2023_steps.jsonl",
+          "trace_sha256": "6fe464fb5ce0d0f0f1da3ccaeaa0256043dfab6d8a6f7605ea2e7be960aac7bd",
+          "rng_seed": 13009023
+        }
+      ]
+    },
+    {
+      "site": "FQ",
+      "seed": 0,
+      "model": "results/four_site_forecast_116_20261025/FQ/seed0/forecast_seed0_ckpt100000.zip",
+      "model_sha256": "aacb4aa117c0c918d49d77efd0fb1e41223c6e218559a1a460456f384e498eed",
+      "years": [
+        {
+          "year": 2014,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed0/eval_100000_2014_steps.jsonl",
+          "trace_sha256": "e6bde6361d16356d77a0db4810e2f768286e4b1060ae6dad65c04748b07b0ce8",
+          "rng_seed": 13102014
+        },
+        {
+          "year": 2015,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed0/eval_100000_2015_steps.jsonl",
+          "trace_sha256": "ead7fc6786c149d4f0cff3639c9b30a7f3d556e9a3a04024c3e40b57a4af04e0",
+          "rng_seed": 13102015
+        },
+        {
+          "year": 2016,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed0/eval_100000_2016_steps.jsonl",
+          "trace_sha256": "e1b085f6d99fe7f776d430a4134d1c5bb3a2b3bcf03f2718c1d41279d4b9cc42",
+          "rng_seed": 13102016
+        },
+        {
+          "year": 2017,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed0/eval_100000_2017_steps.jsonl",
+          "trace_sha256": "f6452cfe65e76c01d16c73d67ba002d062f14aa5a68c27017436d8b249a3f80d",
+          "rng_seed": 13102017
+        },
+        {
+          "year": 2018,
+          "trace": "results/fq2018_forecast_reassessment_125_20261027/seed0/eval_100000_2018_steps.jsonl",
+          "trace_sha256": "994ed076871630afeaba4db952b308701c630bbfbda39d49a131b36f44d1d4ee",
+          "rng_seed": 13102018
+        },
+        {
+          "year": 2019,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed0/eval_100000_2019_steps.jsonl",
+          "trace_sha256": "9a40a5e41dbea58464e9bab5d24a241b448eb1a742f4e8a0493084f3f8aa3a2b",
+          "rng_seed": 13102019
+        },
+        {
+          "year": 2020,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed0/eval_100000_2020_steps.jsonl",
+          "trace_sha256": "f42f93f87b7cbcfb8a65bc74002c09d43e00fcb4f3cae31528b9b16002b63400",
+          "rng_seed": 13102020
+        },
+        {
+          "year": 2021,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed0/eval_100000_2021_steps.jsonl",
+          "trace_sha256": "2c4fce2af90ddcbe2ec448052d2513eceff4baa5ffe86178ce6773603f213107",
+          "rng_seed": 13102021
+        },
+        {
+          "year": 2022,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed0/eval_100000_2022_steps.jsonl",
+          "trace_sha256": "3ad316a7859e215456741c8a4b931707f38530213897d6bd9bf25db05c9b9049",
+          "rng_seed": 13102022
+        },
+        {
+          "year": 2023,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed0/eval_100000_2023_steps.jsonl",
+          "trace_sha256": "a41c7e17ebb04f981ca685e19f88a48634364d562520e2b6a40f454580ab7873",
+          "rng_seed": 13102023
+        }
+      ]
+    },
+    {
+      "site": "FQ",
+      "seed": 1,
+      "model": "results/four_site_forecast_116_20261025/FQ/seed1/forecast_seed1_ckpt100000.zip",
+      "model_sha256": "2dc74be902ec69fafd0f77300fb9a170585dcc2d8693240ec03af07038047111",
+      "years": [
+        {
+          "year": 2014,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed1/eval_100000_2014_steps.jsonl",
+          "trace_sha256": "01068fa9d76dc9f5dcf09487e2085e924556346141306287969cf4ecc35cef4a",
+          "rng_seed": 13103014
+        },
+        {
+          "year": 2015,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed1/eval_100000_2015_steps.jsonl",
+          "trace_sha256": "80a9880df37782e8e7641aaf1f04d4855dcb3056a36970a65ec7bfbbf9c217a6",
+          "rng_seed": 13103015
+        },
+        {
+          "year": 2016,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed1/eval_100000_2016_steps.jsonl",
+          "trace_sha256": "0b7b36fc631d1880d9a860c6fed3f4a9fbaa976bcf7984b890b1fcbfe6c5bc4e",
+          "rng_seed": 13103016
+        },
+        {
+          "year": 2017,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed1/eval_100000_2017_steps.jsonl",
+          "trace_sha256": "0a0c34ecd8217e080597939c46f23a7e1548aad49b4d3c7763b81094b8cc0627",
+          "rng_seed": 13103017
+        },
+        {
+          "year": 2018,
+          "trace": "results/fq2018_forecast_reassessment_125_20261027/seed1/eval_100000_2018_steps.jsonl",
+          "trace_sha256": "5c2f587ac637f25204c8ad45cd1d2a3bef55357cd82043430e458dce47f16868",
+          "rng_seed": 13103018
+        },
+        {
+          "year": 2019,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed1/eval_100000_2019_steps.jsonl",
+          "trace_sha256": "a72b53d78599ecfbc88b47395fb16aec76ba1d026c82eea312d156f0c5271ef4",
+          "rng_seed": 13103019
+        },
+        {
+          "year": 2020,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed1/eval_100000_2020_steps.jsonl",
+          "trace_sha256": "ef6f91392c8b92ae57fd922952341c597ac024b0726d924df7a6b9be4e4b1152",
+          "rng_seed": 13103020
+        },
+        {
+          "year": 2021,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed1/eval_100000_2021_steps.jsonl",
+          "trace_sha256": "e0c66f0b320e0fa14267b93c28d50ac8ec9767bad464c0d9680ec1ba8d920107",
+          "rng_seed": 13103021
+        },
+        {
+          "year": 2022,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed1/eval_100000_2022_steps.jsonl",
+          "trace_sha256": "fe2c9a7537a2c78e6a4d921b838008a382c0cb28b26a253ebce9410f02ed0081",
+          "rng_seed": 13103022
+        },
+        {
+          "year": 2023,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed1/eval_100000_2023_steps.jsonl",
+          "trace_sha256": "2fb7556ab3de63e37a7a05e08991094b29427c1b192dbd21584cc71497bed38c",
+          "rng_seed": 13103023
+        }
+      ]
+    },
+    {
+      "site": "FQ",
+      "seed": 2,
+      "model": "results/four_site_forecast_116_20261025/FQ/seed2/forecast_seed2_ckpt100000.zip",
+      "model_sha256": "c0c22f4d7b12682d49eb3ad509953362fd5f48d2c564093725ad984fb5f38d9f",
+      "years": [
+        {
+          "year": 2014,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed2/eval_100000_2014_steps.jsonl",
+          "trace_sha256": "a4c4b152c0ad1dc779470b5774294436fb5a677fadb2e31e745baba084a7f3a9",
+          "rng_seed": 13104014
+        },
+        {
+          "year": 2015,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed2/eval_100000_2015_steps.jsonl",
+          "trace_sha256": "895c74341a27f39d01d4419cc5a920645ff5c7d6359d6fa32597b14a622d58bc",
+          "rng_seed": 13104015
+        },
+        {
+          "year": 2016,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed2/eval_100000_2016_steps.jsonl",
+          "trace_sha256": "eb82b07b905396b3ee8e7615241b3c3ecfa9f8bbbd5374c78c9759505fc5a363",
+          "rng_seed": 13104016
+        },
+        {
+          "year": 2017,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed2/eval_100000_2017_steps.jsonl",
+          "trace_sha256": "bac399dd13d098ec219d13c29a08193a57ef55f8fa809b59f8964b45d36051e5",
+          "rng_seed": 13104017
+        },
+        {
+          "year": 2018,
+          "trace": "results/fq2018_forecast_reassessment_125_20261027/seed2/eval_100000_2018_steps.jsonl",
+          "trace_sha256": "1fe8079bd40b3d7a54c853a73698b32a0362298fc26de16991fb064663fad3bf",
+          "rng_seed": 13104018
+        },
+        {
+          "year": 2019,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed2/eval_100000_2019_steps.jsonl",
+          "trace_sha256": "a7199e022d137fb5ce09e309687263d2d118a6c1ad81e29d7f6ca2e8d7fe3a27",
+          "rng_seed": 13104019
+        },
+        {
+          "year": 2020,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed2/eval_100000_2020_steps.jsonl",
+          "trace_sha256": "e38c202b8d0237db3e5cd95ba97d9aa6ff59c139e0afeec31f6db95171cc3baa",
+          "rng_seed": 13104020
+        },
+        {
+          "year": 2021,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed2/eval_100000_2021_steps.jsonl",
+          "trace_sha256": "e638b575a5352407e29d1b4fbf156c37af0704733fdaf99cabeb4abbf11b7e79",
+          "rng_seed": 13104021
+        },
+        {
+          "year": 2022,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed2/eval_100000_2022_steps.jsonl",
+          "trace_sha256": "2575c623c0f51f285e0075c1f191760097d5f1e99ba6fe6f195ffd8feeeacedb",
+          "rng_seed": 13104022
+        },
+        {
+          "year": 2023,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed2/eval_100000_2023_steps.jsonl",
+          "trace_sha256": "0a569dafd810a7d34bc18e1ebee27eda9f2ce755c275a45e2843359deacc6270",
+          "rng_seed": 13104023
+        }
+      ]
+    },
+    {
+      "site": "FQ",
+      "seed": 3,
+      "model": "results/four_site_forecast_116_20261025/FQ/seed3/forecast_seed3_ckpt100000.zip",
+      "model_sha256": "35e5dd35f279823ea090566eeef458558eef59d0034a3a3e24ecabdb6b725ecf",
+      "years": [
+        {
+          "year": 2014,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed3/eval_100000_2014_steps.jsonl",
+          "trace_sha256": "960a490ac08b2ffeca16f2cf76bbe980e23385a7a3464dffa2e283d0c366bf94",
+          "rng_seed": 13105014
+        },
+        {
+          "year": 2015,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed3/eval_100000_2015_steps.jsonl",
+          "trace_sha256": "51f60beb1581ee0063eec58b88b0db41f4abd4795acfabf607df5b5d5515daa7",
+          "rng_seed": 13105015
+        },
+        {
+          "year": 2016,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed3/eval_100000_2016_steps.jsonl",
+          "trace_sha256": "76b2e667e6c03574d5630e15de85ea5379adf80dca49ac4bf58e5eed1b70f757",
+          "rng_seed": 13105016
+        },
+        {
+          "year": 2017,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed3/eval_100000_2017_steps.jsonl",
+          "trace_sha256": "6f28d985e8d2662b0dde8152738940f9cb2ede329c3bd137faf16174dd0c5d9e",
+          "rng_seed": 13105017
+        },
+        {
+          "year": 2018,
+          "trace": "results/fq2018_forecast_reassessment_125_20261027/seed3/eval_100000_2018_steps.jsonl",
+          "trace_sha256": "850c9b64a891324411c5ad219c8b50378721c9a8e65d9f20814f2e9b9a3571af",
+          "rng_seed": 13105018
+        },
+        {
+          "year": 2019,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed3/eval_100000_2019_steps.jsonl",
+          "trace_sha256": "23f867d64efc5e0b85855502ffa665c7fc056eeb1a018462dfa41694ff3965fb",
+          "rng_seed": 13105019
+        },
+        {
+          "year": 2020,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed3/eval_100000_2020_steps.jsonl",
+          "trace_sha256": "e351a09a713175b288ef959d99c256d864078fedaf83ee84ab9c572c75f663fc",
+          "rng_seed": 13105020
+        },
+        {
+          "year": 2021,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed3/eval_100000_2021_steps.jsonl",
+          "trace_sha256": "05868dbc93f9e600f44586b246d0e02724d0ba1a3ffc14b1fdfe156d7e846223",
+          "rng_seed": 13105021
+        },
+        {
+          "year": 2022,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed3/eval_100000_2022_steps.jsonl",
+          "trace_sha256": "3277f0eedf4563af4cd299e6303f6ffc6299be59f82c9aa22a862b1ac81508d0",
+          "rng_seed": 13105022
+        },
+        {
+          "year": 2023,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed3/eval_100000_2023_steps.jsonl",
+          "trace_sha256": "418f629544b03f9c4b7c080793a8e5a0b5f3acce1b47ed71195fb31bb84599e0",
+          "rng_seed": 13105023
+        }
+      ]
+    },
+    {
+      "site": "FQ",
+      "seed": 4,
+      "model": "results/four_site_forecast_116_20261025/FQ/seed4/forecast_seed4_ckpt100000.zip",
+      "model_sha256": "0b65e7785a3b76ee9faac5bcd517bbea4adcc7ad68b67e72162969b21cef857b",
+      "years": [
+        {
+          "year": 2014,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed4/eval_100000_2014_steps.jsonl",
+          "trace_sha256": "e6bde6361d16356d77a0db4810e2f768286e4b1060ae6dad65c04748b07b0ce8",
+          "rng_seed": 13106014
+        },
+        {
+          "year": 2015,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed4/eval_100000_2015_steps.jsonl",
+          "trace_sha256": "ead7fc6786c149d4f0cff3639c9b30a7f3d556e9a3a04024c3e40b57a4af04e0",
+          "rng_seed": 13106015
+        },
+        {
+          "year": 2016,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed4/eval_100000_2016_steps.jsonl",
+          "trace_sha256": "e1b085f6d99fe7f776d430a4134d1c5bb3a2b3bcf03f2718c1d41279d4b9cc42",
+          "rng_seed": 13106016
+        },
+        {
+          "year": 2017,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed4/eval_100000_2017_steps.jsonl",
+          "trace_sha256": "f6452cfe65e76c01d16c73d67ba002d062f14aa5a68c27017436d8b249a3f80d",
+          "rng_seed": 13106017
+        },
+        {
+          "year": 2018,
+          "trace": "results/fq2018_forecast_reassessment_125_20261027/seed4/eval_100000_2018_steps.jsonl",
+          "trace_sha256": "994ed076871630afeaba4db952b308701c630bbfbda39d49a131b36f44d1d4ee",
+          "rng_seed": 13106018
+        },
+        {
+          "year": 2019,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed4/eval_100000_2019_steps.jsonl",
+          "trace_sha256": "9a40a5e41dbea58464e9bab5d24a241b448eb1a742f4e8a0493084f3f8aa3a2b",
+          "rng_seed": 13106019
+        },
+        {
+          "year": 2020,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed4/eval_100000_2020_steps.jsonl",
+          "trace_sha256": "f42f93f87b7cbcfb8a65bc74002c09d43e00fcb4f3cae31528b9b16002b63400",
+          "rng_seed": 13106020
+        },
+        {
+          "year": 2021,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed4/eval_100000_2021_steps.jsonl",
+          "trace_sha256": "2c4fce2af90ddcbe2ec448052d2513eceff4baa5ffe86178ce6773603f213107",
+          "rng_seed": 13106021
+        },
+        {
+          "year": 2022,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed4/eval_100000_2022_steps.jsonl",
+          "trace_sha256": "3ad316a7859e215456741c8a4b931707f38530213897d6bd9bf25db05c9b9049",
+          "rng_seed": 13106022
+        },
+        {
+          "year": 2023,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed4/eval_100000_2023_steps.jsonl",
+          "trace_sha256": "a41c7e17ebb04f981ca685e19f88a48634364d562520e2b6a40f454580ab7873",
+          "rng_seed": 13106023
+        }
+      ]
+    },
+    {
+      "site": "FQ",
+      "seed": 5,
+      "model": "results/four_site_forecast_116_20261025/FQ/seed5/forecast_seed5_ckpt100000.zip",
+      "model_sha256": "2ddfe39e797c95e45ffbd0f09b15cd0ebdf4eb38afc7e24e42779c5f2a6ada81",
+      "years": [
+        {
+          "year": 2014,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed5/eval_100000_2014_steps.jsonl",
+          "trace_sha256": "aa666bd0add816a13305aa3e7194d9451bf843175f23398d594e3e3356464872",
+          "rng_seed": 13107014
+        },
+        {
+          "year": 2015,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed5/eval_100000_2015_steps.jsonl",
+          "trace_sha256": "13693bbcf97cbd1cadcc40886e85ac349ba8d61be7247d033c09883fef038731",
+          "rng_seed": 13107015
+        },
+        {
+          "year": 2016,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed5/eval_100000_2016_steps.jsonl",
+          "trace_sha256": "d5e7ca98db82047cedb29f3fb94c4c70406e0c78dca80b7c4875ac07defd9a1b",
+          "rng_seed": 13107016
+        },
+        {
+          "year": 2017,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed5/eval_100000_2017_steps.jsonl",
+          "trace_sha256": "1de5adcbd2a44b5e9ec65e6744cfbf96e1f710895639a554407a449a391a3235",
+          "rng_seed": 13107017
+        },
+        {
+          "year": 2018,
+          "trace": "results/fq2018_forecast_reassessment_125_20261027/seed5/eval_100000_2018_steps.jsonl",
+          "trace_sha256": "9f93563dd2c213525bef568cb03b748c579579bef1352633aa61abed95eaf3ee",
+          "rng_seed": 13107018
+        },
+        {
+          "year": 2019,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed5/eval_100000_2019_steps.jsonl",
+          "trace_sha256": "ba4c7534252b2680b7e6ee9f31cc9e2532d59b7b1999062379e0cf71593e550f",
+          "rng_seed": 13107019
+        },
+        {
+          "year": 2020,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed5/eval_100000_2020_steps.jsonl",
+          "trace_sha256": "d6d32fa3ea59b355f4d78e78429ee862de171471efa19728e34c88121741456e",
+          "rng_seed": 13107020
+        },
+        {
+          "year": 2021,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed5/eval_100000_2021_steps.jsonl",
+          "trace_sha256": "3664fbfb29cfcc6d3d315f172d4ac00554df98f92b145b678b0ad075a28ee0ef",
+          "rng_seed": 13107021
+        },
+        {
+          "year": 2022,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed5/eval_100000_2022_steps.jsonl",
+          "trace_sha256": "eee853f74ec9d6f054ffe196603c78e8a5a85a80337eacb32e897baa263f57cc",
+          "rng_seed": 13107022
+        },
+        {
+          "year": 2023,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed5/eval_100000_2023_steps.jsonl",
+          "trace_sha256": "17b531b33d3fb6978555e5c11768fe918cf1c8d9d5e80dbe5f808efe7ee1c69a",
+          "rng_seed": 13107023
+        }
+      ]
+    },
+    {
+      "site": "FQ",
+      "seed": 6,
+      "model": "results/four_site_forecast_116_20261025/FQ/seed6/forecast_seed6_ckpt100000.zip",
+      "model_sha256": "faeb6eee1414ddfe13233daa576ef584c5d6b2e7711567b20df29ccc54c91a6d",
+      "years": [
+        {
+          "year": 2014,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed6/eval_100000_2014_steps.jsonl",
+          "trace_sha256": "01068fa9d76dc9f5dcf09487e2085e924556346141306287969cf4ecc35cef4a",
+          "rng_seed": 13108014
+        },
+        {
+          "year": 2015,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed6/eval_100000_2015_steps.jsonl",
+          "trace_sha256": "80a9880df37782e8e7641aaf1f04d4855dcb3056a36970a65ec7bfbbf9c217a6",
+          "rng_seed": 13108015
+        },
+        {
+          "year": 2016,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed6/eval_100000_2016_steps.jsonl",
+          "trace_sha256": "0b7b36fc631d1880d9a860c6fed3f4a9fbaa976bcf7984b890b1fcbfe6c5bc4e",
+          "rng_seed": 13108016
+        },
+        {
+          "year": 2017,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed6/eval_100000_2017_steps.jsonl",
+          "trace_sha256": "0a0c34ecd8217e080597939c46f23a7e1548aad49b4d3c7763b81094b8cc0627",
+          "rng_seed": 13108017
+        },
+        {
+          "year": 2018,
+          "trace": "results/fq2018_forecast_reassessment_125_20261027/seed6/eval_100000_2018_steps.jsonl",
+          "trace_sha256": "5c2f587ac637f25204c8ad45cd1d2a3bef55357cd82043430e458dce47f16868",
+          "rng_seed": 13108018
+        },
+        {
+          "year": 2019,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed6/eval_100000_2019_steps.jsonl",
+          "trace_sha256": "0a56255e74a2f6f490fa3a8219445d5dfbc4052ddde7d7da894a0e1fd02985c6",
+          "rng_seed": 13108019
+        },
+        {
+          "year": 2020,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed6/eval_100000_2020_steps.jsonl",
+          "trace_sha256": "ef6f91392c8b92ae57fd922952341c597ac024b0726d924df7a6b9be4e4b1152",
+          "rng_seed": 13108020
+        },
+        {
+          "year": 2021,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed6/eval_100000_2021_steps.jsonl",
+          "trace_sha256": "e0c66f0b320e0fa14267b93c28d50ac8ec9767bad464c0d9680ec1ba8d920107",
+          "rng_seed": 13108021
+        },
+        {
+          "year": 2022,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed6/eval_100000_2022_steps.jsonl",
+          "trace_sha256": "fe2c9a7537a2c78e6a4d921b838008a382c0cb28b26a253ebce9410f02ed0081",
+          "rng_seed": 13108022
+        },
+        {
+          "year": 2023,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed6/eval_100000_2023_steps.jsonl",
+          "trace_sha256": "2fb7556ab3de63e37a7a05e08991094b29427c1b192dbd21584cc71497bed38c",
+          "rng_seed": 13108023
+        }
+      ]
+    },
+    {
+      "site": "FQ",
+      "seed": 7,
+      "model": "results/four_site_forecast_116_20261025/FQ/seed7/forecast_seed7_ckpt100000.zip",
+      "model_sha256": "dd2d962035de72ba8cdb91d8e41b3fdd0e25435ffd2441a12fdfd22805f0913c",
+      "years": [
+        {
+          "year": 2014,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed7/eval_100000_2014_steps.jsonl",
+          "trace_sha256": "ca4495c6e2ea51c23bcc8c41942b68d5f984987c6d81de82cbea3bec4d84490e",
+          "rng_seed": 13109014
+        },
+        {
+          "year": 2015,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed7/eval_100000_2015_steps.jsonl",
+          "trace_sha256": "b113b8b5a05501f925c84d3cc71f97c7241ac07b818bbf1d574b6daa67b3a20c",
+          "rng_seed": 13109015
+        },
+        {
+          "year": 2016,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed7/eval_100000_2016_steps.jsonl",
+          "trace_sha256": "083df7476aa7dd9e916f498a146ca24d43e8d9a826b26edb293a7d452c88b842",
+          "rng_seed": 13109016
+        },
+        {
+          "year": 2017,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed7/eval_100000_2017_steps.jsonl",
+          "trace_sha256": "2bbdc5f458ae36cb2841f70bf4c5ed610d03ae17091210357717745ca75bf5ff",
+          "rng_seed": 13109017
+        },
+        {
+          "year": 2018,
+          "trace": "results/fq2018_forecast_reassessment_125_20261027/seed7/eval_100000_2018_steps.jsonl",
+          "trace_sha256": "82aaf5da8aad8d2a47386b162590484148016a36236ba5dde4ca3b5e9e0b3f1e",
+          "rng_seed": 13109018
+        },
+        {
+          "year": 2019,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed7/eval_100000_2019_steps.jsonl",
+          "trace_sha256": "7643cf3771bfaab77ab12e37d4cb8c1b81dd0f05a571265efa9330dc467ed8cc",
+          "rng_seed": 13109019
+        },
+        {
+          "year": 2020,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed7/eval_100000_2020_steps.jsonl",
+          "trace_sha256": "a4cd9c29bf8df0f78e85425cb4fc8b539610afd24c2b7d69d6cb5b40a70117eb",
+          "rng_seed": 13109020
+        },
+        {
+          "year": 2021,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed7/eval_100000_2021_steps.jsonl",
+          "trace_sha256": "e3069f2a36d3cbec395a0c9480ec29e8ab1bdecaddc55beaf638280424a8171a",
+          "rng_seed": 13109021
+        },
+        {
+          "year": 2022,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed7/eval_100000_2022_steps.jsonl",
+          "trace_sha256": "3e6816db08be7e161ac18e02dc364243bd92dba472f06584e10cb6750a4e359f",
+          "rng_seed": 13109022
+        },
+        {
+          "year": 2023,
+          "trace": "results/four_site_forecast_116_20261025/FQ/seed7/eval_100000_2023_steps.jsonl",
+          "trace_sha256": "6551d52aaaeb59ff1309be03f7646124d8ec22f2c636f8f503c44f9ed9a828be",
+          "rng_seed": 13109023
+        }
+      ]
+    }
+  ],
+  "variants": [
+    "shuffle_0",
+    "shuffle_1",
+    "shuffle_2",
+    "zero_block"
+  ],
+  "base_seed": 127,
+  "simulations": 0,
+  "training": 0
+}

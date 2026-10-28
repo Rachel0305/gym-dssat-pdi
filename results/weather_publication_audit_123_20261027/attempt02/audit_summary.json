@@ -1,0 +1,16 @@
+{
+  "augmentation_models": 40,
+  "episodes_recorded": 35112,
+  "training_validation_year_overlap_models": 0,
+  "sample_weather_hash_failures": 0,
+  "reference_changed_rows": 3,
+  "reference_changed_sites": [
+    "FQ"
+  ],
+  "permutations": 9,
+  "same_state_changed": 1,
+  "same_state_eligible": 584,
+  "permutations_with_action_change": 1,
+  "max_abs_yield_delta": 0.01220703125,
+  "augmented_intervals_contain_zero": 15
+}

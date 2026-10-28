@@ -1,0 +1,24 @@
+{
+  "policies": 80,
+  "annual_rows": 800,
+  "cohorts": 10,
+  "T1_means_verified": true,
+  "T2_counts_wilson_max_median_verified": true,
+  "T3_counts_verified": true,
+  "T4_welch_verified": 15,
+  "gain": 13,
+  "saving": 31,
+  "overlap": 1,
+  "benefit_union": 43,
+  "N1_N2_N3": [
+    51,
+    31,
+    19
+  ],
+  "fixed_among_N3": 7,
+  "annual_risk_N2": 15,
+  "annual_risk_N3": 14,
+  "no_new_training": true,
+  "no_new_simulation": true,
+  "working_figure_numbers": true
+}

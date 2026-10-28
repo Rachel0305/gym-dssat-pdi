@@ -1,0 +1,21 @@
+{
+  "site": "SY",
+  "seed": 0,
+  "years": [
+    2014,
+    2018,
+    2023
+  ],
+  "arms": [
+    "baseline",
+    "correct_gate",
+    "shifted_gate"
+  ],
+  "rain_next3_threshold_mm": 15,
+  "shift_days": 28,
+  "maximum_simulations": 9,
+  "training_runs": 0,
+  "yield_floor_mean": 0.99,
+  "irrigation_saving_mean_mm": 15,
+  "N_no_increase": true
+}

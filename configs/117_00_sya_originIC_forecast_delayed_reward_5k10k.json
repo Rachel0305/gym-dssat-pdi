@@ -1,0 +1,18 @@
+{
+  "task_id": "117_00",
+  "task_name": "sya_originIC_forecast_delayed_reward_5k10k",
+  "reference_run": "046_06_sya_originIC_046_10_sya_originIC_expanded_action_maskableppo_nstd050_minimal_auto_nstd050_minimal_five_scenario_daily_ckpt100000_auto_nstd050_minimal_run_auto_nstd050_minimal",
+  "station_code": "SYA",
+  "site": "SY",
+  "input_profile": "originIC",
+  "seed": 0,
+  "report_checkpoint": 10000,
+  "training": {"total_timesteps": 10000, "checkpoint_steps": [2000, 5000, 10000]},
+  "actions": {"irrigation_levels_mm": [0.0, 15.0, 30.0, 45.0], "nitrogen_levels_kg_ha": [0.0, 40.0, 80.0, 120.0]},
+  "observation_contract": {"base": "046_02_raw_observation", "normalization_enabled": false, "weather_forecast_enabled": true, "weather_forecast_mode": "rolling_7d_compact_perfect_hindcast", "weather_forecast_note": "Three compact future-weather risk features are recomputed at every decision date."},
+  "forecast_features": {"enabled": true, "include_today_in_future_windows": false, "source": "historical_WTH_as_perfect_rolling_7d_forecast", "feature_names": ["rain_next7_norm", "tmax_mean_next7_norm", "dry_spell_next7_flag"], "raw_feature_names": ["rain_next7_mm", "tmax_mean_next7_c", "dry_spell_next7_flag"], "scales": {"rain_next7_mm": 120.0, "tmax_center_c": 30.0, "tmax_scale_c": 10.0, "dry_spell_next7_mm": 5.0, "heat_days_threshold_c": 32.0, "heat_days_min": 2.0}},
+  "reward_intervention": {"type": "seven_day_delayed_forecast_stress_relief", "coef": 0.05, "delay_steps": 7, "only_nonzero_irrigation": true, "description": "After seven simulated days, give a small bonus only when an irrigation action under dry/high-heat forecast is followed by higher mean swfac than at action time."},
+  "scope": {"train_years": [2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013], "validation_years": [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023], "reward_and_safety": "inherit_046_02_plus_one_delayed_forecast_term", "external_n": false},
+  "execution_policy": {"smoke_5k_10k": true, "checkpoints": [2000, 5000, 10000], "no_25k_100k": true, "forecast_swap_required_before_long_training": true},
+  "prompt": "prompts/2026-08-15_sy_forecast_delayed_reward_5k10k.md"
+}

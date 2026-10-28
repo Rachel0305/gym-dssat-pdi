@@ -1,0 +1,13 @@
+# 094：修复093调度器目录扫描竞态，接管未中断seed1并继续seed2—7
+
+用户问“这个咋办”，沿用已授权补齐七个seed的任务。原错误是093整批调度器统计目录大小时，临时DSSAT目录在扫描期间正常消失，未捕获FileNotFoundError。与内存OOM、PPO训练数值错误无关。seed1自身管理器仍存活，禁止重跑seed1。
+
+只新增副本：src/sy_forecast_disk_guard_094.py、scripts/run_sy_forecast_seed_extension_094.py、scripts/manage_sy_forecast_scheduler_repair_094.py。训练和评估语义沿用093；仅将两层磁盘统计替换为容忍FileNotFoundError/NotADirectoryError的os.walk；其他权限/IO错误继续抛出，磁盘上限不变。活动中的seed1仍使用原093脚本，不修改它；它自身旧监控如失败则保留并停止接续，不重跑。
+
+先做无模拟的回归检查：消失文件、消失目录不使扫描失败；稳定文件计数正确；PermissionError仍抛出。093已有seed1独立2K技术smoke通过，094只改资源扫描，无训练参数改动，无需重复2K。
+
+新控制目录为results/sy_forecast_seeds1_7_093_20261022/control_094。原batch_status.json和FAILED.json保留为失败证据，当前批次状态改读control_094/batch_status.json。等待已存在seed1的管理器退出；只有seed1 result完成、40次评估齐全、原文件保护通过、无FAILED才接上seed2—7。若seed1中止则新控制器停止，不新建seed1，不从中间模型恢复。
+
+seed2—7按顺序串行，目录仍为093/seed2…seed7，禁止已存在目录覆盖，使用094 worker副本；训练参数、checkpoint、固定评估和所有资源上限保持093。新控制器18小时上限，等待seed1最多8小时，每seed独立资源保护。原失败记录、原093脚本和来源manifest哈希在接续前后校验。每10分钟主动报告，从新控制状态读取，不把历史FAILED当新worker失败，也不把旧根目录failed误报为整批正在运行。
+
+最终八seed整合表位于093根目录，描述性汇总和最终完成证据在control_094；README新增接续入口说明。旧失败不删除、旧无效产物清理不绕过此前审批拦截。

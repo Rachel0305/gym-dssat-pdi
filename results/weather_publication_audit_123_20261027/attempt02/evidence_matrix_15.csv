@@ -1,0 +1,16 @@
+site,method,models,validation_years,episode_weather_evidence,complete_single_factor_contract_certified,generator_fit_window_verified,forecast_action_response,evaluation_gate
+SY,historical,8,2014-2023,not audited in this stage,False,not applicable,not applicable,reference endpoints aligned; full input identity pending
+SY,augmented,8,2014-2023,8/8 saved episode records,False,False,not applicable,reference endpoints aligned; full input identity pending
+SY,forecast,8,2014-2023,not audited in this stage,False,not applicable,"SY seed0, 3 years only",reference endpoints aligned; full input identity pending
+HL,historical,8,2014-2023,not audited in this stage,False,not applicable,not applicable,reference endpoints aligned; full input identity pending
+HL,augmented,8,2014-2023,8/8 saved episode records,False,False,not applicable,reference endpoints aligned; full input identity pending
+HL,forecast,8,2014-2023,not audited in this stage,False,not applicable,not tested,reference endpoints aligned; full input identity pending
+LC,historical,8,2014-2023,not audited in this stage,False,not applicable,not applicable,reference endpoints aligned; full input identity pending
+LC,augmented,8,2014-2023,8/8 saved episode records,False,False,not applicable,reference endpoints aligned; full input identity pending
+LC,forecast,8,2014-2023,not audited in this stage,False,not applicable,not tested,reference endpoints aligned; full input identity pending
+YC,historical,8,2014-2023,not audited in this stage,False,not applicable,not applicable,reference endpoints aligned; full input identity pending
+YC,augmented,8,2014-2023,8/8 saved episode records,False,False,not applicable,reference endpoints aligned; full input identity pending
+YC,forecast,8,2014-2023,not audited in this stage,False,not applicable,not tested,reference endpoints aligned; full input identity pending
+FQ,historical,8,2014-2023,not audited in this stage,False,not applicable,not applicable,BLOCKED: FQ reference/input version reconciliation
+FQ,augmented,8,2014-2023,8/8 saved episode records,False,False,not applicable,BLOCKED: FQ reference/input version reconciliation
+FQ,forecast,8,2014-2023,not audited in this stage,False,not applicable,not tested,BLOCKED: FQ reference/input version reconciliation

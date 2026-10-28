@@ -1,0 +1,11 @@
+# 096 优化日志复用约定
+
+用户确认：SY后续seed及其他四站未来的训练均使用增加优化日志的新代码。此授权不等于现在启动其他站点训练。
+
+通用模块src/ppo_optimizer_logging_096.py提供SB3 callback，读取logger现存数值，不调用随机数、不改梯度、动作、奖励或模型参数；每次上一rollout完成更新后，在下个rollout开始时写出原始指标，训练结束补记末次更新。日志optimization_metrics.jsonl保留num_timesteps、optimizer_updates及原始train/、rollout/、time/键，包含实际SB3提供的策略损失、价值损失、entropy_loss、approx_kl、clip_fraction、explained_variance、学习率等。缺失字段不伪造，非有限值记null，日志写失败应明确报错而非静默丢失。train/entropy_loss保留原名，不冒充正熵。
+
+scripts/run_sy_forecast_with_optimizer_logs_096.py是新候选副本，当前仍沿用095输出路径，禁止直接启动或与现有调度器并行。正式接入前须在独立目录做真实SB3短训练核验，并验证有/无callback训练输出一致，再安全切换尚未启动的seed；不能修改正在运行的seed3或原095脚本。
+
+其他四站各自新建站点专用runner并接入同一callback，保留独立目录、来源哈希和站点原训练合同，不将SY路径或配置直接套到其他站点。每站先做技术smoke。不得仅为补日志自动重训已完成实验。
+
+当前仅mock日志写入/空记录/重复记录检查通过，尚未做真实SB3等价性smoke。SY后续seed切换仍是待执行事项；现有095自动调度不会自动加载096代码，须明确处理调度边界，不能声称已经启用。

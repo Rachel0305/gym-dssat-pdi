@@ -1,0 +1,10 @@
+{
+  "results/sy_forecast_seed0_100k_091_20261022/forecast_seed0_ckpt100000.zip": "216b0151ffacb331ec73f1326dc72b1dc79003d2daaf0eb09f51e381752b71a4",
+  "scripts/run_sy_forecast_seed_extension_095.py": "027cdbba940dedec3abd4e6c1c76f288133b4866731287832db4796c4159a211",
+  "results/sy_forecast_seed0_100k_091_20261022/eval_100000_2014_summary.json": "4f3d0675efeb84bb52494805d6afc3edb6f92b58d7f346ecb3d7cf05f6fcf6fb",
+  "results/sy_forecast_seed0_100k_091_20261022/eval_100000_2018_summary.json": "06ea7099c00fffaded62cf279adb86db62562b9c682be81155728f1e65f478dd",
+  "results/sy_forecast_seed0_100k_091_20261022/eval_100000_2023_summary.json": "40e833cf65008746c444abdb63e41aec265845ea6d5a3bb5e10f9832ed50942a",
+  "results/sy_forecast_seed0_100k_091_20261022/eval_100000_2014_steps.jsonl": "0733f9b84b65ce87529b1c1205d4f5e27e01ce03230dfdc6842375a2ef9321cc",
+  "results/sy_forecast_seed0_100k_091_20261022/eval_100000_2018_steps.jsonl": "3b4e23aabee8b428d556d97482c076937cb090f009a722087a33f22641b91ed8",
+  "results/sy_forecast_seed0_100k_091_20261022/eval_100000_2023_steps.jsonl": "e88f74d76d312a5af4803775f172e5b947c1732f89eb4628375dbe8663d94645"
+}

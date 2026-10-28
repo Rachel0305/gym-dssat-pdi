@@ -1,0 +1,68 @@
+{
+  "legacy80": {
+    "n": 80,
+    "gain": 13,
+    "saving": 31,
+    "overlap": 1,
+    "union": 43,
+    "N1": 51,
+    "N2": 31,
+    "N3": 19,
+    "N3_fixed": 7
+  },
+  "forecast40": {
+    "n": 40,
+    "gain": 7,
+    "saving": 15,
+    "overlap": 1,
+    "union": 21,
+    "N1": 26,
+    "N2": 16,
+    "N3": 10,
+    "N3_fixed": 5
+  },
+  "provisional120": {
+    "n": 120,
+    "gain": 20,
+    "saving": 46,
+    "overlap": 2,
+    "union": 64,
+    "N1": 77,
+    "N2": 47,
+    "N3": 29,
+    "N3_fixed": 12
+  },
+  "nonFQ_legacy64": {
+    "n": 64,
+    "gain": 13,
+    "saving": 21,
+    "overlap": 1,
+    "union": 33,
+    "N1": 36,
+    "N2": 21,
+    "N3": 10,
+    "N3_fixed": 2
+  },
+  "nonFQ_forecast32": {
+    "n": 32,
+    "gain": 7,
+    "saving": 9,
+    "overlap": 1,
+    "union": 15,
+    "N1": 18,
+    "N2": 9,
+    "N3": 5,
+    "N3_fixed": 1
+  },
+  "nonFQ96": {
+    "n": 96,
+    "gain": 20,
+    "saving": 30,
+    "overlap": 2,
+    "union": 48,
+    "N1": 54,
+    "N2": 30,
+    "N3": 15,
+    "N3_fixed": 3
+  }
+}

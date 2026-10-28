@@ -1,0 +1,19 @@
+{
+  "status": "PILOT_FAILED_EFFICACY_GATE_STOP_RULE_DIRECTION",
+  "technical_evaluations_passed": 9,
+  "checks": {
+    "mean_yield_ge_99pct": true,
+    "mean_irrigation_saving_ge_15mm": false,
+    "mean_N_no_increase": true,
+    "no_year_loss_over_5pct": true,
+    "correct_yield_ge_shifted_at_no_greater_inputs": false
+  },
+  "mean_yield_delta": 5.30497233072856,
+  "mean_yield_delta_pct": 0.053261007574478825,
+  "mean_irrigation_saving_mm": 10.0,
+  "mean_N_delta": 0.0,
+  "correct_minus_shifted_yield": -95.72652180989644,
+  "new_training_started": false,
+  "threshold_retuned": false,
+  "claim_learned_improvement_allowed": false
+}

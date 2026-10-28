@@ -1,0 +1,8 @@
+{
+  "original_hash_matches_088_manifest": true,
+  "corrected_hash_matches_088_manifest": true,
+  "correction_rule": "2018 DOY 120-300, TMIN<0 and TMAX>15: replace TMIN with abs(TMIN)",
+  "correction_count": 15,
+  "independent_measurement_confirmation_found_in_correction_manifest": false,
+  "classification": "heuristic sign-correction sensitivity input; not independently verified observations"
+}

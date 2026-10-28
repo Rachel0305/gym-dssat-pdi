@@ -1,0 +1,11 @@
+site,station_code,year,scenario,grain_yield_kg_ha,biomass_kg_ha,actual_irrigation_mm,actual_nitrogen_kg_ha,etcp_mm,WP_ET_kg_m3,PFP_N_kg_kg,unified_reward,snapshot_path,event_I_mm,event_N_kg_ha
+HL,HLA,2014,dssat_auto,6351.0,15447.0,120.0,0,474.8,1.3376158382476833,,871.458,benchmark_results/054_02_hla_lowIC_four_baselines_static_level1/snapshots/HLA/2014/dssat_auto,120.2,0
+HL,HLA,2015,dssat_auto,5492.0,14394.0,270.0,0,503.8,1.0901151250496228,,570.736,benchmark_results/054_02_hla_lowIC_four_baselines_static_level1/snapshots/HLA/2015/dssat_auto,269.6,0
+HL,HLA,2016,dssat_auto,6945.0,15365.0,225.0,0,440.4,1.576975476839237,,849.81,benchmark_results/054_02_hla_lowIC_four_baselines_static_level1/snapshots/HLA/2016/dssat_auto,224.7,0
+HL,HLA,2017,dssat_auto,5559.0,14229.0,174.0,0,440.2,1.2628350749659245,,686.922,benchmark_results/054_02_hla_lowIC_four_baselines_static_level1/snapshots/HLA/2017/dssat_auto,174.39999999999998,0
+HL,HLA,2018,dssat_auto,6297.0,14616.0,126.0,0,424.4,1.483741753063148,,856.326,benchmark_results/054_02_hla_lowIC_four_baselines_static_level1/snapshots/HLA/2018/dssat_auto,125.7,0
+HL,HLA,2019,dssat_auto,5542.0,13930.0,126.0,0,421.6,1.314516129032258,,737.036,benchmark_results/054_02_hla_lowIC_four_baselines_static_level1/snapshots/HLA/2019/dssat_auto,125.5,0
+HL,HLA,2020,dssat_auto,6214.0,14200.0,126.0,0,463.1,1.3418268192614984,,843.212,benchmark_results/054_02_hla_lowIC_four_baselines_static_level1/snapshots/HLA/2020/dssat_auto,125.9,0
+HL,HLA,2021,dssat_auto,4926.0,13550.0,77.0,0,422.4,1.1661931818181819,,693.608,benchmark_results/054_02_hla_lowIC_four_baselines_static_level1/snapshots/HLA/2021/dssat_auto,77.1,0
+HL,HLA,2022,dssat_auto,7069.0,15645.0,222.0,0,474.1,1.4910356464880825,,872.702,benchmark_results/054_02_hla_lowIC_four_baselines_static_level1/snapshots/HLA/2022/dssat_auto,222.2,0
+HL,HLA,2023,dssat_auto,5880.0,14778.0,174.0,0,434.4,1.3535911602209945,,737.64,benchmark_results/054_02_hla_lowIC_four_baselines_static_level1/snapshots/HLA/2023/dssat_auto,173.9,0

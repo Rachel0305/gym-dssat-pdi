@@ -1,0 +1,4 @@
+year,date,step,rain_next3,original_dose,best_tested_dose,reward_gain,yield_gain,I_delta,N_delta,original_is_best
+2014,2014-06-22,66,38.3,15,15.0,0.0,0.0,0.0,0.0,True
+2018,2018-06-13,57,65.0,15,0.0,0.004250107421874816,26.8994140625,0.0,0.0,False
+2023,2023-07-22,96,41.9,15,45.0,0.01344740966796909,293.9709472656268,30.0,0.0,False

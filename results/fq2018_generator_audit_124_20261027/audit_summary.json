@@ -1,0 +1,14 @@
+{
+  "raw_zero_yield_rows": 12,
+  "raw_endpoint_rows": 12,
+  "all_table_yields_match": true,
+  "slowed_grain_filling_warnings": 12,
+  "changed_weather_cells": 15,
+  "changed_variables": [
+    "TMIN"
+  ],
+  "corrected_existing_augmented_seed0_yield": 7357.0,
+  "fitting_files_with_test_year_overlap": 0,
+  "simulations": 0,
+  "models_loaded": 0
+}

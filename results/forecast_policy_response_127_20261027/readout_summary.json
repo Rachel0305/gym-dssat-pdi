@@ -1,0 +1,14 @@
+{
+  "models": 40,
+  "model_years": 400,
+  "original_states": 46480,
+  "eligible_unique_states": 25886,
+  "shuffle_action_changes": 52,
+  "shuffle_trials": 77658,
+  "shuffle_pct": 0.06696026166009941,
+  "unique_states_changed_by_any_shuffle": 30,
+  "models_with_any_shuffle_action_change": 11,
+  "models_without_shuffle_action_change": 29,
+  "zero_changes": 31,
+  "zero_pct": 0.11975585258440856
+}

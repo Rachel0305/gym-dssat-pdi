@@ -1,0 +1,1 @@
+五站40seed本地图表归档。每站/seed_00至07/yearly/2014至2023存放逐年图，summary存指标和措施汇总，tables存CSV。HL改用054_02原生DSSAT auto十年快照，Summary.OUT NICM=0且MgmtEvent最终运行无施肥；删除的是新表内外部N对照行，原始118结果和训练数据未改。原生归档fileX的FERTI字段为A，但十年自动施肥实际执行量均为0；不将其描述成FERTI开关已禁用。无新增模拟或训练。HL对照PFP_N因N=0未定义。其他站点图表原样复制。

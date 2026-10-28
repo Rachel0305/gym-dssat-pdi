@@ -1,0 +1,24 @@
+{
+  "sources": {
+    "results\\four_site_five_scenario_118_20261026\\all_five_sites_seed_year_scenario.csv": "560fe348c3a8656188f5c5db9b46c358b82e7ca5101f9904da5e7fba93e71d95",
+    "results\\four_site_forecast_116_20261025\\main100k_seed_year_rows.csv": "3f68475c2045625739fbbf734bf7351d308463c9befb6e86cf226dc44be980f7"
+  },
+  "years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "training_seeds_per_site": 8,
+  "annual_observations_per_site": 80,
+  "baseline_controls_shared": true,
+  "seed_numbers_not_strict_randomized_pairs": true,
+  "metrics": "Equal weight across eight seeds and ten common years; PFP_N annual ratios averaged; undefined N=0 remains missing; descriptive only; SY direct comparison retained from audited 097 report",
+  "new_simulations": 0
+}

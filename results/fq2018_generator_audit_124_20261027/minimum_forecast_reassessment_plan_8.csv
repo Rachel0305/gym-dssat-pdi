@@ -1,0 +1,9 @@
+site,method,seed,year,existing_model_only,stage,input_version,smoke_first
+FQ,forecast,0,2018,True,PLANNED_NOT_RUN,pending provenance-based freeze,True
+FQ,forecast,1,2018,True,PLANNED_NOT_RUN,pending provenance-based freeze,False
+FQ,forecast,2,2018,True,PLANNED_NOT_RUN,pending provenance-based freeze,False
+FQ,forecast,3,2018,True,PLANNED_NOT_RUN,pending provenance-based freeze,False
+FQ,forecast,4,2018,True,PLANNED_NOT_RUN,pending provenance-based freeze,False
+FQ,forecast,5,2018,True,PLANNED_NOT_RUN,pending provenance-based freeze,False
+FQ,forecast,6,2018,True,PLANNED_NOT_RUN,pending provenance-based freeze,False
+FQ,forecast,7,2018,True,PLANNED_NOT_RUN,pending provenance-based freeze,False

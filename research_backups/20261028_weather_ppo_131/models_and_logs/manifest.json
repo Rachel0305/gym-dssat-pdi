@@ -1,0 +1,3236 @@
+[
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "benchmark_results/046_10_sya_originIC_expanded_action_maskableppo/models/SYA/SYA_half_split_stress_aware_maskableppo_seed0_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/SY_historical_seed00.zip",
+    "sha256": "93cea0fd40c6a04becd810e7ce2c02d69e43ad6661b7dcd99543f50c739e9d1c",
+    "bytes": 183480
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "benchmark_results/231_sy_seed1_sya_originIC_expanded_action_maskableppo_seed1_extension/models/SYA/SYA_half_split_stress_aware_maskableppo_seed1_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/SY_historical_seed01.zip",
+    "sha256": "ee72c84cc3c954120459c2967a42795ff0ff9508df4630ad5cecc5f3693deb78",
+    "bytes": 183506
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "benchmark_results/231_sy_seed2_sya_originIC_expanded_action_maskableppo_seed2_extension/models/SYA/SYA_half_split_stress_aware_maskableppo_seed2_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/SY_historical_seed02.zip",
+    "sha256": "6afab40173192a5526cecd516ebb5402ea278ae98b4099090f894ae4c68d88d6",
+    "bytes": 183502
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "benchmark_results/231_sy_seed3_sya_originIC_expanded_action_maskableppo_seed3_extension/models/SYA/SYA_half_split_stress_aware_maskableppo_seed3_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/SY_historical_seed03.zip",
+    "sha256": "ed5f0b44f2a72289c364845adef92722a79609a6dae4105260df5b60d50f59e6",
+    "bytes": 183506
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "benchmark_results/231_sy_seed4_sya_originIC_expanded_action_maskableppo_seed4_extension/models/SYA/SYA_half_split_stress_aware_maskableppo_seed4_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/SY_historical_seed04.zip",
+    "sha256": "06274c901aa9fa75da5890e32dd280fe4ce8260c0cf7e3b3a1764eb65715fa36",
+    "bytes": 183502
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "benchmark_results/231_sy_seed5_sya_originIC_expanded_action_maskableppo_seed5_extension/models/SYA/SYA_half_split_stress_aware_maskableppo_seed5_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/SY_historical_seed05.zip",
+    "sha256": "0532dc9a2177925ef36c765dbf3f7bbd089ab09a392e68785dd53acfda0acc1d",
+    "bytes": 183506
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "benchmark_results/231_sy_seed6_sya_originIC_expanded_action_maskableppo_seed6_extension/models/SYA/SYA_half_split_stress_aware_maskableppo_seed6_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/SY_historical_seed06.zip",
+    "sha256": "25a7fb56a6522460b53b44af6386c10ef8305128ebc407f5a7c3bb3cf4736b7a",
+    "bytes": 183502
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "benchmark_results/231_sy_seed7_sya_originIC_expanded_action_maskableppo_seed7_extension/models/SYA/SYA_half_split_stress_aware_maskableppo_seed7_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/SY_historical_seed07.zip",
+    "sha256": "dad34ee35f807cd3e1eb8f791f12bbe61b179161973a89134e4c3c47086ab158",
+    "bytes": 183506
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "benchmark_results/059SYs0_frozen_weather_augmented_100k/models/SYA/SYA_half_split_stress_aware_maskableppo_seed0_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/SY_augmented_seed00.zip",
+    "sha256": "56ef85d29d7f7a77f2f864ef8f76d73926fcb1e1d5e524b141d59a8517d0cf7b",
+    "bytes": 183470
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "benchmark_results/059SYs1_frozen_weather_augmented_100k/models/SYA/SYA_half_split_stress_aware_maskableppo_seed1_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/SY_augmented_seed01.zip",
+    "sha256": "b7ba985827f0d2f05a93468d1dcc58f83c5fb51eb2b195acb8d335af3ce06fce",
+    "bytes": 183474
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "benchmark_results/059SYs2_frozen_weather_augmented_100k/models/SYA/SYA_half_split_stress_aware_maskableppo_seed2_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/SY_augmented_seed02.zip",
+    "sha256": "fc464ec05b58ffbe12c130f1c7da8b430311886f50d1e95008ae3a421e57def8",
+    "bytes": 183470
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "benchmark_results/059SYs3_frozen_weather_augmented_100k/models/SYA/SYA_half_split_stress_aware_maskableppo_seed3_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/SY_augmented_seed03.zip",
+    "sha256": "15325285e09d99513698c42a7c6fe9ef78dc03fff2f619a1c0d2afc79885e138",
+    "bytes": 183474
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "benchmark_results/059SYs4_frozen_weather_augmented_100k/models/SYA/SYA_half_split_stress_aware_maskableppo_seed4_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/SY_augmented_seed04.zip",
+    "sha256": "8e35cabc7644a57ae084f913d3ee193094757fce3bb289c87137798d7ba23d99",
+    "bytes": 183470
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "benchmark_results/059SYs5_frozen_weather_augmented_100k/models/SYA/SYA_half_split_stress_aware_maskableppo_seed5_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/SY_augmented_seed05.zip",
+    "sha256": "e4b7a9efd622fb06e4c372a6c2d1c8916e0d396dbd412ca4796b21ff2ceb5250",
+    "bytes": 183474
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "benchmark_results/059SYs6_frozen_weather_augmented_100k/models/SYA/SYA_half_split_stress_aware_maskableppo_seed6_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/SY_augmented_seed06.zip",
+    "sha256": "5c8751c1d94ae56d1201716d3b0d4d18033a31bfda61b0fcd1ddfb3aff90a7a2",
+    "bytes": 183470
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "benchmark_results/059SYs7_frozen_weather_augmented_100k/models/SYA/SYA_half_split_stress_aware_maskableppo_seed7_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/SY_augmented_seed07.zip",
+    "sha256": "86fbca86412a36a903943ce152f92db4c3c720f18ed2c2bf7bbbedd945bb1668",
+    "bytes": 183474
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "benchmark_results/053_00_lca_lowIC_expanded_action_maskableppo/models/LCA/LCA_half_split_stress_aware_maskableppo_seed0_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/LC_historical_seed00.zip",
+    "sha256": "ee9b2366c21df4be81200a2a14bbd0ceeb59e38ed84cd3e57aa2afce82d474f9",
+    "bytes": 185052
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "benchmark_results/231_lc_seed1_lca_lowIC_expanded_action_maskableppo_seed1_extension/models/LCA/LCA_half_split_stress_aware_maskableppo_seed1_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/LC_historical_seed01.zip",
+    "sha256": "b2535f77ff57175c6b4718edff74f07d0edc74c1216f5ffca07374eaca667c03",
+    "bytes": 185078
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "benchmark_results/231_lc_seed2_lca_lowIC_expanded_action_maskableppo_seed2_extension/models/LCA/LCA_half_split_stress_aware_maskableppo_seed2_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/LC_historical_seed02.zip",
+    "sha256": "07cc26a39a1ff39e582c7703efd9b9327799a44d2e5e6f7552bf67d3e3288e0f",
+    "bytes": 185074
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "benchmark_results/231_lc_seed3_lca_lowIC_expanded_action_maskableppo_seed3_extension/models/LCA/LCA_half_split_stress_aware_maskableppo_seed3_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/LC_historical_seed03.zip",
+    "sha256": "430b8cc649526450cfa1ad83735c3efd4662b6fbe8e25bae5d60af811ddabea7",
+    "bytes": 185078
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "benchmark_results/231_lc_seed4_lca_lowIC_expanded_action_maskableppo_seed4_extension/models/LCA/LCA_half_split_stress_aware_maskableppo_seed4_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/LC_historical_seed04.zip",
+    "sha256": "ac0941a9d298757ab973b1d36a33be9549d4dd42a98abf8c4d6295a1a0f93a9f",
+    "bytes": 185074
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "benchmark_results/231_lc_seed5_lca_lowIC_expanded_action_maskableppo_seed5_extension/models/LCA/LCA_half_split_stress_aware_maskableppo_seed5_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/LC_historical_seed05.zip",
+    "sha256": "80805da8cf68dc9df1e1bb6fef8bcff51a163298adcd909b01b95b68d67917be",
+    "bytes": 185078
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "benchmark_results/231_lc_seed6_lca_lowIC_expanded_action_maskableppo_seed6_extension/models/LCA/LCA_half_split_stress_aware_maskableppo_seed6_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/LC_historical_seed06.zip",
+    "sha256": "968973bc974c8ea4963ed5a45831c8c08a1a9927fe0519dacbb7d4d4ed7b6787",
+    "bytes": 185074
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "benchmark_results/231_lc_seed7_lca_lowIC_expanded_action_maskableppo_seed7_extension/models/LCA/LCA_half_split_stress_aware_maskableppo_seed7_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/LC_historical_seed07.zip",
+    "sha256": "6bee371bb5b3a70d85684468cc29e5f19fae521abdadca3e280a095b0d29fb08",
+    "bytes": 185078
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "benchmark_results/059LCs0_frozen_weather_augmented_100k/models/LCA/LCA_half_split_stress_aware_maskableppo_seed0_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/LC_augmented_seed00.zip",
+    "sha256": "ee2cb10dad60a394cedc76af33855cd067bdb82635572ddeb454863614a23503",
+    "bytes": 185045
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "benchmark_results/059LCs1_frozen_weather_augmented_100k/models/LCA/LCA_half_split_stress_aware_maskableppo_seed1_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/LC_augmented_seed01.zip",
+    "sha256": "4516004dd2bf6ce0dd30b243102b6334cf0a324c0258fa17bda6bb6a0eae507c",
+    "bytes": 185049
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "benchmark_results/059LCs2_frozen_weather_augmented_100k/models/LCA/LCA_half_split_stress_aware_maskableppo_seed2_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/LC_augmented_seed02.zip",
+    "sha256": "df0a3236c1c5231dfb17503056e39d12f521ee2311b155cf322a43bf8f9e26cc",
+    "bytes": 185045
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "benchmark_results/059LCs3_frozen_weather_augmented_100k/models/LCA/LCA_half_split_stress_aware_maskableppo_seed3_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/LC_augmented_seed03.zip",
+    "sha256": "59d158fafc6d8931cbd92e7aa497f97485a22d3f9d8cd4561c38673889e88c43",
+    "bytes": 185049
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "benchmark_results/059LCs4_frozen_weather_augmented_100k/models/LCA/LCA_half_split_stress_aware_maskableppo_seed4_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/LC_augmented_seed04.zip",
+    "sha256": "070846c5efe98f80e281d25ff9334f4e6b781ce2c39c90110304c3d915a6fb70",
+    "bytes": 185045
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "benchmark_results/059LCs5_frozen_weather_augmented_100k/models/LCA/LCA_half_split_stress_aware_maskableppo_seed5_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/LC_augmented_seed05.zip",
+    "sha256": "176ba9af9bc9829f6ac1e69bbc6d096d539ec7e6647ba5ddc25525ec265691cd",
+    "bytes": 185049
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "benchmark_results/059LCs6_frozen_weather_augmented_100k/models/LCA/LCA_half_split_stress_aware_maskableppo_seed6_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/LC_augmented_seed06.zip",
+    "sha256": "0b4c42e3886a63e8d378889c2f63d1aed567d8dba6621d0df3ad94cbdbbd5bd1",
+    "bytes": 185045
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "benchmark_results/059LCs7_frozen_weather_augmented_100k/models/LCA/LCA_half_split_stress_aware_maskableppo_seed7_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/LC_augmented_seed07.zip",
+    "sha256": "4bb4703f75e8fccdec38b4aebc44ceb15463579ec32e20e55d769f88a54ecd82",
+    "bytes": 185049
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "benchmark_results/054_00_hla_lowIC_expanded_action_maskableppo/models/HLA/HLA_half_split_stress_aware_maskableppo_seed0_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/HL_historical_seed00.zip",
+    "sha256": "8841571f6b18d98b4e490fa1fcf7d7985e066ff5e3f3bdcdd9e6cf47b9373606",
+    "bytes": 181896
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "benchmark_results/8hl01_hl_seed1_8seed/models/HLA/HLA_half_split_stress_aware_maskableppo_seed1_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/HL_historical_seed01.zip",
+    "sha256": "bfe902c4dc8d368cf0692c02cb0a7dc4130c163f8da131f4919778f86230f056",
+    "bytes": 181876
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "benchmark_results/8hl02_hl_seed2_8seed/models/HLA/HLA_half_split_stress_aware_maskableppo_seed2_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/HL_historical_seed02.zip",
+    "sha256": "a4fd3887b2c8bf10c5cf594ee26f06695062a06ffc07a9b5622cd6c64dcb0ccd",
+    "bytes": 181872
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "benchmark_results/8hl03_hl_seed3_8seed/models/HLA/HLA_half_split_stress_aware_maskableppo_seed3_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/HL_historical_seed03.zip",
+    "sha256": "ef9b31c654a14e66a2fa04e767920b6aeb54bbeefd5a774f385c78c214475056",
+    "bytes": 181876
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "benchmark_results/8hl04_hl_seed4_8seed/models/HLA/HLA_half_split_stress_aware_maskableppo_seed4_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/HL_historical_seed04.zip",
+    "sha256": "b7cbce3356faad82757781a23fbe4d8da94ee05acd7a19aec67cedf6cf07f4b7",
+    "bytes": 181872
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "benchmark_results/8hl05_hl_seed5_8seed/models/HLA/HLA_half_split_stress_aware_maskableppo_seed5_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/HL_historical_seed05.zip",
+    "sha256": "a126d5685edc2eb44b18086acb70c7ae44fc715825496fc8035fd3b91e369ab9",
+    "bytes": 181876
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "benchmark_results/8hl06_hl_seed6_8seed/models/HLA/HLA_half_split_stress_aware_maskableppo_seed6_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/HL_historical_seed06.zip",
+    "sha256": "4564a34dd65f69722d18f3fc9996029cc31c890780790e0af685a73e8c701b2a",
+    "bytes": 181872
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "benchmark_results/8hl07_hl_seed7_8seed/models/HLA/HLA_half_split_stress_aware_maskableppo_seed7_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/HL_historical_seed07.zip",
+    "sha256": "6d4e209ef3d5fd67c2a98a3103ced3e2e0893e11df0f8c00a6ac753313cd7e74",
+    "bytes": 181876
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/hla_wgen_8seed_053/seed_00/attempt_01/models/checkpoint_100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/HL_augmented_seed00.zip",
+    "sha256": "888531f3e8666d7aff7f2de24436c1e56a3b12b82c9fc549eb99646015d97f64",
+    "bytes": 181809
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/hla_wgen_8seed_053/seed_01/attempt_01/models/checkpoint_100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/HL_augmented_seed01.zip",
+    "sha256": "51da953888f290b41025749541cfcb8c91f4ae29b50f221eca03ea55305a5976",
+    "bytes": 181813
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/hla_wgen_8seed_053/seed_02/attempt_01/models/checkpoint_100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/HL_augmented_seed02.zip",
+    "sha256": "a619c3b79badc37a6d472d4ae520f3ed8446ee3513fc6c318881568eab8f2c9c",
+    "bytes": 181809
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/hla_wgen_8seed_053/seed_03/attempt_01/models/checkpoint_100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/HL_augmented_seed03.zip",
+    "sha256": "a363ae828235eb3316fe5344196a81a7bee5254a26b4fde8e36de029c128f5cc",
+    "bytes": 181813
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/hla_wgen_8seed_053/seed_04/attempt_01/models/checkpoint_100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/HL_augmented_seed04.zip",
+    "sha256": "1ad61a1c89215da20d0c37dbb819089fdbccf73d4b60907c3ae96d16c5f4ef47",
+    "bytes": 181809
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/hla_wgen_8seed_053/seed_05/attempt_01/models/checkpoint_100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/HL_augmented_seed05.zip",
+    "sha256": "515f82e1652aac5a1d821500cd9dddadd72a0f7e2f977d5b895b1267e17443ac",
+    "bytes": 181813
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/hla_wgen_8seed_053/seed_06/attempt_01/models/checkpoint_100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/HL_augmented_seed06.zip",
+    "sha256": "7a63618e0ab10afffa28e4f03861b4e138b51fc67227debcdb03802a4169ffaa",
+    "bytes": 181809
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/hla_wgen_8seed_053/seed_07/attempt_01/models/checkpoint_100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/HL_augmented_seed07.zip",
+    "sha256": "99d49a710e49369cdbe3f0a8b7296bec46e41b88027f95f9af63bb3b2f1c021f",
+    "bytes": 181813
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "benchmark_results/051_00_fqa_originIC_expanded_action_maskableppo/models/FQA/FQA_half_split_stress_aware_maskableppo_seed0_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/FQ_historical_seed00.zip",
+    "sha256": "4b3e6264d099f46e5bbe7ed34cf6617c71f46454bdd3931364284a7f71e5fe31",
+    "bytes": 180328
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "benchmark_results/8fq01_fq_seed1_8seed/models/FQA/FQA_half_split_stress_aware_maskableppo_seed1_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/FQ_historical_seed01.zip",
+    "sha256": "e82770fb38b438d8ebd82d30b0a54bdadd04a4f6652e534172a3175afd824047",
+    "bytes": 180305
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "benchmark_results/8fq02_fq_seed2_8seed/models/FQA/FQA_half_split_stress_aware_maskableppo_seed2_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/FQ_historical_seed02.zip",
+    "sha256": "e4f64959f690f33cac1b6578ed32c9b76ecbca04b1ed227ba5233a7d720e703a",
+    "bytes": 180301
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "benchmark_results/8fq03_fq_seed3_8seed/models/FQA/FQA_half_split_stress_aware_maskableppo_seed3_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/FQ_historical_seed03.zip",
+    "sha256": "18da299aac8445a599712e1de25fcf1a3febb6780a78882e1ea778bab1090fd8",
+    "bytes": 180305
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "benchmark_results/8fq04_fq_seed4_8seed/models/FQA/FQA_half_split_stress_aware_maskableppo_seed4_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/FQ_historical_seed04.zip",
+    "sha256": "7a3045d4be9fb23f84857c953618014dd351044a51e95fc5a57bcbecb685cec4",
+    "bytes": 180301
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "benchmark_results/8fq05_fq_seed5_8seed/models/FQA/FQA_half_split_stress_aware_maskableppo_seed5_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/FQ_historical_seed05.zip",
+    "sha256": "2a77fe93fc4c43f404ad7da2c7a912c6dcaa583465659ef67383d5da3bafb1ed",
+    "bytes": 180305
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "benchmark_results/8fq06_fq_seed6_8seed/models/FQA/FQA_half_split_stress_aware_maskableppo_seed6_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/FQ_historical_seed06.zip",
+    "sha256": "1b7afdc64f5b9d806a3f0bb0f8aaeb2315331e4eda464281e4ad4c625ad01542",
+    "bytes": 180301
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "benchmark_results/20261012fq7_fq_seed7_historical_completion/models/FQA/FQA_half_split_stress_aware_maskableppo_seed7_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/FQ_historical_seed07.zip",
+    "sha256": "78d1e2d9ad5e54d8971ebf35947e3b61f241cd8fb7d50b058c984163b318ae96",
+    "bytes": 180327
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/fqa_multiyear_wgen_ppo_051/attempt_01/models/checkpoint_100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/FQ_augmented_seed00.zip",
+    "sha256": "f449a1753a083a9cbf6938236b92755caabed87ebc3aeaba27fdfb58b8c09207",
+    "bytes": 180238
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/fqa_multiyear_wgen_ppo_052_8seed/seed_01/attempt_01/models/checkpoint_100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/FQ_augmented_seed01.zip",
+    "sha256": "dc79a1c5f07d7ffd75b47a8702fc31c5afac10376dafe31e7bf5e0d3e346be89",
+    "bytes": 180242
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/fqa_multiyear_wgen_ppo_052_8seed/seed_02/attempt_01/models/checkpoint_100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/FQ_augmented_seed02.zip",
+    "sha256": "ed79d7ee17bbc6567511a668fb6094732dbdb78442a372d3e6f4ee21c447d8a6",
+    "bytes": 180238
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/fqa_multiyear_wgen_ppo_052_8seed/seed_03/attempt_01/models/checkpoint_100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/FQ_augmented_seed03.zip",
+    "sha256": "ba85004e41f11c37e4c37b8363f53890dcbac5cedae6001efe461ca64a05c4d1",
+    "bytes": 180242
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/fqa_multiyear_wgen_ppo_052_8seed/seed_04/attempt_01/models/checkpoint_100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/FQ_augmented_seed04.zip",
+    "sha256": "431c0a874abcaf7c317244ea3163460624b61f68abdfeac15b59407a6ef56e9f",
+    "bytes": 180238
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/fqa_multiyear_wgen_ppo_052_8seed/seed_05/attempt_01/models/checkpoint_100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/FQ_augmented_seed05.zip",
+    "sha256": "3049499a53c6233ec0cf6476fd7386068dbeba87bf5cea66f309c17aff53f7af",
+    "bytes": 180242
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/fqa_multiyear_wgen_ppo_052_8seed/seed_06/attempt_01/models/checkpoint_100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/FQ_augmented_seed06.zip",
+    "sha256": "29b14b45447f93e58cb594770523e760cb090a9a325699ee34dd79c0f6332e9f",
+    "bytes": 180238
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/fqa_multiyear_wgen_ppo_052_8seed/seed_07/attempt_01/models/checkpoint_100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/FQ_augmented_seed07.zip",
+    "sha256": "bef666805db6c2f24e7c7014836f2713f3b4e043d73f95ecb57851b4c38fdde3",
+    "bytes": 180242
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/yc_random_weather_ppo/004_03/training_verified/historical/ppo_seed_0/models/checkpoint_100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/YC_historical_seed00.zip",
+    "sha256": "644258e923bc1e0f8808e9d2c08eaf4f8ee3af16d9140e31bb84b87a6a270390",
+    "bytes": 178760
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/yc_random_weather_ppo/004_03/training_verified/historical/ppo_seed_1/models/checkpoint_100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/YC_historical_seed01.zip",
+    "sha256": "f4638adb9ab20d084dad62c3aadea567ce83dda8016c8de10ceec539eb8a84b0",
+    "bytes": 178764
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/yc_random_weather_ppo/004_03/training_verified/historical/ppo_seed_2/models/checkpoint_100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/YC_historical_seed02.zip",
+    "sha256": "d7ee11659391f59b920d233696e3e489e0c84044315bcd648a547d24cb118669",
+    "bytes": 178760
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/yc_random_weather_ppo/004_05/training/historical/ppo_seed_3/models/checkpoint_100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/YC_historical_seed03.zip",
+    "sha256": "2d09e98fd18d9b5c5c70a3585dad91f330ef44dc4e831fb9769fb358aa594a71",
+    "bytes": 178755
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/yc_random_weather_ppo/004_05/training/historical/ppo_seed_4/models/checkpoint_100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/YC_historical_seed04.zip",
+    "sha256": "66e6ef2e9011a54e5e5fcc464cb37c6b56286c9fba8c6da57e1ac14adafe5f62",
+    "bytes": 178751
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/yc_random_weather_ppo/004_05/training/historical/ppo_seed_5/models/checkpoint_100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/YC_historical_seed05.zip",
+    "sha256": "db6ff84fec310c398fad3ad80a38a0a028076a7464873dbebf719c913c9a7253",
+    "bytes": 178755
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/yc_random_weather_ppo/004_05/training/historical/ppo_seed_6/models/checkpoint_100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/YC_historical_seed06.zip",
+    "sha256": "fef77296a2c9baf0f01d8a6a9d60815abb0fe746997c3a204e3c04e074d53056",
+    "bytes": 178751
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/yc_random_weather_ppo/004_05/training/historical/ppo_seed_7/models/checkpoint_100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/YC_historical_seed07.zip",
+    "sha256": "151d3f8ca87473ad1a59f42cce422d1dea47279628cbe121dc3d26e9334e581b",
+    "bytes": 178755
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/yc_random_weather_ppo/004_03/training_verified/random_weather/ppo_seed_0/models/checkpoint_100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/YC_augmented_seed00.zip",
+    "sha256": "3c05f51b0c9f71be4b74a62683323f191dbcb47d1f9188558b887f2f69655ba2",
+    "bytes": 178764
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/yc_random_weather_ppo/004_03/training_verified/random_weather/ppo_seed_1/models/checkpoint_100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/YC_augmented_seed01.zip",
+    "sha256": "b1113599d99a118d613f5e9c9e70e9a0037b410d41634921670c5d1856aa13a8",
+    "bytes": 178768
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/yc_random_weather_ppo/004_03/training_verified/random_weather/ppo_seed_2/models/checkpoint_100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/YC_augmented_seed02.zip",
+    "sha256": "3136f3690690bff34e801f9371355521785abcb537d1d9f8b25bee7ec09c27fc",
+    "bytes": 178764
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/yc_random_weather_ppo/004_05/training/random_weather/ppo_seed_3/models/checkpoint_100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/YC_augmented_seed03.zip",
+    "sha256": "78d3cf89e0fb0b0100e06583842a7fadbee862f7c06aa896524a54d85ca6cda9",
+    "bytes": 178759
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/yc_random_weather_ppo/004_05/training/random_weather/ppo_seed_4/models/checkpoint_100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/YC_augmented_seed04.zip",
+    "sha256": "6b7895714c6011e9359a2a0f6e656135ae8b671ae35d86c126a63458ca605cf7",
+    "bytes": 178755
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/yc_random_weather_ppo/004_05/training/random_weather/ppo_seed_5/models/checkpoint_100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/YC_augmented_seed05.zip",
+    "sha256": "814a5c73404d2b046927ba0eca42dce7f8f1d804b550a226c96b61cfda97e2bf",
+    "bytes": 178759
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/yc_random_weather_ppo/004_05/training/random_weather/ppo_seed_6/models/checkpoint_100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/YC_augmented_seed06.zip",
+    "sha256": "881077f6c398edfcab10c17ef81ac1a667a264773bf5a0fd98f985ceec700806",
+    "bytes": 178755
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/yc_random_weather_ppo/004_05/training/random_weather/ppo_seed_7/models/checkpoint_100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/YC_augmented_seed07.zip",
+    "sha256": "416a4279e225360f97ae556eca2dae52a31c174fb6e5924e2537b37576e356d6",
+    "bytes": 178759
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/sy_forecast_seed0_100k_091_20261022/forecast_seed0_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/SY_forecast_seed00.zip",
+    "sha256": "216b0151ffacb331ec73f1326dc72b1dc79003d2daaf0eb09f51e381752b71a4",
+    "bytes": 203011
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/sy_forecast_seeds1_7_095_20261022/seed1/forecast_seed1_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/SY_forecast_seed01.zip",
+    "sha256": "1bb9064b7b4e4a3dc27fee7a225b47ce9643f1213f64122e3763dca9c7e5eeb2",
+    "bytes": 203015
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/sy_forecast_seeds1_7_095_20261022/seed2/forecast_seed2_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/SY_forecast_seed02.zip",
+    "sha256": "ebd53b2ed9f762031442b360cec758e24be9d864c53bb349cef542598920ae5b",
+    "bytes": 203011
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/sy_forecast_seeds1_7_095_20261022/seed3/forecast_seed3_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/SY_forecast_seed03.zip",
+    "sha256": "fdd10c2603172b8344c39c00db230454fd706c756bab8906430978faef2c7a9c",
+    "bytes": 203015
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/sy_forecast_seeds1_7_095_20261022/seed4/forecast_seed4_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/SY_forecast_seed04.zip",
+    "sha256": "5807c318024d5c1b543e7d2ae18cbe50d547feeb2cb959691bbc0fa14f784761",
+    "bytes": 203011
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/sy_forecast_seeds1_7_095_20261022/seed5/forecast_seed5_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/SY_forecast_seed05.zip",
+    "sha256": "c5d05a2ab61264fac7098a2578b8a9dfbd86e53ed7af6756eaf46122cc929671",
+    "bytes": 203015
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/sy_forecast_seeds1_7_095_20261022/seed6/forecast_seed6_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/SY_forecast_seed06.zip",
+    "sha256": "458a47e8ccac8b52fa5a0202520ee41186095e70a6f1c05d15d3944c57301aa2",
+    "bytes": 203011
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/sy_forecast_seeds1_7_095_20261022/seed7/forecast_seed7_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/SY_forecast_seed07.zip",
+    "sha256": "909bcb5e4a0c06a07e5afa60e04edf1b78b3d1135ab777d965fb38746f612a99",
+    "bytes": 203015
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/hl_recovery_106_20261023/formal/forecast_seed0_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/HL_forecast_seed00.zip",
+    "sha256": "7af7aaa104fb3d22d67a11f4ccd11b7b4743760c7672b2176ee21ec96e11db64",
+    "bytes": 201583
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/four_site_forecast_110_20261023/HL/seed1/forecast_seed1_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/HL_forecast_seed01.zip",
+    "sha256": "8793a7bad76a560c18a69b4b6b5d0d977d193830d2f3ca7930d92926567cd332",
+    "bytes": 201532
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/four_site_forecast_110_20261023/HL/seed2/forecast_seed2_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/HL_forecast_seed02.zip",
+    "sha256": "84f89d835b5726c4cfa0545b649023bdc1b56425c2adbfe9bee0d34c63d8197e",
+    "bytes": 201528
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/four_site_forecast_110_20261023/HL/seed3/forecast_seed3_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/HL_forecast_seed03.zip",
+    "sha256": "50b6e94ea6958c387d5d499bd29cfba64147f881538879298a59bf45e6eaa1ac",
+    "bytes": 201532
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/four_site_forecast_110_20261023/HL/seed4/forecast_seed4_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/HL_forecast_seed04.zip",
+    "sha256": "3ee0a2bb6c08e0f58a952bcbe53146200ba865f1464e88944eb47ccfabd1970a",
+    "bytes": 201528
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/four_site_forecast_110_20261023/HL/seed5/forecast_seed5_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/HL_forecast_seed05.zip",
+    "sha256": "5f58e6ee4386dfcc134e26dcf21beccb75a7b784db4ef00d0d1d299bf820afa2",
+    "bytes": 201532
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/four_site_forecast_110_20261023/HL/seed6/forecast_seed6_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/HL_forecast_seed06.zip",
+    "sha256": "def4c68648e52b28bb126de9972dc3e4362a5381d6cbb115ec34d1ceb24f7966",
+    "bytes": 201528
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/four_site_forecast_110_20261023/HL/seed7/forecast_seed7_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/HL_forecast_seed07.zip",
+    "sha256": "55a4b32f0ef0f7b53543dab26582d3d4309fdd55b4a5e33b0b060dadc2e30e66",
+    "bytes": 201532
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/four_site_forecast_110_20261023/LC/seed0/forecast_seed0_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/LC_forecast_seed00.zip",
+    "sha256": "9ef1f9e4e1363b7d6118d48f3812d76f198515903e26e20d0991f251d47b21a9",
+    "bytes": 204728
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/four_site_forecast_114_20261024/LC/seed1/forecast_seed1_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/LC_forecast_seed01.zip",
+    "sha256": "a3373cece49baef92751fc056a77301cb92c0fc4f6feb44b57f2e4b98a192a8f",
+    "bytes": 204732
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/four_site_forecast_114_20261024/LC/seed2/forecast_seed2_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/LC_forecast_seed02.zip",
+    "sha256": "0b37e517e4816f092995ee4b98531826039e713c40e5e4cae0607fa1470af4d8",
+    "bytes": 204728
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/four_site_forecast_114_20261024/LC/seed3/forecast_seed3_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/LC_forecast_seed03.zip",
+    "sha256": "b148221d9dec5197aec92b8f57ffb27189ec73746eebaba8a65562502da34306",
+    "bytes": 204732
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/lc_recovery_115_20261024/formal/forecast_seed4_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/LC_forecast_seed04.zip",
+    "sha256": "02bee46ea485aeef04f6ecd67e5adccd3e0df6e689086510e38dc1ac9e42fe1e",
+    "bytes": 204787
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/four_site_forecast_115_20261024/LC/seed5/forecast_seed5_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/LC_forecast_seed05.zip",
+    "sha256": "8bd34263d4e900875587bbc253cfd943ebf21f5ebd69d0d218139c2b5449eb6a",
+    "bytes": 204732
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/four_site_forecast_115_20261024/LC/seed6/forecast_seed6_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/LC_forecast_seed06.zip",
+    "sha256": "ea15918d1c14b7035e886649c04b22a2678bd3f3277f10ba22ee3bfeaa459476",
+    "bytes": 204728
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/four_site_forecast_115_20261024/LC/seed7/forecast_seed7_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/LC_forecast_seed07.zip",
+    "sha256": "08c7894ac2b122e78c6531e0c5e42e20c8db5381eb9f04c2c6c1d153dfcf4349",
+    "bytes": 204732
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/four_site_forecast_115_20261024/YC/seed0/forecast_seed0_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/YC_forecast_seed00.zip",
+    "sha256": "25b2b66ca7a1245234f0faa2c8d721cf6decb5fdcc0623d80dfe15b03845b7ff",
+    "bytes": 198340
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/four_site_forecast_115_20261024/YC/seed1/forecast_seed1_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/YC_forecast_seed01.zip",
+    "sha256": "7116bcab0f3ff0dc4a93357cc8f5f80ce4f54e34186ffcfe9b7943cbf72f22ac",
+    "bytes": 198344
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/four_site_forecast_115_20261024/YC/seed2/forecast_seed2_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/YC_forecast_seed02.zip",
+    "sha256": "0bd73e4385cc73feb6e03b69d95bc413e494419f777101361fe3fdf52d39583e",
+    "bytes": 198340
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/four_site_forecast_115_20261024/YC/seed3/forecast_seed3_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/YC_forecast_seed03.zip",
+    "sha256": "aee124d43c484d968072eaf5ae44e4c3c1d16572c6846df67fa47e5248867b1d",
+    "bytes": 198344
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/four_site_forecast_115_20261024/YC/seed4/forecast_seed4_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/YC_forecast_seed04.zip",
+    "sha256": "2722e7510f0d824f84151d4ae1ab1b54b896a8327e196be3b32c9fb89689e4d0",
+    "bytes": 198340
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/four_site_forecast_115_20261024/YC/seed5/forecast_seed5_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/YC_forecast_seed05.zip",
+    "sha256": "8cc57d7a11349a38b4096b096a9506ec6f698e744af469281c6ce1902ff8d6e9",
+    "bytes": 198344
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/four_site_forecast_115_20261024/YC/seed6/forecast_seed6_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/YC_forecast_seed06.zip",
+    "sha256": "d3bfb6f0230d57ded84f5391ead7a45300768b62317656b5cbc25a6388eb727b",
+    "bytes": 198340
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/four_site_forecast_115_20261024/YC/seed7/forecast_seed7_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/YC_forecast_seed07.zip",
+    "sha256": "a13d4079be2b46c42cad27bce652061415eedbf18b81732fa794756e47b4e897",
+    "bytes": 198344
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/four_site_forecast_116_20261025/FQ/seed0/forecast_seed0_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/FQ_forecast_seed00.zip",
+    "sha256": "aacb4aa117c0c918d49d77efd0fb1e41223c6e218559a1a460456f384e498eed",
+    "bytes": 199936
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/four_site_forecast_116_20261025/FQ/seed1/forecast_seed1_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/FQ_forecast_seed01.zip",
+    "sha256": "2dc74be902ec69fafd0f77300fb9a170585dcc2d8693240ec03af07038047111",
+    "bytes": 199940
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/four_site_forecast_116_20261025/FQ/seed2/forecast_seed2_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/FQ_forecast_seed02.zip",
+    "sha256": "c0c22f4d7b12682d49eb3ad509953362fd5f48d2c564093725ad984fb5f38d9f",
+    "bytes": 199936
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/four_site_forecast_116_20261025/FQ/seed3/forecast_seed3_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/FQ_forecast_seed03.zip",
+    "sha256": "35e5dd35f279823ea090566eeef458558eef59d0034a3a3e24ecabdb6b725ecf",
+    "bytes": 199940
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/four_site_forecast_116_20261025/FQ/seed4/forecast_seed4_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/FQ_forecast_seed04.zip",
+    "sha256": "0b65e7785a3b76ee9faac5bcd517bbea4adcc7ad68b67e72162969b21cef857b",
+    "bytes": 199936
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/four_site_forecast_116_20261025/FQ/seed5/forecast_seed5_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/FQ_forecast_seed05.zip",
+    "sha256": "2ddfe39e797c95e45ffbd0f09b15cd0ebdf4eb38afc7e24e42779c5f2a6ada81",
+    "bytes": 199940
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/four_site_forecast_116_20261025/FQ/seed6/forecast_seed6_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/FQ_forecast_seed06.zip",
+    "sha256": "faeb6eee1414ddfe13233daa576ef584c5d6b2e7711567b20df29ccc54c91a6d",
+    "bytes": 199936
+  },
+  {
+    "kind": "100000_step_reporting_model",
+    "source": "results/four_site_forecast_116_20261025/FQ/seed7/forecast_seed7_ckpt100000.zip",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/models/FQ_forecast_seed07.zip",
+    "sha256": "dd2d962035de72ba8cdb91d8e41b3fdd0e25435ffd2441a12fdfd22805f0913c",
+    "bytes": 199940
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/sy_forecast_seed0_100k_091_20261022/training_year_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/sy_forecast_seed0_100k_091_20261022/training_year_counts.csv",
+    "sha256": "b38243e32b806289a6f91fa900d851ba5ba429ec05d6b73f5809acb15b13ad6e",
+    "bytes": 86
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/sy_forecast_seed0_100k_091_20261022/training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/sy_forecast_seed0_100k_091_20261022/training_year_switch_log.csv",
+    "sha256": "4fa8fb5e69f676954c66bad23d3b13060421416dc45c92944bad4c680d2f4193",
+    "bytes": 9050
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/sy_forecast_seed0_100k_091_20261022/train.log",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/sy_forecast_seed0_100k_091_20261022/train.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/sy_forecast_seeds1_7_095_20261022/seed1/training_year_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/sy_forecast_seeds1_7_095_20261022/seed1/training_year_counts.csv",
+    "sha256": "be9fa105c70b75e5984fa6a5f657b2f8b07bbf8b5e2d8e283c1e22c2a0d0efaa",
+    "bytes": 86
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/sy_forecast_seeds1_7_095_20261022/seed1/training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/sy_forecast_seeds1_7_095_20261022/seed1/training_year_switch_log.csv",
+    "sha256": "de6cedad140def1ba6693298fdfc289245492ad1cf78b1d60b78e22b2463522d",
+    "bytes": 9050
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/sy_forecast_seeds1_7_095_20261022/seed1/train.log",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/sy_forecast_seeds1_7_095_20261022/seed1/train.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/sy_forecast_seeds1_7_095_20261022/seed2/training_year_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/sy_forecast_seeds1_7_095_20261022/seed2/training_year_counts.csv",
+    "sha256": "081bed30b419d0195153d89a1d60c7db875e103b98a31ac39b3415071a5adece",
+    "bytes": 86
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/sy_forecast_seeds1_7_095_20261022/seed2/training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/sy_forecast_seeds1_7_095_20261022/seed2/training_year_switch_log.csv",
+    "sha256": "c18d1e40765d61ac6c8a725469132b6034ff17bf5ba39c095e930df8913d6e88",
+    "bytes": 9063
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/sy_forecast_seeds1_7_095_20261022/seed2/train.log",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/sy_forecast_seeds1_7_095_20261022/seed2/train.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/sy_forecast_seeds1_7_095_20261022/seed3/training_year_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/sy_forecast_seeds1_7_095_20261022/seed3/training_year_counts.csv",
+    "sha256": "99b9a019ceac06c3e9c47345cd27449598190cd6c7b9ed2b225e37fb570db8ad",
+    "bytes": 86
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/sy_forecast_seeds1_7_095_20261022/seed3/training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/sy_forecast_seeds1_7_095_20261022/seed3/training_year_switch_log.csv",
+    "sha256": "0e74b9a1bed8fe8a0bb241e48d7f0e00faae490eb73108a7c45b3c14343b28f9",
+    "bytes": 9037
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/sy_forecast_seeds1_7_095_20261022/seed3/train.log",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/sy_forecast_seeds1_7_095_20261022/seed3/train.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/sy_forecast_seeds1_7_095_20261022/seed4/training_year_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/sy_forecast_seeds1_7_095_20261022/seed4/training_year_counts.csv",
+    "sha256": "577628c73fcafd6f46fca6ef642f584452c981052e8be8055afb830e16bcd3e4",
+    "bytes": 86
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/sy_forecast_seeds1_7_095_20261022/seed4/training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/sy_forecast_seeds1_7_095_20261022/seed4/training_year_switch_log.csv",
+    "sha256": "c437d35a30755cad83009d488984e1e59f0d7fc2b5fb4be47fb8028174d0351d",
+    "bytes": 9063
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/sy_forecast_seeds1_7_095_20261022/seed4/train.log",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/sy_forecast_seeds1_7_095_20261022/seed4/train.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/sy_forecast_seeds1_7_095_20261022/seed5/training_year_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/sy_forecast_seeds1_7_095_20261022/seed5/training_year_counts.csv",
+    "sha256": "8bfbf8a1d794c3b0fc34ed52dc7a22b811bebc365034e5f1477c001d4d0d63da",
+    "bytes": 86
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/sy_forecast_seeds1_7_095_20261022/seed5/training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/sy_forecast_seeds1_7_095_20261022/seed5/training_year_switch_log.csv",
+    "sha256": "3975c4cde122e145bf34befdfa919d3896260e52d4ba3237a141f62f292f6317",
+    "bytes": 9063
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/sy_forecast_seeds1_7_095_20261022/seed5/train.log",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/sy_forecast_seeds1_7_095_20261022/seed5/train.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/sy_forecast_seeds1_7_095_20261022/seed6/training_year_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/sy_forecast_seeds1_7_095_20261022/seed6/training_year_counts.csv",
+    "sha256": "be7d15d2d0fb731d1ab3bea7b4d9a325580b1db1e7dedcccc25f733cada7efa2",
+    "bytes": 86
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/sy_forecast_seeds1_7_095_20261022/seed6/training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/sy_forecast_seeds1_7_095_20261022/seed6/training_year_switch_log.csv",
+    "sha256": "418335d63d90b85155f9af80ccc5740a7927195dd0b099f660758a5a916512ef",
+    "bytes": 9063
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/sy_forecast_seeds1_7_095_20261022/seed6/train.log",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/sy_forecast_seeds1_7_095_20261022/seed6/train.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/sy_forecast_seeds1_7_095_20261022/seed7/training_year_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/sy_forecast_seeds1_7_095_20261022/seed7/training_year_counts.csv",
+    "sha256": "3c0efcbc1c7f373bcfc01c241805e043e6aed49f33f3c7b08a03e3d6e3d95c93",
+    "bytes": 86
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/sy_forecast_seeds1_7_095_20261022/seed7/training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/sy_forecast_seeds1_7_095_20261022/seed7/training_year_switch_log.csv",
+    "sha256": "1202da7691a5734e0625ba68b176759ed12cc12d998f352bbf0bb69a00a1c3b0",
+    "bytes": 9037
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/sy_forecast_seeds1_7_095_20261022/seed7/train.log",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/sy_forecast_seeds1_7_095_20261022/seed7/train.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/hl_recovery_106_20261023/formal/ppo_optimization_metrics.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/hl_recovery_106_20261023/formal/ppo_optimization_metrics.csv",
+    "sha256": "88bae1f521a8ef05d5a970b91fe86f9cad1dad2d0145215bca7e3966385478de",
+    "bytes": 123583
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/hl_recovery_106_20261023/formal/training_year_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/hl_recovery_106_20261023/formal/training_year_counts.csv",
+    "sha256": "14da094a59c8b2d2865bca89710d13dc4c06ac9cd2fb1d5f7e730bdb4b808296",
+    "bytes": 94
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/hl_recovery_106_20261023/formal/training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/hl_recovery_106_20261023/formal/training_year_switch_log.csv",
+    "sha256": "1729bd6c78cd103e65fd7a529f3af90564ed0783d9bdc5408e6a164174fe4cee",
+    "bytes": 8894
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_110_20261023/HL/seed1/ppo_optimization_metrics.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_110_20261023/HL/seed1/ppo_optimization_metrics.csv",
+    "sha256": "69ddcbd5d95f6fa2edc9549b476a92841063d63e36272f2952916de4134fb410",
+    "bytes": 123278
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_110_20261023/HL/seed1/training_year_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_110_20261023/HL/seed1/training_year_counts.csv",
+    "sha256": "41ef10ad1a7a5a28b7d55c570f0a2370cde7f19ed47b6ce5f1feabeeca6b796b",
+    "bytes": 94
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_110_20261023/HL/seed1/training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_110_20261023/HL/seed1/training_year_switch_log.csv",
+    "sha256": "ab16a45c7a24988632e005d8c0f910cf843686ca824e9ab902dcf5c853a822b6",
+    "bytes": 8842
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_110_20261023/HL/seed1/train.log",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_110_20261023/HL/seed1/train.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_110_20261023/HL/seed2/ppo_optimization_metrics.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_110_20261023/HL/seed2/ppo_optimization_metrics.csv",
+    "sha256": "edc8539641238460c1d3dfa6815a2b6606edc3d9ce42074d1ac5007086018ee4",
+    "bytes": 123312
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_110_20261023/HL/seed2/training_year_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_110_20261023/HL/seed2/training_year_counts.csv",
+    "sha256": "9b78aeabb4c59b3d2600c39dad1455a276883ec81f78690baedc9c8bae76e9b5",
+    "bytes": 94
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_110_20261023/HL/seed2/training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_110_20261023/HL/seed2/training_year_switch_log.csv",
+    "sha256": "a8024fc54247ff47e0db4cc7ffee2b1eb15d437eb9a3b00b73e933dea681f542",
+    "bytes": 8907
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_110_20261023/HL/seed2/train.log",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_110_20261023/HL/seed2/train.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_110_20261023/HL/seed3/ppo_optimization_metrics.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_110_20261023/HL/seed3/ppo_optimization_metrics.csv",
+    "sha256": "cfe94de0e97262388419ade3babd83a46726baba0c51903450386622d84f2cb0",
+    "bytes": 123531
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_110_20261023/HL/seed3/training_year_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_110_20261023/HL/seed3/training_year_counts.csv",
+    "sha256": "f336035f4c3c2799364713d2e780b1af307b1dc08f76349750db74274e0800c3",
+    "bytes": 94
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_110_20261023/HL/seed3/training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_110_20261023/HL/seed3/training_year_switch_log.csv",
+    "sha256": "258602ac21e3374c542689e529b6607aaa9bdc82afd60f55b7357f2990839c3c",
+    "bytes": 8881
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_110_20261023/HL/seed3/train.log",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_110_20261023/HL/seed3/train.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_110_20261023/HL/seed4/ppo_optimization_metrics.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_110_20261023/HL/seed4/ppo_optimization_metrics.csv",
+    "sha256": "fd127a777aad361124e54c8b5f45c59b623bc5d953216a84cb4a60d1d2a058a4",
+    "bytes": 123514
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_110_20261023/HL/seed4/training_year_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_110_20261023/HL/seed4/training_year_counts.csv",
+    "sha256": "b5977366786f2e9fe3a581c03787e27e58e93957033e56db0e8d70fd009ec7de",
+    "bytes": 94
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_110_20261023/HL/seed4/training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_110_20261023/HL/seed4/training_year_switch_log.csv",
+    "sha256": "ae88115471961997d5a4dc8eaaba72c30e30c0c4c1724736edf1002fe77975c6",
+    "bytes": 8868
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_110_20261023/HL/seed4/train.log",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_110_20261023/HL/seed4/train.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_110_20261023/HL/seed5/ppo_optimization_metrics.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_110_20261023/HL/seed5/ppo_optimization_metrics.csv",
+    "sha256": "cc1c75b7baf9969804cf38383abac5458cc1aa6135663b4e2c5db3ae94545ab2",
+    "bytes": 123435
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_110_20261023/HL/seed5/training_year_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_110_20261023/HL/seed5/training_year_counts.csv",
+    "sha256": "0961198e68088650ff6225ac28c5912422763c62aef47aff2bc14e70e37e4e10",
+    "bytes": 94
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_110_20261023/HL/seed5/training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_110_20261023/HL/seed5/training_year_switch_log.csv",
+    "sha256": "11b088c5db541872a6e8949cabb173e21be31326330bed1c226c343769fe8804",
+    "bytes": 8842
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_110_20261023/HL/seed5/train.log",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_110_20261023/HL/seed5/train.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_110_20261023/HL/seed6/ppo_optimization_metrics.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_110_20261023/HL/seed6/ppo_optimization_metrics.csv",
+    "sha256": "e2e4a398540c8cc92539e63288d2e367b64963e83df62866a610ef409839ef8b",
+    "bytes": 123377
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_110_20261023/HL/seed6/training_year_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_110_20261023/HL/seed6/training_year_counts.csv",
+    "sha256": "b3c2422ad49c1602f9f8989d64d9143423d2de79ee60da74a02873a8a1743add",
+    "bytes": 94
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_110_20261023/HL/seed6/training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_110_20261023/HL/seed6/training_year_switch_log.csv",
+    "sha256": "a8fd1a7efd1c72ab41121f1dae825add03d4d79652928bd9c0f9c16f43b54c8c",
+    "bytes": 8946
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_110_20261023/HL/seed6/train.log",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_110_20261023/HL/seed6/train.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_110_20261023/HL/seed7/ppo_optimization_metrics.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_110_20261023/HL/seed7/ppo_optimization_metrics.csv",
+    "sha256": "5d82cb7789b6714dd1d33bf8d17db31b731edfae1cca9dba18fbe6ab61c93c8f",
+    "bytes": 123276
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_110_20261023/HL/seed7/training_year_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_110_20261023/HL/seed7/training_year_counts.csv",
+    "sha256": "d763089a3ef0b066afdec99f0f64d77364f4ac6ff9e464b717b8d10b9a845629",
+    "bytes": 94
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_110_20261023/HL/seed7/training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_110_20261023/HL/seed7/training_year_switch_log.csv",
+    "sha256": "6ecd3748487920113e48091154f812756fa7f5d2b7b8d9e4d47cba41406e37db",
+    "bytes": 8907
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_110_20261023/HL/seed7/train.log",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_110_20261023/HL/seed7/train.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_110_20261023/LC/seed0/ppo_optimization_metrics.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_110_20261023/LC/seed0/ppo_optimization_metrics.csv",
+    "sha256": "872f88ce976efaba8d37c093224b769b870ac528956fff6e5dd2a1760db632d8",
+    "bytes": 123398
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_110_20261023/LC/seed0/training_year_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_110_20261023/LC/seed0/training_year_counts.csv",
+    "sha256": "e9b365a233181a435286598838512a4eae559ad1e7c68faa1ba55f5e22648777",
+    "bytes": 95
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_110_20261023/LC/seed0/training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_110_20261023/LC/seed0/training_year_switch_log.csv",
+    "sha256": "45ff6316ddd65233a35d2cea137fa14be8ad4d96519e57af14332de8bee61eaa",
+    "bytes": 12807
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_110_20261023/LC/seed0/train.log",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_110_20261023/LC/seed0/train.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_114_20261024/LC/seed1/ppo_optimization_metrics.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_114_20261024/LC/seed1/ppo_optimization_metrics.csv",
+    "sha256": "5783664e362fd09a44220202bc54910f575adf17e4f28d70d210a3cf74d5fc5e",
+    "bytes": 123939
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_114_20261024/LC/seed1/training_year_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_114_20261024/LC/seed1/training_year_counts.csv",
+    "sha256": "ac93443bae4411e6f3f3137a391181c3b3c6e5327f95bba5165e3524e514be34",
+    "bytes": 95
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_114_20261024/LC/seed1/training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_114_20261024/LC/seed1/training_year_switch_log.csv",
+    "sha256": "84f29dd8485ec67d888a3a4826dcac0cdf3290ea9d10f22308a710b537351129",
+    "bytes": 12807
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_114_20261024/LC/seed1/train.log",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_114_20261024/LC/seed1/train.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_114_20261024/LC/seed2/ppo_optimization_metrics.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_114_20261024/LC/seed2/ppo_optimization_metrics.csv",
+    "sha256": "d82fc24ee1473f0d9d2616038f06602ae2fc155569d48d361d1d0cc583efd951",
+    "bytes": 123535
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_114_20261024/LC/seed2/training_year_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_114_20261024/LC/seed2/training_year_counts.csv",
+    "sha256": "411c55fe8ee450b40838e03a7678d7a48a868fc267e16b4a249270a65d7f80ea",
+    "bytes": 94
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_114_20261024/LC/seed2/training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_114_20261024/LC/seed2/training_year_switch_log.csv",
+    "sha256": "bbbcf95d3a2180d1e8eceaaaa71ac72089f633a98eb35c23b46c5a4654a577af",
+    "bytes": 12794
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_114_20261024/LC/seed2/train.log",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_114_20261024/LC/seed2/train.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_114_20261024/LC/seed3/ppo_optimization_metrics.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_114_20261024/LC/seed3/ppo_optimization_metrics.csv",
+    "sha256": "4db5e74db1118e4ef9c0e74861ee949c684afc583d3001a632566c762b131d52",
+    "bytes": 123353
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_114_20261024/LC/seed3/training_year_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_114_20261024/LC/seed3/training_year_counts.csv",
+    "sha256": "569a68beefa830f88277bdc16c38bd242eaa665808d5a9006c351165d83807d9",
+    "bytes": 94
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_114_20261024/LC/seed3/training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_114_20261024/LC/seed3/training_year_switch_log.csv",
+    "sha256": "e1b17b3166292f04eaa174fdf2118d620f8063f0c98dd4907bc85acfba10c8a8",
+    "bytes": 12807
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_114_20261024/LC/seed3/train.log",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_114_20261024/LC/seed3/train.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/lc_recovery_115_20261024/formal/ppo_optimization_metrics.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/lc_recovery_115_20261024/formal/ppo_optimization_metrics.csv",
+    "sha256": "ad3550b1f97afaae84207afa5d1b1ec12b4309cc68bf9360ad118775d0e145fa",
+    "bytes": 123486
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/lc_recovery_115_20261024/formal/training_year_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/lc_recovery_115_20261024/formal/training_year_counts.csv",
+    "sha256": "3c11203f77dc958bdd68d09bcf80e5207fdc8ed0dd450e4f4fc54587926334de",
+    "bytes": 93
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/lc_recovery_115_20261024/formal/training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/lc_recovery_115_20261024/formal/training_year_switch_log.csv",
+    "sha256": "13e485bf25903d1945ab10da23af293e2f0e2ec5afdf0773d61c13d877f09a91",
+    "bytes": 12846
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_115_20261024/LC/seed5/ppo_optimization_metrics.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_115_20261024/LC/seed5/ppo_optimization_metrics.csv",
+    "sha256": "afd3bdd47811f79b8536ee580a21c02adb1ab660dbd2acd4bb6363aed5e59408",
+    "bytes": 123464
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_115_20261024/LC/seed5/training_year_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_115_20261024/LC/seed5/training_year_counts.csv",
+    "sha256": "b8833d1cea6dc26cd8757259e2b1e70daf1199a1cac3f93eef2e173d51c6f1d5",
+    "bytes": 94
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_115_20261024/LC/seed5/training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_115_20261024/LC/seed5/training_year_switch_log.csv",
+    "sha256": "641d8fa386adce28e5f2a344fe2309720f3b056b7635a6867dc052b3e4781655",
+    "bytes": 12807
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_115_20261024/LC/seed5/train.log",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_115_20261024/LC/seed5/train.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_115_20261024/LC/seed6/ppo_optimization_metrics.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_115_20261024/LC/seed6/ppo_optimization_metrics.csv",
+    "sha256": "69a365021b06d2debb2f10488c2ceafb9abd41ef7692d92139a618fa63cdc331",
+    "bytes": 123970
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_115_20261024/LC/seed6/training_year_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_115_20261024/LC/seed6/training_year_counts.csv",
+    "sha256": "42cd45f92f336c1d3f7dc45181dc9face547de1e52eee434b139fac2a1dd8c7d",
+    "bytes": 95
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_115_20261024/LC/seed6/training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_115_20261024/LC/seed6/training_year_switch_log.csv",
+    "sha256": "58eb7e000d00598597940e77ced13e32298132bc448676012ada12fd2a47992c",
+    "bytes": 12781
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_115_20261024/LC/seed6/train.log",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_115_20261024/LC/seed6/train.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_115_20261024/LC/seed7/ppo_optimization_metrics.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_115_20261024/LC/seed7/ppo_optimization_metrics.csv",
+    "sha256": "4434d7cf412705320edbe9c07afab7f6aab776bac317027de3bc8dd9ac6c3cb3",
+    "bytes": 123422
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_115_20261024/LC/seed7/training_year_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_115_20261024/LC/seed7/training_year_counts.csv",
+    "sha256": "be16da854aec2b25e41aee834d6d51ba459de2f2ac9d7ee88b62bd194dd02369",
+    "bytes": 94
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_115_20261024/LC/seed7/training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_115_20261024/LC/seed7/training_year_switch_log.csv",
+    "sha256": "2248edffa8bd2209ad18e0bc925a8c31f44c651c0feb37ee835b1bb8e544acc6",
+    "bytes": 12781
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_115_20261024/LC/seed7/train.log",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_115_20261024/LC/seed7/train.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_115_20261024/YC/seed0/ppo_optimization_metrics.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_115_20261024/YC/seed0/ppo_optimization_metrics.csv",
+    "sha256": "3fb6a92d9850c4ae80f7d10671a7fc9528c8fcdb639d1c171e005bb88e264ad2",
+    "bytes": 123521
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_115_20261024/YC/seed0/training_year_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_115_20261024/YC/seed0/training_year_counts.csv",
+    "sha256": "e158c05a39fb1e0c7a7e86fddb6d922b33da5bf213590ba8bfe1ea2e2b64d122",
+    "bytes": 98
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_115_20261024/YC/seed0/training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_115_20261024/YC/seed0/training_year_switch_log.csv",
+    "sha256": "39a2f935924e82ebc8888aaab1562088f7d5ec40c82e5248de7943fb1464d229",
+    "bytes": 12170
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_115_20261024/YC/seed0/train.log",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_115_20261024/YC/seed0/train.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_115_20261024/YC/seed1/ppo_optimization_metrics.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_115_20261024/YC/seed1/ppo_optimization_metrics.csv",
+    "sha256": "fbc4c0c66d4f731ff90a179e77984c5922fd37f80ede39893b293d8e82b8934c",
+    "bytes": 123783
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_115_20261024/YC/seed1/training_year_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_115_20261024/YC/seed1/training_year_counts.csv",
+    "sha256": "309646b93c0514cddae35915eac8e5327e6f0151e3b61c1316b628f51e653009",
+    "bytes": 97
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_115_20261024/YC/seed1/training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_115_20261024/YC/seed1/training_year_switch_log.csv",
+    "sha256": "bd1820dfa6afbb3a13be3e189d9f3e802a8877c754479f23a0eaf0a29ee91bd4",
+    "bytes": 12157
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_115_20261024/YC/seed1/train.log",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_115_20261024/YC/seed1/train.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_115_20261024/YC/seed2/ppo_optimization_metrics.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_115_20261024/YC/seed2/ppo_optimization_metrics.csv",
+    "sha256": "f5c6ae6e19266e4a3f6cdaaa4c5ab7274a9b8b5b89859c2ed99178a079b4b27a",
+    "bytes": 123227
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_115_20261024/YC/seed2/training_year_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_115_20261024/YC/seed2/training_year_counts.csv",
+    "sha256": "040e87bcf50a1360111f79785c79680dd5c6ccf85e455c1e1ed007c0189773d0",
+    "bytes": 97
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_115_20261024/YC/seed2/training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_115_20261024/YC/seed2/training_year_switch_log.csv",
+    "sha256": "74de3d092285986f5eca76661f37ad4c2c03aabed0f86214dbe937349999c8ec",
+    "bytes": 12183
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_115_20261024/YC/seed2/train.log",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_115_20261024/YC/seed2/train.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_115_20261024/YC/seed3/ppo_optimization_metrics.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_115_20261024/YC/seed3/ppo_optimization_metrics.csv",
+    "sha256": "15e3b6cf3e9bea732f73d5890939bf3f6fa51c89c6649d6a77e11c2452cbb6d2",
+    "bytes": 123556
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_115_20261024/YC/seed3/training_year_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_115_20261024/YC/seed3/training_year_counts.csv",
+    "sha256": "d42b0287976ed815aca29846ee5c90ab3af3c87ca845507c7f6aff776afbcb0b",
+    "bytes": 96
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_115_20261024/YC/seed3/training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_115_20261024/YC/seed3/training_year_switch_log.csv",
+    "sha256": "6b30adafc4fea2b4e9ab1097ba9009e13efa5289e63423e35b6a6b43b87d14c0",
+    "bytes": 12170
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_115_20261024/YC/seed3/train.log",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_115_20261024/YC/seed3/train.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_115_20261024/YC/seed4/ppo_optimization_metrics.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_115_20261024/YC/seed4/ppo_optimization_metrics.csv",
+    "sha256": "874cc26df19856586877c157db44b84b2151b46fbe9dcc9e9e380acfbc3ca767",
+    "bytes": 123395
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_115_20261024/YC/seed4/training_year_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_115_20261024/YC/seed4/training_year_counts.csv",
+    "sha256": "1d4b8e04a4bee132dacf9bbab6462f3175ae99e3fa173147730daece6b4092ce",
+    "bytes": 96
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_115_20261024/YC/seed4/training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_115_20261024/YC/seed4/training_year_switch_log.csv",
+    "sha256": "ff4532d8e9fe34bcb4e72a5db4378af39db168c9ec2d8ebcb932b659429df5d0",
+    "bytes": 12183
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_115_20261024/YC/seed4/train.log",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_115_20261024/YC/seed4/train.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_115_20261024/YC/seed5/ppo_optimization_metrics.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_115_20261024/YC/seed5/ppo_optimization_metrics.csv",
+    "sha256": "8f53edaf5258a39f9f2780699c0eb38abc63d44fe6ad2e26aa7f3b93907b84f6",
+    "bytes": 123402
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_115_20261024/YC/seed5/training_year_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_115_20261024/YC/seed5/training_year_counts.csv",
+    "sha256": "95fd104482686613a51d05c0f368536785d236811911153b37aa6440bee7cd09",
+    "bytes": 97
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_115_20261024/YC/seed5/training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_115_20261024/YC/seed5/training_year_switch_log.csv",
+    "sha256": "33bfdaf7d7220d340412ed187ee227dbc568fd05902e12016b510970375e17a0",
+    "bytes": 12144
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_115_20261024/YC/seed5/train.log",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_115_20261024/YC/seed5/train.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_115_20261024/YC/seed6/ppo_optimization_metrics.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_115_20261024/YC/seed6/ppo_optimization_metrics.csv",
+    "sha256": "7ec3b55fa1988809bd218e875842acdbd70c8cd7da6f361e036d286e57d0cd95",
+    "bytes": 123553
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_115_20261024/YC/seed6/training_year_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_115_20261024/YC/seed6/training_year_counts.csv",
+    "sha256": "4dac31eb72b2dcde1e8b8b8e8785c7ac09c3e51845268903114db73a712f587f",
+    "bytes": 96
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_115_20261024/YC/seed6/training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_115_20261024/YC/seed6/training_year_switch_log.csv",
+    "sha256": "b597450ddf2cd39f9afa261fb1c87823696cabc8044eb986cd95b9bc3030a546",
+    "bytes": 12157
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_115_20261024/YC/seed6/train.log",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_115_20261024/YC/seed6/train.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_115_20261024/YC/seed7/ppo_optimization_metrics.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_115_20261024/YC/seed7/ppo_optimization_metrics.csv",
+    "sha256": "7766a7781e0f72e387db2fdbfebd80c2256f54d0bca999492b888c8064d7b060",
+    "bytes": 124002
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_115_20261024/YC/seed7/training_year_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_115_20261024/YC/seed7/training_year_counts.csv",
+    "sha256": "f648eb2fb4c96da2ee990d442014e667db3c9c91f01998664a0f59a3693fe4f1",
+    "bytes": 98
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_115_20261024/YC/seed7/training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_115_20261024/YC/seed7/training_year_switch_log.csv",
+    "sha256": "9ac84e2b7cb8ea5b5886bf2653008863f66d7ff42bb2a6c08f8cbe968065481b",
+    "bytes": 12170
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_115_20261024/YC/seed7/train.log",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_115_20261024/YC/seed7/train.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_116_20261025/FQ/seed0/ppo_optimization_metrics.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_116_20261025/FQ/seed0/ppo_optimization_metrics.csv",
+    "sha256": "a482a74aad367557d1360e14a579d09538d1a4bc14f239fbc8d05c4c106accf1",
+    "bytes": 125392
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_116_20261025/FQ/seed0/training_year_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_116_20261025/FQ/seed0/training_year_counts.csv",
+    "sha256": "d2d4736741c911b4c4ee35c9c5ae2bfd19c323a10623c604c977742dd56dcd9f",
+    "bytes": 91
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_116_20261025/FQ/seed0/training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_116_20261025/FQ/seed0/training_year_switch_log.csv",
+    "sha256": "733ee76c05fbd4d1673bfc7c49eaab786e345ca6675ba455704e54719f24ed20",
+    "bytes": 12079
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_116_20261025/FQ/seed0/train.log",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_116_20261025/FQ/seed0/train.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_116_20261025/FQ/seed1/ppo_optimization_metrics.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_116_20261025/FQ/seed1/ppo_optimization_metrics.csv",
+    "sha256": "f51960d59a66e70034787063ee76b1b6890c6f59011c35d2703a1e9056a4af68",
+    "bytes": 125148
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_116_20261025/FQ/seed1/training_year_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_116_20261025/FQ/seed1/training_year_counts.csv",
+    "sha256": "e6eea1b42a1ed0ddb6d3fa8a1abe1e867930ffddbe7c597359eb842696c74aa8",
+    "bytes": 91
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_116_20261025/FQ/seed1/training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_116_20261025/FQ/seed1/training_year_switch_log.csv",
+    "sha256": "328f082aa80a98af709ed0dc630d0d9554724e338436dfedb4e02f24a881f42b",
+    "bytes": 12066
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_116_20261025/FQ/seed1/train.log",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_116_20261025/FQ/seed1/train.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_116_20261025/FQ/seed2/ppo_optimization_metrics.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_116_20261025/FQ/seed2/ppo_optimization_metrics.csv",
+    "sha256": "804702dfd4da28b6c47a98b73a2aed4c6304fdc07b8c0e62f6690f40d0567992",
+    "bytes": 125116
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_116_20261025/FQ/seed2/training_year_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_116_20261025/FQ/seed2/training_year_counts.csv",
+    "sha256": "4e8a03ad8111043f9806ec7b788f424adbd1f48ad660cccd6daa789c5b487bdc",
+    "bytes": 93
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_116_20261025/FQ/seed2/training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_116_20261025/FQ/seed2/training_year_switch_log.csv",
+    "sha256": "7055fdf72a20ec18cf7963da050c211055179754194eeefbad135994bc0d6639",
+    "bytes": 12066
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_116_20261025/FQ/seed2/train.log",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_116_20261025/FQ/seed2/train.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_116_20261025/FQ/seed3/ppo_optimization_metrics.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_116_20261025/FQ/seed3/ppo_optimization_metrics.csv",
+    "sha256": "0ec317acb771ad19adc4ab7952467905b3ef94dba005c040281ba168bb56e0e6",
+    "bytes": 124204
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_116_20261025/FQ/seed3/training_year_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_116_20261025/FQ/seed3/training_year_counts.csv",
+    "sha256": "5cc14b3762fb0a528d2838ee6abff2ccd7729a836027f59f47e29f0762598de4",
+    "bytes": 93
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_116_20261025/FQ/seed3/training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_116_20261025/FQ/seed3/training_year_switch_log.csv",
+    "sha256": "a28d7744caa76d1cc61b215e92eedc034ea1425c3236864e60859c6494f5decc",
+    "bytes": 12066
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_116_20261025/FQ/seed3/train.log",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_116_20261025/FQ/seed3/train.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_116_20261025/FQ/seed4/ppo_optimization_metrics.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_116_20261025/FQ/seed4/ppo_optimization_metrics.csv",
+    "sha256": "8e310bc23e80dbff40e82cc1deda71dfcf71cbf7162ca8932dc61b7c09df550f",
+    "bytes": 124427
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_116_20261025/FQ/seed4/training_year_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_116_20261025/FQ/seed4/training_year_counts.csv",
+    "sha256": "31791ef88f289263504e31b5bba53920c8d587e8f2e0a298a1306c4b7e2d9d01",
+    "bytes": 90
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_116_20261025/FQ/seed4/training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_116_20261025/FQ/seed4/training_year_switch_log.csv",
+    "sha256": "3c1c671de93d0857d577809672766e918bb5d543ab56171e56a00a88015ae78d",
+    "bytes": 12066
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_116_20261025/FQ/seed4/train.log",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_116_20261025/FQ/seed4/train.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_116_20261025/FQ/seed5/ppo_optimization_metrics.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_116_20261025/FQ/seed5/ppo_optimization_metrics.csv",
+    "sha256": "8ab3775419d1701b9bd19e71475b80fbdfe71442cdb8de34f7a2ae0bc342bf38",
+    "bytes": 124117
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_116_20261025/FQ/seed5/training_year_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_116_20261025/FQ/seed5/training_year_counts.csv",
+    "sha256": "e3ab65a864a68d5a845f16cd171cd973f9b1afac9880dce7eee697ef81ccdc76",
+    "bytes": 93
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_116_20261025/FQ/seed5/training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_116_20261025/FQ/seed5/training_year_switch_log.csv",
+    "sha256": "04608cb87c0281c79a781c2e298078f4b7b7af99d5dabf105f3bac15a839878d",
+    "bytes": 12066
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_116_20261025/FQ/seed5/train.log",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_116_20261025/FQ/seed5/train.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_116_20261025/FQ/seed6/ppo_optimization_metrics.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_116_20261025/FQ/seed6/ppo_optimization_metrics.csv",
+    "sha256": "b46d9acd454b3dbc3cf88d464f17aa610ecdd983b2af418169229a8abba030ed",
+    "bytes": 124411
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_116_20261025/FQ/seed6/training_year_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_116_20261025/FQ/seed6/training_year_counts.csv",
+    "sha256": "fe49e23413bb62d26ad1270c383e84dbe39784ce9fc00a584aff5e5edf5273f6",
+    "bytes": 92
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_116_20261025/FQ/seed6/training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_116_20261025/FQ/seed6/training_year_switch_log.csv",
+    "sha256": "0d069aacf40a798c1c79e66dc740d1728d75bf67445c2366d95735c8468d2551",
+    "bytes": 12066
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_116_20261025/FQ/seed6/train.log",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_116_20261025/FQ/seed6/train.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_116_20261025/FQ/seed7/ppo_optimization_metrics.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_116_20261025/FQ/seed7/ppo_optimization_metrics.csv",
+    "sha256": "7224857aa0669b5183becca0080bfbf01b14ca8f63e203eb94be37ea9d5247b2",
+    "bytes": 124381
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_116_20261025/FQ/seed7/training_year_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_116_20261025/FQ/seed7/training_year_counts.csv",
+    "sha256": "d4a3ac2b2ca90474efb3695906226b5825dc9504104dcc0fd604c8af35e3026c",
+    "bytes": 92
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_116_20261025/FQ/seed7/training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_116_20261025/FQ/seed7/training_year_switch_log.csv",
+    "sha256": "6789b7c151379088d4e000a73434f8826080de6378fa1e5a68343d5a7ca361be",
+    "bytes": 12066
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/four_site_forecast_116_20261025/FQ/seed7/train.log",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/four_site_forecast_116_20261025/FQ/seed7/train.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/046_10_sya_originIC_expanded_action_maskableppo/logs/032_22_SYA_training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/046_10_sya_originIC_expanded_action_maskableppo/logs/032_22_SYA_training_year_switch_log.csv",
+    "sha256": "a2d6aa2e19f65db658b7bfcdd4904893957338c9547cd1b5df18f5f5cb4f1e59",
+    "bytes": 9053
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/046_10_sya_originIC_expanded_action_maskableppo/logs/032_22_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/046_10_sya_originIC_expanded_action_maskableppo/logs/032_22_training_year_reset_counts.csv",
+    "sha256": "82e0a8f222abba89bdb5226c5ef75f28d00fc9859bf9cc519128149c299eb311",
+    "bytes": 143
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/046_10_sya_originIC_expanded_action_maskableppo/logs/042_10_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/046_10_sya_originIC_expanded_action_maskableppo/logs/042_10_training_year_reset_counts.csv",
+    "sha256": "82e0a8f222abba89bdb5226c5ef75f28d00fc9859bf9cc519128149c299eb311",
+    "bytes": 143
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/231_sy_seed1_sya_originIC_expanded_action_maskableppo_seed1_extension/logs/032_22_SYA_training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/231_sy_seed1_sya_originIC_expanded_action_maskableppo_seed1_extension/logs/032_22_SYA_training_year_switch_log.csv",
+    "sha256": "b496719ee8c2b9c1b2be77e2a2ee2cac0daeb411d665d75ae405f45e728cd50f",
+    "bytes": 9053
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/231_sy_seed1_sya_originIC_expanded_action_maskableppo_seed1_extension/logs/032_22_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/231_sy_seed1_sya_originIC_expanded_action_maskableppo_seed1_extension/logs/032_22_training_year_reset_counts.csv",
+    "sha256": "18035091d5624f540d22dfac05bf96317e15b7b9e8dc219134d619c55c63d17a",
+    "bytes": 143
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/231_sy_seed1_sya_originIC_expanded_action_maskableppo_seed1_extension/logs/042_10_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/231_sy_seed1_sya_originIC_expanded_action_maskableppo_seed1_extension/logs/042_10_training_year_reset_counts.csv",
+    "sha256": "18035091d5624f540d22dfac05bf96317e15b7b9e8dc219134d619c55c63d17a",
+    "bytes": 143
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/231_sy_seed2_sya_originIC_expanded_action_maskableppo_seed2_extension/logs/032_22_SYA_training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/231_sy_seed2_sya_originIC_expanded_action_maskableppo_seed2_extension/logs/032_22_SYA_training_year_switch_log.csv",
+    "sha256": "51018a8811d00c31e35f6fd25c8201b1699c7597db7648b32fee7c1d0792bdd7",
+    "bytes": 9066
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/231_sy_seed2_sya_originIC_expanded_action_maskableppo_seed2_extension/logs/032_22_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/231_sy_seed2_sya_originIC_expanded_action_maskableppo_seed2_extension/logs/032_22_training_year_reset_counts.csv",
+    "sha256": "d1793c416796ccbb74806998f3cc5ae557aee08638599bb4a3246d98547f311e",
+    "bytes": 143
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/231_sy_seed2_sya_originIC_expanded_action_maskableppo_seed2_extension/logs/042_10_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/231_sy_seed2_sya_originIC_expanded_action_maskableppo_seed2_extension/logs/042_10_training_year_reset_counts.csv",
+    "sha256": "d1793c416796ccbb74806998f3cc5ae557aee08638599bb4a3246d98547f311e",
+    "bytes": 143
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/231_sy_seed3_sya_originIC_expanded_action_maskableppo_seed3_extension/logs/032_22_SYA_training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/231_sy_seed3_sya_originIC_expanded_action_maskableppo_seed3_extension/logs/032_22_SYA_training_year_switch_log.csv",
+    "sha256": "6814c781784d75ef48d0f5898041eba0857190cd5691527d653c1302301f6832",
+    "bytes": 9040
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/231_sy_seed3_sya_originIC_expanded_action_maskableppo_seed3_extension/logs/032_22_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/231_sy_seed3_sya_originIC_expanded_action_maskableppo_seed3_extension/logs/032_22_training_year_reset_counts.csv",
+    "sha256": "977c7ee29909c11acafc6bd07b308811d32000b5443f4601871641443ee30458",
+    "bytes": 143
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/231_sy_seed3_sya_originIC_expanded_action_maskableppo_seed3_extension/logs/042_10_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/231_sy_seed3_sya_originIC_expanded_action_maskableppo_seed3_extension/logs/042_10_training_year_reset_counts.csv",
+    "sha256": "977c7ee29909c11acafc6bd07b308811d32000b5443f4601871641443ee30458",
+    "bytes": 143
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/231_sy_seed4_sya_originIC_expanded_action_maskableppo_seed4_extension/logs/032_22_SYA_training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/231_sy_seed4_sya_originIC_expanded_action_maskableppo_seed4_extension/logs/032_22_SYA_training_year_switch_log.csv",
+    "sha256": "5b53ee380ad1d1c3370e1db81d765ee4ca57ac3b006d6639a3bb6c595f4a71b9",
+    "bytes": 9066
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/231_sy_seed4_sya_originIC_expanded_action_maskableppo_seed4_extension/logs/032_22_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/231_sy_seed4_sya_originIC_expanded_action_maskableppo_seed4_extension/logs/032_22_training_year_reset_counts.csv",
+    "sha256": "e82e3d99de184c21bd069345306dd44723ddb87f44baccff33ce0ebf85adf20b",
+    "bytes": 143
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/231_sy_seed4_sya_originIC_expanded_action_maskableppo_seed4_extension/logs/042_10_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/231_sy_seed4_sya_originIC_expanded_action_maskableppo_seed4_extension/logs/042_10_training_year_reset_counts.csv",
+    "sha256": "e82e3d99de184c21bd069345306dd44723ddb87f44baccff33ce0ebf85adf20b",
+    "bytes": 143
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/231_sy_seed5_sya_originIC_expanded_action_maskableppo_seed5_extension/logs/032_22_SYA_training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/231_sy_seed5_sya_originIC_expanded_action_maskableppo_seed5_extension/logs/032_22_SYA_training_year_switch_log.csv",
+    "sha256": "d9c83d73b98387e37623be138ecdf8e68f1b3d0bdbd907546208304e54ebc55f",
+    "bytes": 9066
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/231_sy_seed5_sya_originIC_expanded_action_maskableppo_seed5_extension/logs/032_22_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/231_sy_seed5_sya_originIC_expanded_action_maskableppo_seed5_extension/logs/032_22_training_year_reset_counts.csv",
+    "sha256": "4d8eaf7e7a7fa1585bbd8a7872d97be782b9a4518e27fa6824284bb480a25f90",
+    "bytes": 143
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/231_sy_seed5_sya_originIC_expanded_action_maskableppo_seed5_extension/logs/042_10_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/231_sy_seed5_sya_originIC_expanded_action_maskableppo_seed5_extension/logs/042_10_training_year_reset_counts.csv",
+    "sha256": "4d8eaf7e7a7fa1585bbd8a7872d97be782b9a4518e27fa6824284bb480a25f90",
+    "bytes": 143
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/231_sy_seed6_sya_originIC_expanded_action_maskableppo_seed6_extension/logs/032_22_SYA_training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/231_sy_seed6_sya_originIC_expanded_action_maskableppo_seed6_extension/logs/032_22_SYA_training_year_switch_log.csv",
+    "sha256": "a6cf76be27b18798dbacd7abbbb2e66fccf86e49426e89709c9982599157f26b",
+    "bytes": 9066
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/231_sy_seed6_sya_originIC_expanded_action_maskableppo_seed6_extension/logs/032_22_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/231_sy_seed6_sya_originIC_expanded_action_maskableppo_seed6_extension/logs/032_22_training_year_reset_counts.csv",
+    "sha256": "500cb56dd3df476b4caf28c06a3d0a6c6a6bde3acf61a613a965748837006471",
+    "bytes": 143
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/231_sy_seed6_sya_originIC_expanded_action_maskableppo_seed6_extension/logs/042_10_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/231_sy_seed6_sya_originIC_expanded_action_maskableppo_seed6_extension/logs/042_10_training_year_reset_counts.csv",
+    "sha256": "500cb56dd3df476b4caf28c06a3d0a6c6a6bde3acf61a613a965748837006471",
+    "bytes": 143
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/231_sy_seed7_sya_originIC_expanded_action_maskableppo_seed7_extension/logs/032_22_SYA_training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/231_sy_seed7_sya_originIC_expanded_action_maskableppo_seed7_extension/logs/032_22_SYA_training_year_switch_log.csv",
+    "sha256": "e59b4d576677864d6ea028e2d0f7bf9f65470a962ab3877d5dbfa9dc48ccf609",
+    "bytes": 9040
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/231_sy_seed7_sya_originIC_expanded_action_maskableppo_seed7_extension/logs/032_22_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/231_sy_seed7_sya_originIC_expanded_action_maskableppo_seed7_extension/logs/032_22_training_year_reset_counts.csv",
+    "sha256": "be6ef34ba02132bee236da9012b842da081f954d759d67eb0af5641c601b71c3",
+    "bytes": 143
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/231_sy_seed7_sya_originIC_expanded_action_maskableppo_seed7_extension/logs/042_10_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/231_sy_seed7_sya_originIC_expanded_action_maskableppo_seed7_extension/logs/042_10_training_year_reset_counts.csv",
+    "sha256": "be6ef34ba02132bee236da9012b842da081f954d759d67eb0af5641c601b71c3",
+    "bytes": 143
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/059SYs0_frozen_weather_augmented_100k/logs/032_22_SYA_training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/059SYs0_frozen_weather_augmented_100k/logs/032_22_SYA_training_year_switch_log.csv",
+    "sha256": "ccaa61935e35b1ce37f01a5ce0cc5217cc44641e81ba1e45afa689e798230c8f",
+    "bytes": 9391
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/059SYs0_frozen_weather_augmented_100k/logs/032_22_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/059SYs0_frozen_weather_augmented_100k/logs/032_22_training_year_reset_counts.csv",
+    "sha256": "fbb75cc9d4d58bbe4e658ab860736a1905d6c85e34094faf66334e3060bf3c46",
+    "bytes": 143
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/059SYs0_frozen_weather_augmented_100k/logs/042_10_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/059SYs0_frozen_weather_augmented_100k/logs/042_10_training_year_reset_counts.csv",
+    "sha256": "fbb75cc9d4d58bbe4e658ab860736a1905d6c85e34094faf66334e3060bf3c46",
+    "bytes": 143
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/059SYs1_frozen_weather_augmented_100k/logs/032_22_SYA_training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/059SYs1_frozen_weather_augmented_100k/logs/032_22_SYA_training_year_switch_log.csv",
+    "sha256": "07dcb2812410c51d9fbd521ac0f22f6423fc43dbdeaf9e8872ac5cbacaf6f029",
+    "bytes": 9391
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/059SYs1_frozen_weather_augmented_100k/logs/032_22_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/059SYs1_frozen_weather_augmented_100k/logs/032_22_training_year_reset_counts.csv",
+    "sha256": "9295607b653b6ff668484a782650110d611799b273b23507bc9454de8f918b4b",
+    "bytes": 143
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/059SYs1_frozen_weather_augmented_100k/logs/042_10_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/059SYs1_frozen_weather_augmented_100k/logs/042_10_training_year_reset_counts.csv",
+    "sha256": "9295607b653b6ff668484a782650110d611799b273b23507bc9454de8f918b4b",
+    "bytes": 143
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/059SYs2_frozen_weather_augmented_100k/logs/032_22_SYA_training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/059SYs2_frozen_weather_augmented_100k/logs/032_22_SYA_training_year_switch_log.csv",
+    "sha256": "67e41eec951853ddd63d8d621d774a8f8db3e839afc8782ceba8a3114be8c17b",
+    "bytes": 9391
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/059SYs2_frozen_weather_augmented_100k/logs/032_22_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/059SYs2_frozen_weather_augmented_100k/logs/032_22_training_year_reset_counts.csv",
+    "sha256": "b056ac8134e575914e62d2d9981f95cedc89a9aa211e7d4cb3c50c811d931bfa",
+    "bytes": 143
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/059SYs2_frozen_weather_augmented_100k/logs/042_10_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/059SYs2_frozen_weather_augmented_100k/logs/042_10_training_year_reset_counts.csv",
+    "sha256": "b056ac8134e575914e62d2d9981f95cedc89a9aa211e7d4cb3c50c811d931bfa",
+    "bytes": 143
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/059SYs3_frozen_weather_augmented_100k/logs/032_22_SYA_training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/059SYs3_frozen_weather_augmented_100k/logs/032_22_SYA_training_year_switch_log.csv",
+    "sha256": "756b899a73d53a513a7cd5489e1467f981890e77902ebd6db51c99ae2b204a24",
+    "bytes": 9391
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/059SYs3_frozen_weather_augmented_100k/logs/032_22_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/059SYs3_frozen_weather_augmented_100k/logs/032_22_training_year_reset_counts.csv",
+    "sha256": "f37fa62b919737d94c69890f31289b54a3eddf01ce25a6698bab5f60f9b15128",
+    "bytes": 143
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/059SYs3_frozen_weather_augmented_100k/logs/042_10_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/059SYs3_frozen_weather_augmented_100k/logs/042_10_training_year_reset_counts.csv",
+    "sha256": "f37fa62b919737d94c69890f31289b54a3eddf01ce25a6698bab5f60f9b15128",
+    "bytes": 143
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/059SYs4_frozen_weather_augmented_100k/logs/032_22_SYA_training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/059SYs4_frozen_weather_augmented_100k/logs/032_22_SYA_training_year_switch_log.csv",
+    "sha256": "682524dbdeb9370b4c052a78a631c0e30b03e3a93b851b4e24438099a4bee713",
+    "bytes": 9391
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/059SYs4_frozen_weather_augmented_100k/logs/032_22_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/059SYs4_frozen_weather_augmented_100k/logs/032_22_training_year_reset_counts.csv",
+    "sha256": "692a227f9689af1fe7a6882e562cfc2767577736a6b5e9e9cc19be837dbe12a9",
+    "bytes": 144
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/059SYs4_frozen_weather_augmented_100k/logs/042_10_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/059SYs4_frozen_weather_augmented_100k/logs/042_10_training_year_reset_counts.csv",
+    "sha256": "692a227f9689af1fe7a6882e562cfc2767577736a6b5e9e9cc19be837dbe12a9",
+    "bytes": 144
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/059SYs5_frozen_weather_augmented_100k/logs/032_22_SYA_training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/059SYs5_frozen_weather_augmented_100k/logs/032_22_SYA_training_year_switch_log.csv",
+    "sha256": "afb35c49ea590efeb9fce7012d7e0e4631146a163bbfe4da727ac390a980adfc",
+    "bytes": 9391
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/059SYs5_frozen_weather_augmented_100k/logs/032_22_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/059SYs5_frozen_weather_augmented_100k/logs/032_22_training_year_reset_counts.csv",
+    "sha256": "28727629a329ebfe3d4906998095f8c68c3348c96cd815659fd794b313cfbeee",
+    "bytes": 143
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/059SYs5_frozen_weather_augmented_100k/logs/042_10_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/059SYs5_frozen_weather_augmented_100k/logs/042_10_training_year_reset_counts.csv",
+    "sha256": "28727629a329ebfe3d4906998095f8c68c3348c96cd815659fd794b313cfbeee",
+    "bytes": 143
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/059SYs6_frozen_weather_augmented_100k/logs/032_22_SYA_training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/059SYs6_frozen_weather_augmented_100k/logs/032_22_SYA_training_year_switch_log.csv",
+    "sha256": "7e464d2932408334be78148a5df8e133c3aff3897aca2479b8189c754dd4a66e",
+    "bytes": 9391
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/059SYs6_frozen_weather_augmented_100k/logs/032_22_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/059SYs6_frozen_weather_augmented_100k/logs/032_22_training_year_reset_counts.csv",
+    "sha256": "2216b71fe144d76468766c38a45745d5f31d2f362c7873aa02babb2e69907256",
+    "bytes": 144
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/059SYs6_frozen_weather_augmented_100k/logs/042_10_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/059SYs6_frozen_weather_augmented_100k/logs/042_10_training_year_reset_counts.csv",
+    "sha256": "2216b71fe144d76468766c38a45745d5f31d2f362c7873aa02babb2e69907256",
+    "bytes": 144
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/059SYs7_frozen_weather_augmented_100k/logs/032_22_SYA_training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/059SYs7_frozen_weather_augmented_100k/logs/032_22_SYA_training_year_switch_log.csv",
+    "sha256": "d08c408bd339a55c0302226389eae93872eb31a27d008975a05b56dd9960f83e",
+    "bytes": 9391
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/059SYs7_frozen_weather_augmented_100k/logs/032_22_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/059SYs7_frozen_weather_augmented_100k/logs/032_22_training_year_reset_counts.csv",
+    "sha256": "b5a4d2a44d2f1ffe64fb30496c772952c09df18c0d6b1e6f2e7c634c3d316d4c",
+    "bytes": 143
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/059SYs7_frozen_weather_augmented_100k/logs/042_10_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/059SYs7_frozen_weather_augmented_100k/logs/042_10_training_year_reset_counts.csv",
+    "sha256": "b5a4d2a44d2f1ffe64fb30496c772952c09df18c0d6b1e6f2e7c634c3d316d4c",
+    "bytes": 143
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/053_00_lca_lowIC_expanded_action_maskableppo/logs/032_22_LCA_training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/053_00_lca_lowIC_expanded_action_maskableppo/logs/032_22_LCA_training_year_switch_log.csv",
+    "sha256": "af4eb26a3ab2abc891987b5df449dcbe798c14fbd7af3efd9989f70a61e5d8e1",
+    "bytes": 12810
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/053_00_lca_lowIC_expanded_action_maskableppo/logs/032_22_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/053_00_lca_lowIC_expanded_action_maskableppo/logs/032_22_training_year_reset_counts.csv",
+    "sha256": "ce2968dade0dd903cb705ba8198381f9c7e7d7f82a6c2f8b7a6608606bbba35d",
+    "bytes": 152
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/053_00_lca_lowIC_expanded_action_maskableppo/logs/042_10_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/053_00_lca_lowIC_expanded_action_maskableppo/logs/042_10_training_year_reset_counts.csv",
+    "sha256": "ce2968dade0dd903cb705ba8198381f9c7e7d7f82a6c2f8b7a6608606bbba35d",
+    "bytes": 152
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/231_lc_seed1_lca_lowIC_expanded_action_maskableppo_seed1_extension/logs/032_22_LCA_training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/231_lc_seed1_lca_lowIC_expanded_action_maskableppo_seed1_extension/logs/032_22_LCA_training_year_switch_log.csv",
+    "sha256": "d10612787f62b22f17f80f6bb5363c9f44e1aef4b6d6ded0763ec00e9f00158d",
+    "bytes": 12810
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/231_lc_seed1_lca_lowIC_expanded_action_maskableppo_seed1_extension/logs/032_22_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/231_lc_seed1_lca_lowIC_expanded_action_maskableppo_seed1_extension/logs/032_22_training_year_reset_counts.csv",
+    "sha256": "44340e22a618d57b0f04a6038688cbb4cbed0174ae141e52fa88f8a45db0f6b9",
+    "bytes": 152
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/231_lc_seed1_lca_lowIC_expanded_action_maskableppo_seed1_extension/logs/042_10_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/231_lc_seed1_lca_lowIC_expanded_action_maskableppo_seed1_extension/logs/042_10_training_year_reset_counts.csv",
+    "sha256": "44340e22a618d57b0f04a6038688cbb4cbed0174ae141e52fa88f8a45db0f6b9",
+    "bytes": 152
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/231_lc_seed2_lca_lowIC_expanded_action_maskableppo_seed2_extension/logs/032_22_LCA_training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/231_lc_seed2_lca_lowIC_expanded_action_maskableppo_seed2_extension/logs/032_22_LCA_training_year_switch_log.csv",
+    "sha256": "b536aaa3a358faaead56b9d1767530411eb0ebbcc8229a22ae10d2ca14270b68",
+    "bytes": 12797
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/231_lc_seed2_lca_lowIC_expanded_action_maskableppo_seed2_extension/logs/032_22_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/231_lc_seed2_lca_lowIC_expanded_action_maskableppo_seed2_extension/logs/032_22_training_year_reset_counts.csv",
+    "sha256": "23c2e359ae9f210e80380399932541e1a07ac8e37077b7d5dee2cba8249e251f",
+    "bytes": 151
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/231_lc_seed2_lca_lowIC_expanded_action_maskableppo_seed2_extension/logs/042_10_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/231_lc_seed2_lca_lowIC_expanded_action_maskableppo_seed2_extension/logs/042_10_training_year_reset_counts.csv",
+    "sha256": "23c2e359ae9f210e80380399932541e1a07ac8e37077b7d5dee2cba8249e251f",
+    "bytes": 151
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/231_lc_seed3_lca_lowIC_expanded_action_maskableppo_seed3_extension/logs/032_22_LCA_training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/231_lc_seed3_lca_lowIC_expanded_action_maskableppo_seed3_extension/logs/032_22_LCA_training_year_switch_log.csv",
+    "sha256": "bba994cf77f9b6efed2692b9b85795ce37dba8ce8c8eab9fc543e4d27d68fb67",
+    "bytes": 12810
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/231_lc_seed3_lca_lowIC_expanded_action_maskableppo_seed3_extension/logs/032_22_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/231_lc_seed3_lca_lowIC_expanded_action_maskableppo_seed3_extension/logs/032_22_training_year_reset_counts.csv",
+    "sha256": "d54b87d713a24a26bede9b083bd2c3288f203e8430d079e596f210606c3cf4da",
+    "bytes": 151
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/231_lc_seed3_lca_lowIC_expanded_action_maskableppo_seed3_extension/logs/042_10_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/231_lc_seed3_lca_lowIC_expanded_action_maskableppo_seed3_extension/logs/042_10_training_year_reset_counts.csv",
+    "sha256": "d54b87d713a24a26bede9b083bd2c3288f203e8430d079e596f210606c3cf4da",
+    "bytes": 151
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/231_lc_seed4_lca_lowIC_expanded_action_maskableppo_seed4_extension/logs/032_22_LCA_training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/231_lc_seed4_lca_lowIC_expanded_action_maskableppo_seed4_extension/logs/032_22_LCA_training_year_switch_log.csv",
+    "sha256": "50efe8ed086eaa5cc153c2ce4c074013a5c4b5c77b8f5b74ca5bc2a4edf55917",
+    "bytes": 12849
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/231_lc_seed4_lca_lowIC_expanded_action_maskableppo_seed4_extension/logs/032_22_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/231_lc_seed4_lca_lowIC_expanded_action_maskableppo_seed4_extension/logs/032_22_training_year_reset_counts.csv",
+    "sha256": "540ed6daa0deecc4107754ca4969deb75301a51809f913ae510304d8e0a58d5a",
+    "bytes": 150
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/231_lc_seed4_lca_lowIC_expanded_action_maskableppo_seed4_extension/logs/042_10_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/231_lc_seed4_lca_lowIC_expanded_action_maskableppo_seed4_extension/logs/042_10_training_year_reset_counts.csv",
+    "sha256": "540ed6daa0deecc4107754ca4969deb75301a51809f913ae510304d8e0a58d5a",
+    "bytes": 150
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/231_lc_seed5_lca_lowIC_expanded_action_maskableppo_seed5_extension/logs/032_22_LCA_training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/231_lc_seed5_lca_lowIC_expanded_action_maskableppo_seed5_extension/logs/032_22_LCA_training_year_switch_log.csv",
+    "sha256": "a19640f0fd8b1a0311e3504033d32f98c69db909a6436ea954df514b2dcefcdc",
+    "bytes": 12810
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/231_lc_seed5_lca_lowIC_expanded_action_maskableppo_seed5_extension/logs/032_22_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/231_lc_seed5_lca_lowIC_expanded_action_maskableppo_seed5_extension/logs/032_22_training_year_reset_counts.csv",
+    "sha256": "35e6ba024847bdfd0c8878952649609cbec5b539fa4d02cb58a6e62f13dc54af",
+    "bytes": 151
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/231_lc_seed5_lca_lowIC_expanded_action_maskableppo_seed5_extension/logs/042_10_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/231_lc_seed5_lca_lowIC_expanded_action_maskableppo_seed5_extension/logs/042_10_training_year_reset_counts.csv",
+    "sha256": "35e6ba024847bdfd0c8878952649609cbec5b539fa4d02cb58a6e62f13dc54af",
+    "bytes": 151
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/231_lc_seed6_lca_lowIC_expanded_action_maskableppo_seed6_extension/logs/032_22_LCA_training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/231_lc_seed6_lca_lowIC_expanded_action_maskableppo_seed6_extension/logs/032_22_LCA_training_year_switch_log.csv",
+    "sha256": "1ed1b1c089730bf6886e5ab19f38cee8893cd00dbb4d305ed9b5745f790e1119",
+    "bytes": 12784
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/231_lc_seed6_lca_lowIC_expanded_action_maskableppo_seed6_extension/logs/032_22_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/231_lc_seed6_lca_lowIC_expanded_action_maskableppo_seed6_extension/logs/032_22_training_year_reset_counts.csv",
+    "sha256": "b7045913e0f598d5a3da7f1b35a9620c299286fa01b24f8c4e799d4ba33fcb00",
+    "bytes": 152
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/231_lc_seed6_lca_lowIC_expanded_action_maskableppo_seed6_extension/logs/042_10_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/231_lc_seed6_lca_lowIC_expanded_action_maskableppo_seed6_extension/logs/042_10_training_year_reset_counts.csv",
+    "sha256": "b7045913e0f598d5a3da7f1b35a9620c299286fa01b24f8c4e799d4ba33fcb00",
+    "bytes": 152
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/231_lc_seed7_lca_lowIC_expanded_action_maskableppo_seed7_extension/logs/032_22_LCA_training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/231_lc_seed7_lca_lowIC_expanded_action_maskableppo_seed7_extension/logs/032_22_LCA_training_year_switch_log.csv",
+    "sha256": "425e0700bc2a8fab27bc29a1a2b47f111f64972d96ceb6a43d948f781b294fe3",
+    "bytes": 12784
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/231_lc_seed7_lca_lowIC_expanded_action_maskableppo_seed7_extension/logs/032_22_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/231_lc_seed7_lca_lowIC_expanded_action_maskableppo_seed7_extension/logs/032_22_training_year_reset_counts.csv",
+    "sha256": "1bbb2f8615de0b555d825126c09ce0a86fabfd409f28dce0e38a13421e779abb",
+    "bytes": 151
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/231_lc_seed7_lca_lowIC_expanded_action_maskableppo_seed7_extension/logs/042_10_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/231_lc_seed7_lca_lowIC_expanded_action_maskableppo_seed7_extension/logs/042_10_training_year_reset_counts.csv",
+    "sha256": "1bbb2f8615de0b555d825126c09ce0a86fabfd409f28dce0e38a13421e779abb",
+    "bytes": 151
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/059LCs0_frozen_weather_augmented_100k/logs/032_22_LCA_training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/059LCs0_frozen_weather_augmented_100k/logs/032_22_LCA_training_year_switch_log.csv",
+    "sha256": "fe9d5248e0651163f716f16b880894bfb7d1710434201aaf42e18719652b825a",
+    "bytes": 13348
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/059LCs0_frozen_weather_augmented_100k/logs/032_22_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/059LCs0_frozen_weather_augmented_100k/logs/032_22_training_year_reset_counts.csv",
+    "sha256": "4c4dd91c5f30037f55e6642b6430fcecffe9d9c556eaf767767ed15251584172",
+    "bytes": 152
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/059LCs0_frozen_weather_augmented_100k/logs/042_10_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/059LCs0_frozen_weather_augmented_100k/logs/042_10_training_year_reset_counts.csv",
+    "sha256": "4c4dd91c5f30037f55e6642b6430fcecffe9d9c556eaf767767ed15251584172",
+    "bytes": 152
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/059LCs1_frozen_weather_augmented_100k/logs/032_22_LCA_training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/059LCs1_frozen_weather_augmented_100k/logs/032_22_LCA_training_year_switch_log.csv",
+    "sha256": "697d976320dd7c75a9669507b85c8a7d3fc693ea13f6c54ff5c89fa482871558",
+    "bytes": 13348
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/059LCs1_frozen_weather_augmented_100k/logs/032_22_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/059LCs1_frozen_weather_augmented_100k/logs/032_22_training_year_reset_counts.csv",
+    "sha256": "439c136b29afad0f869d830c2af5fd7bf2470f7cb7184cc0ffcb21a16a3ba4bf",
+    "bytes": 152
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/059LCs1_frozen_weather_augmented_100k/logs/042_10_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/059LCs1_frozen_weather_augmented_100k/logs/042_10_training_year_reset_counts.csv",
+    "sha256": "439c136b29afad0f869d830c2af5fd7bf2470f7cb7184cc0ffcb21a16a3ba4bf",
+    "bytes": 152
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/059LCs2_frozen_weather_augmented_100k/logs/032_22_LCA_training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/059LCs2_frozen_weather_augmented_100k/logs/032_22_LCA_training_year_switch_log.csv",
+    "sha256": "321c2fc7feb7e4e5fe541e550cb83b8a71d91df607d8a319e2b7232dcbb1e93d",
+    "bytes": 13348
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/059LCs2_frozen_weather_augmented_100k/logs/032_22_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/059LCs2_frozen_weather_augmented_100k/logs/032_22_training_year_reset_counts.csv",
+    "sha256": "87162a07b8f14e41567d6508ffd3a22a7eaf55529c46c74404ed743dae7cbd96",
+    "bytes": 152
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/059LCs2_frozen_weather_augmented_100k/logs/042_10_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/059LCs2_frozen_weather_augmented_100k/logs/042_10_training_year_reset_counts.csv",
+    "sha256": "87162a07b8f14e41567d6508ffd3a22a7eaf55529c46c74404ed743dae7cbd96",
+    "bytes": 152
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/059LCs3_frozen_weather_augmented_100k/logs/032_22_LCA_training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/059LCs3_frozen_weather_augmented_100k/logs/032_22_LCA_training_year_switch_log.csv",
+    "sha256": "023f8035249abf0f40daa563c9c49bccdc40d9f9d4a58ac8816c1643557960bc",
+    "bytes": 13348
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/059LCs3_frozen_weather_augmented_100k/logs/032_22_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/059LCs3_frozen_weather_augmented_100k/logs/032_22_training_year_reset_counts.csv",
+    "sha256": "a57700d8ac2836d0e5e6363bf87509ad29f269220e00a4c6e9521f405320c016",
+    "bytes": 151
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/059LCs3_frozen_weather_augmented_100k/logs/042_10_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/059LCs3_frozen_weather_augmented_100k/logs/042_10_training_year_reset_counts.csv",
+    "sha256": "a57700d8ac2836d0e5e6363bf87509ad29f269220e00a4c6e9521f405320c016",
+    "bytes": 151
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/059LCs4_frozen_weather_augmented_100k/logs/032_22_LCA_training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/059LCs4_frozen_weather_augmented_100k/logs/032_22_LCA_training_year_switch_log.csv",
+    "sha256": "fba829686242ec7aad07c1a95bbf01f171942566adbbfd3fcf757fdec70ab4a9",
+    "bytes": 13348
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/059LCs4_frozen_weather_augmented_100k/logs/032_22_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/059LCs4_frozen_weather_augmented_100k/logs/032_22_training_year_reset_counts.csv",
+    "sha256": "bd945f94dfb17476f0a2836d6d365321f1300882d68445a484b37a4c3c3ea994",
+    "bytes": 151
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/059LCs4_frozen_weather_augmented_100k/logs/042_10_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/059LCs4_frozen_weather_augmented_100k/logs/042_10_training_year_reset_counts.csv",
+    "sha256": "bd945f94dfb17476f0a2836d6d365321f1300882d68445a484b37a4c3c3ea994",
+    "bytes": 151
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/059LCs5_frozen_weather_augmented_100k/logs/032_22_LCA_training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/059LCs5_frozen_weather_augmented_100k/logs/032_22_LCA_training_year_switch_log.csv",
+    "sha256": "a0642e434668eaa0d6af70bbf811f8d895c600354c504316e62090b08b18d26c",
+    "bytes": 13348
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/059LCs5_frozen_weather_augmented_100k/logs/032_22_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/059LCs5_frozen_weather_augmented_100k/logs/032_22_training_year_reset_counts.csv",
+    "sha256": "c5425047bcad06ca524570ce1eb32d5e909c10d4a7e2309bd329aee07effa19d",
+    "bytes": 152
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/059LCs5_frozen_weather_augmented_100k/logs/042_10_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/059LCs5_frozen_weather_augmented_100k/logs/042_10_training_year_reset_counts.csv",
+    "sha256": "c5425047bcad06ca524570ce1eb32d5e909c10d4a7e2309bd329aee07effa19d",
+    "bytes": 152
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/059LCs6_frozen_weather_augmented_100k/logs/032_22_LCA_training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/059LCs6_frozen_weather_augmented_100k/logs/032_22_LCA_training_year_switch_log.csv",
+    "sha256": "157a3152bac6ff02ce38af6562ffbe2b5414eb9658f297e0c7717b889a6bb609",
+    "bytes": 13348
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/059LCs6_frozen_weather_augmented_100k/logs/032_22_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/059LCs6_frozen_weather_augmented_100k/logs/032_22_training_year_reset_counts.csv",
+    "sha256": "16f1a54e814138fb7720d3d17c6171d0709c99c34db5fc489ff2ccdbaffc1cae",
+    "bytes": 152
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/059LCs6_frozen_weather_augmented_100k/logs/042_10_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/059LCs6_frozen_weather_augmented_100k/logs/042_10_training_year_reset_counts.csv",
+    "sha256": "16f1a54e814138fb7720d3d17c6171d0709c99c34db5fc489ff2ccdbaffc1cae",
+    "bytes": 152
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/059LCs7_frozen_weather_augmented_100k/logs/032_22_LCA_training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/059LCs7_frozen_weather_augmented_100k/logs/032_22_LCA_training_year_switch_log.csv",
+    "sha256": "6e0625c7cd6571fc88c6362ab7bf41aacbafd156c21caed038468a7281c8d19e",
+    "bytes": 13348
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/059LCs7_frozen_weather_augmented_100k/logs/032_22_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/059LCs7_frozen_weather_augmented_100k/logs/032_22_training_year_reset_counts.csv",
+    "sha256": "0f0da914d86c41c459598478535a3946a0760afa9fe869538e7e5a3ea893119e",
+    "bytes": 152
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/059LCs7_frozen_weather_augmented_100k/logs/042_10_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/059LCs7_frozen_weather_augmented_100k/logs/042_10_training_year_reset_counts.csv",
+    "sha256": "0f0da914d86c41c459598478535a3946a0760afa9fe869538e7e5a3ea893119e",
+    "bytes": 152
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/054_00_hla_lowIC_expanded_action_maskableppo/logs/032_22_HLA_training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/054_00_hla_lowIC_expanded_action_maskableppo/logs/032_22_HLA_training_year_switch_log.csv",
+    "sha256": "90425985b40c5cee79ee5ea40ea8946b9df84e5fd10c307dba9c2aa73edf82d3",
+    "bytes": 8871
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/054_00_hla_lowIC_expanded_action_maskableppo/logs/032_22_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/054_00_hla_lowIC_expanded_action_maskableppo/logs/032_22_training_year_reset_counts.csv",
+    "sha256": "c6038ed31a118bff4b327bd800f846ff6636e437cd3ca5d4e20b595103188018",
+    "bytes": 155
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/054_00_hla_lowIC_expanded_action_maskableppo/logs/042_10_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/054_00_hla_lowIC_expanded_action_maskableppo/logs/042_10_training_year_reset_counts.csv",
+    "sha256": "c6038ed31a118bff4b327bd800f846ff6636e437cd3ca5d4e20b595103188018",
+    "bytes": 155
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/8hl01_hl_seed1_8seed/logs/032_22_HLA_training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/8hl01_hl_seed1_8seed/logs/032_22_HLA_training_year_switch_log.csv",
+    "sha256": "81454b299598e8432316b506f15e614556aad870d1c93809acc6aa277463902f",
+    "bytes": 8962
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/8hl01_hl_seed1_8seed/logs/032_22_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/8hl01_hl_seed1_8seed/logs/032_22_training_year_reset_counts.csv",
+    "sha256": "18cf227d06bc34e3ade478ca6c6ceb28a9e522923b87289aa9d9a5c8ef8a6b20",
+    "bytes": 155
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/8hl01_hl_seed1_8seed/logs/042_10_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/8hl01_hl_seed1_8seed/logs/042_10_training_year_reset_counts.csv",
+    "sha256": "18cf227d06bc34e3ade478ca6c6ceb28a9e522923b87289aa9d9a5c8ef8a6b20",
+    "bytes": 155
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/8hl02_hl_seed2_8seed/logs/032_22_HLA_training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/8hl02_hl_seed2_8seed/logs/032_22_HLA_training_year_switch_log.csv",
+    "sha256": "b1bbdde32a07acf74a602717071136e0b64bbe5fd8c23a0901b1f62a2f87fad6",
+    "bytes": 8884
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/8hl02_hl_seed2_8seed/logs/032_22_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/8hl02_hl_seed2_8seed/logs/032_22_training_year_reset_counts.csv",
+    "sha256": "1547c8bf0f9991b22ac65f9cff06a941ee1a2ed45b97bb246c11cad398f2ccda",
+    "bytes": 155
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/8hl02_hl_seed2_8seed/logs/042_10_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/8hl02_hl_seed2_8seed/logs/042_10_training_year_reset_counts.csv",
+    "sha256": "1547c8bf0f9991b22ac65f9cff06a941ee1a2ed45b97bb246c11cad398f2ccda",
+    "bytes": 155
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/8hl03_hl_seed3_8seed/logs/032_22_HLA_training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/8hl03_hl_seed3_8seed/logs/032_22_HLA_training_year_switch_log.csv",
+    "sha256": "d8d0706fb9109b2a12aae44837112a4f6563f819228e427bc5ab1d8b5a50bf89",
+    "bytes": 8845
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/8hl03_hl_seed3_8seed/logs/032_22_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/8hl03_hl_seed3_8seed/logs/032_22_training_year_reset_counts.csv",
+    "sha256": "6144ebf72bff52a816e7c38ceec3c7f74248b2a7fec56370b0e161fb13b22280",
+    "bytes": 155
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/8hl03_hl_seed3_8seed/logs/042_10_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/8hl03_hl_seed3_8seed/logs/042_10_training_year_reset_counts.csv",
+    "sha256": "6144ebf72bff52a816e7c38ceec3c7f74248b2a7fec56370b0e161fb13b22280",
+    "bytes": 155
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/8hl04_hl_seed4_8seed/logs/032_22_HLA_training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/8hl04_hl_seed4_8seed/logs/032_22_HLA_training_year_switch_log.csv",
+    "sha256": "e85678071f348b54c38b0904efbdc724ed37ed02efbcfbbbea05717b387f0178",
+    "bytes": 8897
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/8hl04_hl_seed4_8seed/logs/032_22_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/8hl04_hl_seed4_8seed/logs/032_22_training_year_reset_counts.csv",
+    "sha256": "bae4702d19c1f9ef102a1be662545462cbaa9e5ea27c097ba58ac9423a8ca077",
+    "bytes": 155
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/8hl04_hl_seed4_8seed/logs/042_10_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/8hl04_hl_seed4_8seed/logs/042_10_training_year_reset_counts.csv",
+    "sha256": "bae4702d19c1f9ef102a1be662545462cbaa9e5ea27c097ba58ac9423a8ca077",
+    "bytes": 155
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/8hl05_hl_seed5_8seed/logs/032_22_HLA_training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/8hl05_hl_seed5_8seed/logs/032_22_HLA_training_year_switch_log.csv",
+    "sha256": "918b9f7ae918fb564b9c8957ff5bb939553ede4d77a435d4115d50ecd5560c87",
+    "bytes": 8845
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/8hl05_hl_seed5_8seed/logs/032_22_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/8hl05_hl_seed5_8seed/logs/032_22_training_year_reset_counts.csv",
+    "sha256": "8fba6349b265723311fd053982eb24742fea7fda537ae75c5948a80b4524e13d",
+    "bytes": 155
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/8hl05_hl_seed5_8seed/logs/042_10_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/8hl05_hl_seed5_8seed/logs/042_10_training_year_reset_counts.csv",
+    "sha256": "8fba6349b265723311fd053982eb24742fea7fda537ae75c5948a80b4524e13d",
+    "bytes": 155
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/8hl06_hl_seed6_8seed/logs/032_22_HLA_training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/8hl06_hl_seed6_8seed/logs/032_22_HLA_training_year_switch_log.csv",
+    "sha256": "391659c96d6fcd3376d73056707d63f3be36af5df15864a1964b21a1e8e1adcb",
+    "bytes": 8923
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/8hl06_hl_seed6_8seed/logs/032_22_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/8hl06_hl_seed6_8seed/logs/032_22_training_year_reset_counts.csv",
+    "sha256": "1b3fb58d85bb8152cb93196c00feaaabe77020f4f4c5a61535c940d4081616fc",
+    "bytes": 155
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/8hl06_hl_seed6_8seed/logs/042_10_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/8hl06_hl_seed6_8seed/logs/042_10_training_year_reset_counts.csv",
+    "sha256": "1b3fb58d85bb8152cb93196c00feaaabe77020f4f4c5a61535c940d4081616fc",
+    "bytes": 155
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/8hl07_hl_seed7_8seed/logs/032_22_HLA_training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/8hl07_hl_seed7_8seed/logs/032_22_HLA_training_year_switch_log.csv",
+    "sha256": "df7e21e0422a646af4ad16940f42d608d87cef7a067a7a3a9a990e3a654b1c17",
+    "bytes": 8884
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/8hl07_hl_seed7_8seed/logs/032_22_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/8hl07_hl_seed7_8seed/logs/032_22_training_year_reset_counts.csv",
+    "sha256": "605594f5a6aa4e72764382598530a2e84db451c1e494aeb7e901a6143e5194e5",
+    "bytes": 155
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/8hl07_hl_seed7_8seed/logs/042_10_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/8hl07_hl_seed7_8seed/logs/042_10_training_year_reset_counts.csv",
+    "sha256": "605594f5a6aa4e72764382598530a2e84db451c1e494aeb7e901a6143e5194e5",
+    "bytes": 155
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/hla_wgen_8seed_053/seed_00/attempt_01/episode_manifest.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/hla_wgen_8seed_053/seed_00/attempt_01/episode_manifest.csv",
+    "sha256": "79c21a8c54d827e9a0bc852b2bc73b34e22b7d089b6e9870bb6bc797c5bcb4b3",
+    "bytes": 203739
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/hla_wgen_8seed_053/seed_00/attempt_01/training_episode_summary.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/hla_wgen_8seed_053/seed_00/attempt_01/training_episode_summary.csv",
+    "sha256": "2a3c948864615ca880f8022e3fd51a93c6b56e791e4844d25a4ee372457d965c",
+    "bytes": 198972
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/hla_wgen_8seed_053/seed_01/attempt_01/episode_manifest.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/hla_wgen_8seed_053/seed_01/attempt_01/episode_manifest.csv",
+    "sha256": "43a2d362b6444321020aa19f732ab1a40c22a0e46b446fc863ddaedc7c6394e6",
+    "bytes": 203759
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/hla_wgen_8seed_053/seed_01/attempt_01/training_episode_summary.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/hla_wgen_8seed_053/seed_01/attempt_01/training_episode_summary.csv",
+    "sha256": "0e29abb9de412d3b8c6a95e325bf9119bb34ae881b7dbb68bfa6c2a533f7fd5b",
+    "bytes": 198895
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/hla_wgen_8seed_053/seed_02/attempt_01/episode_manifest.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/hla_wgen_8seed_053/seed_02/attempt_01/episode_manifest.csv",
+    "sha256": "3c334596fdde08c67a7c45cda9e041bdcda26c87fb6248a27e2a44d3227e9879",
+    "bytes": 203742
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/hla_wgen_8seed_053/seed_02/attempt_01/training_episode_summary.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/hla_wgen_8seed_053/seed_02/attempt_01/training_episode_summary.csv",
+    "sha256": "f3d5bd624acae97a7211c84c7a0a16547d4be728c83b3a378e1a6343271fa9fd",
+    "bytes": 198996
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/hla_wgen_8seed_053/seed_03/attempt_01/episode_manifest.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/hla_wgen_8seed_053/seed_03/attempt_01/episode_manifest.csv",
+    "sha256": "ad07768951213694cf46f5a75bc633cf48795aa3552b12be034dff048f0711ee",
+    "bytes": 203754
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/hla_wgen_8seed_053/seed_03/attempt_01/training_episode_summary.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/hla_wgen_8seed_053/seed_03/attempt_01/training_episode_summary.csv",
+    "sha256": "5998d4fc3900c3195ea45ec29d24ecd5196b09b10de72fb80673775e79b743e7",
+    "bytes": 198896
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/hla_wgen_8seed_053/seed_04/attempt_01/episode_manifest.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/hla_wgen_8seed_053/seed_04/attempt_01/episode_manifest.csv",
+    "sha256": "9ea21430d444d786b6fa0947f40c01a274734ddec8f39e030c8aac2cd24ae01d",
+    "bytes": 203748
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/hla_wgen_8seed_053/seed_04/attempt_01/training_episode_summary.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/hla_wgen_8seed_053/seed_04/attempt_01/training_episode_summary.csv",
+    "sha256": "2b4cc9de487b14fd79e4f4937d72b5757602544f5ad3cea40666a430a8a20e01",
+    "bytes": 198868
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/hla_wgen_8seed_053/seed_05/attempt_01/episode_manifest.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/hla_wgen_8seed_053/seed_05/attempt_01/episode_manifest.csv",
+    "sha256": "790a38d5cd2aeb222664cc4d2ce0600e1e0b196c6c520ce85c052b08e74ecf18",
+    "bytes": 203745
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/hla_wgen_8seed_053/seed_05/attempt_01/training_episode_summary.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/hla_wgen_8seed_053/seed_05/attempt_01/training_episode_summary.csv",
+    "sha256": "5b1d6858977ff62e7a578a9b2c9c946463f68cfbf53816a3ce2ac103fbc09fd2",
+    "bytes": 198890
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/hla_wgen_8seed_053/seed_06/attempt_01/episode_manifest.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/hla_wgen_8seed_053/seed_06/attempt_01/episode_manifest.csv",
+    "sha256": "28a93d11250b07bef018c54b07d80e73bb0d8bd9e04091ad6ad96ffab319d844",
+    "bytes": 203742
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/hla_wgen_8seed_053/seed_06/attempt_01/training_episode_summary.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/hla_wgen_8seed_053/seed_06/attempt_01/training_episode_summary.csv",
+    "sha256": "3e4b196759638285d01bf0293eeea1ce6c6922ee9d0b99f38d02f8f0b4880ce8",
+    "bytes": 198925
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/hla_wgen_8seed_053/seed_07/attempt_01/episode_manifest.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/hla_wgen_8seed_053/seed_07/attempt_01/episode_manifest.csv",
+    "sha256": "80b7b27ec6a1ecd963aec13b0b5987d550adf98ccc23fbb6485fc59a016a41d4",
+    "bytes": 203762
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/hla_wgen_8seed_053/seed_07/attempt_01/training_episode_summary.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/hla_wgen_8seed_053/seed_07/attempt_01/training_episode_summary.csv",
+    "sha256": "defd1692cf6e0d77baac488eda8ba1756c74275946806efc949827fc1a773076",
+    "bytes": 198715
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/051_00_fqa_originIC_expanded_action_maskableppo/logs/032_22_FQA_training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/051_00_fqa_originIC_expanded_action_maskableppo/logs/032_22_FQA_training_year_switch_log.csv",
+    "sha256": "9dbcb5ca46cf0c10765f81df20344af22cff24d00f7bff094a3eba91f15223a8",
+    "bytes": 12082
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/051_00_fqa_originIC_expanded_action_maskableppo/logs/032_22_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/051_00_fqa_originIC_expanded_action_maskableppo/logs/032_22_training_year_reset_counts.csv",
+    "sha256": "409982474a0f8b3c0617e70a1f5b0733e8e2c834925a528d07ee119ffc3d5182",
+    "bytes": 148
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/051_00_fqa_originIC_expanded_action_maskableppo/logs/042_10_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/051_00_fqa_originIC_expanded_action_maskableppo/logs/042_10_training_year_reset_counts.csv",
+    "sha256": "409982474a0f8b3c0617e70a1f5b0733e8e2c834925a528d07ee119ffc3d5182",
+    "bytes": 148
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/8fq01_fq_seed1_8seed/logs/032_22_FQA_training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/8fq01_fq_seed1_8seed/logs/032_22_FQA_training_year_switch_log.csv",
+    "sha256": "a9e3621d2b5084b108984d12513447b6545a79e7e4012037b05451a7255c03c5",
+    "bytes": 12069
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/8fq01_fq_seed1_8seed/logs/032_22_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/8fq01_fq_seed1_8seed/logs/032_22_training_year_reset_counts.csv",
+    "sha256": "ab4c341d89e2a5ed92fb7042f0e247f0401fc753de21c163dffc4bf3aba3b556",
+    "bytes": 148
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/8fq01_fq_seed1_8seed/logs/042_10_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/8fq01_fq_seed1_8seed/logs/042_10_training_year_reset_counts.csv",
+    "sha256": "ab4c341d89e2a5ed92fb7042f0e247f0401fc753de21c163dffc4bf3aba3b556",
+    "bytes": 148
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/8fq02_fq_seed2_8seed/logs/032_22_FQA_training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/8fq02_fq_seed2_8seed/logs/032_22_FQA_training_year_switch_log.csv",
+    "sha256": "d8e06c6f5bc847222302ebc4b5e76fa70d45c7ecad94a893ec866cc43d301bad",
+    "bytes": 12069
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/8fq02_fq_seed2_8seed/logs/032_22_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/8fq02_fq_seed2_8seed/logs/032_22_training_year_reset_counts.csv",
+    "sha256": "08db8b0c8b514c14b56b548969d7e7ccff9c2e54137952fab5864855ae20b5bf",
+    "bytes": 150
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/8fq02_fq_seed2_8seed/logs/042_10_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/8fq02_fq_seed2_8seed/logs/042_10_training_year_reset_counts.csv",
+    "sha256": "08db8b0c8b514c14b56b548969d7e7ccff9c2e54137952fab5864855ae20b5bf",
+    "bytes": 150
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/8fq03_fq_seed3_8seed/logs/032_22_FQA_training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/8fq03_fq_seed3_8seed/logs/032_22_FQA_training_year_switch_log.csv",
+    "sha256": "fa401e87751c03556a49c1268bff82e503629ff7ce8201204e051b404916d556",
+    "bytes": 12069
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/8fq03_fq_seed3_8seed/logs/032_22_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/8fq03_fq_seed3_8seed/logs/032_22_training_year_reset_counts.csv",
+    "sha256": "10d81cee6cab671bf87d38db8ee11a8e69299034b0126a5d4108e3d7357e6ee8",
+    "bytes": 150
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/8fq03_fq_seed3_8seed/logs/042_10_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/8fq03_fq_seed3_8seed/logs/042_10_training_year_reset_counts.csv",
+    "sha256": "10d81cee6cab671bf87d38db8ee11a8e69299034b0126a5d4108e3d7357e6ee8",
+    "bytes": 150
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/8fq04_fq_seed4_8seed/logs/032_22_FQA_training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/8fq04_fq_seed4_8seed/logs/032_22_FQA_training_year_switch_log.csv",
+    "sha256": "da3a11a153d2321b94686999b65602fc4affde015ca57dd2ffb7e9f215e5e3f9",
+    "bytes": 12069
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/8fq04_fq_seed4_8seed/logs/032_22_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/8fq04_fq_seed4_8seed/logs/032_22_training_year_reset_counts.csv",
+    "sha256": "854870f7999b7c8efdf2421a62be4803be3f416d38e2f0b4a518e9539a7fca31",
+    "bytes": 147
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/8fq04_fq_seed4_8seed/logs/042_10_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/8fq04_fq_seed4_8seed/logs/042_10_training_year_reset_counts.csv",
+    "sha256": "854870f7999b7c8efdf2421a62be4803be3f416d38e2f0b4a518e9539a7fca31",
+    "bytes": 147
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/8fq05_fq_seed5_8seed/logs/032_22_FQA_training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/8fq05_fq_seed5_8seed/logs/032_22_FQA_training_year_switch_log.csv",
+    "sha256": "414c7bba9f0096e2efedb02d06793e58146933c93b5693b96bb647a639faf648",
+    "bytes": 12069
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/8fq05_fq_seed5_8seed/logs/032_22_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/8fq05_fq_seed5_8seed/logs/032_22_training_year_reset_counts.csv",
+    "sha256": "6e61be72a381073cfcc9961b86b73959d0f9f7169229d9bbc7553460c41f6bf0",
+    "bytes": 150
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/8fq05_fq_seed5_8seed/logs/042_10_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/8fq05_fq_seed5_8seed/logs/042_10_training_year_reset_counts.csv",
+    "sha256": "6e61be72a381073cfcc9961b86b73959d0f9f7169229d9bbc7553460c41f6bf0",
+    "bytes": 150
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/8fq06_fq_seed6_8seed/logs/032_22_FQA_training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/8fq06_fq_seed6_8seed/logs/032_22_FQA_training_year_switch_log.csv",
+    "sha256": "9c963e32d7ba4347c39a8983a6c8f27204085095d95f9237730ed70419c50f5f",
+    "bytes": 12069
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/8fq06_fq_seed6_8seed/logs/032_22_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/8fq06_fq_seed6_8seed/logs/032_22_training_year_reset_counts.csv",
+    "sha256": "9139fd5e967ace72ead0b4c41950027b2b98abc885243f800c9e1aa1e0638cca",
+    "bytes": 149
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/8fq06_fq_seed6_8seed/logs/042_10_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/8fq06_fq_seed6_8seed/logs/042_10_training_year_reset_counts.csv",
+    "sha256": "9139fd5e967ace72ead0b4c41950027b2b98abc885243f800c9e1aa1e0638cca",
+    "bytes": 149
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/20261012fq7_fq_seed7_historical_completion/logs/032_22_FQA_training_year_switch_log.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/20261012fq7_fq_seed7_historical_completion/logs/032_22_FQA_training_year_switch_log.csv",
+    "sha256": "f7af916f51444f020e807fc57c19a1329abbb01154bfb0e4f6d741eb8afd7af8",
+    "bytes": 12069
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/20261012fq7_fq_seed7_historical_completion/logs/032_22_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/20261012fq7_fq_seed7_historical_completion/logs/032_22_training_year_reset_counts.csv",
+    "sha256": "7571c90bc385e51cd815058c010ecf52e3f1d949a7af0b5896b1dbd7c756020d",
+    "bytes": 149
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "benchmark_results/20261012fq7_fq_seed7_historical_completion/logs/042_10_training_year_reset_counts.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/benchmark_results/20261012fq7_fq_seed7_historical_completion/logs/042_10_training_year_reset_counts.csv",
+    "sha256": "7571c90bc385e51cd815058c010ecf52e3f1d949a7af0b5896b1dbd7c756020d",
+    "bytes": 149
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/fqa_multiyear_wgen_ppo_051/attempt_01/episode_manifest.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/fqa_multiyear_wgen_ppo_051/attempt_01/episode_manifest.csv",
+    "sha256": "7425f8101c37bf980b9c2ee050d98f3ecf40fc93c41c7fe540896fc2c35dd694",
+    "bytes": 272175
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/fqa_multiyear_wgen_ppo_051/attempt_01/training_episode_summary.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/fqa_multiyear_wgen_ppo_051/attempt_01/training_episode_summary.csv",
+    "sha256": "c05c16d76f676d6c99f278def061a015562fb378f498773f98ea04c58dd54637",
+    "bytes": 265319
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/fqa_multiyear_wgen_ppo_052_8seed/seed_01/attempt_01/episode_manifest.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/fqa_multiyear_wgen_ppo_052_8seed/seed_01/attempt_01/episode_manifest.csv",
+    "sha256": "6525b44cd7269cc66bd6d92bf28d9a59c323f28472c97f370a4aeac4300d953d",
+    "bytes": 298956
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/fqa_multiyear_wgen_ppo_052_8seed/seed_01/attempt_01/training_episode_summary.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/fqa_multiyear_wgen_ppo_052_8seed/seed_01/attempt_01/training_episode_summary.csv",
+    "sha256": "f4f6fe4a597dc1cfe03fac5175d14a6fb42928b3966b1f6a2e3657a4f74f1046",
+    "bytes": 265432
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/fqa_multiyear_wgen_ppo_052_8seed/seed_02/attempt_01/episode_manifest.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/fqa_multiyear_wgen_ppo_052_8seed/seed_02/attempt_01/episode_manifest.csv",
+    "sha256": "8b83f0b4e5d99b53b05638051d537b52c306ff0df1d799448652ff1fda1128b5",
+    "bytes": 298968
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/fqa_multiyear_wgen_ppo_052_8seed/seed_02/attempt_01/training_episode_summary.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/fqa_multiyear_wgen_ppo_052_8seed/seed_02/attempt_01/training_episode_summary.csv",
+    "sha256": "9c8dc5ce658121721c3cd2f83bdf2b565d60a492c665b0ad41334ae4493f7ec2",
+    "bytes": 264900
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/fqa_multiyear_wgen_ppo_052_8seed/seed_03/attempt_01/episode_manifest.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/fqa_multiyear_wgen_ppo_052_8seed/seed_03/attempt_01/episode_manifest.csv",
+    "sha256": "dd85cdc4ed759609726f00576abaee2bdc2cba390db51ede4eab21c6a84ad1f2",
+    "bytes": 298972
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/fqa_multiyear_wgen_ppo_052_8seed/seed_03/attempt_01/training_episode_summary.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/fqa_multiyear_wgen_ppo_052_8seed/seed_03/attempt_01/training_episode_summary.csv",
+    "sha256": "528b029649753abf73e493cf0acf953fb797b7a331efd143518ccfbba459a429",
+    "bytes": 265085
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/fqa_multiyear_wgen_ppo_052_8seed/seed_04/attempt_01/episode_manifest.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/fqa_multiyear_wgen_ppo_052_8seed/seed_04/attempt_01/episode_manifest.csv",
+    "sha256": "0dfa51647127e6c8d18e6eed05bfc79e62ee0cd0c48e4defc7efc5d1e3ca7f8a",
+    "bytes": 298969
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/fqa_multiyear_wgen_ppo_052_8seed/seed_04/attempt_01/training_episode_summary.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/fqa_multiyear_wgen_ppo_052_8seed/seed_04/attempt_01/training_episode_summary.csv",
+    "sha256": "c57fee7dfff5263f74c000334b7704db96f4053fd55f75dc6c95d340b496d3a0",
+    "bytes": 265669
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/fqa_multiyear_wgen_ppo_052_8seed/seed_05/attempt_01/episode_manifest.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/fqa_multiyear_wgen_ppo_052_8seed/seed_05/attempt_01/episode_manifest.csv",
+    "sha256": "2d9333b08b1d965b32153f52981cf42991156604c3e4908f35d22fb32284c27d",
+    "bytes": 298975
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/fqa_multiyear_wgen_ppo_052_8seed/seed_05/attempt_01/training_episode_summary.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/fqa_multiyear_wgen_ppo_052_8seed/seed_05/attempt_01/training_episode_summary.csv",
+    "sha256": "94c0c821c52525b285075edb2d32064ce3c9cbdd0022c330f577078f949efd42",
+    "bytes": 265338
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/fqa_multiyear_wgen_ppo_052_8seed/seed_06/attempt_01/episode_manifest.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/fqa_multiyear_wgen_ppo_052_8seed/seed_06/attempt_01/episode_manifest.csv",
+    "sha256": "be841abe852d38999fce9389f987bd5d213e6a873a1ad9d6f743dffabe6874e8",
+    "bytes": 298965
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/fqa_multiyear_wgen_ppo_052_8seed/seed_06/attempt_01/training_episode_summary.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/fqa_multiyear_wgen_ppo_052_8seed/seed_06/attempt_01/training_episode_summary.csv",
+    "sha256": "6c5adb6882c2360e88350ef73427792b7f66ffc786b86df26ab71bf555c5861b",
+    "bytes": 265752
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/fqa_multiyear_wgen_ppo_052_8seed/seed_07/attempt_01/episode_manifest.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/fqa_multiyear_wgen_ppo_052_8seed/seed_07/attempt_01/episode_manifest.csv",
+    "sha256": "0b017a704b5208581f2eab48b970f7b9ffe1d0d5167f5251df4d8cfa4cfdf162",
+    "bytes": 298949
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/fqa_multiyear_wgen_ppo_052_8seed/seed_07/attempt_01/training_episode_summary.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/fqa_multiyear_wgen_ppo_052_8seed/seed_07/attempt_01/training_episode_summary.csv",
+    "sha256": "c94b7a8d953cc72214ecd81ac004294939f62db4b30c00ef31c22879ef99f53f",
+    "bytes": 265612
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/yc_random_weather_ppo/004_03/training_verified/historical/ppo_seed_0/training_episode_summary.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/yc_random_weather_ppo/004_03/training_verified/historical/ppo_seed_0/training_episode_summary.csv",
+    "sha256": "288115ab324f9becabe0c879f790c3fcddfd19d2f886f733f8400c1995087ef0",
+    "bytes": 135223
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/yc_random_weather_ppo/004_03/training_verified/historical/ppo_seed_1/training_episode_summary.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/yc_random_weather_ppo/004_03/training_verified/historical/ppo_seed_1/training_episode_summary.csv",
+    "sha256": "20283abc1ed8ae52ac098962d0f1c240e88902723213d730c819cdab5a3dc5c1",
+    "bytes": 135021
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/yc_random_weather_ppo/004_03/training_verified/historical/ppo_seed_2/training_episode_summary.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/yc_random_weather_ppo/004_03/training_verified/historical/ppo_seed_2/training_episode_summary.csv",
+    "sha256": "56a4b3a3d0815a2a2f0e952a21b57bae2f07c88ccb1eee1e16ae4f5f98111d08",
+    "bytes": 135285
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/yc_random_weather_ppo/004_05/training/historical/ppo_seed_3/training_episode_summary.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/yc_random_weather_ppo/004_05/training/historical/ppo_seed_3/training_episode_summary.csv",
+    "sha256": "a8e2c0f9724e9c320c0172e34124913fa0348f955b2769da3a867fd7a4d1caf7",
+    "bytes": 135322
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/yc_random_weather_ppo/004_05/training/historical/ppo_seed_4/training_episode_summary.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/yc_random_weather_ppo/004_05/training/historical/ppo_seed_4/training_episode_summary.csv",
+    "sha256": "5e714cb4a0d82040b480293870f97f8a1998a7965c081d400340f9acddb06c3a",
+    "bytes": 135436
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/yc_random_weather_ppo/004_05/training/historical/ppo_seed_5/training_episode_summary.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/yc_random_weather_ppo/004_05/training/historical/ppo_seed_5/training_episode_summary.csv",
+    "sha256": "b48c42597aa34f41b15f82c82e59bbd1c9363168b31650386b4edfd2f310c448",
+    "bytes": 135547
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/yc_random_weather_ppo/004_05/training/historical/ppo_seed_6/training_episode_summary.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/yc_random_weather_ppo/004_05/training/historical/ppo_seed_6/training_episode_summary.csv",
+    "sha256": "73328001b0b3e633d0bd5836fd38992369b5722c8a9c1b2bafe7ce690d6e365e",
+    "bytes": 135326
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/yc_random_weather_ppo/004_05/training/historical/ppo_seed_7/training_episode_summary.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/yc_random_weather_ppo/004_05/training/historical/ppo_seed_7/training_episode_summary.csv",
+    "sha256": "c1ea301e6c8734d980b1a78d46ce7b4a119fbd7eaf73eaf63e03e69e05f7ec25",
+    "bytes": 135331
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/yc_random_weather_ppo/004_03/training_verified/random_weather/ppo_seed_0/training_episode_summary.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/yc_random_weather_ppo/004_03/training_verified/random_weather/ppo_seed_0/training_episode_summary.csv",
+    "sha256": "74cb34587fb8645e3d7f644025c0610da7887ad5388730b60764f735a092cf5e",
+    "bytes": 266440
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/yc_random_weather_ppo/004_03/training_verified/random_weather/ppo_seed_1/training_episode_summary.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/yc_random_weather_ppo/004_03/training_verified/random_weather/ppo_seed_1/training_episode_summary.csv",
+    "sha256": "0640b4c0a076f549861b6ad3e304a2ede859cf7ec35164dfd6743a7ede5d60b7",
+    "bytes": 267109
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/yc_random_weather_ppo/004_03/training_verified/random_weather/ppo_seed_2/training_episode_summary.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/yc_random_weather_ppo/004_03/training_verified/random_weather/ppo_seed_2/training_episode_summary.csv",
+    "sha256": "3f5e5a603cb538bbed77e472760f7c238c8677e6bac847cd58604a0637f97299",
+    "bytes": 267326
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/yc_random_weather_ppo/004_05/training/random_weather/ppo_seed_3/training_episode_summary.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/yc_random_weather_ppo/004_05/training/random_weather/ppo_seed_3/training_episode_summary.csv",
+    "sha256": "f24820c278159f2e11dbeec3d0d8782d8a14ce9b5bb2b0f67a107d3cf86663dd",
+    "bytes": 267153
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/yc_random_weather_ppo/004_05/training/random_weather/ppo_seed_4/training_episode_summary.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/yc_random_weather_ppo/004_05/training/random_weather/ppo_seed_4/training_episode_summary.csv",
+    "sha256": "c9a345f4e5ae900bcd00d471872188d7ff0bb3ea0c38516fffee7a16272a028d",
+    "bytes": 267371
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/yc_random_weather_ppo/004_05/training/random_weather/ppo_seed_5/training_episode_summary.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/yc_random_weather_ppo/004_05/training/random_weather/ppo_seed_5/training_episode_summary.csv",
+    "sha256": "0049b8559ba4b0fc22d05af6950c66cdc60c7da510e57cbd272a0fd5ee0bc683",
+    "bytes": 267413
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/yc_random_weather_ppo/004_05/training/random_weather/ppo_seed_6/training_episode_summary.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/yc_random_weather_ppo/004_05/training/random_weather/ppo_seed_6/training_episode_summary.csv",
+    "sha256": "baecbeff2b3dd0daf06c4221a6f89aef1282ac775887ee287f267492663fbf51",
+    "bytes": 267097
+  },
+  {
+    "kind": "compact_training_log",
+    "source": "results/yc_random_weather_ppo/004_05/training/random_weather/ppo_seed_7/training_episode_summary.csv",
+    "backup": "research_backups/20261028_weather_ppo_131/models_and_logs/logs/results/yc_random_weather_ppo/004_05/training/random_weather/ppo_seed_7/training_episode_summary.csv",
+    "sha256": "0a7f1ddaf4d80af50ac6671f0f23533ae295fedfe695060b823426c85afd391c",
+    "bytes": 267300
+  }
+]

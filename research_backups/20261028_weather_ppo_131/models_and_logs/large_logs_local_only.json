@@ -1,0 +1,202 @@
+[
+  {
+    "source": "results/sy_forecast_seed0_100k_091_20261022/training_steps.csv",
+    "bytes": 56174981,
+    "reason": "individual training log >2MiB; retained local"
+  },
+  {
+    "source": "results/sy_forecast_seeds1_7_095_20261022/seed1/training_steps.csv",
+    "bytes": 56220784,
+    "reason": "individual training log >2MiB; retained local"
+  },
+  {
+    "source": "results/sy_forecast_seeds1_7_095_20261022/seed2/training_steps.csv",
+    "bytes": 56079039,
+    "reason": "individual training log >2MiB; retained local"
+  },
+  {
+    "source": "results/sy_forecast_seeds1_7_095_20261022/seed3/training_steps.csv",
+    "bytes": 56068990,
+    "reason": "individual training log >2MiB; retained local"
+  },
+  {
+    "source": "results/sy_forecast_seeds1_7_095_20261022/seed4/training_steps.csv",
+    "bytes": 56261345,
+    "reason": "individual training log >2MiB; retained local"
+  },
+  {
+    "source": "results/sy_forecast_seeds1_7_095_20261022/seed5/training_steps.csv",
+    "bytes": 56081799,
+    "reason": "individual training log >2MiB; retained local"
+  },
+  {
+    "source": "results/sy_forecast_seeds1_7_095_20261022/seed6/training_steps.csv",
+    "bytes": 55966732,
+    "reason": "individual training log >2MiB; retained local"
+  },
+  {
+    "source": "results/sy_forecast_seeds1_7_095_20261022/seed7/training_steps.csv",
+    "bytes": 56350921,
+    "reason": "individual training log >2MiB; retained local"
+  },
+  {
+    "source": "results/hl_recovery_106_20261023/formal/training_steps.csv",
+    "bytes": 54450827,
+    "reason": "individual training log >2MiB; retained local"
+  },
+  {
+    "source": "results/four_site_forecast_110_20261023/HL/seed1/training_steps.csv",
+    "bytes": 54408622,
+    "reason": "individual training log >2MiB; retained local"
+  },
+  {
+    "source": "results/four_site_forecast_110_20261023/HL/seed2/training_steps.csv",
+    "bytes": 54406910,
+    "reason": "individual training log >2MiB; retained local"
+  },
+  {
+    "source": "results/four_site_forecast_110_20261023/HL/seed3/training_steps.csv",
+    "bytes": 54502623,
+    "reason": "individual training log >2MiB; retained local"
+  },
+  {
+    "source": "results/four_site_forecast_110_20261023/HL/seed4/training_steps.csv",
+    "bytes": 54503091,
+    "reason": "individual training log >2MiB; retained local"
+  },
+  {
+    "source": "results/four_site_forecast_110_20261023/HL/seed5/training_steps.csv",
+    "bytes": 54400751,
+    "reason": "individual training log >2MiB; retained local"
+  },
+  {
+    "source": "results/four_site_forecast_110_20261023/HL/seed6/training_steps.csv",
+    "bytes": 54491727,
+    "reason": "individual training log >2MiB; retained local"
+  },
+  {
+    "source": "results/four_site_forecast_110_20261023/HL/seed7/training_steps.csv",
+    "bytes": 54839845,
+    "reason": "individual training log >2MiB; retained local"
+  },
+  {
+    "source": "results/four_site_forecast_110_20261023/LC/seed0/training_steps.csv",
+    "bytes": 58618617,
+    "reason": "individual training log >2MiB; retained local"
+  },
+  {
+    "source": "results/four_site_forecast_114_20261024/LC/seed1/training_steps.csv",
+    "bytes": 58615523,
+    "reason": "individual training log >2MiB; retained local"
+  },
+  {
+    "source": "results/four_site_forecast_114_20261024/LC/seed2/training_steps.csv",
+    "bytes": 58771813,
+    "reason": "individual training log >2MiB; retained local"
+  },
+  {
+    "source": "results/four_site_forecast_114_20261024/LC/seed3/training_steps.csv",
+    "bytes": 58898176,
+    "reason": "individual training log >2MiB; retained local"
+  },
+  {
+    "source": "results/lc_recovery_115_20261024/formal/training_steps.csv",
+    "bytes": 58584921,
+    "reason": "individual training log >2MiB; retained local"
+  },
+  {
+    "source": "results/four_site_forecast_115_20261024/LC/seed5/training_steps.csv",
+    "bytes": 58646432,
+    "reason": "individual training log >2MiB; retained local"
+  },
+  {
+    "source": "results/four_site_forecast_115_20261024/LC/seed6/training_steps.csv",
+    "bytes": 58768492,
+    "reason": "individual training log >2MiB; retained local"
+  },
+  {
+    "source": "results/four_site_forecast_115_20261024/LC/seed7/training_steps.csv",
+    "bytes": 58732771,
+    "reason": "individual training log >2MiB; retained local"
+  },
+  {
+    "source": "results/four_site_forecast_115_20261024/YC/seed0/training_steps.csv",
+    "bytes": 48594496,
+    "reason": "individual training log >2MiB; retained local"
+  },
+  {
+    "source": "results/four_site_forecast_115_20261024/YC/seed1/training_steps.csv",
+    "bytes": 48610334,
+    "reason": "individual training log >2MiB; retained local"
+  },
+  {
+    "source": "results/four_site_forecast_115_20261024/YC/seed2/training_steps.csv",
+    "bytes": 48910021,
+    "reason": "individual training log >2MiB; retained local"
+  },
+  {
+    "source": "results/four_site_forecast_115_20261024/YC/seed3/training_steps.csv",
+    "bytes": 48651462,
+    "reason": "individual training log >2MiB; retained local"
+  },
+  {
+    "source": "results/four_site_forecast_115_20261024/YC/seed4/training_steps.csv",
+    "bytes": 48539746,
+    "reason": "individual training log >2MiB; retained local"
+  },
+  {
+    "source": "results/four_site_forecast_115_20261024/YC/seed5/training_steps.csv",
+    "bytes": 48632408,
+    "reason": "individual training log >2MiB; retained local"
+  },
+  {
+    "source": "results/four_site_forecast_115_20261024/YC/seed6/training_steps.csv",
+    "bytes": 48686582,
+    "reason": "individual training log >2MiB; retained local"
+  },
+  {
+    "source": "results/four_site_forecast_115_20261024/YC/seed7/training_steps.csv",
+    "bytes": 49338636,
+    "reason": "individual training log >2MiB; retained local"
+  },
+  {
+    "source": "results/four_site_forecast_116_20261025/FQ/seed0/training_steps.csv",
+    "bytes": 50639739,
+    "reason": "individual training log >2MiB; retained local"
+  },
+  {
+    "source": "results/four_site_forecast_116_20261025/FQ/seed1/training_steps.csv",
+    "bytes": 51116562,
+    "reason": "individual training log >2MiB; retained local"
+  },
+  {
+    "source": "results/four_site_forecast_116_20261025/FQ/seed2/training_steps.csv",
+    "bytes": 50651902,
+    "reason": "individual training log >2MiB; retained local"
+  },
+  {
+    "source": "results/four_site_forecast_116_20261025/FQ/seed3/training_steps.csv",
+    "bytes": 50824491,
+    "reason": "individual training log >2MiB; retained local"
+  },
+  {
+    "source": "results/four_site_forecast_116_20261025/FQ/seed4/training_steps.csv",
+    "bytes": 50626880,
+    "reason": "individual training log >2MiB; retained local"
+  },
+  {
+    "source": "results/four_site_forecast_116_20261025/FQ/seed5/training_steps.csv",
+    "bytes": 50744841,
+    "reason": "individual training log >2MiB; retained local"
+  },
+  {
+    "source": "results/four_site_forecast_116_20261025/FQ/seed6/training_steps.csv",
+    "bytes": 51205825,
+    "reason": "individual training log >2MiB; retained local"
+  },
+  {
+    "source": "results/four_site_forecast_116_20261025/FQ/seed7/training_steps.csv",
+    "bytes": 51279322,
+    "reason": "individual training log >2MiB; retained local"
+  }
+]

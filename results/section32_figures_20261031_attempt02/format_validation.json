@@ -1,0 +1,33 @@
+{
+  "main": {
+    "pdf_pages": 1,
+    "width_mm": 182.87999999999997,
+    "height_mm": 160.02,
+    "text_extracted": true,
+    "svg_text_elements": 72,
+    "png_size": [
+      2880,
+      2520
+    ],
+    "png_dpi": [
+      399.9992,
+      399.9992
+    ]
+  },
+  "annual": {
+    "pdf_pages": 1,
+    "width_mm": 182.87999999999997,
+    "height_mm": 116.83999999999999,
+    "text_extracted": true,
+    "svg_text_elements": 46,
+    "png_size": [
+      2880,
+      1839
+    ],
+    "png_dpi": [
+      399.9992,
+      399.9992
+    ]
+  },
+  "ppt_embedded_media": 2
+}

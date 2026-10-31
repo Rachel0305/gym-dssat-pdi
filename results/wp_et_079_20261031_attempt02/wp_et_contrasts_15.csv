@@ -1,0 +1,16 @@
+﻿site,contrast,difference,low,high,interpretation
+SY,augmented minus historical,-0.08625000000000016,-0.19012499999999988,0.00912500000000005,primary_descriptive_contrast
+SY,forecast minus historical,0.019750000000000156,-0.043625000000000025,0.08025000000000038,primary_descriptive_contrast
+SY,forecast minus augmented,0.10600000000000032,0.015625,0.20962500000000017,route_difference_only
+HL,augmented minus historical,-0.04837500000000006,-0.08462499999999995,-0.013249999999999984,primary_descriptive_contrast
+HL,forecast minus historical,-0.04633110503316007,-0.10039098886587383,-0.0003699441960460792,primary_descriptive_contrast
+HL,forecast minus augmented,0.0020438949668399875,-0.05720011555174431,0.05429236834268436,route_difference_only
+LC,augmented minus historical,-0.10212500000000002,-0.27562500000000023,0.08025000000000038,primary_descriptive_contrast
+LC,forecast minus historical,-0.06090908819386209,-0.3388354927282733,0.18323681056496088,primary_descriptive_contrast
+LC,forecast minus augmented,0.04121591180613793,-0.23169725889864923,0.2633876503580135,route_difference_only
+YC,augmented minus historical,-0.06462500000000015,-0.33487500000000003,0.18199999999999972,primary_descriptive_contrast
+YC,forecast minus historical,-0.0032965204308019747,-0.2780299427743871,0.23663509584286047,primary_descriptive_contrast
+YC,forecast minus augmented,0.06132847956919818,-0.2912446199024463,0.39977017310218543,route_difference_only
+FQ,augmented minus historical,0.03112500000000029,-0.054124999999999535,0.11212500000000025,primary_descriptive_contrast
+FQ,forecast minus historical,0.034869350197432425,-0.03950558668793169,0.11197642312033285,primary_descriptive_contrast
+FQ,forecast minus augmented,0.0037443501974321336,-0.07289665566503922,0.08313731243778255,route_difference_only

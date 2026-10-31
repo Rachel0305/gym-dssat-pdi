@@ -1,0 +1,18 @@
+{
+  "status": "FIGURES_READY_WITH_CAVEATS",
+  "table_rows": 30,
+  "annual_points": 50,
+  "positive_years": [
+    1,
+    5,
+    3,
+    2,
+    7
+  ],
+  "new_bootstrap": 0,
+  "new_training": 0,
+  "new_simulation": 0,
+  "figure_width_mm": 182.88,
+  "png_dpi": 400,
+  "forecast_included": false
+}

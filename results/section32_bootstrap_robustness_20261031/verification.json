@@ -1,0 +1,12 @@
+{
+  "status": "READY_WITH_CAVEATS",
+  "classification": "B",
+  "annual": 800,
+  "policies": 80,
+  "unique_model_hashes": 80,
+  "legacy_mean_intervals_reproduced": 5,
+  "legacy_sd_intervals_reproduced": 5,
+  "loso": 80,
+  "new_training": 0,
+  "new_simulations": 0
+}

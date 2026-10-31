@@ -1,0 +1,2 @@
+统计一次运行成功。PPT字体改用API的typeface，导入校验配置子进程RUNTIME_NODE_MODULES，修订时采用独立validation_v2收据避免覆盖。5页预览已检查，第3页四站范围措辞修正。最终PPT为校验版本的字节副本，旧版本保留项目backups内。未做PowerPoint原生应用验证。
+重新运行完整身份核验需要已有80模型，本次Git只备份小型分析证据，不上传模型。

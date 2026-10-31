@@ -1,0 +1,62 @@
+# Results 3.2 Bootstrap审计
+
+1. 现有Bootstrap方法正确吗？是。076平均产量与080年际SD的点估计、原随机流区间均独立复现至1e-8；未把年度当训练重复。离散percentile区间实现合理，非BCa。
+2. 8seed支持什么推断？固定十年和既有天气调度下训练重复的探索性差异；小样本、未校正多重比较，不能推广任意未来年份或宣称因果机制。
+3. HL是否稳健？点估计的正方向在16次单seed删除中均保持，范围[97.7, 170.4]；但Bootstrap区间[7.6, 304.0]与Welch区间[-39.0, 329.4]的零覆盖判断不同。不能把正方向稳健等同区间排零稳健。
+4. 其他四站结论改变吗？没有发现新增确定性改善证据，继续描述变化；逐站删种子方向与区间见表，不将方向变化隐去。
+5. 冻结判断：READY_WITH_CAVEATS。分类B：计算正确，HL区间排零对方法敏感。统计收尾完成，有限样本与来源限制随文保留，不扩展诊断。
+
+## 数据与训练单位审计
+
+五站各H/A 8seed，800条唯一年度结果；每策略完整2014—2023，产量有限且非负，均值与126策略表一致。80个模型SHA256重新读取核对，通过且互不重复。未发现本次输入中重复seed、缺失年度或重复模型文件。文件独立不证明随机性完全独立；历史训练的续训只能算同一seed一次，不额外计重复。
+
+不同组同数字seed可能共享初始化，不能仅凭编号作配对；没有全站预设匹配区组/同步随机轨迹证据，保持独立抽样。天气池和调度在组内可共享，因此估计不包含天气池抽样不确定性。
+
+126使用既有FQ2018质量控制修订，历史、增强及对应评价按修订版本汇总；该修订是输入条件，不是随机替换差seed。旧零产量版本不能混入。126记录SY/LC等身份源与076/080一致，未发生本次替换、重新训练或新模拟。独立模型哈希不能单独证明所有runtime条件完全相同。
+
+## 有效性与天气质量边界
+
+SY/LC：057已有16项独立合同PASS，060是后续外部天气增强结果；旧WGEN停止记录不直接否定后续路线。HL/FQ：各8seed训练/评价归档门槛PASS；训练天气调度共享。HL存在native FIELD坐标限制及GPCC补雨情景，不能删掉该条件。YC：004_05设计记录仅天气增强变化、拟合2004—2013、2014—2023独立比较期但非认证的pristine final test；004_16重建gate未通过，训练实际天气覆盖和尾部QC证据不足，它不判定旧训练作物结果无效。因而所有站点可用于既有条件下描述性结果，不能声称五站统一通过同等级完整天气分布QC。统计冻结不补齐这些来源缺口，也不扩大天气审查。
+
+## 原方法复核
+
+076：独立组seed重采样，4000次，随机种子20261030；每seed先十年均产，原序列跨站并消费其他指标/预报比较的抽样。080：先每seed十年样本SD(ddof=1)，后两组SD均值差，10000次，随机种子20261031。两者均非配对、非BCa。4000次零基索引[100,3899]；10000次[250,9749]。本次保留相同次序复现而未执行旧脚本的写文件入口，未覆盖旧结果。
+
+## 稳健性检查
+
+|站点|ΔSD|Bootstrap 95%区间|Welch 95%区间|删一种子后范围|
+|---|---:|---|---|---|
+|SY|-22.8|[-223.6, 177.4]|[-260.9, 215.2]|[-82.6, 22.4]|
+|HL|+145.2|[7.6, 304.0]|[-39.0, 329.4]|[97.7, 170.4]|
+|LC|+354.1|[-49.7, 737.4]|[-126.6, 834.8]|[265.6, 481.5]|
+|YC|-191.0|[-632.5, 284.1]|[-731.6, 349.5]|[-335.6, -117.5]|
+|FQ|+57.4|[-74.9, 201.6]|[-104.7, 219.5]|[22.2, 82.4]|
+
+单位kg/ha。LOSO每次仅从H或A删除一个seed，16次/站；它检查点估计影响，不重新计算删seed后的置信区间。
+HL最小值删去augmented:5，最大值删去historical:1；方向不反转，但区间排零依赖方法，应保留描述性增加及方法敏感说明。其余站点方向是否反转见CSV。
+
+五站及多指标95%区间均未作多重比较校正，不能仅凭HL原区间排零作正式确认性显著声明。Welch同样有8seed小样本限制。未新增检验、未调整方法获得预期结果、未把跨零解释为无效。
+
+## 收尾
+
+冻结是READY_WITH_CAVEATS：允许将审计后3.2作为当前证据版本收尾，不能将其标为无条件独立最终测试或算法机制验证。原结果不覆盖，修改仅降低HL区间结论确定性并补统计方法。无须新增训练、模拟、天气分组或其他指标。
+
+
+Methods统计表述
+
+# Statistical analysis for Results 3.2
+
+For each site and training regime, eight seed-labelled training runs were evaluated deterministically over the same fixed ten years (2014–2023). We first calculated each policy's ten-year mean yield and sample standard deviation across years (ddof=1). The contrasts were the differences between the augmented and historical groups in the mean of these eight policy-level summaries. Annual records were not treated as independent training replicates.
+
+We resampled eight policy-level summaries with replacement independently within each group and computed the augmented-minus-historical difference. The archived mean-yield analysis used 4,000 replicates with Python random.Random(20261030); the interannual-SD analysis used 10,000 replicates with random.Random(20261031). Random streams were shared across sites in the order SY, HL, LC, YC, FQ. Exact reproduction of the mean-yield intervals also retains the intervening metric and forecast-route draws from the original script. These intervening draws are implementation details, not additional sensitivity analyses.
+
+The percentile intervals used discrete empirical order statistics: for sorted zero-based bootstrap draws, indices 100 and 3899 at B=4000, and 250 and 9749 at B=10000. These are non-interpolated empirical percentile intervals, not BCa intervals. Index conventions can produce small Monte Carlo/order-statistic differences from interpolated quantiles; the archived convention was retained without selecting more favourable bounds.
+
+Matching numerical seed labels did not establish a randomized matched-pair design. Weather schedules differ between regimes, and matched RNG trajectories, common-random-number coupling and prespecified matched blocks were not established across all sites. We therefore retained independent-group resampling. Distinct checkpoint hashes and seed labels support separate training runs but do not prove mathematical stochastic independence. Inference is conditional on shared input data and the finite fixed weather schedules, not variability across independent training-weather datasets. Coincident policy behaviour does not constitute duplicate training runs.
+
+Sensitivity checks were limited to deleting one seed at a time from either group (16 contrasts per site, with group sizes 7 versus 8), and a Welch–Satterthwaite interval for the difference between group means of policy-level interannual SDs. For the latter, SE=sqrt(s_A²/8+s_H²/8), df=(s_A²/8+s_H²/8)²/[(s_A²/8)²/7+(s_H²/8)²/7], and the interval is delta ± t_(0.975,df)×SE. Welch is an approximate small-sample sensitivity reference, not a gold standard.
+
+All 95% intervals are exploratory and unadjusted for comparisons across sites and endpoints. With eight runs per group, tail uncertainty is weakly resolved. These intervals primarily reflect training-seed variability conditional on the ten evaluation years and fixed weather schedules; they do not quantify uncertainty for arbitrary future years, certify pristine final-test status, establish equivalence, or verify causal learning mechanisms. A zero-crossing interval is not evidence of no effect. Lower interannual SD is interpreted jointly with mean yield and resource inputs.
+
+
+补充LOSO解释：SY范围为−82.6至+22.4 kg/ha，删除一个seed可改变方向；LC、YC、FQ的点估计方向不反转，但两种区间均跨零，因此均不增加确定性声明。

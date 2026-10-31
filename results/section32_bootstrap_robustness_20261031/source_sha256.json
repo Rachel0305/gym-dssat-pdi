@@ -1,0 +1,22 @@
+{
+  "results/three_route_results_126_20261027/annual_1200.csv": "aa6943cd8dcb56c0c3190db3020afe9c59e5edca4f195d783bd56e4a0c9d70a5",
+  "results/three_route_results_126_20261027/policy_120.csv": "bcc4290d42d224878081445f4fb97776efb04c73229d97db620fcc00446e109b",
+  "results/weather_increment_076_20261030/increment_effects_40.csv": "ef0a121ab21be381561e13259632918729ab873110cdd9c41223a8db61564ae6",
+  "results/section32_stability_080_20261031/site_stability_contrast_5.csv": "ed0d00416f90f160d7a8b3f2e9d252c28f338571882e5fabcc484be4f20476a9",
+  "2V02/MODEL_REGISTRY.csv": "fd8e23f39e28653b4e50bdfca474fc33f570e223fb9261b7648eff991c9a7f9d",
+  "results/all_seed_diagnosis_075_20261029_attempt02/historical_augmented_model_identity_80.csv": "0159d665859ccb066ae23ae8b926d23e4df05182f72475462e875d6d1727bddd",
+  "scripts/analyze_weather_increment_076.py": "b9ce35d7ef4bb11f55c4ce4558987a5b7caf7e5c91e293e943c62946fe7d5432",
+  "scripts/section32_year_stability_080.py": "4e9fac1953f9ad0f99874235d69eda4e69e44b42f9bdf3127b53e926f1bce053",
+  "scripts/assemble_three_route_results_126.py": "070f896a769dcf4693a5f6852937e8768aecf075b5aa1a1c9f0e8258c48558ca",
+  "2V02/docs/yc_random_weather_004_16_wgen_weather_reconstruction_and_coverage.md": "a84ad1c2f67312bcea45981be88569829644511215e55f00209c5635613810d5",
+  "2V02/docs/hla_wgen_training_053_record.md": "80fd6b6e7227e9a4d49f23ad564bbfeb1d8929f8fd40ea482ac0b0d69a7f87d9",
+  "2V02/docs/sylc_external_weather_060_execution.md": "a58699e247b7b26a955bbd15d7932c23b803cdf22efaba7c5c3431c1d6142b7c",
+  "2V02/results/yc_random_weather_ppo/004_05/config/experiment_design.json": "a7776f8b5a2fbaf7a862d3a9a404f95691eb9f990b2b3fb61e8ad7355f0c7bff",
+  "2V02/results/sylc_external_weather_057/independent_contract_audit.json": "b109243444971fd39651df8c225754c1f56cafb859b78d0ac5fad015fea995cd",
+  "2V02/results/hla_wgen_8seed_053/final_gate.json": "41db460cdb968fd54ea19d567c70959f915ad757d5ee3d7de9904b8d53851c41",
+  "2V02/results/fqa_multiyear_wgen_ppo_052_8seed/final_gate.json": "b8d4ee279a9a182fbf130a75113336e46e54711384c211b7678fa4e5132cc5e0",
+  "results/section32_stability_080_20261031/section_3_2_updated_zh.md": "7e94e661b12ab500fcc5d2117dd151760520d55693adabbd8ece03fd2fad8e1b",
+  "results/section32_contract_followup_078_20261031/report_zh.md": "0dac3731d0cf54278b8c994e9567b3fa145681c999d1d28235b233a5879f08d8",
+  "prompts/135_section32_bootstrap_robustness_audit.md": "04ae89bbbc7c9aa20ff4da995cd24c7d57da52b123f68a6af072385028fe7d17",
+  "scripts\\audit_section32_bootstrap_135.py": "d247374ddfbe027b0f61dddbbc6f7eba2bb32e97aa94f11c39263be61a50a9c8"
+}

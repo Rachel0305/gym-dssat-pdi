@@ -1,0 +1,16 @@
+{
+  "window": "DAP0_to_DAP90_inclusive",
+  "days": 91,
+  "basis": "existing DAP0_30, DAP31_60, DAP61_90 stages; fixed management window, NOT full growing season",
+  "planting_anchor": "same representative planting DOY used by build_env_config; YC recovered archive final DAP0",
+  "dry_day_rule": "RAIN <= 0 mm (existing wet=RAIN>0 convention)",
+  "metrics": [
+    "seasonal_precipitation",
+    "maximum_dry_spell",
+    "seasonal_temperature",
+    "srad_mean"
+  ],
+  "dedup": "SHA256 of numeric RAIN/SRAD/TMAX/TMIN within window, dates omitted; exact unique windows, not independent climate replicates",
+  "incomplete": "not extrapolated; recorded separately",
+  "no_new_simulation": true
+}

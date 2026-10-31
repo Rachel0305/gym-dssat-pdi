@@ -1,0 +1,61 @@
+﻿site,group,metric,n_selected_records,weighted_mean,weighted_sd,scope
+SY,H,seasonal_precipitation,9,284.0666666666667,62.39401012917827,unweighted input years or recovered YC subset; not actual exposure weighting
+SY,H,maximum_dry_spell,9,12.0,5.338539126015656,unweighted input years or recovered YC subset; not actual exposure weighting
+SY,H,seasonal_temperature,9,25.708058608058607,0.6604020760604624,unweighted input years or recovered YC subset; not actual exposure weighting
+SY,H,srad_mean,9,18.833699633699634,0.8199008175148543,unweighted input years or recovered YC subset; not actual exposure weighting
+SY,T,seasonal_precipitation,10,263.27000000000004,96.52206483493815,unweighted input years or recovered YC subset; not actual exposure weighting
+SY,T,maximum_dry_spell,10,14.6,4.501851470969102,unweighted input years or recovered YC subset; not actual exposure weighting
+SY,T,seasonal_temperature,10,26.626923076923084,0.7385271734451564,unweighted input years or recovered YC subset; not actual exposure weighting
+SY,T,srad_mean,10,20.53956043956044,0.9277694841399298,unweighted input years or recovered YC subset; not actual exposure weighting
+HL,H,seasonal_precipitation,10,308.91999999999996,139.2914354868956,unweighted input years or recovered YC subset; not actual exposure weighting
+HL,H,maximum_dry_spell,10,21.7,24.797177258712328,unweighted input years or recovered YC subset; not actual exposure weighting
+HL,H,seasonal_temperature,10,25.026263736263736,1.1248306475032872,unweighted input years or recovered YC subset; not actual exposure weighting
+HL,H,srad_mean,10,19.699890109890113,1.0043713510643038,unweighted input years or recovered YC subset; not actual exposure weighting
+HL,T,seasonal_precipitation,10,321.95,114.94200711663251,unweighted input years or recovered YC subset; not actual exposure weighting
+HL,T,maximum_dry_spell,10,8.9,3.2128215360057304,unweighted input years or recovered YC subset; not actual exposure weighting
+HL,T,seasonal_temperature,10,24.837252747252744,0.41498920071556455,unweighted input years or recovered YC subset; not actual exposure weighting
+HL,T,srad_mean,10,19.5721978021978,1.08265575062079,unweighted input years or recovered YC subset; not actual exposure weighting
+LC,H,seasonal_precipitation,9,269.7111111111111,132.71698689734902,unweighted input years or recovered YC subset; not actual exposure weighting
+LC,H,maximum_dry_spell,9,11.11111111111111,3.7564758898615485,unweighted input years or recovered YC subset; not actual exposure weighting
+LC,H,seasonal_temperature,9,30.97240537240537,0.9570904094278437,unweighted input years or recovered YC subset; not actual exposure weighting
+LC,H,srad_mean,9,16.059340659340663,0.884780886845623,unweighted input years or recovered YC subset; not actual exposure weighting
+LC,T,seasonal_precipitation,10,285.87,109.29263520983979,unweighted input years or recovered YC subset; not actual exposure weighting
+LC,T,maximum_dry_spell,10,13.9,4.458450154232722,unweighted input years or recovered YC subset; not actual exposure weighting
+LC,T,seasonal_temperature,10,32.03054945054945,0.7568410555155428,unweighted input years or recovered YC subset; not actual exposure weighting
+LC,T,srad_mean,10,18.05901098901099,0.9321615363311451,unweighted input years or recovered YC subset; not actual exposure weighting
+YC,H,seasonal_precipitation,10,380.9,175.47465154070923,unweighted input years or recovered YC subset; not actual exposure weighting
+YC,H,maximum_dry_spell,10,22.1,23.992823000963345,unweighted input years or recovered YC subset; not actual exposure weighting
+YC,H,seasonal_temperature,10,30.990109890109885,0.9816934557613576,unweighted input years or recovered YC subset; not actual exposure weighting
+YC,H,srad_mean,10,16.609230769230766,0.4206012593501805,unweighted input years or recovered YC subset; not actual exposure weighting
+YC,T,seasonal_precipitation,10,368.4,170.1776588026629,unweighted input years or recovered YC subset; not actual exposure weighting
+YC,T,maximum_dry_spell,10,16.1,5.021066730398144,unweighted input years or recovered YC subset; not actual exposure weighting
+YC,T,seasonal_temperature,10,31.628351648351646,0.7252127105614254,unweighted input years or recovered YC subset; not actual exposure weighting
+YC,T,srad_mean,10,18.158791208791207,1.2236213432225884,unweighted input years or recovered YC subset; not actual exposure weighting
+FQ,H,seasonal_precipitation,9,469.30000000000007,249.28400470146497,unweighted input years or recovered YC subset; not actual exposure weighting
+FQ,H,maximum_dry_spell,9,15.666666666666666,3.3166247903554,unweighted input years or recovered YC subset; not actual exposure weighting
+FQ,H,seasonal_temperature,9,31.505128205128205,0.7061095877478453,unweighted input years or recovered YC subset; not actual exposure weighting
+FQ,H,srad_mean,9,16.656410256410258,1.173260016079246,unweighted input years or recovered YC subset; not actual exposure weighting
+FQ,T,seasonal_precipitation,10,384.55999999999995,187.7078770619686,unweighted input years or recovered YC subset; not actual exposure weighting
+FQ,T,maximum_dry_spell,10,15.2,5.072803301265814,unweighted input years or recovered YC subset; not actual exposure weighting
+FQ,T,seasonal_temperature,10,32.0945054945055,0.959534419520616,unweighted input years or recovered YC subset; not actual exposure weighting
+FQ,T,srad_mean,10,18.3010989010989,0.9521402908102997,unweighted input years or recovered YC subset; not actual exposure weighting
+SY,A,seasonal_precipitation,5824,260.576407967033,50.15385300308701,episode-selected bank window
+SY,A,maximum_dry_spell,5824,11.096840659340659,3.6995012884571348,episode-selected bank window
+SY,A,seasonal_temperature,5824,26.242640155174495,0.6812995419032519,episode-selected bank window
+SY,A,srad_mean,5824,19.493754151068714,0.7203980319472952,episode-selected bank window
+LC,A,seasonal_precipitation,8240,319.30878640776706,105.77980593475172,episode-selected bank window
+LC,A,maximum_dry_spell,8240,10.330946601941747,3.6095130712860217,episode-selected bank window
+LC,A,seasonal_temperature,8240,31.382506268003837,0.6765263497239696,episode-selected bank window
+LC,A,srad_mean,8240,16.767400378747467,0.4088534987071265,episode-selected bank window
+HL,A,seasonal_precipitation,5720,352.5874136332419,93.90434834309123,actual archived complete-window episodes
+HL,A,maximum_dry_spell,5720,8.833566433566434,2.546354832189277,actual archived complete-window episodes
+HL,A,seasonal_temperature,5720,24.748139234103032,0.9056280091490178,actual archived complete-window episodes
+HL,A,srad_mean,5720,20.064269084442763,0.8516284029857414,actual archived complete-window episodes
+FQ,A,seasonal_precipitation,7640,476.1003681196315,188.70302409501963,actual archived complete-window episodes
+FQ,A,maximum_dry_spell,7640,18.184293193717277,7.2789006704975785,actual archived complete-window episodes
+FQ,A,seasonal_temperature,7640,32.3094698555278,0.6662628891722582,actual archived complete-window episodes
+FQ,A,srad_mean,7640,17.016186594937466,0.7120019271402555,actual archived complete-window episodes
+YC,A,seasonal_precipitation,77,487.65937731541817,158.69973257231064,unweighted input years or recovered YC subset; not actual exposure weighting
+YC,A,maximum_dry_spell,77,12.779220779220779,4.808499537888959,unweighted input years or recovered YC subset; not actual exposure weighting
+YC,A,seasonal_temperature,77,31.419583104622145,0.732735399948829,unweighted input years or recovered YC subset; not actual exposure weighting
+YC,A,srad_mean,77,16.711748727194696,0.6471484146140071,unweighted input years or recovered YC subset; not actual exposure weighting

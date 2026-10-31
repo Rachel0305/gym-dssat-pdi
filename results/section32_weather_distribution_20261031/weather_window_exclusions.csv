@@ -1,0 +1,10 @@
+﻿site,group,sample,source,reason
+FQ,A,seed0:episode956,results/fqa_multiyear_wgen_ppo_051/attempt_01/weather_daily/episode_0956.csv,fixed_window_incomplete
+FQ,A,seed1:episode956,results/fqa_multiyear_wgen_ppo_052_8seed/seed_01/attempt_01/weather_daily/episode_0956.csv,fixed_window_incomplete
+FQ,A,seed2:episode956,results/fqa_multiyear_wgen_ppo_052_8seed/seed_02/attempt_01/weather_daily/episode_0956.csv,fixed_window_incomplete
+FQ,A,seed3:episode956,results/fqa_multiyear_wgen_ppo_052_8seed/seed_03/attempt_01/weather_daily/episode_0956.csv,fixed_window_incomplete
+FQ,A,seed4:episode956,results/fqa_multiyear_wgen_ppo_052_8seed/seed_04/attempt_01/weather_daily/episode_0956.csv,fixed_window_incomplete
+FQ,A,seed5:episode956,results/fqa_multiyear_wgen_ppo_052_8seed/seed_05/attempt_01/weather_daily/episode_0956.csv,fixed_window_incomplete
+FQ,A,seed6:episode956,results/fqa_multiyear_wgen_ppo_052_8seed/seed_06/attempt_01/weather_daily/episode_0956.csv,fixed_window_incomplete
+FQ,A,seed7:episode956,results/fqa_multiyear_wgen_ppo_052_8seed/seed_07/attempt_01/weather_daily/episode_0956.csv,fixed_window_incomplete
+YC,A,1038,results/yc_random_weather_ppo/004_17_yc_runtime_weather_recovery/canonical_weather/training/seed_1038_ctx_2010_4C737343ED1A0536.csv,fixed_window_incomplete
